@@ -12,16 +12,6 @@
   --card: #ffffff;
 }
 
-[data-theme='dark'] {
-  --bg: #0f1012;
-  --ink: #ececea;
-  --muted: #9aa0a8;
-  --accent: #ff7a5c;
-  --accent-soft: #2a1a16;
-  --rule: #23252a;
-  --card: #16181c;
-}
-
 html {
   background: var(--bg);
   color: var(--ink);
@@ -199,7 +189,7 @@ a:hover {
   background: var(--accent-soft);
 }
 
-/* Pagefind UI override (light + dark friendly) */
+/* Pagefind UI override */
 :root {
   --pagefind-ui-primary: var(--accent);
   --pagefind-ui-text: var(--ink);

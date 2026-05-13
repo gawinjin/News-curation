@@ -12,7 +12,8 @@ const all = (await getCollection('articles', ({ data }) => !data.draft)).sort(
 const featured = all.filter((a) => a.data.featured).slice(0, 3);
 const featuredOrLatest = featured.length ? featured : all.slice(0, 3);
 const featuredIds = new Set(featuredOrLatest.map((a) => a.id));
-const latest = all.filter((a) => !featuredIds.has(a.id)).slice(0, 9);
+const latest = all.filter((a) => !featuredIds.has(a.id));
+const INITIAL_LATEST_VISIBLE = Math.max(0, 12 - featuredOrLatest.length);
 
 const allTags = Array.from(new Set(all.flatMap((a) => a.data.tags))).slice(0, 14);
 ---
@@ -76,18 +77,83 @@ const allTags = Array.from(new Set(all.flatMap((a) => a.data.tags))).slice(0, 14
         <a href="/archive" class="text-sm text-[color:var(--muted)] hover:text-[color:var(--accent)]">View archive →</a>
       </div>
       <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        {latest.map((a) => (
-          <ArticleCard
-            href={`/articles/${a.slug}`}
-            title={a.data.title}
-            summary={a.data.summary}
-            date={a.data.date}
-            category={a.data.category}
-            tags={a.data.tags}
-            size="sm"
-          />
+        {latest.map((a, index) => (
+          <div
+            data-home-article
+            data-home-index={index}
+            hidden={index >= INITIAL_LATEST_VISIBLE ? true : undefined}
+          >
+            <ArticleCard
+              href={`/articles/${a.slug}`}
+              title={a.data.title}
+              summary={a.data.summary}
+              date={a.data.date}
+              category={a.data.category}
+              tags={a.data.tags}
+              size="sm"
+            />
+          </div>
         ))}
       </div>
+      {latest.length > INITIAL_LATEST_VISIBLE && (
+        <button
+          type="button"
+          class="mt-5 inline-flex items-center rounded-md border border-[color:var(--rule)] px-3 py-2 text-sm text-[color:var(--muted)] hover:border-[color:var(--accent)] hover:text-[color:var(--accent)] transition-colors"
+          data-home-more
+          data-step="12"
+        >
+          Show more
+        </button>
+      )}
     </section>
   )}
+
+  <noscript>
+    <style>
+      [data-home-article][hidden] {
+        display: block;
+      }
+      [data-home-more] {
+        display: none;
+      }
+    </style>
+  </noscript>
+
+  <script is:inline>
+    (function () {
+      function setupHomeArticles() {
+        document.querySelectorAll('[data-home-more]').forEach((button) => {
+          if (button.dataset.ready) return;
+          button.dataset.ready = 'true';
+          const section = button.closest('section');
+          if (!section) return;
+          const items = Array.from(section.querySelectorAll('[data-home-article]'));
+          const step = Number(button.getAttribute('data-step') || 12);
+
+          function syncButton() {
+            const hiddenItems = items.filter((item) => item.hidden);
+            button.hidden = hiddenItems.length === 0;
+            if (hiddenItems.length > 0) {
+              button.textContent = `Show ${Math.min(step, hiddenItems.length)} more`;
+            }
+          }
+
+          button.addEventListener('click', () => {
+            items
+              .filter((item) => item.hidden)
+              .slice(0, step)
+              .forEach((item) => {
+                item.hidden = false;
+              });
+            syncButton();
+          });
+
+          syncButton();
+        });
+      }
+
+      setupHomeArticles();
+      document.addEventListener('astro:after-swap', setupHomeArticles);
+    })();
+  </script>
 </BaseLayout>
