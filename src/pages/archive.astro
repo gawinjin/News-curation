@@ -13,6 +13,7 @@ for (const a of all) {
   (byYear.get(y) as any).push(a);
 }
 const years = Array.from(byYear.keys()).sort((a, b) => b - a);
+const INITIAL_VISIBLE = 12;
 ---
 
 <BaseLayout title="Archive" description="Every article on Signal, by year." pathname="/archive">
@@ -26,8 +27,13 @@ const years = Array.from(byYear.keys()).sort((a, b) => b - a);
       <div class="mb-10">
         <h2 class="font-serif text-2xl font-semibold tracking-tight mb-3">{y}</h2>
         <ul class="divide-y divide-[color:var(--rule)] border-y border-[color:var(--rule)]">
-          {byYear.get(y)!.map((a) => (
-            <li class="py-3 flex items-baseline gap-4">
+          {byYear.get(y)!.map((a, index) => (
+            <li
+              class="py-3 flex items-baseline gap-4"
+              data-archive-item
+              data-archive-index={index}
+              hidden={index >= INITIAL_VISIBLE ? true : undefined}
+            >
               <time class="text-xs text-[color:var(--muted)] w-20 shrink-0" datetime={a.data.date.toISOString()}>
                 {a.data.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
               </time>
@@ -40,7 +46,66 @@ const years = Array.from(byYear.keys()).sort((a, b) => b - a);
             </li>
           ))}
         </ul>
+        {byYear.get(y)!.length > INITIAL_VISIBLE && (
+          <button
+            type="button"
+            class="mt-4 inline-flex items-center rounded-md border border-[color:var(--rule)] px-3 py-2 text-sm text-[color:var(--muted)] hover:border-[color:var(--accent)] hover:text-[color:var(--accent)] transition-colors"
+            data-archive-more
+            data-step="12"
+          >
+            Show more
+          </button>
+        )}
       </div>
     ))}
   </section>
+
+  <noscript>
+    <style>
+      [data-archive-item][hidden] {
+        display: flex;
+      }
+      [data-archive-more] {
+        display: none;
+      }
+    </style>
+  </noscript>
+
+  <script is:inline>
+    (function () {
+      function setupArchive() {
+        document.querySelectorAll('[data-archive-more]').forEach((button) => {
+          if (button.dataset.ready) return;
+          button.dataset.ready = 'true';
+          const container = button.closest('div');
+          if (!container) return;
+          const items = Array.from(container.querySelectorAll('[data-archive-item]'));
+          const step = Number(button.getAttribute('data-step') || 12);
+
+          function syncButton() {
+            const hiddenItems = items.filter((item) => item.hidden);
+            button.hidden = hiddenItems.length === 0;
+            if (hiddenItems.length > 0) {
+              button.textContent = `Show ${Math.min(step, hiddenItems.length)} more`;
+            }
+          }
+
+          button.addEventListener('click', () => {
+            items
+              .filter((item) => item.hidden)
+              .slice(0, step)
+              .forEach((item) => {
+                item.hidden = false;
+              });
+            syncButton();
+          });
+
+          syncButton();
+        });
+      }
+
+      setupArchive();
+      document.addEventListener('astro:after-swap', setupArchive);
+    })();
+  </script>
 </BaseLayout>
