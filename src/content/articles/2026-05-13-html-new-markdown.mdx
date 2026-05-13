@@ -1,0 +1,56 @@
+---
+title: "HTML is becoming the better AI output format for some work"
+date: 2026-05-13
+category: insights
+tags: ["html", "markdown", "claude", "workflow"]
+summary: "A Claude Code engineer's HTML examples made a practical point: when you need diagrams, comparisons, or interactive review, Markdown can be too flat."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "Any AI assistant that can write HTML"
+    - "A browser"
+references:
+  - title: "Using Claude Code: The Unreasonable Effectiveness of HTML"
+    url: "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/"
+    author: "Simon Willison"
+    publishedAt: "2026-05-08"
+  - title: "The unreasonable effectiveness of HTML"
+    url: "https://thariqs.github.io/html-effectiveness/"
+    author: "Thariq Shihipar"
+social:
+  - author: "Thariq Shihipar"
+    url: "https://twitter.com/trq212/status/2052809885763747935"
+    platform: x
+    postedAt: "2026-05-08"
+draft: false
+---
+
+## TL;DR
+
+Markdown is still great for notes, docs, and simple articles. But for AI-generated explanations, HTML can be better: it can show diagrams, side-by-side options, tabs, timelines, sliders, and annotated diffs in one file you open in a browser.
+
+## What's New
+
+Thariq Shihipar, an engineer on Anthropic's Claude Code team, shared a set of examples arguing for HTML as an output format for agent work. Simon Willison highlighted the idea and noted that he has mostly defaulted to Markdown since the GPT-4 era, when shorter output mattered more.
+
+The examples are not about replacing every `.md` file. They show where Markdown breaks down: PR review, system maps, design tokens, clickable prototypes, incident timelines, research explainers, and small custom editors. Those are visual or spatial tasks. HTML lets the model render the thing instead of describing the thing.
+
+This is especially useful when the output is temporary. A one-file HTML artifact can be a throwaway workspace: inspect it, react to it, copy the final answer back out, and move on.
+
+## Why It Matters
+
+Most people ask AI for walls of text because chat boxes encourage walls of text. That is fine for a summary. It is weak for comparison, planning, debugging, and teaching.
+
+The practical shift is to choose the medium that matches the job. Ask for Markdown when you want a durable document. Ask for HTML when you want to see relationships, states, or alternatives at a glance. The AI can still export the final answer back to Markdown after you decide.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["Any AI assistant that can write HTML", "A browser"]}>
+
+1. Pick a task where plain text feels hard to scan: comparing three options, reviewing a pull request, learning a new feature, or planning a launch.
+2. Ask your AI assistant for a single self-contained HTML file. Tell it to include inline CSS and no external dependencies.
+3. Require structure: a summary box, sections with anchors, a comparison table, and one visual element such as a flowchart, timeline, or annotated diff.
+4. Open the file locally in your browser. Use what you can see to decide what is missing.
+5. Ask the assistant to export the final decision back into Markdown if you need to commit it or paste it into a normal doc.
+
+</PracticalGuide>

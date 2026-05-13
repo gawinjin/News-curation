@@ -1,0 +1,51 @@
+---
+title: "AlphaEvolve shows what AI agents can do beyond writing code"
+date: 2026-05-13
+category: research
+tags: ["deepmind", "agents", "research", "algorithms"]
+summary: "Google DeepMind says AlphaEvolve is optimizing algorithms across science, infrastructure, and business. The useful takeaway is to look for measurable search spaces."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "One process you can measure"
+    - "A rough list of constraints"
+references:
+  - title: "AlphaEvolve: How our Gemini-powered coding agent is scaling impact across fields"
+    url: "https://deepmind.google/blog/alphaevolve-impact/"
+    author: "Google DeepMind"
+    publishedAt: "2026-05-06"
+  - title: "AlphaEvolve examples gallery"
+    url: "https://alphaevolve-examples.web.app/"
+    author: "Google DeepMind"
+draft: false
+---
+
+## TL;DR
+
+Google DeepMind says AlphaEvolve has moved from algorithm-discovery demos into real optimization work: genomics, power grids, quantum circuits, TPUs, databases, logistics, advertising, and chemistry. The common pattern is not magic. It is a measurable problem where candidate solutions can be tested.
+
+## What's New
+
+DeepMind's update says AlphaEvolve has been used to improve DNA sequencing accuracy, grid optimization, natural-disaster prediction, quantum-circuit design, cache policies, TPU design, Spanner compaction, logistics routing, and model training speed.
+
+Some examples are deeply technical, but the practical shape is understandable: define a search space, generate possible solutions, run them against a score, keep the better ones, and repeat. That is why an "agent" can help in places where normal chatbots feel vague.
+
+The public examples gallery also matters because it makes the process easier to inspect. You can see how a problem is represented and what it means for an algorithm to improve.
+
+## Why It Matters
+
+For most people, the lesson is not "use AlphaEvolve tomorrow." It is to notice which problems around you are measurable enough for AI-assisted search.
+
+If you can score a solution, you can improve it. That might be a delivery route, a meeting schedule, a classroom seating chart, a packing list, a spreadsheet formula, or a test suite. AI agents become more useful when the task has constraints and feedback, not just a vague request to be clever.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["One process you can measure", "A rough list of constraints"]}>
+
+1. Pick a small optimization problem from your life or work: route order, shift schedule, budget allocation, or study plan.
+2. Write down the constraints: time, cost, fairness, required stops, deadlines, or hard exclusions.
+3. Define one score. Examples: total minutes, missed deadlines, cost, number of conflicts, or error rate.
+4. Ask an AI assistant for three candidate solutions and a table comparing each candidate against the score.
+5. Keep the scoring rule and improve it. The better your feedback signal, the more useful the agent becomes.
+
+</PracticalGuide>

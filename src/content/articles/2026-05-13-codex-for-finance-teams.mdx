@@ -1,0 +1,48 @@
+---
+title: "OpenAI's finance Codex examples show where AI helps spreadsheet work"
+date: 2026-05-13
+category: guides
+tags: ["codex", "finance", "spreadsheets", "work"]
+summary: "OpenAI published finance-team Codex examples for reporting packs, variance bridges, and forecast scenarios. The useful lesson is to ask for auditability."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A spreadsheet or reporting pack you are allowed to analyze"
+    - "A finance owner who can review assumptions"
+references:
+  - title: "How finance teams use Codex"
+    url: "https://openai.com/academy/how-finance-teams-use-codex"
+    author: "OpenAI"
+    publishedAt: "2026-05-12"
+draft: false
+---
+
+## TL;DR
+
+OpenAI published practical Codex examples for finance teams: cleaning models, refreshing reporting packs, building variance bridges, and comparing scenarios. The best use is not "make me a forecast." It is "check the workbook, cite the cells, flag assumptions, and draft owner questions."
+
+## What's New
+
+The finance guide shows Codex being used around familiar finance workflows: operating plans, CFO and board packs, variance analysis, forecast refreshes, and scenario planning. The common thread is source-backed work. Codex is asked to review models, tie numbers back to inputs, and separate confirmed drivers from questions.
+
+That is a better pattern than asking an AI to invent business judgment. Finance work depends on trust, traceability, and human ownership. A useful agent should speed cleanup, reconciliation, and explanation while making unsupported numbers louder.
+
+The guide also points to a broader shift: AI work is moving from chat prompts into files, slides, spreadsheets, emails, and team channels. The assistant becomes more useful when it can inspect the actual materials.
+
+## Why It Matters
+
+Spreadsheets are full of invisible risk: hardcodes, stale links, broken formulas, sign errors, mismatched periods, and numbers that no longer tie to a source. Those are exactly the kinds of issues a patient assistant can help surface.
+
+The human still owns the decision. But an AI agent can make the review packet cleaner: what changed, where the numbers came from, what is unsupported, and who needs to answer which question.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A spreadsheet or reporting pack you are allowed to analyze", "A finance owner who can review assumptions"]}>
+
+1. Choose one low-risk file: a copy of a forecast, KPI tracker, or monthly reporting pack.
+2. Ask the assistant to inspect structure first: tabs, formulas, hardcodes, broken links, sign conventions, and obvious checks.
+3. Require a memo, not just edits. It should list fixes made, unsupported numbers, assumptions, and exact tabs or cells needing review.
+4. For a variance bridge, ask it to separate confirmed drivers from questions for owners.
+5. Have a human finance owner review every business assumption before sharing the result.
+
+</PracticalGuide>

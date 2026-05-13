@@ -1,0 +1,56 @@
+---
+title: "Harness engineering is the new habit behind reliable AI agents"
+date: 2026-05-13
+category: insights
+tags: ["agents", "harness", "coding", "workflow"]
+summary: "The useful lesson from the harness engineering discussion is not jargon. It is a checklist: give agents constraints, feedback, tools, and evidence."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "25 min"
+  prerequisites:
+    - "A repo or recurring work process"
+    - "One AI coding assistant or agent"
+references:
+  - title: "Harness engineering for coding agent users"
+    url: "https://martinfowler.com/articles/harness-engineering.html"
+    author: "Birgitta Boeckeler"
+    publishedAt: "2026-04-02"
+  - title: "Harness Engineering: The Moat Isn't Code Anymore. It's Control."
+    url: "https://www.techwithdarin.com/p/harness-engineering-the-moat-isnt"
+    author: "Darin Deters"
+    publishedAt: "2026-02-12"
+  - title: "Running Codex safely at OpenAI"
+    url: "https://openai.com/index/running-codex-safely"
+    author: "OpenAI"
+    publishedAt: "2026-05-08"
+draft: false
+---
+
+## TL;DR
+
+Harness engineering is the practice of making AI agents more reliable by improving everything around the model: instructions, tools, tests, sandboxes, logs, approvals, and review loops. For everyday users, the takeaway is simple: stop relying on better prompts alone. Build a better workspace for the agent.
+
+## What's New
+
+Martin Fowler's site now has a practical article framing harnesses as feedforward and feedback controls. Feedforward means giving the agent better guidance before it acts: rules, examples, architecture notes, and commands. Feedback means giving it reliable signals after it acts: tests, linters, screenshots, logs, and review comments.
+
+The same idea is showing up in Substack and engineering blogs. Darin Deters argues that as code generation gets cheaper, the harder job becomes control: making the repo observable, constrained, and easy for an agent to repair without creating drift.
+
+OpenAI's Codex safety post adds the operational version: sandbox boundaries, network controls, approvals, credentials, and telemetry. That turns agent work from "hope the model behaves" into a managed workflow.
+
+## Why It Matters
+
+If you ask an agent to "fix the app" in a repo with no tests, unclear setup, stale docs, and hidden credentials, you are asking it to guess. A stronger model helps, but it does not remove the guesswork.
+
+A harness reduces guessing. It tells the agent where it can write, how to run the app, what good looks like, which checks must pass, and when a human should review. That is useful even for solo projects because it turns repeated frustration into reusable guardrails.
+
+<PracticalGuide timeToTry="25 min" prerequisites={["A repo or recurring work process", "One AI coding assistant or agent"]}>
+
+1. Write a short `AGENTS.md` that explains the project goal, setup command, test command, and files the agent should not touch.
+2. Add one fast feedback check the agent can run itself: a unit test, type check, linter, smoke script, or browser screenshot check.
+3. Add one boundary: a sandbox, a denylist of destructive commands, or a rule that secrets and production config are read-only.
+4. Make the repo observable. Add a simple dev command, useful logs, and a note explaining where failures appear.
+5. After the next agent mistake, do not just fix the output. Add a rule or check so the same mistake becomes harder to repeat.
+
+</PracticalGuide>

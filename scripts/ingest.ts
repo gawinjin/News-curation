@@ -4,10 +4,11 @@
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { SOURCES } from '../src/lib/sources.js';
 import { SOCIAL_HANDLES, nitterInstances } from '../src/lib/social-sources.js';
 
-const ROOT = path.resolve(new URL('..', import.meta.url).pathname);
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const STATE = path.join(ROOT, 'data', 'state.json');
 const INBOX = path.join(ROOT, 'data', 'inbox.json');
 const SOCIAL_QUEUE = path.join(ROOT, 'data', 'social-queue.json');

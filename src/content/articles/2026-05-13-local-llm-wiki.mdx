@@ -1,0 +1,54 @@
+---
+title: "Local LLM Wiki turns your notes into a private AI-maintained library"
+date: 2026-05-13
+category: guides
+tags: ["local-llm", "wiki", "obsidian", "knowledge"]
+summary: "Karpathy's LLM Wiki idea now has local-first implementations. The useful part is simple: let an AI maintain a linked wiki from your own sources."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "A folder of notes, PDFs, or saved articles"
+    - "Ollama or another local LLM setup"
+references:
+  - title: "LLM Wiki"
+    url: "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
+    author: "Andrej Karpathy"
+    publishedAt: "2026-04-04"
+  - title: "NiharShrotri/llm-wiki"
+    url: "https://github.com/NiharShrotri/llm-wiki"
+    author: "Nihar Shrotri"
+  - title: "qmd"
+    url: "https://github.com/simonw/qmd"
+    author: "Simon Willison"
+draft: false
+---
+
+## TL;DR
+
+Karpathy's LLM Wiki pattern is turning into real local tools: instead of asking an AI to search raw files every time, you let it build and maintain a linked Markdown wiki from your sources. The result is a private knowledge base you can browse, query, and improve over time.
+
+## What's New
+
+Karpathy's April gist describes a three-layer setup: raw sources, a generated wiki, and a schema file that tells the agent how to maintain it. The key change from normal RAG is persistence. The AI does not just retrieve chunks at question time; it updates summaries, entities, contradictions, and links as new sources arrive.
+
+Nihar Shrotri's `llm-wiki` repo turns that pattern into a local-first project using Ollama, Qwen3, Obsidian-style Markdown, and local search. It is still a builder-oriented tool, but the direction is useful for anyone who has scattered PDFs, saved articles, meeting notes, or research folders.
+
+The practical idea is not that AI should replace your judgment. It is that AI can handle the upkeep that usually kills personal knowledge bases: filing, cross-linking, updating summaries, and checking whether old notes conflict with new ones.
+
+## Why It Matters
+
+Most personal notes die because they are write-only. You save something, forget the filename, and then ask ChatGPT the same question later from scratch.
+
+An LLM-maintained wiki flips that habit. Your job is to curate sources and ask better questions. The model's job is the boring maintenance: make pages, connect them, cite sources, and keep the index useful. Because it can run locally, it is also a better fit for sensitive personal or work documents than uploading everything to a cloud notebook.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["A folder of notes, PDFs, or saved articles", "Ollama or another local LLM setup"]}>
+
+1. Create a small test folder with 5 to 10 documents on one topic. Do not start with your whole archive.
+2. Read Karpathy's gist and copy the three-layer idea into a short `AGENTS.md` or `CLAUDE.md`: raw sources, generated wiki, and rules.
+3. Install or inspect a local implementation such as `NiharShrotri/llm-wiki`, or ask your coding agent to build the simplest version: `raw/`, `wiki/`, `index.md`, and `log.md`.
+4. Ingest one source at a time. After each run, open the generated pages in Obsidian or your editor and check whether the links and summaries are useful.
+5. Ask one question you actually care about, then save the answer back into the wiki as a synthesis page if it is worth keeping.
+
+</PracticalGuide>

@@ -1,4 +1,22 @@
 {
-  "covered": [],
-  "lastIngest": null
+  "covered": [
+    "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+    "https://platform.openai.com/docs/guides/realtime/overview",
+    "https://socket.dev/blog/tanstack-npm-packages-compromised-mini-shai-hulud-supply-chain-attack",
+    "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem",
+    "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+    "https://github.com/NiharShrotri/llm-wiki",
+    "https://github.com/simonw/qmd",
+    "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/",
+    "https://thariqs.github.io/html-effectiveness/",
+    "https://twitter.com/trq212/status/2052809885763747935",
+    "https://martinfowler.com/articles/harness-engineering.html",
+    "https://www.techwithdarin.com/p/harness-engineering-the-moat-isnt",
+    "https://openai.com/index/running-codex-safely",
+    "https://openai.com/academy/how-finance-teams-use-codex",
+    "https://openai.com/signals/research/2026q1-update",
+    "https://deepmind.google/blog/alphaevolve-impact/",
+    "https://alphaevolve-examples.web.app/"
+  ],
+  "lastIngest": "2026-05-13T06:11:26.9522567Z"
 }

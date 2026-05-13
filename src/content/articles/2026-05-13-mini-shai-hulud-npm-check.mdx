@@ -1,0 +1,52 @@
+---
+title: "Mini Shai-Hulud hit npm packages. Here's the 10-minute check to run"
+date: 2026-05-13
+category: guides
+tags: ["security", "npm", "supply-chain", "codex"]
+summary: "A new npm supply-chain attack affected TanStack and other packages. Most users do not need to panic, but developers should check installs and rotate secrets if exposed."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A project folder that uses npm or Python packages"
+    - "Terminal access"
+references:
+  - title: "TanStack npm Packages Compromised in Ongoing Mini Shai-Hulud Supply-Chain Attack"
+    url: "https://socket.dev/blog/tanstack-npm-packages-compromised-mini-shai-hulud-supply-chain-attack"
+    author: "Socket Research Team"
+    publishedAt: "2026-05-11"
+  - title: "Postmortem: TanStack npm supply-chain compromise"
+    url: "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem"
+    author: "Tanner Linsley"
+    publishedAt: "2026-05-11"
+draft: false
+---
+
+## TL;DR
+
+Security researchers reported a Mini Shai-Hulud supply-chain attack that published malicious package versions in parts of the npm and PyPI ecosystem, including TanStack packages. If you installed dependencies during the affected window, check your lockfiles and `node_modules` now. If you find a hit, rotate secrets before doing anything else.
+
+## What's New
+
+Socket reported malicious package artifacts connected to the Mini Shai-Hulud campaign, including affected TanStack npm packages and later additions across npm and PyPI. TanStack's own postmortem says the incident used a GitHub Actions path involving `pull_request_target`, cache poisoning, and OIDC token extraction, rather than stolen npm tokens.
+
+The important detail for normal developers is simple: this kind of malware runs during dependency installation, then looks for credentials. That means the risk is highest on machines or CI jobs that ran installs while holding GitHub, npm, cloud, Kubernetes, Vault, or SSH secrets.
+
+A quick sanity check is concrete: look for affected package names in your lockfile, search installed dependencies for the known payload filename, and inspect project-level editor or agent hook folders for files you did not create.
+
+## Why It Matters
+
+Most people think of package updates as boring maintenance. Supply-chain attacks turn that boring step into a security boundary. A dependency install can run code before your app ever starts.
+
+The right response is not panic. It is a short, boring checklist: identify whether you installed an affected package, look for the known payload files, and rotate secrets if the install happened on a machine that could reach them.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A project folder that uses npm or Python packages", "Terminal access"]}>
+
+1. In each JavaScript project, search your lockfile for affected names. Start with `@tanstack`, `@opensearch-project/opensearch`, and `@squawk`.
+2. Search your installed dependencies for the known payload filename: `router_init.js`.
+3. Check for unexpected project-level persistence files: `.claude/router_runtime.js`, `.claude/setup.mjs`, `.vscode/setup.mjs`, or unusual `.vscode/tasks.json` entries.
+4. If you find an affected package or payload file, stop using that machine for secret-bearing work and rotate reachable tokens: GitHub, npm, cloud keys, SSH keys, Vault, and Kubernetes credentials.
+5. If you do not find a hit, pin your lockfile, keep installs reproducible, and avoid running dependency installs in environments with broad secrets.
+
+</PracticalGuide>

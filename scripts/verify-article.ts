@@ -11,15 +11,18 @@
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const ROOT = path.resolve(new URL('..', import.meta.url).pathname);
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ARTICLES_DIR = path.join(ROOT, 'src', 'content', 'articles');
 const MAX_VERBATIM = 25; // strict per editorial policy
 const SHOULD_FETCH = process.env.VERIFY_FETCH !== '0';
+const FETCH_TIMEOUT_MS = Number(process.env.VERIFY_FETCH_TIMEOUT_MS || 15000);
 
 type Result = { file: string; errors: string[] };
 
 function parseFrontmatter(raw: string): { data: Record<string, unknown>; body: string } | null {
+  raw = raw.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
   if (!raw.startsWith('---')) return null;
   const end = raw.indexOf('\n---', 3);
   if (end < 0) return null;
@@ -100,9 +103,15 @@ function findLongRunOverlap(body: string, source: string, max: number): string |
 }
 
 async function fetchPlainText(url: string): Promise<string | null> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
   try {
     const ua = process.env.USER_AGENT || 'SignalBot/0.1 (+https://signal.pages.dev)';
-    const r = await fetch(url, { headers: { 'user-agent': ua, accept: 'text/html,application/xhtml+xml' }, redirect: 'follow' });
+    const r = await fetch(url, {
+      headers: { 'user-agent': ua, accept: 'text/html,application/xhtml+xml' },
+      redirect: 'follow',
+      signal: controller.signal,
+    });
     if (!r.ok) return null;
     const ct = r.headers.get('content-type') || '';
     if (!ct.includes('html') && !ct.includes('text')) return null;
@@ -116,6 +125,8 @@ async function fetchPlainText(url: string): Promise<string | null> {
       .replace(/\s+/g, ' ');
   } catch {
     return null;
+  } finally {
+    clearTimeout(timeout);
   }
 }
 
@@ -131,7 +142,8 @@ function extractRefUrls(fmRaw: string): string[] {
 async function verifyFile(file: string): Promise<Result> {
   const errors: string[] = [];
   const raw = await fs.readFile(file, 'utf8');
-  const parsed = parseFrontmatter(raw);
+  const normalizedRaw = raw.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+  const parsed = parseFrontmatter(normalizedRaw);
   if (!parsed) {
     errors.push('Missing or malformed frontmatter.');
     return { file, errors };
@@ -139,8 +151,8 @@ async function verifyFile(file: string): Promise<Result> {
   const { data, body } = parsed;
 
   // Frontmatter raw slice for references
-  const fmEnd = raw.indexOf('\n---', 3);
-  const fmRaw = raw.slice(3, fmEnd);
+  const fmEnd = normalizedRaw.indexOf('\n---', 3);
+  const fmRaw = normalizedRaw.slice(3, fmEnd);
 
   for (const k of ['title', 'date', 'category', 'tags', 'summary']) {
     if (!(k in data)) errors.push(`Missing required frontmatter field: ${k}`);

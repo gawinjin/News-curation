@@ -1,0 +1,48 @@
+---
+title: "OpenAI's Codex safety setup is a useful checklist for AI agents"
+date: 2026-05-13
+category: guides
+tags: ["codex", "security", "agents", "safety"]
+summary: "OpenAI described how it runs Codex internally: sandboxing, approvals, network limits, credential controls, and telemetry. Here's the practical version."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "Any AI agent or coding assistant"
+    - "A project with local files"
+references:
+  - title: "Running Codex safely at OpenAI"
+    url: "https://openai.com/index/running-codex-safely"
+    author: "OpenAI"
+    publishedAt: "2026-05-08"
+draft: false
+---
+
+## TL;DR
+
+OpenAI shared the controls it uses to run Codex safely in real workflows. The useful checklist is straightforward: keep agents inside clear file boundaries, require approval for risky actions, limit network access, protect credentials, and keep logs of what the agent did.
+
+## What's New
+
+The post describes Codex as an agent that can inspect repositories, run commands, and use development tools. That makes it more powerful than autocomplete, but also riskier. OpenAI's internal setup combines sandboxing, approvals, managed network policy, credential storage, rules for shell commands, and telemetry.
+
+The important distinction is between low-risk routine work and higher-risk actions. Routine read-only inspection should be easy. Writing outside the workspace, reaching unfamiliar domains, or touching credentials should be visible and reviewed.
+
+This is not only for large companies. A solo developer can copy the principle with fewer tools: keep work inside one folder, avoid giving agents broad secrets, and make approval prompts meaningful instead of clicking yes to everything.
+
+## Why It Matters
+
+AI agents are useful because they act. That is also why they need boundaries. A chatbot that gives bad advice wastes time. An agent with write access, network access, and credentials can create real damage.
+
+The practical move is to treat agent setup like setting up a junior teammate with a locked-down workstation. Give enough access to be useful, keep sensitive systems separate, and require evidence for changes.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["Any AI agent or coding assistant", "A project with local files"]}>
+
+1. Put the project in a dedicated workspace folder. Do not run the agent from your home directory.
+2. Check what the agent can write. If possible, use a workspace-write mode rather than full filesystem access.
+3. Keep `.env`, production credentials, SSH keys, and cloud tokens out of the agent's write path.
+4. Turn network access off by default if your tool supports it. Allow known domains only when the task needs them.
+5. Before accepting an agent change, ask it to list commands run, files changed, tests run, and any action that required approval.
+
+</PracticalGuide>
