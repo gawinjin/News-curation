@@ -1,0 +1,53 @@
+---
+title: "Chip Huyen's AI Engineering keeps the focus on systems"
+date: 2026-05-22
+category: guides
+tags: ["chip-huyen", "ai-engineering", "evals", "systems"]
+summary: "Chip Huyen's AI Engineering frame is practical because it treats models as one part of a system: use case, evaluation, data, latency, cost, and maintenance."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "One AI feature idea"
+    - "A place to write a short design note"
+references:
+  - title: "AI Engineering"
+    url: "https://www.oreilly.com/library/view/ai-engineering/9781098166298/"
+    author: "Chip Huyen"
+  - title: "Evaluate AI Systems"
+    url: "https://www.oreilly.com/library/view/ai-engineering/9781098166298/ch04.html"
+    author: "Chip Huyen"
+  - title: "Designing Machine Learning Systems"
+    url: "https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/"
+    author: "Chip Huyen"
+draft: false
+---
+
+## TL;DR
+
+Chip Huyen's AI Engineering work is useful because it treats an AI product as a system, not a prompt. Before you build, define the use case, evaluation, data path, latency budget, cost budget, failure modes, and maintenance plan.
+
+## What's New
+
+Her AI Engineering book and evaluation chapter give a modern version of a habit she has pushed for years: production AI is an engineering system. Model choice matters, but it is not the whole design.
+
+That means asking boring questions early. What does good output mean? What data enters the system? What happens when the model is wrong? How will you monitor drift? How much latency can users tolerate? What does each request cost?
+
+This is especially important for LLM features because demos are easy. Durable behavior is not.
+
+## Why It Matters
+
+Many teams start AI projects with "which model should we use?" Chip's frame starts with "what system are we building?" That changes the order of work.
+
+For a general reader, the practical lesson is to resist magic thinking. AI is a capability inside a workflow. The workflow still needs inputs, outputs, tests, owners, and maintenance.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["One AI feature idea", "A place to write a short design note"]}>
+
+1. Write the use case in one sentence: user, task, and desired outcome.
+2. Define three failure modes that would make the feature untrustworthy.
+3. Choose one evaluation for each failure mode: human review, assertion, model judge, or user feedback.
+4. Estimate latency and cost per use. Decide what limit would make the feature unacceptable.
+5. Write the maintenance rule: who reviews failures, how often, and what triggers a rollback.
+
+</PracticalGuide>

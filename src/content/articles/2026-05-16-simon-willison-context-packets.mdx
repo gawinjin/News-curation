@@ -1,0 +1,50 @@
+---
+title: "Simon Willison's files-to-prompt pattern makes AI context portable"
+date: 2026-05-16
+category: guides
+tags: ["simon-willison", "context", "llm", "tools"]
+summary: "Simon's files-to-prompt habit is a simple but powerful workflow: package the exact files an AI needs, then ask a focused question."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A project folder"
+    - "Any AI assistant with a large context window"
+references:
+  - title: "files-to-prompt"
+    url: "https://github.com/simonw/files-to-prompt"
+    author: "Simon Willison"
+  - title: "How I use LLMs and ChatGPT"
+    url: "https://feeds.simonwillison.net/series/using-llms/"
+    author: "Simon Willison"
+draft: false
+---
+
+## TL;DR
+
+Simon Willison's `files-to-prompt` tool captures a practical habit: give the AI the exact files it needs, not a vague description of the project. Better context beats longer instructions.
+
+## What's New
+
+`files-to-prompt` is a small command-line tool that turns selected files into a prompt-friendly bundle. That sounds minor until you notice how often AI work fails because the assistant is missing the actual source of truth.
+
+Simon's broader LLM writing reinforces the same idea: treat AI as a tool that works best with precise artifacts, clear questions, and enough surrounding context to reason from the real material.
+
+The repeatable pattern is "context packet first, question second." You gather the relevant files, include paths, preserve structure, and then ask for a review, explanation, rewrite, or patch plan.
+
+## Why It Matters
+
+Most AI mistakes are not mysterious. The model guesses because you made it guess. It does not have the config file, schema, failing test, README, or old implementation.
+
+Context packets make the work more auditable. You can see what the assistant saw. You can shrink the context when it drifts. You can share the same packet with another model and compare answers.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A project folder", "Any AI assistant with a large context window"]}>
+
+1. Pick one small question about a project: why a test fails, how a feature works, or where a refactor should start.
+2. Select only the files that matter: README, package file, relevant source, tests, and error output.
+3. Use `files-to-prompt` or a manual equivalent to create a single context packet with filenames preserved.
+4. Ask one focused question at the end. Do not mix debugging, refactoring, and feature planning in the same prompt.
+5. If the answer guesses, add the missing file and rerun. Treat missing context as the first bug.
+
+</PracticalGuide>

@@ -1,0 +1,51 @@
+---
+title: "Karpathy's training recipe is the best debugging checklist for AI work"
+date: 2026-05-14
+category: guides
+tags: ["karpathy", "training", "debugging", "workflow"]
+summary: "Karpathy's neural-net training recipe is old, but it still teaches the habit every AI builder needs: inspect data, start dumb, and add complexity slowly."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "One AI or data project that feels flaky"
+    - "Access to a few real examples"
+references:
+  - title: "A Recipe for Training Neural Networks"
+    url: "https://karpathy.github.io/2019/04/25/recipe/"
+    author: "Andrej Karpathy"
+    publishedAt: "2019-04-25"
+  - title: "build-nanogpt"
+    url: "https://github.com/karpathy/build-nanogpt"
+    author: "Andrej Karpathy"
+draft: false
+---
+
+## TL;DR
+
+Karpathy's training recipe is a debugging checklist disguised as a neural-net post. The core habit is still right for modern AI work: look at the data first, build the simplest possible baseline, verify each step, and add one piece of complexity at a time.
+
+## What's New
+
+The post predates the current agent wave, but it keeps getting rediscovered because the failure mode has not changed. AI systems still fail silently. A model can produce confident output while the data, prompt, retrieval, label, metric, or tool call is broken.
+
+Karpathy's process starts with data inspection, not model choice. Then it asks for dumb baselines, reproducible runs, expected initial losses, small overfit tests, and careful visualization of what the model actually sees.
+
+That maps cleanly to today's LLM apps. Before tuning prompts or swapping models, inspect real traces. Before adding agent tools, make a single-step baseline. Before trusting a benchmark, overfit a tiny eval set and understand every failure.
+
+## Why It Matters
+
+Most AI projects fail from too much unverified complexity. Teams add retrieval, tools, memory, rerankers, and evaluators before they know whether the basic task is specified correctly.
+
+The recipe gives you a slower but better habit: prove each layer works before adding the next layer. That is practical for researchers, but it is also practical for anyone building a chatbot, document extractor, coding agent, or local model workflow.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["One AI or data project that feels flaky", "Access to a few real examples"]}>
+
+1. Collect 20 real examples from your project. Read them manually before changing code or prompts.
+2. Write down the simplest baseline: a fixed template, keyword rule, small model, or manual answer.
+3. Pick one metric a human can inspect. Avoid vague scores like "quality" until you define what failure looks like.
+4. Run the baseline and inspect every miss. Label whether the problem is input data, task definition, model behavior, or output format.
+5. Add only one improvement. Run the same examples again and keep it only if you can explain why it helped.
+
+</PracticalGuide>

@@ -1,0 +1,50 @@
+---
+title: "Matt Pocock's skills repo shows how to package AI taste"
+date: 2026-05-15
+category: guides
+tags: ["matt-pocock", "skills", "agents", "typescript"]
+summary: "Matt Pocock's public skills folder is a practical pattern: turn your best engineering judgment into reusable agent instructions."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "An AI coding assistant that supports reusable instructions"
+    - "One recurring engineering task"
+references:
+  - title: "mattpocock/skills"
+    url: "https://github.com/mattpocock/skills"
+    author: "Matt Pocock"
+  - title: "Cursor Rules for Better AI Development"
+    url: "https://www.totaltypescript.com/cursor-rules-for-better-ai-development"
+    author: "Matt Pocock"
+draft: false
+---
+
+## TL;DR
+
+Matt Pocock's skills repo is useful because it turns fuzzy engineering taste into reusable instructions. Instead of telling an agent "write better code" every session, you package workflows like TDD, architecture review, issue breakdown, and pre-commit guardrails as skills.
+
+## What's New
+
+The repo is framed as skills pulled from Matt's own Claude setup. The important idea is not that everyone should copy the exact files. It is that AI coding improves when judgment is explicit, named, and reusable.
+
+His Cursor rules article makes the same point in a narrower form: rules should encode project taste and common mistakes, not generic advice the model already knows. Good rules change behavior because they are specific enough to check.
+
+This is a different posture from prompt hacking. It treats prompts as engineering assets: versioned, reviewed, installed, and improved after failures.
+
+## Why It Matters
+
+Many people use agents like they use chat: one instruction at a time. That wastes the hard-earned preferences that make a team good.
+
+A skill lets you preserve those preferences. When your agent writes vague issues, add an issue-writing skill. When it skips tests, add a verification skill. When it overcomplicates TypeScript, add a rule that names the pattern and the preferred alternative.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["An AI coding assistant that supports reusable instructions", "One recurring engineering task"]}>
+
+1. Pick one task your agent repeats badly: planning, test writing, refactoring, PR review, or TypeScript design.
+2. Create one short skill file with a trigger, a checklist, and an expected output format.
+3. Include one example of good output and one anti-pattern to avoid.
+4. Run the skill on a real task. Do not judge it by vibes; compare the output to the old workflow.
+5. After the next failure, edit the skill instead of only correcting the agent in chat.
+
+</PracticalGuide>

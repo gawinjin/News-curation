@@ -1,0 +1,55 @@
+---
+title: "Zed's parallel agents show how multi-agent work should feel"
+date: 2026-05-23
+category: guides
+tags: ["zed", "agents", "coding", "workflow"]
+summary: "Zed's agent work is useful because it treats parallel agents as reviewable threads, not magic background automation."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "A repo with two independent tasks"
+    - "An editor or agent tool that supports multiple threads"
+references:
+  - title: "Introducing Parallel Agents in Zed"
+    url: "https://zed.dev/blog/parallel-agents"
+    author: "Zed"
+    publishedAt: "2026-04"
+  - title: "Introducing Zed's Agent Metrics"
+    url: "https://zed.dev/blog/agent-metrics"
+    author: "Zed"
+    publishedAt: "2026-04"
+  - title: "Agent Metrics"
+    url: "https://zed.dev/agent-metrics"
+    author: "Zed"
+draft: false
+---
+
+## TL;DR
+
+Zed's parallel-agent work is practical because it makes multi-agent coding visible: separate threads, separate contexts, reviewable results, and public aggregate metrics. The lesson is not "run more agents." It is "split work so independent agents can be inspected."
+
+## What's New
+
+Zed added parallel agents so developers can run multiple independent threads in the same workspace, potentially using different agents for different jobs. The feature is paired with agent metrics that show adoption and turn-time data across tools.
+
+That combination matters. It treats agent work as a workflow with observability, not as background magic. A developer can assign separate tasks, review each thread, and compare how agents behave.
+
+The approach fits the emerging pattern from harness engineering: parallelism only helps when tasks are sliced cleanly and review stays human-readable.
+
+## Why It Matters
+
+Running one agent on a giant vague task often produces a giant vague diff. Running several agents on overlapping tasks creates merge pain.
+
+The useful middle path is vertical slicing. One agent handles a small feature path, another writes tests, another investigates a bug, and the human reviews results before integration.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["A repo with two independent tasks", "An editor or agent tool that supports multiple threads"]}>
+
+1. Pick two tasks that do not touch the same files. If they overlap, split them again.
+2. Write a one-paragraph brief for each task: goal, files in scope, files out of scope, and verification command.
+3. Start one agent thread per task. Do not let them edit the same module unless you are ready to resolve conflicts.
+4. Review each result separately. Ask for tests, changed files, and known risks.
+5. Integrate only after both threads pass their own checks. Parallel work still needs sequential review.
+
+</PracticalGuide>

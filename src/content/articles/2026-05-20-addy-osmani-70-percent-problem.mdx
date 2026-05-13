@@ -1,0 +1,52 @@
+---
+title: "Addy Osmani's 70 percent problem is the real AI coding bottleneck"
+date: 2026-05-20
+category: guides
+tags: ["addy-osmani", "coding", "agents", "workflow"]
+summary: "Addy Osmani's useful warning is that AI can quickly get you most of the way there, but the last 30 percent still needs engineering judgment."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "One AI-generated code change"
+    - "A test or review checklist"
+references:
+  - title: "AI's 70% Problem"
+    url: "https://zed.dev/blog/ai-70-problem-addy-osmani"
+    author: "Addy Osmani"
+    publishedAt: "2025-11-04"
+  - title: "Agentic Engineering"
+    url: "https://addyosmani.com/blog/agentic-engineering/"
+    author: "Addy Osmani"
+    publishedAt: "2026-02-04"
+draft: false
+---
+
+## TL;DR
+
+Addy Osmani's 70 percent problem is the feeling that AI gets a feature mostly working fast, then leaves the hard part to you: correctness, edge cases, performance, accessibility, security, and maintainability. The fix is not less AI. It is a better finish-line checklist.
+
+## What's New
+
+In the Zed interview and his agentic-engineering writing, Addy separates casual vibe coding from disciplined AI-assisted engineering. Agents can explore, scaffold, and accelerate. But production software still needs review, tests, constraints, and an owner who understands the system.
+
+The 70 percent frame is useful because it names a common trap. The early output feels impressive because the blank page disappears. The last third is less exciting: reading the diff, testing edge cases, deleting unnecessary abstraction, and making the code fit the existing product.
+
+That last third is where engineering value concentrates.
+
+## Why It Matters
+
+If you accept AI output when it first "looks right," you will ship fragile software. If you reject AI because it is imperfect, you miss useful leverage.
+
+The practical middle path is to use agents for acceleration while making the human review process stricter, not looser. The human becomes the closer: deciding what is good enough, what must be simplified, and what needs evidence before shipping.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["One AI-generated code change", "A test or review checklist"]}>
+
+1. Ask the agent to produce the change, but require it to include tests or a verification plan.
+2. Before reading the code, write your own acceptance checklist: user flow, edge cases, errors, performance, accessibility, and rollback.
+3. Review the diff against the checklist. Delete code that solves problems you did not ask for.
+4. Run the tests and one manual smoke path. If there are no tests, add at least one targeted check before merging.
+5. Ask the agent for a "last 30 percent" pass: simplify, remove dead code, document assumptions, and list residual risks.
+
+</PracticalGuide>

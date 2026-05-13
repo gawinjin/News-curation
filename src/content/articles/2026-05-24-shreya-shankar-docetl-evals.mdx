@@ -1,0 +1,56 @@
+---
+title: "Shreya Shankar's DocETL work makes evals part of data processing"
+date: 2026-05-24
+category: research
+tags: ["shreya-shankar", "docetl", "evals", "data"]
+summary: "Shreya Shankar's DocETL work shows a practical pattern for unstructured data: decompose the task, rewrite it, and evaluate each step."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "25 min"
+  prerequisites:
+    - "A folder of messy documents"
+    - "One extraction or classification task"
+references:
+  - title: "DocETL: Agentic Query Rewriting and Evaluation for Complex Document Processing"
+    url: "https://arxiv.org/abs/2410.12189"
+    author: "Shreya Shankar et al."
+    publishedAt: "2024-10-16"
+  - title: "Reimagining LLM-Powered Unstructured Data Analysis with DocETL"
+    url: "https://data-people-group.github.io/blogs/2024/09/24/docetl/"
+    author: "Shreya Shankar and Aditya G. Parameswaran"
+    publishedAt: "2024-09-24"
+  - title: "Who Validates the Validators?"
+    url: "https://arxiv.org/abs/2404.12272"
+    author: "Shreya Shankar et al."
+    publishedAt: "2024-04-18"
+draft: false
+---
+
+## TL;DR
+
+Shreya Shankar's DocETL work is a practical warning: long-context models do not magically solve messy document analysis. You still need to decompose tasks, rewrite vague operations into clearer steps, and evaluate each step against what humans actually want.
+
+## What's New
+
+DocETL frames document processing as a pipeline that an agent can rewrite and optimize. Instead of asking a model to "analyze these documents," the system can split work into extraction, classification, aggregation, and validation steps.
+
+Her validator paper adds a second lesson: evaluators also need validation. People often define criteria only after seeing model outputs. That means evaluation is not a one-time rubric-writing exercise. It is iterative.
+
+Together, the work gives a concrete pattern for AI data processing: structure the task, inspect intermediate outputs, and keep refining the checks as real failures appear.
+
+## Why It Matters
+
+Many organizations have piles of unstructured text: contracts, support tickets, policy documents, medical notes, public records, and research PDFs. AI can help, but only if the pipeline is auditable.
+
+If the model extracts the wrong entity or groups documents under the wrong label, a polished final answer hides the mistake. Step-level evals make those mistakes visible.
+
+<PracticalGuide timeToTry="25 min" prerequisites={["A folder of messy documents", "One extraction or classification task"]}>
+
+1. Pick one document task, such as extracting names, dates, claims, obligations, or complaints.
+2. Break it into steps: read, extract, normalize, classify, aggregate, and verify.
+3. For each step, write one check a human can inspect. Example: "Did every extracted date appear in the source text?"
+4. Run the pipeline on 10 documents and inspect intermediate outputs, not only the final summary.
+5. When you find a failure, update the step or the check before scaling to more documents.
+
+</PracticalGuide>

@@ -1,0 +1,55 @@
+---
+title: "Hamel Husain's evals advice starts with humans reading traces"
+date: 2026-05-17
+category: guides
+tags: ["hamel", "evals", "agents", "quality"]
+summary: "Hamel's evals writing is practical because it starts with real traces, domain experts, and small custom review tools before automation."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "30 min"
+  prerequisites:
+    - "A working AI feature or agent"
+    - "At least 20 real or realistic traces"
+references:
+  - title: "Evals Skills for Coding Agents"
+    url: "https://hamel.dev/blog/posts/evals-skills/"
+    author: "Hamel Husain"
+    publishedAt: "2026-03-02"
+  - title: "LLM Evals: Everything You Need to Know"
+    url: "https://hamel.dev/blog/posts/evals-faq/index.html"
+    author: "Hamel Husain"
+    publishedAt: "2026-01-15"
+  - title: "Your AI Product Needs Evals"
+    url: "https://hamel.dev/blog/posts/evals/index.html"
+    author: "Hamel Husain"
+draft: false
+---
+
+## TL;DR
+
+Hamel Husain's evals advice is useful because it refuses to start with fancy metrics. Start by logging traces, reading failures, involving the person who knows what good looks like, and building a small review workflow. Automation comes after you understand the errors.
+
+## What's New
+
+His recent evals-skills work applies that habit directly to coding agents: teach the agent how to run and improve evals as part of the development loop. The deeper FAQ argues that a single strong domain reviewer often beats a committee of loosely aligned annotators.
+
+The recurring pattern is trace-first. A trace is the real sequence of input, model output, tool call, retrieval result, and final behavior. If reviewers cannot see the trace clearly, their labels will be slow and inconsistent.
+
+Hamel also pushes a pragmatic tool choice: build a small custom annotation interface when the domain needs it. A spreadsheet is fine at first, but a tailored interface can make review much faster.
+
+## Why It Matters
+
+Many AI teams claim they need evals but skip the uncomfortable part: reading the product's actual failures. Then they buy a dashboard or ask another model to judge outputs and wonder why the score does not match user trust.
+
+The practical lesson is to make failure visible. Once you can see recurring failure modes, you can build small checks, model judges, or regression suites that actually measure the thing users care about.
+
+<PracticalGuide timeToTry="30 min" prerequisites={["A working AI feature or agent", "At least 20 real or realistic traces"]}>
+
+1. Export 20 traces with the full context a human needs to judge the outcome.
+2. Pick one reviewer who understands the user need. Ask for pass/fail labels and a short reason for each failure.
+3. Group failures into 3 to 5 categories. Avoid building metrics before you know the categories.
+4. Turn the most common category into one simple eval: a checklist, assertion, or model judge with examples.
+5. Run that eval before each prompt, model, retrieval, or tool change. Track whether failures go down.
+
+</PracticalGuide>

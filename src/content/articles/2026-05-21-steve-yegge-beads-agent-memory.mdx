@@ -1,0 +1,55 @@
+---
+title: "Steve Yegge's Beads is a practical answer to agent amnesia"
+date: 2026-05-21
+category: guides
+tags: ["steve-yegge", "agents", "memory", "workflow"]
+summary: "Beads turns agent work into a git-backed task graph, which helps agents resume, coordinate, and stop losing work between sessions."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "A code project with more than one open task"
+    - "A coding agent"
+references:
+  - title: "Introducing Beads: A coding agent memory system"
+    url: "https://steve-yegge.medium.com/introducing-beads-a-coding-agent-memory-system-637d7d92514a"
+    author: "Steve Yegge"
+    publishedAt: "2025-10"
+  - title: "Agentic Memory"
+    url: "https://www.dolthub.com/blog/2026-01-22-agentic-memory/"
+    author: "DoltHub"
+    publishedAt: "2026-01-22"
+  - title: "beads"
+    url: "https://github.com/steveyegge/beads"
+    author: "Steve Yegge"
+draft: false
+---
+
+## TL;DR
+
+Steve Yegge's Beads is a small idea with a big lesson: agents need external memory that is structured, queryable, and versioned with the code. Markdown plans are not enough once work spans multiple sessions or multiple agents.
+
+## What's New
+
+Beads stores work as a git-backed task graph rather than a pile of stale plan files. The agent can query ready work, record discovered issues, link dependencies, and resume after context loss.
+
+Yegge's post is loud and opinionated, but the underlying diagnosis is practical. Coding agents forget. They lose work. They ignore side problems when context gets tight. They declare victory because the chat session is ending, not because the system is done.
+
+DoltHub's agentic-memory writeup points to the same pattern: task state belongs near the code, and agents perform better when they can query structured work instead of rereading prose.
+
+## Why It Matters
+
+As soon as you use agents for real engineering, "what should it do next?" becomes a systems problem. A chat transcript is not a project manager. A flat TODO file is not a dependency graph.
+
+Beads may or may not be the exact tool you adopt. The important habit is to give agents durable work memory: open tasks, blockers, dependencies, owners, and history.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["A code project with more than one open task", "A coding agent"]}>
+
+1. List every open task in the project. Include bugs the agent discovered but did not fix.
+2. Convert the list into structured issues with status, priority, blocker, and source.
+3. Tell the agent to query ready work before starting and to create a new issue when it discovers unrelated work.
+4. Keep the issue state versioned with the repo, whether you use Beads, GitHub issues, or local JSON/Markdown.
+5. End each session by asking the agent to update task state before summarizing code changes.
+
+</PracticalGuide>

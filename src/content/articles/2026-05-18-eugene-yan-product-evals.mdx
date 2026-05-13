@@ -1,0 +1,51 @@
+---
+title: "Eugene Yan's three-step eval loop is the simplest product habit"
+date: 2026-05-18
+category: guides
+tags: ["eugene-yan", "evals", "product", "llm"]
+summary: "Eugene Yan reduces product evals to a useful loop: label a small dataset, align evaluators, and run the harness with every change."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "25 min"
+  prerequisites:
+    - "A prompt or AI feature you change often"
+    - "A small spreadsheet"
+references:
+  - title: "Product Evals in Three Simple Steps"
+    url: "https://eugeneyan.com/writing/product-evals/"
+    author: "Eugene Yan"
+    publishedAt: "2025-11"
+  - title: "Evaluating the Effectiveness of LLM-Evaluators"
+    url: "https://eugeneyan.com/writing/llm-evaluators/"
+    author: "Eugene Yan"
+draft: false
+---
+
+## TL;DR
+
+Eugene Yan's product-evals loop is simple enough to copy: label a small dataset, align one evaluator per quality dimension, and run the eval harness with every config change. The point is not to make evaluation academic. It is to stop shipping blind.
+
+## What's New
+
+The three-step article is useful because it compresses a lot of production AI advice into a small operating loop. Start with human labels. Use binary pass/fail or win/lose labels where possible. Build evaluators for one dimension at a time. Then rerun the harness every time you change prompts, models, retrieval, or tool behavior.
+
+His longer survey on LLM evaluators explains when model judges help and where they mislead. The practical takeaway is that an evaluator needs its own evaluation. If it disagrees with humans on important failures, it is just another flaky model in the pipeline.
+
+This is a product habit, not only an ML habit. It creates a before/after table so teams can see whether a change helped the user-facing outcome.
+
+## Why It Matters
+
+AI teams often make changes because a demo looked better. That is risky because demos overrepresent the examples you remember.
+
+A small eval loop creates memory. It lets you ask whether a prompt change fixed old failures, whether it created new ones, and whether the improvement is large enough to ship.
+
+<PracticalGuide timeToTry="25 min" prerequisites={["A prompt or AI feature you change often", "A small spreadsheet"]}>
+
+1. Sample 50 examples from the feature. Include normal cases and known bad cases.
+2. Add a pass/fail column for one quality dimension, such as faithfulness, refusal correctness, or formatting.
+3. Label the examples yourself or with the domain owner. Keep the rubric short.
+4. Write one model-judge prompt for that dimension and compare its labels with the human labels.
+5. Every time you change the system, rerun the 50 examples and record the pass rate plus the worst new failures.
+
+</PracticalGuide>
