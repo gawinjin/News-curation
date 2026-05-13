@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Not found" description="That page doesn't exist." pathname="/404">
+  <section class="max-w-prose mx-auto px-5 sm:px-8 py-24 text-center">
+    <p class="text-xs uppercase tracking-[0.18em] text-[color:var(--accent)] font-medium">404</p>
+    <h1 class="mt-3 font-serif text-5xl font-bold tracking-tight">Lost signal.</h1>
+    <p class="mt-4 text-[color:var(--muted)]">
+      That page doesn't exist — or it never did. Head back to <a href="/">the latest stories</a>.
+    </p>
+  </section>
+</BaseLayout>

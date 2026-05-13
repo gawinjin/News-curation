@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fafaf7;
+  --ink: #15171a;
+  --muted: #5b6068;
+  --accent: #b4391f;
+  --accent-soft: #f6e4dc;
+  --rule: #e6e3da;
+  --card: #ffffff;
+}
+
+[data-theme='dark'] {
+  --bg: #0f1012;
+  --ink: #ececea;
+  --muted: #9aa0a8;
+  --accent: #ff7a5c;
+  --accent-soft: #2a1a16;
+  --rule: #23252a;
+  --card: #16181c;
+}
+
+html {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--rule);
+  text-underline-offset: 3px;
+  transition: color 120ms ease, text-decoration-color 120ms ease;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+/* Editorial article typography */
+.prose-article {
+  font-size: 1.075rem;
+  line-height: 1.75;
+  color: var(--ink);
+}
+
+.prose-article h2 {
+  font-family: 'Source Serif 4', 'Newsreader', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.prose-article h3 {
+  font-family: 'Source Serif 4', 'Newsreader', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-article p {
+  margin: 1.1rem 0;
+}
+
+.prose-article ul,
+.prose-article ol {
+  margin: 1.1rem 0 1.1rem 1.25rem;
+  padding-left: 0.75rem;
+}
+
+.prose-article ul li {
+  list-style: disc;
+  margin: 0.25rem 0;
+}
+
+.prose-article ol li {
+  list-style: decimal;
+  margin: 0.25rem 0;
+}
+
+.prose-article blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 0.25rem 0 0.25rem 1rem;
+  margin: 1.5rem 0;
+  color: var(--muted);
+  font-style: italic;
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+
+.prose-article code {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.92em;
+  background: var(--accent-soft);
+  color: var(--ink);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+.prose-article pre {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  overflow-x: auto;
+  margin: 1.25rem 0;
+  font-size: 0.9rem;
+}
+
+.prose-article pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.prose-article hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2rem 0;
+}
+
+.prose-article a {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+}
+
+/* Subtle entrance animation */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-up {
+    animation: fadeUp 480ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Reading progress bar */
+#reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--accent);
+  z-index: 60;
+  transition: width 80ms linear, opacity 200ms ease;
+  opacity: 0;
+}
+
+/* Tag chip hover */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  background: var(--card);
+  transition: transform 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+
+.chip:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.chip.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* Pagefind UI override (light + dark friendly) */
+:root {
+  --pagefind-ui-primary: var(--accent);
+  --pagefind-ui-text: var(--ink);
+  --pagefind-ui-background: var(--card);
+  --pagefind-ui-border: var(--rule);
+  --pagefind-ui-tag: var(--accent-soft);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 8px;
+  --pagefind-ui-font: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}

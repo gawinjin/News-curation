@@ -1,0 +1,61 @@
+---
+interface Props {
+  type: 'youtube' | 'x' | 'image';
+  src: string;
+  alt?: string;
+  caption?: string;
+}
+const { type, src, alt = '', caption } = Astro.props;
+
+function youtubeId(url: string): string | null {
+  try {
+    const u = new URL(url);
+    if (u.hostname.includes('youtu.be')) return u.pathname.slice(1);
+    if (u.searchParams.get('v')) return u.searchParams.get('v');
+    const parts = u.pathname.split('/');
+    const idx = parts.findIndex((p) => p === 'embed' || p === 'shorts');
+    if (idx >= 0 && parts[idx + 1]) return parts[idx + 1];
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+const id = type === 'youtube' ? youtubeId(src) : null;
+---
+
+<figure class="my-8 not-prose">
+  {type === 'youtube' && id && (
+    <div class="relative w-full aspect-video rounded-xl overflow-hidden border border-[color:var(--rule)] bg-black">
+      <iframe
+        class="absolute inset-0 w-full h-full"
+        src={`https://www.youtube-nocookie.com/embed/${id}`}
+        title={alt || 'YouTube video'}
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  )}
+
+  {type === 'x' && (
+    <a
+      href={src}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="block rounded-xl border border-[color:var(--rule)] bg-[color:var(--card)] px-5 py-4 hover:border-[color:var(--accent)] transition-colors"
+    >
+      <div class="flex items-center justify-between gap-3">
+        <span class="text-sm text-[color:var(--muted)]">View original post on X →</span>
+        <span class="text-xs text-[color:var(--muted)]">{new URL(src).hostname}</span>
+      </div>
+      {alt && <p class="mt-2 text-sm italic">{alt}</p>}
+    </a>
+  )}
+
+  {type === 'image' && (
+    <img src={src} alt={alt} class="rounded-xl border border-[color:var(--rule)] w-full" loading="lazy" />
+  )}
+
+  {caption && <figcaption class="mt-2 text-xs text-[color:var(--muted)] text-center">{caption}</figcaption>}
+</figure>

@@ -1,0 +1,66 @@
+---
+interface Ref {
+  title: string;
+  url: string;
+  author?: string;
+  publishedAt?: string;
+}
+interface Social {
+  author: string;
+  url: string;
+  platform: string;
+  postedAt?: string;
+}
+interface Props {
+  references: Ref[];
+  social?: Social[];
+}
+const { references, social = [] } = Astro.props;
+
+function host(url: string) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return url;
+  }
+}
+---
+
+<section class="mt-12 pt-6 border-t border-[color:var(--rule)] not-prose" aria-labelledby="references-heading">
+  <h2 id="references-heading" class="text-xs uppercase tracking-wide text-[color:var(--muted)] mb-3">
+    References
+  </h2>
+  <ol class="space-y-2 list-decimal list-inside text-sm">
+    {references.map((r) => (
+      <li>
+        <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline decoration-[color:var(--accent)]">
+          {r.title}
+        </a>
+        <span class="text-[color:var(--muted)]">
+          {r.author && <> — {r.author}</>}
+          {' '}· {host(r.url)}
+          {r.publishedAt && <> · {r.publishedAt}</>}
+        </span>
+      </li>
+    ))}
+  </ol>
+
+  {social.length > 0 && (
+    <>
+      <h2 class="text-xs uppercase tracking-wide text-[color:var(--muted)] mt-6 mb-3">Social posts cited</h2>
+      <ul class="space-y-2 text-sm">
+        {social.map((s) => (
+          <li>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" class="underline decoration-[color:var(--accent)]">
+              {s.author} on {s.platform}
+            </a>
+            <span class="text-[color:var(--muted)]">
+              {' '}· {host(s.url)}
+              {s.postedAt && <> · {s.postedAt}</>}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </>
+  )}
+</section>

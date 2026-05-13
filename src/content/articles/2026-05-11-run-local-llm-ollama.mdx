@@ -1,0 +1,54 @@
+---
+title: "Run a real LLM on your laptop in 10 minutes with Ollama"
+date: 2026-05-11
+category: guides
+tags: ["local-llm", "ollama", "huggingface", "privacy"]
+summary: "You don't need a GPU or a paid plan to try a capable open model on your own machine. Here's the simplest way to get a chatbot running entirely on your laptop — useful when you want privacy or offline access."
+audience: general
+featured: true
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A laptop with at least 8 GB of RAM (16 GB is much better)"
+    - "Around 5 GB of free disk space"
+    - "Permission to install software"
+references:
+  - title: "Ollama — official site"
+    url: "https://ollama.com/"
+    author: "Ollama"
+  - title: "Hugging Face Hub — models index"
+    url: "https://huggingface.co/models"
+    author: "Hugging Face"
+draft: false
+---
+
+## TL;DR
+
+Free, open models are now small enough and clever enough to run on a normal laptop, with no GPU and no cloud account. The fastest way to try one is **Ollama** — a single-install app that pulls a model and gives you a chat in your terminal. We'll set it up and run a short Q&A in about ten minutes.
+
+## What's New
+
+Two trends made this easy in 2026. First, small open models in the 3–8B parameter range got dramatically more capable for chat-style tasks. Second, runtimes like Ollama hide every awkward step: quantization, file formats, GPU detection. You type one command and it works.
+
+Hugging Face is where most of these models actually live — it's the public hub for downloads. Ollama just wraps a curated subset behind friendly names like `llama3` or `phi`.
+
+## Why It Matters
+
+A local model is slower than a top cloud model, and worse at the hardest tasks. So why bother?
+
+- **Privacy.** Nothing leaves your machine. Useful for sensitive notes or work documents.
+- **Offline.** Trains, planes, dodgy hotel Wi-Fi.
+- **Cost ceiling.** Once installed, it's free to run.
+- **Curiosity.** You'll understand what these models really are when you can poke one directly.
+
+You'll probably keep using a cloud model for hard work. But having a local one in your back pocket is the kind of capability that felt sci-fi two years ago.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A laptop with ≥8 GB RAM", "5 GB free disk", "Permission to install software"]}>
+
+1. Go to **ollama.com** and click **Download**. Pick your OS (macOS, Windows, or Linux). Install like any normal app.
+2. Open a terminal. On macOS it's `Terminal`; on Windows, `PowerShell`; on Linux, your usual shell.
+3. Type `ollama run llama3.2` and press Enter. It will download about 2 GB the first time — leave it running.
+4. When you see a prompt (`>>>`), type a question — e.g., "Explain what RAM is to a curious 12-year-old."
+5. To stop the chat, type `/bye`. To remove the model later: `ollama rm llama3.2`. To try another model from Hugging Face's curated list, visit `ollama.com/library` and pick one that fits your RAM (smaller models = faster, less smart).
+
+</PracticalGuide>

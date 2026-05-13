@@ -1,0 +1,54 @@
+---
+import { CATEGORIES } from '../lib/categories';
+import type { CategorySlug } from '../lib/categories';
+
+interface Props {
+  href: string;
+  title: string;
+  summary: string;
+  date: Date;
+  category: CategorySlug;
+  tags: string[];
+  size?: 'sm' | 'md' | 'lg';
+  featured?: boolean;
+}
+
+const { href, title, summary, date, category, tags, size = 'md', featured = false } = Astro.props;
+
+const dateLabel = date.toLocaleDateString('en-US', {
+  month: 'short',
+  day: 'numeric',
+  year: 'numeric',
+});
+
+const titleSizeClass =
+  size === 'lg' ? 'text-3xl md:text-4xl' : size === 'sm' ? 'text-lg' : 'text-2xl';
+---
+
+<a
+  href={href}
+  class="group block rounded-xl border border-[color:var(--rule)] bg-[color:var(--card)] p-5 sm:p-6 transition-transform hover:-translate-y-0.5 hover:border-[color:var(--accent)]"
+  data-featured={featured ? 'true' : undefined}
+>
+  <div class="flex items-center gap-3 text-xs text-[color:var(--muted)] mb-3">
+    <span class="font-medium text-[color:var(--accent)] uppercase tracking-wide">{CATEGORIES[category].label}</span>
+    <span aria-hidden="true">·</span>
+    <time datetime={date.toISOString()}>{dateLabel}</time>
+  </div>
+
+  <h2
+    class={`font-serif font-semibold tracking-tight leading-tight mb-2 ${titleSizeClass} group-hover:text-[color:var(--accent)] transition-colors`}
+  >
+    {title}
+  </h2>
+
+  <p class="text-[color:var(--muted)] leading-relaxed">{summary}</p>
+
+  {tags.length > 0 && (
+    <div class="mt-4 flex flex-wrap gap-1.5">
+      {tags.slice(0, 4).map((t) => (
+        <span class="chip">{t}</span>
+      ))}
+    </div>
+  )}
+</a>

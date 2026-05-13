@@ -1,0 +1,35 @@
+---
+// Pagefind UI mount point. Pagefind itself is added at build time by `pagefind --site dist`.
+// In dev (no Pagefind index), we render a friendly placeholder.
+---
+
+<div id="search" class="min-h-[200px]">
+  <noscript>
+    <p class="text-sm text-[color:var(--muted)]">Search requires JavaScript.</p>
+  </noscript>
+</div>
+
+<link rel="stylesheet" href="/pagefind/pagefind-ui.css" onerror="this.remove()" />
+<script is:inline>
+  (function () {
+    async function initSearch() {
+      const el = document.getElementById('search');
+      if (!el || el.dataset.initialized) return;
+      try {
+        const mod = await import('/pagefind/pagefind-ui.js');
+        new mod.PagefindUI({
+          element: '#search',
+          showSubResults: true,
+          showImages: false,
+          resetStyles: false,
+        });
+        el.dataset.initialized = 'true';
+      } catch (e) {
+        el.innerHTML =
+          '<p class="text-sm" style="color:var(--muted)">Search is generated at build time. Run <code>npm run build</code> and visit the deployed site.</p>';
+      }
+    }
+    initSearch();
+    document.addEventListener('astro:after-swap', initSearch);
+  })();
+</script>

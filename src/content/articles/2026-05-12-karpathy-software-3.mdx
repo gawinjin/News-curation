@@ -1,0 +1,45 @@
+---
+title: "Karpathy on 'Software 3.0' — and the one habit you can copy today"
+date: 2026-05-12
+category: insights
+tags: ["karpathy", "ideas", "workflow", "llm"]
+summary: "Andrej Karpathy's framing of LLM-native software ('Software 3.0') is a useful lens for everyday users — not just engineers. Here's what it means and a 10-minute habit you can try on your own work."
+audience: general
+featured: true
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "Any chat-style AI you already use (Claude, ChatGPT, Gemini)"
+    - "A real piece of writing you're working on"
+references:
+  - title: "Karpathy — personal site"
+    url: "https://karpathy.github.io/"
+    author: "Andrej Karpathy"
+draft: false
+---
+
+## TL;DR
+
+Andrej Karpathy has been popularizing the idea of "Software 3.0": software whose behavior you shape by writing prompts in plain English, rather than code (Software 1.0) or training data (Software 2.0). For a curious general user, the practical takeaway is simple — your prompt is the program, so treat it like one.
+
+## What's New
+
+The framing isn't a single announcement; it's a thread Karpathy has been pulling on for a while across talks and short essays on his site and social channels. The version most people quote: 1.0 is hand-written code, 2.0 is neural networks trained on data, 3.0 is software you specify by writing English instructions to a capable model. The same neural network "runs" many different programs depending on how you prompt it.
+
+That sounds abstract, but it has a concrete consequence: in 3.0, the artifact you save and reuse isn't a binary — it's a prompt. The good ones get edited, versioned, and shared, much like code.
+
+## Why It Matters
+
+Most non-engineers use AI in a one-shot way: type a question, take the answer, move on. The Software 3.0 lens nudges you toward something more durable. If a prompt works once, save it. If it almost works, edit it until it does. Over a few weeks you accumulate a small toolkit of prompts that handle your recurring chores — meeting notes, status updates, code reviews, school homework summaries.
+
+This is not a "ten productivity hacks" thing. It's a small shift in posture: you are writing programs in English now, whether you call it that or not.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["Any chat-style AI you already use", "A real piece of writing"]}>
+
+1. Pick one task you do at least weekly — e.g., turning rough meeting notes into a clean recap.
+2. Open your AI assistant and write a single prompt that does it. Be specific: who the audience is, the format, the tone, and what to leave out.
+3. Run it on real notes. Note exactly where the output is wrong or weak.
+4. Edit the prompt to address those weaknesses (one fix per round). Run again. Repeat until the output needs no edits.
+5. Save the final prompt somewhere you'll find it — a notes app, a code snippet manager, a private repo. Name it like a function: `meeting-notes-to-recap-v3`.
+
+</PracticalGuide>

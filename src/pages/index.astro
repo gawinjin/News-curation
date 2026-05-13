@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { CATEGORIES, CATEGORY_ORDER } from '../lib/categories';
+import { getCollection } from 'astro:content';
+import { SITE } from '../lib/site';
+
+const all = (await getCollection('articles', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+
+const featured = all.filter((a) => a.data.featured).slice(0, 3);
+const featuredOrLatest = featured.length ? featured : all.slice(0, 3);
+const featuredIds = new Set(featuredOrLatest.map((a) => a.id));
+const latest = all.filter((a) => !featuredIds.has(a.id)).slice(0, 9);
+
+const allTags = Array.from(new Set(all.flatMap((a) => a.data.tags))).slice(0, 14);
+---
+
+<BaseLayout title={undefined} description={SITE.description} pathname="/">
+  <section class="max-w-page mx-auto px-5 sm:px-8 pt-14 pb-10">
+    <div class="max-w-3xl">
+      <p class="text-xs uppercase tracking-[0.18em] text-[color:var(--accent)] font-medium fade-up">
+        AI news, curated.
+      </p>
+      <h1
+        class="mt-3 font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight fade-up"
+      >
+        This week in AI, <span class="italic text-[color:var(--accent)]">made useful.</span>
+      </h1>
+      <p class="mt-5 text-lg text-[color:var(--muted)] max-w-2xl fade-up">
+        New models, real research, and ideas from the people building this stuff — rewritten in plain language with a
+        practical guide so you can actually try it today.
+      </p>
+    </div>
+  </section>
+
+  <section class="max-w-page mx-auto px-5 sm:px-8" aria-label="Featured">
+    <div class="grid gap-5 md:grid-cols-3">
+      {featuredOrLatest.map((a, i) => (
+        <ArticleCard
+          href={`/articles/${a.slug}`}
+          title={a.data.title}
+          summary={a.data.summary}
+          date={a.data.date}
+          category={a.data.category}
+          tags={a.data.tags}
+          size={i === 0 ? 'lg' : 'md'}
+          featured
+        />
+      ))}
+    </div>
+  </section>
+
+  <section class="max-w-page mx-auto px-5 sm:px-8 mt-12" aria-label="Categories">
+    <div class="flex flex-wrap items-center gap-2 text-sm">
+      <span class="text-xs uppercase tracking-wide text-[color:var(--muted)] mr-2">Browse</span>
+      {CATEGORY_ORDER.map((c) => (
+        <a href={`/category/${c}`} class="chip">{CATEGORIES[c].label}</a>
+      ))}
+      {allTags.length > 0 && (
+        <>
+          <span class="text-xs uppercase tracking-wide text-[color:var(--muted)] mx-2">Tags</span>
+          {allTags.map((t) => (
+            <a href={`/tag/${t}`} class="chip">#{t}</a>
+          ))}
+        </>
+      )}
+    </div>
+  </section>
+
+  {latest.length > 0 && (
+    <section class="max-w-page mx-auto px-5 sm:px-8 mt-12" aria-label="Latest">
+      <div class="flex items-end justify-between mb-5">
+        <h2 class="font-serif text-2xl font-semibold tracking-tight">Latest</h2>
+        <a href="/archive" class="text-sm text-[color:var(--muted)] hover:text-[color:var(--accent)]">View archive →</a>
+      </div>
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {latest.map((a) => (
+          <ArticleCard
+            href={`/articles/${a.slug}`}
+            title={a.data.title}
+            summary={a.data.summary}
+            date={a.data.date}
+            category={a.data.category}
+            tags={a.data.tags}
+            size="sm"
+          />
+        ))}
+      </div>
+    </section>
+  )}
+</BaseLayout>

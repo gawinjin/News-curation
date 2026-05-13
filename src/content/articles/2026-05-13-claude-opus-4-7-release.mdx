@@ -1,0 +1,51 @@
+---
+title: "Claude Opus 4.7 lands — what's actually different for everyday users"
+date: 2026-05-13
+category: model-releases
+tags: ["claude", "anthropic", "models", "how-to"]
+summary: "Anthropic shipped Claude Opus 4.7 as its newest flagship model. Here's what changed for normal users — and how to try it in five minutes without writing a line of code."
+audience: general
+featured: true
+practicalGuide:
+  timeToTry: "5 min"
+  prerequisites:
+    - "A free Claude.ai account"
+    - "A browser (any)"
+references:
+  - title: "Claude Opus 4.7 — release notes"
+    url: "https://www.anthropic.com/news/claude-opus-4-7"
+    author: "Anthropic"
+    publishedAt: "2026-05-13"
+  - title: "Anthropic news index"
+    url: "https://www.anthropic.com/news"
+    author: "Anthropic"
+draft: false
+---
+
+## TL;DR
+
+Anthropic released Claude Opus 4.7, the latest version of its top-tier model. The headline change for general users is faster, sharper responses on long tasks — the kind where you'd previously give up and start over. You can try it for free in the Claude.ai web app right now; no setup needed.
+
+## What's New
+
+Opus 4.7 is the fourth bump on the Opus 4 line. It is positioned as Anthropic's strongest model for complex, multi-step thinking — writing a draft from a messy brief, planning a trip with constraints, working through a hairy spreadsheet. In the official release, Anthropic highlights improvements in instruction-following stability and tool use over very long sessions.
+
+A "Fast" mode keeps the same model but streams output more aggressively, so you see text appearing sooner. It is toggled in chat, not a separate model.
+
+For developers, the API model identifier is `claude-opus-4-7`. For everyone else, you simply pick "Opus 4.7" from the model menu inside Claude.ai.
+
+## Why It Matters
+
+If you have tried earlier Claude versions and bounced off because long tasks drifted off-topic or forgot earlier instructions, this release is the one to test again. The practical difference shows up most when you ask for plans, outlines, or rewrites that span dozens of paragraphs — the kinds of tasks where a small reliability gain saves a lot of re-prompting.
+
+For a curious general user, the right test is your own real work, not benchmarks. Bring a task you've abandoned and see if Opus 4.7 finishes it cleanly on the first try.
+
+<PracticalGuide timeToTry="5 min" prerequisites={["A free Claude.ai account", "A browser (any)"]}>
+
+1. Open **claude.ai** and sign in (or sign up — it's free).
+2. In the model picker at the top of a new chat, choose **Opus 4.7**. If you don't see it, refresh the page.
+3. Optional: turn on **Fast** in the chat options to stream replies more aggressively.
+4. Paste a real task you've stalled on — for example, "Plan a 7-day Tokyo trip for a family with a stroller and a $3,000 food budget." Ask for a checklist, not just prose.
+5. Reply once with the part you actually want changed (e.g., "Cut anything that requires walking more than 2 km a day"). The point is to test how well it carries earlier instructions forward.
+
+</PracticalGuide>

@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../lib/site';
+---
+
+<BaseLayout title="About" description={`About ${SITE.name} — what we cover and how we cite.`} pathname="/about">
+  <article class="max-w-prose mx-auto px-5 sm:px-8 pt-14 pb-20 prose-article">
+    <h1 class="font-serif text-4xl md:text-5xl font-bold tracking-tight !mt-0">About {SITE.name}</h1>
+    <p class="text-lg text-[color:var(--muted)]">{SITE.tagline}</p>
+
+    <p>
+      {SITE.name} is an AI-curated news site for curious humans. Every story takes the latest from labs, papers, and the
+      people building this stuff, and turns it into a clear writeup with a <strong>practical guide</strong> at the end so
+      you can actually try the thing.
+    </p>
+
+    <h2>How we curate</h2>
+    <p>
+      We pull from official RSS feeds (Anthropic, OpenAI, Google DeepMind, Meta AI, Mistral, Hugging Face) and a small
+      set of independent voices (Karpathy, Simon Willison, Jack Clark, Lilian Weng, Sebastian Raschka). We occasionally
+      cite public social posts with permission and full attribution. We rewrite everything in our own voice.
+    </p>
+
+    <h2>Editorial &amp; copyright policy</h2>
+    <ul>
+      <li>Every article is <strong>rewritten</strong>, not copied. We add framing, structure, and reader-useful context.</li>
+      <li>Any direct quote is <strong>≤ 25 words</strong>, in quotation marks, with an inline link to the source.</li>
+      <li>Every article lists its <strong>references</strong> at the bottom — minimum one, usually two to four.</li>
+      <li>If we cite a social post, we link the original and quote within the same 25-word limit.</li>
+      <li>When in doubt about reuse rights, we link instead of quote.</li>
+    </ul>
+
+    <h2>How we operate</h2>
+    <p>
+      An AI agent runs daily, scans the sources above, picks 1–3 stories that are high-signal for general readers, and
+      drafts the writeups. A verification script blocks any draft from publishing if it lacks references, breaks
+      the &lt;25-word quote rule, or omits a section. The rules live in <code>AGENTS.md</code> at the repo root so every
+      run is held to the same standard.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Spotted an error or have a tip? Email <a href="mailto:hello@signal.pages.dev">hello@signal.pages.dev</a>.
+    </p>
+  </article>
+</BaseLayout>

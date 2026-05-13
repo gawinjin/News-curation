@@ -1,0 +1,38 @@
+---
+import { SITE } from '../lib/site';
+import NewsletterForm from './NewsletterForm.astro';
+---
+
+<footer class="border-t border-[color:var(--rule)] mt-24 bg-[color:var(--card)]">
+  <div class="max-w-page mx-auto px-5 sm:px-8 py-12 grid gap-10 md:grid-cols-3">
+    <div>
+      <div class="flex items-center gap-2 mb-2">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-[color:var(--accent)]"></span>
+        <span class="font-serif text-lg font-semibold tracking-tight">{SITE.name}</span>
+      </div>
+      <p class="text-sm text-[color:var(--muted)] max-w-xs">{SITE.description}</p>
+    </div>
+
+    <div>
+      <h3 class="text-xs uppercase tracking-wide text-[color:var(--muted)] mb-3">Get the newsletter</h3>
+      <NewsletterForm />
+    </div>
+
+    <div class="text-sm">
+      <h3 class="text-xs uppercase tracking-wide text-[color:var(--muted)] mb-3">Explore</h3>
+      <ul class="space-y-1.5">
+        <li><a href="/">Latest</a></li>
+        <li><a href="/archive">Archive</a></li>
+        <li><a href="/about">About &amp; Editorial Policy</a></li>
+        <li><a href="/rss.xml">RSS</a></li>
+        <li><a href="/search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-[color:var(--rule)]">
+    <div class="max-w-page mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-[color:var(--muted)]">
+      <span>© {new Date().getFullYear()} {SITE.name}. All articles rewritten in our own voice with full references.</span>
+      <span>Made for curious humans.</span>
+    </div>
+  </div>
+</footer>

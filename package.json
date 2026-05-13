@@ -1,0 +1,32 @@
+{
+  "name": "signal",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Signal — AI-curated news, made useful.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "astro": "astro",
+    "ingest": "tsx scripts/ingest.ts",
+    "verify": "tsx scripts/verify-article.ts",
+    "new-article": "tsx scripts/new-article.ts"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^3.1.9",
+    "@astrojs/rss": "^4.0.7",
+    "@astrojs/tailwind": "^5.1.2",
+    "astro": "^4.16.0",
+    "pagefind": "^1.1.1",
+    "tailwindcss": "^3.4.14"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

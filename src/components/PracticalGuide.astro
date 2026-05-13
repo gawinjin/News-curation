@@ -1,0 +1,88 @@
+---
+interface Props {
+  timeToTry?: string;
+  prerequisites?: string[];
+  title?: string;
+}
+const { timeToTry, prerequisites = [], title = 'Practical Guide' } = Astro.props;
+---
+
+<aside
+  class="my-10 rounded-xl border border-[color:var(--rule)] bg-[color:var(--card)] overflow-hidden not-prose"
+  aria-label="Practical guide"
+>
+  <div class="flex items-start gap-4 px-5 py-4 border-b border-[color:var(--rule)] bg-[color:var(--accent-soft)]">
+    <div class="shrink-0 mt-0.5">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="var(--accent)"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><path d="M9 18h6"></path><path d="M10 22h4"></path><path
+          d="M12 2a7 7 0 0 0-4 12.7c.7.6 1 1.4 1 2.3v1h6v-1c0-.9.3-1.7 1-2.3A7 7 0 0 0 12 2z"
+        ></path></svg
+      >
+    </div>
+    <div class="flex-1">
+      <div class="flex items-center justify-between gap-3 flex-wrap">
+        <h3 class="font-serif text-lg font-semibold tracking-tight m-0">{title}</h3>
+        {timeToTry && (
+          <span class="text-xs font-medium uppercase tracking-wide text-[color:var(--accent)] bg-[color:var(--card)] border border-[color:var(--rule)] rounded-full px-2.5 py-1">
+            ⏱ {timeToTry}
+          </span>
+        )}
+      </div>
+      {prerequisites.length > 0 && (
+        <p class="mt-2 text-sm text-[color:var(--muted)] m-0">
+          <span class="font-medium text-[color:var(--ink)]">You'll need:</span>{' '}
+          {prerequisites.join(' · ')}
+        </p>
+      )}
+    </div>
+  </div>
+  <div class="px-5 py-4 practical-body">
+    <slot />
+  </div>
+</aside>
+
+<style is:global>
+  .practical-body ol {
+    counter-reset: step;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  .practical-body ol > li {
+    counter-increment: step;
+    position: relative;
+    padding: 0.5rem 0 0.5rem 2.25rem;
+    border-bottom: 1px dashed var(--rule);
+  }
+  .practical-body ol > li:last-child {
+    border-bottom: 0;
+  }
+  .practical-body ol > li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent);
+    color: var(--bg);
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 999px;
+  }
+  .practical-body p {
+    margin: 0.4rem 0;
+  }
+</style>
