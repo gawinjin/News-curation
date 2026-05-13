@@ -5,33 +5,34 @@ const action = username
   : '';
 ---
 
-<form
-  class="flex flex-col sm:flex-row gap-2"
-  action={action || undefined}
-  method="post"
-  target="popupwindow"
-  onsubmit={action ? "window.open('https://buttondown.email/' + this.dataset.user, 'popupwindow')" : 'return false;'}
-  data-user={username}
->
-  <label for="newsletter-email" class="sr-only">Email</label>
-  <input
-    id="newsletter-email"
-    type="email"
-    name="email"
-    placeholder="you@example.com"
-    required
-    class="flex-1 px-3 py-2 text-sm rounded-md border border-[color:var(--rule)] bg-[color:var(--bg)] focus:outline-none focus:border-[color:var(--accent)]"
-  />
-  <button
-    type="submit"
-    class="px-4 py-2 text-sm font-medium rounded-md bg-[color:var(--accent)] text-[color:var(--bg)] hover:opacity-90 transition-opacity"
-  >
-    Subscribe
-  </button>
-</form>
-<p class="mt-2 text-xs text-[color:var(--muted)]">
-  Daily-ish. No spam. Unsubscribe anytime.
-  {!username && (
-    <span> · <em>Set <code>PUBLIC_BUTTONDOWN_USERNAME</code> to enable.</em></span>
-  )}
-</p>
+{username ? (
+  <>
+    <form
+      class="flex flex-col sm:flex-row gap-2"
+      action={action}
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://buttondown.email/' + this.dataset.user, 'popupwindow')"
+      data-user={username}
+    >
+      <label for="newsletter-email" class="sr-only">Email</label>
+      <input
+        id="newsletter-email"
+        type="email"
+        name="email"
+        placeholder="you@example.com"
+        required
+        class="flex-1 px-3 py-2 text-sm rounded-md border border-[color:var(--rule)] bg-[color:var(--bg)] focus:outline-none focus:border-[color:var(--accent)]"
+      />
+      <button
+        type="submit"
+        class="px-4 py-2 text-sm font-medium rounded-md bg-[color:var(--accent)] text-[color:var(--bg)] hover:opacity-90 transition-opacity"
+      >
+        Subscribe
+      </button>
+    </form>
+    <p class="mt-2 text-xs text-[color:var(--muted)]">Daily-ish. No spam. Unsubscribe anytime.</p>
+  </>
+) : (
+  <p class="text-sm text-[color:var(--muted)]">Newsletter signups are opening soon.</p>
+)}
