@@ -1,6 +1,6 @@
 # AGENTS.md — Signal handoff doc
 
-You are the next agent maintaining **Signal**, an AI-curated news site for curious general users. The site is the product; you are the recurring author. Every run, read this file first, then follow the run checklist at the bottom.
+You are the next agent maintaining **Signal**, an AI-curated news site for curious general users. The site is the product; you are the recurring author. Every run, read this file first, then [`docs/agent-workflow.md`](docs/agent-workflow.md) for the multi-agent playbook (subagent prompts, brief schema, dispatch example), then follow the run checklist at the bottom.
 
 ---
 
@@ -40,9 +40,11 @@ The full list lives in [`src/lib/sources.ts`](src/lib/sources.ts). Summary:
 
 **Labs (RSS):** Anthropic, OpenAI, Google DeepMind, Meta AI, Mistral, Hugging Face.
 **Voices (RSS):** Andrej Karpathy, Simon Willison, Jack Clark (Import AI), Lilian Weng, Sebastian Raschka.
-**Social posts:** Only when the user supplies the URL and author. Treat them like any other source — quote ≤ 25 words, link the original, add to frontmatter `social: [...]`.
+**Social voices (X via Nitter):** see [`src/lib/social-sources.ts`](src/lib/social-sources.ts) — @karpathy, @mattpocockuk, @simonw, @swyx, @lilianweng, @JackClarkSF, @soumithchintala, @awnihannun, @hwchase17, @amasad, @levelsio, @rauchg, plus anything you add. Ingest goes through rotating Nitter mirrors; failures fall back to the manual queue at [`data/social-queue.json`](data/social-queue.json).
 
-If a source isn't in `sources.ts` and isn't a user-supplied social URL, you may still **link** to it as a reference, but pull facts from sources you trust. Never paraphrase a website you can't open or whose terms you haven't checked.
+**Tweet-to-article rule.** A tweet only becomes a candidate if it links to something a reader can try (paper, repo, tool, model release). The **linked thing is the primary source**; the tweet is a `social[]` entry in the article's frontmatter. Pure-opinion tweets are skipped — Signal's signature Practical Guide depends on it.
+
+If a source isn't in `sources.ts` / `social-sources.ts` and isn't user-supplied, you may still **link** to it as a reference, but pull facts from sources you trust. Never paraphrase a website you can't open or whose terms you haven't checked.
 
 ---
 
@@ -83,25 +85,37 @@ Frontmatter schema is enforced by Zod ([`src/content/config.ts`](src/content/con
 
 ---
 
-## Run checklist (every session)
+## Run checklist (multi-agent — every session)
 
-1. `git pull origin claude/ai-news-platform-XeTXH` (or the current dev branch).
+You are the **Orchestrator**. The full playbook (subagent prompts, brief schema, parallel dispatch example, failure modes) is in [`docs/agent-workflow.md`](docs/agent-workflow.md). The short version:
+
+1. `git pull origin claude/ai-news-platform-XeTXH` (or current dev branch).
 2. `npm install` if `node_modules` is missing.
-3. `npm run ingest` — refreshes `data/inbox.json` with the last 7 days of items not yet covered.
-4. Open `data/inbox.json` and pick **1–3 candidates**. Criteria:
-   - Genuinely new (not already in `state.json`).
-   - High-signal for general users (model release, named voice, or a tool a normal person can try).
-   - You can write a real `<PracticalGuide>` step list for it (5 min to 30 min). If you can't, skip.
-5. For each pick: `npm run new-article -- <slug> --category <slug>`.
-6. Write the article. Stay inside the rules above.
-7. `npm run verify` until it passes.
-8. `npm run build` — must succeed.
-9. Append the cited URLs to `data/state.json` under `covered`, and update `lastIngest` to the current ISO timestamp.
-10. `git add -A && git commit -m "add: <slug>"`.
+3. `npm run ingest` — refreshes `data/inbox.json` (RSS + Nitter for social handles + manual queue).
+4. **Topic-Picker (you).** Open `data/inbox.json` and pick **1–3 candidates** that satisfy:
+   - Genuinely new (URL not in `data/state.json`).
+   - High-signal for general users.
+   - Actionable enough for a real `<PracticalGuide>` (5–30 min).
+   - **(Social items)** must have `linkedUrls.length > 0`. Treat the first linked URL as the primary source; the tweet becomes a `social[]` reference. Pure-opinion tweets are skipped.
+5. **Fan out research (parallel `Agent` calls in ONE message).** For each candidate, dispatch three subagents using the prompt templates in [`docs/agent-workflow.md`](docs/agent-workflow.md):
+   - Source Researcher (`subagent_type: Explore`)
+   - Practical-Guide Researcher (`subagent_type: general-purpose`)
+   - Cross-reference Researcher (`subagent_type: Explore`)
+   - For 3 candidates that's 9 calls in a single message. Wait for all to return.
+6. **Brief Assembler (you).** Merge outputs into `data/briefs/<YYYY-MM-DD-<slug>.json` per candidate (schema in the playbook). Drop candidates whose Practical-Guide Researcher returned `{ "skip": true, ... }` or whose Source Researcher returned `{ "error": "unreachable" }`.
+7. **Dispatch Writers (parallel).** One Writer subagent (`subagent_type: general-purpose`) per brief, prompt in the playbook. Writers run `npm run brief-to-mdx`, fill the three prose placeholders, and run `npm run verify` themselves.
+8. **Verifier (you).** Run `npm run verify` and `npm run build`. Iterate any failing Writer once; if it fails again, park the brief under `data/briefs/_stuck/` and skip that article.
+9. **Bookkeeping (you).** For each shipped article:
+   - Move `data/briefs/<slug>.json` → `data/briefs/_published/`.
+   - Append the cited URLs (primary + supporting + tweet, if any) to `data/state.json` under `covered`.
+   - Update `lastIngest` to the current ISO timestamp.
+10. `git add -A && git commit -m "add: <slug>"` per article.
 11. `git push -u origin <branch>`.
-12. Open or update a **draft PR** on GitHub.
+12. Open or update the **draft PR** on GitHub.
 
-If there is no good candidate today: don't publish. Leave a one-line note in the PR description ("No high-signal candidates today — skipping.") and stop.
+**No-candidate days:** Don't publish. Put "No high-signal candidates today — skipping." in the PR description and stop. Silence beats slop.
+
+**Single-article fallback:** On a low-signal day with just one strong candidate, you may run sequentially (one Source / Practical / Cross-ref call, then assemble, then write) instead of fanning out. The brief + verify rules don't change.
 
 ---
 
@@ -119,8 +133,10 @@ git config user.email "gawinjin@gmail.com"
 ## Things you can change
 
 - Add new sources to `src/lib/sources.ts` (RSS only; verify the feed is publicly licensed for redistribution).
+- Add new X handles to `src/lib/social-sources.ts` (one-line change).
 - Tweak components for clarity — keep the visual hierarchy editorial.
 - Improve `scripts/verify-article.ts` (e.g., catch more verbatim variants).
+- Iterate the subagent prompts in [`docs/agent-workflow.md`](docs/agent-workflow.md) when you find a sharper way to phrase them. Note the version in `assembled_by` on the brief.
 
 ## Things you should not change without asking the human
 
@@ -128,3 +144,4 @@ git config user.email "gawinjin@gmail.com"
 - The required body sections.
 - The audience or tone.
 - Anything in `data/state.json` other than appending entries.
+- The brief schema (changing it breaks `scripts/brief-to-mdx.ts` and any in-flight briefs).

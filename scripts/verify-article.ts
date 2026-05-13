@@ -154,6 +154,12 @@ async function verifyFile(file: string): Promise<Result> {
   if (!/^##\s*Why It Matters/im.test(body)) errors.push("Body missing '## Why It Matters' heading.");
   if (!/<PracticalGuide\b/.test(body)) errors.push('Body missing <PracticalGuide …> component.');
 
+  // Scaffold placeholders must be filled before publish
+  const placeholders = body.match(/\bTODO_(TLDR|WHATS_NEW|WHY_IT_MATTERS)\b/g);
+  if (placeholders) {
+    errors.push(`Unfilled scaffold placeholder(s): ${[...new Set(placeholders)].join(', ')}`);
+  }
+
   // Plagiarism check — compare body against each reference page
   const refUrls = extractRefUrls(fmRaw);
   if (refUrls.length === 0) errors.push('No reference URLs detected in frontmatter.');

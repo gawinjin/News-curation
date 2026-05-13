@@ -1,0 +1,73 @@
+{
+  "slug": "claude-opus-4-7-release",
+  "date": "2026-05-13",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": [
+    "Claude Opus 4.7 lands — what's actually different for everyday users",
+    "A clearer Claude: what changed in Opus 4.7",
+    "Opus 4.7 is out — five minutes to try it"
+  ],
+  "summary": "Anthropic shipped Claude Opus 4.7 as its newest flagship model. Here's what changed for normal users — and how to try it in five minutes without writing a line of code.",
+  "tags": ["claude", "anthropic", "models", "how-to"],
+  "featured": true,
+  "primary_source": {
+    "url": "https://www.anthropic.com/news/claude-opus-4-7",
+    "title": "Claude Opus 4.7 — release notes",
+    "author": "Anthropic",
+    "publishedAt": "2026-05-13",
+    "key_facts": [
+      "Anthropic released Claude Opus 4.7, its newest flagship model in the Opus 4 line.",
+      "The release is positioned around improvements on long, multi-step tasks: planning, long-form writing, and tool use over extended sessions.",
+      "Anthropic highlights better instruction-following stability across long conversations.",
+      "The API identifier is `claude-opus-4-7`.",
+      "Users on Claude.ai can pick Opus 4.7 from the model menu — no setup required.",
+      "A 'Fast' option streams output more aggressively but uses the same underlying model."
+    ],
+    "quote_candidates": [
+      {
+        "text": "improvements in instruction-following stability and tool use over very long sessions",
+        "words": 11,
+        "exact": false,
+        "position": "Anthropic release notes (paraphrased — kept for shape reference)"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://www.anthropic.com/news",
+      "title": "Anthropic news index",
+      "key_facts": ["Index of recent Anthropic announcements."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "5 min",
+    "prerequisites": ["A free Claude.ai account", "A browser (any)"],
+    "steps": [
+      { "instruction": "Open claude.ai and sign in (or sign up — it's free).", "verify_url": "https://claude.ai" },
+      { "instruction": "In the model picker at the top of a new chat, choose Opus 4.7.", "verify_url": "https://claude.ai" },
+      { "instruction": "Optional: turn on Fast in the chat options to stream replies more aggressively.", "verify_url": "https://claude.ai" },
+      { "instruction": "Paste a real task you've stalled on (e.g., 'Plan a 7-day Tokyo trip for a family with a stroller and a $3,000 food budget'). Ask for a checklist.", "verify_url": "https://claude.ai" },
+      { "instruction": "Reply with the part you actually want changed (e.g., 'Cut anything that requires walking more than 2 km a day') to test how it carries earlier instructions forward.", "verify_url": "https://claude.ai" }
+    ]
+  },
+  "references": [
+    {
+      "title": "Claude Opus 4.7 — release notes",
+      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "author": "Anthropic",
+      "publishedAt": "2026-05-13"
+    },
+    {
+      "title": "Anthropic news index",
+      "url": "https://www.anthropic.com/news",
+      "author": "Anthropic"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [],
+  "assembled_at": "2026-05-13T00:00:00Z",
+  "assembled_by": "Hand-written example for docs/"
+}

@@ -11,7 +11,8 @@
     "astro": "astro",
     "ingest": "tsx scripts/ingest.ts",
     "verify": "tsx scripts/verify-article.ts",
-    "new-article": "tsx scripts/new-article.ts"
+    "new-article": "tsx scripts/new-article.ts",
+    "brief-to-mdx": "tsx scripts/brief-to-mdx.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.9",
