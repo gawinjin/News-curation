@@ -1,0 +1,52 @@
+---
+title: "OpenAI's Codex Windows sandbox explains what safe agents need"
+date: 2026-05-14
+category: guides
+tags: ["codex", "windows", "security", "agents"]
+summary: "OpenAI explained how it built a Windows sandbox for Codex. The takeaway for users is simple: useful agents need real operating-system limits."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A coding agent or automation tool"
+    - "One local project"
+references:
+  - title: "Building a safe, effective sandbox to enable Codex on Windows"
+    url: "https://openai.com/index/building-codex-windows-sandbox/"
+    author: "David Wiesen, OpenAI"
+    publishedAt: "2026-05-13"
+  - title: "Running Codex safely"
+    url: "https://openai.com/index/running-codex-safely"
+    author: "OpenAI"
+    publishedAt: "2026-05-13"
+draft: false
+---
+
+## TL;DR
+
+OpenAI's Windows sandbox post is not just for Windows developers. It explains the core safety problem for coding agents: they need enough access to be useful, but strong limits on where they can write files and whether they can reach the internet.
+
+## What's New
+
+OpenAI described why Codex on Windows needed a custom sandbox. Existing Windows isolation tools were either too narrow, too disruptive, or not available across the Windows editions people actually use.
+
+The post explains two constraints a coding agent needs: file-write boundaries and network boundaries. Codex should be able to read, test, and edit inside the intended workspace, while avoiding surprise writes elsewhere on the machine.
+
+The useful design lesson is that approvals alone are not enough. If every harmless read needs approval, the tool becomes annoying. If everything runs with full access, the tool becomes risky. A good sandbox makes the normal path safer by default.
+
+## Why It Matters
+
+AI agents are starting to run commands, edit files, install packages, and call tools. That is powerful, but it also means a bad prompt, a compromised dependency, or a model mistake can touch real local resources.
+
+Before trusting any agent with a project, users should know what it can write, whether it can use the network, and which actions require approval. The safest agent is not the one that asks constantly. It is the one whose permissions match the job.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A coding agent or automation tool", "One local project"]}>
+
+1. Open your agent's settings and find its file-access mode. Confirm it can write only inside the project you intend to work on.
+2. Check whether network access is allowed. Keep it off by default unless the task needs package downloads, browsing, or API calls.
+3. Add sensitive folders to a deny list if the tool supports it, especially `.git`, credential folders, environment files, and personal documents.
+4. Run one harmless task, such as summarizing the project or listing tests, and watch what commands it attempts.
+5. Only move to edit tasks after the read-only behavior matches your expectations.
+
+</PracticalGuide>

@@ -1,0 +1,56 @@
+---
+title: "OpenAI and Mistral advisories turn Mini Shai-Hulud into a practical checklist"
+date: 2026-05-14
+category: guides
+tags: ["security", "supply-chain", "openai", "mistral"]
+summary: "OpenAI and Mistral both published follow-up guidance after the TanStack supply-chain attack. The useful move is a focused dependency and app-update check."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "A Mac with OpenAI apps, or a project using Mistral packages"
+    - "Access to your package lockfiles"
+references:
+  - title: "Our response to the TanStack npm supply chain attack"
+    url: "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack/"
+    author: "OpenAI"
+    publishedAt: "2026-05-13"
+  - title: "TanStack supply chain attack affecting Mistral AI SDK packages"
+    url: "https://docs.mistral.ai/resources/security-advisories"
+    author: "Mistral AI"
+    publishedAt: "2026-05-12"
+  - title: "TanStack npm Packages Compromised in Mini Shai-Hulud Supply Chain Attack"
+    url: "https://socket.dev/blog/tanstack-npm-packages-compromised-mini-shai-hulud-supply-chain-attack"
+    author: "Socket"
+    publishedAt: "2026-05-11"
+draft: false
+---
+
+## TL;DR
+
+The Mini Shai-Hulud incident is no longer just a TanStack story. OpenAI and Mistral both published guidance, which means normal users and small teams should do two things: update official OpenAI Mac apps and check whether any affected Mistral package versions landed in projects.
+
+## What's New
+
+OpenAI says the incident touched two employee devices and led to limited credential material being exposed from internal repositories. OpenAI says it found no evidence that user data, production systems, intellectual property, or shipped software were compromised.
+
+The practical user action is for macOS. OpenAI is rotating signing certificates and says Mac users should update ChatGPT Desktop, Codex App, Codex CLI, and Atlas before June 12, 2026. Windows and iOS users do not have the same update requirement.
+
+Mistral published a separate advisory for its SDK packages. Its npm packages were affected during a short exposure window, while `mistralai==2.4.6` on PyPI is the version that deserves the most attention because Mistral says it can run a malicious script on import.
+
+## Why It Matters
+
+Supply-chain attacks are hard because the user did not do anything obviously risky. A trusted dependency or tool updates, and the bad code arrives through normal development machinery.
+
+For non-developers, the lesson is simple: install OpenAI apps only from the app itself or official download pages. For developers and teams, the lesson is to check lockfiles and build images, not only the current installed package list.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["A Mac with OpenAI apps, or a project using Mistral packages", "Access to your package lockfiles"]}>
+
+1. If you use OpenAI apps on macOS, open each app and run its built-in update flow. Use only official OpenAI pages if you need a fresh download.
+2. If you manage projects, search lockfiles and deployment images for Mistral packages, especially `@mistralai/mistralai`, cloud-specific Mistral npm packages, and `mistralai` on PyPI.
+3. If you find Mistral's affected PyPI version, treat the machine as potentially exposed: remove the version, rebuild from clean dependencies, and rotate credentials that were accessible on that host.
+4. Check CI logs and cloud audit logs for unusual outbound connections, secret reads, or unexpected package installs around May 11-12.
+5. Add a small delay policy for newly published dependency versions in package-manager or CI settings so future surprise releases do not land immediately.
+
+</PracticalGuide>
