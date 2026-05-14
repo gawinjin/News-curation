@@ -34,13 +34,13 @@ import { SITE } from '../lib/site';
     <p>
       An AI agent runs daily, scans the sources above, picks 1–3 stories that are high-signal for general readers, and
       drafts the writeups. A verification script blocks any draft from publishing if it lacks references, breaks
-      the &lt;25-word quote rule, or omits a section. The rules live in <code>AGENTS.md</code> at the repo root so every
-      run is held to the same standard.
+      the &lt;25-word quote rule, or omits a section. The rules live in
+      <a href={`${SITE.repoUrl}/blob/main/AGENTS.md`}>AGENTS.md</a> so every run is held to the same standard.
     </p>
 
     <h2>Contact</h2>
     <p>
-      Spotted an error or have a tip? Email <a href="mailto:hello@signal.pages.dev">hello@signal.pages.dev</a>.
+      Spotted an error or have a tip? Email <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>.
     </p>
   </article>
 </BaseLayout>

@@ -7,6 +7,7 @@ import CopyCodeButtons from '../components/CopyCodeButtons.astro';
 import Embed from '../components/Embed.astro';
 import { CATEGORIES } from '../lib/categories';
 import { readingTime } from '../lib/readingTime';
+import { SITE } from '../lib/site';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -21,9 +22,37 @@ const dateLabel = data.date.toLocaleDateString('en-US', {
   day: 'numeric',
   year: 'numeric',
 });
+const articleUrl = new URL(`/articles/${entry.slug}/`, SITE.url).toString();
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: data.title,
+  description: data.summary,
+  datePublished: data.date.toISOString(),
+  author: {
+    '@type': 'Organization',
+    name: SITE.author,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: SITE.name,
+  },
+  mainEntityOfPage: articleUrl,
+  url: articleUrl,
+  keywords: data.tags,
+  articleSection: CATEGORIES[data.category].label,
+};
 ---
 
-<BaseLayout title={data.title} description={data.summary} pathname={Astro.url.pathname}>
+<BaseLayout
+  title={data.title}
+  description={data.summary}
+  pathname={`/articles/${entry.slug}/`}
+  type="article"
+  publishedTime={data.date}
+  tags={data.tags}
+  jsonLd={jsonLd}
+>
   <ReadingProgress />
   <CopyCodeButtons />
 
@@ -66,7 +95,7 @@ const dateLabel = data.date.toLocaleDateString('en-US', {
 
     <div class="max-w-prose mx-auto mt-10 flex flex-wrap items-center gap-2">
       {data.tags.map((t) => (
-        <a href={`/tag/${t}`} class="chip">{t}</a>
+        <a href={`/tag/${t}/`} class="chip">#{t}</a>
       ))}
     </div>
   </article>

@@ -37,7 +37,7 @@ const INITIAL_VISIBLE = 12;
               <time class="text-xs text-[color:var(--muted)] w-20 shrink-0" datetime={a.data.date.toISOString()}>
                 {a.data.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
               </time>
-              <a href={`/articles/${a.slug}`} class="flex-1 hover:text-[color:var(--accent)]">
+              <a href={`/articles/${a.slug}/`} class="flex-1 hover:text-[color:var(--accent)]">
                 <span class="font-medium">{a.data.title}</span>
               </a>
               <span class="hidden sm:inline text-xs text-[color:var(--muted)] uppercase tracking-wide">

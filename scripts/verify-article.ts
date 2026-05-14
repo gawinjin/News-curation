@@ -106,7 +106,8 @@ async function fetchPlainText(url: string): Promise<string | null> {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
   try {
-    const ua = process.env.USER_AGENT || 'SignalBot/0.1 (+https://signal.pages.dev)';
+    const siteUrl = process.env.PUBLIC_SITE_URL || 'https://signal.gawinjin.workers.dev';
+    const ua = process.env.USER_AGENT || `SignalBot/0.1 (+${siteUrl})`;
     const r = await fetch(url, {
       headers: { 'user-agent': ua, accept: 'text/html,application/xhtml+xml' },
       redirect: 'follow',

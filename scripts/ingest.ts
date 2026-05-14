@@ -94,7 +94,8 @@ function parseItems(xml: string) {
 
 async function fetchFeed(url: string): Promise<string | null> {
   try {
-    const ua = process.env.USER_AGENT || 'SignalBot/0.1 (+https://signal.pages.dev)';
+    const siteUrl = process.env.PUBLIC_SITE_URL || 'https://signal.gawinjin.workers.dev';
+    const ua = process.env.USER_AGENT || `SignalBot/0.1 (+${siteUrl})`;
     const r = await fetch(url, {
       headers: {
         'user-agent': ua,

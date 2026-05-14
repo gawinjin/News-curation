@@ -57,13 +57,13 @@ const allTags = Array.from(new Set(all.flatMap((a) => a.data.tags))).slice(0, 14
     <div class="flex flex-wrap items-center gap-2 text-sm">
       <span class="text-xs uppercase tracking-wide text-[color:var(--muted)] mr-2">Browse</span>
       {CATEGORY_ORDER.map((c) => (
-        <a href={`/category/${c}`} class="chip">{CATEGORIES[c].label}</a>
+        <a href={`/category/${c}/`} class="chip">{CATEGORIES[c].label}</a>
       ))}
       {allTags.length > 0 && (
         <>
           <span class="text-xs uppercase tracking-wide text-[color:var(--muted)] mx-2">Tags</span>
           {allTags.map((t) => (
-            <a href={`/tag/${t}`} class="chip">#{t}</a>
+            <a href={`/tag/${t}/`} class="chip">#{t}</a>
           ))}
         </>
       )}

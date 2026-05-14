@@ -2,17 +2,17 @@
 
 AI news, made useful. A static site (Astro + Markdown) that turns the latest AI releases, research, and ideas into clear writeups with a practical guide at the end.
 
-→ **Editorial rules & agent handoff:** see [`AGENTS.md`](AGENTS.md).
+-> **Editorial rules & agent handoff:** see [`AGENTS.md`](AGENTS.md).
 
 ---
 
 ## Stack
 
 - **Astro 4** + `@astrojs/mdx` + content collections (Zod-validated frontmatter)
-- **Tailwind CSS** with light/dark theming
+- **Tailwind CSS** with a light editorial theme
 - **Pagefind** for client-side full-text search (built at build time)
 - **Buttondown** for newsletter signups (form posts to public embed endpoint)
-- **Cloudflare Pages** for hosting
+- **Cloudflare Workers static assets** for hosting
 
 ---
 
@@ -30,7 +30,7 @@ npm run dev          # http://localhost:4321
 | `npm run dev` | Astro dev server |
 | `npm run build` | Build to `dist/` and generate the Pagefind search index |
 | `npm run preview` | Preview the built site locally |
-| `npm run ingest` | Pull recent items from RSS sources → `data/inbox.json` |
+| `npm run ingest` | Pull recent items from RSS sources into `data/inbox.json` |
 | `npm run verify` | Lint every article (schema, sections, plagiarism). Run before commit. |
 | `npm run new-article -- <slug> --category <c>` | Scaffold a new draft `.mdx` file |
 
@@ -52,30 +52,31 @@ npm run build
 
 The required body sections are `## TL;DR`, `## What's New`, `## Why It Matters`, and a `<PracticalGuide>` block. References go in frontmatter and render automatically.
 
-## Deploying to Cloudflare Pages
+## Deploying to Cloudflare
 
 1. Push the repo to GitHub.
-2. In Cloudflare Pages, **Create a project → Connect to Git**, pick this repo.
+2. In Cloudflare, connect this repo to the Worker/static assets deployment.
 3. Build settings:
    - **Build command:** `npm run build`
    - **Build output directory:** `dist`
-   - **Node version:** `20` (set in env vars: `NODE_VERSION=20`)
-4. Set environment variable `PUBLIC_BUTTONDOWN_USERNAME` to your Buttondown handle (optional — without it the form renders disabled).
-5. First deploy goes to `signal.pages.dev`. To attach a custom domain later: **Pages → Custom domains → Set up a custom domain**.
+   - **Node version:** `20` or newer
+4. Set `PUBLIC_SITE_URL` in Cloudflare to the canonical public URL. Change that one value when the custom domain goes live.
+5. Set `PUBLIC_CONTACT_EMAIL` and `PUBLIC_REPO_URL` if they differ from the defaults.
+6. Set `PUBLIC_BUTTONDOWN_USERNAME` to your Buttondown handle when newsletter signups are ready.
 
 ## Project layout
 
-```
+```text
 src/
   content/articles/    Markdown/MDX articles (each is one file)
   content/config.ts    Zod schema for frontmatter
-  components/          UI primitives (Header, Footer, PracticalGuide, …)
+  components/          UI primitives (Header, Footer, PracticalGuide, ...)
   layouts/             Base + Article layouts
-  pages/               Routes — index, articles, category, tag, archive, rss, search
+  pages/               Routes: index, articles, category, tag, archive, rss, search
   lib/                 categories, sources, site, readingTime
   styles/global.css    CSS variables + editorial typography
 scripts/
-  ingest.ts            RSS → data/inbox.json
+  ingest.ts            RSS to data/inbox.json
   verify-article.ts    Lint + plagiarism check (fails CI on violation)
   new-article.ts       Scaffold a draft .mdx file
 data/
@@ -88,4 +89,4 @@ AGENTS.md              The rules for any agent that maintains this site
 
 ## License
 
-Code: MIT. Articles: © Signal, all rights reserved. Quotes from sources are used under fair-use limits (≤ 25 verbatim words, with citation) — see [`/about`](https://signal.pages.dev/about).
+Code: MIT. Articles: © Signal, all rights reserved. Quotes from sources are used under fair-use limits (≤ 25 verbatim words, with citation). See `/about` on the deployed site.
