@@ -63,6 +63,9 @@ The required body sections are `## TL;DR`, `## What's New`, `## Why It Matters`,
 4. Set `PUBLIC_SITE_URL` in Cloudflare to the canonical public URL. Change that one value when the custom domain goes live.
 5. Set `PUBLIC_CONTACT_EMAIL` and `PUBLIC_REPO_URL` if they differ from the defaults.
 6. Set `PUBLIC_BUTTONDOWN_USERNAME` to your Buttondown handle when newsletter signups are ready.
+7. Add these GitHub repository secrets for Actions deploys:
+   - `CLOUDFLARE_API_TOKEN`
+   - `CLOUDFLARE_ACCOUNT_ID`
 
 ## Project layout
 
