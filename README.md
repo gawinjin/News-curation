@@ -59,7 +59,7 @@ The required body sections are `## TL;DR`, `## What's New`, `## Why It Matters`,
 3. Build settings:
    - **Build command:** `npm run build`
    - **Build output directory:** `dist`
-   - **Node version:** `20` or newer
+   - **Node version:** `24`
 4. Set `PUBLIC_SITE_URL` in Cloudflare to the canonical public URL. Change that one value when the custom domain goes live.
 5. Set `PUBLIC_CONTACT_EMAIL` and `PUBLIC_REPO_URL` if they differ from the defaults.
 6. Set `PUBLIC_BUTTONDOWN_USERNAME` to your Buttondown handle when newsletter signups are ready.
