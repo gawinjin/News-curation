@@ -1,0 +1,55 @@
+---
+title: "Superpowers turns coding-agent habits into reusable skills"
+date: 2026-05-18
+category: guides
+tags: ["agents", "coding", "github", "workflow"]
+summary: "Superpowers is a fast-growing skills framework that gives Claude Code, Codex, Cursor, Gemini, OpenCode, and other coding agents a more disciplined workflow."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "One coding-agent tool you already use"
+    - "A small coding task you can safely test"
+references:
+  - title: "Superpowers"
+    url: "https://github.com/obra/superpowers"
+    author: "Jesse Vincent and contributors"
+    publishedAt: "2026-05-18"
+  - title: "Superpowers v5.1.0"
+    url: "https://github.com/obra/superpowers/releases/tag/v5.1.0"
+    author: "Jesse Vincent and contributors"
+    publishedAt: "2026-05-04"
+  - title: "Superpowers license"
+    url: "https://github.com/obra/superpowers/blob/main/LICENSE"
+    author: "Jesse Vincent and contributors"
+draft: false
+---
+
+## TL;DR
+
+Superpowers is a repo of reusable skills and process rules for coding agents. The useful idea is simple: make the agent slow down, clarify the goal, plan in small chunks, use tests, review work, and finish cleanly instead of improvising through a whole project.
+
+## What's New
+
+Superpowers has become one of the most visible repos in the agent-workflow space, with support across Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Factory Droid, and GitHub Copilot CLI. The core package is MIT-licensed and organized around skills rather than one large prompt.
+
+The latest v5.1.0 release is especially relevant for users who run agents in real projects. It removes older slash-command stubs, tightens worktree handling, and adds clearer contributor instructions for AI-agent-generated pull requests.
+
+The repo's basic workflow is opinionated: brainstorm first, create an implementation plan, work in isolated branches or worktrees when appropriate, run test-driven development, ask for review, and finish with a clean branch decision.
+
+## Why It Matters
+
+Many people treat coding agents like autocomplete with a chat box. Superpowers points in a different direction: the bigger gain comes from giving the agent a working method. That is useful even if you never install the repo, because the pattern is portable.
+
+For general users, the practical lesson is to stop asking an agent to "build the whole thing" in one jump. Ask it to clarify the goal, write the smallest plan, verify each step, and show you what changed. That reduces drift and makes the result easier to trust.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["One coding-agent tool you already use", "A small coding task you can safely test"]}>
+
+1. Open the Superpowers README and find the install section for your agent tool. Do not install it into every tool at once.
+2. Pick one small task, such as adding a validation message, fixing one test, or improving one page.
+3. Before coding, ask your agent to write a short plan with the exact files it expects to touch and how it will verify the result.
+4. Run the task, then ask for a review focused only on bugs, broken assumptions, and missing tests.
+5. Keep the parts of the workflow that helped. If the skills add too much friction for small tasks, use the planning and review pattern manually instead of installing everything.
+
+</PracticalGuide>

@@ -1,0 +1,55 @@
+---
+title: "Everything Claude Code is becoming a full agent-harness kit"
+date: 2026-05-18
+category: guides
+tags: ["claude", "agents", "coding", "github"]
+summary: "Everything Claude Code packages agents, skills, hooks, rules, memory, security checks, and cross-tool setup for people trying to make coding agents more reliable."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "25 min"
+  prerequisites:
+    - "Claude Code or another supported coding-agent tool"
+    - "A project where you can safely test agent workflow changes"
+references:
+  - title: "Everything Claude Code"
+    url: "https://github.com/affaan-m/everything-claude-code"
+    author: "Affaan Mustafa and contributors"
+    publishedAt: "2026-05-18"
+  - title: "Everything Claude Code v1.10.0"
+    url: "https://github.com/affaan-m/everything-claude-code/releases/tag/v1.10.0"
+    author: "Affaan Mustafa and contributors"
+    publishedAt: "2026-04-05"
+  - title: "Everything Claude Code license"
+    url: "https://github.com/affaan-m/everything-claude-code/blob/main/LICENSE"
+    author: "Affaan Mustafa and contributors"
+draft: false
+---
+
+## TL;DR
+
+Everything Claude Code is a large, practical repo for people tuning coding agents. It is not just a prompt pack. It includes skills, rules, hooks, memory, security scanning, install profiles, and cross-harness support for tools like Claude Code, Codex, Cursor, OpenCode, Gemini, and Zed.
+
+## What's New
+
+The repo describes itself as a performance system for AI agent harnesses. In plain English, that means it tries to improve the environment around the model: what context it receives, what skills it can call, how it remembers work, how it checks itself, and how it avoids risky actions.
+
+The v1.10.0 release focuses on harness reliability, cross-platform compatibility, eval-driven quality, and operator workflow ergonomics. The README also points to a newer in-tree 2.0 release candidate with a dashboard, larger skill catalog, operator workflows, and a Rust control-plane prototype.
+
+The repo is broad, so the important safety note is restraint. Its own README warns users not to stack multiple install methods. For most people, the right move is to preview, install the smallest useful profile, and add components only when they solve a real problem.
+
+## Why It Matters
+
+Coding agents are becoming less like single chat sessions and more like configurable workbenches. Everything Claude Code is interesting because it shows what heavy users now optimize: context size, repeatable skills, session state, security checks, reviews, and multi-agent handoffs.
+
+For non-engineers managing AI-assisted work, the signal is not the specific install command. The signal is that agent quality depends on operating habits. A well-scoped workflow can matter as much as the model choice.
+
+<PracticalGuide timeToTry="25 min" prerequisites={["Claude Code or another supported coding-agent tool", "A project where you can safely test agent workflow changes"]}>
+
+1. Read the README's quick-start section and choose one install path only. Do not combine plugin install, manual install, and package install in the same setup.
+2. Start with the lowest-context path that solves your problem, such as rules plus a few core skills. Skip broad hooks until you understand what they do.
+3. Use the repo's preview or advisor flow before installing components, then note exactly which files or settings will change.
+4. Test on a disposable project first. Ask the agent to make one small change, run verification, and summarize which skills or hooks affected the work.
+5. If output becomes noisy or duplicated, uninstall or disable the extra layer instead of reinstalling on top of it.
+
+</PracticalGuide>
