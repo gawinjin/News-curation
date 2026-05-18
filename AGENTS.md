@@ -44,6 +44,8 @@ The full list lives in [`src/lib/sources.ts`](src/lib/sources.ts). Summary:
 
 **Tweet-to-article rule.** A tweet only becomes a candidate if it links to something a reader can try (paper, repo, tool, model release). The **linked thing is the primary source**; the tweet is a `social[]` entry in the article's frontmatter. Pure-opinion tweets are skipped — Signal's signature Practical Guide depends on it.
 
+**Repo-to-article rule.** A GitHub repo can become a candidate if it is new or newly active, source-backed, useful to general readers, and testable in 5-30 minutes. Prefer repos with clear install paths, recent releases or commits, screenshots/docs, and license terms readers can understand. Mention safety, privacy, and license caveats in plain language when relevant.
+
 If a source isn't in `sources.ts` / `social-sources.ts` and isn't user-supplied, you may still **link** to it as a reference, but pull facts from sources you trust. Never paraphrase a website you can't open or whose terms you haven't checked.
 
 ---
