@@ -1,0 +1,48 @@
+---
+title: "ChatGPT's sensitive-context update shows why AI memory needs boundaries"
+date: 2026-05-18
+category: insights
+tags: ["chatgpt", "safety", "memory", "privacy"]
+summary: "OpenAI says ChatGPT can now use narrowly scoped safety summaries to respond better when risk emerges over time."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "Any AI assistant you use regularly"
+    - "Access to its memory or privacy settings"
+references:
+  - title: "Helping ChatGPT better recognize context in sensitive conversations"
+    url: "https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations"
+    author: "OpenAI"
+    publishedAt: "2026-05-14"
+draft: false
+---
+
+## TL;DR
+
+OpenAI says ChatGPT can now use limited safety summaries to notice when serious risk emerges across a conversation or across related conversations. The practical lesson is broader: AI memory should have a purpose, a limit, and user-visible controls.
+
+## What's New
+
+OpenAI focused this update on acute safety scenarios such as self-harm, suicide, and harm to others. The company says the model is better at recognizing when earlier context changes how a later request should be handled.
+
+The cross-conversation part is the most important design change. OpenAI says it can create short, factual notes about safety-relevant context, keep them for a limited time, and use them only when relevant to serious safety concerns.
+
+OpenAI reports internal evaluation gains in scenarios where risk becomes clearer over time. It also says ordinary conversation quality remained broadly comparable in testing.
+
+## Why It Matters
+
+AI assistants are becoming more memoryful. That can be helpful, but memory without boundaries becomes uncomfortable fast. Users need to know what is remembered, why it is remembered, how long it lasts, and how to delete it.
+
+This update is a useful example because it narrows memory to a specific purpose: safety. That is different from general personalization or ad targeting.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["Any AI assistant you use regularly", "Access to its memory or privacy settings"]}>
+
+1. Open the memory or personalization settings for the AI assistant you use most.
+2. Look for three controls: view remembered items, delete remembered items, and turn memory off.
+3. Decide which categories are acceptable to remember. Examples: writing preferences may be fine; finances, health, and family details may not be.
+4. Use temporary or private chat modes for sensitive topics when available.
+5. Once a month, review stored memories and delete anything that no longer serves a clear purpose.
+
+</PracticalGuide>

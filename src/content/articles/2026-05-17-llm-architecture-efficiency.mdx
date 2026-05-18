@@ -1,0 +1,51 @@
+---
+title: "New LLM architecture tricks are mostly about making long context cheaper"
+date: 2026-05-17
+category: research
+tags: ["llm", "architecture", "context", "open-models"]
+summary: "Sebastian Raschka's latest architecture survey explains why recent open models are focused on KV sharing, compressed attention, and cheaper long-context inference."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "30 min"
+  prerequisites:
+    - "One long-context AI task"
+    - "Access to model docs or pricing pages"
+references:
+  - title: "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention"
+    url: "https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures"
+    author: "Sebastian Raschka"
+    publishedAt: "2026-05-16"
+  - title: "LLM Architecture Gallery"
+    url: "https://sebastianraschka.com/llm-architecture-gallery/"
+    author: "Sebastian Raschka"
+draft: false
+---
+
+## TL;DR
+
+Recent model architecture work is less about flashy demos and more about cost. Long conversations, agents, and document workflows need models to keep more context around. Techniques like KV sharing and compressed attention are ways to make that memory cheaper.
+
+## What's New
+
+Sebastian Raschka's May 16 survey walks through several recent open-weight architecture patterns, including KV sharing, per-layer embeddings, attention budgeting, and compressed attention.
+
+The shared theme is long-context efficiency. When a model processes a long document or an agent keeps a large work history, the model stores attention state. That storage, often discussed as KV cache, can become a major memory and latency bottleneck.
+
+The article is technical, but the user-facing lesson is simple: two models with similar headline quality can feel very different when the job involves long documents, many files, or repeated agent steps.
+
+## Why It Matters
+
+People often choose AI models by benchmark score alone. That is incomplete. For real work, the better question is whether the model stays fast, affordable, and accurate when context grows.
+
+This matters for local AI too. If open models can hold more context with less memory, then private document review, offline assistants, and small-device workflows become more realistic.
+
+<PracticalGuide timeToTry="30 min" prerequisites={["One long-context AI task", "Access to model docs or pricing pages"]}>
+
+1. Pick a task that stresses context, such as summarizing a 50-page document, reviewing a code folder, or comparing meeting notes across a week.
+2. Run the same task on two models you can access. Keep the prompt and source material the same.
+3. Track four things: answer quality, whether it missed important context, response time, and cost.
+4. Read each model's docs for context window, pricing, and whether it is optimized for long context or agent workflows.
+5. Choose the model that gives reliable answers at the context size you actually need, not the one with the best general benchmark.
+
+</PracticalGuide>

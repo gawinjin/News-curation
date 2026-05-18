@@ -1,0 +1,48 @@
+---
+title: "Codex on mobile makes coding agents feel more like long-running teammates"
+date: 2026-05-18
+category: guides
+tags: ["codex", "agents", "mobile", "workflow"]
+summary: "OpenAI is bringing Codex into the ChatGPT mobile app, letting users monitor, steer, and approve long-running coding work away from their desk."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "Codex access"
+    - "One coding task that can run for several minutes"
+references:
+  - title: "Work with Codex from anywhere"
+    url: "https://openai.com/index/work-with-codex-from-anywhere"
+    author: "OpenAI"
+    publishedAt: "2026-05-14"
+draft: false
+---
+
+## TL;DR
+
+OpenAI is putting Codex into the ChatGPT mobile app. The point is not writing code on a phone. It is staying close to a long-running agent: answering questions, approving commands, reviewing diffs, and redirecting work before it drifts.
+
+## What's New
+
+Codex mobile is in preview inside the ChatGPT app. OpenAI says users can connect to machines where Codex is running and see live context, approvals, screenshots, terminal output, diffs, and test results.
+
+OpenAI also says Remote SSH is generally available, so Codex can run in managed remote environments instead of only on a laptop. That matters for teams that want approved dependencies, credentials, policies, and compute in one place.
+
+The product is built around a new work rhythm. Coding agents increasingly run for longer than a single prompt response, and the human's job becomes steering at the right moments.
+
+## Why It Matters
+
+Agent work often fails because nobody checks in at the decision points. The agent chooses the wrong approach, waits for approval, or keeps building with stale assumptions.
+
+Mobile supervision makes sense if the phone is used for judgment, not deep review. A short approval, clarification, or "stop and show me the diff" can prevent wasted work before you return to the desk.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["Codex access", "One coding task that can run for several minutes"]}>
+
+1. Pick a task where mobile steering is useful, such as reproducing a bug, collecting context, drafting a test plan, or preparing a small patch.
+2. Start the task from your desktop or remote environment, then write the success condition in the first prompt.
+3. On mobile, approve only low-risk commands you understand. Do not approve package installs, credential access, or destructive file operations casually.
+4. Ask Codex to pause at natural checkpoints: after reproducing the bug, after choosing an approach, and before applying a final patch.
+5. Save final code review for a larger screen. Use mobile for steering, not rubber-stamping.
+
+</PracticalGuide>

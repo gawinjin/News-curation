@@ -1,20 +1,300 @@
 {
-  "generatedAt": "2026-05-13T05:24:47.988Z",
+  "generatedAt": "2026-05-18T05:03:55.626Z",
   "socialUnreachable": [
     "karpathy",
-    "mattpocockuk",
     "simonw",
     "swyx",
+    "trq212",
+    "chipro",
+    "eugeneyan",
+    "jeremyphoward",
+    "rasbt",
+    "_akhaliq",
+    "AndrewYNg",
+    "ylecun",
+    "drfeifei",
+    "fchollet",
+    "DrJimFan",
     "lilianweng",
-    "JackClarkSF",
+    "natolambert",
+    "sarahookr",
+    "percyliang",
+    "polynoamial",
+    "johnschulman2",
+    "hardmaru",
+    "yoavgo",
+    "chelseabfinn",
+    "pabbeel",
+    "ClementDelangue",
+    "Thom_Wolf",
     "soumithchintala",
     "awnihannun",
+    "osanseviero",
+    "reach_vb",
+    "HamelHusain",
+    "sh_reya",
     "hwchase17",
+    "mattpocockuk",
     "amasad",
+    "rauchg",
     "levelsio",
-    "rauchg"
+    "bentossell",
+    "JackClarkSF",
+    "Miles_Brundage",
+    "helenoner",
+    "alexalbert__"
   ],
   "items": [
+    {
+      "kind": "rss",
+      "title": "GDS weighs in on the NHS's decision to retreat from Open Source",
+      "url": "https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-17T15:59:41.000Z",
+      "summary": "<p><strong><a href=\"https://shkspr.mobi/blog/2026/05/gds-weighs-in-on-the-nhss-decision-to-retreat-from-open-source/\">GDS weighs in on the NHS&#x27;s decision to retreat from Open Source</a></strong></p> Terence Eden continues his coverage of the NHS' <a href=\"https://shkspr.mobi"
+    },
+    {
+      "kind": "rss",
+      "title": "Warelay -> OpenClaw",
+      "url": "https://simonwillison.net/2026/May/16/openclaw-names/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-16T20:23:30.000Z",
+      "summary": "<p>In preparation for a lightning talk I'm giving at PyCon US <a href=\"https://us.pycon.org/2026/schedule/presentation/175/\">this afternoon</a> I decided to figure out how many names OpenClaw has <em>actually</em> had since that <a href=\"https://github.com/openclaw/openclaw/commi"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Julia Evans",
+      "url": "https://simonwillison.net/2026/May/16/julia-evans/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-16T16:45:37.000Z",
+      "summary": "<blockquote cite=\"https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/\"><p>[...] in the last 10 years I’ve learned to really love and respect CSS as a technology.</p> <p>So I decided years ago that I wanted to react to “CSS is hard” by get"
+    },
+    {
+      "kind": "rss",
+      "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention",
+      "url": "https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures",
+      "source": "Sebastian Raschka",
+      "sourceId": "raschka",
+      "category": "research",
+      "publishedAt": "2026-05-16T11:33:51.000Z",
+      "summary": "From Gemma 4 to DeepSeek V4, How New Open-Weight LLMs Are Reducing Long-Context Costs"
+    },
+    {
+      "kind": "rss",
+      "title": "OpenAI and Malta partner to bring ChatGPT Plus to all citizens",
+      "url": "https://openai.com/index/malta-chatgpt-plus-partnership",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-05-16T00:00:00.000Z",
+      "summary": "OpenAI and Malta partner to expand AI access, offering ChatGPT Plus and training to help citizens build practical AI skills and use AI responsibly."
+    },
+    {
+      "kind": "rss",
+      "title": "inaturalist-clumper 0.1",
+      "url": "https://simonwillison.net/2026/May/15/inaturalist-clumper/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-15T23:53:11.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/inaturalist-clumper/releases/tag/0.1\">inaturalist-clumper 0.1</a></p> <p>Part of the infrastructure I use for <a href=\"https://simonwillison.net/2026/May/1/inat-sightings/\">publishing my iNaturalist sightings on my b"
+    },
+    {
+      "kind": "rss",
+      "title": "Western Gull, Rock Pigeon",
+      "url": "https://simonwillison.net/2026/May/15/sighting-361818285/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-15T14:42:00.000Z",
+      "summary": "<p><img src=\"https://static.inaturalist.org/photos/660343826/large.jpg\" alt=\"Western Gull\"></p><p><img src=\"https://static.inaturalist.org/photos/660344126/large.jpg\" alt=\"Rock Pigeon\"></p><p>Western Gull, Rock Pigeon, in Los Angeles Area (custom), CA, US</p><p>I went for a bird "
+    },
+    {
+      "kind": "rss",
+      "title": "QR code generator",
+      "url": "https://simonwillison.net/2026/May/15/qr-code-generator/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-15T04:00:49.000Z",
+      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/qr-code-generator\">QR code generator</a></p> <p>Claude helped me build this tool for creating QR codes, for both text/URLs and for connecting to WiFi networks.</p> <p><img alt=\"Screenshot of a QR code generator we"
+    },
+    {
+      "kind": "rss",
+      "title": "datasette-llm-limits 0.1a0",
+      "url": "https://simonwillison.net/2026/May/15/datasette-llm-limits/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-15T00:42:09.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-llm-limits/releases/tag/0.1a0\">datasette-llm-limits 0.1a0</a></p> <p>This plugin works in conjunction with <a href=\"https://github.com/datasette/datasette-llm\">datasette-llm</a> and <a href=\"https://gith"
+    },
+    {
+      "kind": "rss",
+      "title": "How business operations teams use Codex",
+      "url": "https://openai.com/academy/codex-for-work/how-business-operations-teams-use-codex",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-05-15T00:00:00.000Z",
+      "summary": "See how business operations teams can use Codex to create initiative briefs, strategy updates, leadership decision packets, progress updates, and more from real work inputs."
+    },
+    {
+      "kind": "rss",
+      "title": "Databricks brings GPT-5.5 to enterprise agent workflows",
+      "url": "https://openai.com/index/databricks",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-05-15T00:00:00.000Z",
+      "summary": "Databricks uses GPT-5.5 for enterprise agent workflows after the model set a new state of the art on the OfficeQA Pro benchmark."
+    },
+    {
+      "kind": "rss",
+      "title": "How data science teams use Codex",
+      "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-05-15T00:00:00.000Z",
+      "summary": "See how data science teams can use Codex to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs."
+    },
+    {
+      "kind": "rss",
+      "title": "A new personal finance experience in ChatGPT",
+      "url": "https://openai.com/index/personal-finance-chatgpt",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-05-15T00:00:00.000Z",
+      "summary": "Preview a new personal finance experience in ChatGPT for Pro users in the U.S. Securely connect your financial accounts and get AI-powered insights and guidance grounded in your financial context, goals, and priorities."
+    },
+    {
+      "kind": "rss",
+      "title": "How sales teams use Codex",
+      "url": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-05-15T00:00:00.000Z",
+      "summary": "See how sales teams can use Codex to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from real work inputs."
+    },
+    {
+      "kind": "rss",
+      "title": "Not so locked in any more",
+      "url": "https://simonwillison.net/2026/May/14/not-so-locked-in/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-14T22:53:49.000Z",
+      "summary": "<p>This <a href=\"https://simonwillison.net/2026/May/14/mitchell-hashimoto/\">Mitchell Hashimoto quote</a> about Bun migrating from Zig to Rust reminded me of a similar conversation I had at a conference last week.</p> <p>I was talking to someone who worked for a medium sized techn"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Mitchell Hashimoto",
+      "url": "https://simonwillison.net/2026/May/14/mitchell-hashimoto/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-14T22:31:20.000Z",
+      "summary": "<blockquote cite=\"https://twitter.com/mitchellh/status/2055039647924007222\"><p>[...] On the interesting side is how fungible programming languages are nowadays. Programming languages used to be LOCK IN, and they're increasingly not so. You think the Bun rewrite in Rust is good fo"
+    },
+    {
+      "kind": "rss",
+      "title": "Sea's View on the Future of Agentic Software Development with Codex",
+      "url": "https://openai.com/index/sea-david-chen",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-05-14T20:30:00.000Z",
+      "summary": "Sea Limited's CPO explains why the company is deploying Codex across engineering teams to accelerate AI-native software development in Asia."
+    },
+    {
+      "kind": "rss",
+      "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-05-14T18:55:01.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Work with Codex from anywhere",
+      "url": "https://openai.com/index/work-with-codex-from-anywhere",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-05-14T13:00:00.000Z",
+      "summary": "Use Codex anywhere with the ChatGPT mobile app. Monitor, steer, and approve coding tasks in real time across devices and remote environments."
+    },
+    {
+      "kind": "rss",
+      "title": "datasette-ip-rate-limit 0.1a0",
+      "url": "https://simonwillison.net/2026/May/14/datasette-ip-rate-limit/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-14T04:10:23.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-ip-rate-limit/releases/tag/0.1a0\">datasette-ip-rate-limit 0.1a0</a></p> <p>The <a href=\"https://datasette.io/\">datasette.io</a> site was being hammered by poorly-behaved crawlers, so I had Codex (GPT-5.5"
+    },
+    {
+      "kind": "rss",
+      "title": "Helping ChatGPT better recognize context in sensitive conversations",
+      "url": "https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-05-14T00:00:00.000Z",
+      "summary": "Learn how new ChatGPT safety updates improve context awareness in sensitive conversations, helping detect risk over time and respond more safely."
+    },
+    {
+      "kind": "rss",
+      "title": "Unlocking asynchronicity in continuous batching",
+      "url": "https://huggingface.co/blog/continuous_async",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-05-14T00:00:00.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Welcome to the Datasette blog",
+      "url": "https://simonwillison.net/2026/May/13/welcome-to-the-datasette-blog/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-13T23:59:39.000Z",
+      "summary": "<p><strong><a href=\"https://datasette.io/blog/2026/new-blog/\">Welcome to the Datasette blog</a></strong></p> We have a bunch of neat Datasette announcements in the pipeline so we decided it was time the project grew an official blog.</p> <p>I built this using OpenAI Codex desktop"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Boris Mann",
+      "url": "https://simonwillison.net/2026/May/13/boris-mann/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-13T16:15:50.000Z",
+      "summary": "<blockquote cite=\"https://bsky.app/profile/bmann.ca/post/3mlp2ipupv22z\"><p>“11 AI agents” is meaningless as a phrase. </p> <p>If I said “I have 11 spreadsheets” or “I have 11 browser tabs” to do my work, it means about the same thing.</p></blockquote> <p class=\"cite\">&mdash; <a h"
+    },
+    {
+      "kind": "rss",
+      "title": "Building a safe, effective sandbox to enable Codex on Windows",
+      "url": "https://openai.com/index/building-codex-windows-sandbox",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-05-13T11:00:00.000Z",
+      "summary": "Learn how OpenAI built a secure sandbox for Codex on Windows, enabling safe, efficient coding agents with controlled file access and network restrictions."
+    },
     {
       "kind": "rss",
       "title": "CSP Allow-list Experiment",
@@ -24,6 +304,16 @@
       "category": "insights",
       "publishedAt": "2026-05-13T04:50:45.000Z",
       "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/csp-allow\">CSP Allow-list Experiment</a></p> <p>An experiment that shows that you can load an app in a CSP-protected sandboxed iframe (see <a href=\"https://simonwillison.net/2026/Apr/3/test-csp-iframe-escape/\">pre"
+    },
+    {
+      "kind": "rss",
+      "title": "Our response to the TanStack npm supply chain attack",
+      "url": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-05-13T00:00:00.000Z",
+      "summary": "OpenAI details its response to the TanStack “Mini Shai-Hulud” supply chain attack, outlines protections taken to secure systems and signing certificates, and explains why macOS users must update OpenAI apps by June 12, 2026. Learn what happened, what was affected, and how OpenAI "
     },
     {
       "kind": "rss",
@@ -67,13 +357,13 @@
     },
     {
       "kind": "rss",
-      "title": "How finance teams use Codex",
-      "url": "https://openai.com/academy/how-finance-teams-use-codex",
+      "title": "AutoScout24 scales engineering with AI-powered workflows",
+      "url": "https://openai.com/index/autoscout24",
       "source": "OpenAI",
       "sourceId": "openai",
       "category": "model-releases",
-      "publishedAt": "2026-05-12T15:00:00.000Z",
-      "summary": "See how finance teams can use Codex to build MBRs, reporting packs, variance bridges, model checks, and planning scenarios from real work inputs."
+      "publishedAt": "2026-05-12T00:00:00.000Z",
+      "summary": "Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption."
     },
     {
       "kind": "rss",
@@ -94,16 +384,6 @@
       "category": "model-releases",
       "publishedAt": "2026-05-12T00:00:00.000Z",
       "summary": "Parameter Golf brought together 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research, coding agents, quantization, and novel model design under strict constraints."
-    },
-    {
-      "kind": "rss",
-      "title": "AutoScout24 scales engineering with AI-powered workflows",
-      "url": "https://openai.com/index/autoscout24",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-12T00:00:00.000Z",
-      "summary": "Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption."
     },
     {
       "kind": "rss",
@@ -167,16 +447,6 @@
     },
     {
       "kind": "rss",
-      "title": "How ChatGPT adoption broadened in early 2026",
-      "url": "https://openai.com/signals/research/2026q1-update",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-11T15:00:00.000Z",
-      "summary": "ChatGPT adoption surged in Q1 2026, with fastest growth among users over 35 and more balanced gender usage, signaling broader mainstream AI adoption."
-    },
-    {
-      "kind": "rss",
       "title": "Import AI 456: RSI and economic growth; radical optionality for AI regulation; and a neural computer",
       "url": "https://importai.substack.com/p/import-ai-456-rsi-and-economic-growth",
       "source": "Import AI (Jack Clark)",
@@ -184,16 +454,6 @@
       "category": "insights",
       "publishedAt": "2026-05-11T12:46:12.000Z",
       "summary": "What laws does superintelligence demand?"
-    },
-    {
-      "kind": "rss",
-      "title": "How enterprises are scaling AI",
-      "url": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-11T10:00:00.000Z",
-      "summary": "How enterprises scale AI: from early experiments to compounding impact through trust, governance, workflow design, and quality at scale."
     },
     {
       "kind": "rss",
@@ -207,6 +467,16 @@
     },
     {
       "kind": "rss",
+      "title": "How enterprises are scaling AI",
+      "url": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-05-11T10:00:00.000Z",
+      "summary": "How enterprises scale AI: from early experiments to compounding impact through trust, governance, workflow design, and quality at scale."
+    },
+    {
+      "kind": "rss",
       "title": "OpenAI launches DeployCo to help businesses build around intelligence",
       "url": "https://openai.com/index/openai-launches-the-deployment-company",
       "source": "OpenAI",
@@ -214,226 +484,6 @@
       "category": "model-releases",
       "publishedAt": "2026-05-11T06:00:00.000Z",
       "summary": "OpenAI launches DeployCo, a new enterprise deployment company built to help organizations bring frontier AI into production and turn it into measurable business impact."
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting New York Times Editors’ Note",
-      "url": "https://simonwillison.net/2026/May/10/new-york-times-editors-note/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-10T23:58:49.000Z",
-      "summary": "<blockquote cite=\"https://www.nytimes.com/2026/04/14/world/canada/election-carney-liberal-party.html\"><p><em>This article was updated after The Times learned that a remark attributed to Pierre Poilievre, the Conservative leader, was in fact an A.I.-generated summary of his views "
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Andrew Quinn",
-      "url": "https://simonwillison.net/2026/May/10/andrew-quinn/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-10T14:59:17.000Z",
-      "summary": "<blockquote cite=\"https://til.andrew-quinn.me/posts/replacing-a-3-gb-sqlite-database-with-a-7-mb-fst-finite-state-trandsucer-binary/#fn:5\"><p>One could say in the first quarter-century of my life, that while I was always fascinated by programming, I could never overcome the guilt"
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Luke Curley",
-      "url": "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-09T01:03:58.000Z",
-      "summary": "<blockquote cite=\"https://moq.dev/blog/webrtc-is-the-problem/\"><p>WebRTC is designed to <strong>degrade and drop my prompt</strong> during poor network conditions.</p> <p>wtf my dude</p> <p>WebRTC aggressively drops audio packets to keep latency low. If you’ve ever heard distorte"
-    },
-    {
-      "kind": "rss",
-      "title": "Using Claude Code: The Unreasonable Effectiveness of HTML",
-      "url": "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-08T21:00:11.000Z",
-      "summary": "<p><strong><a href=\"https://twitter.com/trq212/status/2052809885763747935\">Using Claude Code: The Unreasonable Effectiveness of HTML</a></strong></p> Thought-provoking piece by Thariq Shihipar (on the Claude Code team at Anthropic) advocating for HTML over Markdown as an output f"
-    },
-    {
-      "kind": "rss",
-      "title": "EMO: Pretraining mixture of experts for emergent modularity",
-      "url": "https://huggingface.co/blog/allenai/emo",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-05-08T16:03:50.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Running Codex safely at OpenAI",
-      "url": "https://openai.com/index/running-codex-safely",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-08T12:30:00.000Z",
-      "summary": "How OpenAI runs Codex securely with sandboxing, approvals, network policies, and agent-native telemetry to support safe and compliant coding agent adoption."
-    },
-    {
-      "kind": "rss",
-      "title": "llm-gemini 0.31",
-      "url": "https://simonwillison.net/2026/May/7/llm-gemini/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-07T19:57:06.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.31\">llm-gemini 0.31</a></p> <blockquote> <ul> <li><code>gemini-3.1-flash-lite</code> is <a href=\"https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-gener"
-    },
-    {
-      "kind": "rss",
-      "title": "Big Words",
-      "url": "https://simonwillison.net/2026/May/7/big-words/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-07T18:47:09.000Z",
-      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/big-words\">Big Words</a></p> <p>I'm using my <a href=\"https://simonwillison.net/2026/Feb/25/present/\">vibe coded macOS presentations tool</a> to put together a talk, and I wanted to add a slide with some text on i"
-    },
-    {
-      "kind": "rss",
-      "title": "Behind the Scenes Hardening Firefox with Claude Mythos Preview",
-      "url": "https://simonwillison.net/2026/May/7/firefox-claude-mythos/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-07T17:56:25.000Z",
-      "summary": "<p><strong><a href=\"https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/\">Behind the Scenes Hardening Firefox with Claude Mythos Preview</a></strong></p> Fascinating, in-depth details on how Mozilla used their access to the Claude Mythos preview to locate and th"
-    },
-    {
-      "kind": "rss",
-      "title": "Notes on the xAI/Anthropic data center deal",
-      "url": "https://simonwillison.net/2026/May/7/xai-anthropic/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-07T17:09:28.000Z",
-      "summary": "<p>There weren't a lot of big new announcements from Anthropic at yesterday's Code w/ Claude event, but the biggest by far was the deal they've struck with SpaceX/xAI to use \"all of the capacity of their Colossus data center\".</p> <p>As I mentioned in my <a href=\"https://simonwil"
-    },
-    {
-      "kind": "rss",
-      "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
-      "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-07T13:00:00.000Z",
-      "summary": "OpenAI expands Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber, helping verified defenders accelerate vulnerability research and protect critical infrastructure."
-    },
-    {
-      "kind": "rss",
-      "title": "Parloa builds service agents customers want to talk to",
-      "url": "https://openai.com/index/parloa",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-07T11:00:00.000Z",
-      "summary": "Parloa leverages OpenAI models to power scalable, voice-driven AI customer service agents, enabling enterprises to design, simulate, and deploy reliable, real-time interactions."
-    },
-    {
-      "kind": "rss",
-      "title": "Advancing voice intelligence with new models in the API",
-      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-07T10:00:00.000Z",
-      "summary": "Explore new realtime voice models in the OpenAI API that can reason, translate, and transcribe speech, enabling more natural and intelligent voice experiences."
-    },
-    {
-      "kind": "rss",
-      "title": "GitHub Repo Stats",
-      "url": "https://simonwillison.net/2026/May/7/github-repo-stats/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-07T07:25:14.000Z",
-      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/github-repo-stats\">GitHub Repo Stats</a></p> <p>One of the things I always look for when evaluating a new GitHub repository is the number of commits it has... but that number isn't visible on GitHub's mobile site "
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing Trusted Contact in ChatGPT",
-      "url": "https://openai.com/index/introducing-trusted-contact-in-chatgpt",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-07T00:00:00.000Z",
-      "summary": "Introducing Trusted Contact in ChatGPT, an optional safety feature that notifies someone you trust if serious self-harm concerns are detected."
-    },
-    {
-      "kind": "rss",
-      "title": "Testing ads in ChatGPT",
-      "url": "https://openai.com/index/testing-ads-in-chatgpt",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-07T00:00:00.000Z",
-      "summary": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control."
-    },
-    {
-      "kind": "rss",
-      "title": "Simplex rethinks software development with Codex",
-      "url": "https://openai.com/index/simplex",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-07T00:00:00.000Z",
-      "summary": "Simplex boosts software development with ChatGPT Enterprise and Codex, reducing design, build, and testing time while scaling AI-driven workflows."
-    },
-    {
-      "kind": "rss",
-      "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-05-06T19:06:55.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Live blog: Code w/ Claude 2026",
-      "url": "https://simonwillison.net/2026/May/6/code-w-claude-2026/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-06T15:58:27.000Z",
-      "summary": "<p>I'm at Anthropic's Code w/ Claude event today. Here's my live blog of the morning keynote sessions.</p> <p>Tags: <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=\"https://simonwillison.net/tag"
-    },
-    {
-      "kind": "rss",
-      "title": "Vibe coding and agentic engineering are getting closer than I'd like",
-      "url": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-06T14:24:08.000Z",
-      "summary": "<p>I recently talked with Joseph Ruscio about AI coding tools for Heavybit's High Leverage podcast: <a href=\"https://www.heavybit.com/library/podcasts/high-leverage/ep-9-the-ai-coding-paradigm-shift-with-simon-willison\">Ep. #9, The AI Coding Paradigm Shift with Simon Willison</a>"
-    },
-    {
-      "kind": "rss",
-      "title": "AlphaEvolve: How our Gemini-powered coding agent is scaling impact across fields",
-      "url": "https://deepmind.google/blog/alphaevolve-impact/",
-      "source": "Google DeepMind",
-      "sourceId": "deepmind",
-      "category": "research",
-      "publishedAt": "2026-05-06T10:43:49.000Z",
-      "summary": "Explore how AlphaEvolve's Gemini-powered algorithms are driving impact across business, infrastructure, and science."
-    },
-    {
-      "kind": "rss",
-      "title": "How ChatGPT learns about the world while protecting privacy",
-      "url": "https://openai.com/index/how-chatgpt-protects-privacy",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-06T08:00:00.000Z",
-      "summary": "Learn how ChatGPT safeguards your privacy, reduces personal data in training, and gives you control over whether your conversations improve AI models."
     }
   ]
 }
