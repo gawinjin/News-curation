@@ -7,6 +7,7 @@ export type Source = {
   name: string;
   url: string;        // human-facing URL
   feed: string;       // RSS / Atom feed URL
+  fallback?: { kind: 'sitemap'; url: string; include: string } | { kind: 'listing'; url: string; include: string };
   bucket: 'lab' | 'voice';
   category: 'model-releases' | 'research' | 'insights' | 'guides';
 };
@@ -18,6 +19,7 @@ export const SOURCES: Source[] = [
     name: 'Anthropic',
     url: 'https://www.anthropic.com/news',
     feed: 'https://www.anthropic.com/news/rss.xml',
+    fallback: { kind: 'sitemap', url: 'https://www.anthropic.com/sitemap.xml', include: '/news/' },
     bucket: 'lab',
     category: 'model-releases',
   },
@@ -42,6 +44,7 @@ export const SOURCES: Source[] = [
     name: 'Meta AI',
     url: 'https://ai.meta.com/blog/',
     feed: 'https://ai.meta.com/blog/rss/',
+    fallback: { kind: 'listing', url: 'https://ai.meta.com/blog/', include: 'https://ai.meta.com/blog/' },
     bucket: 'lab',
     category: 'model-releases',
   },
@@ -50,6 +53,7 @@ export const SOURCES: Source[] = [
     name: 'Mistral AI',
     url: 'https://mistral.ai/news/',
     feed: 'https://mistral.ai/news/rss.xml',
+    fallback: { kind: 'sitemap', url: 'https://mistral.ai/sitemap.xml', include: '/news/' },
     bucket: 'lab',
     category: 'model-releases',
   },
