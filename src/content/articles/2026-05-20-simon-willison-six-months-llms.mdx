@@ -1,0 +1,53 @@
+---
+title: "Simon Willison's five-minute LLM recap has two lessons"
+date: 2026-05-20
+category: insights
+tags: ["simon-willison", "llm", "agents", "local-ai"]
+summary: "Simon Willison's PyCon recap argues that coding agents crossed a quality line and local models started beating expectations. Both are practical signals."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "Access to two AI assistants"
+    - "One silly visual prompt or one small coding task"
+references:
+  - title: "The last six months in LLMs in five minutes"
+    url: "https://simonwillison.net/2026/May/19/5-minute-llms/"
+    author: "Simon Willison"
+    publishedAt: "2026-05-19"
+  - title: "Live blog: Code w/ Claude 2026"
+    url: "https://simonwillison.net/2026/May/6/code-w-claude-2026/"
+    author: "Simon Willison"
+    publishedAt: "2026-05-06"
+draft: false
+---
+
+## TL;DR
+
+Simon Willison compressed six months of LLM progress into a PyCon lightning talk. The two useful themes: coding agents became good enough for daily work, and smaller local models started doing more than most people expected.
+
+## What's New
+
+Willison's recap covers the period around what he calls the November 2025 inflection point. His playful benchmark is a pelican riding a bicycle, but the serious point is model progress across OpenAI, Google, and Anthropic moving quickly enough that the "best" model label kept changing.
+
+The practical signal is his coding-agent observation. Willison argues that agents moved from often-working to mostly-working, especially when paired with harnesses such as Codex and Claude Code.
+
+The second signal is local models. Willison highlights open-weight models that can run on personal hardware and still produce surprisingly capable outputs. They do not replace frontier models, but they are no longer toys for many everyday experiments.
+
+## Why It Matters
+
+This is useful because it gives normal users a better mental model than leaderboard chasing. The question is not "which model won this week?" The better question is which class of tool is now reliable enough for your own work.
+
+For writing, research, planning, and light coding, you can now compare assistants by testing the same task twice. For private notes or offline experiments, local models are worth watching because they trade some power for control.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["Access to two AI assistants", "One silly visual prompt or one small coding task"]}>
+
+1. Pick one harmless benchmark prompt. Willison uses a pelican riding a bicycle; you can use any odd task that is easy to judge.
+2. Run the same prompt in two assistants and save the outputs.
+3. Ask each assistant one follow-up that requires preserving context, such as "make it simpler" or "fix the weakest part."
+4. Score the results on usefulness, not confidence. Which one followed the request with less cleanup?
+5. Repeat the test next month. Fast-moving model changes are easier to notice when you reuse the same small benchmark.
+
+</PracticalGuide>
+
