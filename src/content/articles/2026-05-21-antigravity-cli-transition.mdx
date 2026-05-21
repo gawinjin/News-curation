@@ -1,0 +1,52 @@
+---
+title: "Google is moving Gemini CLI users to Antigravity CLI"
+date: 2026-05-21
+category: guides
+tags: ["google", "agents", "coding", "workflow"]
+summary: "Google says Gemini CLI will stop serving most consumer requests on June 18, with Antigravity CLI becoming the new terminal path for its agent-first development platform."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A project where you use Gemini CLI or an AI coding tool"
+    - "Terminal access"
+references:
+  - title: "An important update: Transitioning Gemini CLI to Antigravity CLI"
+    url: "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/"
+    author: "Google Developers Blog"
+    publishedAt: "2026-05-19"
+  - title: "Google Antigravity"
+    url: "https://antigravity.google/"
+    author: "Google"
+draft: false
+---
+
+## TL;DR
+
+Google is moving most consumer Gemini CLI users to Antigravity CLI. The practical deadline is June 18, 2026: free, Google AI Pro, and Google AI Ultra users should test the new CLI before their Gemini CLI requests stop being served.
+
+## What's New
+
+Google says Gemini CLI had outgrown its original terminal-only shape. The replacement path is Antigravity CLI, which shares a backend with Antigravity 2.0, Google's broader agent-first development platform.
+
+The new CLI keeps several important Gemini CLI ideas, including Agent Skills, Hooks, Subagents, and Extensions, now represented as Antigravity plugins. Google is also pitching faster execution, background multi-agent workflows, and a unified architecture across terminal and desktop.
+
+The timeline is the part users should notice. Starting June 18, Gemini CLI and Gemini Code Assist IDE extensions stop serving requests for free, Google AI Pro, and Ultra users. Enterprise customers have a different path and keep access through paid Gemini and Gemini Enterprise Agent Platform API keys.
+
+## Why It Matters
+
+This is a small migration with a bigger signal behind it. Coding agents are moving from single chat sessions toward coordinated systems: terminal, desktop app, IDE, plugin directory, background tasks, and shared state.
+
+If you use Gemini CLI casually, the risk is simple: a workflow that works today may stop working next month. If you use any coding agent, the lesson is broader: keep your setup portable, write down the commands you rely on, and test migrations before a deadline forces the move.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A project where you use Gemini CLI or an AI coding tool", "Terminal access"]}>
+
+1. Open one project where you have used Gemini CLI or another terminal agent.
+2. Write down the three commands or workflows you rely on most, such as explaining code, editing a file, or running tests.
+3. Install or open Antigravity CLI only in a safe test project first, not your most important repo.
+4. Re-run those same three workflows and compare output quality, speed, and file changes.
+5. If the new workflow is good enough, save a short migration note before June 18 with the install command, auth step, and any changed prompts.
+
+</PracticalGuide>
+

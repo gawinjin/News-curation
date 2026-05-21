@@ -85,7 +85,12 @@
     "https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/",
     "https://blog.google/products-and-platforms/products/search/search-io-2026/",
     "https://openai.com/index/advancing-content-provenance/",
-    "https://deepmind.google/technologies/synthid/"
+    "https://deepmind.google/technologies/synthid/",
+    "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/",
+    "https://antigravity.google/",
+    "https://github.com/anthropics/claude-plugins-official",
+    "https://code.claude.com/docs/en/plugins",
+    "https://huggingface.co/blog/ibm-research/open-agent-leaderboard"
   ],
-  "lastIngest": "2026-05-21T04:15:00.000Z"
+  "lastIngest": "2026-05-21T08:05:00.000Z"
 }

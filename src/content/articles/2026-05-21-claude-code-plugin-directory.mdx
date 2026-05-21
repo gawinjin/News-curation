@@ -1,0 +1,51 @@
+---
+title: "Claude Code now has an official plugin directory"
+date: 2026-05-21
+category: guides
+tags: ["claude", "plugins", "coding", "agents"]
+summary: "Anthropic's official Claude Code plugin directory gives users a curated place to find plugins, while still warning them to inspect what each plugin can do before installing it."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "Claude Code access"
+    - "A project where you can safely test one plugin"
+references:
+  - title: "Claude Code Plugins Directory"
+    url: "https://github.com/anthropics/claude-plugins-official"
+    author: "Anthropic"
+  - title: "Claude Code plugin documentation"
+    url: "https://code.claude.com/docs/en/plugins"
+    author: "Anthropic"
+draft: false
+---
+
+## TL;DR
+
+Anthropic has an official Claude Code plugin directory. It includes internal Anthropic plugins and approved external plugins, giving users a cleaner discovery path than copying random scripts from posts or repos.
+
+## What's New
+
+The `anthropics/claude-plugins-official` repo describes itself as a curated directory for Claude Code plugins. The structure separates Anthropic-maintained plugins from external community and partner plugins.
+
+Installation is designed to happen inside Claude Code's plugin system. The directory points users toward `/plugin install {plugin-name}@claude-plugins-official` or browsing through `/plugin > Discover`.
+
+Anthropic also puts a safety warning near the top: users should trust a plugin before installing it, because plugins may include MCP servers, files, commands, agents, skills, or other software that changes what Claude Code can do.
+
+## Why It Matters
+
+Coding agents are becoming plugin platforms. That is useful because plugins can give the agent repeatable commands, project-specific skills, integrations, and better workflows. It is also risky because plugins expand what the agent can run or access.
+
+For normal users, the right habit is to treat plugins like browser extensions or shell scripts. Install fewer of them, prefer official or well-reviewed sources, and test each one in a small project before using it around sensitive code.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["Claude Code access", "A project where you can safely test one plugin"]}>
+
+1. Open the official Claude Code plugin directory on GitHub.
+2. Pick one plugin that solves a real problem you have, not a plugin that only sounds interesting.
+3. Open that plugin's README and check what files, commands, MCP servers, or permissions it adds.
+4. Install it only in a test project first using Claude Code's plugin system.
+5. Ask Claude Code to show what changed and run one tiny task. Keep the plugin only if the benefit is clear.
+
+</PracticalGuide>
+
