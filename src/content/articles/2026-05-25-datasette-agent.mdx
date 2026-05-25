@@ -1,0 +1,60 @@
+---
+title: "Datasette Agent lets you chat with a real database in your browser"
+date: 2026-05-25
+category: guides
+tags: ["agents", "datasette", "data", "simon-willison"]
+summary: "Simon Willison's Datasette Agent adds an AI assistant to SQLite data exploration. A public demo lets you test questions against example databases with a GitHub sign-in."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A web browser"
+    - "A GitHub account for the public demo sign-in"
+references:
+  - title: "Datasette Agent, an extensible AI assistant for Datasette"
+    url: "https://datasette.io/blog/2026/datasette-agent"
+    author: "Simon Willison"
+    publishedAt: "2026-05-21"
+  - title: "Datasette Agent"
+    url: "https://simonwillison.net/2026/May/21/datasette-agent/"
+    author: "Simon Willison"
+    publishedAt: "2026-05-21"
+  - title: "datasette-agent on PyPI"
+    url: "https://pypi.org/project/datasette-agent/"
+    author: "Datasette"
+    publishedAt: "2026-05-24"
+  - title: "Datasette Agent live demo"
+    url: "https://agent.datasette.io/"
+    author: "Datasette"
+    publishedAt: "2026-05-21"
+draft: false
+---
+
+## TL;DR
+
+Datasette Agent is a new open-source assistant for asking questions about SQLite data. Simon Willison and the Datasette team offer a public demo where you can sign in with GitHub, choose example data, ask a question, and inspect the SQL behind the answer.
+
+## What's New
+
+Datasette is a tool for exploring data stored in SQLite databases, a common lightweight file format. Datasette Agent adds an AI assistant that can take a question in ordinary language and use queries to find an answer in that data.
+
+The official demo at `agent.datasette.io` is available publicly with GitHub sign-in. It runs against example databases, and the announcement shows the assistant producing SQL for a question before returning an answer. This gives readers a way to check what the agent did instead of accepting a summary blindly.
+
+The project is still early: PyPI lists `datasette-agent` version `0.1a4` as a prerelease published on May 24. Its plugin system already includes tools for charts, image generation, and sandboxed code execution, but a first try only needs the hosted demo.
+
+## Why It Matters
+
+Many people have useful data in tables but do not know SQL. A conversational tool can make that data easier to inspect, whether it is a list of observations, public records, or a project export. The important difference from a plain chatbot is that the query can be examined.
+
+That also gives users a better habit for AI-assisted analysis: ask a precise question, inspect the query or evidence, and treat the answer as a starting point until the underlying data checks out. Since this is prerelease software, try it with example or non-sensitive data first.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A web browser", "A GitHub account for the public demo sign-in"]}>
+
+1. Open https://agent.datasette.io/ and confirm the page labels itself as a live demo for exploring SQLite data.
+2. Choose Sign in with GitHub and review the requested access before completing sign-in.
+3. Select one example database shown by the demo and ask a specific question, such as which entries have the highest total or which locations appear most often.
+4. Open the SQL or supporting result shown for the answer and check that the query matches your question.
+5. Use Export Markdown if available to save the conversation and the evidence you checked.
+
+</PracticalGuide>

@@ -90,7 +90,11 @@
     "https://antigravity.google/",
     "https://github.com/anthropics/claude-plugins-official",
     "https://code.claude.com/docs/en/plugins",
-    "https://huggingface.co/blog/ibm-research/open-agent-leaderboard"
+    "https://huggingface.co/blog/ibm-research/open-agent-leaderboard",
+    "https://datasette.io/blog/2026/datasette-agent",
+    "https://simonwillison.net/2026/May/21/datasette-agent/",
+    "https://pypi.org/project/datasette-agent/",
+    "https://agent.datasette.io/"
   ],
-  "lastIngest": "2026-05-21T08:05:00.000Z"
+  "lastIngest": "2026-05-25T10:26:15.710Z"
 }
