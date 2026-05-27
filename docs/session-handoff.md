@@ -1,47 +1,42 @@
 # Session Handoff
 
-Last updated: 2026-05-18
+Last updated: 2026-05-27
 
 ## Current branch
 
-`claude/ai-news-platform-XeTXH`
+`codex/signal-repair-consolidation`
 
 ## Current state
 
-Uncommitted audit/RSS/CI fixes are present in the working tree.
+This local repair branch consolidates the previously dirty Astro 6/platform maintenance work, the upstream editorial history through May 21, and the May 25 Datasette article. It has not been pushed, deployed, or published.
 
-## What changed
+## Included history
 
-- Upgraded the site to Astro 6 and migrated content config from `src/content/config.ts` to `src/content.config.ts`.
-- Removed `@astrojs/tailwind` and added `postcss.config.cjs` for Tailwind processing.
-- Added `typecheck` and `audit:prod` scripts and wired them into GitHub verify/deploy workflows.
-- Added shared deterministic article sorting in `src/lib/articles.ts`.
-- Updated article routes and links to use Astro 6 content-layer IDs safely.
-- Improved RSS with deterministic ordering, `lastBuildDate`, and Atom self-link metadata.
-- Fixed `brief-to-mdx` typing, manual social queue cleanup, view-transition listener guards, and `heroEmbed.caption` support.
-- Added this handoff discipline to `AGENTS.md`.
+- `b2b43a6` preserves the prior Astro 6/platform maintenance working tree as a local commit.
+- `dccfde7` merges `origin/claude/ai-news-platform-XeTXH` through May 21, retaining upstream RSS/editorial behavior and resolving `scripts/ingest.ts` with the local queue-audit status handling.
+- `e9dda27` cherry-picks the May 25 Datasette article, published brief, inbox change, and covered-URL state.
+- `398ae76` ignores nested `.claude/worktrees/`, hardens manual-run staging/authorization rules, and fixes/tests the 25-word overlap boundary.
 
 ## Validation already run
 
-Run under Node 24.14.0 from the bundled Codex runtime:
+Run under bundled Node 24.14.0:
 
-- `npm ci --ignore-scripts` passed.
-- `npm run typecheck` passed.
-- `VERIFY_FETCH=0 npm run verify` passed.
-- `npm run build` passed and generated 126 pages.
-- `npm run audit:prod` passed with 0 vulnerabilities.
-- Full `npm run verify` passed; existing unreachable-reference notices remain.
-- Local browser smoke test passed for the homepage and an article page; no console errors.
+- TypeScript `tsc --noEmit` passed.
+- `tsx --test scripts/verify-article.test.ts` passed: 25 matching words accepted, 26 rejected, punctuation/case normalization detected, and unrelated prose accepted.
+- `VERIFY_FETCH=0 tsx scripts/verify-article.ts` passed for all 49 articles.
+- `astro build` passed and generated 145 pages.
+- `pagefind --site dist` passed and indexed 145 pages.
+- Consolidated content check found the May 20-21 upstream articles and `2026-05-25-datasette-agent.mdx`, with zero duplicate entries in `data/state.json`.
 
-## Pending
+## Warnings and hold points
 
-- Review the diff.
-- Commit the changes.
-- Push to `claude/ai-news-platform-XeTXH` and `main` if deployment should pick them up.
-- If deploying through GitHub Actions, Cloudflare secrets must still exist in the GitHub repo settings.
+- The nested publishing worktree under `.claude/worktrees/competent-cannon-74ea2e` was left physically untouched. Its pre-existing status remains one untracked `DEBUG-RSS.md`.
+- From WSL, `git worktree list` may report that nested worktree as prunable because its metadata contains a Windows absolute `gitdir` pointer. Do not run `git worktree prune`, move it, or repair it as part of this branch.
+- CI/offline verification does not fetch live references. Before any user-authorized publication, run and record a network-backed `npm run verify`.
+- No push, PR, deployment, automation, Hermes call, Gemini call, or research-worker migration occurred in this repair.
 
-## Warnings
+## Pending authorization
 
-- The project now requires Node `>=22.12.0`.
-- The local system Node observed during this session was Node 20.17.0, so local commands should use Node 24 or upgrade the system Node.
-- `npm install` was run with `--ignore-scripts` to avoid package lifecycle script execution.
+- Review the local repair branch.
+- Push, open a PR, or deploy only after explicit user approval.
+- Treat Gemini/`agy` research-collaboration adoption as a separate later change.
