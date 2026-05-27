@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
+import { getArticleSlug, sortArticlesByNewest } from '../../lib/articles';
 
 export async function getStaticPaths() {
   const entries = await getCollection('articles', ({ data }) => !data.draft);
@@ -11,8 +12,8 @@ export async function getStaticPaths() {
 }
 
 const tag = Astro.params.tag as string;
-const articles = (await getCollection('articles', ({ data }) => !data.draft && data.tags.includes(tag))).sort(
-  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+const articles = sortArticlesByNewest(
+  await getCollection('articles', ({ data }) => !data.draft && data.tags.includes(tag)),
 );
 ---
 
@@ -27,7 +28,7 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft && d
     <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
       {articles.map((a) => (
         <ArticleCard
-          href={`/articles/${a.slug}`}
+          href={`/articles/${getArticleSlug(a)}`}
           title={a.data.title}
           summary={a.data.summary}
           date={a.data.date}

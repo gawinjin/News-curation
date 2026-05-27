@@ -33,6 +33,9 @@ const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
 
 <script is:inline>
   (function () {
+    if (window.__signalTocCleanup) {
+      window.__signalTocCleanup();
+    }
     const links = document.querySelectorAll('[data-toc-link]');
     if (!links.length) return;
     const headingEls = Array.from(links)
@@ -54,5 +57,9 @@ const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
     }
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
+    window.__signalTocCleanup = function () {
+      window.removeEventListener('scroll', onScroll);
+      delete window.__signalTocCleanup;
+    };
   })();
 </script>

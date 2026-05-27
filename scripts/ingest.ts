@@ -33,6 +33,10 @@ type InboxItem = {
 };
 
 type SocialQueueEntry = { url: string; note?: string; addedAt?: string };
+type PublishedSocialQueueEntry = SocialQueueEntry & {
+  processedAt: string;
+  status: 'merged' | 'covered' | 'invalid';
+};
 
 async function readJSON<T>(p: string, fallback: T): Promise<T> {
   try {
@@ -219,11 +223,17 @@ async function ingestSocial(state: Set<string>, cutoff: number) {
 async function ingestManualQueue(state: Set<string>) {
   const inbox: InboxItem[] = [];
   const queue = await readJSON<{ queued: SocialQueueEntry[] }>(SOCIAL_QUEUE, { queued: [] });
-  const carry: SocialQueueEntry[] = [];
+  const processed: Array<SocialQueueEntry & { status: PublishedSocialQueueEntry['status'] }> = [];
   let merged = 0;
   for (const q of queue.queued ?? []) {
-    if (!q.url) continue;
-    if (state.has(q.url)) continue;
+    if (!q.url) {
+      processed.push({ ...q, status: 'invalid' });
+      continue;
+    }
+    if (state.has(q.url)) {
+      processed.push({ ...q, status: 'covered' });
+      continue;
+    }
     inbox.push({
       kind: 'social',
       title: q.note ? `(queued) ${q.note.slice(0, 80)}` : '(queued social post)',
@@ -236,21 +246,22 @@ async function ingestManualQueue(state: Set<string>) {
       via: 'manual',
       linkedUrls: extractLinks(q.note || ''),
     });
+    processed.push({ ...q, status: 'merged' });
     merged++;
   }
   // Move processed entries to published queue (audit trail), reset queue file to empty.
-  if (merged > 0) {
-    const published = await readJSON<{ items: Array<SocialQueueEntry & { processedAt: string }> }>(
+  if (processed.length > 0) {
+    const published = await readJSON<{ items: PublishedSocialQueueEntry[] }>(
       SOCIAL_QUEUE_PUBLISHED,
       { items: [] },
     );
     const stamp = new Date().toISOString();
     published.items = [
       ...published.items,
-      ...(queue.queued ?? []).filter((q) => q.url).map((q) => ({ ...q, processedAt: stamp })),
+      ...processed.map((q) => ({ ...q, processedAt: stamp })),
     ];
     await fs.writeFile(SOCIAL_QUEUE_PUBLISHED, JSON.stringify(published, null, 2));
-    await fs.writeFile(SOCIAL_QUEUE, JSON.stringify({ queued: carry }, null, 2));
+    await fs.writeFile(SOCIAL_QUEUE, JSON.stringify({ queued: [] }, null, 2));
   }
   return { inbox, merged };
 }

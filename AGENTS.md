@@ -66,7 +66,7 @@ Required body sections, in order:
 
 References render automatically from frontmatter; **do not write a References section in the body.**
 
-Frontmatter schema is enforced by Zod ([`src/content/config.ts`](src/content/config.ts)).
+Frontmatter schema is enforced by Zod ([`src/content.config.ts`](src/content.config.ts)).
 
 ---
 
@@ -84,6 +84,23 @@ Frontmatter schema is enforced by Zod ([`src/content/config.ts`](src/content/con
 ## Dedup
 
 `data/state.json` lists every source URL we've already covered. The ingest script filters it out automatically. **After publishing**, append the source URLs you cited to `data/state.json` so future runs don't re-cover them.
+
+---
+
+## Run log and handoff notes
+
+At the end of every session, leave enough notes for the next agent to resume without guessing.
+
+- If work was committed and pushed, record the branch, commit hash, validation commands run, and deploy status in the final response.
+- If work is unfinished or uncommitted, update [`docs/session-handoff.md`](docs/session-handoff.md) with:
+  - current branch
+  - what changed
+  - what is still pending
+  - commands already run and results
+  - known blockers or warnings
+- Keep `docs/session-handoff.md` current. Overwrite stale notes instead of accumulating noise.
+- For daily news runs, record candidate decisions, skipped items, and shipped article URLs in [`data/run-log.md`](data/run-log.md).
+- Never end a curation session with uncommitted changes unless `docs/session-handoff.md` explains exactly how to continue.
 
 ---
 

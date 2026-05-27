@@ -72,7 +72,7 @@ The required body sections are `## TL;DR`, `## What's New`, `## Why It Matters`,
 ```text
 src/
   content/articles/    Markdown/MDX articles (each is one file)
-  content/config.ts    Zod schema for frontmatter
+  content.config.ts    Zod schema for frontmatter
   components/          UI primitives (Header, Footer, PracticalGuide, ...)
   layouts/             Base + Article layouts
   pages/               Routes: index, articles, category, tag, archive, rss, search

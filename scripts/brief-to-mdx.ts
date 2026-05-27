@@ -21,8 +21,8 @@ type Brief = {
   title_candidates: string[];
   summary: string;
   tags: string[];
-  primary_source: { url: string; title: string; author?: string; publishedAt?: string };
-  supporting_sources?: Array<{ url: string; title: string }>;
+  primary_source: { url: string; title: string; author?: string; publishedAt?: string; key_facts?: string[] };
+  supporting_sources?: Array<{ url: string; title: string; key_facts?: string[] }>;
   practical_guide: {
     timeToTry: string;
     prerequisites: string[];
@@ -110,7 +110,6 @@ ${steps}
 }
 
 function body(b: Brief): string {
-  const fact = b.primary_source.key_facts?.[0] || 'TODO: lead with the concrete thing.';
   return `
 ## TL;DR
 
@@ -143,7 +142,7 @@ async function main() {
   const abs = path.isAbsolute(briefPath) ? briefPath : path.join(ROOT, briefPath);
   const brief = JSON.parse(await fs.readFile(abs, 'utf8')) as Brief;
 
-  // Minimal sanity checks (full schema lives in src/content/config.ts at build time)
+  // Minimal sanity checks (full schema lives in src/content.config.ts at build time)
   const required = ['slug', 'date', 'category', 'title_candidates', 'summary', 'tags', 'primary_source', 'practical_guide', 'references'] as const;
   for (const k of required) {
     if ((brief as any)[k] == null) {

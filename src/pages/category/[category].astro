@@ -4,6 +4,7 @@ import ArticleCard from '../../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
 import { CATEGORIES, CATEGORY_ORDER } from '../../lib/categories';
 import type { CategorySlug } from '../../lib/categories';
+import { getArticleSlug, sortArticlesByNewest } from '../../lib/articles';
 
 export async function getStaticPaths() {
   return CATEGORY_ORDER.map((c) => ({ params: { category: c } }));
@@ -11,8 +12,8 @@ export async function getStaticPaths() {
 
 const category = Astro.params.category as CategorySlug;
 const meta = CATEGORIES[category];
-const articles = (await getCollection('articles', ({ data }) => !data.draft && data.category === category)).sort(
-  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+const articles = sortArticlesByNewest(
+  await getCollection('articles', ({ data }) => !data.draft && data.category === category),
 );
 ---
 
@@ -30,7 +31,7 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft && d
       <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {articles.map((a) => (
           <ArticleCard
-            href={`/articles/${a.slug}`}
+            href={`/articles/${getArticleSlug(a)}`}
             title={a.data.title}
             summary={a.data.summary}
             date={a.data.date}

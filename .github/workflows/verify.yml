@@ -22,5 +22,9 @@ jobs:
         run: npm run verify
         env:
           VERIFY_FETCH: "0"
+      - name: Typecheck
+        run: npm run typecheck
       - name: Build site
         run: npm run build
+      - name: Audit production dependencies
+        run: npm run audit:prod
