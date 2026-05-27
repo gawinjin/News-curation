@@ -1,4 +1,5 @@
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 const reference = z.object({
   title: z.string().min(1),
@@ -18,10 +19,11 @@ const heroEmbed = z.object({
   type: z.enum(['youtube', 'x', 'image']),
   src: z.string(),
   alt: z.string().optional(),
+  caption: z.string().optional(),
 });
 
 const articles = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/articles' }),
   schema: z.object({
     title: z.string().min(1).max(100),
     date: z.coerce.date(),

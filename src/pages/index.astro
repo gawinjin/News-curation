@@ -4,10 +4,9 @@ import ArticleCard from '../components/ArticleCard.astro';
 import { CATEGORIES, CATEGORY_ORDER } from '../lib/categories';
 import { getCollection } from 'astro:content';
 import { SITE } from '../lib/site';
+import { getArticleSlug, sortArticlesByNewest } from '../lib/articles';
 
-const all = (await getCollection('articles', ({ data }) => !data.draft)).sort(
-  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
-);
+const all = sortArticlesByNewest(await getCollection('articles', ({ data }) => !data.draft));
 
 const topArticles = all.slice(0, 3);
 const topArticleIds = new Set(topArticles.map((a) => a.id));
@@ -39,7 +38,7 @@ const allTags = Array.from(new Set(all.flatMap((a) => a.data.tags))).slice(0, 14
     <div class="grid gap-5 md:grid-cols-3">
       {topArticles.map((a, i) => (
         <ArticleCard
-          href={`/articles/${a.slug}`}
+          href={`/articles/${getArticleSlug(a)}`}
           title={a.data.title}
           summary={a.data.summary}
           date={a.data.date}
@@ -83,7 +82,7 @@ const allTags = Array.from(new Set(all.flatMap((a) => a.data.tags))).slice(0, 14
             hidden={index >= INITIAL_LATEST_VISIBLE ? true : undefined}
           >
             <ArticleCard
-              href={`/articles/${a.slug}`}
+              href={`/articles/${getArticleSlug(a)}`}
               title={a.data.title}
               summary={a.data.summary}
               date={a.data.date}

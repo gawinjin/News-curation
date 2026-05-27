@@ -8,6 +8,7 @@ import Embed from '../components/Embed.astro';
 import { CATEGORIES } from '../lib/categories';
 import { readingTime } from '../lib/readingTime';
 import { SITE } from '../lib/site';
+import { getArticleSlug } from '../lib/articles';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -16,13 +17,14 @@ interface Props {
 }
 const { entry, headings } = Astro.props;
 const { data, body } = entry;
+const slug = getArticleSlug(entry);
 const { minutes } = readingTime(body);
 const dateLabel = data.date.toLocaleDateString('en-US', {
   month: 'long',
   day: 'numeric',
   year: 'numeric',
 });
-const articleUrl = new URL(`/articles/${entry.slug}/`, SITE.url).toString();
+const articleUrl = new URL(`/articles/${slug}/`, SITE.url).toString();
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -47,7 +49,7 @@ const jsonLd = {
 <BaseLayout
   title={data.title}
   description={data.summary}
-  pathname={`/articles/${entry.slug}/`}
+  pathname={`/articles/${slug}/`}
   type="article"
   publishedTime={data.date}
   tags={data.tags}
@@ -78,7 +80,12 @@ const jsonLd = {
 
     {data.heroEmbed && (
       <div class="max-w-prose mx-auto mt-8">
-        <Embed type={data.heroEmbed.type} src={data.heroEmbed.src} alt={data.heroEmbed.alt} />
+        <Embed
+          type={data.heroEmbed.type}
+          src={data.heroEmbed.src}
+          alt={data.heroEmbed.alt}
+          caption={data.heroEmbed.caption}
+        />
       </div>
     )}
 

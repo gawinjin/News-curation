@@ -4,6 +4,9 @@
 
 <script is:inline>
   (function () {
+    if (window.__signalReadingProgressCleanup) {
+      window.__signalReadingProgressCleanup();
+    }
     const bar = document.getElementById('reading-progress');
     if (!bar) return;
 
@@ -20,6 +23,10 @@
     update();
     window.addEventListener('scroll', update, { passive: true });
     window.addEventListener('resize', update);
-    document.addEventListener('astro:after-swap', update);
+    window.__signalReadingProgressCleanup = function () {
+      window.removeEventListener('scroll', update);
+      window.removeEventListener('resize', update);
+      delete window.__signalReadingProgressCleanup;
+    };
   })();
 </script>

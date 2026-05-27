@@ -2,12 +2,13 @@
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
 import PracticalGuide from '../../components/PracticalGuide.astro';
 import Embed from '../../components/Embed.astro';
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getArticleSlug } from '../../lib/articles';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
 
 export async function getStaticPaths() {
   const entries = await getCollection('articles', ({ data }) => !data.draft);
   return entries.map((entry) => ({
-    params: { slug: entry.slug },
+    params: { slug: getArticleSlug(entry) },
     props: { entry },
   }));
 }
@@ -16,7 +17,7 @@ interface Props {
   entry: CollectionEntry<'articles'>;
 }
 const { entry } = Astro.props;
-const { Content, headings } = await entry.render();
+const { Content, headings } = await render(entry);
 ---
 
 <ArticleLayout entry={entry} headings={headings}>

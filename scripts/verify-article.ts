@@ -13,7 +13,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const THIS_FILE = fileURLToPath(import.meta.url);
+const ROOT = path.resolve(path.dirname(THIS_FILE), '..');
 const ARTICLES_DIR = path.join(ROOT, 'src', 'content', 'articles');
 const MAX_VERBATIM = 25; // strict per editorial policy
 const SHOULD_FETCH = process.env.VERIFY_FETCH !== '0';
@@ -89,15 +90,18 @@ function normalizeWords(s: string): string[] {
     .filter(Boolean);
 }
 
-function findLongRunOverlap(body: string, source: string, max: number): string | null {
+export function findLongRunOverlap(body: string, source: string, max: number): string | null {
   const a = normalizeWords(body);
   const b = normalizeWords(source);
-  if (b.length < max + 1) return null;
+  const forbiddenRun = max + 1;
+  if (b.length < forbiddenRun) return null;
   const bSet = new Set<string>();
-  for (let i = 0; i + max <= b.length; i++) bSet.add(b.slice(i, i + max).join(' '));
-  for (let i = 0; i + max <= a.length; i++) {
-    const run = a.slice(i, i + max).join(' ');
-    if (bSet.has(run)) return a.slice(i, i + max + 1).join(' ');
+  for (let i = 0; i + forbiddenRun <= b.length; i++) {
+    bSet.add(b.slice(i, i + forbiddenRun).join(' '));
+  }
+  for (let i = 0; i + forbiddenRun <= a.length; i++) {
+    const run = a.slice(i, i + forbiddenRun).join(' ');
+    if (bSet.has(run)) return run;
   }
   return null;
 }
@@ -232,7 +236,9 @@ async function main() {
   console.log(`\nAll ${files.length} article(s) passed verification.`);
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === THIS_FILE) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}

@@ -18,9 +18,15 @@ jobs:
           node-version: "24"
           cache: "npm"
       - run: npm ci
+      - name: Test verifier boundary rules
+        run: npm run test:verify
       - name: Verify articles (offline)
         run: npm run verify
         env:
           VERIFY_FETCH: "0"
+      - name: Typecheck
+        run: npm run typecheck
       - name: Build site
         run: npm run build
+      - name: Audit production dependencies
+        run: npm run audit:prod

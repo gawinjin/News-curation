@@ -34,12 +34,29 @@ type InboxItem = {
 };
 
 type SocialQueueEntry = { url: string; note?: string; addedAt?: string };
+type PublishedSocialQueueEntry = SocialQueueEntry & {
+  processedAt: string;
+  status: 'merged' | 'covered' | 'invalid';
+};
 type FallbackItem = { title: string; url: string; publishedAt: string; summary?: string };
 
-async function readJSON<T>(p: string, fallback: T): Promise<T> {
+async function readRequiredJSON<T>(p: string): Promise<T> {
   try {
     return JSON.parse(await fs.readFile(p, 'utf8'));
-  } catch {
+  } catch (e) {
+    const detail = e instanceof Error ? e.message : String(e);
+    throw new Error(`Could not read required JSON ${path.relative(ROOT, p)}: ${detail}`);
+  }
+}
+
+async function readOptionalJSON<T>(p: string, fallback: T): Promise<T> {
+  try {
+    return JSON.parse(await fs.readFile(p, 'utf8'));
+  } catch (e) {
+    if ((e as NodeJS.ErrnoException).code !== 'ENOENT') {
+      const detail = e instanceof Error ? e.message : String(e);
+      throw new Error(`Could not read JSON ${path.relative(ROOT, p)}: ${detail}`);
+    }
     return fallback;
   }
 }
@@ -336,12 +353,21 @@ async function ingestSocial(state: Set<string>, cutoff: number) {
 
 async function ingestManualQueue(state: Set<string>) {
   const inbox: InboxItem[] = [];
-  const queue = await readJSON<{ queued: SocialQueueEntry[] }>(SOCIAL_QUEUE, { queued: [] });
-  const carry: SocialQueueEntry[] = [];
+  const queue = await readOptionalJSON<{ queued: SocialQueueEntry[] }>(SOCIAL_QUEUE, { queued: [] });
+  if (!Array.isArray(queue.queued)) {
+    throw new Error(`${path.relative(ROOT, SOCIAL_QUEUE)} must contain a queued array.`);
+  }
+  const processed: Array<SocialQueueEntry & { status: PublishedSocialQueueEntry['status'] }> = [];
   let merged = 0;
   for (const q of queue.queued ?? []) {
-    if (!q.url) continue;
-    if (state.has(q.url)) continue;
+    if (!q.url) {
+      processed.push({ ...q, status: 'invalid' });
+      continue;
+    }
+    if (state.has(q.url)) {
+      processed.push({ ...q, status: 'covered' });
+      continue;
+    }
     inbox.push({
       kind: 'social',
       title: q.note ? `(queued) ${q.note.slice(0, 80)}` : '(queued social post)',
@@ -354,27 +380,34 @@ async function ingestManualQueue(state: Set<string>) {
       via: 'manual',
       linkedUrls: extractLinks(q.note || ''),
     });
+    processed.push({ ...q, status: 'merged' });
     merged++;
   }
   // Move processed entries to published queue (audit trail), reset queue file to empty.
-  if (merged > 0) {
-    const published = await readJSON<{ items: Array<SocialQueueEntry & { processedAt: string }> }>(
+  if (processed.length > 0) {
+    const published = await readOptionalJSON<{ items: PublishedSocialQueueEntry[] }>(
       SOCIAL_QUEUE_PUBLISHED,
       { items: [] },
     );
+    if (!Array.isArray(published.items)) {
+      throw new Error(`${path.relative(ROOT, SOCIAL_QUEUE_PUBLISHED)} must contain an items array.`);
+    }
     const stamp = new Date().toISOString();
     published.items = [
       ...published.items,
-      ...(queue.queued ?? []).filter((q) => q.url).map((q) => ({ ...q, processedAt: stamp })),
+      ...processed.map((q) => ({ ...q, processedAt: stamp })),
     ];
     await fs.writeFile(SOCIAL_QUEUE_PUBLISHED, JSON.stringify(published, null, 2));
-    await fs.writeFile(SOCIAL_QUEUE, JSON.stringify({ queued: carry }, null, 2));
+    await fs.writeFile(SOCIAL_QUEUE, JSON.stringify({ queued: [] }, null, 2));
   }
   return { inbox, merged };
 }
 
 async function main() {
-  const state = await readJSON<State>(STATE, { covered: [], lastIngest: null });
+  const state = await readRequiredJSON<State>(STATE);
+  if (!Array.isArray(state.covered) || !state.covered.every((url) => typeof url === 'string')) {
+    throw new Error(`${path.relative(ROOT, STATE)} must contain a covered array of URL strings.`);
+  }
   const covered = new Set(state.covered);
   const cutoff = Date.now() - DAYS * 24 * 60 * 60 * 1000;
 
