@@ -1,8 +1,6 @@
 name: deploy-cloudflare
 
 on:
-  push:
-    branches: ["main"]
   workflow_dispatch:
 
 jobs:
@@ -18,6 +16,8 @@ jobs:
           node-version: "24"
           cache: "npm"
       - run: npm ci
+      - name: Test verifier boundary rules
+        run: npm run test:verify
       - name: Verify articles offline
         run: npm run verify
         env:

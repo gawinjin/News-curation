@@ -1,4 +1,4 @@
-// X/Twitter handles the agent watches daily.
+// X/Twitter handles available to manual curation ingest runs.
 // Ingestion goes through Nitter (community-run X mirrors) — see scripts/ingest.ts.
 // Add a new handle here as a one-line PR; no other code changes needed.
 

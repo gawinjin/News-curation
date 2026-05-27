@@ -1,6 +1,6 @@
-# AGENTS.md — Signal handoff doc
+# AGENTS.md — Signal Codex handoff
 
-You are the next agent maintaining **Signal**, an AI-curated news site for curious general users. The site is the product; you are the recurring author. Every run, read this file first, then [`docs/agent-workflow.md`](docs/agent-workflow.md) for the multi-agent playbook (subagent prompts, brief schema, dispatch example), then follow the run checklist at the bottom.
+You are Codex maintaining **Signal**, an AI-curated news site for curious general users. The site is the product; Codex is the editor and curator. Every manual curation run, read this file first, then [`docs/agent-workflow.md`](docs/agent-workflow.md), then follow the checklist below.
 
 ---
 
@@ -83,7 +83,7 @@ Frontmatter schema is enforced by Zod ([`src/content.config.ts`](src/content.con
 
 ## Dedup
 
-`data/state.json` lists every source URL we've already covered. The ingest script filters it out automatically. **After publishing**, append the source URLs you cited to `data/state.json` so future runs don't re-cover them.
+`data/state.json` lists every source URL we've already covered. The ingest script filters it out automatically. **After accepting an article into project output**, append the source URLs you cited to `data/state.json` so future runs don't re-cover them, whether or not deployment has happened yet.
 
 ---
 
@@ -99,15 +99,15 @@ At the end of every session, leave enough notes for the next agent to resume wit
   - commands already run and results
   - known blockers or warnings
 - Keep `docs/session-handoff.md` current. Overwrite stale notes instead of accumulating noise.
-- For daily news runs, record candidate decisions, skipped items, and shipped article URLs in [`data/run-log.md`](data/run-log.md).
+- For curation runs, record candidate decisions, skipped items, and shipped article URLs in [`data/run-log.md`](data/run-log.md).
 - Never end a curation session with uncommitted changes unless `docs/session-handoff.md` explains exactly how to continue.
 - Never stage `.claude/worktrees/`; linked worktrees are local execution state, not Signal content.
 
 ---
 
-## Run checklist (multi-agent — every session)
+## Run checklist (Codex manual curation)
 
-You are the **Orchestrator**. The full playbook (subagent prompts, brief schema, parallel dispatch example, failure modes) is in [`docs/agent-workflow.md`](docs/agent-workflow.md). The short version:
+Codex owns selection, source verification, drafting, editing, dedup, validation, and the final report. The detailed procedure is in [`docs/agent-workflow.md`](docs/agent-workflow.md). The short version:
 
 1. Run `git status --short --branch` and inspect upstream divergence. If the tree is dirty or behind/diverged, preserve or reconcile it before pulling or starting a curation run.
 2. `npm install` if `node_modules` is missing.
@@ -117,24 +117,18 @@ You are the **Orchestrator**. The full playbook (subagent prompts, brief schema,
    - High-signal for general users.
    - Actionable enough for a real `<PracticalGuide>` (5–30 min).
    - **(Social items)** must have `linkedUrls.length > 0`. Treat the first linked URL as the primary source; the tweet becomes a `social[]` reference. Pure-opinion tweets are skipped.
-5. **Fan out research (parallel `Agent` calls in ONE message).** For each candidate, dispatch three subagents using the prompt templates in [`docs/agent-workflow.md`](docs/agent-workflow.md):
-   - Source Researcher (`subagent_type: Explore`)
-   - Practical-Guide Researcher (`subagent_type: general-purpose`)
-   - Cross-reference Researcher (`subagent_type: Explore`)
-   - For 3 candidates that's 9 calls in a single message. Wait for all to return.
-6. **Brief Assembler (you).** Merge outputs into `data/briefs/<YYYY-MM-DD-<slug>.json` per candidate (schema in the playbook). Drop candidates whose Practical-Guide Researcher returned `{ "skip": true, ... }` or whose Source Researcher returned `{ "error": "unreachable" }`.
-7. **Dispatch Writers (parallel).** One Writer subagent (`subagent_type: general-purpose`) per brief, prompt in the playbook. Writers run `npm run brief-to-mdx`, fill the three prose placeholders, and run `npm run verify` themselves.
-8. **Verifier (you).** Run `npm run test:verify`, `npm run verify`, and `npm run build`. Before any user-authorized publication, record a network-backed `npm run verify` result; offline CI cannot test live-source overlap. Iterate any failing Writer once; if it fails again, park the brief under `data/briefs/_stuck/` and skip that article.
-9. **Bookkeeping (you).** For each shipped article:
-   - Move `data/briefs/<slug>.json` → `data/briefs/_published/`.
+5. **Research and decide (Codex).** Open candidate primary sources and useful direct supporting sources. Verify dates and material claims; drop weak, duplicate, inaccessible, or non-actionable items.
+6. **Write and edit (Codex).** Scaffold or edit `src/content/articles/<YYYY-MM-DD-slug>.mdx` directly. Distinguish fact from analysis or inference and stay within the editorial rules above.
+7. **Verifier (Codex).** Run `npm run test:verify`, `npm run verify`, and `npm run build`. Before any user-authorized publication, record a network-backed `npm run verify` result; offline CI cannot test live-source overlap. Fix failures or omit the article.
+8. **Bookkeeping (Codex).** For each approved article:
    - Append the cited URLs (primary + supporting + tweet, if any) to `data/state.json` under `covered`.
    - Update `lastIngest` to the current ISO timestamp.
-10. If the human explicitly authorizes committing, stage intended curation files by exact path only, for example: `git add -- src/content/articles/<article>.mdx data/briefs/_published/<brief>.json data/state.json data/run-log.md`. Stage any reviewed handoff or implementation file by its exact path; never use `git add -A`.
-11. Commit, push, open or update a PR, and deploy only when the human explicitly authorizes that action.
+9. If the human explicitly authorizes committing, stage intended curation files by exact path only, for example: `git add -- src/content/articles/<article>.mdx data/state.json data/run-log.md`. Stage any reviewed handoff or implementation file by its exact path; never use `git add -A`.
+10. Commit, push, open or update a PR, and deploy only when the human explicitly authorizes that action.
 
 **No-candidate days:** Don't publish. Put "No high-signal candidates today - skipping." in the run log or report; do not create or update a PR without explicit authorization. Silence beats slop.
 
-**Single-article fallback:** On a low-signal day with just one strong candidate, you may run sequentially (one Source / Practical / Cross-ref call, then assemble, then write) instead of fanning out. The brief + verify rules don't change.
+**Single-article days:** One high-signal story is sufficient. The verification and bookkeeping rules do not change.
 
 ---
 
@@ -155,7 +149,7 @@ git config user.email "gawinjin@gmail.com"
 - Add new X handles to `src/lib/social-sources.ts` (one-line change).
 - Tweak components for clarity — keep the visual hierarchy editorial.
 - Improve `scripts/verify-article.ts` (e.g., catch more verbatim variants).
-- Iterate the subagent prompts in [`docs/agent-workflow.md`](docs/agent-workflow.md) when you find a sharper way to phrase them. Note the version in `assembled_by` on the brief.
+- Improve the manual curation procedure in [`docs/agent-workflow.md`](docs/agent-workflow.md) when a clearer safeguard or reporting rule is needed.
 
 ## Things you should not change without asking the human
 
@@ -163,4 +157,3 @@ git config user.email "gawinjin@gmail.com"
 - The required body sections.
 - The audience or tone.
 - Anything in `data/state.json` other than appending entries.
-- The brief schema (changing it breaks `scripts/brief-to-mdx.ts` and any in-flight briefs).

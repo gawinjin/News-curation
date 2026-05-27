@@ -2,13 +2,13 @@
 
 AI news, made useful. A static site (Astro + Markdown) that turns the latest AI releases, research, and ideas into clear writeups with a practical guide at the end.
 
--> **Editorial rules & agent handoff:** see [`AGENTS.md`](AGENTS.md).
+-> **Editorial rules & Codex workflow:** see [`AGENTS.md`](AGENTS.md).
 
 ---
 
 ## Stack
 
-- **Astro 4** + `@astrojs/mdx` + content collections (Zod-validated frontmatter)
+- **Astro 6** + `@astrojs/mdx` + content collections (Zod-validated frontmatter)
 - **Tailwind CSS** with a light editorial theme
 - **Pagefind** for client-side full-text search (built at build time)
 - **Buttondown** for newsletter signups (form posts to public embed endpoint)
@@ -32,6 +32,8 @@ npm run dev          # http://localhost:4321
 | `npm run preview` | Preview the built site locally |
 | `npm run ingest` | Pull recent items from RSS sources into `data/inbox.json` |
 | `npm run verify` | Lint every article (schema, sections, plagiarism). Run before commit. |
+| `npm run test:verify` | Run verifier boundary regression tests. |
+| `npm run typecheck` | Run TypeScript checks. |
 | `npm run new-article -- <slug> --category <c>` | Scaffold a new draft `.mdx` file |
 
 Verify-article can run offline:
@@ -52,9 +54,13 @@ npm run build
 
 The required body sections are `## TL;DR`, `## What's New`, `## Why It Matters`, and a `<PracticalGuide>` block. References go in frontmatter and render automatically.
 
+Manual curation is performed directly by Codex according to [`docs/agent-workflow.md`](docs/agent-workflow.md).
+
 ## Deploying to Cloudflare
 
-1. Push the repo to GitHub.
+Deployment is manual-only. Run the GitHub Actions deployment workflow only after explicit authorization.
+
+1. Push the reviewed branch to GitHub when authorized.
 2. In Cloudflare, connect this repo to the Worker/static assets deployment.
 3. Build settings:
    - **Build command:** `npm run build`
@@ -87,7 +93,7 @@ data/
   inbox.json           Latest RSS items, refreshed by ingest
 public/                Static assets
 .github/workflows/     verify.yml runs on every push
-AGENTS.md              The rules for any agent that maintains this site
+AGENTS.md              The rules for Codex maintaining this site
 ```
 
 ## License

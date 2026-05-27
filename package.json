@@ -14,8 +14,7 @@
     "test:verify": "tsx --test scripts/verify-article.test.ts",
     "typecheck": "tsc --noEmit",
     "audit:prod": "npm audit --omit=dev --audit-level=moderate",
-    "new-article": "tsx scripts/new-article.ts",
-    "brief-to-mdx": "tsx scripts/brief-to-mdx.ts"
+    "new-article": "tsx scripts/new-article.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "5.0.6",
