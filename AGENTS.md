@@ -101,6 +101,7 @@ At the end of every session, leave enough notes for the next agent to resume wit
 - Keep `docs/session-handoff.md` current. Overwrite stale notes instead of accumulating noise.
 - For daily news runs, record candidate decisions, skipped items, and shipped article URLs in [`data/run-log.md`](data/run-log.md).
 - Never end a curation session with uncommitted changes unless `docs/session-handoff.md` explains exactly how to continue.
+- Never stage `.claude/worktrees/`; linked worktrees are local execution state, not Signal content.
 
 ---
 
@@ -108,7 +109,7 @@ At the end of every session, leave enough notes for the next agent to resume wit
 
 You are the **Orchestrator**. The full playbook (subagent prompts, brief schema, parallel dispatch example, failure modes) is in [`docs/agent-workflow.md`](docs/agent-workflow.md). The short version:
 
-1. `git pull origin claude/ai-news-platform-XeTXH` (or current dev branch).
+1. Run `git status --short --branch` and inspect upstream divergence. If the tree is dirty or behind/diverged, preserve or reconcile it before pulling or starting a curation run.
 2. `npm install` if `node_modules` is missing.
 3. `npm run ingest` — refreshes `data/inbox.json` (RSS + Nitter for social handles + manual queue).
 4. **Topic-Picker (you).** Open `data/inbox.json` and pick **1–3 candidates** that satisfy:
@@ -123,16 +124,15 @@ You are the **Orchestrator**. The full playbook (subagent prompts, brief schema,
    - For 3 candidates that's 9 calls in a single message. Wait for all to return.
 6. **Brief Assembler (you).** Merge outputs into `data/briefs/<YYYY-MM-DD-<slug>.json` per candidate (schema in the playbook). Drop candidates whose Practical-Guide Researcher returned `{ "skip": true, ... }` or whose Source Researcher returned `{ "error": "unreachable" }`.
 7. **Dispatch Writers (parallel).** One Writer subagent (`subagent_type: general-purpose`) per brief, prompt in the playbook. Writers run `npm run brief-to-mdx`, fill the three prose placeholders, and run `npm run verify` themselves.
-8. **Verifier (you).** Run `npm run verify` and `npm run build`. Iterate any failing Writer once; if it fails again, park the brief under `data/briefs/_stuck/` and skip that article.
+8. **Verifier (you).** Run `npm run test:verify`, `npm run verify`, and `npm run build`. Before any user-authorized publication, record a network-backed `npm run verify` result; offline CI cannot test live-source overlap. Iterate any failing Writer once; if it fails again, park the brief under `data/briefs/_stuck/` and skip that article.
 9. **Bookkeeping (you).** For each shipped article:
    - Move `data/briefs/<slug>.json` → `data/briefs/_published/`.
    - Append the cited URLs (primary + supporting + tweet, if any) to `data/state.json` under `covered`.
    - Update `lastIngest` to the current ISO timestamp.
-10. `git add -A && git commit -m "add: <slug>"` per article.
-11. `git push -u origin <branch>`.
-12. Open or update the **draft PR** on GitHub.
+10. If the human explicitly authorizes committing, stage intended curation files by exact path only, for example: `git add -- src/content/articles/<article>.mdx data/briefs/_published/<brief>.json data/state.json data/run-log.md`. Stage any reviewed handoff or implementation file by its exact path; never use `git add -A`.
+11. Commit, push, open or update a PR, and deploy only when the human explicitly authorizes that action.
 
-**No-candidate days:** Don't publish. Put "No high-signal candidates today — skipping." in the PR description and stop. Silence beats slop.
+**No-candidate days:** Don't publish. Put "No high-signal candidates today - skipping." in the run log or report; do not create or update a PR without explicit authorization. Silence beats slop.
 
 **Single-article fallback:** On a low-signal day with just one strong candidate, you may run sequentially (one Source / Practical / Cross-ref call, then assemble, then write) instead of fanning out. The brief + verify rules don't change.
 

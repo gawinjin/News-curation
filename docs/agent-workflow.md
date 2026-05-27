@@ -2,7 +2,14 @@
 
 This is the playbook for Claude sessions that author articles on Signal. Read [`AGENTS.md`](../AGENTS.md) first for the editorial bar (≤25-word verbatim cap, required sections, banned phrases). This file documents **how** to do the daily run with parallel subagents.
 
-> **Mental model.** Your session is the **Orchestrator**. It dispatches several `Agent`-tool subagents in parallel, merges their JSON outputs into a **brief** per candidate, then dispatches a Writer subagent to turn each brief into a publishable `.mdx`. Verification, commit, and push happen in the main session.
+> **Mental model.** Your session is the **Orchestrator**. It dispatches several `Agent`-tool subagents in parallel, merges their JSON outputs into a **brief** per candidate, then dispatches a Writer subagent to turn each brief into a publishable `.mdx`. Verification and bookkeeping happen in the main session; commit, push, PR, and deployment actions require explicit human authorization.
+
+## Repository safety and publication gate
+
+- Before ingest or writing, run `git status --short --branch` and inspect upstream divergence; preserve or reconcile a dirty or diverged tree before pulling.
+- Never use `git add -A`; stage reviewed curation or handoff paths explicitly, and never stage `.claude/worktrees/`.
+- CI may use offline structural verification. Before any authorized publication, run and record a network-backed `npm run verify` result so live-source overlap is checked.
+- Commit, push, PR, and deployment actions occur only when the human explicitly authorizes them.
 
 ---
 
@@ -45,7 +52,7 @@ This is the playbook for Claude sessions that author articles on Signal. Read [`
                             │  npm run verify, build   │
                             └───────────┬────────────┘
                                         │
-                              commit · push · update PR
+                              optional commit/push/PR only when authorized
                             move briefs → data/briefs/_published/
 ```
 
@@ -222,7 +229,7 @@ Dispatch with `subagent_type: Explore`.
 
 Dispatch with `subagent_type: general-purpose` (needs Read, Edit, Bash).
 
-> You are writing the prose for a Signal article. Read [`../AGENTS.md`](../AGENTS.md) for tone and the editorial bar. Do not commit; the orchestrator will do that.
+> You are writing the prose for a Signal article. Read [`../AGENTS.md`](../AGENTS.md) for tone and the editorial bar. Do not commit; the orchestrator handles bookkeeping and only performs Git or publication actions when the human authorizes them.
 >
 > **Brief:** `data/briefs/<INSERT_BRIEF_FILENAME>`
 >
@@ -268,7 +275,7 @@ Pick 1–3 candidates that satisfy ALL of:
 3. **Actionable** — you can imagine a real `<PracticalGuide>` step list (5–30 min).
 4. **(Tweets only) Has a linked URL** — `kind === "social"` items must have `linkedUrls.length > 0`. The first linked URL becomes the **primary source**; the tweet becomes a `social[]` entry. Pure-opinion tweets are skipped.
 
-If fewer than 1 candidate qualifies, **do not publish**. Note "No high-signal candidates today — skipping." in the PR description and stop. Silence beats slop.
+If fewer than 1 candidate qualifies, **do not publish**. Note "No high-signal candidates today - skipping." in the run log or report; do not create or update a PR without explicit authorization. Silence beats slop.
 
 ---
 
@@ -315,7 +322,7 @@ Agent({ subagent_type: 'general-purpose', description: 'Write A', prompt: WRITER
 Agent({ subagent_type: 'general-purpose', description: 'Write B', prompt: WRITER_PROMPT('2026-05-13-karpathy-recommends-paper.json') })
 ```
 
-Orchestrator then runs `npm run verify && npm run build`, fixes anything that broke, moves both briefs to `data/briefs/_published/`, appends the cited URLs to `data/state.json`, commits, and pushes.
+Orchestrator then runs `npm run test:verify && npm run verify && npm run build`, fixes anything that broke, moves both briefs to `data/briefs/_published/`, and appends the cited URLs to `data/state.json`. Before a user-authorized publication, the orchestrator records a network-backed `npm run verify` result. Exact-path staging, commit, push, PR, and deployment actions occur only when explicitly authorized.
 
 ---
 
@@ -323,7 +330,7 @@ Orchestrator then runs `npm run verify && npm run build`, fixes anything that br
 
 | Symptom | Action |
 | --- | --- |
-| Source Researcher returns `{ "error": "unreachable" }` | Drop that candidate. Note it in the PR description. Continue with the others. |
+| Source Researcher returns `{ "error": "unreachable" }` | Drop that candidate. Note it in the run log or report. Continue with the others. |
 | Practical-Guide Researcher returns `{ "skip": true, ... }` | Drop that candidate — no Practical Guide = no article. |
 | Cross-ref returns `[]` | OK. The article can ship with one reference (the primary). |
 | Two researchers report conflicting facts | Trust the primary source. Add a `risk_flag` and proceed. |
@@ -331,7 +338,7 @@ Orchestrator then runs `npm run verify && npm run build`, fixes anything that br
 | Writer's verify fails twice | Park the brief in `data/briefs/_stuck/` with a note. Skip the article for today. |
 | All Nitter instances down | `socialUnreachable` populates. RSS candidates still work. Drop URLs into `data/social-queue.json` manually if you have them. |
 | Conflict with `data/state.json` (URL already covered) | Drop the candidate. Move on. |
-| No qualifying candidates | Don't publish. Update the PR description with "No high-signal candidates today — skipping." Stop. |
+| No qualifying candidates | Don't publish. Record "No high-signal candidates today - skipping." in the run log or report. Do not create or update a PR without authorization. |
 
 ---
 

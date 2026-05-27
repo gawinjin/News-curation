@@ -11,6 +11,7 @@
     "astro": "astro",
     "ingest": "tsx scripts/ingest.ts",
     "verify": "tsx scripts/verify-article.ts",
+    "test:verify": "tsx --test scripts/verify-article.test.ts",
     "typecheck": "tsc --noEmit",
     "audit:prod": "npm audit --omit=dev --audit-level=moderate",
     "new-article": "tsx scripts/new-article.ts",
