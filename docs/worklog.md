@@ -5,6 +5,23 @@ state changes, environment caveats, and notes for the next agent.
 
 ---
 
+## 2026-05-28 run, part 3 (PR monitoring — live)
+
+**Status: PR #3 CI green, subscribed and watching.**
+
+- Subscribed this session to `gawinjin/news-curation#3` activity
+  (`subscribe_pr_activity`). New CI failures / review comments arrive as
+  `<github-webhook-activity>` events and will be triaged here.
+- Latest commit `95ad7ba`: both `verify` GitHub Actions check runs **completed /
+  success**. (Combined commit *status* reads "pending" only because the repo has no
+  legacy statuses — the check runs are the real CI and they pass.)
+- Review threads: **0 unresolved**. Nothing to address.
+- Next agent: if you inherit this session, the PR is in a clean, mergeable-pending
+  state (still a draft). No outstanding fixes. Keep updating this worklog on each
+  PR event per standing instruction.
+
+---
+
 ## 2026-05-28 run, part 2 (multi-agent research round)
 
 Followed up the first run by dispatching **3 Sonnet research subagents** (cheaper
