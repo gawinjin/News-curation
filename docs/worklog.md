@@ -5,6 +5,48 @@ state changes, environment caveats, and notes for the next agent.
 
 ---
 
+## 2026-05-28 run, part 2 (multi-agent research round)
+
+Followed up the first run by dispatching **3 Sonnet research subagents** (cheaper
+model, managed by the orchestrator) across separate beats — OpenAI/ChatGPT,
+Anthropic/Claude, and other labs — each instructed to use WebSearch only, stay in
+the 2026-05-21→28 window, and corroborate every fact across ≥2 outlets. I reviewed
+their candidates, dropped the out-of-window and enterprise-marketing ones, then
+wrote the articles myself.
+
+### Added — 3 articles
+| Date | Slug | Category | Angle | Sources |
+| --- | --- | --- | --- | --- |
+| 2026-05-22 | `grok-connectors-skills` | guides | xAI adds Vercel/Canva/Gamma/S&P connectors + Skills; Grok as a workspace | x.ai, InfoQ |
+| 2026-05-26 | `anthropic-glasswing-claude-mythos` | research | Claude Mythos found 10,000+ security bugs; Anthropic may release Mythos-class models later | Anthropic, Help Net Security, The Register |
+| 2026-05-27 | `chatgpt-ads-open-all-businesses` | insights | OpenAI drops $200k ad minimum, opens ChatGPT Ads Manager to all US businesses | OpenAI, The Decoder, WinBuzzer |
+
+Running total: **53 articles**, build clean (147 pages).
+
+### Skipped (subagent candidates that didn't clear the bar)
+- ChatGPT Personal Finance dashboard (May 15), ChatGPT Trusted Contact (May 8) —
+  both pre-window.
+- Anthropic: Claude for Small Business (May 13), SpaceX compute / doubled limits
+  (May 7), Gates Foundation $200M (May 14) — pre-window and/or marketing/partnership.
+- Microsoft Copilot Studio computer-using agents GA (May 13) — enterprise, pre-window.
+- Mistral Medium 3.5 + Le Chat Work Mode (May 2) — pre-window. Strong consumer story;
+  good candidate to backfill if the window is ever widened.
+- xAI Grok Build coding agent (May 14) — pre-window; folded context into the Grok piece.
+
+### State changes
+- `data/state.json`: appended **8** cited URLs (98 → 106 covered); `lastIngest`
+  bumped to `2026-05-28T12:00:00Z`.
+
+### Gotcha for the next agent
+- **`npm run verify` does NOT enforce the 220-char `summary` cap; the Astro build
+  (Zod schema in `src/content/config.ts`) does.** Two articles passed verify but
+  failed `npm run build` on an over-long summary. Always run `npm run build` before
+  committing — verify alone is not sufficient.
+- Subagent research is cheap and effective here, but it returns plenty of
+  out-of-window items confidently; the orchestrator must filter on date + audience.
+
+---
+
 ## 2026-05-28 run (coverage extended to 2026-05-27)
 
 **Branch:** `claude/happy-davinci-oXH8l` · **Prior cutoff:** latest article was
