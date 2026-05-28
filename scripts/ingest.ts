@@ -6,6 +6,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SOURCES } from '../src/lib/sources.js';
+import type { Source } from '../src/lib/sources.js';
 import { SOCIAL_HANDLES, nitterInstances } from '../src/lib/social-sources.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -33,6 +34,7 @@ type InboxItem = {
 };
 
 type SocialQueueEntry = { url: string; note?: string; addedAt?: string };
+type FallbackItem = { title: string; url: string; publishedAt: string; summary?: string };
 
 async function readJSON<T>(p: string, fallback: T): Promise<T> {
   try {
@@ -54,6 +56,10 @@ function stripHtml(s: string): string {
     .trim();
 }
 
+function decodeText(s: string): string {
+  return stripHtml(s);
+}
+
 function tagText(xml: string, tag: string): string | null {
   const re = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, 'i');
   const m = xml.match(re);
@@ -68,6 +74,11 @@ function tagAttr(xml: string, tag: string, attr: string): string | null {
   const re = new RegExp(`<${tag}[^>]*\\b${attr}=["']([^"']+)["']`, 'i');
   const m = xml.match(re);
   return m ? m[1] : null;
+}
+
+function metaContent(html: string, name: string): string | null {
+  const re = new RegExp(`<meta[^>]+(?:property|name)=["']${name}["'][^>]+content=["']([^"']+)["'][^>]*>`, 'i');
+  return html.match(re)?.[1] ?? null;
 }
 
 function parseItems(xml: string) {
@@ -92,7 +103,7 @@ function parseItems(xml: string) {
   return items;
 }
 
-async function fetchFeed(url: string): Promise<string | null> {
+async function fetchText(url: string): Promise<{ text: string | null; error?: string }> {
   try {
     const siteUrl = process.env.PUBLIC_SITE_URL || 'https://signal.gawinjin.workers.dev';
     const ua = process.env.USER_AGENT || `SignalBot/0.1 (+${siteUrl})`;
@@ -102,11 +113,92 @@ async function fetchFeed(url: string): Promise<string | null> {
         accept: 'application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9, */*;q=0.5',
       },
     });
-    if (!r.ok) return null;
-    return await r.text();
-  } catch {
-    return null;
+    if (!r.ok) return { text: null, error: `HTTP ${r.status}` };
+    return { text: await r.text() };
+  } catch (e) {
+    return { text: null, error: e instanceof Error ? e.message : String(e) };
   }
+}
+
+async function fetchFeed(url: string): Promise<string | null> {
+  return (await fetchText(url)).text;
+}
+
+function pageTitle(html: string, url: string): string {
+  const title =
+    metaContent(html, 'og:title') ||
+    html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] ||
+    new URL(url).pathname.split('/').filter(Boolean).pop()?.replace(/[-_]+/g, ' ') ||
+    url;
+  return decodeText(title).replace(/\s+\|\s+.*$/, '').slice(0, 200);
+}
+
+function pageSummary(html: string): string | undefined {
+  const summary = metaContent(html, 'og:description') || metaContent(html, 'description') || '';
+  return decodeText(summary).slice(0, 280) || undefined;
+}
+
+function pageDate(html: string, fallback?: string): string {
+  const date =
+    metaContent(html, 'article:published_time') ||
+    html.match(/"datePublished"\s*:\s*"([^"]+)"/i)?.[1] ||
+    html.match(/"dateModified"\s*:\s*"([^"]+)"/i)?.[1] ||
+    html.match(/\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},\s+\d{4}\b/i)?.[0] ||
+    fallback;
+  const ts = date ? Date.parse(date) : NaN;
+  return Number.isFinite(ts) ? new Date(ts).toISOString() : new Date().toISOString();
+}
+
+function sitemapEntries(xml: string, include: string) {
+  return [...xml.matchAll(/<url>[\s\S]*?<\/url>/gi)]
+    .map((m) => {
+      const block = m[0];
+      return {
+        url: decodeText(tagText(block, 'loc') || ''),
+        lastmod: tagText(block, 'lastmod') || undefined,
+      };
+    })
+    .filter((it) => it.url.includes(include))
+    .sort((a, b) => Date.parse(b.lastmod || '') - Date.parse(a.lastmod || ''));
+}
+
+function listingUrls(html: string, include: string) {
+  const urls = new Set<string>();
+  const escaped = include.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const re = new RegExp(`${escaped}[^"'?#<\\s]+`, 'g');
+  for (const m of html.matchAll(re)) urls.add(m[0].replace(/\/$/, ''));
+  return [...urls];
+}
+
+async function fallbackItems(src: Source, state: Set<string>, cutoff: number) {
+  if (!src.fallback) return { items: [] as FallbackItem[], ok: false, error: 'no fallback' };
+  const res = await fetchText(src.fallback.url);
+  if (!res.text) return { items: [] as FallbackItem[], ok: false, error: res.error || 'unreachable' };
+
+  const base =
+    src.fallback.kind === 'sitemap'
+      ? sitemapEntries(res.text, src.fallback.include).map((it) => ({ url: it.url, fallbackDate: it.lastmod }))
+      : listingUrls(res.text, src.fallback.include).map((url) => ({ url, fallbackDate: undefined }));
+
+  const items: FallbackItem[] = [];
+  for (const it of base.slice(0, 20)) {
+    const fallbackTs = it.fallbackDate ? Date.parse(it.fallbackDate) : NaN;
+    if (Number.isFinite(fallbackTs) && fallbackTs < cutoff) continue;
+    if (state.has(it.url)) continue;
+
+    const page = await fetchText(it.url);
+    if (!page.text) continue;
+    const publishedAt = pageDate(page.text, it.fallbackDate);
+    const ts = Date.parse(publishedAt);
+    if (Number.isFinite(ts) && ts < cutoff) continue;
+    items.push({
+      title: pageTitle(page.text, it.url),
+      url: it.url,
+      publishedAt,
+      summary: pageSummary(page.text),
+    });
+  }
+  return { items, ok: true, error: undefined };
 }
 
 function extractLinks(html: string): string[] {
@@ -154,9 +246,35 @@ async function ingestRss(state: Set<string>, cutoff: number) {
   let ok = 0;
   let fail = 0;
   for (const src of SOURCES) {
-    const xml = await fetchFeed(src.feed);
+    const feed = await fetchText(src.feed);
+    const xml = feed.text;
+    if (!xml && src.fallback) {
+      const fallback = await fallbackItems(src, state, cutoff);
+      if (fallback.ok) {
+        ok++;
+        console.warn(
+          `[fallback] ${src.id} - feed ${feed.error || 'unreachable'}; used ${src.fallback.kind} (${fallback.items.length} items)`,
+        );
+        for (const it of fallback.items) {
+          inbox.push({
+            kind: 'rss',
+            title: it.title,
+            url: it.url,
+            source: src.name,
+            sourceId: src.id,
+            category: src.category,
+            publishedAt: it.publishedAt,
+            summary: it.summary,
+          });
+        }
+        continue;
+      }
+      console.warn(`[skip] ${src.id} - feed ${feed.error || 'unreachable'}; fallback ${fallback.error}`);
+      fail++;
+      continue;
+    }
     if (!xml) {
-      console.warn(`[skip] ${src.id} — feed unreachable`);
+      console.warn(`[skip] ${src.id} - feed unreachable`);
       fail++;
       continue;
     }

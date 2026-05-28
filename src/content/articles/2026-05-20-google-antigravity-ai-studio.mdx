@@ -1,0 +1,57 @@
+---
+title: "Google's Antigravity update makes agents feel more like a workspace"
+date: 2026-05-20
+category: guides
+tags: ["google", "agents", "coding", "workflow"]
+summary: "Google I/O brought Antigravity 2.0, Managed Agents in the Gemini API, AI Studio mobile plans, Workspace integrations, and native Android app generation."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "A Google account"
+    - "One small app or automation idea"
+references:
+  - title: "I/O 2026 developer highlights: Antigravity, Gemini API, AI Studio"
+    url: "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/"
+    author: "Google"
+    publishedAt: "2026-05-19"
+  - title: "Gemini 3.5: frontier intelligence with action"
+    url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/"
+    author: "Google"
+    publishedAt: "2026-05-19"
+  - title: "I/O 2026"
+    url: "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/"
+    author: "Google"
+    publishedAt: "2026-05-19"
+draft: false
+---
+
+## TL;DR
+
+Google is turning Antigravity from a coding demo into a broader agent workspace. The I/O update adds a desktop app, CLI, SDK, Managed Agents in the Gemini API, AI Studio mobile plans, Workspace integrations, and Android app generation.
+
+## What's New
+
+Antigravity 2.0 is now positioned as a standalone desktop application for coordinating agents. Google says it supports parallel agents, scheduled background tasks, and integrations across Google AI Studio, Android, and Firebase.
+
+For developers and technical teams, Managed Agents in the Gemini API are the bigger infrastructure move. Google says a single API call can start an agent that reasons, uses tools, executes code in an isolated Linux environment, and can resume with files and state intact.
+
+Google AI Studio is also expanding beyond a browser playground. Google announced a mobile app for capturing ideas, Workspace API integrations, export from AI Studio to Antigravity, and native Android support for building app prototypes from prompts.
+
+## Why It Matters
+
+The important shift is from "chat with a model" to "manage a small workbench of agents." That is useful, but it also raises the bar for supervision. A background agent that can write files, call tools, and resume state needs clearer instructions than a one-off chatbot.
+
+For general users, the lesson is portable even if you never install Antigravity: break work into smaller jobs, give each agent one role, and review outputs before letting anything touch real accounts, customer data, or production systems.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["A Google account", "One small app or automation idea"]}>
+
+1. Open Google AI Studio or your preferred AI builder and describe one tiny app idea in one paragraph.
+2. Ask the model to split the work into three roles: planner, builder, and reviewer.
+3. Have the planner produce requirements only. Do not let it write code yet.
+4. Give the builder only the approved requirements and ask for the smallest working version.
+5. Give the reviewer the output and ask it to find missing states, privacy risks, and confusing user flows before you use the result.
+
+</PracticalGuide>
+

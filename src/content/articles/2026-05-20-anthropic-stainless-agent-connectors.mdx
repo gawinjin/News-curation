@@ -1,0 +1,52 @@
+---
+title: "Anthropic bought Stainless for the plumbing behind agents"
+date: 2026-05-20
+category: insights
+tags: ["anthropic", "agents", "api", "mcp"]
+summary: "Anthropic acquired Stainless, the SDK and MCP tooling company behind its official API libraries. The move is about making agents connect to tools more cleanly."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A browser"
+    - "One AI tool or app you use"
+references:
+  - title: "Anthropic acquires Stainless"
+    url: "https://www.anthropic.com/news/anthropic-acquires-stainless"
+    author: "Anthropic"
+    publishedAt: "2026-05-18"
+  - title: "Model Context Protocol"
+    url: "https://modelcontextprotocol.io/introduction"
+    author: "Model Context Protocol"
+draft: false
+---
+
+## TL;DR
+
+Anthropic acquired Stainless, a company that turns API specifications into SDKs, command-line tools, and MCP servers. The plain-English meaning: Anthropic wants the connections between Claude, developers, apps, and outside tools to be less brittle.
+
+## What's New
+
+Stainless has generated Anthropic's official SDKs since the early days of the Claude API. Anthropic says hundreds of companies use Stainless to generate SDKs, CLIs, and MCP servers across languages such as TypeScript, Python, Go, and Java.
+
+The acquisition fits Anthropic's larger push around MCP, the Model Context Protocol. MCP is a standard way for AI apps to connect to tools and data sources without every integration being custom-built from scratch.
+
+This is not a flashy model release. It is infrastructure. But agent products depend on infrastructure: calendars, documents, terminals, databases, browsers, and internal company systems all need reliable connectors before an agent can do useful work.
+
+## Why It Matters
+
+For users, the most important AI upgrades often feel boring from the outside. A model that can call the right tool, understand the error, and recover cleanly may matter more than a slightly better benchmark score.
+
+The Stainless deal is a reminder to judge agents by their connections. Can the assistant reach the systems you actually use? Can you see what it did? Can you remove access later? Those questions matter more as agents move from answering to acting.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A browser", "One AI tool or app you use"]}>
+
+1. Pick one AI assistant or automation tool you already use.
+2. Open its settings and find the connected apps, extensions, MCP servers, or integrations page.
+3. List every outside system it can access, such as email, calendar, files, code, browser, or payments.
+4. Remove any connection you do not actively use.
+5. For one remaining connection, test a low-risk task and check whether the tool shows what action was taken.
+
+</PracticalGuide>
+

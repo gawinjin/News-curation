@@ -1,0 +1,49 @@
+---
+title: "The Open Agent Leaderboard measures agents, not just models"
+date: 2026-05-21
+category: insights
+tags: ["agents", "benchmarks", "huggingface", "workflow"]
+summary: "IBM Research and Hugging Face launched an Open Agent Leaderboard that compares full agent systems across coding, browsing, support, personal-assistant, and research tasks."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "One AI agent or coding assistant you use"
+    - "One task where cost, speed, or reliability matters"
+references:
+  - title: "The Open Agent Leaderboard"
+    url: "https://huggingface.co/blog/ibm-research/open-agent-leaderboard"
+    author: "IBM Research and Hugging Face"
+    publishedAt: "2026-05-18"
+draft: false
+---
+
+## TL;DR
+
+IBM Research and Hugging Face launched an Open Agent Leaderboard for comparing full agent systems. That matters because the model is only one part of an agent; tools, memory, planning, failure handling, and cost can change the result.
+
+## What's New
+
+Most AI leaderboards compare models. The Open Agent Leaderboard compares agent systems: a model plus the surrounding harness that decides how it uses tools, follows steps, handles errors, and spends money.
+
+The benchmark combines several task families, including coding, web research, personal-assistant tasks, customer service, and technical support. The point is to test whether an agent can work across unfamiliar settings, not just optimize for one narrow benchmark.
+
+The public results report both success and cost. That combination is important because an agent that eventually solves a task after a long, expensive run may be worse for real use than a slightly less capable system that fails early and cheaply.
+
+## Why It Matters
+
+This is a useful correction to model hype. If two tools use the same model, they can still behave differently because the agent wrapper changes planning, tool choice, and recovery from mistakes.
+
+For users, the practical lesson is to evaluate the whole workflow. Does the agent choose the right tools? Does it ask before risky actions? Does it recover when a command fails? Does it burn time on dead ends? Those questions are often more important than the name of the model.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["One AI agent or coding assistant you use", "One task where cost, speed, or reliability matters"]}>
+
+1. Pick one repeatable task, such as fixing a small bug, researching a product, or summarizing a support thread.
+2. Run the same task twice with the same assistant and prompt.
+3. Track four things: time to useful answer, number of tool calls or steps, mistakes you had to correct, and whether it got stuck.
+4. If you can, run the same task in a second agent with the same constraints.
+5. Keep the agent that produces the best reviewed result, not the one with the most confident wording.
+
+</PracticalGuide>
+

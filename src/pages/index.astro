@@ -9,11 +9,10 @@ const all = (await getCollection('articles', ({ data }) => !data.draft)).sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime(),
 );
 
-const featured = all.filter((a) => a.data.featured).slice(0, 3);
-const featuredOrLatest = featured.length ? featured : all.slice(0, 3);
-const featuredIds = new Set(featuredOrLatest.map((a) => a.id));
-const latest = all.filter((a) => !featuredIds.has(a.id));
-const INITIAL_LATEST_VISIBLE = Math.max(0, 12 - featuredOrLatest.length);
+const topArticles = all.slice(0, 3);
+const topArticleIds = new Set(topArticles.map((a) => a.id));
+const latest = all.filter((a) => !topArticleIds.has(a.id));
+const INITIAL_LATEST_VISIBLE = Math.max(0, 12 - topArticles.length);
 
 const allTags = Array.from(new Set(all.flatMap((a) => a.data.tags))).slice(0, 14);
 ---
@@ -38,7 +37,7 @@ const allTags = Array.from(new Set(all.flatMap((a) => a.data.tags))).slice(0, 14
 
   <section class="max-w-page mx-auto px-5 sm:px-8" aria-label="Featured">
     <div class="grid gap-5 md:grid-cols-3">
-      {featuredOrLatest.map((a, i) => (
+      {topArticles.map((a, i) => (
         <ArticleCard
           href={`/articles/${a.slug}`}
           title={a.data.title}

@@ -1,0 +1,53 @@
+---
+title: "Anthropic's Claude found 10,000+ security bugs — and may go public"
+date: 2026-05-26
+category: research
+tags: ["anthropic", "claude", "security", "research"]
+summary: "Anthropic says its restricted Claude Mythos model and partners found over 10,000 high-severity software bugs, including 271 fixed in Firefox 150, and may release Mythos-class models publicly once safeguards improve."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "The apps and devices you use day to day"
+references:
+  - title: "Project Glasswing: initial update"
+    url: "https://www.anthropic.com/research/glasswing-initial-update"
+    author: "Anthropic"
+    publishedAt: "2026-05-26"
+  - title: "Anthropic Project Glasswing update"
+    url: "https://www.helpnetsecurity.com/2026/05/26/anthropic-project-glasswing-update/"
+    author: "Help Net Security"
+    publishedAt: "2026-05-26"
+  - title: "Anthropic to release Mythos-class models to the public"
+    url: "https://www.theregister.com/security/2026/05/25/anthropic-to-release-mythos-class-models-to-the-public/5245596"
+    author: "The Register"
+    publishedAt: "2026-05-25"
+draft: false
+---
+
+## TL;DR
+
+Anthropic published an update on Project Glasswing saying its restricted Claude Mythos model, working with partners, has found more than 10,000 high- or critical-severity vulnerabilities in widely used software — including 271 that Mozilla fixed in Firefox 150. Anthropic also said it intends to eventually release Mythos-class models to the public, once it builds stronger safeguards. No date was given.
+
+## What's New
+
+Project Glasswing is Anthropic's effort to point a security-tuned model at real software and find the dangerous bugs before attackers do. In this update, Anthropic says Mythos and partners — among them AWS, Apple, Cisco, Google, Microsoft, Mozilla, and Cloudflare — have collectively surfaced over 10,000 high- or critical-severity flaws. Cloudflare alone reported roughly 2,000 bugs, about 400 of them high or critical; Mozilla found and fixed 271 in Firefox 150.
+
+Mythos is deliberately not a public model. Anthropic restricts it because the same skill that finds vulnerabilities can be used to exploit them. Alongside the research update, Anthropic opened Claude Security — a Mythos-powered product — in public beta for Claude Enterprise customers, and told The Register it wants to put Mythos-class capability in more hands "once we've developed the far stronger safeguards we need."
+
+## Why It Matters
+
+This is one of the clearest signs yet that frontier models can do useful, large-scale security work on the software you actually run. If the reported numbers hold up, bugs in browsers, cloud infrastructure, and operating systems are being caught and patched faster than human researchers alone could manage.
+
+The flip side is the reason Mythos is locked down: a model good at finding exploitable flaws is, by definition, a model that could hand those flaws to whoever holds it. Anthropic's "release it later, with stronger safeguards" stance is a bet that the defensive value outweighs the offensive risk — a bet worth watching skeptically, because "we'll add safeguards" is easy to say and hard to prove. For you, the takeaway is unglamorous but real: the gap between a bug being found and a patch reaching your device is now where the risk lives, so updating quickly matters more than ever.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["The apps and devices you use day to day"]}>
+
+1. Update your browser now: in Firefox, open Menu → Help → About Firefox to pull the latest release (the fixes above shipped in Firefox 150). Do the same for Chrome or Edge via their About pages.
+2. Turn on automatic updates for your phone and computer OS so security patches install without you remembering to.
+3. Enable auto-update for the apps you use most — patches only protect you once they are actually installed.
+4. Restart after updating; many security fixes only take effect once the app or system relaunches.
+5. Be wary of the inverse risk: as AI bug-finding spreads, so do AI-written scams. Keep treating unexpected links and "urgent" messages with suspicion.
+
+</PracticalGuide>
