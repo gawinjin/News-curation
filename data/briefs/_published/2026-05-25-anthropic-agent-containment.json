@@ -1,0 +1,31 @@
+{
+  "slug": "anthropic-agent-containment",
+  "date": "2026-05-25",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["Anthropic's agent security lessons start with limiting access"],
+  "summary": "Anthropic documented how it contains Claude across chat, coding, and knowledge-work products, with practical lessons for anyone giving an AI agent access to files and tools.",
+  "tags": ["anthropic", "agents", "security", "privacy"],
+  "primary_source": {
+    "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+    "title": "How we contain Claude across products",
+    "author": "Anthropic",
+    "publishedAt": "2026-05-25",
+    "key_facts": [
+      "Anthropic uses different containment architectures for Claude.ai, Claude Code, and Claude Cowork.",
+      "Users approved roughly 93 percent of Claude Code permission prompts.",
+      "Hard environmental boundaries limit damage when behavior checks or approvals fail."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["An AI agent that can access files, connectors, or websites", "A folder containing non-sensitive test files"],
+    "steps": [{"instruction": "Run a bounded agent task inside a separate test folder with unnecessary connectors disabled.", "verify_url": "https://www.anthropic.com/engineering/how-we-contain-claude"}]
+  },
+  "references": [{"title": "How we contain Claude across products", "url": "https://www.anthropic.com/engineering/how-we-contain-claude", "author": "Anthropic", "publishedAt": "2026-05-25"}],
+  "risk_flags": ["Security incidents and telemetry figures are reported by Anthropic."],
+  "assembled_at": "2026-06-05T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

@@ -1,0 +1,48 @@
+---
+title: "Anthropic's agent security lessons start with limiting access"
+date: 2026-05-25
+category: guides
+tags: ["anthropic", "agents", "security", "privacy"]
+summary: "Anthropic documented how it contains Claude across chat, coding, and knowledge-work products, with practical lessons for anyone giving an AI agent access to files and tools."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "An AI agent that can access files, connectors, or websites"
+    - "A folder containing non-sensitive test files"
+references:
+  - title: "How we contain Claude across products"
+    url: "https://www.anthropic.com/engineering/how-we-contain-claude"
+    author: "Anthropic"
+    publishedAt: "2026-05-25"
+draft: false
+---
+
+## TL;DR
+
+Anthropic says safer AI agents need hard limits on what they can reach, not only permission prompts or good behavior. Its account of securing Claude.ai, Claude Code, and Claude Cowork offers a useful rule for everyday users: give an agent the smallest workspace, network access, and connector permissions needed for the task.
+
+## What's New
+
+Anthropic published a detailed account of how it contains Claude across three products with different levels of access. Claude.ai runs code in temporary server-side containers, Claude Code works inside a user's development environment, and Claude Cowork uses a local virtual machine around a selected workspace.
+
+The company describes several failures that passed through apparently reasonable safeguards. Users approved roughly 93% of Claude Code permission prompts, reducing their value through approval fatigue. In another case, an allowed Anthropic API domain could still be used to move files to an attacker's account.
+
+The recurring lesson is that behavior checks and human approvals are useful but probabilistic. Filesystem boundaries, isolated environments, limited connectors, and network controls place harder limits on the damage an agent can cause.
+
+## Why It Matters
+
+Normal users increasingly give agents access to documents, cloud services, email, and local folders. A helpful agent can also follow bad instructions hidden in a file or use a legitimate connection in an unintended way.
+
+You do not need to understand virtual machines to reduce that risk. Start agents in a separate folder, use copied or fake data for first runs, and connect only the services required for the current task. Review the result before expanding access.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["An AI agent that can access files, connectors, or websites", "A folder containing non-sensitive test files"]}>
+
+1. Create a new folder named `agent-test` and put only two or three non-sensitive sample files inside it.
+2. Open your AI agent and select only that folder as its workspace instead of a broader documents or home folder.
+3. Review enabled connectors and tools, then disable every connection the test does not require.
+4. Ask the agent to summarize the sample files and create one output file inside the test folder.
+5. Confirm that the output stayed inside the selected folder and review every requested permission before using the agent with real work.
+
+</PracticalGuide>
