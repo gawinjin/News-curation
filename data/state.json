@@ -94,7 +94,13 @@
     "https://datasette.io/blog/2026/datasette-agent",
     "https://simonwillison.net/2026/May/21/datasette-agent/",
     "https://pypi.org/project/datasette-agent/",
-    "https://agent.datasette.io/"
+    "https://agent.datasette.io/",
+    "https://www.anthropic.com/news/claude-opus-4-8",
+    "https://www.anthropic.com/claude/opus",
+    "https://openai.com/index/codex-for-knowledge-work/",
+    "https://openai.com/codex/",
+    "https://openai.com/index/chatgpt-memory-dreaming/",
+    "https://help.openai.com/en/articles/8590148-memory-faq"
   ],
-  "lastIngest": "2026-05-25T10:26:15.710Z"
+  "lastIngest": "2026-06-05T09:11:10.666Z"
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-25T10:16:57.350Z",
+  "generatedAt": "2026-06-05T09:08:04.534Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,422 +47,473 @@
   "items": [
     {
       "kind": "rss",
-      "title": "datasette 1.0a30",
-      "url": "https://simonwillison.net/2026/May/24/datasette/#atom-everything",
+      "title": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
+      "url": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/#atom-everything",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
-      "publishedAt": "2026-05-24T23:52:37.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a30\">datasette 1.0a30</a></p> <p>The big new feature in this alpha is a new customizable \"Jump to...\" menu, described in detail in <a href=\"https://datasette.io/blog/2026/jump-menu/\">The ext"
+      "publishedAt": "2026-06-04T23:55:27.000Z",
+      "summary": "<p><strong><a href=\"https://charitydotwtf.substack.com/p/ai-enthusiasts-are-in-a-race-against\">AI enthusiasts are in a race against time, AI skeptics are in a race against entropy</a></strong></p> Charity Majors neatly captures the dynamic between AI enthusiasts and AI skeptics, "
     },
     {
       "kind": "rss",
-      "title": "datasette-agent 0.1a4",
-      "url": "https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-24T23:19:34.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-agent/releases/tag/0.1a4\">datasette-agent 0.1a4</a></p> <p>Taking advantage of the new <a href=\"https://docs.datasette.io/en/latest/javascript_plugins.html#javascript-plugins-makejumpsections\">makeJumpSe"
-    },
-    {
-      "kind": "rss",
-      "title": "datasette-fixtures 0.1a0",
-      "url": "https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-24T21:38:32.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-fixtures/releases/tag/0.1a0\">datasette-fixtures 0.1a0</a></p> <p>One of the smaller features in <a href=\"https://docs.datasette.io/en/latest/changelog.html#a30-2026-05-24\">Datasette 1.0a30</a> is this:</"
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Armin Ronacher",
-      "url": "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-24T18:46:53.000Z",
-      "summary": "<blockquote cite=\"https://lucumr.pocoo.org/2026/5/24/pi-oss/\"><p>The most frustrating failure mode right now is that people submit issues that are not in their own voice. They contain an observed problem somewhere, but it has been thrown into a clanker and the clanker reworded it"
-    },
-    {
-      "kind": "rss",
-      "title": "Mad House — Usborne Creepy Computer Games",
-      "url": "https://simonwillison.net/2026/May/24/usborne-mad-house/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-24T17:14:11.000Z",
-      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/usborne-mad-house\">Mad House — Usborne Creepy Computer Games</a></p> <p>Via <a href=\"https://news.ycombinator.com/item?id=48258194\">Hacker News</a> I learned that UK publisher Usborne published <a href=\"https://us"
-    },
-    {
-      "kind": "rss",
-      "title": "On the <dl>",
-      "url": "https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-23T20:24:48.000Z",
-      "summary": "<p><strong><a href=\"https://benmyers.dev/blog/on-the-dl/\">On the <dl></a></strong></p> I learned a few new-to-me things about the <code><dl></code> element from this article by Ben Meyer:</p> <ol> <li>A <code><dt></code> can be followed by <em>multiple</em> <code><dd></code></li>"
-    },
-    {
-      "kind": "rss",
-      "title": "Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+      "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
       "source": "Hugging Face",
       "sourceId": "huggingface",
       "category": "guides",
-      "publishedAt": "2026-05-23T00:02:03.000Z",
+      "publishedAt": "2026-06-04T18:57:45.000Z",
       "summary": ""
     },
     {
       "kind": "rss",
-      "title": "The memory shortage is causing a repricing of consumer electronics",
-      "url": "https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything",
+      "title": "Quoting Emanuel Maiberg, 404 Media",
+      "url": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/#atom-everything",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
-      "publishedAt": "2026-05-22T22:01:31.000Z",
-      "summary": "<p><strong><a href=\"https://davidoks.blog/p/ai-is-killing-the-cheap-smartphone\">The memory shortage is causing a repricing of consumer electronics</a></strong></p> David Oks provides the clearest explanation I've seen yet of why consumer products that use memory are likely to get"
+      "publishedAt": "2026-06-04T16:38:29.000Z",
+      "summary": "<blockquote cite=\"https://www.404media.co/google-employees-internally-share-memes-about-how-its-ai-sucks/\"><p>After this story was published Google's spokesperson reached out and asked us to publish a slightly different version of that statement. The new statement no longer state"
     },
     {
       "kind": "rss",
-      "title": "Specialization Beats Scale: A Strategic Variable Most AI Procurement Decisions Overlook",
-      "url": "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale",
+      "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
       "source": "Hugging Face",
       "sourceId": "huggingface",
       "category": "guides",
-      "publishedAt": "2026-05-22T15:25:59.000Z",
+      "publishedAt": "2026-06-04T12:24:58.000Z",
       "summary": ""
     },
     {
       "kind": "rss",
-      "title": "FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service",
-      "url": "https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-22T04:48:32.000Z",
-      "summary": "<p><strong><a href=\"https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-require-cox-media-group-two-other-firms-pay-nearly-1-million-settle-charges-they-deceived\">FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived "
-    },
-    {
-      "kind": "rss",
-      "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
-      "url": "https://openai.com/index/gartner-2026-agentic-coding-leader",
+      "title": "How Endava is redesigning software delivery around AI agents",
+      "url": "https://openai.com/index/endava-frontiers",
       "source": "OpenAI",
       "sourceId": "openai",
       "category": "model-releases",
-      "publishedAt": "2026-05-22T00:00:00.000Z",
-      "summary": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment."
+      "publishedAt": "2026-06-04T12:00:00.000Z",
+      "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise."
     },
     {
       "kind": "rss",
-      "title": "How Virgin Atlantic ships faster with Codex",
-      "url": "https://openai.com/index/virgin-atlantic",
+      "title": "Dreaming: Better memory for a more helpful ChatGPT",
+      "url": "https://openai.com/index/chatgpt-memory-dreaming",
       "source": "OpenAI",
       "sourceId": "openai",
       "category": "model-releases",
-      "publishedAt": "2026-05-22T00:00:00.000Z",
-      "summary": "How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holiday travel deadline, reaching near-total unit test coverage and zero P1 defects."
+      "publishedAt": "2026-06-04T09:00:00.000Z",
+      "summary": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations."
     },
     {
       "kind": "rss",
-      "title": "Datasette Agent",
-      "url": "https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-21T19:52:19.000Z",
-      "summary": "<p>We just <a href=\"https://datasette.io/blog/2026/datasette-agent/\">announced the first release of Datasette Agent</a>, a new extensible AI assistant for Datasette. I've been working on my <a href=\"https://llm.datasette.io/\">LLM</a> Python library for just over three years now, "
-    },
-    {
-      "kind": "rss",
-      "title": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks",
-      "url": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
-      "source": "Google DeepMind",
-      "sourceId": "deepmind",
-      "category": "research",
-      "publishedAt": "2026-05-21T19:46:42.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "datasette-agent-sprites 0.1a0",
-      "url": "https://simonwillison.net/2026/May/21/datasette-agent-sprites/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-21T18:21:07.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-agent-sprites/releases/tag/0.1a0\">datasette-agent-sprites 0.1a0</a></p> <p>A Datasette Agent plugin for running commands in a <a href=\"https://sprites.dev\">Fly Sprites</a> sandbox.</p> <p>Tags: <a href=\""
-    },
-    {
-      "kind": "rss",
-      "title": "Emmi joins Mistral to accelerate the AI-native industry",
-      "url": "https://mistral.ai/news/accelerate-ai-native-industry",
-      "source": "Mistral AI",
-      "sourceId": "mistral",
-      "category": "model-releases",
-      "publishedAt": "2026-05-21T17:00:00.000Z"
-    },
-    {
-      "kind": "rss",
-      "title": "datasette-agent-charts 0.1a2",
-      "url": "https://simonwillison.net/2026/May/21/datasette-agent-charts/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-21T15:15:58.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-agent-charts/releases/tag/0.1a2\">datasette-agent-charts 0.1a2</a></p> <blockquote> <ul> <li>\"View SQL query\" buttons below rendered charts.</li> </ul> </blockquote> <p>Tags: <a href=\"https://simonwilliso"
-    },
-    {
-      "kind": "rss",
-      "title": "datasette-agent 0.1a3",
-      "url": "https://simonwillison.net/2026/May/21/datasette-agent-2/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-21T15:04:09.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-agent/releases/tag/0.1a3\">datasette-agent 0.1a3</a></p> <blockquote> <ul> <li>\"View SQL query\" buttons for both visible tables and collapsed SQL result tool calls.</li> <li>Don't display empty reasoning "
-    },
-    {
-      "kind": "rss",
-      "title": "AdventHealth advances whole-person care with OpenAI",
-      "url": "https://openai.com/index/adventhealth",
+      "title": "Biodefense in the Intelligence Age",
+      "url": "https://openai.com/index/biodefense-in-the-intelligence-age",
       "source": "OpenAI",
       "sourceId": "openai",
       "category": "model-releases",
-      "publishedAt": "2026-05-21T12:00:00.000Z",
-      "summary": "AdventHealth is using ChatGPT for Healthcare to streamline workflows, reduce administrative burden, and return more time to patient care."
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "summary": "An action plan for AI-powered biological resilience"
     },
     {
       "kind": "rss",
-      "title": "Quoting SpaceX S-1",
-      "url": "https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-20T22:26:36.000Z",
-      "summary": "<blockquote cite=\"https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm\"><p>We have the ability to use compute resources to support our proprietary AI applications (such as Grok 5, which is currently being trained at COLOSSUS II), while"
-    },
-    {
-      "kind": "rss",
-      "title": "How fast is 10 tokens per second really?",
-      "url": "https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-20T17:57:45.000Z",
-      "summary": "<p><strong><a href=\"https://mikeveerman.github.io/tokenspeed/\">How fast is 10 tokens per second really?</a></strong></p> Neat little HTML app by Mike Veerman (<a href=\"https://github.com/MikeVeerman/tokenspeed/blob/master/index.html\">source code here</a>) which simulates LLM toke"
-    },
-    {
-      "kind": "rss",
-      "title": "Google I/O, Gemini Spark, Antigravity",
-      "url": "https://simonwillison.net/2026/May/20/google-io/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-20T15:32:17.000Z",
-      "summary": "<p>It's hard to find much to write about Google I/O this year because I have a policy of not writing about anything that I can't try out myself, and a lot of the big announcements are \"coming soon\".</p> <p>I actually prefer to write about things that are in general availability, "
-    },
-    {
-      "kind": "rss",
-      "title": "datasette-agent-charts 0.1a1",
-      "url": "https://simonwillison.net/2026/May/20/datasette-agent-charts/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-20T14:52:16.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-agent-charts/releases/tag/0.1a1\">datasette-agent-charts 0.1a1</a></p> <blockquote> <ul> <li>More color! Bar and waffle charts without a color column are shaded by magnitude with a sequential color scheme"
-    },
-    {
-      "kind": "rss",
-      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
-      "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-20T00:00:00.000Z",
-      "summary": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics."
-    },
-    {
-      "kind": "rss",
-      "title": "The next phase of OpenAI’s Education for Countries",
-      "url": "https://openai.com/index/the-next-phase-of-education-for-countries",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-20T00:00:00.000Z",
-      "summary": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes."
-    },
-    {
-      "kind": "rss",
-      "title": "How Ramp engineers accelerate code review with Codex",
-      "url": "https://openai.com/index/ramp",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-20T00:00:00.000Z",
-      "summary": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours."
-    },
-    {
-      "kind": "rss",
-      "title": "llm-gemini 0.32",
-      "url": "https://simonwillison.net/2026/May/19/llm-gemini-2/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-19T23:46:27.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.32\">llm-gemini 0.32</a></p> <blockquote> <ul> <li>New model <code>gemini-3.5-flash</code> for <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/\">Ge"
-    },
-    {
-      "kind": "rss",
-      "title": "Gemini 3.5 Flash: more expensive, but Google plan to use it for everything",
-      "url": "https://simonwillison.net/2026/May/19/gemini-35-flash/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-19T22:40:25.000Z",
-      "summary": "<p>Today at Google I/O, Google <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/\">released Gemini 3.5 Flash</a>. This one skipped the <code>-preview</code> modifier and went straight to general availability, and Google appear to be using"
-    },
-    {
-      "kind": "rss",
-      "title": "datasette-llm-accountant 0.1a4",
-      "url": "https://simonwillison.net/2026/May/19/datasette-llm-accountant/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-19T20:45:43.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-llm-accountant/releases/tag/0.1a4\">datasette-llm-accountant 0.1a4</a></p> <blockquote> <ul> <li>Fixed bug tracking chains of responses. Refs <a href=\"https://github.com/datasette/datasette-llm/issues/7\">"
-    },
-    {
-      "kind": "rss",
-      "title": "llm-gemini 0.32a0",
-      "url": "https://simonwillison.net/2026/May/19/llm-gemini/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-19T20:36:23.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.32a0\">llm-gemini 0.32a0</a></p> <blockquote> <ul> <li>Compatible with <code>llm>=0.32a0</code> alpha - adds the ability to stream reasoning tokens.</li> </ul> </blockquote> <p>Tags: <a href="
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing OpenAI for Singapore",
-      "url": "https://openai.com/index/introducing-openai-for-singapore",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-19T20:30:00.000Z",
-      "summary": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI."
-    },
-    {
-      "kind": "rss",
-      "title": "datasette-llm 0.1a8",
-      "url": "https://simonwillison.net/2026/May/19/datasette-llm/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-19T20:28:16.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-llm/releases/tag/0.1a8\">datasette-llm 0.1a8</a></p> <blockquote> <ul> <li>Fix for bug where <code>llm_prompt_context()</code> hook did not fully collect chains of responses. #7</li> </ul> </blockquote>"
-    },
-    {
-      "kind": "rss",
-      "title": "OlmoEarth v1.1: A more efficient family of Earth observation models",
-      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
+      "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+      "url": "https://huggingface.co/blog/hf-cli-for-agents",
       "source": "Hugging Face",
       "sourceId": "huggingface",
       "category": "guides",
-      "publishedAt": "2026-05-19T18:38:09.000Z",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
       "summary": ""
     },
     {
       "kind": "rss",
-      "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
-      "url": "https://openai.com/index/advancing-content-provenance",
+      "title": "Introducing new capabilities to GPT-Rosalind",
+      "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
       "source": "OpenAI",
       "sourceId": "openai",
       "category": "model-releases",
-      "publishedAt": "2026-05-19T10:45:00.000Z",
-      "summary": "OpenAI advances AI content provenance with Content Credentials, SynthID, and a verification tool to help people identify and trust AI-generated media."
+      "publishedAt": "2026-06-03T13:15:00.000Z",
+      "summary": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities."
     },
     {
       "kind": "rss",
-      "title": "The last six months in LLMs in five minutes",
-      "url": "https://simonwillison.net/2026/May/19/5-minute-llms/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-19T01:09:44.000Z",
-      "summary": "<p>I put together these annotated slides from my five minute lightning talk at PyCon US 2026, using the <a href=\"https://tools.simonwillison.net/annotated-presentations\">latest iteration</a> of my <a href=\"https://simonwillison.net/2023/Aug/6/annotated-presentations/\">annotated p"
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing the Ettin Reranker Family",
-      "url": "https://huggingface.co/blog/ettin-reranker",
+      "title": "Direct Preference Optimization Beyond Chatbots",
+      "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
       "source": "Hugging Face",
       "sourceId": "huggingface",
       "category": "guides",
-      "publishedAt": "2026-05-19T00:00:00.000Z",
+      "publishedAt": "2026-06-03T12:55:11.000Z",
       "summary": ""
     },
     {
       "kind": "rss",
-      "title": "Fast-tracking genetic leads to reverse cellular aging",
-      "url": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
-      "source": "Google DeepMind",
-      "sourceId": "deepmind",
-      "category": "research",
-      "publishedAt": "2026-05-18T18:21:39.000Z",
-      "summary": "Biologists use Co-Scientist to find novel factors that successfully rejuvenate human cells."
+      "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+      "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-03T12:01:27.000Z",
+      "summary": "<p><strong><a href=\"https://www.bloomberg.com/news/articles/2026-06-02/uber-caps-usage-of-ai-tools-like-claude-code-to-cut-costs\">Uber Caps Usage of AI Tools Like Claude Code to Manage Costs</a></strong></p> I wrote <a href=\"https://simonwillison.net/2026/May/27/product-market-fi"
     },
     {
       "kind": "rss",
-      "title": "Widening the conversation on frontier AI",
-      "url": "https://www.anthropic.com/news/widening-conversation-ai",
+      "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
+      "url": "https://openai.com/index/wasmer",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-03T12:00:00.000Z",
+      "summary": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months."
+    },
+    {
+      "kind": "rss",
+      "title": "A blueprint for democratic governance of frontier AI",
+      "url": "https://openai.com/index/frontier-safety-blueprint",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-03T10:00:00.000Z",
+      "summary": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security."
+    },
+    {
+      "kind": "rss",
+      "title": "OpenAI public policy agenda",
+      "url": "https://openai.com/index/public-policy-agenda",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-03T10:00:00.000Z",
+      "summary": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society."
+    },
+    {
+      "kind": "rss",
+      "title": "Adding MCP Tools to Reachy Mini",
+      "url": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Microsoft's new MAI models",
+      "url": "https://simonwillison.net/2026/Jun/2/microsofts-new-models/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-02T22:21:52.000Z",
+      "summary": "<p>Microsoft <a href=\"https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/\">announced two new text LLMs</a> this morning - <strong><a href=\"https://microsoft.ai/news/introducing-mai-thinking-1/\">MAI-Thinking-1</a></strong> (reasoning, 1T param"
+    },
+    {
+      "kind": "rss",
+      "title": "datasette-agent-micropython 0.1a0",
+      "url": "https://simonwillison.net/2026/Jun/2/datasette-agent-micropython/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-02T19:28:36.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-agent-micropython/releases/tag/0.1a0\">datasette-agent-micropython 0.1a0</a></p> <p>I want <a href=\"https://agent.datasette.io\">Datasette Agent</a> to be able to generate and execute Python code safely. T"
+    },
+    {
+      "kind": "rss",
+      "title": "micropython-wasm 0.1a1",
+      "url": "https://simonwillison.net/2026/Jun/2/micropython-wasm/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-02T19:20:47.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/micropython-wasm/releases/tag/0.1a1\">micropython-wasm 0.1a1</a></p> <p>Fixes for some limitations that emerged while I was trying to use this to build <code>datasette-agent-micropython</code>.</p> <p>Tags: <a href=\"h"
+    },
+    {
+      "kind": "rss",
+      "title": "California Brown Pelican",
+      "url": "https://simonwillison.net/2026/Jun/2/sighting-367841339/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-02T18:17:03.000Z",
+      "summary": "<p><img src=\"https://static.inaturalist.org/photos/671786719/large.jpg\" alt=\"California Brown Pelican\"></p><p>California Brown Pelican, in Fort Mason, CA, US</p><p>I'm at the <a href=\"https://build.microsoft.com/\">Microsoft Build</a> conference today, held at <a href=\"https://en."
+    },
+    {
+      "kind": "rss",
+      "title": "What we learned mapping a year’s worth of AI-enabled cyber threats",
+      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
       "source": "Anthropic",
       "sourceId": "anthropic",
       "category": "model-releases",
-      "publishedAt": "2026-05-18T17:00:00.000Z",
-      "summary": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems."
+      "publishedAt": "2026-06-02T17:00:00.000Z",
+      "summary": "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new report, we seek to answer that question."
     },
     {
       "kind": "rss",
-      "title": "KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance",
-      "url": "https://www.anthropic.com/news/anthropic-kpmg",
+      "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "url": "https://www.anthropic.com/news/services-track-partner-hub",
       "source": "Anthropic",
       "sourceId": "anthropic",
       "category": "model-releases",
-      "publishedAt": "2026-05-18T17:00:00.000Z",
-      "summary": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems."
+      "publishedAt": "2026-06-02T17:00:00.000Z",
+      "summary": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate."
     },
     {
       "kind": "rss",
-      "title": "PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend",
-      "url": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers",
+      "title": "Holo3.1: Fast & Local Computer Use Agents",
+      "url": "https://huggingface.co/blog/Hcompany/holo31",
       "source": "Hugging Face",
       "sourceId": "huggingface",
       "category": "guides",
-      "publishedAt": "2026-05-18T15:12:46.000Z",
+      "publishedAt": "2026-06-02T14:13:23.000Z",
       "summary": ""
     },
     {
       "kind": "rss",
-      "title": "Glaucous-winged Gull, Brown Pelican, Snowy Egret, Canada Goose",
-      "url": "https://simonwillison.net/2026/May/18/sighting-362781627/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-18T14:51:00.000Z",
-      "summary": "<p><img src=\"https://static.inaturalist.org/photos/662161673/large.jpg\" alt=\"Glaucous-winged Gull\"></p><p><img src=\"https://static.inaturalist.org/photos/662161721/large.jpg\" alt=\"Glaucous-winged Gull\"></p><p><img src=\"https://static.inaturalist.org/photos/662161937/large.jpg\" al"
+      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
+      "url": "https://openai.com/index/travelers",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-02T12:00:00.000Z",
+      "summary": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand."
     },
     {
       "kind": "rss",
-      "title": "Import AI 457: AI stuxnet; cursed Muon optimizer; and positive alignment",
-      "url": "https://importai.substack.com/p/import-ai-457-ai-stuxnet-cursed-muon",
+      "title": "Codex for every role, tool, and workflow",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-02T09:00:00.000Z",
+      "summary": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI."
+    },
+    {
+      "kind": "rss",
+      "title": "Advancing youth safety and opportunity through global leadership",
+      "url": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-02T07:00:00.000Z",
+      "summary": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people."
+    },
+    {
+      "kind": "rss",
+      "title": "Pasted File Editor",
+      "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-02T04:13:36.000Z",
+      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/pasted-file-editor\">Pasted File Editor</a></p> <p>I really like how you can paste a large volume of text into <a href=\"https://claude.ail\">claude.ai</a> (or the Claude desktop/mobile apps) and it will detect it as"
+    },
+    {
+      "kind": "rss",
+      "title": "micropython-wasm 0.1a0",
+      "url": "https://simonwillison.net/2026/Jun/2/micropython-wasm-2/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-02T03:43:45.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/micropython-wasm/releases/tag/0.1a0\">micropython-wasm 0.1a0</a></p> <p>My latest sandboxing experiment: This alpha package bundles a lightly customized WASM build of <a href=\"https://micropython.org/\">MicroPython</a>"
+    },
+    {
+      "kind": "rss",
+      "title": "Codex is becoming a productivity tool for everyone",
+      "url": "https://openai.com/index/codex-for-knowledge-work",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-02T02:00:00.000Z",
+      "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation."
+    },
+    {
+      "kind": "rss",
+      "title": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
+      "url": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-01T21:14:47.000Z",
+      "summary": "<p><strong><a href=\"https://www.404media.co/hackers-simply-asked-meta-ai-to-give-them-access-to-high-profile-instagram-accounts-it-worked/\">Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked</a></strong></p> I had trouble believing this"
+    },
+    {
+      "kind": "rss",
+      "title": "Expanding Project Glasswing",
+      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+      "source": "Anthropic",
+      "sourceId": "anthropic",
+      "category": "model-releases",
+      "publishedAt": "2026-06-01T17:00:00.000Z",
+      "summary": "We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries"
+    },
+    {
+      "kind": "rss",
+      "title": "Our views on AI policy and political advocacy",
+      "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-01T17:00:00.000Z",
+      "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf."
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+      "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-06-01T15:45:17.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
+      "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-06-01T13:51:18.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Import AI 459: AI oversight is difficult; scaling laws for protein folding models; and pricing the extinction risk of AI systems",
+      "url": "https://importai.substack.com/p/import-ai-459-ai-oversight-is-difficult",
       "source": "Import AI (Jack Clark)",
       "sourceId": "importai",
       "category": "insights",
-      "publishedAt": "2026-05-18T13:31:17.000Z",
-      "summary": "Welcome to Import AI, a newsletter about AI research."
+      "publishedAt": "2026-06-01T13:31:56.000Z",
+      "summary": "Do you feel as though you are living in a revolution?"
+    },
+    {
+      "kind": "rss",
+      "title": "Building the infrastructure for the Intelligence Age in Michigan",
+      "url": "https://openai.com/index/stargate-michigan-data-center",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-01T12:00:00.000Z",
+      "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities."
+    },
+    {
+      "kind": "rss",
+      "title": "OpenAI frontier models and Codex are now available on AWS",
+      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-01T10:00:00.000Z",
+      "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation"
+    },
+    {
+      "kind": "rss",
+      "title": "May 2026 newsletter",
+      "url": "https://simonwillison.net/2026/Jun/1/may-newsletter/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-01T04:45:00.000Z",
+      "summary": "<p>I just sent out the May edition of my <a href=\"https://github.com/sponsors/simonw/\">sponsors-only monthly newsletter</a>. If you are a sponsor (or if you start a sponsorship now) you can <a href=\"https://github.com/simonw-private/monthly/blob/main/2026-05-may.md\">access it her"
+    },
+    {
+      "kind": "rss",
+      "title": "datasette 1.0a32",
+      "url": "https://simonwillison.net/2026/May/31/datasette/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-31T23:23:38.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a32\">datasette 1.0a32</a></p> <p>A minor bugfix release. Fixes a bug with <code>INSERT ... RETURNING</code> queries via the <a href=\"https://datasette.io/blog/2026/sql-write-queries/\">new /d"
+    },
+    {
+      "kind": "rss",
+      "title": "Anthropic confidentially submits draft S-1 to the SEC",
+      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "source": "Anthropic",
+      "sourceId": "anthropic",
+      "category": "model-releases",
+      "publishedAt": "2026-05-31T17:00:00.000Z",
+      "summary": "Anthropic has confidentially submitted a draft S-1 registration statement to the Securities and Exchange Commission"
+    },
+    {
+      "kind": "rss",
+      "title": "The solution might be cancelling my AI subscription",
+      "url": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-31T16:31:32.000Z",
+      "summary": "<p><strong><a href=\"https://thoughts.hmmz.org/2026-05-31.html\">The solution might be cancelling my AI subscription</a></strong></p> I find this post by David Wilson very relatable. David lists 16+ projects he's spun up with AI tooling, and concludes:</p> <blockquote> <p>I didn't "
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Karen Kwok for Reuters Breakingviews",
+      "url": "https://simonwillison.net/2026/May/31/anthropic-run-rate/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-31T01:48:12.000Z",
+      "summary": "<blockquote cite=\"https://www.reuters.com/commentary/breakingviews/anthropic-gives-lesson-ai-revenue-hallucination-2026-03-10/\"><p>Anthropic defines “run-rate revenue” in two parts. Use the last 28 days of sales ⁠from customers charged on a consumption basis and multiply it by 13"
+    },
+    {
+      "kind": "rss",
+      "title": "How we contain Claude across products",
+      "url": "https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-30T21:36:24.000Z",
+      "summary": "<p><strong><a href=\"https://www.anthropic.com/engineering/how-we-contain-claude\">How we contain Claude across products</a></strong></p> A complaint I often have about sandboxing products is that they are rarely thoroughly <em>documented</em>, and in the absence of detailed docume"
+    },
+    {
+      "kind": "rss",
+      "title": "I Am Retiring from Tech to Live Offline",
+      "url": "https://simonwillison.net/2026/May/30/retiring-from-tech-to-live-offline/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-30T19:39:08.000Z",
+      "summary": "<p><strong><a href=\"https://openpath.quest/2026/i-am-retiring-from-tech-to-live-offline/\">I Am Retiring from Tech to Live Offline</a></strong></p> I've seen a lot of posts on forums from people threatening to quit their careers over AI. This is <em>not</em> one of those: Chad Whi"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Daniel Jalkut",
+      "url": "https://simonwillison.net/2026/May/30/daniel-jalkut/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-30T17:29:55.000Z",
+      "summary": "<blockquote cite=\"https://mastodon.social/@danielpunkass/116639318125898071\"><p>My take on AI is, essentially, everybody who’s against it is too against it and everybody who’s for it is too for it.</p></blockquote> <p class=\"cite\">&mdash; <a href=\"https://mastodon.social/@danielp"
+    },
+    {
+      "kind": "rss",
+      "title": "Running Python ASGI apps in the browser via Pyodide + a service worker",
+      "url": "https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-05-30T15:34:00.000Z",
+      "summary": "<p><strong>Research:</strong> <a href=\"https://github.com/simonw/research/tree/main/pyodide-asgi-browser#readme\">Running Python ASGI apps in the browser via Pyodide + a service worker</a></p> <p><a href=\"https://lite.datasette.io/\">Datasette Lite</a> is my version of Datasette th"
+    },
+    {
+      "kind": "rss",
+      "title": "Boston Children’s uses AI to unlock new diagnoses",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-05-29T12:00:00.000Z",
+      "summary": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases."
+    },
+    {
+      "kind": "rss",
+      "title": "How Braintrust turns customer requests into code with Codex",
+      "url": "https://openai.com/index/braintrust",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-05-29T12:00:00.000Z",
+      "summary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster."
     }
   ]
 }
