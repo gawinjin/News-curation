@@ -1,0 +1,51 @@
+---
+title: "Codex adds role plugins, shareable sites, and precise annotations"
+date: 2026-06-02
+category: guides
+tags: ["codex", "openai", "plugins", "workflow"]
+summary: "OpenAI added role-specific plugins, shareable Sites, and annotations to Codex, making the agent easier to adapt, review, and refine for non-coding work."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "Access to the Codex app"
+    - "Feature availability in your account or workspace"
+references:
+  - title: "Codex for every role, tool, and workflow"
+    url: "https://openai.com/index/codex-for-every-role-tool-workflow/"
+    author: "OpenAI"
+    publishedAt: "2026-06-02"
+  - title: "Codex"
+    url: "https://openai.com/codex/"
+    author: "OpenAI"
+draft: false
+---
+
+## TL;DR
+
+Codex now has six role-specific plugins for work such as data analysis, sales, design, and investing. OpenAI also announced shareable Sites and annotations that let users point at a specific part of a result and request a focused revision. Availability varies by region and workspace plan.
+
+## What's New
+
+OpenAI says the six role plugins bundle 62 apps and 110 skills. They are designed for data analytics, creative production, sales, product design, public-equity investing, and investment banking. Teams can use the packaged workflows as supplied or adapt them.
+
+Sites turn Codex output into interactive webpages such as dashboards, planners, project boards, and review workspaces. They are rolling out in preview for Business and Enterprise teams. Annotations let users select a specific claim, chart, slide element, or page section and ask Codex to revise only that part.
+
+Role plugins are rolling out in supported regions through the Codex plugin directory. Workspace administrators can control the underlying app permissions, which matters because a useful plugin may connect Codex to sensitive business systems.
+
+## Why It Matters
+
+The important improvement is not only that Codex can create more kinds of work. It is becoming easier to review and correct that work without restarting from a blank prompt. Focused annotations can make the editing loop clearer and reduce accidental changes elsewhere.
+
+Plugins also make permission review more important. Before connecting a role plugin, check which apps and data it can reach, then begin with non-sensitive material and a narrow task.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["Access to the Codex app", "Feature availability in your account or workspace"]}>
+
+1. Open Codex and check the plugin directory for a role plugin that matches a real task you perform.
+2. Open the plugin details and review every requested app connection or permission before installation.
+3. Install only the plugin needed for the test, then give it a small non-sensitive input and request one reviewable output.
+4. Select or annotate one specific part of the result and ask Codex to revise only that section.
+5. Confirm that unrelated parts stayed unchanged, then disconnect any app the workflow no longer needs.
+
+</PracticalGuide>
