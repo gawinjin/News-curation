@@ -1,0 +1,38 @@
+{
+  "slug": "codex-knowledge-work",
+  "date": "2026-06-02",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["Codex is moving beyond code into reports, research, and spreadsheets"],
+  "summary": "OpenAI says a growing share of Codex users now use the agent for research, analysis, reports, spreadsheets, presentations, and lightweight tools.",
+  "tags": ["codex", "openai", "workflow", "knowledge-work"],
+  "primary_source": {
+    "url": "https://openai.com/index/codex-for-knowledge-work/",
+    "title": "Codex is becoming a productivity tool for everyone",
+    "author": "OpenAI",
+    "publishedAt": "2026-06-02",
+    "key_facts": [
+      "OpenAI says knowledge workers represent about 20 percent of Codex users.",
+      "Common tasks include reports, spreadsheets, presentations, research, and data analysis.",
+      "Codex is available through a desktop app on macOS and Windows."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://openai.com/codex/", "title": "Codex"}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["Access to the Codex desktop app", "A folder containing non-sensitive notes or sample data"],
+    "steps": [
+      {"instruction": "Ask Codex to turn a small non-sensitive source folder into a traceable one-page brief.", "verify_url": "https://openai.com/codex/"}
+    ]
+  },
+  "references": [
+    {"title": "Codex is becoming a productivity tool for everyone", "url": "https://openai.com/index/codex-for-knowledge-work/", "author": "OpenAI", "publishedAt": "2026-06-02"},
+    {"title": "Codex", "url": "https://openai.com/codex/", "author": "OpenAI"}
+  ],
+  "risk_flags": ["Usage figures and task trends are reported by OpenAI."],
+  "assembled_at": "2026-06-05T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
