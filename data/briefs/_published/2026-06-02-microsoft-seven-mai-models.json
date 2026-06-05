@@ -1,0 +1,34 @@
+{
+  "slug": "microsoft-seven-mai-models",
+  "date": "2026-06-02",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Microsoft launches seven MAI models you can compare in one playground"],
+  "summary": "Microsoft introduced seven in-house MAI models spanning reasoning, code, images, voice, and transcription, alongside a public playground for trying available models.",
+  "tags": ["microsoft", "models", "multimodal", "how-to"],
+  "primary_source": {
+    "url": "https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/",
+    "title": "Building a hill-climbing machine: Launching seven new MAI models",
+    "author": "Mustafa Suleyman",
+    "publishedAt": "2026-06-02",
+    "key_facts": [
+      "Microsoft announced seven new in-house MAI models.",
+      "The family covers reasoning, code, images, transcription, and voice.",
+      "Microsoft provides a public MAI Playground for available models."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [{"url": "https://playground.microsoft.ai/", "title": "MAI Playground"}],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A web browser", "A Microsoft account may be required to generate results"],
+    "steps": [{"instruction": "Compare the same bounded task across available MAI Playground models.", "verify_url": "https://playground.microsoft.ai/"}]
+  },
+  "references": [
+    {"title": "Building a hill-climbing machine: Launching seven new MAI models", "url": "https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/", "author": "Mustafa Suleyman", "publishedAt": "2026-06-02"},
+    {"title": "MAI Playground", "url": "https://playground.microsoft.ai/", "author": "Microsoft AI"}
+  ],
+  "risk_flags": ["Performance comparisons are reported by Microsoft."],
+  "assembled_at": "2026-06-05T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
