@@ -1,0 +1,34 @@
+{
+  "slug": "pasted-file-editor",
+  "date": "2026-06-02",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["Pasted File Editor keeps long pasted text out of your draft"],
+  "summary": "Simon Willison built a small browser tool that turns long pasted text and copied files into separate previewable attachments instead of mixing them into the editor.",
+  "tags": ["simon-willison", "tools", "writing", "privacy"],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/",
+    "title": "Pasted File Editor",
+    "author": "Simon Willison",
+    "publishedAt": "2026-06-02",
+    "key_facts": [
+      "The tool turns long pasted text into a separate attachment.",
+      "Users can attach, drag, preview, and independently remove files.",
+      "The tool is available publicly without an account."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [{"url": "https://tools.simonwillison.net/pasted-file-editor", "title": "Pasted File Editor tool"}],
+  "practical_guide": {
+    "timeToTry": "5 min",
+    "prerequisites": ["A web browser", "A long piece of non-sensitive text"],
+    "steps": [{"instruction": "Paste long text, inspect its attachment preview, and remove it without changing the draft.", "verify_url": "https://tools.simonwillison.net/pasted-file-editor"}]
+  },
+  "references": [
+    {"title": "Pasted File Editor", "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/", "author": "Simon Willison", "publishedAt": "2026-06-02"},
+    {"title": "Pasted File Editor tool", "url": "https://tools.simonwillison.net/pasted-file-editor", "author": "Simon Willison"}
+  ],
+  "risk_flags": ["Use only non-sensitive content in public browser tools."],
+  "assembled_at": "2026-06-05T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

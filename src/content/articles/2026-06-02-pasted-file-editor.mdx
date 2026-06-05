@@ -1,0 +1,51 @@
+---
+title: "Pasted File Editor keeps long pasted text out of your draft"
+date: 2026-06-02
+category: guides
+tags: ["simon-willison", "tools", "writing", "privacy"]
+summary: "Simon Willison built a small browser tool that turns long pasted text and copied files into separate previewable attachments instead of mixing them into the editor."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "5 min"
+  prerequisites:
+    - "A web browser"
+    - "A long piece of non-sensitive text"
+references:
+  - title: "Pasted File Editor"
+    url: "https://simonwillison.net/2026/Jun/2/pasted-file-editor/"
+    author: "Simon Willison"
+    publishedAt: "2026-06-02"
+  - title: "Pasted File Editor tool"
+    url: "https://tools.simonwillison.net/pasted-file-editor"
+    author: "Simon Willison"
+draft: false
+---
+
+## TL;DR
+
+Pasted File Editor is a small browser tool for keeping long copied text separate from the draft you are writing. Large pastes and copied files appear as previewable attachments below the editor, while ordinary typing stays in the main text area. It is useful for understanding how attachment-style AI chat interfaces behave.
+
+## What's New
+
+Simon Willison built the tool after noticing that Claude turns large pasted text into an attachment instead of placing it directly in the conversation box. The editor recreates that interaction as a standalone web page.
+
+Users can type normally, paste long text, attach files, or drag files onto the page. Attached items appear as cards with a preview. Selecting a card opens its contents, and each attachment can be removed independently.
+
+The tool runs as a simple browser interface and requires no account. Treat it as a temporary workspace: the page does not present itself as a permanent document editor or storage service.
+
+## Why It Matters
+
+Long reference material can overwhelm the text you are actively writing. Separating source material into attachments makes it easier to see what belongs to the instruction and what belongs to the context.
+
+This is also a useful privacy habit for AI tools. Before attaching any file or large paste, inspect what it contains and remove secrets, private conversations, or unnecessary personal information.
+
+<PracticalGuide timeToTry="5 min" prerequisites={["A web browser", "A long piece of non-sensitive text"]}>
+
+1. Open https://tools.simonwillison.net/pasted-file-editor and type one sentence into the Draft box.
+2. Paste a long piece of non-sensitive text and confirm that it appears as a separate card below the editor.
+3. Select the pasted-file card and inspect the full preview.
+4. Attach or drag in another non-sensitive text file, then compare how the two attachments are listed.
+5. Remove both attachments and confirm that your original sentence remains in the Draft box.
+
+</PracticalGuide>
