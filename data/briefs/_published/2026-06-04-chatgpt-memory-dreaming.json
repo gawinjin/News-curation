@@ -1,0 +1,38 @@
+{
+  "slug": "chatgpt-memory-dreaming",
+  "date": "2026-06-04",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["ChatGPT's new memory is easier to inspect and correct"],
+  "summary": "OpenAI is rolling out a new ChatGPT memory system that synthesizes past context, stays more current, and gives users a summary they can review and correct.",
+  "tags": ["chatgpt", "openai", "memory", "privacy"],
+  "primary_source": {
+    "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+    "title": "Dreaming: Better memory for a more helpful ChatGPT",
+    "author": "OpenAI",
+    "publishedAt": "2026-06-04",
+    "key_facts": [
+      "OpenAI is rolling out a new memory system built on a background synthesis process.",
+      "The system provides a memory summary users can review and correct.",
+      "The rollout starts with Plus and Pro users in the United States."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://help.openai.com/en/articles/8590148-memory-faq", "title": "Memory FAQ"}
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A ChatGPT account with memory available"],
+    "steps": [
+      {"instruction": "Review and correct the memory summary, then verify the correction in a new chat.", "verify_url": "https://help.openai.com/en/articles/8590148-memory-faq"}
+    ]
+  },
+  "references": [
+    {"title": "Dreaming: Better memory for a more helpful ChatGPT", "url": "https://openai.com/index/chatgpt-memory-dreaming/", "author": "OpenAI", "publishedAt": "2026-06-04"},
+    {"title": "Memory FAQ", "url": "https://help.openai.com/en/articles/8590148-memory-faq", "author": "OpenAI"}
+  ],
+  "risk_flags": ["Rollout availability varies by plan and country."],
+  "assembled_at": "2026-06-05T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
