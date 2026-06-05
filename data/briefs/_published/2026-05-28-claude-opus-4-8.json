@@ -1,0 +1,38 @@
+{
+  "slug": "claude-opus-4-8",
+  "date": "2026-05-28",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Claude Opus 4.8 adds an effort control you can test today"],
+  "summary": "Anthropic released Claude Opus 4.8 with better reliability on difficult work and a new effort control that lets users trade speed for deeper reasoning.",
+  "tags": ["claude", "anthropic", "models", "how-to"],
+  "primary_source": {
+    "url": "https://www.anthropic.com/news/claude-opus-4-8",
+    "title": "Introducing Claude Opus 4.8",
+    "author": "Anthropic",
+    "publishedAt": "2026-05-28",
+    "key_facts": [
+      "Opus 4.8 was released on May 28 as an upgrade to Opus 4.7.",
+      "Claude now provides an effort control on all plans.",
+      "Opus 4.8 is available to Pro, Max, Team, and Enterprise users."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://www.anthropic.com/claude/opus", "title": "Claude Opus 4.8"}
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A Claude account"],
+    "steps": [
+      {"instruction": "Open Claude and compare the same bounded review task at lower and higher effort settings.", "verify_url": "https://claude.ai/"}
+    ]
+  },
+  "references": [
+    {"title": "Introducing Claude Opus 4.8", "url": "https://www.anthropic.com/news/claude-opus-4-8", "author": "Anthropic", "publishedAt": "2026-05-28"},
+    {"title": "Claude Opus 4.8", "url": "https://www.anthropic.com/claude/opus", "author": "Anthropic", "publishedAt": "2026-05-28"}
+  ],
+  "risk_flags": ["Anthropic performance and reliability claims are vendor-reported."],
+  "assembled_at": "2026-06-05T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

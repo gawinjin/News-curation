@@ -1,0 +1,51 @@
+---
+title: "Claude Opus 4.8 adds an effort control you can test today"
+date: 2026-05-28
+category: model-releases
+tags: ["claude", "anthropic", "models", "how-to"]
+summary: "Anthropic released Claude Opus 4.8 with better reliability on difficult work and a new effort control that lets users trade speed for deeper reasoning."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A Claude account"
+references:
+  - title: "Introducing Claude Opus 4.8"
+    url: "https://www.anthropic.com/news/claude-opus-4-8"
+    author: "Anthropic"
+    publishedAt: "2026-05-28"
+  - title: "Claude Opus 4.8"
+    url: "https://www.anthropic.com/claude/opus"
+    author: "Anthropic"
+    publishedAt: "2026-05-28"
+draft: false
+---
+
+## TL;DR
+
+Claude Opus 4.8 is Anthropic's newest premium model, focused on more reliable long-running work. The most useful change for everyday testing is a new effort control in Claude that lets you choose between quicker responses and more time spent reasoning.
+
+## What's New
+
+Anthropic released Opus 4.8 on May 28 as an upgrade to Opus 4.7. The company describes it as stronger across coding, agent tasks, and professional work, with a greater tendency to flag uncertainty instead of claiming unsupported progress.
+
+Claude now includes an effort control beside the model selector on all plans. Lower settings respond faster and conserve usage limits, while higher settings spend more time on difficult prompts. Opus 4.8 itself is available to Pro, Max, Team, and Enterprise users.
+
+Anthropic kept regular API pricing at $5 per million input tokens and $25 per million output tokens. Fast mode is priced separately and is intended for work where response speed matters.
+
+## Why It Matters
+
+The effort setting gives users a practical way to stop treating every question the same. A quick rewrite does not need the same reasoning budget as reviewing a contract draft, comparing a complicated plan, or checking an analysis for weak assumptions.
+
+The reliability claims still come from Anthropic and its evaluators, so the useful test is your own work. Give the same bounded task two effort settings, then compare correctness, useful caveats, and time taken.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A Claude account"]}>
+
+1. Open https://claude.ai/ and start a new conversation.
+2. Open the effort control beside the model selector and choose a lower setting.
+3. Ask Claude to review a short plan you know well and list its three weakest assumptions.
+4. Start a fresh chat, choose a higher effort setting, and submit the same plan and prompt.
+5. Compare whether the higher-effort answer catches more specific problems or simply produces more text.
+
+</PracticalGuide>
