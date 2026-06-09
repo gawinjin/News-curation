@@ -1,0 +1,34 @@
+{
+  "slug": "apple-siri-ai-wwdc",
+  "date": "2026-06-08",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Apple's Siri AI is finally testable, but availability is narrow"],
+  "summary": "Apple previewed Siri AI at WWDC26 with screen awareness, personal-context search, app actions, and a dedicated Siri app, but rollout depends on device, language, region, and beta status.",
+  "tags": ["apple", "siri", "apple-intelligence", "privacy"],
+  "primary_source": {
+    "url": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
+    "title": "WWDC26: Apple unveils next generation of Apple Intelligence, Siri AI, powerful parental controls, and an expansive set of software improvements",
+    "author": "Apple",
+    "publishedAt": "2026-06-08",
+    "key_facts": [
+      "Apple previewed Siri AI and the next generation of Apple Intelligence at WWDC26.",
+      "Siri AI can use personal context, answer questions about screen content, search the web, and perform more app actions.",
+      "Siri AI starts in English later this year and has device, language, and region restrictions."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [{"url": "https://www.apple.com/apple-intelligence/", "title": "Apple Intelligence and Siri"}],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["An Apple device", "An Apple ID"],
+    "steps": [{"instruction": "Check Apple's compatibility and availability notes before enrolling any device in beta software.", "verify_url": "https://www.apple.com/apple-intelligence/"}]
+  },
+  "references": [
+    {"title": "WWDC26: Apple unveils next generation of Apple Intelligence, Siri AI, powerful parental controls, and an expansive set of software improvements", "url": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/", "author": "Apple", "publishedAt": "2026-06-08"},
+    {"title": "Apple Intelligence and Siri", "url": "https://www.apple.com/apple-intelligence/", "author": "Apple", "publishedAt": "2026-06-08"}
+  ],
+  "risk_flags": ["Availability varies by device, language, region, and beta status."],
+  "assembled_at": "2026-06-09T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
