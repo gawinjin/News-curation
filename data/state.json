@@ -106,7 +106,15 @@
     "https://playground.microsoft.ai/",
     "https://openai.com/index/codex-for-every-role-tool-workflow/",
     "https://simonwillison.net/2026/Jun/2/pasted-file-editor/",
-    "https://tools.simonwillison.net/pasted-file-editor"
+    "https://tools.simonwillison.net/pasted-file-editor",
+    "https://help.openai.com/en/articles/20001061-lockdown-mode",
+    "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
+    "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/",
+    "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/",
+    "https://github.com/simonw/micropython-wasm",
+    "https://pypi.org/project/micropython-wasm/",
+    "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
+    "https://www.apple.com/apple-intelligence/"
   ],
-  "lastIngest": "2026-06-05T09:11:10.666Z"
+  "lastIngest": "2026-06-09T09:00:00.000Z"
 }

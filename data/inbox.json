@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T09:08:04.534Z",
+  "generatedAt": "2026-06-09T10:09:30.263Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -45,6 +45,136 @@
     "alexalbert__"
   ],
   "items": [
+    {
+      "kind": "rss",
+      "title": "NeuroBait: I fine-tuned a model to spark dopamine for ADHD brain",
+      "url": "https://huggingface.co/blog/build-small-hackathon/neurobait-adhd",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-06-09T09:04:58.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Siri AI at WWDC 2026",
+      "url": "https://simonwillison.net/2026/Jun/8/wwdc/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-08T23:58:04.000Z",
+      "summary": "<p>Given how badly burned anyone who took Apple's <a href=\"https://simonwillison.net/2024/Jun/10/apple-intelligence/\">2024 WWDC Apple Intelligence announcements</a> at face value was, I'm holding to a strict \"I'll believe it when I see it\" policy for everything <a href=\"https://w"
+    },
+    {
+      "kind": "rss",
+      "title": "Confidential submission of draft S-1 to the SEC",
+      "url": "https://openai.com/index/openai-submits-confidential-s-1",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-08T14:00:00.000Z",
+      "summary": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action."
+    },
+    {
+      "kind": "rss",
+      "title": "Import AI 460: Reward hacking society, RSI data from Anthropic; and RL-based quadcopter racing",
+      "url": "https://importai.substack.com/p/import-ai-460-reward-hacking-society",
+      "source": "Import AI (Jack Clark)",
+      "sourceId": "importai",
+      "category": "insights",
+      "publishedAt": "2026-06-08T12:31:32.000Z",
+      "summary": "When will markets price the singularity?"
+    },
+    {
+      "kind": "rss",
+      "title": "Built to benefit everyone: our plan",
+      "url": "https://openai.com/index/built-to-benefit-everyone-our-plan",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-08T01:30:00.000Z",
+      "summary": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone."
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing the OpenAI Economic Research Exchange",
+      "url": "https://openai.com/index/economic-research-exchange",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "summary": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects."
+    },
+    {
+      "kind": "rss",
+      "title": "The Open Source Community is backing OpenEnv for Agentic RL",
+      "url": "https://huggingface.co/blog/openenv-agentic-rl",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "datasette-agent-edit 0.1a0",
+      "url": "https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-07T23:56:38.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-agent-edit/releases/tag/0.1a0\">datasette-agent-edit 0.1a0</a></p> <p>I'm planning several plugins for <a href=\"https://agent.datasette.io/\">Datasette Agent</a> which can make edits to existing pieces of "
+    },
+    {
+      "kind": "rss",
+      "title": "LLM Research Papers: The 2026 List (January to May)",
+      "url": "https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1",
+      "source": "Sebastian Raschka",
+      "sourceId": "raschka",
+      "category": "research",
+      "publishedAt": "2026-06-06T11:16:22.000Z",
+      "summary": "A curated roundup of notable LLM research papers that came out this year"
+    },
+    {
+      "kind": "rss",
+      "title": "micropython-wasm 0.1a2",
+      "url": "https://simonwillison.net/2026/Jun/6/micropython-wasm/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-06T04:26:06.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/micropython-wasm/releases/tag/0.1a2\">micropython-wasm 0.1a2</a></p> <p>I added a CLI to <code>micropython-wasm</code> (<a href=\"https://github.com/simonw/micropython-wasm/issues/7\">issue #7</a>), inspired by the firs"
+    },
+    {
+      "kind": "rss",
+      "title": "Running Python code in a sandbox with MicroPython and WASM",
+      "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-06T03:53:34.000Z",
+      "summary": "<p>I've been experimenting with different approaches to running code in a sandbox for several years now, but my latest attempt feels like it might finally have all of the characteristics I've been looking for. I've released it as an alpha package called <a href=\"https://github.co"
+    },
+    {
+      "kind": "rss",
+      "title": "OpenAI Help: Lockdown Mode",
+      "url": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-05T23:56:40.000Z",
+      "summary": "<p><strong><a href=\"https://help.openai.com/en/articles/20001061-lockdown-mode\">OpenAI Help: Lockdown Mode</a></strong></p> OpenAI first teased this <a href=\"https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/\">in February</a>, but now it's liv"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Andreas Kling",
+      "url": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-05T11:10:05.000Z",
+      "summary": "<blockquote cite=\"https://ladybird.org/posts/changing-how-we-develop-ladybird/\"><p>We will no longer accept public pull requests. [...]</p> <p>A substantial patch used to imply substantial effort, and that effort was a reasonable proxy for good faith. That assumption no longer ho"
+    },
     {
       "kind": "rss",
       "title": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
@@ -274,246 +404,6 @@
       "category": "model-releases",
       "publishedAt": "2026-06-02T12:00:00.000Z",
       "summary": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand."
-    },
-    {
-      "kind": "rss",
-      "title": "Codex for every role, tool, and workflow",
-      "url": "https://openai.com/index/codex-for-every-role-tool-workflow",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-06-02T09:00:00.000Z",
-      "summary": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI."
-    },
-    {
-      "kind": "rss",
-      "title": "Advancing youth safety and opportunity through global leadership",
-      "url": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-06-02T07:00:00.000Z",
-      "summary": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people."
-    },
-    {
-      "kind": "rss",
-      "title": "Pasted File Editor",
-      "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-02T04:13:36.000Z",
-      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/pasted-file-editor\">Pasted File Editor</a></p> <p>I really like how you can paste a large volume of text into <a href=\"https://claude.ail\">claude.ai</a> (or the Claude desktop/mobile apps) and it will detect it as"
-    },
-    {
-      "kind": "rss",
-      "title": "micropython-wasm 0.1a0",
-      "url": "https://simonwillison.net/2026/Jun/2/micropython-wasm-2/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-02T03:43:45.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/micropython-wasm/releases/tag/0.1a0\">micropython-wasm 0.1a0</a></p> <p>My latest sandboxing experiment: This alpha package bundles a lightly customized WASM build of <a href=\"https://micropython.org/\">MicroPython</a>"
-    },
-    {
-      "kind": "rss",
-      "title": "Codex is becoming a productivity tool for everyone",
-      "url": "https://openai.com/index/codex-for-knowledge-work",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-06-02T02:00:00.000Z",
-      "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation."
-    },
-    {
-      "kind": "rss",
-      "title": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
-      "url": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-01T21:14:47.000Z",
-      "summary": "<p><strong><a href=\"https://www.404media.co/hackers-simply-asked-meta-ai-to-give-them-access-to-high-profile-instagram-accounts-it-worked/\">Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked</a></strong></p> I had trouble believing this"
-    },
-    {
-      "kind": "rss",
-      "title": "Expanding Project Glasswing",
-      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
-      "source": "Anthropic",
-      "sourceId": "anthropic",
-      "category": "model-releases",
-      "publishedAt": "2026-06-01T17:00:00.000Z",
-      "summary": "We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries"
-    },
-    {
-      "kind": "rss",
-      "title": "Our views on AI policy and political advocacy",
-      "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-06-01T17:00:00.000Z",
-      "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf."
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
-      "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-06-01T15:45:17.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
-      "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-06-01T13:51:18.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Import AI 459: AI oversight is difficult; scaling laws for protein folding models; and pricing the extinction risk of AI systems",
-      "url": "https://importai.substack.com/p/import-ai-459-ai-oversight-is-difficult",
-      "source": "Import AI (Jack Clark)",
-      "sourceId": "importai",
-      "category": "insights",
-      "publishedAt": "2026-06-01T13:31:56.000Z",
-      "summary": "Do you feel as though you are living in a revolution?"
-    },
-    {
-      "kind": "rss",
-      "title": "Building the infrastructure for the Intelligence Age in Michigan",
-      "url": "https://openai.com/index/stargate-michigan-data-center",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-06-01T12:00:00.000Z",
-      "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities."
-    },
-    {
-      "kind": "rss",
-      "title": "OpenAI frontier models and Codex are now available on AWS",
-      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-06-01T10:00:00.000Z",
-      "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation"
-    },
-    {
-      "kind": "rss",
-      "title": "May 2026 newsletter",
-      "url": "https://simonwillison.net/2026/Jun/1/may-newsletter/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-01T04:45:00.000Z",
-      "summary": "<p>I just sent out the May edition of my <a href=\"https://github.com/sponsors/simonw/\">sponsors-only monthly newsletter</a>. If you are a sponsor (or if you start a sponsorship now) you can <a href=\"https://github.com/simonw-private/monthly/blob/main/2026-05-may.md\">access it her"
-    },
-    {
-      "kind": "rss",
-      "title": "datasette 1.0a32",
-      "url": "https://simonwillison.net/2026/May/31/datasette/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-31T23:23:38.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a32\">datasette 1.0a32</a></p> <p>A minor bugfix release. Fixes a bug with <code>INSERT ... RETURNING</code> queries via the <a href=\"https://datasette.io/blog/2026/sql-write-queries/\">new /d"
-    },
-    {
-      "kind": "rss",
-      "title": "Anthropic confidentially submits draft S-1 to the SEC",
-      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
-      "source": "Anthropic",
-      "sourceId": "anthropic",
-      "category": "model-releases",
-      "publishedAt": "2026-05-31T17:00:00.000Z",
-      "summary": "Anthropic has confidentially submitted a draft S-1 registration statement to the Securities and Exchange Commission"
-    },
-    {
-      "kind": "rss",
-      "title": "The solution might be cancelling my AI subscription",
-      "url": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-31T16:31:32.000Z",
-      "summary": "<p><strong><a href=\"https://thoughts.hmmz.org/2026-05-31.html\">The solution might be cancelling my AI subscription</a></strong></p> I find this post by David Wilson very relatable. David lists 16+ projects he's spun up with AI tooling, and concludes:</p> <blockquote> <p>I didn't "
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Karen Kwok for Reuters Breakingviews",
-      "url": "https://simonwillison.net/2026/May/31/anthropic-run-rate/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-31T01:48:12.000Z",
-      "summary": "<blockquote cite=\"https://www.reuters.com/commentary/breakingviews/anthropic-gives-lesson-ai-revenue-hallucination-2026-03-10/\"><p>Anthropic defines “run-rate revenue” in two parts. Use the last 28 days of sales ⁠from customers charged on a consumption basis and multiply it by 13"
-    },
-    {
-      "kind": "rss",
-      "title": "How we contain Claude across products",
-      "url": "https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-30T21:36:24.000Z",
-      "summary": "<p><strong><a href=\"https://www.anthropic.com/engineering/how-we-contain-claude\">How we contain Claude across products</a></strong></p> A complaint I often have about sandboxing products is that they are rarely thoroughly <em>documented</em>, and in the absence of detailed docume"
-    },
-    {
-      "kind": "rss",
-      "title": "I Am Retiring from Tech to Live Offline",
-      "url": "https://simonwillison.net/2026/May/30/retiring-from-tech-to-live-offline/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-30T19:39:08.000Z",
-      "summary": "<p><strong><a href=\"https://openpath.quest/2026/i-am-retiring-from-tech-to-live-offline/\">I Am Retiring from Tech to Live Offline</a></strong></p> I've seen a lot of posts on forums from people threatening to quit their careers over AI. This is <em>not</em> one of those: Chad Whi"
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Daniel Jalkut",
-      "url": "https://simonwillison.net/2026/May/30/daniel-jalkut/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-30T17:29:55.000Z",
-      "summary": "<blockquote cite=\"https://mastodon.social/@danielpunkass/116639318125898071\"><p>My take on AI is, essentially, everybody who’s against it is too against it and everybody who’s for it is too for it.</p></blockquote> <p class=\"cite\">&mdash; <a href=\"https://mastodon.social/@danielp"
-    },
-    {
-      "kind": "rss",
-      "title": "Running Python ASGI apps in the browser via Pyodide + a service worker",
-      "url": "https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-05-30T15:34:00.000Z",
-      "summary": "<p><strong>Research:</strong> <a href=\"https://github.com/simonw/research/tree/main/pyodide-asgi-browser#readme\">Running Python ASGI apps in the browser via Pyodide + a service worker</a></p> <p><a href=\"https://lite.datasette.io/\">Datasette Lite</a> is my version of Datasette th"
-    },
-    {
-      "kind": "rss",
-      "title": "Boston Children’s uses AI to unlock new diagnoses",
-      "url": "https://openai.com/index/boston-childrens-hospital",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "summary": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases."
-    },
-    {
-      "kind": "rss",
-      "title": "How Braintrust turns customer requests into code with Codex",
-      "url": "https://openai.com/index/braintrust",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "summary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster."
     }
   ]
 }
