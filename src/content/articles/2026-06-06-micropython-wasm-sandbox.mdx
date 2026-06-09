@@ -1,0 +1,54 @@
+---
+title: "MicroPython in WebAssembly shows a safer path for agent code"
+date: 2026-06-06
+category: guides
+tags: ["simon-willison", "agents", "sandboxing", "python"]
+summary: "Simon Willison released an alpha MicroPython-in-WebAssembly sandbox and used it to give Datasette Agent a more constrained way to run generated Python."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A web browser"
+    - "A GitHub account for the Datasette Agent demo"
+references:
+  - title: "Running Python code in a sandbox with MicroPython and WASM"
+    url: "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/"
+    author: "Simon Willison"
+    publishedAt: "2026-06-06"
+  - title: "micropython-wasm"
+    url: "https://github.com/simonw/micropython-wasm"
+    author: "Simon Willison"
+  - title: "micropython-wasm on PyPI"
+    url: "https://pypi.org/project/micropython-wasm/"
+    author: "PyPI"
+draft: false
+---
+
+## TL;DR
+
+Simon Willison released `micropython-wasm`, an alpha package that runs a small Python interpreter inside WebAssembly. The practical idea is simple: if an AI agent needs to run code, that code should run inside a constrained box with limits on files, network access, memory, and time.
+
+## What's New
+
+The package uses MicroPython compiled to WebAssembly and runs it through Python tooling. Willison is using it for a Datasette Agent plugin that can execute small Python snippets without giving generated code the same privileges as the main application.
+
+The writeup explains the design goals: clean installation, memory and CPU limits, controlled file access, controlled network access, and carefully exposed host functions. It also notes that the project is alpha software and not ready for people who cannot accept sandbox risk.
+
+The most approachable test is the Datasette Agent demo. Instead of installing the package locally, readers can sign in to the hosted demo and ask it to show a small MicroPython example, then inspect the generated code and output.
+
+## Why It Matters
+
+AI agents increasingly write and run code. That is useful, but it changes the safety question from "is this answer correct?" to "what could this generated code touch if it goes wrong?"
+
+For normal users, the takeaway is not to trust every new sandbox. It is to prefer agent tools that make code execution visibly constrained, documented, and reviewable before private data or important systems are involved.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A web browser", "A GitHub account for the Datasette Agent demo"]}>
+
+1. Open https://agent.datasette.io/ and sign in with GitHub.
+2. Start a new chat in the demo and ask it to show a small MicroPython example.
+3. Open the generated code block and check that it is a small calculation or print example, not a task that touches private data.
+4. Inspect the shown output and confirm that the code result matches what you expected.
+5. Before using any agent that runs code, look for the same safety clues: execution limits, file boundaries, network controls, and a visible result you can review.
+
+</PracticalGuide>

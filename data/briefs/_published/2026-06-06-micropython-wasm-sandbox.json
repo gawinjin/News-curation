@@ -1,0 +1,38 @@
+{
+  "slug": "micropython-wasm-sandbox",
+  "date": "2026-06-06",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["MicroPython in WebAssembly shows a safer path for agent code"],
+  "summary": "Simon Willison released an alpha MicroPython-in-WebAssembly sandbox and used it to give Datasette Agent a more constrained way to run generated Python.",
+  "tags": ["simon-willison", "agents", "sandboxing", "python"],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/",
+    "title": "Running Python code in a sandbox with MicroPython and WASM",
+    "author": "Simon Willison",
+    "publishedAt": "2026-06-06",
+    "key_facts": [
+      "Willison released an alpha package called micropython-wasm.",
+      "The package runs MicroPython through WebAssembly for constrained Python execution.",
+      "A Datasette Agent plugin uses the package to run small generated Python examples."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://github.com/simonw/micropython-wasm", "title": "micropython-wasm"},
+    {"url": "https://pypi.org/project/micropython-wasm/", "title": "micropython-wasm on PyPI"}
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A web browser", "A GitHub account for the Datasette Agent demo"],
+    "steps": [{"instruction": "Use the Datasette Agent demo to request a small MicroPython example and inspect the generated code and output.", "verify_url": "https://agent.datasette.io/"}]
+  },
+  "references": [
+    {"title": "Running Python code in a sandbox with MicroPython and WASM", "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/", "author": "Simon Willison", "publishedAt": "2026-06-06"},
+    {"title": "micropython-wasm", "url": "https://github.com/simonw/micropython-wasm", "author": "Simon Willison"},
+    {"title": "micropython-wasm on PyPI", "url": "https://pypi.org/project/micropython-wasm/", "author": "PyPI"}
+  ],
+  "risk_flags": ["The package is alpha software and should not be treated as proven security infrastructure."],
+  "assembled_at": "2026-06-09T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
