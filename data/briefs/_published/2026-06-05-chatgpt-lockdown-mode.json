@@ -1,0 +1,38 @@
+{
+  "slug": "chatgpt-lockdown-mode",
+  "date": "2026-06-05",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["ChatGPT Lockdown Mode gives high-risk users a safer default"],
+  "summary": "OpenAI is rolling out Lockdown Mode, an optional setting that limits web and external-service access to reduce prompt-injection data theft risk.",
+  "tags": ["chatgpt", "openai", "security", "privacy"],
+  "primary_source": {
+    "url": "https://help.openai.com/en/articles/20001061-lockdown-mode",
+    "title": "Lockdown Mode",
+    "author": "OpenAI Help Center",
+    "publishedAt": "2026-06-09",
+    "key_facts": [
+      "Lockdown Mode is rolling out to eligible personal and self-serve ChatGPT Business accounts.",
+      "It limits outbound network requests and related capabilities to reduce data exfiltration risk.",
+      "OpenAI says it reduces risk but does not guarantee every prompt-injection effect is impossible."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/", "title": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT"},
+    {"url": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/", "title": "OpenAI Help: Lockdown Mode"}
+  ],
+  "practical_guide": {
+    "timeToTry": "5 min",
+    "prerequisites": ["A ChatGPT account", "A reason to handle sensitive information in ChatGPT"],
+    "steps": [{"instruction": "Check Settings for Lockdown Mode, enable it if available, and test which web or connector features are limited.", "verify_url": "https://help.openai.com/en/articles/20001061-lockdown-mode"}]
+  },
+  "references": [
+    {"title": "Lockdown Mode", "url": "https://help.openai.com/en/articles/20001061-lockdown-mode", "author": "OpenAI Help Center", "publishedAt": "2026-06-09"},
+    {"title": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT", "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/", "author": "OpenAI", "publishedAt": "2026-03-03"},
+    {"title": "OpenAI Help: Lockdown Mode", "url": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/", "author": "Simon Willison", "publishedAt": "2026-06-05"}
+  ],
+  "risk_flags": ["Feature visibility may vary by account during rollout."],
+  "assembled_at": "2026-06-09T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
