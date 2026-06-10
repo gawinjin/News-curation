@@ -1,5 +1,15 @@
 # Signal Run Log
 
+## 2026-06-10
+
+Shipped:
+
+- `2026-06-09-claude-fable-5-mythos` — Anthropic's Fable 5 / Mythos 5 release is high-signal for normal Claude users because it combines a major capability jump with cost, fallback, and data-retention caveats.
+
+Skipped:
+
+- Secondary commentary that repeated the Anthropic release without adding practical user guidance.
+
 ## 2026-06-09
 
 Shipped:

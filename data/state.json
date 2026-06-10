@@ -114,7 +114,12 @@
     "https://github.com/simonw/micropython-wasm",
     "https://pypi.org/project/micropython-wasm/",
     "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
-    "https://www.apple.com/apple-intelligence/"
+    "https://www.apple.com/apple-intelligence/",
+    "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "https://www.anthropic.com/claude/fable",
+    "https://platform.claude.com/docs/en/about-claude/models/overview",
+    "https://platform.claude.com/docs/en/release-notes/overview",
+    "https://simonwillison.net/2026/Jun/9/claude-fable-5/"
   ],
-  "lastIngest": "2026-06-09T09:00:00.000Z"
+  "lastIngest": "2026-06-10T08:00:00.000Z"
 }
