@@ -1,0 +1,63 @@
+---
+title: "Claude Fable 5 brings Mythos power with guardrails"
+date: 2026-06-09
+category: model-releases
+tags: ["claude", "anthropic", "models", "security"]
+summary: "Anthropic released Claude Fable 5 as the public, guarded version of its Mythos-class model, while keeping Claude Mythos 5 limited to trusted-access users."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A Claude account with Fable 5 available"
+    - "One hard, non-sensitive task to test"
+references:
+  - title: "Claude Fable 5 and Claude Mythos 5"
+    url: "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+    author: "Anthropic"
+    publishedAt: "2026-06-09"
+  - title: "Claude Fable"
+    url: "https://www.anthropic.com/claude/fable"
+    author: "Anthropic"
+    publishedAt: "2026-06-09"
+  - title: "Models overview"
+    url: "https://platform.claude.com/docs/en/about-claude/models/overview"
+    author: "Anthropic"
+  - title: "Claude Platform release notes"
+    url: "https://platform.claude.com/docs/en/release-notes/overview"
+    author: "Anthropic"
+  - title: "Initial impressions of Claude Fable 5"
+    url: "https://simonwillison.net/2026/Jun/9/claude-fable-5/"
+    author: "Simon Willison"
+    publishedAt: "2026-06-09"
+draft: false
+---
+
+## TL;DR
+
+Anthropic released Claude Fable 5, its most capable broadly available Claude model, on June 9. It is the public version of the new Mythos class: strong enough for long-running agent work, but guarded so sensitive cyber, biology, chemistry, and model-extraction requests can fall back to Opus 4.8.
+
+## What's New
+
+Fable 5 is Anthropic's first widely available Mythos-class model. Claude Mythos 5 uses the same underlying model, but is limited to Project Glasswing participants and other approved users because some safeguards are lifted for trusted security work.
+
+The model is aimed at ambitious, long-running work: large coding projects, multi-stage knowledge work, visual review of charts and files, and agent sessions that plan, check progress, and revise their own work. Anthropic's docs list a 1 million token context window, 128,000 maximum output tokens, always-on adaptive thinking, and pricing of $10 per million input tokens and $50 per million output tokens.
+
+The catch is policy and safety behavior. Fable 5 requires 30-day data retention for safety monitoring and is not available under zero data retention. Anthropic says requests flagged by its safeguards can be rerouted to Opus 4.8, and its early data shows most Fable sessions do not trigger a fallback.
+
+## Why It Matters
+
+For normal users, Fable 5 is not the model to use for every quick rewrite or everyday question. It is a premium option for work where better long-range planning and self-checking might save real time: reviewing a complicated plan, untangling a large document set, or comparing a difficult implementation strategy.
+
+The important decision is whether the task deserves the cost and retention tradeoff. If the work contains private customer data, regulated business information, or sensitive research, check the data policy before pasting anything into Fable.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A Claude account with Fable 5 available", "One hard, non-sensitive task to test"]}>
+
+1. Open https://claude.ai/ and check whether Claude Fable 5 appears in your model picker.
+2. Choose a hard but non-sensitive task, such as reviewing a project plan, comparing two product ideas, or finding weak assumptions in a public document.
+3. Run the task once with Claude Opus 4.8 and save the answer.
+4. Start a new chat, select Claude Fable 5, and run the same prompt.
+5. Compare the two answers for specificity, useful caveats, self-checking, and whether Claude reports a model fallback.
+6. Use Fable for private or business-sensitive work only after you are comfortable with Anthropic's 30-day retention requirement.
+
+</PracticalGuide>

@@ -1,0 +1,42 @@
+{
+  "slug": "claude-fable-5-mythos",
+  "date": "2026-06-09",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Claude Fable 5 brings Mythos power with guardrails"],
+  "summary": "Anthropic released Claude Fable 5 as the public, guarded version of its Mythos-class model, while keeping Claude Mythos 5 limited to trusted-access users.",
+  "tags": ["claude", "anthropic", "models", "security"],
+  "primary_source": {
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "title": "Claude Fable 5 and Claude Mythos 5",
+    "author": "Anthropic",
+    "publishedAt": "2026-06-09",
+    "key_facts": [
+      "Claude Fable 5 is the broadly available guarded version of Anthropic's Mythos-class model.",
+      "Claude Mythos 5 uses the same underlying model but is limited to Project Glasswing and trusted-access users.",
+      "Fable 5 can fall back to Opus 4.8 for requests flagged by safeguards in sensitive domains."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://www.anthropic.com/claude/fable", "title": "Claude Fable"},
+    {"url": "https://platform.claude.com/docs/en/about-claude/models/overview", "title": "Models overview"},
+    {"url": "https://platform.claude.com/docs/en/release-notes/overview", "title": "Claude Platform release notes"},
+    {"url": "https://simonwillison.net/2026/Jun/9/claude-fable-5/", "title": "Initial impressions of Claude Fable 5"}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A Claude account with Fable 5 available", "One hard, non-sensitive task to test"],
+    "steps": [{"instruction": "Compare the same non-sensitive hard task in Opus 4.8 and Fable 5, then check whether the added capability justifies cost and retention tradeoffs.", "verify_url": "https://www.anthropic.com/claude/fable"}]
+  },
+  "references": [
+    {"title": "Claude Fable 5 and Claude Mythos 5", "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5", "author": "Anthropic", "publishedAt": "2026-06-09"},
+    {"title": "Claude Fable", "url": "https://www.anthropic.com/claude/fable", "author": "Anthropic", "publishedAt": "2026-06-09"},
+    {"title": "Models overview", "url": "https://platform.claude.com/docs/en/about-claude/models/overview", "author": "Anthropic"},
+    {"title": "Claude Platform release notes", "url": "https://platform.claude.com/docs/en/release-notes/overview", "author": "Anthropic"},
+    {"title": "Initial impressions of Claude Fable 5", "url": "https://simonwillison.net/2026/Jun/9/claude-fable-5/", "author": "Simon Willison", "publishedAt": "2026-06-09"}
+  ],
+  "risk_flags": ["Fable 5 requires 30-day retention and is not available under zero data retention."],
+  "assembled_at": "2026-06-10T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
