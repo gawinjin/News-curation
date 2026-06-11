@@ -1,0 +1,44 @@
+{
+  "slug": "claude-fable-5-user-sentiment",
+  "date": "2026-06-11",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": ["Early Fable 5 users love the power and hate the uncertainty"],
+  "summary": "Early Claude Fable 5 reviews praise its long-task coding ability, but users are frustrated by price, speed, hidden interventions, and broad science/security guardrails.",
+  "tags": ["claude", "anthropic", "models", "reviews"],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Jun/9/claude-fable-5/",
+    "title": "Initial impressions of Claude Fable 5",
+    "author": "Simon Willison",
+    "publishedAt": "2026-06-09",
+    "key_facts": [
+      "Simon Willison reported strong early results after several hours testing Fable 5 on difficult software tasks.",
+      "His positive assessment also emphasized that Fable 5 is slower and more expensive than normal daily-use models.",
+      "The most positive user reports cluster around long, difficult coding and agent workflows."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://news.ycombinator.com/item?id=48463808", "title": "Claude Fable 5"},
+    {"url": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/", "title": "If Claude Fable stops helping you, you'll never know"},
+    {"url": "https://www.theverge.com/ai-artificial-intelligence/947973/fable-wont-answer-basic-biology-questions", "title": "Claude Fable won't answer basic biology questions"},
+    {"url": "https://www.businessinsider.com/what-smart-people-are-saying-about-anthropics-new-ai-limits-2026-6", "title": "What smart people are saying about the 2 most controversial parts of Anthropic's new models"},
+    {"url": "https://www.youtube.com/watch?v=GrdEid8H6H4", "title": "We Tested Anthropic's Fable 5 for a Week"}
+  ],
+  "practical_guide": {
+    "timeToTry": "20 min",
+    "prerequisites": ["Access to Claude Fable 5", "One non-sensitive task you can judge yourself"],
+    "steps": [{"instruction": "Compare the same non-sensitive hard task in Opus 4.8 and Fable 5, then test one benign science or security-adjacent prompt for guardrail behavior.", "verify_url": "https://claude.ai/"}]
+  },
+  "references": [
+    {"title": "Initial impressions of Claude Fable 5", "url": "https://simonwillison.net/2026/Jun/9/claude-fable-5/", "author": "Simon Willison", "publishedAt": "2026-06-09"},
+    {"title": "Claude Fable 5", "url": "https://news.ycombinator.com/item?id=48463808", "author": "Hacker News", "publishedAt": "2026-06-09"},
+    {"title": "If Claude Fable stops helping you, you'll never know", "url": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/", "author": "Simon Willison", "publishedAt": "2026-06-10"},
+    {"title": "Claude Fable won't answer basic biology questions", "url": "https://www.theverge.com/ai-artificial-intelligence/947973/fable-wont-answer-basic-biology-questions", "author": "The Verge", "publishedAt": "2026-06-10"},
+    {"title": "What smart people are saying about the 2 most controversial parts of Anthropic's new models", "url": "https://www.businessinsider.com/what-smart-people-are-saying-about-anthropics-new-ai-limits-2026-6", "author": "Business Insider", "publishedAt": "2026-06-10"},
+    {"title": "We Tested Anthropic's Fable 5 for a Week", "url": "https://www.youtube.com/watch?v=GrdEid8H6H4", "author": "Every", "publishedAt": "2026-06-10"}
+  ],
+  "risk_flags": ["Early sentiment is skewed toward power users and public testers; ordinary-user feedback may change as rollout broadens."],
+  "assembled_at": "2026-06-11T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

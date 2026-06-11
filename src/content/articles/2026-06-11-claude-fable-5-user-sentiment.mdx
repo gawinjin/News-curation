@@ -1,0 +1,69 @@
+---
+title: "Early Fable 5 users love the power and hate the uncertainty"
+date: 2026-06-11
+category: insights
+tags: ["claude", "anthropic", "models", "reviews"]
+summary: "Early Claude Fable 5 reviews praise its long-task coding ability, but users are frustrated by price, speed, hidden interventions, and broad science/security guardrails."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "Access to Claude Fable 5"
+    - "One non-sensitive task you can judge yourself"
+references:
+  - title: "Initial impressions of Claude Fable 5"
+    url: "https://simonwillison.net/2026/Jun/9/claude-fable-5/"
+    author: "Simon Willison"
+    publishedAt: "2026-06-09"
+  - title: "Claude Fable 5"
+    url: "https://news.ycombinator.com/item?id=48463808"
+    author: "Hacker News"
+    publishedAt: "2026-06-09"
+  - title: "If Claude Fable stops helping you, you'll never know"
+    url: "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/"
+    author: "Simon Willison"
+    publishedAt: "2026-06-10"
+  - title: "Claude Fable won't answer basic biology questions"
+    url: "https://www.theverge.com/ai-artificial-intelligence/947973/fable-wont-answer-basic-biology-questions"
+    author: "The Verge"
+    publishedAt: "2026-06-10"
+  - title: "What smart people are saying about the 2 most controversial parts of Anthropic's new models"
+    url: "https://www.businessinsider.com/what-smart-people-are-saying-about-anthropics-new-ai-limits-2026-6"
+    author: "Business Insider"
+    publishedAt: "2026-06-10"
+  - title: "We Tested Anthropic's Fable 5 for a Week"
+    url: "https://www.youtube.com/watch?v=GrdEid8H6H4"
+    author: "Every"
+    publishedAt: "2026-06-10"
+draft: false
+---
+
+## TL;DR
+
+Early Fable 5 sentiment is split. Hands-on testers are impressed when they give it large coding or agent tasks, but the backlash is real: it is slower, expensive, sometimes constrained in ways users cannot see, and its biology/security filters can catch ordinary questions.
+
+## What's New
+
+Simon Willison spent several hours testing Fable 5 and came away impressed by its ability to keep working through difficult software tasks. His short version was positive, but not casual: he also described it as slow and expensive, which matters because Fable is priced like a model you reserve for hard jobs.
+
+The Hacker News launch thread shows a similar pattern. Developers are trying it on overdue projects, codebase research, and Claude Code workflows, and some report that it handles tasks they had been avoiding. The strongest praise is for long, messy work where the model can plan, investigate, and revise.
+
+The criticism is not about ordinary benchmark skepticism. The Verge found that Fable can refuse or hand off basic biology questions to Opus 4.8, including questions that look harmless to normal users. Business Insider's roundup found broader concern over two Anthropic choices: some requests can be routed to a weaker model, and some frontier-AI-research safeguards may reduce usefulness without telling the user.
+
+## Why It Matters
+
+Fable 5 looks less like a simple model upgrade and more like a new product category: more capable, more expensive, and more policy-shaped. That makes user testing more important than launch benchmarks.
+
+The useful question is not "is Fable smarter?" It is whether Fable improves your real task enough to justify the cost, delay, data-retention tradeoff, and possible guardrail behavior. For many everyday prompts, Opus 4.8 may still be the better default.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["Access to Claude Fable 5", "One non-sensitive task you can judge yourself"]}>
+
+1. Pick one real but non-sensitive task that usually takes you at least 20 minutes, such as reviewing a plan, debugging a small project, or comparing two proposals.
+2. Run the task once in Claude Opus 4.8 and save the answer.
+3. Start a fresh chat, choose Claude Fable 5, and run the same prompt without changing the instructions.
+4. Compare both answers for useful specifics, missed assumptions, corrections, and whether Fable took noticeably longer.
+5. Ask one benign science- or security-adjacent question, such as a high-level biology definition or defensive security checklist, and note whether Fable answers, refuses, or falls back.
+6. Use Fable only for private or business-sensitive material after you are comfortable with its retention policy and guardrail behavior.
+
+</PracticalGuide>
