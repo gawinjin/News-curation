@@ -1,5 +1,15 @@
 # Signal Run Log
 
+## 2026-06-11
+
+Shipped:
+
+- `2026-06-11-claude-fable-5-user-sentiment` — follow-up on early Fable 5 user sentiment: strong long-task praise, but visible frustration over price, speed, guardrails, and hidden interventions.
+
+Skipped:
+
+- Low-evidence social hype posts that repeated benchmark claims without useful hands-on detail.
+
 ## 2026-06-10
 
 Shipped:
