@@ -1,0 +1,33 @@
+{
+  "slug": "claude-corps-fellowship",
+  "date": "2026-06-10",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": ["Claude Corps turns AI fluency into a paid fellowship"],
+  "summary": "Anthropic launched Claude Corps, a paid national fellowship for early-career people who want to bring AI support to nonprofits and community organizations.",
+  "tags": ["anthropic", "education", "work", "claude"],
+  "primary_source": {
+    "url": "https://www.anthropic.com/news/claude-corps",
+    "title": "Introducing Claude Corps",
+    "author": "Anthropic",
+    "publishedAt": "2026-06-10",
+    "key_facts": [
+      "Anthropic launched Claude Corps as a national fellowship for early-career people.",
+      "The program is focused on applying AI to community and mission-driven work.",
+      "Anthropic links to an application page and says relocation support is available as needed."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["Interest in nonprofit, community, or public-interest work", "A current resume or LinkedIn profile"],
+    "steps": [{"instruction": "Read the eligibility and application details, then prepare one example of safe AI use in a community workflow.", "verify_url": "https://www.anthropic.com/news/claude-corps"}]
+  },
+  "references": [
+    {"title": "Introducing Claude Corps", "url": "https://www.anthropic.com/news/claude-corps", "author": "Anthropic", "publishedAt": "2026-06-10"}
+  ],
+  "risk_flags": ["Program details may change as applications and placements proceed."],
+  "assembled_at": "2026-06-12T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
