@@ -1,0 +1,36 @@
+{
+  "slug": "diffusiongemma-fast-text",
+  "date": "2026-06-10",
+  "category": "research",
+  "audience": "general",
+  "title_candidates": ["DiffusionGemma trades normal text generation for speed"],
+  "summary": "Google released DiffusionGemma, an experimental Apache 2.0 open model that generates text in blocks and can run up to four times faster on dedicated GPUs.",
+  "tags": ["google", "gemma", "open-models", "speed"],
+  "primary_source": {
+    "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
+    "title": "DiffusionGemma: 4x faster text generation",
+    "author": "Google DeepMind",
+    "publishedAt": "2026-06-10",
+    "key_facts": [
+      "DiffusionGemma is a 26B mixture-of-experts model using diffusion-style text generation.",
+      "Google says the model can run up to four times faster on dedicated GPUs.",
+      "The model is released under the Apache 2.0 license for experimentation."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/", "title": "DiffusionGemma: faster text generation"}
+  ],
+  "practical_guide": {
+    "timeToTry": "20 min",
+    "prerequisites": ["A computer or cloud notebook with access to a supported GPU", "A willingness to test experimental model quality"],
+    "steps": [{"instruction": "Run the same prompts through DiffusionGemma and your default model, then compare response time and edit burden.", "verify_url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/"}]
+  },
+  "references": [
+    {"title": "DiffusionGemma: 4x faster text generation", "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/", "author": "Google DeepMind", "publishedAt": "2026-06-10"},
+    {"title": "DiffusionGemma: faster text generation", "url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/", "author": "Google", "publishedAt": "2026-06-10"}
+  ],
+  "risk_flags": ["Experimental speed claims should be tested against user-specific prompts and hardware."],
+  "assembled_at": "2026-06-12T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
