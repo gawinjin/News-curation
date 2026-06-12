@@ -1,0 +1,36 @@
+{
+  "slug": "openai-macos-security-cutoff",
+  "date": "2026-06-12",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["OpenAI's macOS app security cutoff is today"],
+  "summary": "June 12 is the cutoff for older OpenAI macOS desktop apps signed with outdated certificates after the TanStack supply-chain attack response.",
+  "tags": ["openai", "security", "macos", "supply-chain"],
+  "primary_source": {
+    "url": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack/",
+    "title": "Our response to the TanStack npm supply chain attack",
+    "author": "OpenAI",
+    "publishedAt": "2026-05-13",
+    "key_facts": [
+      "OpenAI set June 12, 2026 as the cutoff for older macOS desktop app versions signed with outdated certificates.",
+      "The action followed OpenAI's response to the TanStack npm supply-chain attack.",
+      "OpenAI said Windows and iOS users did not need to take action for this certificate rotation."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://thehackernews.com/2026/05/tanstack-supply-chain-attack-hits-two.html", "title": "TanStack Supply Chain Attack Hits Two OpenAI Employee Devices"}
+  ],
+  "practical_guide": {
+    "timeToTry": "5 min",
+    "prerequisites": ["A Mac with ChatGPT, Codex, or another OpenAI desktop app installed"],
+    "steps": [{"instruction": "Update OpenAI macOS apps from the official app or website and remove old duplicate copies.", "verify_url": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack/"}]
+  },
+  "references": [
+    {"title": "Our response to the TanStack npm supply chain attack", "url": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack/", "author": "OpenAI", "publishedAt": "2026-05-13"},
+    {"title": "TanStack Supply Chain Attack Hits Two OpenAI Employee Devices", "url": "https://thehackernews.com/2026/05/tanstack-supply-chain-attack-hits-two.html", "author": "The Hacker News", "publishedAt": "2026-05-14"}
+  ],
+  "risk_flags": ["The OpenAI source has been intermittently unreachable to automated verification but is the primary disclosure."],
+  "assembled_at": "2026-06-12T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

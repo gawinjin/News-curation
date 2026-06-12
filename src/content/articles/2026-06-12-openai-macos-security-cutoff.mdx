@@ -1,0 +1,51 @@
+---
+title: "OpenAI's macOS app security cutoff is today"
+date: 2026-06-12
+category: guides
+tags: ["openai", "security", "macos", "supply-chain"]
+summary: "June 12 is the cutoff for older OpenAI macOS desktop apps signed with outdated certificates after the TanStack supply-chain attack response."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "5 min"
+  prerequisites:
+    - "A Mac with ChatGPT, Codex, or another OpenAI desktop app installed"
+references:
+  - title: "Our response to the TanStack npm supply chain attack"
+    url: "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack/"
+    author: "OpenAI"
+    publishedAt: "2026-05-13"
+  - title: "TanStack Supply Chain Attack Hits Two OpenAI Employee Devices"
+    url: "https://thehackernews.com/2026/05/tanstack-supply-chain-attack-hits-two.html"
+    author: "The Hacker News"
+    publishedAt: "2026-05-14"
+draft: false
+---
+
+## TL;DR
+
+If you use OpenAI desktop apps on macOS, check your updates today. OpenAI said older macOS desktop app versions signed with outdated certificates stop receiving support and may stop functioning after June 12, following its response to the TanStack supply-chain attack.
+
+## What's New
+
+OpenAI previously disclosed that two employee devices were affected during the TanStack npm supply-chain attack. As a precaution, the company rotated signing material for its apps and warned macOS users to update before June 12.
+
+The issue is about app trust, not a new ChatGPT feature. Code-signing certificates help macOS verify that an app really came from the expected developer. OpenAI says older versions signed with outdated certificates may no longer receive updates or work correctly after the cutoff.
+
+OpenAI said Windows and iOS users did not need to take action for this certificate rotation. The time-sensitive action is for macOS desktop app users.
+
+## Why It Matters
+
+AI tools are now part of the software supply chain. A chatbot app, coding agent, or desktop assistant can hold sensitive prompts, local context, and access to work files, so app authenticity matters.
+
+The safest habit is boring: update from the official app or website, avoid installer links in messages or ads, and remove old copies you no longer use.
+
+<PracticalGuide timeToTry="5 min" prerequisites={["A Mac with ChatGPT, Codex, or another OpenAI desktop app installed"]}>
+
+1. Open each OpenAI app you use on your Mac, such as ChatGPT Desktop, Codex, or Atlas.
+2. Use the in-app update option, or download the latest version only from OpenAI's official website.
+3. Do not install OpenAI app updates from email links, text messages, ads, or third-party download sites.
+4. After updating, reopen the app and confirm it launches normally.
+5. Delete old duplicate copies from Applications or Downloads so you do not accidentally reopen an outdated build.
+
+</PracticalGuide>
