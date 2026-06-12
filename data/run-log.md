@@ -1,5 +1,21 @@
 # Signal Run Log
 
+## 2026-06-12
+
+Shipped:
+
+- `2026-06-11-openai-ona-persistent-codex` — OpenAI's planned Ona acquisition points to persistent, customer-controlled Codex agent environments.
+- `2026-06-10-diffusiongemma-fast-text` — Google DiffusionGemma is a speed-focused experimental open model worth testing for latency-sensitive text workflows.
+- `2026-06-09-gemini-live-translate` — Gemini 3.5 Live Translate is broadly understandable and practical for normal users to test.
+- `2026-06-10-claude-corps-fellowship` — Anthropic's Claude Corps is a concrete signal that AI fluency is becoming public-interest work.
+- `2026-06-11-fable-5-visible-guardrails` — Anthropic's Fable 5 guardrail reversal is a direct follow-up to recent Fable transparency concerns.
+- `2026-06-12-openai-macos-security-cutoff` — June 12 is the time-sensitive update cutoff for older OpenAI macOS desktop apps.
+
+Skipped:
+
+- Enterprise customer case studies with weak general-user action.
+- Narrow developer-only release notes that were less useful than the selected practical updates.
+
 ## 2026-06-11
 
 Shipped:
