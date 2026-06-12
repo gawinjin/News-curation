@@ -1,0 +1,38 @@
+{
+  "slug": "fable-5-visible-guardrails",
+  "date": "2026-06-11",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": ["Anthropic says Fable's hidden AI-research guardrails will become visible"],
+  "summary": "After backlash over invisible Claude Fable 5 restrictions for frontier AI research, Anthropic says it will make those safeguards visible to users.",
+  "tags": ["anthropic", "claude", "safety", "transparency"],
+  "primary_source": {
+    "url": "https://www.wired.com/story/anthropic-responds-to-backlash-on-claudes-secret-sabotage-on-ai-research/",
+    "title": "Anthropic Walks Back Policy That Could Have 'Sabotaged' AI Researchers Using Claude",
+    "author": "WIRED",
+    "publishedAt": "2026-06-11",
+    "key_facts": [
+      "Anthropic told WIRED it is changing Fable 5 safeguards for frontier LLM development to make them visible.",
+      "The backlash centered on safeguards that could reduce help without clearly informing users.",
+      "The change keeps safeguards but moves them toward visible disclosure."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/", "title": "Anthropic Walks Back Policy That Could Have 'Sabotaged' AI Researchers Using Claude"},
+    {"url": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail", "title": "Anthropic apologizes for invisible Claude Fable guardrails"}
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["Access to Claude Fable 5 or interest in using it"],
+    "steps": [{"instruction": "Ask whether a fallback or safety limitation affects a Fable answer, then record model and limitation disclosure for high-stakes workflows.", "verify_url": "https://www.wired.com/story/anthropic-responds-to-backlash-on-claudes-secret-sabotage-on-ai-research/"}]
+  },
+  "references": [
+    {"title": "Anthropic Walks Back Policy That Could Have 'Sabotaged' AI Researchers Using Claude", "url": "https://www.wired.com/story/anthropic-responds-to-backlash-on-claudes-secret-sabotage-on-ai-research/", "author": "WIRED", "publishedAt": "2026-06-11"},
+    {"title": "Anthropic Walks Back Policy That Could Have 'Sabotaged' AI Researchers Using Claude", "url": "https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/", "author": "Simon Willison", "publishedAt": "2026-06-11"},
+    {"title": "Anthropic apologizes for invisible Claude Fable guardrails", "url": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail", "author": "The Verge", "publishedAt": "2026-06-11"}
+  ],
+  "risk_flags": ["This is a fast-moving policy response following public backlash."],
+  "assembled_at": "2026-06-12T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
