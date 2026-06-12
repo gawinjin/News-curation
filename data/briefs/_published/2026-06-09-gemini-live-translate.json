@@ -1,0 +1,33 @@
+{
+  "slug": "gemini-live-translate",
+  "date": "2026-06-09",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Gemini 3.5 Live Translate makes voice translation feel closer"],
+  "summary": "Google introduced Gemini 3.5 Live Translate, a near-real-time speech translation model for more than 70 languages across AI Studio, Translate, and Google Meet preview paths.",
+  "tags": ["google", "gemini", "voice", "translation"],
+  "primary_source": {
+    "url": "https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate/",
+    "title": "Gemini 3.5 Live Translate is here",
+    "author": "Google DeepMind",
+    "publishedAt": "2026-06-09",
+    "key_facts": [
+      "Gemini 3.5 Live Translate supports near-real-time speech-to-speech translation.",
+      "Google says it automatically detects more than 70 languages.",
+      "The model is rolling out through Google AI Studio, Google Translate, and Google Meet private preview paths."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["Access to Google Translate or Google AI Studio", "A short non-sensitive phrase to test"],
+    "steps": [{"instruction": "Translate a short phrase and check both meaning and tone before using live translation in important settings.", "verify_url": "https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate/"}]
+  },
+  "references": [
+    {"title": "Gemini 3.5 Live Translate is here", "url": "https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate/", "author": "Google DeepMind", "publishedAt": "2026-06-09"}
+  ],
+  "risk_flags": ["Availability varies by product surface and account."],
+  "assembled_at": "2026-06-12T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
