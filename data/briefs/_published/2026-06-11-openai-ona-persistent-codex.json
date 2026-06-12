@@ -1,0 +1,36 @@
+{
+  "slug": "openai-ona-persistent-codex",
+  "date": "2026-06-11",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["OpenAI is giving Codex a persistent cloud workspace"],
+  "summary": "OpenAI plans to acquire Ona so Codex agents can keep working in secure, customer-controlled cloud environments instead of being tied to one laptop session.",
+  "tags": ["openai", "codex", "agents", "workflow"],
+  "primary_source": {
+    "url": "https://openai.com/index/openai-to-acquire-ona/",
+    "title": "OpenAI to acquire Ona",
+    "author": "OpenAI",
+    "publishedAt": "2026-06-11",
+    "key_facts": [
+      "OpenAI plans to acquire Ona to add secure cloud execution and orchestration technology to Codex.",
+      "OpenAI says more than 5 million people use Codex each week.",
+      "Ona's customer-controlled environments are intended to support long-running agents with scoped access, logging, and review."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-to-acquire-ona-to-strengthen-codex-cloud-capabilities/articleshow/131664834.cms", "title": "OpenAI to acquire Ona to strengthen Codex cloud capabilities"}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A Codex or agent workflow you already use", "One low-risk task that could run longer than one session"],
+    "steps": [{"instruction": "List the exact files, tools, credentials, review points, and safety boundaries a persistent agent would need before delegating a long-running task.", "verify_url": "https://openai.com/index/openai-to-acquire-ona/"}]
+  },
+  "references": [
+    {"title": "OpenAI to acquire Ona", "url": "https://openai.com/index/openai-to-acquire-ona/", "author": "OpenAI", "publishedAt": "2026-06-11"},
+    {"title": "OpenAI to acquire Ona to strengthen Codex cloud capabilities", "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-to-acquire-ona-to-strengthen-codex-cloud-capabilities/articleshow/131664834.cms", "author": "The Economic Times", "publishedAt": "2026-06-11"}
+  ],
+  "risk_flags": ["Acquisition details are pending closing and rollout timing may change."],
+  "assembled_at": "2026-06-12T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

@@ -1,0 +1,52 @@
+---
+title: "OpenAI is giving Codex a persistent cloud workspace"
+date: 2026-06-11
+category: model-releases
+tags: ["openai", "codex", "agents", "workflow"]
+summary: "OpenAI plans to acquire Ona so Codex agents can keep working in secure, customer-controlled cloud environments instead of being tied to one laptop session."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A Codex or agent workflow you already use"
+    - "One low-risk task that could run longer than one session"
+references:
+  - title: "OpenAI to acquire Ona"
+    url: "https://openai.com/index/openai-to-acquire-ona/"
+    author: "OpenAI"
+    publishedAt: "2026-06-11"
+  - title: "OpenAI to acquire Ona to strengthen Codex cloud capabilities"
+    url: "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-to-acquire-ona-to-strengthen-codex-cloud-capabilities/articleshow/131664834.cms"
+    author: "The Economic Times"
+    publishedAt: "2026-06-11"
+draft: false
+---
+
+## TL;DR
+
+OpenAI plans to acquire Ona, a cloud execution company, to make Codex work in persistent cloud environments. The practical shift is simple: future agents should be able to keep working after your local session ends, while organizations keep control over infrastructure, credentials, logs, and review.
+
+## What's New
+
+OpenAI says Ona will bring secure cloud execution and orchestration technology into Codex. The goal is to support work that lasts hours or days, rather than short tasks tied to one active desktop session.
+
+The company says Codex now has more than 5 million weekly users, up 400% from earlier this year. Ona previously helped about 2 million developers work in cloud-based development environments, which is directly relevant to agents that need a stable place to run tools and keep context.
+
+The important enterprise detail is control. OpenAI describes customer-controlled environments where organizations can scope credentials, decide what agents can access, log activity, and route work through review.
+
+## Why It Matters
+
+Agents become more useful when they can keep working, but persistence also raises the stakes. A long-running agent with files, credentials, network access, and memory needs tighter boundaries than a one-off chatbot prompt.
+
+For normal users and teams, the lesson is to choose long-running tasks carefully. Start with work that has clear inputs, low sensitivity, and an output you can inspect before letting an agent operate inside important systems.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A Codex or agent workflow you already use", "One low-risk task that could run longer than one session"]}>
+
+1. Pick one task that would benefit from persistence, such as checking a folder of notes, preparing a report draft, or running a test suite.
+2. List the exact files, tools, credentials, and websites the agent would need.
+3. Remove anything the task does not require, especially private documents and broad account access.
+4. Define the review point: what file, summary, test result, or checklist must the agent produce before you trust the work.
+5. Use that checklist when evaluating any persistent-agent feature in Codex or another tool.
+
+</PracticalGuide>
