@@ -1,5 +1,19 @@
 # Signal Run Log
 
+## 2026-06-16
+
+Shipped:
+
+- `2026-06-13-openai-academy-work-courses` — OpenAI Academy's three new courses are practical for normal users because they turn AI use into repeatable workplace habits.
+- `2026-06-14-openai-partner-network` — OpenAI's Partner Network matters as an adoption signal, and the guide helps readers ask better vendor questions.
+- `2026-06-15-datasette-agent-write-approval` — Datasette Agent 0.3a0 shows a useful approval pattern for AI agents that can write to real data.
+
+Skipped:
+
+- June 16 Simon Willison quote and Cloudflare CAPTCHA items — timely, but too narrow or indirect for Signal's general-user article surface today.
+- Import AI 461 — useful research roundup, but the strongest items were either less actionable for normal users or better handled as separate future research.
+- Older June 9-12 duplicates already covered by prior Signal articles.
+
 ## 2026-06-12
 
 Shipped:
