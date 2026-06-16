@@ -1,0 +1,47 @@
+{
+  "slug": "datasette-agent-write-approval",
+  "date": "2026-06-15",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["Datasette Agent gets safer write actions with approval prompts"],
+  "summary": "Datasette Agent 0.3a0 adds approval-gated database writes, a useful pattern for anyone letting AI touch real data instead of just reading it.",
+  "tags": ["agents", "datasette", "simon-willison", "data"],
+  "primary_source": {
+    "url": "https://github.com/datasette/datasette-agent/releases/tag/0.3a0",
+    "title": "datasette-agent 0.3a0",
+    "author": "Simon Willison",
+    "publishedAt": "2026-06-15",
+    "key_facts": [
+      "Datasette Agent 0.3a0 is a pre-release from June 15, 2026.",
+      "The release adds an execute_write_sql tool that requests user approval before writing to a database and respects Datasette permissions.",
+      "The chat command can now execute tools that require user approval.",
+      "The project README describes Datasette Agent as an LLM-powered assistant for Datasette with permissions for chat, exploration, and background agents."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://github.com/datasette/datasette-agent", "title": "datasette-agent README"},
+    {"url": "https://simonwillison.net/2026/Jun/15/datasette-agent/", "title": "datasette-agent 0.3a0"}
+  ],
+  "practical_guide": {
+    "timeToTry": "20 min",
+    "prerequisites": ["A Datasette project or a sample SQLite database", "Comfort using Datasette plugins", "An LLM provider configured for Datasette"],
+    "steps": [
+      {"instruction": "Open the datasette-agent README and confirm the plugin fits your Datasette setup.", "verify_url": "https://github.com/datasette/datasette-agent"},
+      {"instruction": "Install or update the plugin in a non-production Datasette environment first."},
+      {"instruction": "Open the agent interface and ask it to inspect a small test table before allowing any write action."},
+      {"instruction": "When a write approval prompt appears, read the proposed SQL, database, and permission context before approving."},
+      {"instruction": "Keep write-capable testing on sample data until you are comfortable with the approval flow."}
+    ]
+  },
+  "references": [
+    {"title": "datasette-agent 0.3a0", "url": "https://github.com/datasette/datasette-agent/releases/tag/0.3a0", "author": "Simon Willison", "publishedAt": "2026-06-15"},
+    {"title": "datasette-agent README", "url": "https://github.com/datasette/datasette-agent", "author": "Datasette"},
+    {"title": "datasette-agent 0.3a0", "url": "https://simonwillison.net/2026/Jun/15/datasette-agent/", "author": "Simon Willison", "publishedAt": "2026-06-15"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["This is a developer-facing tool, so the guide limits itself to users who already run Datasette."],
+  "assembled_at": "2026-06-16T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

@@ -1,0 +1,56 @@
+---
+title: "Datasette Agent gets safer write actions with approval prompts"
+date: 2026-06-15
+category: guides
+tags: ["agents", "datasette", "simon-willison", "data"]
+summary: "Datasette Agent 0.3a0 adds approval-gated database writes, a useful pattern for anyone letting AI touch real data instead of just reading it."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "A Datasette project or a sample SQLite database"
+    - "Comfort using Datasette plugins"
+    - "An LLM provider configured for Datasette"
+references:
+  - title: "datasette-agent 0.3a0"
+    url: "https://github.com/datasette/datasette-agent/releases/tag/0.3a0"
+    author: "Simon Willison"
+    publishedAt: "2026-06-15"
+  - title: "datasette-agent README"
+    url: "https://github.com/datasette/datasette-agent"
+    author: "Datasette"
+  - title: "datasette-agent 0.3a0"
+    url: "https://simonwillison.net/2026/Jun/15/datasette-agent/"
+    author: "Simon Willison"
+    publishedAt: "2026-06-15"
+draft: false
+---
+
+## TL;DR
+
+Datasette Agent 0.3a0 adds approval-gated database writes. That sounds like a small release note, but it is the right safety shape for data agents: let the assistant propose changes, then force a human to review the write before it touches the database.
+
+## What's New
+
+Datasette Agent is an LLM-powered assistant for Datasette, Simon Willison's tool for publishing and exploring SQLite-backed data. The 0.3a0 pre-release adds an `execute_write_sql` tool that can request user approval before writing to a database.
+
+The release also lets the chat command execute tools that require approval. The repository documentation describes separate permissions for chat, exploration, and background agents, so access can be split instead of treating every user as fully trusted.
+
+This is still a developer-facing tool. The news is not that normal users should rush to install it, but that a public data-agent project is making the approval step visible and explicit.
+
+## Why It Matters
+
+AI agents become much more useful when they can change things, not just summarize them. They also become riskier at exactly that point.
+
+For personal and workplace data, the useful pattern is propose, inspect, approve, then write. If an agent cannot show what it is about to change, it should not be trusted with write access.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["A Datasette project or a sample SQLite database","Comfort using Datasette plugins","An LLM provider configured for Datasette"]}>
+
+1. Open the datasette-agent README and confirm the plugin fits your Datasette setup.
+2. Install or update the plugin in a non-production Datasette environment first.
+3. Open the agent interface and ask it to inspect a small test table before allowing any write action.
+4. When a write approval prompt appears, read the proposed SQL, database, and permission context before approving.
+5. Keep write-capable testing on sample data until you are comfortable with the approval flow.
+
+</PracticalGuide>
