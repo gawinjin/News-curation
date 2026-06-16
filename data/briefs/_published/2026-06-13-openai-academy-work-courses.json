@@ -1,0 +1,44 @@
+{
+  "slug": "openai-academy-work-courses",
+  "date": "2026-06-13",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["OpenAI Academy adds three work-focused AI courses"],
+  "summary": "OpenAI added Academy courses for AI basics, repeatable workflows, and agent-assisted work. The useful test is whether one course improves a real recurring task.",
+  "tags": ["openai", "academy", "workflows", "learning"],
+  "primary_source": {
+    "url": "https://openai.com/index/academy-courses-applying-ai-at-work/",
+    "title": "New OpenAI Academy courses for the next era of work",
+    "author": "OpenAI",
+    "publishedAt": "2026-06-12",
+    "key_facts": [
+      "OpenAI introduced three Academy courses: AI Foundations, Applied AI Foundations, and Agents and Workflows.",
+      "The courses are meant to move learners from everyday prompting to repeatable workflows and then agent-assisted work.",
+      "OpenAI says learners can receive completion certificates, and organizations can use the courses for onboarding or adoption programs."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://academy.openai.com/", "title": "OpenAI Academy"}
+  ],
+  "practical_guide": {
+    "timeToTry": "20 min",
+    "prerequisites": ["A browser", "An OpenAI Academy account or willingness to sign in"],
+    "steps": [
+      {"instruction": "Open OpenAI Academy and sign in or join if prompted.", "verify_url": "https://academy.openai.com/"},
+      {"instruction": "Open the Courses section and choose the course that matches your level: AI Foundations, Applied AI Foundations, or Agents and Workflows.", "verify_url": "https://academy.openai.com/"},
+      {"instruction": "Pick one recurring task you actually do, such as meeting notes, weekly planning, or customer-response drafting."},
+      {"instruction": "Complete the first lesson or module, then write down one workflow rule you can reuse next time."},
+      {"instruction": "Try that rule on the real task once and keep it only if it saves time without lowering quality."}
+    ]
+  },
+  "references": [
+    {"title": "New OpenAI Academy courses for the next era of work", "url": "https://openai.com/index/academy-courses-applying-ai-at-work/", "author": "OpenAI", "publishedAt": "2026-06-12"},
+    {"title": "OpenAI Academy", "url": "https://academy.openai.com/", "author": "OpenAI"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [],
+  "assembled_at": "2026-06-16T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
