@@ -1,0 +1,42 @@
+{
+  "slug": "mosaicleaks-research-agent-privacy",
+  "date": "2026-06-18",
+  "category": "research",
+  "audience": "general",
+  "title_candidates": ["MosaicLeaks shows how research agents can leak secrets through search"],
+  "summary": "ServiceNow's MosaicLeaks benchmark shows that deep-research agents can reveal private facts through ordinary-looking web queries. Audit the queries, not just the final answer.",
+  "tags": ["agents", "privacy", "research", "security"],
+  "primary_source": {
+    "url": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
+    "title": "MosaicLeaks: Can your research agent keep a secret?",
+    "author": "ServiceNow",
+    "publishedAt": "2026-06-18",
+    "key_facts": [
+      "MosaicLeaks studies privacy leakage from deep-research agents that combine private documents with external web retrieval.",
+      "The benchmark contains 1,001 multi-hop research chains that interleave local enterprise documents and a controlled web corpus.",
+      "The authors measure intent leakage, answer leakage, and full-information leakage from the agent's external query log.",
+      "They report that training only for task performance can increase leakage, while their privacy-aware training method improves chain success and reduces answer/full-information leakage."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A research agent, deep-research tool, or browser agent you use with private documents"],
+    "steps": [
+      {"instruction": "Pick one private document or note that you would not want leaked through a search query."},
+      {"instruction": "Ask your research agent a question that requires both that private document and public web research."},
+      {"instruction": "Open the agent trace, browser history, tool log, or search log and read every outbound query."},
+      {"instruction": "Flag any query that includes private names, numbers, dates, customer details, or enough fragments to reconstruct a private fact."},
+      {"instruction": "If the tool cannot show its external queries, do not use it with sensitive documents."}
+    ]
+  },
+  "references": [
+    {"title": "MosaicLeaks: Can your research agent keep a secret?", "url": "https://huggingface.co/blog/ServiceNow/mosaicleaks", "author": "ServiceNow", "publishedAt": "2026-06-18"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [],
+  "assembled_at": "2026-06-22T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

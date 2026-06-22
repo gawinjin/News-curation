@@ -1,0 +1,47 @@
+---
+title: "MosaicLeaks shows how research agents can leak secrets through search"
+date: 2026-06-18
+category: research
+tags: ["agents", "privacy", "research", "security"]
+summary: "ServiceNow's MosaicLeaks benchmark shows that deep-research agents can reveal private facts through ordinary-looking web queries. Audit the queries, not just the final answer."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A research agent, deep-research tool, or browser agent you use with private documents"
+references:
+  - title: "MosaicLeaks: Can your research agent keep a secret?"
+    url: "https://huggingface.co/blog/ServiceNow/mosaicleaks"
+    author: "ServiceNow"
+    publishedAt: "2026-06-18"
+draft: false
+---
+
+## TL;DR
+
+MosaicLeaks is a new benchmark for a quiet privacy problem: a research agent can leak private facts through the web searches it performs while solving your task. The final answer may look safe, but the outbound queries can still reveal names, dates, customer details, or strategy clues.
+
+## What's New
+
+ServiceNow published MosaicLeaks on Hugging Face to test deep-research agents that mix private local documents with external web retrieval. The benchmark uses 1,001 multi-hop research chains where an agent needs information from both private documents and public web pages.
+
+The key idea is the query log. An observer may never see the private documents or the agent's internal reasoning, but the web searches alone can reveal what the agent is investigating or even reconstruct private facts.
+
+The authors measure three leakage levels: intent leakage, answer leakage, and full-information leakage. They also report that optimizing only for task success can make leakage worse, while privacy-aware training reduced stronger leakage in their experiments.
+
+## Why It Matters
+
+Deep research tools are moving from public browsing into personal drives, company wikis, email, and internal documents. That makes search logs a security surface.
+
+For normal users, the lesson is simple: do not judge a research agent only by its final answer. If it touches private material and uses the open web, you need to know what it searched for along the way.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A research agent, deep-research tool, or browser agent you use with private documents"]}>
+
+1. Pick one private document or note that you would not want leaked through a search query.
+2. Ask your research agent a question that requires both that private document and public web research.
+3. Open the agent trace, browser history, tool log, or search log and read every outbound query.
+4. Flag any query that includes private names, numbers, dates, customer details, or enough fragments to reconstruct a private fact.
+5. If the tool cannot show its external queries, do not use it with sensitive documents.
+
+</PracticalGuide>
