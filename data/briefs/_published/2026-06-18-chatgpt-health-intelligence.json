@@ -1,0 +1,45 @@
+{
+  "slug": "chatgpt-health-intelligence",
+  "date": "2026-06-18",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["ChatGPT health answers got better: use them differently"],
+  "summary": "OpenAI says GPT-5.5 Instant improves health answers for free ChatGPT users. The practical move is to use ChatGPT to prepare better questions, not replace care.",
+  "tags": ["openai", "chatgpt", "health", "safety"],
+  "primary_source": {
+    "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
+    "title": "Improving health intelligence in ChatGPT",
+    "author": "OpenAI",
+    "publishedAt": "2026-06-18",
+    "key_facts": [
+      "OpenAI says GPT-5.5 Instant brings stronger health responses to free ChatGPT users.",
+      "OpenAI says more than 230 million people use ChatGPT each week for health and wellness questions.",
+      "The company says GPT-5.5 Instant improved on health evaluations that look at accuracy, safety, communication, context awareness, completeness, and escalation.",
+      "OpenAI says a network of more than 260 physicians across 60 countries helped define and review health-response quality."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://openai.com/index/healthbench/", "title": "Introducing HealthBench"}
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A ChatGPT account", "A non-emergency health question or appointment to prepare for"],
+    "steps": [
+      {"instruction": "Do not use ChatGPT for emergencies; call local emergency services or a clinician if symptoms are urgent."},
+      {"instruction": "Open ChatGPT and describe your question with age range, relevant symptoms, timing, medications, and what you already know.", "verify_url": "https://chatgpt.com/"},
+      {"instruction": "Ask ChatGPT to list red flags that would require urgent care, then check whether any apply to you now."},
+      {"instruction": "Ask for three questions to bring to a doctor, pharmacist, insurer, or clinic."},
+      {"instruction": "Save the output as appointment notes, not as a diagnosis, and confirm decisions with a qualified professional."}
+    ]
+  },
+  "references": [
+    {"title": "Improving health intelligence in ChatGPT", "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt/", "author": "OpenAI", "publishedAt": "2026-06-18"},
+    {"title": "Introducing HealthBench", "url": "https://openai.com/index/healthbench/", "author": "OpenAI", "publishedAt": "2025-05-12"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Health article must avoid implying medical diagnosis or replacing professional care."],
+  "assembled_at": "2026-06-22T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
