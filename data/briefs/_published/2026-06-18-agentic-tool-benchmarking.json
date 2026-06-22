@@ -1,0 +1,45 @@
+{
+  "slug": "agentic-tool-benchmarking",
+  "date": "2026-06-18",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["Hugging Face shows how to test whether agents can use your tools"],
+  "summary": "Hugging Face's agentic benchmarking post argues that success is not enough: track how many steps, tokens, errors, and detours an agent needs.",
+  "tags": ["huggingface", "agents", "evals", "tools"],
+  "primary_source": {
+    "url": "https://huggingface.co/blog/is-it-agentic-enough",
+    "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+    "author": "Hugging Face",
+    "publishedAt": "2026-06-18",
+    "key_facts": [
+      "Hugging Face published an agent-focused benchmark post using transformers as a case study.",
+      "The post argues that tool maintainers should measure not only whether an agent gets the right answer, but how much work it took.",
+      "The benchmark varies model, library revision, task, and the kind of context given to the agent.",
+      "The post tracks metrics such as match rate, median time, token use, errors, and behavior markers."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://github.com/huggingface/blog/blob/main/is-it-agentic-enough.md", "title": "Hugging Face blog source"}
+  ],
+  "practical_guide": {
+    "timeToTry": "20 min",
+    "prerequisites": ["A tool, document workflow, or small repo you want an AI agent to use"],
+    "steps": [
+      {"instruction": "Pick three tiny tasks an agent should be able to complete with your tool."},
+      {"instruction": "Run the same agent on each task and record whether it succeeded."},
+      {"instruction": "Also record how many turns it took, whether it read the right docs, and whether it used deprecated or fragile paths."},
+      {"instruction": "Add one clearer example, command, or short guide where the agent struggled."},
+      {"instruction": "Rerun the same three tasks and keep the change only if success improves without adding confusing extra context."}
+    ]
+  },
+  "references": [
+    {"title": "Is it agentic enough? Benchmarking open models on your own tooling", "url": "https://huggingface.co/blog/is-it-agentic-enough", "author": "Hugging Face", "publishedAt": "2026-06-18"},
+    {"title": "Hugging Face blog source", "url": "https://github.com/huggingface/blog/blob/main/is-it-agentic-enough.md", "author": "Hugging Face"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [],
+  "assembled_at": "2026-06-22T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

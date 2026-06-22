@@ -1,0 +1,50 @@
+---
+title: "Hugging Face shows how to test whether agents can use your tools"
+date: 2026-06-18
+category: guides
+tags: ["huggingface", "agents", "evals", "tools"]
+summary: "Hugging Face's agentic benchmarking post argues that success is not enough: track how many steps, tokens, errors, and detours an agent needs."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "A tool, document workflow, or small repo you want an AI agent to use"
+references:
+  - title: "Is it agentic enough? Benchmarking open models on your own tooling"
+    url: "https://huggingface.co/blog/is-it-agentic-enough"
+    author: "Hugging Face"
+    publishedAt: "2026-06-18"
+  - title: "Hugging Face blog source"
+    url: "https://github.com/huggingface/blog/blob/main/is-it-agentic-enough.md"
+    author: "Hugging Face"
+draft: false
+---
+
+## TL;DR
+
+Hugging Face published a practical benchmark for testing whether AI agents can use software tools well. The useful idea is simple: do not only ask whether the agent got the answer. Ask how many turns, tokens, errors, and detours it needed.
+
+## What's New
+
+The post uses `transformers` as a case study for agentic tooling. Instead of only checking final answers, the benchmark compares how agents behave across model choices, library revisions, task types, and the kind of context they receive.
+
+Hugging Face tracks metrics such as match rate, median time, token use, errors, and behavior markers. That matters because two agents can both succeed while one takes a clean one-command path and the other writes custom code, hits errors, and burns extra tokens.
+
+The post also shows a real tradeoff: clearer agent-facing documentation can help stronger models move faster, but can confuse smaller models if it adds concepts they misread.
+
+## Why It Matters
+
+As agents become normal users of software, documentation and tool design need a new test. A page that is clear to a human may still send an agent down the wrong path.
+
+For teams building tools, the next quality bar is not just "does it work?" It is "can an agent discover the right path, use it safely, and avoid unnecessary work?"
+
+<PracticalGuide timeToTry="20 min" prerequisites={["A tool, document workflow, or small repo you want an AI agent to use"]}>
+
+1. Pick three tiny tasks an agent should be able to complete with your tool.
+2. Run the same agent on each task and record whether it succeeded.
+3. Also record how many turns it took, whether it read the right docs, and whether it used deprecated or fragile paths.
+4. Add one clearer example, command, or short guide where the agent struggled.
+5. Rerun the same three tasks and keep the change only if success improves without adding confusing extra context.
+
+</PracticalGuide>
