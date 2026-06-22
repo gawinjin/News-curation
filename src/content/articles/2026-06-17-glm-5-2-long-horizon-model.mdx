@@ -1,0 +1,51 @@
+---
+title: "GLM-5.2 makes long-context open models worth testing again"
+date: 2026-06-17
+category: model-releases
+tags: ["open-models", "glm", "coding", "agents"]
+summary: "Z.AI released GLM-5.2 with a 1M-token context claim, MIT licensing, and a focus on long-horizon coding and agent tasks."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "A browser"
+    - "A long document, code issue, or planning task you can safely test"
+references:
+  - title: "GLM-5.2: Built for Long-Horizon Tasks"
+    url: "https://huggingface.co/blog/zai-org/glm-52-blog"
+    author: "Z.AI"
+    publishedAt: "2026-06-17"
+  - title: "Z.ai chat"
+    url: "https://chat.z.ai/"
+    author: "Z.AI"
+draft: false
+---
+
+## TL;DR
+
+Z.AI released GLM-5.2, an open model focused on long-horizon work. The headline claims are a 1M-token context, MIT licensing, stronger coding-agent performance, and effort controls. The useful test is whether it handles your long task with fewer missed details than your current model.
+
+## What's New
+
+GLM-5.2 is positioned as a flagship long-context model for coding agents, automated research, complex debugging, and other work that stretches across many steps.
+
+Z.AI says the model supports a 1M-token context and is released under the MIT license. The post also describes effort-level control, so users can trade off speed, cost, and capability depending on the task.
+
+This is not just another chatbot release. The interesting question is whether an open model can sustain attention across long, messy work where smaller context windows or weaker long-context behavior usually break down.
+
+## Why It Matters
+
+Long context is easy to market and hard to trust. A model can accept a huge input while still losing the detail you needed on page 300.
+
+That makes GLM-5.2 worth testing with grounded tasks: long public reports, large issues, long transcripts, and planning documents. If it can cite the right source passages and avoid invented details, open long-context models become more useful for real work.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["A browser","A long document, code issue, or planning task you can safely test"]}>
+
+1. Open Z.ai chat or the GLM-5.2 Hugging Face page.
+2. Choose a long but non-sensitive task, such as summarizing a public report or planning changes from a public issue.
+3. Ask GLM-5.2 for an answer, then ask it to cite the exact parts of the input it relied on.
+4. Run the same task in your usual model and compare missed details, invented details, and time spent.
+5. Use GLM-5.2 only where long-context recall or open-model control clearly beats your current tool.
+
+</PracticalGuide>

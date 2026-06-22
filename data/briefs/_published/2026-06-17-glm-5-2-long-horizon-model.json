@@ -1,0 +1,45 @@
+{
+  "slug": "glm-5-2-long-horizon-model",
+  "date": "2026-06-17",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["GLM-5.2 makes long-context open models worth testing again"],
+  "summary": "Z.AI released GLM-5.2 with a 1M-token context claim, MIT licensing, and a focus on long-horizon coding and agent tasks.",
+  "tags": ["open-models", "glm", "coding", "agents"],
+  "primary_source": {
+    "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+    "title": "GLM-5.2: Built for Long-Horizon Tasks",
+    "author": "Z.AI",
+    "publishedAt": "2026-06-17",
+    "key_facts": [
+      "Z.AI released GLM-5.2 as a flagship model for long-horizon tasks.",
+      "The post says GLM-5.2 supports a 1M-token context and is released under the MIT license.",
+      "Z.AI presents GLM-5.2 as aimed at sustained coding-agent work, complex debugging, automated research, and performance optimization.",
+      "The post describes effort-level control for balancing capability, speed, and cost."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://chat.z.ai/", "title": "Z.ai chat"}
+  ],
+  "practical_guide": {
+    "timeToTry": "20 min",
+    "prerequisites": ["A browser", "A long document, code issue, or planning task you can safely test"],
+    "steps": [
+      {"instruction": "Open Z.ai chat or the GLM-5.2 Hugging Face page.", "verify_url": "https://chat.z.ai/"},
+      {"instruction": "Choose a long but non-sensitive task, such as summarizing a public report or planning changes from a public issue."},
+      {"instruction": "Ask GLM-5.2 for an answer, then ask it to cite the exact parts of the input it relied on."},
+      {"instruction": "Run the same task in your usual model and compare missed details, invented details, and time spent."},
+      {"instruction": "Use GLM-5.2 only where long-context recall or open-model control clearly beats your current tool."}
+    ]
+  },
+  "references": [
+    {"title": "GLM-5.2: Built for Long-Horizon Tasks", "url": "https://huggingface.co/blog/zai-org/glm-52-blog", "author": "Z.AI", "publishedAt": "2026-06-17"},
+    {"title": "Z.ai chat", "url": "https://chat.z.ai/", "author": "Z.AI"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [],
+  "assembled_at": "2026-06-22T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
