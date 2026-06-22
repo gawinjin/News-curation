@@ -1,5 +1,19 @@
 # Signal Run Log
 
+## 2026-06-22
+
+Shipped:
+
+- `2026-06-18-chatgpt-health-intelligence` — OpenAI's GPT-5.5 Instant health improvements are useful for normal users when framed as appointment prep, red-flag checking, and question drafting.
+- `2026-06-18-mosaicleaks-research-agent-privacy` — MosaicLeaks is a practical privacy warning for anyone letting research agents combine private documents with public web search.
+- `2026-06-21-samsung-chatgpt-codex-rollout` — Samsung's broad ChatGPT Enterprise and Codex deployment is a current signal that workplace AI is becoming governed infrastructure.
+
+Skipped:
+
+- GLM-5.2 — strong open-model release, but less immediately useful to general users than the selected health, privacy, and workplace pieces today.
+- DeepMind AI agent security roadmap — important context, but overlaps with the more directly testable MosaicLeaks privacy guide.
+- Datasette/sqlite-utils release notes and Cloudflare account experiments — useful but narrower than this run's general-reader picks.
+
 ## 2026-06-16
 
 Shipped:
