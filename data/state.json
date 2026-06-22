@@ -151,7 +151,15 @@
     "https://huggingface.co/blog/ServiceNow/mosaicleaks",
     "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/",
     "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
-    "https://openai.com/codex/"
+    "https://openai.com/codex/",
+    "https://openai.com/index/deployment-simulation/",
+    "https://openai.com/index/deployment-simulation",
+    "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+    "https://huggingface.co/blog/zai-org/glm-52-blog",
+    "https://chat.z.ai/",
+    "https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything",
+    "https://huggingface.co/blog/is-it-agentic-enough",
+    "https://github.com/huggingface/blog/blob/main/is-it-agentic-enough.md"
   ],
   "lastIngest": "2026-06-22T00:00:00.000Z"
 }

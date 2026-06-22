@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T10:00:15.285Z",
+  "generatedAt": "2026-06-22T10:16:44.669Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -137,26 +137,6 @@
     },
     {
       "kind": "rss",
-      "title": "Is it agentic enough? Benchmarking open models on your own tooling",
-      "url": "https://huggingface.co/blog/is-it-agentic-enough",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-06-18T00:00:00.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "GLM-5.2 is probably the most powerful text-only open weights LLM",
-      "url": "https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-17T23:58:39.000Z",
-      "summary": "<p>Chinese AI lab <a href=\"https://z.ai/\">Z.ai</a> released GLM-5.2 <a href=\"https://x.com/Zai_org/status/2065704919299235870\">to their coding plan subscribers</a> on June 13th, and then yesterday (June 16th) released the full open weights under an MIT license. Similar in size to"
-    },
-    {
-      "kind": "rss",
       "title": "Quoting Charity Majors",
       "url": "https://simonwillison.net/2026/Jun/17/charity-majors/#atom-everything",
       "source": "Simon Willison",
@@ -194,16 +174,6 @@
       "category": "model-releases",
       "publishedAt": "2026-06-17T10:00:00.000Z",
       "summary": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research."
-    },
-    {
-      "kind": "rss",
-      "title": "GLM-5.2: Built for Long-Horizon Tasks",
-      "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-06-17T09:01:25.000Z",
-      "summary": ""
     },
     {
       "kind": "rss",
@@ -297,16 +267,6 @@
     },
     {
       "kind": "rss",
-      "title": "Securing the future of AI agents",
-      "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
-      "source": "Google DeepMind",
-      "sourceId": "deepmind",
-      "category": "research",
-      "publishedAt": "2026-06-16T15:46:31.000Z",
-      "summary": "Securing internal systems with an AI Control Roadmap, combining traditional safeguards and real-time monitoring."
-    },
-    {
-      "kind": "rss",
       "title": "The Fable 5 Export Controls Harm US Cyber Defense",
       "url": "https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything",
       "source": "Simon Willison",
@@ -334,16 +294,6 @@
       "category": "insights",
       "publishedAt": "2026-06-16T00:21:36.000Z",
       "summary": "<p><strong>TIL:</strong> <a href=\"https://til.simonwillison.net/cloudflare/captcha-on-at-least-one-ampersand\">Cloudflare CAPTCHA on at least one ampersand</a></p> <p>I'm using Cloudflare's CAPTCHA (they call it a \"Web Application Firewall > Custom rules > Managed Challenge\" these"
-    },
-    {
-      "kind": "rss",
-      "title": "Predicting model behavior before release by simulating deployment",
-      "url": "https://openai.com/index/deployment-simulation",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-06-16T00:00:00.000Z",
-      "summary": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy."
     },
     {
       "kind": "rss",

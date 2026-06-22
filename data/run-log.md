@@ -7,12 +7,16 @@ Shipped:
 - `2026-06-18-chatgpt-health-intelligence` — OpenAI's GPT-5.5 Instant health improvements are useful for normal users when framed as appointment prep, red-flag checking, and question drafting.
 - `2026-06-18-mosaicleaks-research-agent-privacy` — MosaicLeaks is a practical privacy warning for anyone letting research agents combine private documents with public web search.
 - `2026-06-21-samsung-chatgpt-codex-rollout` — Samsung's broad ChatGPT Enterprise and Codex deployment is a current signal that workplace AI is becoming governed infrastructure.
+- `2026-06-16-openai-deployment-simulation` — OpenAI's deployment-simulation work is useful beyond labs because teams can replay real past tasks before switching models.
+- `2026-06-16-deepmind-agent-control-roadmap` — DeepMind's AI Control Roadmap gives readers a concrete permission, monitoring, and stop-button checklist for agents.
+- `2026-06-17-glm-5-2-long-horizon-model` — GLM-5.2 is a high-signal open-model release for long-context and long-horizon work.
+- `2026-06-18-agentic-tool-benchmarking` — Hugging Face's agentic-tool benchmark turns agent-friendliness into something readers can measure.
 
 Skipped:
 
-- GLM-5.2 — strong open-model release, but less immediately useful to general users than the selected health, privacy, and workplace pieces today.
-- DeepMind AI agent security roadmap — important context, but overlaps with the more directly testable MosaicLeaks privacy guide.
 - Datasette/sqlite-utils release notes and Cloudflare account experiments — useful but narrower than this run's general-reader picks.
+- OpenAI rare-disease diagnosis, LifeSciBench, and AI chemist items — important research, but less directly testable for normal readers without specialist context.
+- Anthropic Seoul office and other regional partnership notes — business signals, but weak Practical Guide fit.
 
 ## 2026-06-16
 
