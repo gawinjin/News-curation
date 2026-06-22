@@ -1,0 +1,42 @@
+{
+  "slug": "deepmind-agent-control-roadmap",
+  "date": "2026-06-16",
+  "category": "research",
+  "audience": "general",
+  "title_candidates": ["DeepMind's agent-control roadmap says trust needs brakes"],
+  "summary": "Google DeepMind's AI Control Roadmap treats powerful internal agents like systems that need permissions, monitoring, and fast intervention.",
+  "tags": ["deepmind", "agents", "security", "safety"],
+  "primary_source": {
+    "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+    "title": "Securing the future of AI agents",
+    "author": "Google DeepMind",
+    "publishedAt": "2026-06-16",
+    "key_facts": [
+      "Google DeepMind published a safety post about securing internal systems against increasingly capable AI agents.",
+      "The post describes an AI Control Roadmap that adds system-level security on top of model alignment.",
+      "DeepMind frames advanced internal agents as potential insider threats for threat-modeling purposes.",
+      "The roadmap emphasizes detection, prevention, response, and metrics such as coverage, recall, and time-to-response."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["Any AI agent or automation that can read files, call tools, edit data, or run code"],
+    "steps": [
+      {"instruction": "List the tools your agent can use today, including file access, network access, code execution, and write permissions."},
+      {"instruction": "Mark each tool as low-risk, reversible, sensitive, or high-risk."},
+      {"instruction": "Require approval for sensitive and high-risk actions before the agent can execute them."},
+      {"instruction": "Log every tool call, then review one real run for unexpected reads, writes, or external calls."},
+      {"instruction": "Write down who can stop the agent and how quickly they can do it."}
+    ]
+  },
+  "references": [
+    {"title": "Securing the future of AI agents", "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/", "author": "Google DeepMind", "publishedAt": "2026-06-16"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [],
+  "assembled_at": "2026-06-22T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

@@ -1,0 +1,47 @@
+---
+title: "DeepMind's agent-control roadmap says trust needs brakes"
+date: 2026-06-16
+category: research
+tags: ["deepmind", "agents", "security", "safety"]
+summary: "Google DeepMind's AI Control Roadmap treats powerful internal agents like systems that need permissions, monitoring, and fast intervention."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "Any AI agent or automation that can read files, call tools, edit data, or run code"
+references:
+  - title: "Securing the future of AI agents"
+    url: "https://deepmind.google/blog/securing-the-future-of-ai-agents/"
+    author: "Google DeepMind"
+    publishedAt: "2026-06-16"
+draft: false
+---
+
+## TL;DR
+
+Google DeepMind published an AI agent-control roadmap for securing powerful internal agents. The core idea is plain: alignment is not enough. If an agent can touch real systems, it needs permissions, monitoring, intervention paths, and logs.
+
+## What's New
+
+DeepMind frames agent security as defense in depth. The roadmap adds system-level controls on top of model training, assuming that an advanced agent might behave unexpectedly even if it was trained to be helpful.
+
+The post borrows from cybersecurity threat modeling and treats internal agents like possible insider threats for planning purposes. That does not mean every agent is malicious. It means access should be earned, monitored, and limited by the risk of the action.
+
+DeepMind emphasizes detection, prevention, response, and measurement. The useful metrics are concrete: how much traffic is monitored, how many bad behaviors are caught, and how quickly a response can happen.
+
+## Why It Matters
+
+Agents are useful because they can act. That is also why they are risky. A chatbot that writes a draft can be corrected later; an agent that deletes files, emails customers, or changes infrastructure needs brakes before the action happens.
+
+The everyday takeaway is to stop treating agent access as all-or-nothing. Give agents small permissions first, add approval gates for sensitive actions, and keep logs that a human can actually review.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["Any AI agent or automation that can read files, call tools, edit data, or run code"]}>
+
+1. List the tools your agent can use today, including file access, network access, code execution, and write permissions.
+2. Mark each tool as low-risk, reversible, sensitive, or high-risk.
+3. Require approval for sensitive and high-risk actions before the agent can execute them.
+4. Log every tool call, then review one real run for unexpected reads, writes, or external calls.
+5. Write down who can stop the agent and how quickly they can do it.
+
+</PracticalGuide>
