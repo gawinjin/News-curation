@@ -1,0 +1,47 @@
+---
+title: "OpenAI is testing models on realistic conversations before release"
+date: 2026-06-16
+category: research
+tags: ["openai", "safety", "evals", "deployment"]
+summary: "OpenAI's Deployment Simulation work is a reminder that AI testing should use realistic past workflows, not only hand-picked stress prompts."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A team prompt, chatbot workflow, or agent workflow you already use"
+references:
+  - title: "Predicting model behavior before release by simulating deployment"
+    url: "https://openai.com/index/deployment-simulation/"
+    author: "OpenAI"
+    publishedAt: "2026-06-16"
+draft: false
+---
+
+## TL;DR
+
+OpenAI published research on Deployment Simulation: testing a candidate model against realistic past conversation contexts before release. The practical lesson is not limited to frontier labs. If you are switching AI tools, test them on real past work, not only on clever demos.
+
+## What's New
+
+OpenAI says Deployment Simulation replays previous conversation contexts with a candidate model, then checks whether the new model behaves differently in ways that matter before it reaches users.
+
+The company says this improved estimates of undesired behavior rates across several GPT-5-series Thinking deployments. It also says the method helped surface behavior that narrower evaluation sets could miss, while still complementing red-teaming and targeted safety tests.
+
+OpenAI also tested the idea on agentic coding trajectories by simulating tool calls instead of applying them to live systems. That matters because agent failures often depend on tools, files, repository state, and other messy context.
+
+## Why It Matters
+
+Most AI evaluation is too clean. A new model can look better on benchmarks and still behave worse on the messy tasks people actually run every week.
+
+For normal users and small teams, the usable version is simple: keep a small set of real historical tasks and replay them before changing defaults. That catches regressions a polished launch demo will not.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A team prompt, chatbot workflow, or agent workflow you already use"]}>
+
+1. Choose five real past prompts or tasks from your workflow, removing names and sensitive details.
+2. Run the same prompts through the old model and the candidate model.
+3. Score each answer for usefulness, mistakes, policy issues, and whether it changed the user's next action.
+4. Look for repeated behavior changes rather than one impressive demo.
+5. Do not switch defaults until the candidate model improves the real tasks without adding new failure patterns.
+
+</PracticalGuide>

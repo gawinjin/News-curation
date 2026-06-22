@@ -1,0 +1,42 @@
+{
+  "slug": "openai-deployment-simulation",
+  "date": "2026-06-16",
+  "category": "research",
+  "audience": "general",
+  "title_candidates": ["OpenAI is testing models on realistic conversations before release"],
+  "summary": "OpenAI's Deployment Simulation work is a reminder that AI testing should use realistic past workflows, not only hand-picked stress prompts.",
+  "tags": ["openai", "safety", "evals", "deployment"],
+  "primary_source": {
+    "url": "https://openai.com/index/deployment-simulation/",
+    "title": "Predicting model behavior before release by simulating deployment",
+    "author": "OpenAI",
+    "publishedAt": "2026-06-16",
+    "key_facts": [
+      "OpenAI describes Deployment Simulation as replaying previous conversation contexts with a candidate model before release.",
+      "OpenAI says the method improved estimates of undesired behavior rates across multiple GPT-5-series Thinking deployments.",
+      "The work is meant to complement targeted evaluations, red-teaming, and adversarial testing rather than replace them.",
+      "OpenAI also tested the idea on agentic coding trajectories with simulated tool calls."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A team prompt, chatbot workflow, or agent workflow you already use"],
+    "steps": [
+      {"instruction": "Choose five real past prompts or tasks from your workflow, removing names and sensitive details."},
+      {"instruction": "Run the same prompts through the old model and the candidate model."},
+      {"instruction": "Score each answer for usefulness, mistakes, policy issues, and whether it changed the user's next action."},
+      {"instruction": "Look for repeated behavior changes rather than one impressive demo."},
+      {"instruction": "Do not switch defaults until the candidate model improves the real tasks without adding new failure patterns."}
+    ]
+  },
+  "references": [
+    {"title": "Predicting model behavior before release by simulating deployment", "url": "https://openai.com/index/deployment-simulation/", "author": "OpenAI", "publishedAt": "2026-06-16"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [],
+  "assembled_at": "2026-06-22T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
