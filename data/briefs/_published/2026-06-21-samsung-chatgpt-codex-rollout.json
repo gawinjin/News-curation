@@ -1,0 +1,45 @@
+{
+  "slug": "samsung-chatgpt-codex-rollout",
+  "date": "2026-06-21",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": ["Samsung's ChatGPT and Codex rollout shows AI is becoming company infrastructure"],
+  "summary": "OpenAI says Samsung Electronics is rolling out ChatGPT Enterprise and Codex broadly. The signal is less about Samsung and more about how workplace AI is being governed.",
+  "tags": ["openai", "codex", "enterprise", "work"],
+  "primary_source": {
+    "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/",
+    "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+    "author": "OpenAI",
+    "publishedAt": "2026-06-21",
+    "key_facts": [
+      "OpenAI says Samsung Electronics is making ChatGPT Enterprise and Codex available to all Samsung Electronics employees in Korea and all worldwide Device eXperience employees.",
+      "OpenAI describes the Samsung rollout as one of its largest enterprise deployments to date.",
+      "Samsung plans to use ChatGPT and Codex across software development, marketing, product development, manufacturing, corporate functions, and other areas.",
+      "OpenAI says more than 5 million people now use Codex each week for technical and non-technical workflows."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://openai.com/codex/", "title": "Codex"}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A workplace AI pilot, team tool rollout, or interest in evaluating one"],
+    "steps": [
+      {"instruction": "Write down one workflow where your team already uses AI informally, such as drafting, analysis, code review, or reporting."},
+      {"instruction": "Check whether the tool is personal, team-managed, or enterprise-managed."},
+      {"instruction": "Ask who controls data retention, user access, app approvals, and audit logs."},
+      {"instruction": "Define one allowed use, one banned use, and one review checkpoint before expanding access."},
+      {"instruction": "Only scale the rollout after a real task shows measurable time saved or quality improved."}
+    ]
+  },
+  "references": [
+    {"title": "Samsung Electronics brings ChatGPT and Codex to employees", "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/", "author": "OpenAI", "publishedAt": "2026-06-21"},
+    {"title": "Codex", "url": "https://openai.com/codex/", "author": "OpenAI"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [],
+  "assembled_at": "2026-06-22T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
