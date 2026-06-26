@@ -1,0 +1,45 @@
+{
+  "slug": "openai-agents-transform-work",
+  "date": "2026-06-25",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": ["OpenAI says agent work is moving beyond engineers"],
+  "summary": "OpenAI's Codex usage paper says non-developers are using agents for longer, cross-functional work. The practical move is to choose agent tasks by duration and reviewability.",
+  "tags": ["openai", "codex", "agents", "work"],
+  "primary_source": {
+    "url": "https://openai.com/index/how-agents-are-transforming-work/",
+    "title": "How agents are transforming work",
+    "author": "OpenAI",
+    "publishedAt": "2026-06-25",
+    "key_facts": [
+      "OpenAI published an Economic Research paper on Codex and agentic work.",
+      "OpenAI says agentic AI changes work from single interactions to delegated, long-horizon tasks.",
+      "The paper reports that many Codex users ask for work estimated to take more than 30 minutes or one hour of human time.",
+      "OpenAI says non-developer adoption grew quickly and that non-technical departments at OpenAI use Codex for adjacent technical work."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://openai.com/codex/", "title": "Codex"}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["Access to a coding or work agent", "One task you can safely delegate"],
+    "steps": [
+      {"instruction": "Pick one task that would take you 30 to 90 minutes, not a five-second question."},
+      {"instruction": "Write the desired outcome, inputs, constraints, and what the agent should not change."},
+      {"instruction": "Ask the agent to produce a plan before doing the work."},
+      {"instruction": "Approve only the first small step and inspect the result."},
+      {"instruction": "Scale up only if the task is reviewable, reversible, and easier to check than to do from scratch."}
+    ]
+  },
+  "references": [
+    {"title": "How agents are transforming work", "url": "https://openai.com/index/how-agents-are-transforming-work/", "author": "OpenAI", "publishedAt": "2026-06-25"},
+    {"title": "Codex", "url": "https://openai.com/codex/", "author": "OpenAI"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [],
+  "assembled_at": "2026-06-26T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
