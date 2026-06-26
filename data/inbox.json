@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T10:16:44.669Z",
+  "generatedAt": "2026-06-26T08:35:36.815Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,6 +47,226 @@
   "items": [
     {
       "kind": "rss",
+      "title": "AI and Liability",
+      "url": "https://simonwillison.net/2026/Jun/25/ai-and-liability/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-25T22:28:46.000Z",
+      "summary": "<p><strong><a href=\"https://www.schneier.com/blog/archives/2026/06/ai-and-liability.html\">AI and Liability</a></strong></p> Bruce Schneier on the recent <a href=\"https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable"
+    },
+    {
+      "kind": "rss",
+      "title": "datasette-export-database 0.3a2",
+      "url": "https://simonwillison.net/2026/Jun/25/datasette-export-database/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-25T17:21:09.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-export-database/releases/tag/0.3a2\">datasette-export-database 0.3a2</a></p> <p>An embarrassingly tiny release. The <code>pyproject.toml</code> had pinned to <code>datasette==1.0a27</code>, inadvertently "
+    },
+    {
+      "kind": "rss",
+      "title": "Which tokens does a hybrid model predict better?",
+      "url": "https://huggingface.co/blog/allenai/hybrid-token-prediction",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-06-25T16:11:42.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "simonw/browser-compat-db",
+      "url": "https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-24T23:59:03.000Z",
+      "summary": "<p><strong><a href=\"https://github.com/simonw/browser-compat-db\">simonw/browser-compat-db</a></strong></p> Inspired by Mozilla's <a href=\"https://developer.mozilla.org/en-US/blog/introducing-mdn-mcp-server/\">new MDN MCP service</a> - <a href=\"https://github.com/mdn/mcp\">source co"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Tom MacWright",
+      "url": "https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-24T18:13:51.000Z",
+      "summary": "<blockquote cite=\"https://macwright.com/2026/06/24/accidental-anonymity.html\"><p>In the last few months, I've started to see [job applications] that were clearly cowritten by an LLM, link to an LLM-generated portfolio site, which then links to LLM-generated GitHub projects, with "
+    },
+    {
+      "kind": "rss",
+      "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
+      "url": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-06-24T16:00:13.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-24T06:00:00.000Z",
+      "summary": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems."
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing the FFASR Leaderboard: Benchmarking ASR in the Real World",
+      "url": "https://huggingface.co/blog/ffasr-leaderboard",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-06-24T00:00:00.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Scaling Laws, Carefully",
+      "url": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/",
+      "source": "Lilian Weng",
+      "sourceId": "lilianweng",
+      "category": "research",
+      "publishedAt": "2026-06-24T00:00:00.000Z",
+      "summary": "<p>Scaling laws are one of the most critical empirical findings in deep learning. The observation is simple in form: the training loss $L$ decreases predictably as we scale up model size $N$, dataset size $D$, and compute $C$, following a power-law curve, which appears as a strai"
+    },
+    {
+      "kind": "rss",
+      "title": "datasette 1.0a35",
+      "url": "https://simonwillison.net/2026/Jun/23/datasette/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-23T21:34:37.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a35\">datasette 1.0a35</a></p> <p>I'll write more about this one soon, but it's a big release. Three highlights from the release notes:</p> <blockquote> <ul> <li>New \"Create table\" interface "
+    },
+    {
+      "kind": "rss",
+      "title": "OPFS + Pyodide test harness",
+      "url": "https://simonwillison.net/2026/Jun/23/opfs-pyodide/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-23T18:58:54.000Z",
+      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/opfs-pyodide\">OPFS + Pyodide test harness</a></p> <p>I've been pondering if <a href=\"https://lite.datasette.io/\">Datasette Lite</a> - the Python Datasette application run entirely in the browser using Pyodide and "
+    },
+    {
+      "kind": "rss",
+      "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
+      "url": "https://openai.com/index/gpt-5-immunology-mystery",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-23T17:00:00.000Z",
+      "summary": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research."
+    },
+    {
+      "kind": "rss",
+      "title": "Helping build shared standards for advanced AI",
+      "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-23T13:00:00.000Z",
+      "summary": "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation."
+    },
+    {
+      "kind": "rss",
+      "title": "Build real agentic apps using CUGA: two dozen working examples on a lightweight harness",
+      "url": "https://huggingface.co/blog/ibm-research/cuga-apps",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-06-23T12:51:55.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "How Omio is building the future of conversational travel",
+      "url": "https://openai.com/index/omio",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-23T00:00:00.000Z",
+      "summary": "Discover how Omio uses OpenAI to power conversational travel experiences, accelerate product development, and transform into an AI-native company."
+    },
+    {
+      "kind": "rss",
+      "title": "Shipping huggingface_hub every week with AI, open tools, and a human in the loop",
+      "url": "https://huggingface.co/blog/huggingface-hub-release-ci",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-06-23T00:00:00.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js",
+      "url": "https://huggingface.co/blog/cross-origin-storage",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-06-23T00:00:00.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code",
+      "url": "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-06-22T23:43:51.000Z",
+      "summary": "<p>This morning <a href=\"https://news.ycombinator.com/item?id=48630171\">on Hacker News</a> I saw <a href=\"https://hustvl.github.io/Moebius/\">Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance</a>, describing a small but effective inpainting model - a "
+    },
+    {
+      "kind": "rss",
+      "title": "PP-OCRv6 on Hugging Face: 50-Language OCR from 1.5M to 34.5M Parameters",
+      "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-06-22T13:18:56.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Import AI 462: Superpersuasion; self-sustaining AI; paths to ASI",
+      "url": "https://importai.substack.com/p/import-ai-462-superpersuasion-self",
+      "source": "Import AI (Jack Clark)",
+      "sourceId": "importai",
+      "category": "insights",
+      "publishedAt": "2026-06-22T12:31:45.000Z",
+      "summary": "How religious are beliefs in the singularity?"
+    },
+    {
+      "kind": "rss",
+      "title": "Codex-maxxing for long-running work",
+      "url": "https://openai.com/index/codex-maxxing-long-running-work",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-06-22T00:00:00.000Z",
+      "summary": "Learn how Jason Liu uses Codex to preserve context, manage complex projects, and help work continue beyond a single prompt."
+    },
+    {
+      "kind": "rss",
+      "title": "We got local models to triage the OpenClaw repo for FREE!*",
+      "url": "https://huggingface.co/blog/local-models-pr-triage",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-06-22T00:00:00.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
       "title": "sqlite-utils 4.0rc1 adds migrations and nested transactions",
       "url": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
       "source": "Simon Willison",
@@ -84,256 +304,6 @@
       "category": "insights",
       "publishedAt": "2026-06-19T22:45:49.000Z",
       "summary": "<blockquote cite=\"https://news.ycombinator.com/item?id=48592163#48593190\"><p>The real valuable capability MCP offers over skills/CLI is isolating the auth flow outside of the agent’s context window, and potentially out of the harness completely. [...]</p> <p>Maybe the idealized f"
-    },
-    {
-      "kind": "rss",
-      "title": "Datasette Apps: Host custom HTML applications inside Datasette",
-      "url": "https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-18T23:58:38.000Z",
-      "summary": "<p>Today we launched a new plugin for Datasette, <a href=\"https://github.com/datasette/datasette-apps\">datasette-apps</a>, with <a href=\"https://datasette.io/blog/2026/datasette-apps/\">this launch announcement post</a> on the Datasette project blog. That post has the <em>what</em"
-    },
-    {
-      "kind": "rss",
-      "title": "datasette-acl 0.6a0",
-      "url": "https://simonwillison.net/2026/Jun/18/datasette-acl/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-18T19:03:13.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-acl/releases/tag/0.6a0\">datasette-acl 0.6a0</a></p> <blockquote> <p>This release expands <code>datasette-acl</code> from table-only permissions toward a general resource-sharing system.</p> </blockquote>"
-    },
-    {
-      "kind": "rss",
-      "title": "New usage analytics and updated spend controls for enterprises",
-      "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-06-18T17:00:00.000Z",
-      "summary": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence."
-    },
-    {
-      "kind": "rss",
-      "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
-      "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-06-18T08:00:00.000Z",
-      "summary": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases."
-    },
-    {
-      "kind": "rss",
-      "title": "Beyond LoRA: Can you beat the most popular fine-tuning technique?",
-      "url": "https://huggingface.co/blog/peft-beyond-lora",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-06-18T00:00:00.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Charity Majors",
-      "url": "https://simonwillison.net/2026/Jun/17/charity-majors/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-17T17:12:41.000Z",
-      "summary": "<blockquote cite=\"https://charitydotwtf.substack.com/p/ai-demands-more-engineering-discipline#footnote-2\"><p>What happened in 2025 was this: <strong>the economics of code production were turned upside down</strong>. Instead of being very hard, time-consuming, and expensive to gen"
-    },
-    {
-      "kind": "rss",
-      "title": "MolmoMotion: Language-guided 3D motion forecasting",
-      "url": "https://huggingface.co/blog/allenai/molmomotion",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-06-17T15:26:44.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
-      "url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-06-17T10:18:05.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
-      "url": "https://openai.com/index/ai-chemist-improves-reaction",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-06-17T10:00:00.000Z",
-      "summary": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research."
-    },
-    {
-      "kind": "rss",
-      "title": "<click-to-play> — a still that plays",
-      "url": "https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-17T03:56:10.000Z",
-      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/click-to-play-component\"><click-to-play> — a still that plays</a></p> <p>A progressive enchantment Web Component that turns this markup:</p> <pre><code><click-to-play> <a href=\"URL to GIF\"> <img src=\"URL to first "
-    },
-    {
-      "kind": "rss",
-      "title": "NetNewsWire Status",
-      "url": "https://simonwillison.net/2026/Jun/17/netnewswire-status/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-17T03:36:09.000Z",
-      "summary": "<p><strong><a href=\"https://inessential.com/2026/06/15/netnewswire-status.html\">NetNewsWire Status</a></strong></p> I find this inspiring. Brent Simmons retired a year ago, and his retirement project is making one piece of software really, <em>really</em> good - free from any com"
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing LifeSciBench",
-      "url": "https://openai.com/index/introducing-life-sci-bench",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-06-17T00:00:00.000Z",
-      "summary": "Introducing LifeSciBench, an expert-authored, expert-reviewed benchmark for evaluating how AI systems handle real-world life science research tasks and decisions."
-    },
-    {
-      "kind": "rss",
-      "title": "Agentic Resource Discovery: Let agents search",
-      "url": "https://huggingface.co/blog/agentic-resource-discovery-launch",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-06-17T00:00:00.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "datasette 1.0a34",
-      "url": "https://simonwillison.net/2026/Jun/16/datasette/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-16T21:31:24.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a34\">datasette 1.0a34</a></p> <p>Quoting the release notes:</p> <blockquote> <p>The big feature in this alpha is tools to insert, edit and delete rows within the Datasette interface. These f"
-    },
-    {
-      "kind": "rss",
-      "title": "Unlocking UK house-building with AI-accelerated planning",
-      "url": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/",
-      "source": "Google DeepMind",
-      "sourceId": "deepmind",
-      "category": "research",
-      "publishedAt": "2026-06-16T21:29:50.000Z",
-      "summary": "UK government partners with Google DeepMind to build a new AI-powered prototype aimed at faster housing decisions."
-    },
-    {
-      "kind": "rss",
-      "title": "Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
-      "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
-      "source": "Anthropic",
-      "sourceId": "anthropic",
-      "category": "model-releases",
-      "publishedAt": "2026-06-16T17:00:00.000Z",
-      "summary": "Anthropic opens Seoul and announces new partnerships across the Korean AI ecosystem—with the enterprises, startups, and researchers behind some of the most ambitious deployments of Claude."
-    },
-    {
-      "kind": "rss",
-      "title": "datasette-tailscale 0.1a0",
-      "url": "https://simonwillison.net/2026/Jun/16/datasette-tailscale/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-16T16:18:20.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-tailscale/releases/tag/0.1a0\">datasette-tailscale 0.1a0</a></p> <p>A very experimental alpha plugin which lets you do this:</p> <pre><code>datasette tailscale mydata.db \\ --ts-authkey tskey-auth-xxxx --t"
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Georgi Gerganov",
-      "url": "https://simonwillison.net/2026/Jun/16/georgi-gerganov/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-16T16:04:59.000Z",
-      "summary": "<blockquote cite=\"https://news.ycombinator.com/item?id=48555993#48557304\"><p>I can 100% attest to the fact that Qwen3.6-27B is a very capable local model for coding tasks. Over the last month and a half I've been using it almost daily, either on my M2 Ultra or on my RTX 5090 box."
-    },
-    {
-      "kind": "rss",
-      "title": "The Fable 5 Export Controls Harm US Cyber Defense",
-      "url": "https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-16T05:20:29.000Z",
-      "summary": "<p><strong><a href=\"https://www.lutasecurity.com/post/the-fable-5-export-controls-harm-us-cyber-defense\">The Fable 5 Export Controls Harm US Cyber Defense</a></strong></p> I <a href=\"https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/\">quoted The Atlantic</a> quoting "
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Matteo Wong, The Atlantic",
-      "url": "https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-16T03:07:54.000Z",
-      "summary": "<blockquote cite=\"https://www.theatlantic.com/technology/2026/06/trump-anthropic-export-control-ai-race/687555/?gift=5MjKTLV9QwyU_J0HzTnanoWieJfkMhNH_YTT9pP_fhA\"><p>Katie Moussouris, a cybersecurity expert and the CEO of Luta Security, told me that Anthropic shared with her a cop"
-    },
-    {
-      "kind": "rss",
-      "title": "Cloudflare CAPTCHA on at least one ampersand",
-      "url": "https://simonwillison.net/2026/Jun/16/captcha-on-at-least-one-ampersand/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-16T00:21:36.000Z",
-      "summary": "<p><strong>TIL:</strong> <a href=\"https://til.simonwillison.net/cloudflare/captcha-on-at-least-one-ampersand\">Cloudflare CAPTCHA on at least one ampersand</a></p> <p>I'm using Cloudflare's CAPTCHA (they call it a \"Web Application Firewall > Custom rules > Managed Challenge\" these"
-    },
-    {
-      "kind": "rss",
-      "title": "datasette-apps 0.1a3",
-      "url": "https://simonwillison.net/2026/Jun/15/datasette-apps-2/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-15T20:25:07.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-apps/releases/tag/0.1a3\">datasette-apps 0.1a3</a></p> <blockquote> <ul> <li>Fixed a bug where users without the <code>create-app</code> permission could still create apps. <a href=\"https://github.com/dat"
-    },
-    {
-      "kind": "rss",
-      "title": "datasette-apps 0.1a2",
-      "url": "https://simonwillison.net/2026/Jun/15/datasette-apps/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-15T17:26:11.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-apps/releases/tag/0.1a2\">datasette-apps 0.1a2</a></p> <blockquote> <ul> <li>Custom network/CSP origins for apps are now guarded by a new <code>apps-set-csp</code> permission, with an optional <code>allow"
-    },
-    {
-      "kind": "rss",
-      "title": "\"They screwed us\": Personality clashes sent Anthropic's models offline",
-      "url": "https://simonwillison.net/2026/Jun/15/axios-clashes-anthropics/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-15T14:57:33.000Z",
-      "summary": "<p><strong><a href=\"https://www.axios.com/2026/06/15/anthropic-white-house-fable-mythos\">\"They screwed us\": Personality clashes sent Anthropic&#x27;s models offline</a></strong></p> Lots of \"source familiar with the administration's thinking\" and \"source close to Anthropic\" in th"
-    },
-    {
-      "kind": "rss",
-      "title": "Import AI 461: \"Alignment is not on track\"; FrontierCode; and synthetic research interns",
-      "url": "https://importai.substack.com/p/import-ai-461-alignment-is-not-on",
-      "source": "Import AI (Jack Clark)",
-      "sourceId": "importai",
-      "category": "insights",
-      "publishedAt": "2026-06-15T11:30:53.000Z",
-      "summary": "Where are your agents right now?"
     }
   ]
 }

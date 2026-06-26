@@ -159,7 +159,21 @@
     "https://chat.z.ai/",
     "https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything",
     "https://huggingface.co/blog/is-it-agentic-enough",
-    "https://github.com/huggingface/blog/blob/main/is-it-agentic-enough.md"
+    "https://github.com/huggingface/blog/blob/main/is-it-agentic-enough.md",
+    "https://www.anthropic.com/news/introducing-claude-tag",
+    "https://claude.ai/",
+    "https://arxiv.org/abs/2603.12277",
+    "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+    "https://openai.com/index/patch-the-planet/",
+    "https://openai.com/index/patch-the-planet",
+    "https://openai.com/index/daybreak-securing-the-world/",
+    "https://openai.com/index/daybreak-securing-the-world",
+    "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+    "https://ai.google.dev/",
+    "https://openai.com/index/how-agents-are-transforming-work/",
+    "https://openai.com/index/how-agents-are-transforming-work",
+    "https://huggingface.co/blog/vllm-jobs",
+    "https://huggingface.co/docs/huggingface_hub/guides/jobs"
   ],
-  "lastIngest": "2026-06-22T00:00:00.000Z"
+  "lastIngest": "2026-06-26T00:00:00.000Z"
 }

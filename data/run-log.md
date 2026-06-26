@@ -1,5 +1,22 @@
 # Signal Run Log
 
+## 2026-06-26
+
+Shipped:
+
+- `2026-06-22-claude-tag-slack-agents` — Anthropic's Claude Tag beta is useful for teams considering shared Slack agents because the article focuses on channel scope, tools, memory, logs, and spend limits.
+- `2026-06-22-prompt-injection-role-confusion` — Simon Willison's coverage of "Prompt Injection as Role Confusion" gives readers a practical way to separate trusted instructions from untrusted content.
+- `2026-06-22-openai-patch-the-planet` — OpenAI's Patch the Planet and Daybreak work is framed as a concrete dependency-security checklist for everyday teams.
+- `2026-06-24-gemini-computer-use-flash` — Gemini 3.5 Flash computer use is current and practical when tested on a harmless public workflow with approval gates.
+- `2026-06-25-openai-agents-transform-work` — OpenAI's workplace-agent post is useful as a cross-role adoption signal, with a guide for turning one task into a bounded agent trial.
+- `2026-06-26-huggingface-vllm-jobs` — Hugging Face's vLLM Jobs guide gives readers a temporary open-model serving path, with explicit cost and cleanup cautions.
+
+Skipped:
+
+- Broadcom chip and standards/partnership posts — relevant industry signals, but weaker 5-30 minute reader actions than the selected items.
+- Omio/customer-story posts — useful case studies, but less broadly actionable for Signal's audience today.
+- Datasette, browser, ASR, NeMo, hybrid-token, and fine-tuning updates — worthwhile for developers or future deeper coverage, but narrower than this update's general-user picks.
+
 ## 2026-06-22
 
 Shipped:
