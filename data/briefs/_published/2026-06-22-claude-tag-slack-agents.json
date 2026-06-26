@@ -1,0 +1,45 @@
+{
+  "slug": "claude-tag-slack-agents",
+  "date": "2026-06-22",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Claude Tag brings shared AI agents into Slack"],
+  "summary": "Anthropic launched Claude Tag in beta for Claude Enterprise and Team customers, starting in Slack with channel-scoped memory, tools, logs, and spend limits.",
+  "tags": ["claude", "anthropic", "agents", "slack"],
+  "primary_source": {
+    "url": "https://www.anthropic.com/news/introducing-claude-tag",
+    "title": "Introducing Claude Tag",
+    "author": "Anthropic",
+    "publishedAt": "2026-06-23",
+    "key_facts": [
+      "Anthropic introduced Claude Tag as a beta for Claude Enterprise and Team customers.",
+      "Claude Tag starts in Slack, where users can tag @Claude in a channel and delegate tasks.",
+      "Admins can scope Claude's channel access, connected tools, memories, spend limits, and activity logs.",
+      "Anthropic says Claude Tag replaces the existing Claude in Slack app and offers a migration path for administrators."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://claude.ai/", "title": "Claude"}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["Claude Team or Enterprise access", "Slack admin or channel-owner access"],
+    "steps": [
+      {"instruction": "Pick one low-risk Slack channel where Claude can read context without seeing sensitive private data."},
+      {"instruction": "List the tools Claude should and should not access for that channel."},
+      {"instruction": "Set a spend limit and require logs before enabling Claude Tag for the broader team."},
+      {"instruction": "Test Claude in a private channel with one harmless task, such as summarizing a project thread."},
+      {"instruction": "Only expand access after someone reviews the output, the tool calls, and the channel scope."}
+    ]
+  },
+  "references": [
+    {"title": "Introducing Claude Tag", "url": "https://www.anthropic.com/news/introducing-claude-tag", "author": "Anthropic", "publishedAt": "2026-06-23"},
+    {"title": "Claude", "url": "https://claude.ai/", "author": "Anthropic"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [],
+  "assembled_at": "2026-06-26T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

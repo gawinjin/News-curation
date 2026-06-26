@@ -1,0 +1,51 @@
+---
+title: "Claude Tag brings shared AI agents into Slack"
+date: 2026-06-22
+category: model-releases
+tags: ["claude", "anthropic", "agents", "slack"]
+summary: "Anthropic launched Claude Tag in beta for Claude Enterprise and Team customers, starting in Slack with channel-scoped memory, tools, logs, and spend limits."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "Claude Team or Enterprise access"
+    - "Slack admin or channel-owner access"
+references:
+  - title: "Introducing Claude Tag"
+    url: "https://www.anthropic.com/news/introducing-claude-tag"
+    author: "Anthropic"
+    publishedAt: "2026-06-23"
+  - title: "Claude"
+    url: "https://claude.ai/"
+    author: "Anthropic"
+draft: false
+---
+
+## TL;DR
+
+Anthropic launched Claude Tag, a beta feature that lets teams tag @Claude inside Slack and delegate shared work. The important part is not just Slack access. It is channel-scoped memory, tool permissions, logs, and spend limits for a team AI agent.
+
+## What's New
+
+Claude Tag starts in Slack for Claude Enterprise and Team customers. A team can add Claude to selected channels, connect approved tools and data, then tag @Claude with tasks that it can break into steps and work on asynchronously.
+
+Anthropic says administrators can scope Claude's access by channel, keep memories separate between use cases, set token-spend limits, and inspect logs of what Claude did and who requested the work.
+
+Claude Tag replaces the older Claude in Slack app. Anthropic says eligible administrators can opt in through a migration window and test it in a private channel before wider rollout.
+
+## Why It Matters
+
+Workplace AI is moving from private chat windows into shared collaboration spaces. That changes the risk profile. A shared agent can help a whole team, but it can also see more context, remember more, and act with connected tools.
+
+The practical question is whether the team can govern it. Before giving Claude channel access, decide what it can read, what it can use, what it can spend, and who reviews the logs.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["Claude Team or Enterprise access","Slack admin or channel-owner access"]}>
+
+1. Pick one low-risk Slack channel where Claude can read context without seeing sensitive private data.
+2. List the tools Claude should and should not access for that channel.
+3. Set a spend limit and require logs before enabling Claude Tag for the broader team.
+4. Test Claude in a private channel with one harmless task, such as summarizing a project thread.
+5. Only expand access after someone reviews the output, the tool calls, and the channel scope.
+
+</PracticalGuide>
