@@ -1,0 +1,51 @@
+---
+title: "OpenAI's Patch the Planet focuses AI security on fixing, not just finding"
+date: 2026-06-22
+category: guides
+tags: ["openai", "security", "open-source", "codex"]
+summary: "OpenAI and Trail of Bits launched Patch the Planet to help open-source maintainers validate, patch, test, and disclose security fixes with human review."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "An open-source project you maintain or depend on"
+references:
+  - title: "Patch the Planet: a Daybreak initiative to support open source maintainers"
+    url: "https://openai.com/index/patch-the-planet/"
+    author: "OpenAI"
+    publishedAt: "2026-06-22"
+  - title: "Daybreak: Tools for securing every organization in the world"
+    url: "https://openai.com/index/daybreak-securing-the-world/"
+    author: "OpenAI"
+    publishedAt: "2026-06-22"
+draft: false
+---
+
+## TL;DR
+
+OpenAI launched Patch the Planet with Trail of Bits to help open-source maintainers move from vulnerability findings to reviewed fixes. The important signal is that AI security work is shifting from finding more issues to validating, patching, testing, and coordinating disclosure.
+
+## What's New
+
+Patch the Planet is part of OpenAI's Daybreak security effort. OpenAI says the program pairs AI-assisted security research with expert human review before findings reach maintainers.
+
+Initial participating projects include cURL, NATS Server, pyca/cryptography, Sigstore, aiohttp, Go, freenginx, Python, and python.org. OpenAI says participants receive ChatGPT Pro, conditional Codex Security access, and API credits for development and maintainer automation.
+
+The program is designed to reduce maintainer burden, not flood projects with raw AI reports. Security engineers validate issues, remove duplicates, reassess severity, help write patches and tests, and coordinate disclosure through each project's existing process.
+
+## Why It Matters
+
+AI can make vulnerability discovery faster. That is useful only if the fix path gets faster too. Otherwise maintainers face more reports, more false positives, and more pressure without more capacity.
+
+For readers, this is a dependency-health story. The open-source projects you rely on need disclosure processes, test coverage, review capacity, and support for safe patching, not just scanners that find more problems.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["An open-source project you maintain or depend on"]}>
+
+1. Pick one dependency or repository that matters to your work.
+2. Check whether it has a security policy, disclosure contact, and recent release activity.
+3. Look for open security advisories, stale dependency alerts, or unreviewed vulnerability reports.
+4. If you maintain the project, document how you want outside researchers to report and validate issues.
+5. If you only depend on it, decide whether you need a fallback, patch window, or funding/support path for that dependency.
+
+</PracticalGuide>

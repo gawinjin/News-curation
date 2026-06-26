@@ -1,0 +1,45 @@
+{
+  "slug": "openai-patch-the-planet",
+  "date": "2026-06-22",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["OpenAI's Patch the Planet focuses AI security on fixing, not just finding"],
+  "summary": "OpenAI and Trail of Bits launched Patch the Planet to help open-source maintainers validate, patch, test, and disclose security fixes with human review.",
+  "tags": ["openai", "security", "open-source", "codex"],
+  "primary_source": {
+    "url": "https://openai.com/index/patch-the-planet/",
+    "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+    "author": "OpenAI",
+    "publishedAt": "2026-06-22",
+    "key_facts": [
+      "OpenAI introduced Patch the Planet as a Daybreak initiative with Trail of Bits.",
+      "The initiative pairs AI-assisted security research with expert human review before findings reach maintainers.",
+      "Initial participants include cURL, NATS Server, pyca/cryptography, Sigstore, aiohttp, Go, freenginx, Python, and python.org.",
+      "Participating projects receive ChatGPT Pro, conditional Codex Security access, and API credits for development and maintainer workflows."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://openai.com/index/daybreak-securing-the-world/", "title": "Daybreak: Tools for securing every organization in the world"}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["An open-source project you maintain or depend on"],
+    "steps": [
+      {"instruction": "Pick one dependency or repository that matters to your work."},
+      {"instruction": "Check whether it has a security policy, disclosure contact, and recent release activity."},
+      {"instruction": "Look for open security advisories, stale dependency alerts, or unreviewed vulnerability reports."},
+      {"instruction": "If you maintain the project, document how you want outside researchers to report and validate issues."},
+      {"instruction": "If you only depend on it, decide whether you need a fallback, patch window, or funding/support path for that dependency."}
+    ]
+  },
+  "references": [
+    {"title": "Patch the Planet: a Daybreak initiative to support open source maintainers", "url": "https://openai.com/index/patch-the-planet/", "author": "OpenAI", "publishedAt": "2026-06-22"},
+    {"title": "Daybreak: Tools for securing every organization in the world", "url": "https://openai.com/index/daybreak-securing-the-world/", "author": "OpenAI", "publishedAt": "2026-06-22"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [],
+  "assembled_at": "2026-06-26T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
