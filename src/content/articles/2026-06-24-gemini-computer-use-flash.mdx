@@ -1,0 +1,51 @@
+---
+title: "Gemini 3.5 Flash now has built-in computer use"
+date: 2026-06-24
+category: model-releases
+tags: ["google", "gemini", "agents", "computer-use"]
+summary: "Google made computer use a built-in Gemini 3.5 Flash capability for agents that operate across browser, mobile, and desktop environments."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "Gemini API or enterprise-agent access"
+    - "A harmless browser task to test"
+references:
+  - title: "Introducing computer use in Gemini 3.5 Flash"
+    url: "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/"
+    author: "Google DeepMind"
+    publishedAt: "2026-06-24"
+  - title: "Google AI for Developers"
+    url: "https://ai.google.dev/"
+    author: "Google"
+draft: false
+---
+
+## TL;DR
+
+Google made computer use a built-in capability in Gemini 3.5 Flash. That means developers can build agents that see, reason, and take action across browser, mobile, and desktop environments using the main Flash model, rather than a separate computer-use-only model.
+
+## What's New
+
+Google says computer use is now integrated into Gemini 3.5 Flash, after previously being available as a standalone Gemini 2.5 computer-use model. The goal is to help agents operate across software environments for tasks such as testing, workflow automation, and knowledge work.
+
+Developers can access the capability through the Gemini API and the Gemini Enterprise Agent Platform. Google also points to a demo environment, reference implementation, and documentation for teams that want to start building.
+
+The safety section matters. Google says optional enterprise safeguards can require confirmation for sensitive or irreversible actions and stop tasks when indirect prompt injection is detected.
+
+## Why It Matters
+
+Computer-use agents are more concrete than chatbots. They can click, type, inspect screens, and move between tools. That makes them useful for repetitive work and dangerous when permissions are too broad.
+
+The first question should not be "Can it do the task?" It should be "Can it do a harmless version of the task while showing the steps and stopping before risky actions?"
+
+<PracticalGuide timeToTry="15 min" prerequisites={["Gemini API or enterprise-agent access","A harmless browser task to test"]}>
+
+1. Choose a safe task that uses public information, such as checking a website for broken navigation.
+2. Do not connect accounts, payments, production tools, or private data during the first test.
+3. Run the task in the demo, API, or enterprise environment and watch the proposed steps.
+4. Require confirmation for any sensitive or irreversible action before trying real work.
+5. Review the trace for prompt-injection warnings, unexpected clicks, or unnecessary tool use.
+
+</PracticalGuide>
