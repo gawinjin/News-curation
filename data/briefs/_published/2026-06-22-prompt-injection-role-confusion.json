@@ -1,0 +1,45 @@
+{
+  "slug": "prompt-injection-role-confusion",
+  "date": "2026-06-22",
+  "category": "research",
+  "audience": "general",
+  "title_candidates": ["Prompt injection is not just bad instructions - it is role confusion"],
+  "summary": "A new ICML paper argues that prompt injection works because models can treat hostile text as if it came from a trusted role.",
+  "tags": ["prompt-injection", "agents", "security", "research"],
+  "primary_source": {
+    "url": "https://arxiv.org/abs/2603.12277",
+    "title": "Prompt Injection as Role Confusion",
+    "author": "Charles Ye, Jasmine Cui, and Dylan Hadfield-Menell",
+    "publishedAt": "2026-05-29",
+    "key_facts": [
+      "The paper argues that prompt injection comes from role confusion inside language models.",
+      "The authors test cases where untrusted text imitates roles such as user, tool, assistant, or reasoning text.",
+      "They report that the amount of role confusion can predict attack success before generation starts.",
+      "The paper was accepted to ICML 2026 and has been highlighted by Simon Willison as a useful explanation of prompt injection."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything", "title": "Prompt Injection as Role Confusion"}
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["Any AI workflow that reads web pages, emails, documents, or tool output"],
+    "steps": [
+      {"instruction": "List every place where your agent reads untrusted text, such as web pages, tickets, emails, PDFs, or code comments."},
+      {"instruction": "For each source, ask whether the agent could mistake that text for an instruction."},
+      {"instruction": "Move permissions out of the prompt and into code, product settings, or human approval gates."},
+      {"instruction": "Test with a harmless fake instruction inside a document and confirm the agent ignores it."},
+      {"instruction": "Do not let an agent with private data browse untrusted text and send messages or run code without approval."}
+    ]
+  },
+  "references": [
+    {"title": "Prompt Injection as Role Confusion", "url": "https://arxiv.org/abs/2603.12277", "author": "Charles Ye, Jasmine Cui, and Dylan Hadfield-Menell", "publishedAt": "2026-05-29"},
+    {"title": "Prompt Injection as Role Confusion", "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything", "author": "Simon Willison", "publishedAt": "2026-06-22"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [],
+  "assembled_at": "2026-06-26T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

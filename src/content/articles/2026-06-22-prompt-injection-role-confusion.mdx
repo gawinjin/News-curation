@@ -1,0 +1,51 @@
+---
+title: "Prompt injection is not just bad instructions - it is role confusion"
+date: 2026-06-22
+category: research
+tags: ["prompt-injection", "agents", "security", "research"]
+summary: "A new ICML paper argues that prompt injection works because models can treat hostile text as if it came from a trusted role."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "Any AI workflow that reads web pages, emails, documents, or tool output"
+references:
+  - title: "Prompt Injection as Role Confusion"
+    url: "https://arxiv.org/abs/2603.12277"
+    author: "Charles Ye, Jasmine Cui, and Dylan Hadfield-Menell"
+    publishedAt: "2026-05-29"
+  - title: "Prompt Injection as Role Confusion"
+    url: "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything"
+    author: "Simon Willison"
+    publishedAt: "2026-06-22"
+draft: false
+---
+
+## TL;DR
+
+A new paper explains prompt injection as role confusion: models can treat hostile text as if it came from a trusted role. For normal users, the takeaway is simple. Do not rely on prompt wording alone to protect agents that read untrusted content and can take actions.
+
+## What's New
+
+Prompt Injection as Role Confusion was accepted to ICML 2026 and highlighted this week by Simon Willison. The paper studies why models still follow malicious instructions hidden in web pages, documents, or tool outputs.
+
+The authors argue that models do not only follow formal tags like user, tool, assistant, or system. They can also infer authority from how text sounds. If untrusted text imitates a trusted role, the model may represent it as more authoritative than its source should allow.
+
+The paper reports that this internal confusion can predict attack success before the model generates its answer. That makes prompt injection less like a random trick and more like a measurable failure mode.
+
+## Why It Matters
+
+Agents are only as safe as the boundary between trusted instructions and untrusted content. If an agent reads a web page and that page tells it to leak data, the model may not reliably separate page content from instructions.
+
+The fix is not a magic prompt. Move sensitive permissions into code, product settings, tool policies, and human approval. Treat untrusted text as data even when it sounds like an instruction.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["Any AI workflow that reads web pages, emails, documents, or tool output"]}>
+
+1. List every place where your agent reads untrusted text, such as web pages, tickets, emails, PDFs, or code comments.
+2. For each source, ask whether the agent could mistake that text for an instruction.
+3. Move permissions out of the prompt and into code, product settings, or human approval gates.
+4. Test with a harmless fake instruction inside a document and confirm the agent ignores it.
+5. Do not let an agent with private data browse untrusted text and send messages or run code without approval.
+
+</PracticalGuide>
