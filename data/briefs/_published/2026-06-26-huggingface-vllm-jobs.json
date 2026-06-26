@@ -1,0 +1,45 @@
+{
+  "slug": "huggingface-vllm-jobs",
+  "date": "2026-06-26",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["Hugging Face Jobs makes temporary vLLM servers easier to try"],
+  "summary": "Hugging Face showed how to launch a temporary vLLM OpenAI-compatible server on HF Jobs, useful for quick model tests without long-lived infrastructure.",
+  "tags": ["huggingface", "vllm", "open-models", "inference"],
+  "primary_source": {
+    "url": "https://huggingface.co/blog/vllm-jobs",
+    "title": "Run a vLLM Server on HF Jobs in One Command",
+    "author": "Hugging Face",
+    "publishedAt": "2026-06-26",
+    "key_facts": [
+      "Hugging Face published a guide for running vLLM servers on HF Jobs.",
+      "The guide uses hf jobs run with the official vllm/vllm-openai image and an exposed port.",
+      "The resulting endpoint is OpenAI API compatible and requires an HF token for access.",
+      "Jobs are billed per second and should be stopped when testing is done."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://huggingface.co/docs/huggingface_hub/guides/jobs", "title": "HF Jobs documentation"}
+  ],
+  "practical_guide": {
+    "timeToTry": "20 min",
+    "prerequisites": ["A Hugging Face account", "HF CLI installed", "Comfort running paid GPU jobs"],
+    "steps": [
+      {"instruction": "Sign in with the HF CLI and check available hardware before launching anything."},
+      {"instruction": "Choose a small model first, such as the guide's Qwen3-4B example, and set a short timeout."},
+      {"instruction": "Launch the job, copy the exposed endpoint, and test the models endpoint with your HF token."},
+      {"instruction": "Send one short chat-completion request and confirm the output matches the selected model."},
+      {"instruction": "Cancel the job immediately after testing so you do not keep paying for idle GPU time."}
+    ]
+  },
+  "references": [
+    {"title": "Run a vLLM Server on HF Jobs in One Command", "url": "https://huggingface.co/blog/vllm-jobs", "author": "Hugging Face", "publishedAt": "2026-06-26"},
+    {"title": "HF Jobs documentation", "url": "https://huggingface.co/docs/huggingface_hub/guides/jobs", "author": "Hugging Face"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["This guide involves paid GPU jobs; article tells users to start small and cancel explicitly."],
+  "assembled_at": "2026-06-26T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

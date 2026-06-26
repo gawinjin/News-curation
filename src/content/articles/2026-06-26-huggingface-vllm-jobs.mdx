@@ -1,0 +1,52 @@
+---
+title: "Hugging Face Jobs makes temporary vLLM servers easier to try"
+date: 2026-06-26
+category: guides
+tags: ["huggingface", "vllm", "open-models", "inference"]
+summary: "Hugging Face showed how to launch a temporary vLLM OpenAI-compatible server on HF Jobs, useful for quick model tests without long-lived infrastructure."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "A Hugging Face account"
+    - "HF CLI installed"
+    - "Comfort running paid GPU jobs"
+references:
+  - title: "Run a vLLM Server on HF Jobs in One Command"
+    url: "https://huggingface.co/blog/vllm-jobs"
+    author: "Hugging Face"
+    publishedAt: "2026-06-26"
+  - title: "HF Jobs documentation"
+    url: "https://huggingface.co/docs/huggingface_hub/guides/jobs"
+    author: "Hugging Face"
+draft: false
+---
+
+## TL;DR
+
+Hugging Face published a guide for launching a temporary vLLM server on HF Jobs. It gives experimenters an OpenAI-compatible endpoint for open models without setting up long-lived infrastructure, but it uses paid GPU time, so cleanup matters.
+
+## What's New
+
+The guide uses `hf jobs run` with the official `vllm/vllm-openai` image, a selected GPU flavor, and an exposed port. The result is a temporary endpoint that speaks the OpenAI API format.
+
+Hugging Face shows how to query the server with a bearer token, check the `/v1/models` endpoint, and point Python or agent tooling at the exposed URL.
+
+The guide also covers bigger models, SSH debugging, tool-calling flags for agent use, and when to choose HF Jobs instead of managed Inference Endpoints.
+
+## Why It Matters
+
+Many open-model experiments fail before they start because serving the model is too much setup. Temporary jobs make it easier to test a model, run an eval, or try a private inference stack before committing to infrastructure.
+
+The tradeoff is cost and responsibility. Jobs are billed while they run, endpoints still need tokens, and a temporary server is not the same as a production deployment.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["A Hugging Face account","HF CLI installed","Comfort running paid GPU jobs"]}>
+
+1. Sign in with the HF CLI and check available hardware before launching anything.
+2. Choose a small model first, such as the guide's Qwen3-4B example, and set a short timeout.
+3. Launch the job, copy the exposed endpoint, and test the models endpoint with your HF token.
+4. Send one short chat-completion request and confirm the output matches the selected model.
+5. Cancel the job immediately after testing so you do not keep paying for idle GPU time.
+
+</PracticalGuide>
