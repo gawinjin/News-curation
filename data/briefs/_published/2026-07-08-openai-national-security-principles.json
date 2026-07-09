@@ -1,0 +1,46 @@
+{
+  "slug": "openai-national-security-principles",
+  "date": "2026-07-08",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": ["OpenAI publishes its national-security AI rules"],
+  "summary": "OpenAI published national-security principles for government partnerships, including red lines around surveillance, autonomous weapons direction, and high-stakes automated decisions.",
+  "tags": ["openai", "policy", "safety", "government"],
+  "primary_source": {
+    "url": "https://openai.com/index/government-national-security-partnerships/",
+    "title": "Our approach to government and national security partnerships",
+    "author": "OpenAI",
+    "publishedAt": "2026-07-08",
+    "key_facts": [
+      "OpenAI published National Security Principles for government and national-security partnerships.",
+      "The post says AI systems used in sensitive settings should reinforce democratic accountability, human judgment, and the rule of law.",
+      "OpenAI says its existing Department of War agreement includes restrictions on mass domestic surveillance, directing autonomous weapons systems, and high-stakes automated decisions.",
+      "OpenAI says it has Trusted Access for Cyber partnerships with several allied countries and EU institutions.",
+      "OpenAI says the highest-risk military uses of AI should be addressed through democratic and legislative processes, not by companies alone."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://openai.com/index/our-agreement-with-the-department-of-war/", "title": "Our agreement with the Department of War"}
+  ],
+  "practical_guide": {
+    "timeToTry": "20 min",
+    "prerequisites": ["A public-sector, vendor, school, or workplace AI policy to review"],
+    "steps": [
+      {"instruction": "Open OpenAI's principles and write down the three red-line areas it names."},
+      {"instruction": "Compare those red lines with any AI policy you use at work, school, or in a local organization."},
+      {"instruction": "Look for missing language on human approval, surveillance, autonomous action, and audit logs."},
+      {"instruction": "Ask your vendor or IT owner where model use is logged and who can approve sensitive deployments."},
+      {"instruction": "If the policy leaves high-stakes decisions to automation alone, flag it for legal, compliance, or leadership review."}
+    ]
+  },
+  "references": [
+    {"title": "Our approach to government and national security partnerships", "url": "https://openai.com/index/government-national-security-partnerships/", "author": "OpenAI", "publishedAt": "2026-07-08"},
+    {"title": "Our agreement with the Department of War", "url": "https://openai.com/index/our-agreement-with-the-department-of-war/", "author": "OpenAI"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Policy article; practical guide is a review checklist rather than a product walkthrough."],
+  "assembled_at": "2026-07-09T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
