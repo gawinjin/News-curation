@@ -1,0 +1,48 @@
+{
+  "slug": "openai-k12-ai-skills-jam",
+  "date": "2026-07-08",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["OpenAI is taking practical AI training to K-12 educators"],
+  "summary": "OpenAI Academy and the Walton Family Foundation are running hands-on AI Skills Jam sessions for K-12 educators across U.S. cities this summer.",
+  "tags": ["openai", "education", "chatgpt", "learning"],
+  "primary_source": {
+    "url": "https://openai.com/index/k-12-educators-practical-skills/",
+    "title": "Helping K-12 educators build practical AI skills",
+    "author": "OpenAI",
+    "publishedAt": "2026-07-08",
+    "key_facts": [
+      "OpenAI Academy is partnering with the Walton Family Foundation on AI Skills Jam sessions for K-12 educators.",
+      "The program is planned for more than 1,600 teachers, administrators, and district leaders in U.S. cities.",
+      "Sessions focus on hands-on classroom and school work, including lesson planning, communications, administrative tasks, and responsible adoption.",
+      "OpenAI points participants to OpenAI Academy as the free online platform for continuing after the in-person sessions.",
+      "The announcement cites Walton Family Foundation and Gallup research saying teachers who use AI weekly estimate saving 5.9 hours per week on average."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://academy.openai.com/", "title": "OpenAI Academy"},
+    {"url": "https://academy.openai.com/public/clubs/k-12-education-aacga", "title": "OpenAI Academy K-12 Education"}
+  ],
+  "practical_guide": {
+    "timeToTry": "20 min",
+    "prerequisites": ["A school-safe AI policy or district guidance", "An OpenAI Academy account if you want saved progress"],
+    "steps": [
+      {"instruction": "Check the OpenAI announcement for a nearby Skills Jam date or a district partner you recognize."},
+      {"instruction": "Open OpenAI Academy and search the K-12 Education area for educator-focused sessions."},
+      {"instruction": "Pick one low-risk task, such as drafting a parent email or turning existing notes into a lesson outline."},
+      {"instruction": "Remove student names, grades, health details, and private family information before using any AI tool."},
+      {"instruction": "Compare the AI draft against your district policy, then edit it before sending or sharing."}
+    ]
+  },
+  "references": [
+    {"title": "Helping K-12 educators build practical AI skills", "url": "https://openai.com/index/k-12-educators-practical-skills/", "author": "OpenAI", "publishedAt": "2026-07-08"},
+    {"title": "OpenAI Academy", "url": "https://academy.openai.com/", "author": "OpenAI"},
+    {"title": "OpenAI Academy K-12 Education", "url": "https://academy.openai.com/public/clubs/k-12-education-aacga", "author": "OpenAI"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Education use needs privacy discipline; article tells readers to remove student data and follow district policy."],
+  "assembled_at": "2026-07-09T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
