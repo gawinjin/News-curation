@@ -1,0 +1,46 @@
+{
+  "slug": "vllm-transformers-backend",
+  "date": "2026-07-08",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["Hugging Face makes more models fast in vLLM without custom ports"],
+  "summary": "Hugging Face says the transformers backend for vLLM now reaches native-speed inference for many architectures, making new model serving easier for teams using open models.",
+  "tags": ["huggingface", "vllm", "inference", "open-models"],
+  "primary_source": {
+    "url": "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
+    "title": "Native-speed vLLM transformers modeling backend",
+    "author": "Hugging Face",
+    "publishedAt": "2026-07-08",
+    "key_facts": [
+      "Hugging Face says the transformers modeling backend for vLLM is now as fast or faster than custom vLLM implementations for many LLM architectures.",
+      "The update lets model authors use transformers implementations for fast vLLM inference without writing a separate custom vLLM model implementation.",
+      "Hugging Face tested three Qwen3 models, including dense and mixture-of-experts cases.",
+      "The feature can be selected with the model implementation option for compatible models.",
+      "Models using linear attention and custom code living only in a Hub repo may not work yet."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://docs.vllm.ai/en/latest/models/supported_models.html", "title": "vLLM supported models"}
+  ],
+  "practical_guide": {
+    "timeToTry": "20 min",
+    "prerequisites": ["Comfort using Python environments", "A machine or cloud runtime that can run vLLM", "A small test model"],
+    "steps": [
+      {"instruction": "Pick a small public model you already know how to serve, such as a small Qwen model."},
+      {"instruction": "Check the vLLM supported-models page before spending GPU time."},
+      {"instruction": "Run the model once with your current serving path and save simple latency notes."},
+      {"instruction": "Try the transformers backend option on the same prompt set and compare whether quality and speed stay acceptable."},
+      {"instruction": "Do not switch production traffic until you have tested your exact model, context length, tools, and hardware."}
+    ]
+  },
+  "references": [
+    {"title": "Native-speed vLLM transformers modeling backend", "url": "https://huggingface.co/blog/native-speed-vllm-transformers-backend", "author": "Hugging Face", "publishedAt": "2026-07-08"},
+    {"title": "vLLM supported models", "url": "https://docs.vllm.ai/en/latest/models/supported_models.html", "author": "vLLM"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Developer-leaning article; kept because it materially lowers open-model serving friction."],
+  "assembled_at": "2026-07-09T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

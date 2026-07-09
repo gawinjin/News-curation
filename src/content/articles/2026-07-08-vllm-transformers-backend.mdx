@@ -1,0 +1,52 @@
+---
+title: "Hugging Face makes more models fast in vLLM without custom ports"
+date: 2026-07-08
+category: guides
+tags: ["huggingface", "vllm", "inference", "open-models"]
+summary: "Hugging Face says the transformers backend for vLLM now reaches native-speed inference for many architectures, making new model serving easier for teams using open models."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "Comfort using Python environments"
+    - "A machine or cloud runtime that can run vLLM"
+    - "A small test model"
+references:
+  - title: "Native-speed vLLM transformers modeling backend"
+    url: "https://huggingface.co/blog/native-speed-vllm-transformers-backend"
+    author: "Hugging Face"
+    publishedAt: "2026-07-08"
+  - title: "vLLM supported models"
+    url: "https://docs.vllm.ai/en/latest/models/supported_models.html"
+    author: "vLLM"
+draft: false
+---
+
+## TL;DR
+
+Hugging Face says the transformers backend for vLLM can now match or beat custom vLLM model implementations for many architectures. That matters because new open models can get fast serving without every model author writing a separate custom port.
+
+## What's New
+
+The transformers library is where many model authors first implement their architectures. vLLM is one of the common ways teams serve those models quickly.
+
+Hugging Face says the updated transformers backend for vLLM can apply runtime optimizations and reach native-style speed for compatible models. The post tests several Qwen3 cases, including dense and mixture-of-experts models.
+
+There are limits. The post says models using linear attention are not supported yet, and custom model code living only in a Hub repo may not work cleanly.
+
+## Why It Matters
+
+Open models move fast, but serving them can lag behind. If a model needs a custom serving implementation before it is fast enough, many users never get to test it properly.
+
+This update lowers that friction for developers and AI teams. For everyone else, it means more open models may become usable sooner in hosted tools, internal apps, and local experiments.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["Comfort using Python environments","A machine or cloud runtime that can run vLLM","A small test model"]}>
+
+1. Pick a small public model you already know how to serve, such as a small Qwen model.
+2. Check the vLLM supported-models page before spending GPU time.
+3. Run the model once with your current serving path and save simple latency notes.
+4. Try the transformers backend option on the same prompt set and compare whether quality and speed stay acceptable.
+5. Do not switch production traffic until you have tested your exact model, context length, tools, and hardware.
+
+</PracticalGuide>
