@@ -181,7 +181,18 @@
     "https://academy.openai.com/public/clubs/k-12-education-aacga",
     "https://huggingface.co/blog/nvidia/open-data-for-agents",
     "https://huggingface.co/spaces/nvidia/nemotron-post-training-v3-prompt-atlas",
-    "https://huggingface.co/collections/nvidia/nemotron-post-training-v3"
+    "https://huggingface.co/collections/nvidia/nemotron-post-training-v3",
+    "https://openai.com/index/previewing-gpt-5-6-sol/",
+    "https://www.anthropic.com/news/claude-sonnet-5",
+    "https://www.anthropic.com/news/claude-science-ai-workbench",
+    "https://claude.com/science",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/",
+    "https://aistudio.google.com/",
+    "https://ai.google.dev/gemini-api/docs",
+    "https://openai.com/index/government-national-security-partnerships/",
+    "https://openai.com/index/our-agreement-with-the-department-of-war/",
+    "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
+    "https://docs.vllm.ai/en/latest/models/supported_models.html"
   ],
   "lastIngest": "2026-07-09T00:00:00.000Z"
 }

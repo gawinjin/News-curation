@@ -4,15 +4,21 @@
 
 Shipped:
 
-- `2026-07-08-gpt-live-chatgpt-voice` — OpenAI's GPT-Live rollout is high-signal for normal users because it changes the everyday ChatGPT Voice experience and has clear plan/workspace limitations.
-- `2026-07-08-openai-k12-ai-skills-jam` — OpenAI Academy's K-12 educator Skills Jam is practical education news with a concrete privacy-first try-it path.
-- `2026-07-08-open-data-for-agents` — Hugging Face and NVIDIA's agent-data post gives readers a public atlas they can inspect before trusting agent claims.
+- `2026-06-26-gpt-5-6-sol-preview` - OpenAI's GPT-5.6 Sol preview is high-signal model news even though access starts as a limited partner preview.
+- `2026-06-30-claude-sonnet-5-agentic-default` - Sonnet 5 is broadly available and changes the default Claude experience for normal users.
+- `2026-06-30-claude-science-workbench` - Claude Science is a practical scientific workbench release with a time-sensitive July 15 project application window.
+- `2026-06-30-gemini-media-models` - Nano Banana 2 Lite and Gemini Omni Flash are concrete image/video model releases with consumer and developer paths.
+- `2026-07-08-gpt-live-chatgpt-voice` - OpenAI's GPT-Live rollout is high-signal for normal users because it changes the everyday ChatGPT Voice experience and has clear plan/workspace limitations.
+- `2026-07-08-openai-k12-ai-skills-jam` - OpenAI Academy's K-12 educator Skills Jam is practical education news with a concrete privacy-first try-it path.
+- `2026-07-08-open-data-for-agents` - Hugging Face and NVIDIA's agent-data post gives readers a public atlas they can inspect before trusting agent claims.
+- `2026-07-08-openai-national-security-principles` - OpenAI's national-security principles matter because they name explicit red lines readers can compare against AI policies.
+- `2026-07-08-vllm-transformers-backend` - Hugging Face's native-speed vLLM backend is developer-leaning, but it materially lowers open-model serving friction.
 
 Skipped:
 
-- OpenAI government and national-security principles — important policy signal, but weaker as a 5-30 minute general-user Practical Guide.
-- Anthropic Claude Code feature story — useful background, but less directly actionable than today's selected releases and public tools.
-- Hugging Face native-speed vLLM backend — strong developer update, but narrower than the open-data agent article for Signal's audience today.
+- Anthropic Claude Code feature story - useful background, but less directly actionable than today's selected releases and public tools.
+- Meta Watermelon internal-performance reporting - notable industry signal, but no public primary model release or reader-testable path yet.
+- Simon Willison quote/link posts from July 2-8 - useful for future voice coverage, but the selected product and policy releases were stronger today.
 
 ## 2026-06-26
 
