@@ -1,0 +1,43 @@
+{
+  "slug": "gpt-5-6-sol-preview",
+  "date": "2026-06-26",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["GPT-5.6 Sol preview shows where OpenAI is aiming next"],
+  "summary": "OpenAI previewed GPT-5.6 Sol, Terra, and Luna with stronger agent, coding, biology, and cyber capability, but access starts with a limited partner preview.",
+  "tags": ["openai", "models", "agents", "safety"],
+  "primary_source": {
+    "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+    "title": "Previewing GPT-5.6 Sol: a next-generation model",
+    "author": "OpenAI",
+    "publishedAt": "2026-06-26",
+    "key_facts": [
+      "OpenAI previewed the GPT-5.6 family: Sol as the flagship model, Terra as a balanced model, and Luna as a faster, cheaper model.",
+      "The release starts as a limited preview for trusted partners before broader ChatGPT, Codex, and API availability.",
+      "OpenAI says GPT-5.6 adds max reasoning effort and an ultra mode that can use subagents for complex work.",
+      "OpenAI highlights gains in coding, biology workflows, and cybersecurity, paired with a stronger safeguard stack.",
+      "API pricing is listed separately for Sol, Terra, and Luna, with prompt caching changes for GPT-5.6 and later models."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A ChatGPT, Codex, or OpenAI API account", "One task you already use AI for"],
+    "steps": [
+      {"instruction": "Open the OpenAI announcement and check whether your account has GPT-5.6 access yet."},
+      {"instruction": "If you do not have access, write down one existing workflow you want to retest when Sol, Terra, or Luna arrives."},
+      {"instruction": "Choose a task with a clear answer or review path, such as debugging a small project, summarizing a paper, or drafting a security checklist."},
+      {"instruction": "Save the same prompt and expected outcome so you can compare GPT-5.5 against GPT-5.6 later."},
+      {"instruction": "For work or sensitive data, wait for your organization's approved access path instead of pasting private material into a preview account."}
+    ]
+  },
+  "references": [
+    {"title": "Previewing GPT-5.6 Sol: a next-generation model", "url": "https://openai.com/index/previewing-gpt-5-6-sol/", "author": "OpenAI", "publishedAt": "2026-06-26"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Limited preview only; article frames this as readiness and access checking, not broad hands-on availability."],
+  "assembled_at": "2026-07-09T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
