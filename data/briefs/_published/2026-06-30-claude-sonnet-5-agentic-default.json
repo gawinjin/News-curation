@@ -1,0 +1,46 @@
+{
+  "slug": "claude-sonnet-5-agentic-default",
+  "date": "2026-06-30",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Claude Sonnet 5 becomes the everyday agentic Claude"],
+  "summary": "Anthropic released Claude Sonnet 5 across all plans, making a more agentic Sonnet model the default for Free and Pro users and available in Claude Code and the API.",
+  "tags": ["anthropic", "claude", "models", "agents"],
+  "primary_source": {
+    "url": "https://www.anthropic.com/news/claude-sonnet-5",
+    "title": "Introducing Claude Sonnet 5",
+    "author": "Anthropic",
+    "publishedAt": "2026-06-30",
+    "key_facts": [
+      "Anthropic released Claude Sonnet 5 across all plans.",
+      "Sonnet 5 is the default model for Claude Free and Pro users and is available to Max, Team, and Enterprise users.",
+      "Anthropic says Sonnet 5 improves agentic performance, including reasoning, tool use, coding, and knowledge work.",
+      "The model is also available in Claude Code and on the Claude Platform as claude-sonnet-5.",
+      "Introductory API pricing runs through August 31, 2026 before moving to standard pricing."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://platform.claude.com/docs/en/about-claude/models/overview", "title": "Claude models overview"}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A Claude account", "One task with a checkable result"],
+    "steps": [
+      {"instruction": "Open Claude and check the model picker or default model label for Sonnet 5."},
+      {"instruction": "Choose one bounded task that normally takes 20 to 40 minutes, such as summarizing a document or planning a small project."},
+      {"instruction": "Ask Sonnet 5 to make a plan first, then approve only the first step."},
+      {"instruction": "Compare its result against your source material or checklist instead of trusting the completion."},
+      {"instruction": "If you use Claude Code or the API, check pricing and effort settings before moving a repeated workflow to Sonnet 5."}
+    ]
+  },
+  "references": [
+    {"title": "Introducing Claude Sonnet 5", "url": "https://www.anthropic.com/news/claude-sonnet-5", "author": "Anthropic", "publishedAt": "2026-06-30"},
+    {"title": "Claude models overview", "url": "https://platform.claude.com/docs/en/about-claude/models/overview", "author": "Anthropic"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [],
+  "assembled_at": "2026-07-09T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
