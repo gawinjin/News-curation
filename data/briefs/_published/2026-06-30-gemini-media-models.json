@@ -1,0 +1,48 @@
+{
+  "slug": "gemini-media-models",
+  "date": "2026-06-30",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Google adds faster Gemini image and video models"],
+  "summary": "Google released Nano Banana 2 Lite for faster image generation and Gemini Omni Flash for video generation and conversational editing across AI Studio, the Gemini API, and consumer surfaces.",
+  "tags": ["google", "gemini", "images", "video"],
+  "primary_source": {
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/",
+    "title": "Start building with Nano Banana 2 Lite and Gemini Omni Flash",
+    "author": "Google DeepMind",
+    "publishedAt": "2026-06-30",
+    "key_facts": [
+      "Google released Nano Banana 2 Lite as its fastest and most cost-efficient Gemini image model in the Nano Banana family.",
+      "Nano Banana 2 Lite is available in Google AI Studio, the Gemini API, and Gemini Enterprise Agent Platform, and is rolling out to consumer surfaces.",
+      "Google says Nano Banana 2 Lite produces text-to-image outputs in about four seconds and costs $0.034 per 1K-resolution image.",
+      "Google also made Gemini Omni Flash available for developers through Google AI Studio, the Gemini API, and the enterprise platform.",
+      "Gemini Omni Flash supports video generation and conversational editing from text, image, and video inputs."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://aistudio.google.com/", "title": "Google AI Studio"},
+    {"url": "https://ai.google.dev/gemini-api/docs", "title": "Gemini API docs"}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A Google account", "Google AI Studio access"],
+    "steps": [
+      {"instruction": "Open Google AI Studio and look for Nano Banana 2 Lite or Gemini image/video model options."},
+      {"instruction": "Start with a harmless image prompt, such as a product moodboard or classroom poster draft."},
+      {"instruction": "Check whether the output has readable text, consistent characters, and no unexpected brand or person likeness."},
+      {"instruction": "If Omni Flash is available in your account, try one short video-editing request using non-private footage."},
+      {"instruction": "Save the prompt and result so you can compare quality, latency, and cost before using it in a repeated workflow."}
+    ]
+  },
+  "references": [
+    {"title": "Start building with Nano Banana 2 Lite and Gemini Omni Flash", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/", "author": "Google DeepMind", "publishedAt": "2026-06-30"},
+    {"title": "Google AI Studio", "url": "https://aistudio.google.com/", "author": "Google"},
+    {"title": "Gemini API docs", "url": "https://ai.google.dev/gemini-api/docs", "author": "Google"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Consumer rollout may vary by account and product surface."],
+  "assembled_at": "2026-07-09T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
