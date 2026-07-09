@@ -1,0 +1,48 @@
+{
+  "slug": "open-data-for-agents",
+  "date": "2026-07-08",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": ["Hugging Face and NVIDIA put agent data under a microscope"],
+  "summary": "A new Hugging Face/NVIDIA post argues that open data matters for agents, and points readers to a visual atlas for inspecting Nemotron post-training prompts.",
+  "tags": ["huggingface", "nvidia", "agents", "open-data"],
+  "primary_source": {
+    "url": "https://huggingface.co/blog/nvidia/open-data-for-agents",
+    "title": "Data for Agents",
+    "author": "Hugging Face and NVIDIA",
+    "publishedAt": "2026-07-08",
+    "key_facts": [
+      "Hugging Face and NVIDIA published a post explaining why agent behavior depends on data, not just model weights.",
+      "The post argues that agents need data covering tool-use failures, multi-step workflows, retrieval, safety, user simulation, and recovery from broken calls.",
+      "NVIDIA says the Nemotron open data effort includes trillions of pre-training tokens and millions of post-training samples.",
+      "The post links to a Nemotron Post-Training v3 Prompt Atlas that lets people inspect prompt samples by domain, dataset, pipeline stage, and tool use.",
+      "The authors warn that synthetic data still needs lineage, grounding, review, and clear documentation."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://huggingface.co/spaces/nvidia/nemotron-post-training-v3-prompt-atlas", "title": "Nemotron Post-Training v3 Prompt Atlas"},
+    {"url": "https://huggingface.co/collections/nvidia/nemotron-post-training-v3", "title": "Nemotron Post-Training v3 collection"}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A browser", "Optional Hugging Face account for deeper dataset access"],
+    "steps": [
+      {"instruction": "Open the Nemotron Prompt Atlas and wait for the visualization to load."},
+      {"instruction": "Search for a domain you care about, such as coding, safety, math, or tool use."},
+      {"instruction": "Open several nearby samples and note whether they look like real tasks, synthetic tasks, or mixed traces."},
+      {"instruction": "Write down one behavior you would want an agent to handle, then check whether the samples cover success and failure cases."},
+      {"instruction": "Use that checklist when judging any agent demo: ask what data shaped the behavior, not just what benchmark it claims."}
+    ]
+  },
+  "references": [
+    {"title": "Data for Agents", "url": "https://huggingface.co/blog/nvidia/open-data-for-agents", "author": "Hugging Face and NVIDIA", "publishedAt": "2026-07-08"},
+    {"title": "Nemotron Post-Training v3 Prompt Atlas", "url": "https://huggingface.co/spaces/nvidia/nemotron-post-training-v3-prompt-atlas", "author": "NVIDIA"},
+    {"title": "Nemotron Post-Training v3 collection", "url": "https://huggingface.co/collections/nvidia/nemotron-post-training-v3", "author": "NVIDIA"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["This is more conceptual than consumer-product news, so the guide focuses on inspecting the public atlas."],
+  "assembled_at": "2026-07-09T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}

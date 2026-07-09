@@ -1,0 +1,54 @@
+---
+title: "Hugging Face and NVIDIA put agent data under a microscope"
+date: 2026-07-08
+category: insights
+tags: ["huggingface", "nvidia", "agents", "open-data"]
+summary: "A new Hugging Face/NVIDIA post argues that open data matters for agents, and points readers to a visual atlas for inspecting Nemotron post-training prompts."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A browser"
+    - "Optional Hugging Face account for deeper dataset access"
+references:
+  - title: "Data for Agents"
+    url: "https://huggingface.co/blog/nvidia/open-data-for-agents"
+    author: "Hugging Face and NVIDIA"
+    publishedAt: "2026-07-08"
+  - title: "Nemotron Post-Training v3 Prompt Atlas"
+    url: "https://huggingface.co/spaces/nvidia/nemotron-post-training-v3-prompt-atlas"
+    author: "NVIDIA"
+  - title: "Nemotron Post-Training v3 collection"
+    url: "https://huggingface.co/collections/nvidia/nemotron-post-training-v3"
+    author: "NVIDIA"
+draft: false
+---
+
+## TL;DR
+
+Hugging Face and NVIDIA published a practical argument for open agent data. The short version: if an AI agent calls tools, recovers from mistakes, and follows workflows, you should care about the examples that taught it those habits.
+
+## What's New
+
+The post says agent quality is not only a model-weights problem. It depends on data for tool-use failures, multi-step workflows, retrieval, safety, simulated users, and recovery from broken calls.
+
+NVIDIA says its Nemotron open data work includes trillions of pre-training tokens and millions of post-training samples. The point is transparency: people should be able to inspect more of the data and recipes behind agent behavior.
+
+The most useful public artifact is the Nemotron Post-Training v3 Prompt Atlas. It maps prompt samples visually so readers can search by domain, dataset, pipeline stage, and tool use instead of trusting a flat dataset name.
+
+## Why It Matters
+
+Agent demos can look impressive while hiding the boring question that matters: what kinds of situations did the system practice? If the data only covers clean success cases, the agent may fail when a tool breaks, a user is vague, or a workflow changes.
+
+Open data does not make a model safe by itself. It does make the claims easier to interrogate. For anyone choosing an AI tool, that is a useful habit: ask what behavior was trained, tested, and documented.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A browser","Optional Hugging Face account for deeper dataset access"]}>
+
+1. Open the Nemotron Prompt Atlas and wait for the visualization to load.
+2. Search for a domain you care about, such as coding, safety, math, or tool use.
+3. Open several nearby samples and note whether they look like real tasks, synthetic tasks, or mixed traces.
+4. Write down one behavior you would want an agent to handle, then check whether the samples cover success and failure cases.
+5. Use that checklist when judging any agent demo: ask what data shaped the behavior, not just what benchmark it claims.
+
+</PracticalGuide>
