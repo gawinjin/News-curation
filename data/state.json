@@ -173,7 +173,15 @@
     "https://openai.com/index/how-agents-are-transforming-work/",
     "https://openai.com/index/how-agents-are-transforming-work",
     "https://huggingface.co/blog/vllm-jobs",
-    "https://huggingface.co/docs/huggingface_hub/guides/jobs"
+    "https://huggingface.co/docs/huggingface_hub/guides/jobs",
+    "https://openai.com/index/introducing-gpt-live/",
+    "https://help.openai.com/en/articles/20001274",
+    "https://openai.com/index/k-12-educators-practical-skills/",
+    "https://academy.openai.com/",
+    "https://academy.openai.com/public/clubs/k-12-education-aacga",
+    "https://huggingface.co/blog/nvidia/open-data-for-agents",
+    "https://huggingface.co/spaces/nvidia/nemotron-post-training-v3-prompt-atlas",
+    "https://huggingface.co/collections/nvidia/nemotron-post-training-v3"
   ],
-  "lastIngest": "2026-06-26T00:00:00.000Z"
+  "lastIngest": "2026-07-09T00:00:00.000Z"
 }

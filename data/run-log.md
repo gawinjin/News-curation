@@ -1,5 +1,19 @@
 # Signal Run Log
 
+## 2026-07-09
+
+Shipped:
+
+- `2026-07-08-gpt-live-chatgpt-voice` — OpenAI's GPT-Live rollout is high-signal for normal users because it changes the everyday ChatGPT Voice experience and has clear plan/workspace limitations.
+- `2026-07-08-openai-k12-ai-skills-jam` — OpenAI Academy's K-12 educator Skills Jam is practical education news with a concrete privacy-first try-it path.
+- `2026-07-08-open-data-for-agents` — Hugging Face and NVIDIA's agent-data post gives readers a public atlas they can inspect before trusting agent claims.
+
+Skipped:
+
+- OpenAI government and national-security principles — important policy signal, but weaker as a 5-30 minute general-user Practical Guide.
+- Anthropic Claude Code feature story — useful background, but less directly actionable than today's selected releases and public tools.
+- Hugging Face native-speed vLLM backend — strong developer update, but narrower than the open-data agent article for Signal's audience today.
+
 ## 2026-06-26
 
 Shipped:
