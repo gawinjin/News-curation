@@ -1,0 +1,49 @@
+{
+  "slug": "gpt-live-chatgpt-voice",
+  "date": "2026-07-08",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["GPT-Live makes ChatGPT Voice feel less turn-based"],
+  "summary": "OpenAI started rolling out GPT-Live in ChatGPT Voice, with full-duplex conversation, better listening, visual answers, and different access by plan.",
+  "tags": ["openai", "chatgpt", "voice", "models"],
+  "primary_source": {
+    "url": "https://openai.com/index/introducing-gpt-live/",
+    "title": "Introducing GPT-Live",
+    "author": "OpenAI",
+    "publishedAt": "2026-07-08",
+    "key_facts": [
+      "OpenAI introduced GPT-Live as a new generation of voice models for ChatGPT Voice.",
+      "GPT-Live is built for full-duplex interaction, so it can listen and speak at the same time instead of waiting for rigid turns.",
+      "The model can delegate harder questions to a frontier model in the background while keeping the conversation moving.",
+      "GPT-Live is rolling out globally across ChatGPT on iOS, Android, and the web, with GPT-Live-1 for paid consumer plans and GPT-Live-1 mini for Free users.",
+      "The help page says Live does not initially support video, screen sharing, connected apps, or plugins, and Business, Enterprise, and Edu workspaces do not get Live at launch."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://help.openai.com/en/articles/20001274",
+      "title": "ChatGPT Voice"
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A logged-in ChatGPT account", "ChatGPT mobile app or ChatGPT.com", "Microphone access enabled"],
+    "steps": [
+      {"instruction": "Open ChatGPT on mobile or web and tap the Voice button in a normal chat."},
+      {"instruction": "If your account shows voice choices, open Settings, then Voice, and pick Live."},
+      {"instruction": "Ask one simple planning question, pause mid-sentence, then continue to see whether it waits instead of interrupting."},
+      {"instruction": "Ask one date-sensitive question and verify the answer with the exact date and your time zone."},
+      {"instruction": "If Live is not available, check whether you are in a Business, Enterprise, or Edu workspace, or wait for the rollout to reach your account."}
+    ]
+  },
+  "references": [
+    {"title": "Introducing GPT-Live", "url": "https://openai.com/index/introducing-gpt-live/", "author": "OpenAI", "publishedAt": "2026-07-08"},
+    {"title": "ChatGPT Voice", "url": "https://help.openai.com/en/articles/20001274", "author": "OpenAI"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Rollout availability varies by plan, region, app version, and workspace type."],
+  "assembled_at": "2026-07-09T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
