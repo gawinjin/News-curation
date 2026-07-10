@@ -1,0 +1,48 @@
+---
+title: "GitHub Copilot can now introduce an unfamiliar repository"
+date: 2026-07-09
+category: guides
+tags: ["github", "copilot", "open-source", "workflow"]
+summary: "A new Copilot shortcut summarizes a repository's purpose, technologies, and contribution guidance directly on github.com."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A GitHub account with any Copilot plan"
+    - "A public repository you have not contributed to"
+references:
+  - title: "Ask Copilot for a repository overview"
+    url: "https://github.blog/changelog/2026-07-09-ask-copilot-for-a-repository-overview/"
+    author: "GitHub"
+    publishedAt: "2026-07-09"
+draft: false
+---
+
+## TL;DR
+
+GitHub Copilot can now generate a quick introduction to an unfamiliar repository on github.com. It summarizes the project's purpose, main technologies, and contribution guidance, and the feature is available across all Copilot plans.
+
+## What's New
+
+When you open a repository you have not contributed to, GitHub may offer a new "Give me a high-level overview" action. Copilot reads repository context and returns a summary of what the project does, what it uses, and how people can contribute.
+
+You can call the same feature from the Copilot icon in GitHub's navigation. Related shortcuts can explain how to contribute or summarize recent changes. If a project lacks a README, Copilot can draft an overview from the files it finds.
+
+The feature is available to every GitHub Copilot plan. Its summary is generated rather than maintained by the project, so it should be treated as an orientation aid, not the final authority on setup, security, or contribution rules.
+
+## Why It Matters
+
+Opening an unfamiliar repository can mean hunting through a README, package files, folders, and contribution notes before you know whether the project is relevant. A good overview can shorten that first pass.
+
+The risk is false confidence. Generated summaries can miss a license, stale instructions, or an unusual build step. Use the overview to decide what to inspect next, then verify it against the actual repository files.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A GitHub account with any Copilot plan","A public repository you have not contributed to"]}>
+
+1. Open a public GitHub repository that is new to you.
+2. Select "Give me a high-level overview" if the prompt appears, or open the Copilot icon and ask for a repository overview.
+3. Write down its claims about the project's purpose, main language, setup, and contribution process.
+4. Check those claims against README, LICENSE, package or dependency files, and CONTRIBUTING.
+5. Ask Copilot one follow-up about the biggest mismatch you found, then rely on the repository file rather than the generated answer.
+
+</PracticalGuide>

@@ -1,0 +1,42 @@
+{
+  "slug": "github-copilot-repository-overview",
+  "date": "2026-07-09",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["GitHub Copilot can now introduce an unfamiliar repository"],
+  "summary": "A new Copilot shortcut summarizes a repository's purpose, technologies, and contribution guidance directly on github.com.",
+  "tags": ["github", "copilot", "open-source", "workflow"],
+  "primary_source": {
+    "url": "https://github.blog/changelog/2026-07-09-ask-copilot-for-a-repository-overview/",
+    "title": "Ask Copilot for a repository overview",
+    "author": "GitHub",
+    "publishedAt": "2026-07-09",
+    "key_facts": [
+      "Copilot can generate a high-level overview for an unfamiliar repository on github.com.",
+      "The overview covers purpose, technologies, and contribution guidance.",
+      "Related prompts can explain contribution paths or summarize recent changes.",
+      "The feature is available on all GitHub Copilot plans."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A GitHub account with any Copilot plan", "A public repository you have not contributed to"],
+    "steps": [
+      {"instruction": "Open a public GitHub repository that is new to you.", "verify_url": "https://github.com/"},
+      {"instruction": "Use the high-level overview prompt or ask Copilot for one."},
+      {"instruction": "Note its claims about purpose, language, setup, and contribution."},
+      {"instruction": "Check those claims against the repository files."},
+      {"instruction": "Ask one follow-up about any mismatch and trust the files."}
+    ]
+  },
+  "references": [
+    {"title": "Ask Copilot for a repository overview", "url": "https://github.blog/changelog/2026-07-09-ask-copilot-for-a-repository-overview/", "author": "GitHub", "publishedAt": "2026-07-09"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Generated repository summaries must be checked against project files."],
+  "assembled_at": "2026-07-10T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
