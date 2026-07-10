@@ -1,0 +1,45 @@
+{
+  "slug": "grok-4-5-release",
+  "date": "2026-07-08",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Grok 4.5 arrives with a free trial for demanding work"],
+  "summary": "SpaceXAI's Grok 4.5 targets coding, agent tasks, and office work, with access through Grok Build, Cursor, and the API.",
+  "tags": ["grok", "spacexai", "models", "coding"],
+  "primary_source": {
+    "url": "https://x.ai/news/grok-4-5",
+    "title": "Introducing Grok 4.5",
+    "author": "SpaceXAI",
+    "publishedAt": "2026-07-08",
+    "key_facts": [
+      "Grok 4.5 is intended for coding, agent tasks, knowledge work, and office documents.",
+      "It is available in Grok Build, Cursor, and the SpaceXAI API.",
+      "Launch pricing is $2 per million input tokens and $6 per million output tokens.",
+      "The release was not available in the European Union at launch."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://docs.x.ai/developers/grok-4-5", "title": "Grok 4.5 developer guide"}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A Grok Build or Cursor account", "A small task with a result you can inspect"],
+    "steps": [
+      {"instruction": "Open Grok Build or Cursor and select Grok 4.5.", "verify_url": "https://x.ai/cli"},
+      {"instruction": "Choose one small, reversible task with a known expected result."},
+      {"instruction": "Ask the model to complete the task and show how it checked its work."},
+      {"instruction": "Inspect formulas, links, and changed files yourself."},
+      {"instruction": "Compare its time and corrections with your normal model."}
+    ]
+  },
+  "references": [
+    {"title": "Introducing Grok 4.5", "url": "https://x.ai/news/grok-4-5", "author": "SpaceXAI", "publishedAt": "2026-07-08"},
+    {"title": "Grok 4.5 developer guide", "url": "https://docs.x.ai/developers/grok-4-5", "author": "SpaceXAI", "publishedAt": "2026-07-08"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Provider benchmark claims are not treated as independent results; access varies by region."],
+  "assembled_at": "2026-07-10T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
