@@ -1,0 +1,52 @@
+---
+title: "GitHub Copilot adds all three GPT-5.6 models"
+date: 2026-07-09
+category: guides
+tags: ["github", "copilot", "gpt-5-6", "coding"]
+summary: "GitHub Copilot is rolling out GPT-5.6 Sol, Terra, and Luna across its editors, website, mobile apps, CLI, and cloud agent."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A paid GitHub Copilot plan"
+    - "A Copilot surface with a model picker"
+references:
+  - title: "OpenAI's GPT-5.6 Sol, Terra, and Luna are now available in GitHub Copilot"
+    url: "https://github.blog/changelog/2026-07-09-openais-gpt-5-6-sol-terra-and-luna-are-now-available-in-github-copilot/"
+    author: "GitHub"
+    publishedAt: "2026-07-09"
+  - title: "GPT-5.6 Sol preview"
+    url: "https://openai.com/index/previewing-gpt-5-6-sol/"
+    author: "OpenAI"
+    publishedAt: "2026-06-26"
+draft: false
+---
+
+## TL;DR
+
+GitHub Copilot is rolling out OpenAI's GPT-5.6 family: Sol for difficult long-running work, Terra as the balanced choice, and Luna for smaller, faster jobs. Access depends on your Copilot plan and, for organizations, an administrator setting.
+
+## What's New
+
+All three GPT-5.6 variants are joining GitHub Copilot's model picker. They will appear across Visual Studio Code, Visual Studio, JetBrains, Xcode, Eclipse, Copilot CLI, github.com, GitHub Mobile, the Copilot app, and the cloud coding agent.
+
+Sol is limited to Pro+, Max, Business, and Enterprise plans. Terra and Luna are also available to regular Pro subscribers. Business and Enterprise administrators must enable the new model policy because it starts off by default.
+
+GitHub bills these models at the provider's list price through usage-based billing, and the rollout is gradual. If they do not appear immediately, the most likely causes are plan eligibility, organization policy, or rollout timing.
+
+## Why It Matters
+
+The three-model menu is useful only if you match cost and effort to the task. A heavyweight reasoning model is wasteful for a small rename, while a fast model may need too much correction on a difficult migration.
+
+A ten-minute comparison on the same harmless task can show whether the extra reasoning is worth it for your work. Keep the prompt and acceptance check identical so you compare the models rather than two different instructions.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A paid GitHub Copilot plan","A Copilot surface with a model picker"]}>
+
+1. Open Copilot Chat in your editor or on github.com and check the model picker for GPT-5.6 Terra and Luna.
+2. Choose a small file and ask Luna to explain one function, including one possible failure case.
+3. Repeat the identical prompt with Terra and compare accuracy, speed, and length.
+4. Use Sol only if your plan includes it and the task needs deeper repository-wide reasoning.
+5. Stop before accepting changes, inspect the diff, and run the project's existing checks yourself.
+
+</PracticalGuide>

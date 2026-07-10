@@ -1,0 +1,45 @@
+{
+  "slug": "gpt-5-6-github-copilot",
+  "date": "2026-07-09",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["GitHub Copilot adds all three GPT-5.6 models"],
+  "summary": "GitHub Copilot is rolling out GPT-5.6 Sol, Terra, and Luna across its editors, website, mobile apps, CLI, and cloud agent.",
+  "tags": ["github", "copilot", "gpt-5-6", "coding"],
+  "primary_source": {
+    "url": "https://github.blog/changelog/2026-07-09-openais-gpt-5-6-sol-terra-and-luna-are-now-available-in-github-copilot/",
+    "title": "OpenAI's GPT-5.6 Sol, Terra, and Luna are now available in GitHub Copilot",
+    "author": "GitHub",
+    "publishedAt": "2026-07-09",
+    "key_facts": [
+      "GitHub Copilot is adding GPT-5.6 Sol, Terra, and Luna to its model picker.",
+      "Sol requires Pro+, Max, Business, or Enterprise, while Terra and Luna also support Pro.",
+      "The models are rolling out across editors, github.com, mobile, CLI, and cloud agent surfaces.",
+      "Business and Enterprise administrators must enable the model policy."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://openai.com/index/previewing-gpt-5-6-sol/", "title": "GPT-5.6 Sol preview"}
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A paid GitHub Copilot plan", "A Copilot surface with a model picker"],
+    "steps": [
+      {"instruction": "Open Copilot Chat and check the model picker for GPT-5.6 Terra and Luna."},
+      {"instruction": "Ask Luna to explain one function and identify a failure case."},
+      {"instruction": "Repeat the identical prompt with Terra."},
+      {"instruction": "Use Sol only for a task that needs deeper repository-wide reasoning."},
+      {"instruction": "Inspect changes and run the project's checks before accepting them."}
+    ]
+  },
+  "references": [
+    {"title": "OpenAI's GPT-5.6 Sol, Terra, and Luna are now available in GitHub Copilot", "url": "https://github.blog/changelog/2026-07-09-openais-gpt-5-6-sol-terra-and-luna-are-now-available-in-github-copilot/", "author": "GitHub", "publishedAt": "2026-07-09"},
+    {"title": "GPT-5.6 Sol preview", "url": "https://openai.com/index/previewing-gpt-5-6-sol/", "author": "OpenAI", "publishedAt": "2026-06-26"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["The rollout is gradual and organization policies can block access."],
+  "assembled_at": "2026-07-10T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
