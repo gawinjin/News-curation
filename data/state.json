@@ -192,7 +192,15 @@
     "https://openai.com/index/government-national-security-partnerships/",
     "https://openai.com/index/our-agreement-with-the-department-of-war/",
     "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
-    "https://docs.vllm.ai/en/latest/models/supported_models.html"
+    "https://docs.vllm.ai/en/latest/models/supported_models.html",
+    "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+    "https://www.axios.com/2026/07/09/meta-ai-spark-model-update-developer",
+    "https://x.ai/news/grok-4-5",
+    "https://docs.x.ai/developers/grok-4-5",
+    "https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/",
+    "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/",
+    "https://github.blog/changelog/2026-07-09-openais-gpt-5-6-sol-terra-and-luna-are-now-available-in-github-copilot/",
+    "https://github.blog/changelog/2026-07-09-ask-copilot-for-a-repository-overview/"
   ],
-  "lastIngest": "2026-07-09T00:00:00.000Z"
+  "lastIngest": "2026-07-10T00:00:00.000Z"
 }

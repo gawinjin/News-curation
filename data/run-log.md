@@ -1,5 +1,21 @@
 # Signal Run Log
 
+## 2026-07-10
+
+Shipped:
+
+- `2026-07-09-meta-muse-spark-1-1` - Meta opened Muse Spark 1.1 to developers and made its improved reasoning path testable through Thinking mode in Meta AI.
+- `2026-07-08-grok-4-5-release` - Grok 4.5 is a current flagship release with a bounded free-trial path in Grok Build or Cursor.
+- `2026-07-07-meta-muse-image-video` - Muse Image is available to general users now, with practical editing tests and clear privacy and provenance caveats; Muse Video remains a preview.
+- `2026-07-09-gpt-5-6-github-copilot` - GitHub Copilot now exposes all three GPT-5.6 variants with plan and administrator limitations readers can check directly.
+- `2026-07-09-github-copilot-repository-overview` - Copilot's new repository overview is immediately testable and useful for checking unfamiliar open-source projects.
+
+Skipped:
+
+- Mistral Robostral Navigate - notable robotics research, but a meaningful hands-on test still requires specialist hardware or simulation setup.
+- GitHub organization and telemetry updates - current but aimed at enterprise administrators rather than Signal's general audience.
+- Meta Muse Video - previewed but not yet generally available, so it stays inside the Muse Image article rather than receiving a separate guide.
+
 ## 2026-07-09
 
 Shipped:
