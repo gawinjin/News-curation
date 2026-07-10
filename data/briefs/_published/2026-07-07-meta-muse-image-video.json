@@ -1,0 +1,45 @@
+{
+  "slug": "meta-muse-image-video",
+  "date": "2026-07-07",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Meta's Muse Image can search, edit, and check its own work"],
+  "summary": "Muse Image is live in Meta AI with search-assisted generation, multi-image editing, and an invisible Content Seal; Muse Video remains a preview.",
+  "tags": ["meta", "image-generation", "video", "watermarking"],
+  "primary_source": {
+    "url": "https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/",
+    "title": "Introducing Muse Image and Muse Video",
+    "author": "Meta Superintelligence Labs",
+    "publishedAt": "2026-07-07",
+    "key_facts": [
+      "Muse Image can generate, edit, and combine several reference images.",
+      "The model can use web search and code to support image generation.",
+      "Images made in Meta AI receive an invisible Content Seal provenance signal.",
+      "Muse Video was previewed but was not generally available at publication."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/", "title": "Introducing Muse Image"}
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A Meta AI account", "An image you own or have permission to edit"],
+    "steps": [
+      {"instruction": "Open Meta AI and start an image-generation chat.", "verify_url": "https://www.meta.ai/"},
+      {"instruction": "Create a simple poster with a title, one object, and two colors."},
+      {"instruction": "Change only the title while preserving the layout and colors."},
+      {"instruction": "Try one narrow edit on an image you own."},
+      {"instruction": "Inspect visual errors and label misleading contexts before sharing."}
+    ]
+  },
+  "references": [
+    {"title": "Introducing Muse Image and Muse Video", "url": "https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/", "author": "Meta Superintelligence Labs", "publishedAt": "2026-07-07"},
+    {"title": "Introducing Muse Image", "url": "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/", "author": "Meta", "publishedAt": "2026-07-07"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Product availability varies by country; Muse Video is preview-only."],
+  "assembled_at": "2026-07-10T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
