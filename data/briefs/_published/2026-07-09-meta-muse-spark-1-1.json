@@ -1,0 +1,48 @@
+{
+  "slug": "meta-muse-spark-1-1",
+  "date": "2026-07-09",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Meta opens Muse Spark 1.1 to developers"],
+  "summary": "Meta's Muse Spark 1.1 improves coding and longer agent tasks, powers Thinking mode in Meta AI, and is now available through a paid developer API.",
+  "tags": ["meta", "muse-spark", "models", "agents"],
+  "primary_source": {
+    "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+    "title": "Introducing Muse Spark 1.1",
+    "author": "Meta AI",
+    "publishedAt": "2026-07-09",
+    "key_facts": [
+      "Muse Spark 1.1 improves coding and longer agent-style tasks.",
+      "The model powers Thinking mode in the Meta AI app and website.",
+      "Meta opened developer access through its new Model API.",
+      "Muse Spark 1.1 is proprietary rather than an open-weight release."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://www.axios.com/2026/07/09/meta-ai-spark-model-update-developer",
+      "title": "Meta updates its Spark model, releases developer version"
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A Meta AI account", "Access to meta.ai in your region"],
+    "steps": [
+      {"instruction": "Open Meta AI and sign in.", "verify_url": "https://www.meta.ai/"},
+      {"instruction": "Look for Thinking mode in the model or response controls."},
+      {"instruction": "Give it a bounded planning task with a budget and dates."},
+      {"instruction": "Ask it to separate current web facts from assumptions."},
+      {"instruction": "Verify two factual details against the linked sources."}
+    ]
+  },
+  "references": [
+    {"title": "Introducing Muse Spark 1.1", "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/", "author": "Meta AI", "publishedAt": "2026-07-09"},
+    {"title": "Meta updates its Spark model, releases developer version", "url": "https://www.axios.com/2026/07/09/meta-ai-spark-model-update-developer", "author": "Axios", "publishedAt": "2026-07-09"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Thinking mode and API availability vary by region and account."],
+  "assembled_at": "2026-07-10T00:00:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
