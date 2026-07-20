@@ -1,0 +1,54 @@
+{
+  "slug": "chatgpt-work-desktop",
+  "date": "2026-07-09",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["ChatGPT Work turns the desktop app into a project workspace"],
+  "summary": "OpenAI's rebuilt desktop app adds a Work mode for longer projects, a built-in browser, scheduled tasks, and shareable Sites.",
+  "tags": ["chatgpt", "openai", "agents", "productivity"],
+  "primary_source": {
+    "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+    "title": "ChatGPT is now a partner for your most ambitious work",
+    "author": "OpenAI",
+    "publishedAt": "2026-07-09",
+    "key_facts": [
+      "Work handles longer projects across approved files and connected apps.",
+      "The rebuilt desktop app combines Chat, Work, and Codex.",
+      "Work can create documents, spreadsheets, presentations, and shareable Sites."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://openai.com/chatgpt-work/",
+      "title": "ChatGPT Work",
+      "key_facts": ["The product page explains Work's planning and project workflow."],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/20001275/",
+      "title": "ChatGPT Work release notes",
+      "key_facts": ["The release notes describe platform and plan availability."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["The latest ChatGPT desktop app", "A safe sample project"],
+    "steps": [
+      {"instruction": "Update the desktop app and open Work.", "verify_url": "https://openai.com/chatgpt-work/"},
+      {"instruction": "Give it a bounded project with exact outputs and source limits.", "verify_url": "https://help.openai.com/en/articles/20001275/"},
+      {"instruction": "Review its plan, permissions, factual claims, and files before sharing.", "verify_url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/"}
+    ]
+  },
+  "references": [
+    {"title": "ChatGPT is now a partner for your most ambitious work", "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/", "author": "OpenAI", "publishedAt": "2026-07-09"},
+    {"title": "ChatGPT Work", "url": "https://openai.com/chatgpt-work/", "author": "OpenAI", "publishedAt": "2026-07-09"},
+    {"title": "ChatGPT Work release notes", "url": "https://help.openai.com/en/articles/20001275/", "author": "OpenAI", "publishedAt": "2026-07-09"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Feature availability depends on plan and rollout stage.", "Users should restrict permissions and review external actions."],
+  "assembled_at": "2026-07-20T08:30:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
