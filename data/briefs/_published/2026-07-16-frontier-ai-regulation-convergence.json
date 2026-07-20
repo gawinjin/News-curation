@@ -1,0 +1,46 @@
+{
+  "slug": "frontier-ai-regulation-convergence",
+  "date": "2026-07-16",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": ["Frontier AI leaders converge on outside testing before release"],
+  "summary": "Leaders at Anthropic, OpenAI, and Google DeepMind now broadly support outside testing and shared standards for the most capable AI models, while disagreeing on who should enforce them.",
+  "tags": ["ai-policy", "safety", "anthropic", "openai", "deepmind"],
+  "primary_source": {
+    "url": "https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google",
+    "title": "Behind the Curtain: AI godfathers converge on regulations",
+    "author": "Jim VandeHei and Mike Allen",
+    "publishedAt": "2026-07-16",
+    "key_facts": [
+      "Axios identifies convergence around independent testing, coherent standards, and rules focused on frontier models.",
+      "The leaders differ over whether enforcement should resemble an aviation regulator, an industry-funded body, or international certification.",
+      "A complex certification regime could impose a larger relative burden on startups and open-model developers."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://demishassabis.substack.com/p/a-framework-for-frontier-ai-and-the-dawning-of-a-new-age", "title": "A Framework for Frontier AI and the Dawning of a New Age", "key_facts": ["Hassabis proposes a federally overseen public-private standards body and staged pre-release review."], "quote_candidates": []},
+    {"url": "https://darioamodei.com/post/policy-on-the-ai-exponential", "title": "Policy on the AI Exponential", "key_facts": ["Amodei proposes mandatory third-party tests and authority to block releases with unacceptable specified risks."], "quote_candidates": []},
+    {"url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action/", "title": "The US is advancing AI safety through state and federal action", "key_facts": ["OpenAI argues for national standards that can contribute to a wider international framework."], "quote_candidates": []}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["One model or provider", "Its model card or safety report"],
+    "steps": [
+      {"instruction": "Find the provider's official model card or safety report.", "verify_url": "https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google"},
+      {"instruction": "Check for independent evaluators, risk areas, thresholds, and incident reporting.", "verify_url": "https://demishassabis.substack.com/p/a-framework-for-frontier-ai-and-the-dawning-of-a-new-age"},
+      {"instruction": "Convert missing disclosures into limits on data, autonomy, and required human review.", "verify_url": "https://darioamodei.com/post/policy-on-the-ai-exponential"}
+    ]
+  },
+  "references": [
+    {"title": "Behind the Curtain: AI godfathers converge on regulations", "url": "https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google", "author": "Jim VandeHei and Mike Allen", "publishedAt": "2026-07-16"},
+    {"title": "A Framework for Frontier AI and the Dawning of a New Age", "url": "https://demishassabis.substack.com/p/a-framework-for-frontier-ai-and-the-dawning-of-a-new-age", "author": "Demis Hassabis", "publishedAt": "2026-07-14"},
+    {"title": "Policy on the AI Exponential", "url": "https://darioamodei.com/post/policy-on-the-ai-exponential", "author": "Dario Amodei", "publishedAt": "2026-06-01"},
+    {"title": "The US is advancing AI safety through state and federal action", "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action/", "author": "OpenAI", "publishedAt": "2026-07-15"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["The shared principles do not resolve who sets thresholds or enforces a release decision.", "Compliance costs may favor incumbent labs."],
+  "assembled_at": "2026-07-20T08:30:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
