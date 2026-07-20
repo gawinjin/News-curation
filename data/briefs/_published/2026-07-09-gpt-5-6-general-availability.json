@@ -1,0 +1,39 @@
+{
+  "slug": "gpt-5-6-general-availability",
+  "date": "2026-07-09",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["GPT-5.6 is generally available in three versions"],
+  "summary": "OpenAI's GPT-5.6 family is now generally available as Sol, Terra, and Luna, giving users clearer choices among capability, speed, and cost.",
+  "tags": ["openai", "gpt-5.6", "models", "chatgpt"],
+  "primary_source": {
+    "url": "https://openai.com/index/gpt-5-6/",
+    "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+    "author": "OpenAI",
+    "publishedAt": "2026-07-09",
+    "key_facts": [
+      "GPT-5.6 is generally available after an earlier limited preview.",
+      "Sol targets the hardest work, Terra balances quality and speed, and Luna targets economical high-volume use.",
+      "The family is available through ChatGPT and the API, subject to product and plan controls."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A ChatGPT account showing two GPT-5.6 options", "A task with a checkable answer"],
+    "steps": [
+      {"instruction": "Run one bounded task with two visible GPT-5.6 variants.", "verify_url": "https://openai.com/index/gpt-5-6/"},
+      {"instruction": "Compare errors, missed instructions, speed, and editing time.", "verify_url": "https://openai.com/index/gpt-5-6/"},
+      {"instruction": "Use the least expensive model that reliably meets the task's quality bar.", "verify_url": "https://openai.com/index/gpt-5-6/"}
+    ]
+  },
+  "references": [
+    {"title": "GPT-5.6: Frontier intelligence that scales with your ambition", "url": "https://openai.com/index/gpt-5-6/", "author": "OpenAI", "publishedAt": "2026-07-09"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Model visibility depends on plan, product, and rollout stage."],
+  "assembled_at": "2026-07-20T08:30:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
