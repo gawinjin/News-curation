@@ -1,0 +1,39 @@
+{
+  "slug": "useful-intelligence-per-dollar",
+  "date": "2026-07-17",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": ["OpenAI proposes measuring useful work instead of AI activity"],
+  "summary": "OpenAI's proposed AI scorecard focuses on successful work, full task cost, reliability, and value at scale rather than seats or token prices.",
+  "tags": ["openai", "ai-adoption", "productivity", "measurement"],
+  "primary_source": {
+    "url": "https://openai.com/index/a-scorecard-for-the-ai-age/",
+    "title": "A scorecard for the AI age",
+    "author": "OpenAI",
+    "publishedAt": "2026-07-17",
+    "key_facts": [
+      "OpenAI proposes measuring useful work completed per dollar instead of adoption or token price alone.",
+      "The scorecard asks about work completed, full successful-task cost, reliability, and value as usage scales.",
+      "The full cost includes retries, human review, and correction rather than only model price."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [],
+  "practical_guide": {
+    "timeToTry": "20 min",
+    "prerequisites": ["One repeated AI-assisted task", "A timer and simple record"],
+    "steps": [
+      {"instruction": "Define a successful outcome for one repeated task.", "verify_url": "https://openai.com/index/a-scorecard-for-the-ai-age/"},
+      {"instruction": "Run three trials and record cost, time, retries, corrections, and success.", "verify_url": "https://openai.com/index/a-scorecard-for-the-ai-age/"},
+      {"instruction": "Compare cost and time per successful output with the previous process.", "verify_url": "https://openai.com/index/a-scorecard-for-the-ai-age/"}
+    ]
+  },
+  "references": [
+    {"title": "A scorecard for the AI age", "url": "https://openai.com/index/a-scorecard-for-the-ai-age/", "author": "OpenAI", "publishedAt": "2026-07-17"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["The framework is proposed by an AI vendor and should be applied with independent success criteria."],
+  "assembled_at": "2026-07-20T08:30:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
