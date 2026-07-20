@@ -1,0 +1,54 @@
+{
+  "slug": "thinking-machines-inkling",
+  "date": "2026-07-15",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Thinking Machines releases Inkling with open weights"],
+  "summary": "Inkling is a 975-billion-parameter multimodal model with downloadable weights, an Apache 2.0 license, and hardware needs far beyond a normal computer.",
+  "tags": ["inkling", "open-weights", "multimodal", "thinking-machines"],
+  "primary_source": {
+    "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+    "title": "Inkling: Our Open-Weights Model",
+    "author": "Thinking Machines Lab",
+    "publishedAt": "2026-07-15",
+    "key_facts": [
+      "Inkling has 975 billion total parameters and 41 billion active parameters.",
+      "It supports text, image, and audio inputs with text output and up to one million tokens of context.",
+      "Its weights are downloadable and hosted access is available through Tinker and third parties."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://thinkingmachines.ai/model-card/inkling/",
+      "title": "Inkling Model Card",
+      "key_facts": ["The model card lists Apache 2.0, a separate acceptable-use policy, and minimum GPU memory of 600 GB for NVFP4 or 2 TB for BF16."],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://thinkingmachines.ai/inkling/",
+      "title": "Inkling",
+      "key_facts": ["The product page links to hosted trials, the announcement, model card, and weights."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A browser", "A GPU-memory or cloud-budget estimate"],
+    "steps": [
+      {"instruction": "Review the license, acceptable-use policy, modalities, and context limits.", "verify_url": "https://thinkingmachines.ai/model-card/inkling/"},
+      {"instruction": "Compare the published hardware minimum with your available infrastructure.", "verify_url": "https://thinkingmachines.ai/model-card/inkling/"},
+      {"instruction": "Use a hosted path for a small verified test if local deployment is impractical.", "verify_url": "https://thinkingmachines.ai/inkling/"}
+    ]
+  },
+  "references": [
+    {"title": "Inkling: Our Open-Weights Model", "url": "https://thinkingmachines.ai/news/introducing-inkling/", "author": "Thinking Machines Lab", "publishedAt": "2026-07-15"},
+    {"title": "Inkling Model Card", "url": "https://thinkingmachines.ai/model-card/inkling/", "author": "Thinking Machines Lab", "publishedAt": "2026-07-15"},
+    {"title": "Inkling", "url": "https://thinkingmachines.ai/inkling/", "author": "Thinking Machines Lab", "publishedAt": "2026-07-15"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Open weights do not make this a consumer local model.", "The license and acceptable-use policy both apply."],
+  "assembled_at": "2026-07-20T08:30:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

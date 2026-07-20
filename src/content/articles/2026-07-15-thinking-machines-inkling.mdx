@@ -1,0 +1,56 @@
+---
+title: "Thinking Machines releases Inkling with open weights"
+date: 2026-07-15
+category: model-releases
+tags: ["inkling", "open-weights", "multimodal", "thinking-machines"]
+summary: "Inkling is a 975-billion-parameter multimodal model with downloadable weights, an Apache 2.0 license, and hardware needs far beyond a normal computer."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A web browser"
+    - "A rough inventory of your available GPU memory or cloud budget"
+references:
+  - title: "Inkling: Our Open-Weights Model"
+    url: "https://thinkingmachines.ai/news/introducing-inkling/"
+    author: "Thinking Machines Lab"
+    publishedAt: "2026-07-15"
+  - title: "Inkling Model Card"
+    url: "https://thinkingmachines.ai/model-card/inkling/"
+    author: "Thinking Machines Lab"
+    publishedAt: "2026-07-15"
+  - title: "Inkling"
+    url: "https://thinkingmachines.ai/inkling/"
+    author: "Thinking Machines Lab"
+    publishedAt: "2026-07-15"
+draft: false
+---
+
+## TL;DR
+
+Thinking Machines Lab has released Inkling, a multimodal open-weights model that accepts text, images, and audio and returns text. Its Apache 2.0 license is permissive, but the full model is not a laptop download: even the smaller checkpoint format needs at least 600 GB of combined GPU memory.
+
+## What's New
+
+Inkling is a mixture-of-experts model with 975 billion total parameters and 41 billion active for each token. It supports up to one million tokens of context and can process text, image, and audio inputs.
+
+The weights are available through Hugging Face, while Tinker and third-party providers offer hosted access. Thinking Machines lists an Apache 2.0 license alongside a separate acceptable-use policy, so users should read both before modifying or deploying the model.
+
+The hardware requirement is the decisive caveat. The BF16 checkpoint needs at least 2 TB of combined GPU memory; the compressed NVFP4 version still needs at least 600 GB. This is an open model for clusters and hosted services, not a practical local model for an ordinary laptop.
+
+## Why It Matters
+
+Open weights let researchers and companies inspect, adapt, and host a model without depending entirely on one vendor's chat product. Inkling also brings image and audio input to that open deployment path.
+
+But "open weights" does not mean easy or free to run. Readers should separate legal permission from operational feasibility. For most people, a hosted test is the sensible first step; downloading the weights only makes sense after checking hardware, software, safety, and ongoing inference costs.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A web browser","A rough inventory of your available GPU memory or cloud budget"]}>
+
+1. Open the Inkling model card and confirm the input types, context limits, license, and acceptable-use requirements for your intended task.
+2. Compare your available GPU memory with the listed 600 GB minimum for NVFP4 or 2 TB for BF16.
+3. If you do not operate a suitable cluster, rule out a local download and follow the Inkling page's hosted Tinker or inference-provider links instead.
+4. Before paying, choose one small multimodal test with a known answer, such as extracting facts from an image and its accompanying note.
+5. Verify the response against the original material and record latency, cost, and errors before considering a larger deployment.
+
+</PracticalGuide>
