@@ -1,0 +1,110 @@
+{
+  "slug": "claude-for-teachers",
+  "date": "2026-07-20",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "Claude for Teachers gives US educators a free year",
+    "Teachers can now try Claude's classroom tools free"
+  ],
+  "summary": "Verified US K-12 educators can claim a free year of Claude with classroom-focused tools, privacy protections, and standards-linked planning support.",
+  "tags": ["claude", "teachers", "education", "how-to"],
+  "primary_source": {
+    "url": "https://www.anthropic.com/news/claude-for-teachers",
+    "title": "Introducing Claude for Teachers",
+    "author": "Anthropic",
+    "publishedAt": "2026-07-14",
+    "key_facts": [
+      "Verified US K-12 educators can receive one year of premium Claude access at no cost if they register by June 30, 2027.",
+      "The offer includes teaching-specific skills and a Learning Commons connector with standards from all 50 states.",
+      "Teachers can use the tools for lesson planning, differentiated materials, class-data analysis, and recurring work such as reviewing exit tickets.",
+      "Anthropic says teacher inputs and outputs are not used for model training, and its K-12 data terms are designed around FERPA requirements.",
+      "Claude for Teachers is for adults working in education, not student-facing accounts, and a separate school-and-district product is planned.",
+      "The package includes Claude Code and Cowork plus integrations with several K-12 education tools."
+    ],
+    "quote_candidates": [
+      {
+        "text": "You control what data is shared; nothing you share is used in model training.",
+        "words": 13,
+        "exact": true,
+        "position": "How it works, Analyze class data"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://support.claude.com/en/articles/15926041-claude-for-teachers-your-data-and-our-terms",
+      "title": "Claude for Teachers: your data and our terms",
+      "key_facts": [
+        "Anthropic's help page explains eligibility, included features, data handling, and the registration deadline."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://claude.com/resources/tutorials/getting-started-with-claude-for-teachers",
+      "title": "Getting started with Claude for Teachers",
+      "key_facts": [
+        "Anthropic provides an official educator verification and onboarding walkthrough."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min, plus verification time",
+    "prerequisites": [
+      "Age 18 or older and employment at a US K-12 school or district",
+      "A professional school email and affiliation proof if requested",
+      "A lesson topic and standard; no identifiable student data"
+    ],
+    "steps": [
+      {
+        "instruction": "Check Anthropic's eligibility page and confirm that your school role and location qualify.",
+        "verify_url": "https://claude.com/resources/tutorials/getting-started-with-claude-for-teachers"
+      },
+      {
+        "instruction": "Open Claude for Teachers, select 'Get verified,' and sign in with your professional school email.",
+        "verify_url": "https://claude.com/solutions/teachers"
+      },
+      {
+        "instruction": "Complete the Goodstack verification prompts and check the status in Claude Settings.",
+        "verify_url": "https://claude.ai/teachers"
+      },
+      {
+        "instruction": "After approval, refresh Claude and complete the educator onboarding.",
+        "verify_url": "https://claude.com/resources/tutorials/getting-started-with-claude-for-teachers"
+      },
+      {
+        "instruction": "Without student information, ask for a grade-, subject-, and standards-specific formative assessment with two difficulty levels and an answer key; review every item before use.",
+        "verify_url": "https://claude.com/solutions/teachers"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Introducing Claude for Teachers",
+      "url": "https://www.anthropic.com/news/claude-for-teachers",
+      "author": "Anthropic",
+      "publishedAt": "2026-07-14"
+    },
+    {
+      "title": "Claude for Teachers: your data and our terms",
+      "url": "https://support.claude.com/en/articles/15926041-claude-for-teachers-your-data-and-our-terms",
+      "author": "Anthropic",
+      "publishedAt": "2026-07-14"
+    },
+    {
+      "title": "Getting started with Claude for Teachers",
+      "url": "https://claude.com/resources/tutorials/getting-started-with-claude-for-teachers",
+      "author": "Anthropic",
+      "publishedAt": "2026-07-14"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The verification review may take longer than the hands-on portion.",
+    "Teachers should avoid identifiable student data during their first test."
+  ],
+  "assembled_at": "2026-07-20T07:45:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

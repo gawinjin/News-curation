@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T08:35:36.815Z",
+  "generatedAt": "2026-07-20T07:40:59.580Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,263 +47,463 @@
   "items": [
     {
       "kind": "rss",
-      "title": "AI and Liability",
-      "url": "https://simonwillison.net/2026/Jun/25/ai-and-liability/#atom-everything",
+      "title": "Quoting Sam Altman",
+      "url": "https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
-      "publishedAt": "2026-06-25T22:28:46.000Z",
-      "summary": "<p><strong><a href=\"https://www.schneier.com/blog/archives/2026/06/ai-and-liability.html\">AI and Liability</a></strong></p> Bruce Schneier on the recent <a href=\"https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable"
+      "publishedAt": "2026-07-20T03:47:59.000Z",
+      "summary": "<blockquote cite=\"https://twitter.com/techemails/status/2078854346683678927\"><p>We have been having extensive discussions around open source strategy. We will discuss it more at our next board meeting, but one thing we’d like to do soon is to create a language model with the appr"
     },
     {
       "kind": "rss",
-      "title": "datasette-export-database 0.3a2",
-      "url": "https://simonwillison.net/2026/Jun/25/datasette-export-database/#atom-everything",
+      "title": "AI Mania Is Eviscerating Global Decision-Making",
+      "url": "https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
-      "publishedAt": "2026-06-25T17:21:09.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-export-database/releases/tag/0.3a2\">datasette-export-database 0.3a2</a></p> <p>An embarrassingly tiny release. The <code>pyproject.toml</code> had pinned to <code>datasette==1.0a27</code>, inadvertently "
+      "publishedAt": "2026-07-19T05:06:21.000Z",
+      "summary": "<p><strong><a href=\"https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/\">AI Mania Is Eviscerating Global Decision-Making</a></strong></p> Here's an entertaining perspective from Nik Suresh on the AI mania that is overwhelming the large companies that "
     },
     {
       "kind": "rss",
-      "title": "Which tokens does a hybrid model predict better?",
-      "url": "https://huggingface.co/blog/allenai/hybrid-token-prediction",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-06-25T16:11:42.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "simonw/browser-compat-db",
-      "url": "https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything",
+      "title": "Claude Code uses Bun written in Rust now",
+      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/#atom-everything",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
-      "publishedAt": "2026-06-24T23:59:03.000Z",
-      "summary": "<p><strong><a href=\"https://github.com/simonw/browser-compat-db\">simonw/browser-compat-db</a></strong></p> Inspired by Mozilla's <a href=\"https://developer.mozilla.org/en-US/blog/introducing-mdn-mcp-server/\">new MDN MCP service</a> - <a href=\"https://github.com/mdn/mcp\">source co"
+      "publishedAt": "2026-07-19T03:54:09.000Z",
+      "summary": "<p>In <a href=\"https://bun.com/blog/bun-in-rust\">Rewriting Bun in Rust</a> Jarred Sumner made the following claim:</p> <blockquote> <p>Claude Code v2.1.181 (released June 17th) and later use the Rust port of Bun. Startup got 10% faster on Linux but otherwise, barely anyone notice"
     },
     {
       "kind": "rss",
-      "title": "Quoting Tom MacWright",
-      "url": "https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything",
+      "title": "SQLite Query Explainer",
+      "url": "https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
-      "publishedAt": "2026-06-24T18:13:51.000Z",
-      "summary": "<blockquote cite=\"https://macwright.com/2026/06/24/accidental-anonymity.html\"><p>In the last few months, I've started to see [job applications] that were clearly cowritten by an LLM, link to an LLM-generated portfolio site, which then links to LLM-generated GitHub projects, with "
+      "publishedAt": "2026-07-18T17:19:10.000Z",
+      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/sqlite-query-explainer\">SQLite Query Explainer</a></p> <p>Julia Evan's, in <a href=\"https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/\">Learning a few things about running SQLite</a>:</p> <blockquote> "
     },
     {
       "kind": "rss",
-      "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
-      "url": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-06-24T16:00:13.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
-      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-06-24T06:00:00.000Z",
-      "summary": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems."
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing the FFASR Leaderboard: Benchmarking ASR in the Real World",
-      "url": "https://huggingface.co/blog/ffasr-leaderboard",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-06-24T00:00:00.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Scaling Laws, Carefully",
-      "url": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/",
-      "source": "Lilian Weng",
-      "sourceId": "lilianweng",
+      "title": "Controlling Reasoning Effort in LLMs",
+      "url": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms",
+      "source": "Sebastian Raschka",
+      "sourceId": "raschka",
       "category": "research",
-      "publishedAt": "2026-06-24T00:00:00.000Z",
-      "summary": "<p>Scaling laws are one of the most critical empirical findings in deep learning. The observation is simple in form: the training loss $L$ decreases predictably as we scale up model size $N$, dataset size $D$, and compute $C$, following a power-law curve, which appears as a strai"
+      "publishedAt": "2026-07-18T11:16:09.000Z",
+      "summary": "How LLMs Learn Low-, Medium-, and High-Effort Reasoning Modes"
     },
     {
       "kind": "rss",
-      "title": "datasette 1.0a35",
-      "url": "https://simonwillison.net/2026/Jun/23/datasette/#atom-everything",
+      "title": "Claude make Fable 5 permanent",
+      "url": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/#atom-everything",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
-      "publishedAt": "2026-06-23T21:34:37.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a35\">datasette 1.0a35</a></p> <p>I'll write more about this one soon, but it's a big release. Three highlights from the release notes:</p> <blockquote> <ul> <li>New \"Create table\" interface "
+      "publishedAt": "2026-07-18T06:00:13.000Z",
+      "summary": "<p><strong><a href=\"https://twitter.com/claudeai/status/2078302415804379218\">Claude make Fable 5 permanent</a></strong></p> An update from the <code>@claudeai</code> account on Twitter:</p> <blockquote> <p>Beginning July 20, Claude Fable 5 will be included in all Max and Team Pre"
     },
     {
       "kind": "rss",
-      "title": "OPFS + Pyodide test harness",
-      "url": "https://simonwillison.net/2026/Jun/23/opfs-pyodide/#atom-everything",
+      "title": "nascheme/quixote",
+      "url": "https://simonwillison.net/2026/Jul/18/quixote/#atom-everything",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
-      "publishedAt": "2026-06-23T18:58:54.000Z",
-      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/opfs-pyodide\">OPFS + Pyodide test harness</a></p> <p>I've been pondering if <a href=\"https://lite.datasette.io/\">Datasette Lite</a> - the Python Datasette application run entirely in the browser using Pyodide and "
+      "publishedAt": "2026-07-18T05:27:49.000Z",
+      "summary": "<p><strong><a href=\"https://github.com/nascheme/quixote\">nascheme/quixote</a></strong></p> A certain vintage if Python web nerd might be delighted to learn that the most recent commit to the Quixote web framework was <a href=\"(https://github.com/nascheme/quixote/commit/7f775cf9d1"
     },
     {
       "kind": "rss",
-      "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
-      "url": "https://openai.com/index/gpt-5-immunology-mystery",
+      "title": "Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers",
+      "url": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-07-17T15:57:54.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Kimi K3",
+      "url": "https://simonwillison.net/2026/Jul/17/kimi-k3/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-17T13:43:53.000Z",
+      "summary": "<blockquote cite=\"https://news.ycombinator.com/item?id=48935342#48936515\"><p>Is there something I can actually help you with today?</p></blockquote> <p class=\"cite\">&mdash; <a href=\"https://news.ycombinator.com/item?id=48935342#48936515\">Kimi K3</a>, after refusing to leak its sy"
+    },
+    {
+      "kind": "rss",
+      "title": "LLM cliché highlighter",
+      "url": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-17T12:11:11.000Z",
+      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/llm-cliche-highlighter\">LLM cliché highlighter</a></p> <p>I got frustrated reading <em>yet another</em> article that was crammed with the clichés of LLM-generated writing - \"no fluff, no filler, no jargon\" type st"
+    },
+    {
+      "kind": "rss",
+      "title": "A scorecard for the AI age",
+      "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
       "source": "OpenAI",
       "sourceId": "openai",
       "category": "model-releases",
-      "publishedAt": "2026-06-23T17:00:00.000Z",
-      "summary": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research."
+      "publishedAt": "2026-07-17T10:00:00.000Z",
+      "summary": "Sarah Friar, CFO of OpenAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute."
     },
     {
       "kind": "rss",
-      "title": "Helping build shared standards for advanced AI",
-      "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+      "title": "Spot birds not golf",
+      "url": "https://simonwillison.net/2026/Jul/17/spot-birds-not-golf/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-17T02:58:07.000Z",
+      "summary": "<p>Suggestion for hyperscalers feeling pressure over data center water use:</p> <p>Buy up a few exclusive country clubs, convert the golf courses into public parks, pay for guides and binoculars to get the previous members into birdwatching - help them embrace a more sustainable "
+    },
+    {
+      "kind": "rss",
+      "title": "Firefox in WebAssembly",
+      "url": "https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-16T23:34:16.000Z",
+      "summary": "<p><strong><a href=\"https://developer.puter.com/labs/firefox-wasm/\">Firefox in WebAssembly</a></strong></p> This is absurdly cool: Puter compiled Firefox to WebAssembly such that the whole browser runs in another browser.</p> <p>Here's my blog, running in Firefox, running in WebA"
+    },
+    {
+      "kind": "rss",
+      "title": "Kimi K3, and what we can still learn from the pelican benchmark",
+      "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-16T20:19:30.000Z",
+      "summary": "<p>Chinese AI lab Moonshot AI <a href=\"https://www.kimi.com/blog/kimi-k3\">announced Kimi K3</a> this morning, describing it as their \"most capable model to date, with 2.8 trillion parameters\". It's currently available via their website and API, but an open weight release is promi"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Thibault Sottiaux",
+      "url": "https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-16T17:45:59.000Z",
+      "summary": "<blockquote cite=\"https://twitter.com/thsottiaux/status/2077630111499882637\"><p>On file deletions. We’ve investigated a handful of reports where GPT-5.6 unexpectedly deleted files. </p> <p>What we have found is that this most commonly occurs when:</p> <ul> <li>Full access mode is"
+    },
+    {
+      "kind": "rss",
+      "title": "Why teens deserve access to safe AI",
+      "url": "https://openai.com/index/why-teens-deserve-access-safe-ai",
       "source": "OpenAI",
       "sourceId": "openai",
       "category": "model-releases",
-      "publishedAt": "2026-06-23T13:00:00.000Z",
-      "summary": "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation."
+      "publishedAt": "2026-07-16T16:00:00.000Z",
+      "summary": "Learn how OpenAI is making ChatGPT safer for teens with age-appropriate protections, learning tools, parental controls, and expert partnerships."
     },
     {
       "kind": "rss",
-      "title": "Build real agentic apps using CUGA: two dozen working examples on a lightweight harness",
-      "url": "https://huggingface.co/blog/ibm-research/cuga-apps",
+      "title": "Inkling: Our open-weights model",
+      "url": "https://simonwillison.net/2026/Jul/16/inkling/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-16T15:35:25.000Z",
+      "summary": "<p><strong><a href=\"https://thinkingmachines.ai/news/introducing-inkling/\">Inkling: Our open-weights model</a></strong></p> Mira Murati's Thinking Machines Lab just released their first open-weights model. Inkling is \"a Mixture-of-Experts transformer with 975B total parameters, 4"
+    },
+    {
+      "kind": "rss",
+      "title": "Mermaid to ASCII art (mermaid-ascii)",
+      "url": "https://simonwillison.net/2026/Jul/16/mermaid-ascii/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-16T14:57:39.000Z",
+      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/mermaid-ascii\">Mermaid to ASCII art (mermaid-ascii)</a></p> <p>After building the <a href=\"https://simonwillison.net/2026/Jul/16/grok-mermaid/\">Mermaid to ASCII tool based on Grok Build's Rust code</a> I learned t"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Linus Torvalds",
+      "url": "https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-16T13:26:10.000Z",
+      "summary": "<blockquote cite=\"https://lore.kernel.org/linux-media/CAHk-=wi4zC+Ze8e+p3tMv8TtG_80KzsZ1syL9anBtmEh5Z40vg@mail.gmail.com/\"><p>I realize that some people really dislike AI, but this is an area where I'm willing to absolutely put my foot down as the top-level maintainer.</p> <p>Lin"
+    },
+    {
+      "kind": "rss",
+      "title": "Newer Models, Same Advantage",
+      "url": "https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages",
       "source": "Hugging Face",
       "sourceId": "huggingface",
       "category": "guides",
-      "publishedAt": "2026-06-23T12:51:55.000Z",
+      "publishedAt": "2026-07-16T11:49:48.000Z",
       "summary": ""
     },
     {
       "kind": "rss",
-      "title": "How Omio is building the future of conversational travel",
-      "url": "https://openai.com/index/omio",
+      "title": "Our approach to bioresilience",
+      "url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "category": "research",
+      "publishedAt": "2026-07-16T09:30:42.000Z",
+      "summary": "Google DeepMind and Isomorphic Labs are sharing our joint approach to bioresilience and AI models."
+    },
+    {
+      "kind": "rss",
+      "title": "Mermaid to Unicode box art (grok-mermaid)",
+      "url": "https://simonwillison.net/2026/Jul/16/grok-mermaid/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-16T00:33:18.000Z",
+      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/grok-mermaid\">Mermaid to Unicode box art (grok-mermaid)</a></p> <p>While <a href=\"https://simonwillison.net/2026/Jul/15/grok-build/\">exploring the codebase</a> for the newly open-sourced Grok CLI coding agent I ca"
+    },
+    {
+      "kind": "rss",
+      "title": "How Cars24 scales conversations and builds faster with OpenAI",
+      "url": "https://openai.com/index/cars24",
       "source": "OpenAI",
       "sourceId": "openai",
       "category": "model-releases",
-      "publishedAt": "2026-06-23T00:00:00.000Z",
-      "summary": "Discover how Omio uses OpenAI to power conversational travel experiences, accelerate product development, and transform into an AI-native company."
+      "publishedAt": "2026-07-16T00:00:00.000Z",
+      "summary": "Cars24 uses OpenAI-powered voice and chat agents to handle 1M+ monthly conversation minutes, recover 12% of lost leads, and bring agentic workflows to teams across the company."
     },
     {
       "kind": "rss",
-      "title": "Shipping huggingface_hub every week with AI, open tools, and a human in the loop",
-      "url": "https://huggingface.co/blog/huggingface-hub-release-ci",
+      "title": "Security incident disclosure — July 2026",
+      "url": "https://huggingface.co/blog/security-incident-july-2026",
       "source": "Hugging Face",
       "sourceId": "huggingface",
       "category": "guides",
-      "publishedAt": "2026-06-23T00:00:00.000Z",
+      "publishedAt": "2026-07-16T00:00:00.000Z",
       "summary": ""
     },
     {
       "kind": "rss",
-      "title": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js",
-      "url": "https://huggingface.co/blog/cross-origin-storage",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-06-23T00:00:00.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code",
-      "url": "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything",
+      "title": "xai-org/grok-build, now open source",
+      "url": "https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
-      "publishedAt": "2026-06-22T23:43:51.000Z",
-      "summary": "<p>This morning <a href=\"https://news.ycombinator.com/item?id=48630171\">on Hacker News</a> I saw <a href=\"https://hustvl.github.io/Moebius/\">Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance</a>, describing a small but effective inpainting model - a "
+      "publishedAt": "2026-07-15T23:59:30.000Z",
+      "summary": "<p><strong><a href=\"https://github.com/xai-org/grok-build\">xai-org/grok-build, now open source</a></strong></p> xAI's <code>grok</code> CLI tool faced severe community backlash yesterday when it became apparent that running the command in a directory could upload that <em>entire "
     },
     {
       "kind": "rss",
-      "title": "PP-OCRv6 on Hugging Face: 50-Language OCR from 1.5M to 34.5M Parameters",
-      "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+      "title": "What building Shippy taught us about building agents",
+      "url": "https://huggingface.co/blog/allenai/shippy-tech-blog",
       "source": "Hugging Face",
       "sourceId": "huggingface",
       "category": "guides",
-      "publishedAt": "2026-06-22T13:18:56.000Z",
+      "publishedAt": "2026-07-15T17:29:41.000Z",
       "summary": ""
     },
     {
       "kind": "rss",
-      "title": "Import AI 462: Superpersuasion; self-sustaining AI; paths to ASI",
-      "url": "https://importai.substack.com/p/import-ai-462-superpersuasion-self",
-      "source": "Import AI (Jack Clark)",
-      "sourceId": "importai",
-      "category": "insights",
-      "publishedAt": "2026-06-22T12:31:45.000Z",
-      "summary": "How religious are beliefs in the singularity?"
+      "title": "Model Routing Is Simple. Until It Isn’t.",
+      "url": "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-07-15T17:27:01.000Z",
+      "summary": ""
     },
     {
       "kind": "rss",
-      "title": "Codex-maxxing for long-running work",
-      "url": "https://openai.com/index/codex-maxxing-long-running-work",
+      "title": "How I tricked Claude into leaking your deepest, darkest secrets",
+      "url": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-15T14:21:54.000Z",
+      "summary": "<p><strong><a href=\"https://www.ayush.digital/blog/the-memory-heist\">How I tricked Claude into leaking your deepest, darkest secrets</a></strong></p> I've <a href=\"https://simonwillison.net/2025/Sep/10/claude-web-fetch-tool/\">been impressed</a> by the way the Claude <code>web_fet"
+    },
+    {
+      "kind": "rss",
+      "title": "The US is advancing AI safety through state and federal action",
+      "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
       "source": "OpenAI",
       "sourceId": "openai",
       "category": "model-releases",
-      "publishedAt": "2026-06-22T00:00:00.000Z",
-      "summary": "Learn how Jason Liu uses Codex to preserve context, manage complex projects, and help work continue beyond a single prompt."
+      "publishedAt": "2026-07-15T12:00:00.000Z",
+      "summary": "OpenAI outlines a “reverse federalism” approach to AI governance, where state laws help build a national framework for safe, democratic AI."
     },
     {
       "kind": "rss",
-      "title": "We got local models to triage the OpenClaw repo for FREE!*",
-      "url": "https://huggingface.co/blog/local-models-pr-triage",
+      "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
+      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-07-15T10:00:00.000Z",
+      "summary": "Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness."
+    },
+    {
+      "kind": "rss",
+      "title": "Welcome Inkling by Thinking Machines",
+      "url": "https://huggingface.co/blog/thinkingmachines-inkling",
       "source": "Hugging Face",
       "sourceId": "huggingface",
       "category": "guides",
-      "publishedAt": "2026-06-22T00:00:00.000Z",
+      "publishedAt": "2026-07-15T00:00:00.000Z",
       "summary": ""
     },
     {
       "kind": "rss",
-      "title": "sqlite-utils 4.0rc1 adds migrations and nested transactions",
-      "url": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-06-21T23:35:47.000Z",
-      "summary": "<p><a href=\"https://sqlite-utils.datasette.io/en/latest/\">sqlite-utils</a> is my combined Python library and CLI tool for working with SQLite databases. It provides an extensive set of higher-level operations on top of Python's default <a href=\"https://docs.python.org/3/library/s"
+      "title": "Introducing Real World VoiceEQ: Measuring the human quality of voice AI",
+      "url": "https://huggingface.co/blog/real-world-voiceeq",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-07-15T00:00:00.000Z",
+      "summary": ""
     },
     {
       "kind": "rss",
-      "title": "sqlite-utils 4.0rc1",
-      "url": "https://simonwillison.net/2026/Jun/21/sqlite-utils/#atom-everything",
+      "title": "Quoting GitHub Changelog",
+      "url": "https://simonwillison.net/2026/Jul/14/github-changeling/#atom-everything",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
-      "publishedAt": "2026-06-21T23:30:04.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/sqlite-utils/releases/tag/4.0rc1\">sqlite-utils 4.0rc1</a></p> <p>See <a href=\"https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/\">sqlite-utils 4.0rc1 adds migrations and nested transactions</a>.</p> <p>Tags: <"
+      "publishedAt": "2026-07-14T22:43:35.000Z",
+      "summary": "<blockquote cite=\"https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/\"><p>Dependabot now waits until a new release has been available on its registry for at least three days before opening a version update pull request. This coo"
     },
     {
       "kind": "rss",
-      "title": "Temporary Cloudflare Accounts for AI agents",
-      "url": "https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything",
+      "title": "simonw/pedalican",
+      "url": "https://simonwillison.net/2026/Jul/14/pedalican/#atom-everything",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
-      "publishedAt": "2026-06-21T22:01:04.000Z",
-      "summary": "<p><strong><a href=\"https://blog.cloudflare.com/temporary-accounts/\">Temporary Cloudflare Accounts for AI agents</a></strong></p> The announcement says this is \"for AI agents\" but (as is pretty common these days) the AI hook isn't really necessary, this is an interesting feature "
+      "publishedAt": "2026-07-14T22:29:45.000Z",
+      "summary": "<p><strong><a href=\"https://github.com/simonw/pedalican\">simonw/pedalican</a></strong></p> Clearly I wasn't paying attention when these were <a href=\"https://twitter.com/OpenAIDevs/status/2050301642717950166\">first announced</a> back in May, but today I accidentally activated a \""
     },
     {
       "kind": "rss",
-      "title": "Quoting Sean Lynch",
-      "url": "https://simonwillison.net/2026/Jun/19/sean-lynch/#atom-everything",
+      "title": "lobste.rs is now running on SQLite",
+      "url": "https://simonwillison.net/2026/Jul/14/lobsters-sqlite/#atom-everything",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
-      "publishedAt": "2026-06-19T22:45:49.000Z",
-      "summary": "<blockquote cite=\"https://news.ycombinator.com/item?id=48592163#48593190\"><p>The real valuable capability MCP offers over skills/CLI is isolating the auth flow outside of the agent’s context window, and potentially out of the harness completely. [...]</p> <p>Maybe the idealized f"
+      "publishedAt": "2026-07-14T19:44:11.000Z",
+      "summary": "<p><strong><a href=\"https://lobste.rs/s/ko1ji1/lobste_rs_is_now_running_on_sqlite\">lobste.rs is now running on SQLite</a></strong></p> Community site <a href=\"https://lobste.rs\">Lobsters</a> has been planning a migration away from MariaDB <a href=\"https://github.com/lobsters/lobs"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Armin Ronacher",
+      "url": "https://simonwillison.net/2026/Jul/14/armin-ronacher/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-14T18:04:23.000Z",
+      "summary": "<blockquote cite=\"https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/\"><p>The shared language of a software project is not English or Python but it is the common understanding of what its concepts mean, where the boundaries are, which invariants matter, who owns what, and "
+    },
+    {
+      "kind": "rss",
+      "title": "datasette 1.0a37",
+      "url": "https://simonwillison.net/2026/Jul/14/datasette/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-14T16:31:41.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a37\">datasette 1.0a37</a></p> <p>A minor release. Performance and <a href=\"https://docs.datasette.io/en/latest/authentication.html#authentication-permissions-explained\">documentation</a> imp"
+    },
+    {
+      "kind": "rss",
+      "title": "How to manage AI investments in the agentic era",
+      "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-07-14T10:00:00.000Z",
+      "summary": "Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows."
+    },
+    {
+      "kind": "rss",
+      "title": "Using uvx in GitHub Actions in a cache-friendly way",
+      "url": "https://simonwillison.net/2026/Jul/14/uvx-github-actions-cache/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-14T00:56:20.000Z",
+      "summary": "<p><strong>TIL:</strong> <a href=\"https://til.simonwillison.net/github-actions/uvx-github-actions-cache\">Using uvx in GitHub Actions in a cache-friendly way</a></p> <p>I finally found a cache-friendly recipe for using <code>uvx tool-name</code> in GitHub Actions workflows that I "
+    },
+    {
+      "kind": "rss",
+      "title": "How sales teams use ChatGPT Work",
+      "url": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-07-14T00:00:00.000Z",
+      "summary": "See how sales teams can use ChatGPT Work to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from real work inputs."
+    },
+    {
+      "kind": "rss",
+      "title": "How data science teams use ChatGPT Work",
+      "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-07-14T00:00:00.000Z",
+      "summary": "See how data science teams can use ChatGPT Work to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs."
+    },
+    {
+      "kind": "rss",
+      "title": "DOOMQL",
+      "url": "https://simonwillison.net/2026/Jul/13/doomql/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-13T22:34:41.000Z",
+      "summary": "<p><strong><a href=\"https://github.com/petergpt/doomql\">DOOMQL</a></strong></p> Peter Gostev built this using GPT-5.6 Sol. This is a <em>lot</em> of fun: </p> <blockquote> <p>DOOMQL started with a deliberately unreasonable question: what if SQLite were the game engine, not merely"
+    },
+    {
+      "kind": "rss",
+      "title": "datasette code-frequency chart on GitHub",
+      "url": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-13T21:45:27.000Z",
+      "summary": "<p><strong><a href=\"https://github.com/simonw/datasette/graphs/code-frequency\">datasette code-frequency chart on GitHub</a></strong></p> Out of curiosity I decided to see if I could find a useful illustration of the impact of coding agents and Opus 4.5 class models on my own outp"
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing Claude for Teachers",
+      "url": "https://www.anthropic.com/news/claude-for-teachers",
+      "source": "Anthropic",
+      "sourceId": "anthropic",
+      "category": "model-releases",
+      "publishedAt": "2026-07-13T17:00:00.000Z",
+      "summary": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems."
+    },
+    {
+      "kind": "rss",
+      "title": "Anthropic commits $10 million to Canadian AI research",
+      "url": "https://www.anthropic.com/news/canadian-ai-research",
+      "source": "Anthropic",
+      "sourceId": "anthropic",
+      "category": "model-releases",
+      "publishedAt": "2026-07-13T17:00:00.000Z",
+      "summary": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
+    },
+    {
+      "kind": "rss",
+      "title": "Empowering India’s next generation of innovators with ATL Saathi",
+      "url": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "category": "research",
+      "publishedAt": "2026-07-13T12:37:28.000Z",
+      "summary": "Google and AIM launched ATL Saathi, a Gemini-powered AI tool empowering Indian educators in robotics labs."
     }
   ]
 }

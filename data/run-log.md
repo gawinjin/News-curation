@@ -1,5 +1,17 @@
 # Signal Run Log
 
+## 2026-07-20
+
+Shipped:
+
+- `2026-07-20-claude-for-teachers` - Verified US K-12 educators can claim a free year of Claude and test classroom-focused planning tools with a privacy-first workflow.
+
+Skipped:
+
+- AI policy commentary and company case studies - timely, but weaker hands-on value for general readers.
+- Developer-only model training, routing, and runtime posts - useful for specialists, but not the strongest 5-30 minute Practical Guide fit.
+- Social candidates - all configured Nitter mirrors were unreachable; RSS ingestion completed successfully.
+
 ## 2026-07-10
 
 Shipped:
