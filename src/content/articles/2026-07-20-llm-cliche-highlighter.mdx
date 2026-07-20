@@ -1,0 +1,56 @@
+---
+title: "This browser tool spots AI writing clichés"
+date: 2026-07-20
+category: guides
+tags: ["writing", "ai-tools", "editing", "how-to"]
+summary: "Simon Willison's free browser tool flags formulaic phrases often associated with AI writing, with adjustable patterns and a paste-first workflow."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "5 min"
+  prerequisites:
+    - "A modern web browser"
+    - "A paragraph to check, or a public article URL"
+references:
+  - title: "LLM cliché highlighter"
+    url: "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything"
+    author: "Simon Willison"
+    publishedAt: "2026-07-17"
+  - title: "LLM cliché highlighter tool"
+    url: "https://tools.simonwillison.net/llm-cliche-highlighter"
+    author: "Simon Willison"
+    publishedAt: "2026-07-17"
+  - title: "tools.simonwillison.net colophon"
+    url: "https://tools.simonwillison.net/colophon#llm-cliche-highlighter"
+    author: "Simon Willison"
+    publishedAt: "2026-07-17"
+draft: false
+---
+
+## TL;DR
+
+Simon Willison's free browser tool highlights formulaic phrases often found in AI-assisted writing. Paste a draft or load a public URL, then review matches in context and switch individual pattern checks on or off. Treat the results as editing suggestions, not evidence that AI wrote the text.
+
+## What's New
+
+Willison released a browser-based analyzer for recurring phrases he noticed across AI-assisted writing. It began with ten patterns and marks matching language inside the surrounding sentence, making each result easier to judge in context.
+
+You can paste text directly or ask the tool to load a public URL. Its pattern detectors are individually adjustable, while a match list helps you move through the flagged passages.
+
+The accompanying development log links the source code and records additions such as local storage, URL loading, and extra pattern checks.
+
+## Why It Matters
+
+Formulaic wording can make an otherwise useful email, article, or presentation sound generic. This tool gives writers a quick second editing pass by pointing to phrases worth reconsidering rather than rewriting the draft for them.
+
+A match does not prove that AI produced the text: people use the same constructions too. The useful question is whether a highlighted phrase serves the reader or can be replaced with something more precise.
+
+<PracticalGuide timeToTry="5 min" prerequisites={["A modern web browser","A paragraph to check, or a public article URL"]}>
+
+1. Open the highlighter and paste text into the main box; analysis runs as you type.
+2. Select 'Load example' and confirm the summary and highlighted-text sections populate.
+3. Expand 'Patterns' and toggle detectors; confirm the match count or highlights change.
+4. Hover a highlight to identify its rule, then review every flagged phrase in the Matches list.
+5. Optionally enter a public article URL and select 'Load URL'; avoid private or paywalled material because loading uses a third-party text fetcher.
+
+</PracticalGuide>

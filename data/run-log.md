@@ -5,12 +5,14 @@
 Shipped:
 
 - `2026-07-20-claude-for-teachers` - Verified US K-12 educators can claim a free year of Claude and test classroom-focused planning tools with a privacy-first workflow.
+- `2026-07-20-llm-cliche-highlighter` - Simon Willison's browser tool gives general users a five-minute way to spot formulaic AI-writing patterns without treating them as proof of authorship.
 
 Skipped:
 
 - AI policy commentary and company case studies - timely, but weaker hands-on value for general readers.
 - Developer-only model training, routing, and runtime posts - useful for specialists, but not the strongest 5-30 minute Practical Guide fit.
 - Social candidates - all configured Nitter mirrors were unreachable; RSS ingestion completed successfully.
+- Opinion-only posts and developer-focused runtime or database tools - current, but weaker fits than a directly useful editing workflow.
 
 ## 2026-07-10
 
