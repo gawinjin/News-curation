@@ -1,0 +1,48 @@
+{
+  "slug": "kimi-k3-release",
+  "date": "2026-07-16",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Kimi K3 arrives with vision and a one-million-token context window"],
+  "summary": "Moonshot AI's Kimi K3 combines native vision, a one-million-token context window, and hosted access now, with full weights promised for July 27.",
+  "tags": ["kimi", "moonshot-ai", "multimodal", "models"],
+  "primary_source": {
+    "url": "https://www.kimi.com/fr-fr/blog/kimi-k3",
+    "title": "Kimi K3",
+    "author": "Moonshot AI",
+    "publishedAt": "2026-07-16",
+    "key_facts": [
+      "Kimi K3 is a 2.8-trillion-parameter mixture-of-experts model with native vision and a one-million-token context window.",
+      "Hosted access is available through Kimi.com, Kimi Work, Kimi Code, and the API.",
+      "Moonshot says full weights will be released on July 27, 2026.",
+      "The company warns about excess proactiveness and instability when switching models in an existing conversation."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://www.kimi.com/help/agent/agent-overview",
+      "title": "Kimi Agent overview",
+      "key_facts": ["The official help page documents the hosted agent workflow."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A Kimi account", "A safe document or image with known facts"],
+    "steps": [
+      {"instruction": "Start a fresh K3 chat and upload one checkable document or image.", "verify_url": "https://www.kimi.com/help/agent/agent-overview"},
+      {"instruction": "Request claims with precise source locators and verify each one.", "verify_url": "https://www.kimi.com/fr-fr/blog/kimi-k3"},
+      {"instruction": "Compare a failed answer at a higher reasoning setting.", "verify_url": "https://www.kimi.com/fr-fr/blog/kimi-k3"}
+    ]
+  },
+  "references": [
+    {"title": "Kimi K3", "url": "https://www.kimi.com/fr-fr/blog/kimi-k3", "author": "Moonshot AI", "publishedAt": "2026-07-16"},
+    {"title": "Kimi Agent overview", "url": "https://www.kimi.com/help/agent/agent-overview", "author": "Moonshot AI", "publishedAt": "2026-07-16"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Full weights are announced for July 27 and are not yet the current hands-on path.", "Long context does not guarantee correct evidence retrieval."],
+  "assembled_at": "2026-07-20T08:30:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

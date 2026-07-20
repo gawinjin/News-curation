@@ -1,0 +1,52 @@
+---
+title: "Kimi K3 arrives with vision and a one-million-token context window"
+date: 2026-07-16
+category: model-releases
+tags: ["kimi", "moonshot-ai", "multimodal", "models"]
+summary: "Moonshot AI's Kimi K3 combines native vision, a one-million-token context window, and hosted access now, with full weights promised for July 27."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A Kimi account"
+    - "A non-sensitive document or image with facts you can verify"
+references:
+  - title: "Kimi K3"
+    url: "https://www.kimi.com/fr-fr/blog/kimi-k3"
+    author: "Moonshot AI"
+    publishedAt: "2026-07-16"
+  - title: "Kimi Agent overview"
+    url: "https://www.kimi.com/help/agent/agent-overview"
+    author: "Moonshot AI"
+    publishedAt: "2026-07-16"
+draft: false
+---
+
+## TL;DR
+
+Moonshot AI has released Kimi K3 through Kimi.com, Kimi Work, Kimi Code, and its API. The 2.8-trillion-parameter model adds native vision and a one-million-token context window. Full model weights are promised for July 27, so today's hands-on route is hosted access rather than a local install.
+
+## What's New
+
+Kimi K3 is Moonshot AI's new large mixture-of-experts model. It can read images as well as text, hold up to one million tokens of context, and adjust its reasoning effort for different tasks.
+
+Hosted access is available now through Kimi's consumer, work, coding, and API products. Moonshot says the full weights will follow on July 27; until then, claims that the complete model can already be downloaded should be treated as premature.
+
+The company also notes limitations. K3 can be overly proactive, and switching into it midway through a conversation may be less stable when the earlier reasoning history is missing. Starting a fresh chat is the cleaner way to evaluate it.
+
+## Why It Matters
+
+A long context window and native vision are useful when a task combines many pages with diagrams, screenshots, or scanned material. The practical question is whether the model can find and organize evidence without inventing connections across that large input.
+
+The future weight release could widen independent use, but size still matters: a multi-trillion-parameter model will not become a simple laptop install merely because its weights are published. General users should test the hosted product and wait for verified deployment guidance before planning local use.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A Kimi account","A non-sensitive document or image with facts you can verify"]}>
+
+1. Start a fresh chat on Kimi.com and select K3 if the model picker shows it.
+2. Upload one non-sensitive document or image whose main facts you already know.
+3. Ask for five claims, each paired with the page, section, or visible region that supports it.
+4. Check every locator against the original file and mark unsupported statements.
+5. Repeat one failed question with more reasoning effort, then decide whether the added time improves accuracy enough for your workflow.
+
+</PracticalGuide>
