@@ -6,6 +6,12 @@ Shipped:
 
 - `2026-07-20-claude-for-teachers` - Verified US K-12 educators can claim a free year of Claude and test classroom-focused planning tools with a privacy-first workflow.
 - `2026-07-20-llm-cliche-highlighter` - Simon Willison's browser tool gives general users a five-minute way to spot formulaic AI-writing patterns without treating them as proof of authorship.
+- `2026-07-09-chatgpt-work-desktop` - ChatGPT's rebuilt desktop app adds a bounded hands-on path for Work projects, scheduled tasks, Sites, and the unified Codex experience.
+- `2026-07-09-gpt-5-6-general-availability` - GPT-5.6 is now generally available as Sol, Terra, and Luna, with a practical side-by-side model-selection test.
+- `2026-07-15-thinking-machines-inkling` - Thinking Machines released Inkling's open weights and model card, with clear license and large-cluster hardware caveats.
+- `2026-07-16-kimi-k3-release` - Kimi K3 adds native vision and a one-million-token context window through hosted products while full weights remain scheduled for July 27.
+- `2026-07-16-frontier-ai-regulation-convergence` - Frontier lab leaders now converge on independent pre-release testing while differing on governance and enforcement.
+- `2026-07-17-useful-intelligence-per-dollar` - OpenAI's AI scorecard gives readers a concrete way to measure successful work, full task cost, and reliability.
 
 Skipped:
 
