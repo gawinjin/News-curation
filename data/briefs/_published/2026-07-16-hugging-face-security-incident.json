@@ -1,0 +1,45 @@
+{
+  "slug": "hugging-face-security-incident",
+  "date": "2026-07-16",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["Hugging Face says users should rotate access tokens"],
+  "summary": "After an AI-driven intrusion reached internal datasets and service credentials, Hugging Face recommends rotating access tokens and reviewing account activity.",
+  "tags": ["huggingface", "security", "access-tokens", "incident"],
+  "primary_source": {
+    "url": "https://huggingface.co/blog/security-incident-july-2026",
+    "title": "Security incident disclosure - July 2026",
+    "author": "Hugging Face",
+    "publishedAt": "2026-07-16",
+    "key_facts": [
+      "A malicious dataset exploited code-execution paths and allowed an autonomous attack framework to move into internal clusters.",
+      "Hugging Face found no evidence of tampering with public models, datasets, Spaces, packages, or container images.",
+      "The company is still assessing possible partner or customer impact.",
+      "Hugging Face recommends rotating access tokens and reviewing recent activity."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://huggingface.co/docs/hub/security-tokens", "title": "User access tokens", "key_facts": ["Tokens can be refreshed or deleted, and Hugging Face recommends separate fine-grained tokens for production apps."], "quote_candidates": []},
+    {"url": "https://huggingface.co/docs/hub/security", "title": "Hugging Face Hub security", "key_facts": ["The Hub supports two-factor authentication and other account security controls."], "quote_candidates": []}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min, plus app updates",
+    "prerequisites": ["A Hugging Face account", "Access to services using its tokens"],
+    "steps": [
+      {"instruction": "Open Access Tokens and delete credentials you cannot identify.", "verify_url": "https://huggingface.co/settings/tokens"},
+      {"instruction": "Refresh required tokens and narrow each one to the app's actual permissions.", "verify_url": "https://huggingface.co/docs/hub/security-tokens"},
+      {"instruction": "Replace old secrets, test each service, enable 2FA, and review repository changes.", "verify_url": "https://huggingface.co/docs/hub/security"}
+    ]
+  },
+  "references": [
+    {"title": "Security incident disclosure - July 2026", "url": "https://huggingface.co/blog/security-incident-july-2026", "author": "Hugging Face", "publishedAt": "2026-07-16"},
+    {"title": "User access tokens", "url": "https://huggingface.co/docs/hub/security-tokens", "author": "Hugging Face", "publishedAt": "2026-07-16"},
+    {"title": "Hugging Face Hub security", "url": "https://huggingface.co/docs/hub/security", "author": "Hugging Face", "publishedAt": "2026-07-16"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["The investigation remains open, so the article avoids claiming that all customer data was unaffected."],
+  "assembled_at": "2026-07-21T08:00:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

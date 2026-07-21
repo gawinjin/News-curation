@@ -1,0 +1,56 @@
+---
+title: "Hugging Face says users should rotate access tokens"
+date: 2026-07-16
+category: guides
+tags: ["huggingface", "security", "access-tokens", "incident"]
+summary: "After an AI-driven intrusion reached internal datasets and service credentials, Hugging Face recommends rotating access tokens and reviewing account activity."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min, plus app updates"
+  prerequisites:
+    - "A Hugging Face account"
+    - "Access to the apps or services that use your Hugging Face tokens"
+references:
+  - title: "Security incident disclosure - July 2026"
+    url: "https://huggingface.co/blog/security-incident-july-2026"
+    author: "Hugging Face"
+    publishedAt: "2026-07-16"
+  - title: "User access tokens"
+    url: "https://huggingface.co/docs/hub/security-tokens"
+    author: "Hugging Face"
+    publishedAt: "2026-07-16"
+  - title: "Hugging Face Hub security"
+    url: "https://huggingface.co/docs/hub/security"
+    author: "Hugging Face"
+    publishedAt: "2026-07-16"
+draft: false
+---
+
+## TL;DR
+
+Hugging Face disclosed an intrusion that began in its dataset-processing pipeline and spread to internal systems. It found no evidence that public models, datasets, Spaces, packages, or container images were altered, but its customer-data review continues. The company recommends that users rotate access tokens and inspect recent activity.
+
+## What's New
+
+Hugging Face says a malicious dataset exploited two code-execution paths, allowing an attacker to reach processing workers, obtain credentials, and move into several clusters. The campaign used an autonomous agent framework to perform thousands of actions across short-lived environments.
+
+The company closed the vulnerable paths, rebuilt affected nodes, rotated service credentials, tightened admission controls, and brought in external forensic specialists. It says a limited set of internal datasets and service credentials were accessed, while the assessment of possible partner or customer impact is still underway.
+
+Hugging Face used AI-assisted detection and analyzed more than 17,000 logged events with a self-hosted open model. For ordinary account holders, the immediate action is simpler: replace access tokens and remove permissions that are no longer needed.
+
+## Why It Matters
+
+Access tokens can let notebooks, apps, and automation read private repositories or publish changes. A long-lived token with broad write permission increases the damage possible if it is exposed.
+
+Rotating tokens is useful only if old credentials are revoked and every legitimate app receives the replacement. This is also a good time to switch to one fine-grained token per app, so a future rotation does not disrupt everything at once.
+
+<PracticalGuide timeToTry="15 min, plus app updates" prerequisites={["A Hugging Face account","Access to the apps or services that use your Hugging Face tokens"]}>
+
+1. Sign in to Hugging Face and open Settings, then Access Tokens.
+2. Identify each token by the app, notebook, or service that uses it; delete tokens you cannot account for.
+3. Refresh the remaining tokens and prefer a separate fine-grained token with only the required repositories and permissions for each app.
+4. Replace the old value in every legitimate app or secret store, restart that service, and confirm it still connects.
+5. Enable two-factor authentication, review recent repository changes, and contact Hugging Face security if you find activity you do not recognize.
+
+</PracticalGuide>
