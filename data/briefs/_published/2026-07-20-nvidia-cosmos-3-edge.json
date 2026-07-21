@@ -1,0 +1,43 @@
+{
+  "slug": "nvidia-cosmos-3-edge",
+  "date": "2026-07-20",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["NVIDIA puts a 4B world model on edge hardware"],
+  "summary": "Cosmos 3 Edge is a compact world model for understanding scenes, predicting outcomes, and generating actions on NVIDIA robotics and vision hardware.",
+  "tags": ["nvidia", "cosmos", "robotics", "open-models"],
+  "primary_source": {
+    "url": "https://huggingface.co/blog/nvidia/cosmos3edge",
+    "title": "Introducing Cosmos 3 Edge",
+    "author": "NVIDIA and Hugging Face",
+    "publishedAt": "2026-07-20",
+    "key_facts": [
+      "Cosmos 3 Edge is a four-billion-parameter world model for robotics and vision systems on NVIDIA edge hardware.",
+      "It connects scene understanding and future prediction with action generation.",
+      "NVIDIA reports 32 actions per inference at 15 updates per second for its Jetson Thor robot-policy setup.",
+      "The release includes model files, checkpoints, and training resources on Hugging Face."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://huggingface.co/nvidia/Cosmos3-Edge", "title": "Cosmos3-Edge model card", "key_facts": ["The model card lists commercial and non-commercial use under OpenMDW 1.1, global deployment, supported modalities, and developer-focused setup resources."], "quote_candidates": []}
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A browser", "A proposed robotics or vision task"],
+    "steps": [
+      {"instruction": "Match the task's inputs and outputs to the model card.", "verify_url": "https://huggingface.co/nvidia/Cosmos3-Edge"},
+      {"instruction": "Check the license and supported hardware before downloading files.", "verify_url": "https://huggingface.co/nvidia/Cosmos3-Edge"},
+      {"instruction": "Plan an offline recorded-data evaluation before any live control test.", "verify_url": "https://huggingface.co/blog/nvidia/cosmos3edge"}
+    ]
+  },
+  "references": [
+    {"title": "Introducing Cosmos 3 Edge", "url": "https://huggingface.co/blog/nvidia/cosmos3edge", "author": "NVIDIA and Hugging Face", "publishedAt": "2026-07-20"},
+    {"title": "Cosmos3-Edge model card", "url": "https://huggingface.co/nvidia/Cosmos3-Edge", "author": "NVIDIA", "publishedAt": "2026-07-20"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["The release is intended for specialist NVIDIA hardware and should not be presented as a consumer local model.", "Live robot control requires a separate safety process."],
+  "assembled_at": "2026-07-21T08:00:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

@@ -1,0 +1,52 @@
+---
+title: "NVIDIA puts a 4B world model on edge hardware"
+date: 2026-07-20
+category: model-releases
+tags: ["nvidia", "cosmos", "robotics", "open-models"]
+summary: "Cosmos 3 Edge is a compact world model for understanding scenes, predicting outcomes, and generating actions on NVIDIA robotics and vision hardware."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A web browser"
+    - "A rough description of the robot or vision task you want to evaluate"
+references:
+  - title: "Introducing Cosmos 3 Edge"
+    url: "https://huggingface.co/blog/nvidia/cosmos3edge"
+    author: "NVIDIA and Hugging Face"
+    publishedAt: "2026-07-20"
+  - title: "Cosmos3-Edge model card"
+    url: "https://huggingface.co/nvidia/Cosmos3-Edge"
+    author: "NVIDIA"
+    publishedAt: "2026-07-20"
+draft: false
+---
+
+## TL;DR
+
+NVIDIA released Cosmos 3 Edge, a four-billion-parameter world model designed for robots and vision systems near their sensors. It can combine scene understanding, future prediction, and action generation, with open model files and training resources on Hugging Face. Running it remains a specialist NVIDIA hardware project.
+
+## What's New
+
+Cosmos 3 Edge accepts combinations of text, images, video, and action trajectories. It can return explanations, predicted visual outcomes, and control actions, allowing one model to connect what a machine sees with what may happen next.
+
+NVIDIA says the model can run across its edge and accelerated hardware, including Jetson and GeForce RTX systems. On Jetson Thor, its robot-policy configuration generates 32 actions per inference at 15 updates per second.
+
+The model card allows commercial and non-commercial use under the Open Model Development and Work License 1.1. It also makes clear that setup is still developer-focused: there is no simple copy-and-run library example on the model page yet.
+
+## Why It Matters
+
+World models are moving from data-center demonstrations toward machines that need to react locally, such as robots, cameras, and industrial systems. A smaller model can reduce delay and keep more sensor data near the device.
+
+This is not a consumer chatbot or a safe plug-in controller. Before downloading anything, teams should check the license, supported hardware, input format, and whether a non-control evaluation can prove the model fits their task.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A web browser","A rough description of the robot or vision task you want to evaluate"]}>
+
+1. Open the Cosmos3-Edge model card and write down the exact inputs and outputs your task requires.
+2. Read the OpenMDW 1.1 license link and confirm that your intended commercial or research use is allowed.
+3. Compare the listed NVIDIA platforms with hardware you already have; do not assume a four-billion-parameter model will run well on any laptop.
+4. Inspect the linked Colab, Kaggle, and repository resources for a non-control test using recorded video or images.
+5. Keep the first evaluation offline from real machinery and verify every predicted action against known footage before considering live control.
+
+</PracticalGuide>
