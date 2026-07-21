@@ -1,0 +1,60 @@
+---
+title: "Coding agents make small device automations worth trying"
+date: 2026-07-21
+category: insights
+tags: ["coding-agents", "automation", "smart-home", "how-to"]
+summary: "Coding agents are lowering the effort behind one-off device automations. Start safely with official app actions, a public manual, and one reversible shortcut."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15-25 min"
+  prerequisites:
+    - "An iPhone or iPad with Apple Shortcuts"
+    - "A device you own with an official companion app"
+    - "The device's public manufacturer manual"
+    - "An AI assistant that accepts documents"
+references:
+  - title: "Reverse-engineering is cheap now"
+    url: "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything"
+    author: "Simon Willison"
+    publishedAt: "2026-07-20"
+  - title: "pixma-rs — Canon PIXMA G3010 macOS driver"
+    url: "https://github.com/pdrgds/pixma-rs"
+    author: "Pedro Rodrigues"
+    publishedAt: "2026-07-17"
+  - title: "Navigate the action list in Shortcuts on iPhone or iPad"
+    url: "https://support.apple.com/en-euro/guide/shortcuts/apd43295406d/ios"
+    author: "Apple"
+  - title: "File Uploads FAQ"
+    url: "https://help.openai.com/en/articles/8555545-file-uploads-faq"
+    author: "OpenAI"
+draft: false
+---
+
+## TL;DR
+
+Coding agents can make a one-off home-device automation worth attempting even when the result may eventually break. The safest first experiment stays inside the device maker's official app actions: let AI help interpret the public manual, then build one manual, reversible shortcut.
+
+## What's New
+
+Simon Willison says he is hearing about people using coding agents to understand and automate devices in their homes. He sees those projects as evidence that cheaper code changes which small, personal jobs are worth attempting.
+
+The capability itself is not new. Owners could already investigate device behavior and write custom controls, but the time involved often exceeded the value of a one-off result.
+
+Coding agents lower the effort required to start and to recover from a failed attempt. That matters with undocumented device interfaces, which may change and leave an automation needing maintenance or replacement.
+
+## Why It Matters
+
+You no longer need a broadly useful product idea to justify a small piece of automation. A shortcut that solves one recurring annoyance with one device can be worthwhile when drafting and revising it takes less effort.
+
+Lower effort does not remove the risks. Start with a device you own, public documentation, and actions exposed by its official app. A manual, reversible test gives you a useful boundary: if the app offers no suitable action, stop instead of probing private controls.
+
+<PracticalGuide timeToTry="15-25 min" prerequisites={["An iPhone or iPad with Apple Shortcuts","A device you own with an official companion app","The device's public manufacturer manual","An AI assistant that accepts documents"]}>
+
+1. Download only the device's public manual from its manufacturer; exclude serial numbers, account details, Wi-Fi credentials, pairing codes, API keys, and diagnostic logs.
+2. Open Shortcuts, navigate to App Shortcuts, and note the exact actions exposed by the device's official app. If none appear, stop rather than probing private interfaces.
+3. Upload the public manual to your AI assistant, paste the official action names, and ask for one manually run, reversible shortcut using only those actions. Exclude private APIs, network scanning, credentials, and security bypasses.
+4. In App Shortcuts, use the suggested official action in a new shortcut named 'Device test'. Keep it manual; do not add time, location, voice, or unattended triggers.
+5. Stand beside the device, run the shortcut once, confirm the expected harmless result, and undo any change in the official app. Delete it if the result differs or creates a safety, warranty, privacy, household, or cost concern.
+
+</PracticalGuide>

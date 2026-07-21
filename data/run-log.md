@@ -4,6 +4,7 @@
 
 Shipped:
 
+- `2026-07-21-cheap-device-automation` - Coding agents make one-off device automations cheaper to attempt; the guide stays within official app actions and a manual, reversible test.
 - `2026-07-20-long-running-agent-safety` - OpenAI's internal deployment incidents show why long-running agents need trajectory-level monitoring, checkpoints, and narrow permissions.
 - `2026-07-16-hugging-face-security-incident` - Hugging Face recommends rotating access tokens after an AI-driven intrusion reached internal datasets and service credentials.
 - `2026-07-20-nvidia-cosmos-3-edge` - NVIDIA released a four-billion-parameter world model for on-device scene reasoning and robot actions, with clear hardware and live-control caveats.
@@ -12,7 +13,7 @@ Skipped:
 
 - Anthropic rare-disease research grants - valuable and time-sensitive, but narrowly aimed at qualified researchers and early-stage biotech teams.
 - OpenAI Codex for Creative Building livestream - practical but temporary event coverage rather than a durable article.
-- Simon Willison commentary and reverse-engineering examples - useful signals, but weaker source-backed Practical Guide candidates than today's selected items.
+- Other Simon Willison commentary and opinion-only items - useful signals, but weaker source-backed Practical Guide candidates than today's selected items.
 - Social candidates - all 42 configured handles were unreachable through Nitter; RSS and primary-source research completed successfully.
 
 ## 2026-07-20
