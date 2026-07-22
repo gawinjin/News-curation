@@ -1,5 +1,18 @@
 # Signal Run Log
 
+## 2026-07-22
+
+Shipped:
+
+- `2026-07-22-nativ-local-ai-mac` - Nativ gives Apple-silicon Mac users a practical local-model test with an official download, a small starter model, and a reversible offline check.
+
+Skipped:
+
+- ChatGPT small business program - useful for eligible companies, but narrower and less independently testable than today's local-model guide.
+- Gemini Flash and Flash Cyber releases - important model news, but the strongest hands-on paths target developers or specialist security teams.
+- Physical-AI simulation, Grabette, and other robotics items - source-backed but require specialist hardware or workflows beyond a general reader's 5-30 minute test.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS and primary-source research completed successfully.
+
 ## 2026-07-21
 
 Shipped:

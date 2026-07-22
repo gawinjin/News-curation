@@ -1,0 +1,55 @@
+---
+title: "Nativ makes local AI approachable on a Mac"
+date: 2026-07-22
+category: guides
+tags: ["local-ai", "macos", "privacy", "open-models"]
+summary: "Nativ gives Apple-silicon Mac users a desktop interface for downloading and chatting with open AI models locally, without an account or subscription."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15-30 min"
+  prerequisites:
+    - "An Apple-silicon Mac (M1 or newer) running macOS 26 or later"
+    - "At least 4 GB of free storage"
+    - "Internet access for the app and model downloads"
+references:
+  - title: "Nativ: Run AI models locally on your Mac"
+    url: "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything"
+    author: "Simon Willison"
+    publishedAt: "2026-07-21"
+  - title: "Nativ — Run AI locally on your Mac"
+    url: "https://blaizzy.github.io/nativ/"
+    author: "Blaizzy"
+  - title: "Blaizzy/nativ"
+    url: "https://github.com/Blaizzy/nativ"
+    author: "Blaizzy"
+draft: false
+---
+
+## TL;DR
+
+Nativ lets you download and chat with open AI models directly on an Apple-silicon Mac. It needs no account or subscription, and a short offline test can confirm that your chosen model keeps working without an internet connection.
+
+## What's New
+
+Nativ is a macOS desktop app for running open AI models locally on M1-or-newer Macs. It packages Apple's MLX tools into a familiar chat interface, with streamed responses, Markdown and code display, image input, and performance figures for each message.
+
+The app can find compatible MLX models already in your Hugging Face cache. It also includes a local API server, so supported coding tools can use the same models running on your Mac.
+
+Nativ is open source under the MIT license, built on MLX-VLM, and available without an account or subscription.
+
+## Why It Matters
+
+Local AI gives Mac users a practical way to try open models without sending every prompt to a hosted service. It can also keep working when the internet is unavailable, while avoiding another recurring subscription.
+
+That does not make every app, model, or prompt automatically safe. Start with ordinary test questions, keep remote access off, and check storage and memory demands before downloading larger models.
+
+<PracticalGuide timeToTry="15-30 min" prerequisites={["An Apple-silicon Mac (M1 or newer) running macOS 26 or later","At least 4 GB of free storage","Internet access for the app and model downloads"]}>
+
+1. Download the latest Nativ DMG from the official GitHub Releases page, drag Nativ into Applications, and launch it. If macOS blocks it, verify the source instead of bypassing warnings blindly.
+2. Continue through first-launch setup with load-on-demand and confirm the main window opens. Leave remote access disabled for this local test.
+3. Open Models, choose LFM2.5-VL 1.6B (about 3.20 GB), and wait until it is installed and selectable. Avoid larger models for this quick test unless your Mac has ample storage and unified memory.
+4. Start a chat and ask, 'Explain in three bullets why leaves look green.' Confirm a streamed answer and performance metrics appear. Do not use passwords, private documents, or regulated data for this first test.
+5. After the model download finishes, disconnect Wi-Fi and ask, 'Reply with exactly: local test passed.' Confirm it answers offline, then reconnect. Delete the chat and remove the model if you want to reclaim storage.
+
+</PracticalGuide>

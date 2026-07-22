@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T08:03:34.374Z",
+  "generatedAt": "2026-07-22T08:04:13.356Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,13 +47,83 @@
   "items": [
     {
       "kind": "rss",
-      "title": "Reverse-engineering is cheap now",
-      "url": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything",
+      "title": "The State of Simulation for Physical AI: An Overview",
+      "url": "https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-07-21T20:00:27.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing the ChatGPT for small business program",
+      "url": "https://openai.com/index/introducing-chatgpt-small-business-program",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-07-21T17:00:00.000Z",
+      "summary": "OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work."
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
+      "url": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "category": "research",
+      "publishedAt": "2026-07-21T15:16:30.000Z",
+      "summary": "We’re introducing new Gemini models, including Gemini 3.6 Flash, 3.5 Flash-Lite and 3.5 Flash Cyber."
+    },
+    {
+      "kind": "rss",
+      "title": "Nativ: Run AI models locally on your Mac",
+      "url": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
-      "publishedAt": "2026-07-20T19:24:05.000Z",
-      "summary": "<p>I keep hearing anecdotes from people who used coding agents to reverse-engineer and automate devices in their homes.</p> <p>I think this is an interesting illustration of the impact of the reduced cost of writing code.</p> <p>Prior to agents, it was entirely possible to revers"
+      "publishedAt": "2026-07-21T14:22:27.000Z",
+      "summary": "<p><strong><a href=\"https://blaizzy.github.io/nativ/\">Nativ: Run AI models locally on your Mac</a></strong></p> Prince Canuma is the developer behind the excellent <a href=\"https://github.com/Blaizzy/mlx-vlm\">MLX-VLM</a> Python library for running vision-LLMs using MLX on a Mac.<"
+    },
+    {
+      "kind": "rss",
+      "title": "A Fireside Chat with Cat and Thariq from the Claude Code team",
+      "url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-07-21T12:54:02.000Z",
+      "summary": "<p>Earlier this month I hosted a fireside chat session at the <a href=\"https://www.ai.engineer/worldsfair/2026\">AI Engineer World's Fair</a> with Cat Wu and Thariq Shihipar from Anthropic's Claude Code team. We talked about Claude Code, Claude Tag, Fable, coding agent security, e"
+    },
+    {
+      "kind": "rss",
+      "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
+      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-07-21T07:00:00.000Z",
+      "summary": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders."
+    },
+    {
+      "kind": "rss",
+      "title": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
+      "url": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-07-21T00:00:00.000Z",
+      "summary": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC, bringing global leadership in finance, technology, and governance."
+    },
+    {
+      "kind": "rss",
+      "title": "Grabette: an open system to record robot-manipulation data",
+      "url": "https://huggingface.co/blog/grabette",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-07-21T00:00:00.000Z",
+      "summary": ""
     },
     {
       "kind": "rss",
@@ -64,6 +134,15 @@
       "category": "insights",
       "publishedAt": "2026-07-20T17:09:19.000Z",
       "summary": "<p><strong><a href=\"https://stratechery.com/2026/whos-afraid-of-chinese-models/\">Who’s Afraid of Chinese Models?</a></strong></p> Interesting proposal from Ben Thompson that both addresses the hypocrisy of labs outlawing distillation against their models despite training on unlic"
+    },
+    {
+      "kind": "rss",
+      "title": "How Meta&#x2019;s AI Models Are Powering the First Wave of Genesis Mission Projects",
+      "url": "https://ai.meta.com/blog/genesis-mission-lawrence-berkeley-national-laboratory-segment-anything-dino",
+      "source": "Meta AI",
+      "sourceId": "meta-ai",
+      "category": "model-releases",
+      "publishedAt": "2026-07-20T17:00:00.000Z"
     },
     {
       "kind": "rss",
@@ -164,6 +243,16 @@
       "category": "insights",
       "publishedAt": "2026-07-18T05:27:49.000Z",
       "summary": "<p><strong><a href=\"https://github.com/nascheme/quixote\">nascheme/quixote</a></strong></p> A certain vintage of Python web nerd might be delighted to learn that the most recent commit to the Quixote web framework was <a href=\"(https://github.com/nascheme/quixote/commit/7f775cf9d1"
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing Gemini 3.5 Flash Cyber",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "category": "research",
+      "publishedAt": "2026-07-17T15:00:11.000Z",
+      "summary": "Google introduces Gemini 3.5 Flash Cyber, a lightweight cybersecurity model to find and patch vulnerabilities."
     },
     {
       "kind": "rss",
@@ -364,86 +453,6 @@
       "category": "model-releases",
       "publishedAt": "2026-07-15T10:00:00.000Z",
       "summary": "Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness."
-    },
-    {
-      "kind": "rss",
-      "title": "Welcome Inkling by Thinking Machines",
-      "url": "https://huggingface.co/blog/thinkingmachines-inkling",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-07-15T00:00:00.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing Real World VoiceEQ: Measuring the human quality of voice AI",
-      "url": "https://huggingface.co/blog/real-world-voiceeq",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-07-15T00:00:00.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting GitHub Changelog",
-      "url": "https://simonwillison.net/2026/Jul/14/github-changeling/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-07-14T22:43:35.000Z",
-      "summary": "<blockquote cite=\"https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/\"><p>Dependabot now waits until a new release has been available on its registry for at least three days before opening a version update pull request. This coo"
-    },
-    {
-      "kind": "rss",
-      "title": "simonw/pedalican",
-      "url": "https://simonwillison.net/2026/Jul/14/pedalican/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-07-14T22:29:45.000Z",
-      "summary": "<p><strong><a href=\"https://github.com/simonw/pedalican\">simonw/pedalican</a></strong></p> Clearly I wasn't paying attention when these were <a href=\"https://twitter.com/OpenAIDevs/status/2050301642717950166\">first announced</a> back in May, but today I accidentally activated a \""
-    },
-    {
-      "kind": "rss",
-      "title": "lobste.rs is now running on SQLite",
-      "url": "https://simonwillison.net/2026/Jul/14/lobsters-sqlite/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-07-14T19:44:11.000Z",
-      "summary": "<p><strong><a href=\"https://lobste.rs/s/ko1ji1/lobste_rs_is_now_running_on_sqlite\">lobste.rs is now running on SQLite</a></strong></p> Community site <a href=\"https://lobste.rs\">Lobsters</a> has been planning a migration away from MariaDB <a href=\"https://github.com/lobsters/lobs"
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Armin Ronacher",
-      "url": "https://simonwillison.net/2026/Jul/14/armin-ronacher/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-07-14T18:04:23.000Z",
-      "summary": "<blockquote cite=\"https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/\"><p>The shared language of a software project is not English or Python but it is the common understanding of what its concepts mean, where the boundaries are, which invariants matter, who owns what, and "
-    },
-    {
-      "kind": "rss",
-      "title": "datasette 1.0a37",
-      "url": "https://simonwillison.net/2026/Jul/14/datasette/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-07-14T16:31:41.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a37\">datasette 1.0a37</a></p> <p>A minor release. Performance and <a href=\"https://docs.datasette.io/en/latest/authentication.html#authentication-permissions-explained\">documentation</a> imp"
-    },
-    {
-      "kind": "rss",
-      "title": "How to manage AI investments in the agentic era",
-      "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-07-14T10:00:00.000Z",
-      "summary": "Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows."
     }
   ]
 }

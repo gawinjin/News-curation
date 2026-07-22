@@ -1,0 +1,101 @@
+{
+  "slug": "nativ-local-ai-mac",
+  "date": "2026-07-22",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "Nativ makes local AI approachable on a Mac",
+    "Try an AI model offline on your Mac with Nativ"
+  ],
+  "summary": "Nativ gives Apple-silicon Mac users a desktop interface for downloading and chatting with open AI models locally, without an account or subscription.",
+  "tags": ["local-ai", "macos", "privacy", "open-models"],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
+    "title": "Nativ: Run AI models locally on your Mac",
+    "author": "Simon Willison",
+    "publishedAt": "2026-07-21",
+    "key_facts": [
+      "Nativ is a macOS desktop application that runs open AI models locally on Apple-silicon Macs.",
+      "The app wraps Apple's MLX ecosystem in a desktop interface with chat and a localhost API server.",
+      "Nativ can discover compatible MLX models already stored in a user's Hugging Face cache.",
+      "The project requires an M1-or-newer Mac and does not require an account or subscription.",
+      "The interface includes streaming chat, Markdown and code rendering, image input, and per-message performance metrics.",
+      "The project is open source under the MIT license and is built on MLX-VLM."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://blaizzy.github.io/nativ/",
+      "title": "Nativ — Run AI locally on your Mac",
+      "key_facts": [
+        "The official site documents Apple-silicon and macOS requirements, local model execution, supported models, downloads, and coding-tool integrations."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://github.com/Blaizzy/nativ",
+      "title": "Blaizzy/nativ",
+      "key_facts": [
+        "The official repository provides releases, setup steps, model sizes, feature documentation, and the MIT license."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15-30 min",
+    "prerequisites": [
+      "An Apple-silicon Mac (M1 or newer) running macOS 26 or later",
+      "At least 4 GB of free storage",
+      "Internet access for the app and model downloads"
+    ],
+    "steps": [
+      {
+        "instruction": "Download the latest Nativ DMG from the official GitHub Releases page, drag Nativ into Applications, and launch it. If macOS blocks it, verify the source instead of bypassing warnings blindly.",
+        "verify_url": "https://github.com/Blaizzy/nativ/releases/latest"
+      },
+      {
+        "instruction": "Continue through first-launch setup with load-on-demand and confirm the main window opens. Leave remote access disabled for this local test.",
+        "verify_url": "https://github.com/Blaizzy/nativ#download-a-release"
+      },
+      {
+        "instruction": "Open Models, choose LFM2.5-VL 1.6B (about 3.20 GB), and wait until it is installed and selectable. Avoid larger models for this quick test unless your Mac has ample storage and unified memory.",
+        "verify_url": "https://blaizzy.github.io/nativ/#models"
+      },
+      {
+        "instruction": "Start a chat and ask, 'Explain in three bullets why leaves look green.' Confirm a streamed answer and performance metrics appear. Do not use passwords, private documents, or regulated data for this first test.",
+        "verify_url": "https://github.com/Blaizzy/nativ#what-nativ-can-do"
+      },
+      {
+        "instruction": "After the model download finishes, disconnect Wi-Fi and ask, 'Reply with exactly: local test passed.' Confirm it answers offline, then reconnect. Delete the chat and remove the model if you want to reclaim storage.",
+        "verify_url": "https://github.com/Blaizzy/nativ#how-it-works"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Nativ: Run AI models locally on your Mac",
+      "url": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
+      "author": "Simon Willison",
+      "publishedAt": "2026-07-21"
+    },
+    {
+      "title": "Nativ — Run AI locally on your Mac",
+      "url": "https://blaizzy.github.io/nativ/",
+      "author": "Blaizzy"
+    },
+    {
+      "title": "Blaizzy/nativ",
+      "url": "https://github.com/Blaizzy/nativ",
+      "author": "Blaizzy"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Local inference reduces cloud exposure but does not make an unreviewed app or model safe for sensitive data.",
+    "Model downloads are several gigabytes and larger models may exceed a Mac's practical memory limits."
+  ],
+  "assembled_at": "2026-07-22T08:04:13.356Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
