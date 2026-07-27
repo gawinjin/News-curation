@@ -1,0 +1,55 @@
+---
+title: "Gemini 3.6 Flash is faster, leaner, and available now"
+date: 2026-07-21
+category: model-releases
+tags: ["google", "gemini", "models", "multimodal"]
+summary: "Google's Gemini 3.6 Flash improves coding, knowledge work, and multimodal tasks while using fewer output tokens, with access in the Gemini app and AI Studio."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A Google account with access to the Gemini app"
+    - "A short document or chart whose facts you know"
+references:
+  - title: "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber"
+    url: "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/"
+    author: "Google"
+    publishedAt: "2026-07-21"
+  - title: "Gemini 3.6 Flash"
+    url: "https://deepmind.google/models/gemini/flash/"
+    author: "Google DeepMind"
+  - title: "Gemini 3.6 Flash model card"
+    url: "https://deepmind.google/models/model-cards/gemini-3-6-flash/"
+    author: "Google DeepMind"
+    publishedAt: "2026-07-21"
+draft: false
+---
+
+## TL;DR
+
+Gemini 3.6 Flash is Google's new general-purpose fast model for coding, documents, images, audio, and video. It is available in the Gemini app and developer tools now. Google also released a cheaper Flash-Lite model, while the cyber version remains restricted to governments and trusted partners.
+
+## What's New
+
+Google says Gemini 3.6 Flash improves coding, knowledge work, computer use, and multimodal understanding over 3.5 Flash. Its model card lists a one-million-token input window and support for text, images, video, audio, and PDFs.
+
+Google reports 17% fewer output tokens than 3.5 Flash on one independent index. API input pricing stays at $1.50 per million tokens, while output pricing falls from $9 to $7.50 per million tokens.
+
+The companion 3.5 Flash-Lite targets high-volume, lower-cost work. Gemini 3.5 Flash Cyber is different: it is planned only for governments and trusted partners through a limited CodeMender pilot, so normal users should not expect it in the Gemini app.
+
+## Why It Matters
+
+Flash models are often the ones people use for ordinary work because they respond quickly. Better document and chart handling with less verbosity can matter more day to day than a larger model that takes longer to answer.
+
+Google's benchmarks are useful signals, not proof for your own files. A ten-minute document test will tell you more about missed facts, unwanted edits, and usable output than a leaderboard.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A Google account with access to the Gemini app","A short document or chart whose facts you know"]}>
+
+1. Open the Gemini app and check whether Gemini 3.6 Flash appears in the model picker or model label.
+2. Upload a short, non-sensitive document or chart that you can verify yourself.
+3. Ask for five factual findings, the page or chart location for each, and two uncertainties it cannot resolve.
+4. Check every finding against the source and count unsupported claims, missed details, and unnecessary wording.
+5. Repeat the prompt with your previous default model if available, then choose 3.6 Flash only if it improves accuracy, speed, or editing time for your work.
+
+</PracticalGuide>

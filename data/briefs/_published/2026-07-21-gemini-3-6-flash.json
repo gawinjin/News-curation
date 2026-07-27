@@ -1,0 +1,48 @@
+{
+  "slug": "gemini-3-6-flash",
+  "date": "2026-07-21",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Gemini 3.6 Flash is faster, leaner, and available now"],
+  "summary": "Google's Gemini 3.6 Flash improves coding, knowledge work, and multimodal tasks while using fewer output tokens, with access in the Gemini app and AI Studio.",
+  "tags": ["google", "gemini", "models", "multimodal"],
+  "primary_source": {
+    "url": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/",
+    "title": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
+    "author": "Google",
+    "publishedAt": "2026-07-21",
+    "key_facts": [
+      "Gemini 3.6 Flash is available in the Gemini app, AI Studio, API, and enterprise products.",
+      "Google reports improved coding, knowledge work, computer use, and multimodal performance.",
+      "Google reports 17% fewer output tokens than 3.5 Flash on the Artificial Analysis Index.",
+      "API pricing is $1.50 per million input tokens and $7.50 per million output tokens.",
+      "The model accepts text, images, video, audio, and PDFs with a one-million-token input window.",
+      "Gemini 3.5 Flash Cyber is restricted to a limited government and trusted-partner pilot."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://deepmind.google/models/gemini/flash/", "title": "Gemini 3.6 Flash", "key_facts": ["Official capability, availability, pricing, and model information."]},
+    {"url": "https://deepmind.google/models/model-cards/gemini-3-6-flash/", "title": "Gemini 3.6 Flash model card", "key_facts": ["Official limitations, safety, input, and distribution details."]}
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A Google account with Gemini app access", "A short document or chart whose facts are known"],
+    "steps": [
+      {"instruction": "Select Gemini 3.6 Flash if visible."},
+      {"instruction": "Upload a non-sensitive document or chart."},
+      {"instruction": "Request factual findings with source locations and uncertainties."},
+      {"instruction": "Check the output and compare it with the previous default model."}
+    ]
+  },
+  "references": [
+    {"title": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber", "url": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/", "author": "Google", "publishedAt": "2026-07-21"},
+    {"title": "Gemini 3.6 Flash", "url": "https://deepmind.google/models/gemini/flash/", "author": "Google DeepMind"},
+    {"title": "Gemini 3.6 Flash model card", "url": "https://deepmind.google/models/model-cards/gemini-3-6-flash/", "author": "Google DeepMind", "publishedAt": "2026-07-21"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["The cyber model is not generally available."],
+  "assembled_at": "2026-07-27T03:30:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
