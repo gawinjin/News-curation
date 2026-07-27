@@ -233,7 +233,10 @@
     "https://help.openai.com/en/articles/8555545-file-uploads-faq",
     "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
     "https://blaizzy.github.io/nativ/",
-    "https://github.com/Blaizzy/nativ"
+    "https://github.com/Blaizzy/nativ",
+    "https://www.anthropic.com/news/claude-opus-5",
+    "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5",
+    "https://www.anthropic.com/claude-opus-5-system-card"
   ],
-  "lastIngest": "2026-07-22T08:04:13.356Z"
+  "lastIngest": "2026-07-27T03:10:45.674Z"
 }

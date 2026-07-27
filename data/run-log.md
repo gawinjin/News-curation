@@ -1,5 +1,18 @@
 # Signal Run Log
 
+## 2026-07-27
+
+Shipped:
+
+- `2026-07-27-claude-opus-5` - Claude Opus 5 is now Anthropic's strongest Pro model and the Max default; the guide tests verification and constraint-following with a non-sensitive document.
+
+Skipped:
+
+- Token-reseller fraud, Ruff 0.16, and other developer or security commentary - current but too specialist for today's smallest strong set.
+- Health in ChatGPT - broadly relevant, but limited to eligible US users and involves medical-record privacy and higher-stakes guidance; Opus 5 offered the safer general-user test today.
+- Gemini Flash and Flash Cyber releases - important model news, but the clearest hands-on paths remain developer- or security-team-focused.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS and primary-source research completed successfully.
+
 ## 2026-07-22
 
 Shipped:

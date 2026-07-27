@@ -1,0 +1,108 @@
+{
+  "slug": "claude-opus-5",
+  "date": "2026-07-27",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": [
+    "Claude Opus 5 is here — test its careful second pass",
+    "Claude Opus 5 arrives for longer, more careful work"
+  ],
+  "summary": "Claude Opus 5 is now Anthropic's strongest Pro model and the Max default. A 15-minute document test can show whether its verification and constraint-following claims help your work.",
+  "tags": ["claude", "anthropic", "models", "how-to"],
+  "primary_source": {
+    "url": "https://www.anthropic.com/news/claude-opus-5",
+    "title": "Introducing Claude Opus 5",
+    "author": "Anthropic",
+    "publishedAt": "2026-07-24",
+    "key_facts": [
+      "Claude Opus 5 launched across Anthropic's products, becoming the default model for Claude Max and the strongest option available to Claude Pro subscribers.",
+      "Anthropic kept API pricing at $5 per million input tokens and $25 per million output tokens, matching Opus 4.8.",
+      "An optional Fast mode is about 2.5 times faster and costs twice the base API rate.",
+      "Anthropic reports improvements in professional work, computer use, research, visual output, work verification, and careful iteration.",
+      "Anthropic says the model more than doubled Opus 4.8's Frontier-Bench v0.1 performance while reducing cost per task.",
+      "Anthropic says Opus 5 does not move the frontier in risky dual-use capabilities and remains behind Mythos 5 in biology and offensive cybersecurity."
+    ],
+    "quote_candidates": [
+      {
+        "text": "Claude Opus 5 is much stronger at verifying its work and iterating carefully until it succeeds.",
+        "words": 15,
+        "exact": true,
+        "position": "Working with Claude Opus 5 section"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5",
+      "title": "Prompting Claude Opus 5",
+      "key_facts": [
+        "Anthropic recommends stating the desired response length explicitly and adjusting effort to balance quality, speed, and cost."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://www.anthropic.com/claude-opus-5-system-card",
+      "title": "Claude Opus 5 System Card",
+      "key_facts": [
+        "Anthropic publishes its capability and safety evaluation details in a launch-linked system card."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15–20 min",
+    "prerequisites": [
+      "A Claude Pro or Max account",
+      "A non-sensitive 300–800 word document or familiar topic you can independently check"
+    ],
+    "steps": [
+      {
+        "instruction": "Open Claude, start a new chat, click the model name beside the send button, choose More models if needed, and select Opus 5. Stop if it is absent; your plan or organization may not enable it.",
+        "verify_url": "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings"
+      },
+      {
+        "instruction": "Paste a non-sensitive text you know well and ask: Review this text, identify the three most important issues, explain each plainly, and propose a revision without inventing missing facts.",
+        "verify_url": "https://www.anthropic.com/news/claude-opus-5"
+      },
+      {
+        "instruction": "Ask Opus 5 to check every claim against your original text, list uncertainties, and correct unsupported statements. Verify the changes yourself.",
+        "verify_url": "https://www.anthropic.com/news/claude-opus-5"
+      },
+      {
+        "instruction": "Ask it to shorten the revision by 30% while preserving every date, number, and named requirement. Compare both versions and confirm those details survived.",
+        "verify_url": "https://www.anthropic.com/news/claude-opus-5"
+      },
+      {
+        "instruction": "Optionally repeat the same task with another available model and compare factual accuracy, useful corrections, and constraint-following. Do not use either result for consequential decisions without your own review.",
+        "verify_url": "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Introducing Claude Opus 5",
+      "url": "https://www.anthropic.com/news/claude-opus-5",
+      "author": "Anthropic",
+      "publishedAt": "2026-07-24"
+    },
+    {
+      "title": "Prompting Claude Opus 5",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5",
+      "author": "Anthropic",
+      "publishedAt": "2026-07-24"
+    },
+    {
+      "title": "Claude Opus 5 System Card",
+      "url": "https://www.anthropic.com/claude-opus-5-system-card",
+      "author": "Anthropic",
+      "publishedAt": "2026-07-24"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The guide uses only non-sensitive material and requires independent review before consequential use."
+  ],
+  "assembled_at": "2026-07-27T03:15:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
