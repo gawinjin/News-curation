@@ -4,7 +4,7 @@
 
 Shipped:
 
-- `2026-07-27-claude-opus-5` - Claude Opus 5 is now Anthropic's strongest Pro model and the Max default; the guide tests verification and constraint-following with a non-sensitive document.
+- `2026-07-24-claude-opus-5` - Claude Opus 5 is now Anthropic's strongest Pro model and the Max default; the guide tests verification and constraint-following with a non-sensitive document.
 - `2026-07-23-chatgpt-health-launch` - ChatGPT Health now connects optional medical records and Apple Health data for eligible U.S. adults, with a privacy-first test and clear deletion limits.
 - `2026-07-21-gemini-3-6-flash` - Gemini 3.6 Flash is broadly available for faster multimodal work, while Flash Cyber remains restricted to trusted partners.
 
