@@ -1,0 +1,48 @@
+{
+  "slug": "chatgpt-health-launch",
+  "date": "2026-07-23",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["ChatGPT Health can now connect records and Apple Health"],
+  "summary": "ChatGPT Health is rolling out to U.S. adults with optional medical-record and Apple Health connections, separate permissions, and important privacy limits.",
+  "tags": ["openai", "chatgpt", "health", "privacy"],
+  "primary_source": {
+    "url": "https://openai.com/index/health-in-chatgpt/",
+    "title": "Launching Health in ChatGPT",
+    "author": "OpenAI",
+    "publishedAt": "2026-07-23",
+    "key_facts": [
+      "Health is gradually rolling out to U.S. ChatGPT users age 18 and older on web and iOS.",
+      "Eligible plans are Free, Go, Plus, and Pro.",
+      "Users can connect Apple Health, supported medical records, One Medical, and Function Health.",
+      "Connected data and conversations that use it are not used for model training or ad targeting.",
+      "Disconnecting a source does not remove health details already included in chat history.",
+      "OpenAI says ChatGPT can make mistakes and does not replace medical professionals."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://help.openai.com/en/articles/20001036-health-in-chatgpt", "title": "Health in ChatGPT", "key_facts": ["Official eligibility, setup, permission, deletion, and troubleshooting details."]},
+    {"url": "https://openai.com/policies/health-privacy-policy/", "title": "Health Privacy Notice", "key_facts": ["Official health-data privacy terms and user controls."]}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A U.S. ChatGPT account for someone age 18 or older", "ChatGPT on web or iOS", "A low-risk health question"],
+    "steps": [
+      {"instruction": "Check the sidebar or More menu for Health."},
+      {"instruction": "Read permissions before connecting a source."},
+      {"instruction": "Test a non-urgent appointment-preparation question without connecting data."},
+      {"instruction": "Verify details and review account and chat-history deletion controls separately."}
+    ]
+  },
+  "references": [
+    {"title": "Launching Health in ChatGPT", "url": "https://openai.com/index/health-in-chatgpt/", "author": "OpenAI", "publishedAt": "2026-07-23"},
+    {"title": "Health in ChatGPT", "url": "https://help.openai.com/en/articles/20001036-health-in-chatgpt", "author": "OpenAI"},
+    {"title": "Health Privacy Notice", "url": "https://openai.com/policies/health-privacy-policy/", "author": "OpenAI"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Health is a gradual U.S.-only rollout and is not a diagnosis or treatment service."],
+  "assembled_at": "2026-07-27T03:30:00Z",
+  "assembled_by": "Signal Orchestrator"
+}
