@@ -1,0 +1,103 @@
+{
+  "slug": "samsung-gemini-ai-glasses",
+  "date": "2026-07-27",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": [
+    "Samsung puts Gemini into everyday eyewear",
+    "Samsung previews Gemini-powered smart glasses"
+  ],
+  "summary": "Samsung previewed Gemini-powered eyewear that can see, translate, navigate, and take notes. You can test the core camera workflow now with Gemini Live.",
+  "tags": ["samsung", "gemini", "smart-glasses", "privacy"],
+  "primary_source": {
+    "url": "https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear",
+    "title": "Samsung Brings Galaxy Ecosystem Into Everyday Eyewear",
+    "author": "Samsung",
+    "publishedAt": "2026-07-22",
+    "key_facts": [
+      "Samsung previewed intelligent eyewear developed with Gentle Monster and Warby Parker.",
+      "The eyewear combines a built-in camera, Gemini, Android XR, and Qualcomm's Snapdragon AR1 Gen 1 chip.",
+      "Samsung demonstrated message summaries, live translation, note capture, navigation help, and live visual sharing.",
+      "Samsung claims up to nine hours of use per charge and up to seven additional recharges from the case.",
+      "Samsung did not announce a public price or firm sale date."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://news.samsung.com/global/infographic-galaxy-unpacked-july-2026-highlights-from-galaxy-unpacked",
+      "title": "Galaxy Unpacked July 2026 Highlights",
+      "key_facts": [
+        "Samsung's event recap lists the intelligent eyewear among its July 2026 Galaxy announcements."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://support.google.com/gemini/answer/15274899?co=GENIE.Platform%3DAndroid&hl=en",
+      "title": "Talk naturally with Gemini Live",
+      "key_facts": [
+        "Gemini Live on Android can share a camera view or the device screen.",
+        "Screen sharing exposes the full screen and stops when the device is locked or the session is put on hold.",
+        "Shared content may be saved depending on the user's Gemini Apps Activity settings."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "An Android phone or tablet with the Gemini app",
+      "A personal Google account",
+      "A non-sensitive object or document"
+    ],
+    "steps": [
+      {
+        "instruction": "Review Gemini Apps Activity before sharing anything and choose a non-sensitive test.",
+        "verify_url": "https://support.google.com/gemini/answer/15274899?co=GENIE.Platform%3DAndroid&hl=en"
+      },
+      {
+        "instruction": "Start Gemini Live, share the camera, and ask it to describe a household object while stating uncertainty.",
+        "verify_url": "https://support.google.com/gemini/answer/15274899?co=GENIE.Platform%3DAndroid&hl=en"
+      },
+      {
+        "instruction": "Stop camera sharing and confirm that the camera indicator is no longer active.",
+        "verify_url": "https://support.google.com/gemini/answer/15274899?co=GENIE.Platform%3DAndroid&hl=en"
+      },
+      {
+        "instruction": "Optionally share a dummy note, request a short summary, and stop sharing from Gemini or the Android notification.",
+        "verify_url": "https://support.google.com/gemini/answer/15274899?co=GENIE.Platform%3DAndroid&hl=en"
+      },
+      {
+        "instruction": "Lock the screen to confirm sharing does not resume automatically, and get permission before including another person.",
+        "verify_url": "https://support.google.com/gemini/answer/15274899?co=GENIE.Platform%3DAndroid&hl=en"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Samsung Brings Galaxy Ecosystem Into Everyday Eyewear",
+      "url": "https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear",
+      "author": "Samsung",
+      "publishedAt": "2026-07-22"
+    },
+    {
+      "title": "Galaxy Unpacked July 2026 Highlights",
+      "url": "https://news.samsung.com/global/infographic-galaxy-unpacked-july-2026-highlights-from-galaxy-unpacked",
+      "author": "Samsung",
+      "publishedAt": "2026-07-22"
+    },
+    {
+      "title": "Talk naturally with Gemini Live",
+      "url": "https://support.google.com/gemini/answer/15274899?co=GENIE.Platform%3DAndroid&hl=en",
+      "author": "Google"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The eyewear has no announced public price or firm sale date.",
+    "The practical guide uses only non-sensitive material and explicitly covers consent, saved activity, and stopping camera or screen sharing."
+  ],
+  "assembled_at": "2026-07-27T09:35:36Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

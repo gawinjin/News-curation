@@ -4,6 +4,7 @@
 
 Shipped:
 
+- `2026-07-27-samsung-gemini-ai-glasses` - Samsung previewed Gemini-powered intelligent eyewear; the guide tests its camera-aware workflow safely with Gemini Live on Android.
 - `2026-07-27-token-relay-market` - Deeply discounted AI access can hide pooled or compromised credentials; the guide checks official accounts, endpoints, and usage with a reversible test.
 - `2026-07-24-claude-opus-5` - Claude Opus 5 is now Anthropic's strongest Pro model and the Max default; the guide tests verification and constraint-following with a non-sensitive document.
 - `2026-07-23-chatgpt-health-launch` - ChatGPT Health now connects optional medical records and Apple Health data for eligible U.S. adults, with a privacy-first test and clear deletion limits.

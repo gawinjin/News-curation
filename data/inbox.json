@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T08:04:39.558Z",
+  "generatedAt": "2026-07-27T09:33:04.907Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -45,16 +45,6 @@
     "alexalbert__"
   ],
   "items": [
-    {
-      "kind": "rss",
-      "title": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
-      "url": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-07-26T19:30:54.000Z",
-      "summary": "<p><strong><a href=\"https://vectoral.com/blog/token-relay-market\">An Inside Look at the Relay Market Powering Token Resellers and Fraud</a></strong></p> Fascinating investigation by Matt Lenhard into the market that has grown up around reselling LLM tokens at a discount by poolin"
-    },
     {
       "kind": "rss",
       "title": "Ruff v0.16.0",
