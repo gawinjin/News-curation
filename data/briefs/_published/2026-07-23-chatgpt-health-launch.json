@@ -7,7 +7,7 @@
   "summary": "ChatGPT Health is rolling out to U.S. adults with optional medical-record and Apple Health connections, separate permissions, and important privacy limits.",
   "tags": ["openai", "chatgpt", "health", "privacy"],
   "primary_source": {
-    "url": "https://openai.com/index/health-in-chatgpt/",
+    "url": "https://openai.com/index/health-in-chatgpt",
     "title": "Launching Health in ChatGPT",
     "author": "OpenAI",
     "publishedAt": "2026-07-23",
@@ -36,7 +36,7 @@
     ]
   },
   "references": [
-    {"title": "Launching Health in ChatGPT", "url": "https://openai.com/index/health-in-chatgpt/", "author": "OpenAI", "publishedAt": "2026-07-23"},
+    {"title": "Launching Health in ChatGPT", "url": "https://openai.com/index/health-in-chatgpt", "author": "OpenAI", "publishedAt": "2026-07-23"},
     {"title": "Health in ChatGPT", "url": "https://help.openai.com/en/articles/20001036-health-in-chatgpt", "author": "OpenAI"},
     {"title": "Health Privacy Notice", "url": "https://openai.com/policies/health-privacy-policy/", "author": "OpenAI"}
   ],
