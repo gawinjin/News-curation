@@ -1,0 +1,115 @@
+{
+  "slug": "token-relay-market",
+  "date": "2026-07-27",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": [
+    "Cheap AI tokens can hide a risky relay",
+    "Check where your discounted AI access really goes"
+  ],
+  "summary": "Deeply discounted AI access may route prompts through pooled or compromised accounts. A 15-minute endpoint and usage check can reveal whether your app talks to an official provider.",
+  "tags": ["security", "privacy", "api", "fraud"],
+  "primary_source": {
+    "url": "https://vectoral.com/blog/token-relay-market",
+    "title": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
+    "author": "Matt Lenhard",
+    "publishedAt": "2026-06-28",
+    "key_facts": [
+      "Relay services proxy requests to major AI models and advertise access far below official prices; Vectoral observed discounts as high as 97.8%.",
+      "The investigated market has four overlapping layers: card and account sellers, account pools, customer-facing relays, and buyers.",
+      "Account pools combine many credentials and rotate around rate limits or disabled accounts while exposing one API to downstream relays.",
+      "Many observed relays used open-source gateways that imitate OpenAI's API format and route requests through pooled provider keys.",
+      "The gateway software also has legitimate uses; abuse comes from stolen, leaked, fraudulently funded, or terms-violating credentials.",
+      "Reported sourcing methods include mass free-trial creation, chargebacks, stolen or prepaid cards, and poorly protected support chatbots.",
+      "Vectoral estimated about 3.6 million monthly visits across the ten most-visited relays it tracked."
+    ],
+    "quote_candidates": [
+      {
+        "text": "There’s nothing inherently illicit about the software. one-api and new-api are neutral, legitimate tools.",
+        "words": 14,
+        "exact": true,
+        "position": "The Software Behind the Relays"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://openai.com/policies/services-agreement/",
+      "title": "OpenAI Services Agreement",
+      "key_facts": [
+        "OpenAI's business terms prohibit buying, selling, or transferring API keys and reselling or leasing account access."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety",
+      "title": "Best Practices for API Key Safety",
+      "key_facts": [
+        "OpenAI advises users not to share API keys and to rotate a key immediately if it may have leaked."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": [
+      "Access to your official AI provider account",
+      "Access to the AI app's provider settings",
+      "A non-sensitive test prompt"
+    ],
+    "steps": [
+      {
+        "instruction": "Open your provider account directly at platform.openai.com or console.anthropic.com, then confirm that the organization, billing details, and API keys are ones you recognize.",
+        "verify_url": "https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety"
+      },
+      {
+        "instruction": "In the AI app's provider settings, check the API base URL. Official OpenAI traffic uses api.openai.com and Anthropic traffic uses api.anthropic.com. Stop before entering a key if you see an unfamiliar relay or seller domain.",
+        "verify_url": "https://vectoral.com/blog/token-relay-market"
+      },
+      {
+        "instruction": "Open the official provider's usage page and compare recent models, timestamps, and spending with your own activity. Treat unexplained use as a possible compromise.",
+        "verify_url": "https://console.anthropic.com/settings/usage"
+      },
+      {
+        "instruction": "Copy the current app settings somewhere private, remove the API key from that app only, and send the non-sensitive prompt Reply with SAFE TEST only. The request should fail without a credential; restore it only after the endpoint is trusted.",
+        "verify_url": "https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety"
+      },
+      {
+        "instruction": "If anything is suspicious, create a replacement key in the official console, update only trusted apps, revoke the old key, and recheck usage. Never send the replacement through chat, email, or a reseller form.",
+        "verify_url": "https://platform.openai.com/api-keys"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
+      "url": "https://vectoral.com/blog/token-relay-market",
+      "author": "Matt Lenhard",
+      "publishedAt": "2026-06-28"
+    },
+    {
+      "title": "OpenAI Services Agreement",
+      "url": "https://openai.com/policies/services-agreement/",
+      "author": "OpenAI"
+    },
+    {
+      "title": "Best Practices for API Key Safety",
+      "url": "https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety",
+      "author": "OpenAI"
+    },
+    {
+      "title": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
+      "url": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
+      "author": "Simon Willison",
+      "publishedAt": "2026-07-26"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The practical guide uses official account pages, a non-sensitive prompt, and a reversible credential-removal test.",
+    "The article distinguishes legitimate gateway software from abusive credential sourcing."
+  ],
+  "assembled_at": "2026-07-27T08:10:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

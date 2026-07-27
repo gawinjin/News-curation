@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T03:29:10.584Z",
+  "generatedAt": "2026-07-27T08:04:39.558Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -353,16 +353,6 @@
       "category": "model-releases",
       "publishedAt": "2026-07-20T10:00:00.000Z",
       "summary": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment."
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Sam Altman",
-      "url": "https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-07-20T03:47:59.000Z",
-      "summary": "<blockquote cite=\"https://twitter.com/techemails/status/2078854346683678927\"><p>We have been having extensive discussions around open source strategy. We will discuss it more at our next board meeting, but one thing we’d like to do soon is to create a language model with the appr"
     }
   ]
 }

@@ -1,0 +1,59 @@
+---
+title: "Cheap AI tokens can hide a risky relay"
+date: 2026-07-27
+category: insights
+tags: ["security", "privacy", "api", "fraud"]
+summary: "Deeply discounted AI access may route prompts through pooled or compromised accounts. A 15-minute endpoint and usage check can reveal whether your app talks to an official provider."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "Access to your official AI provider account"
+    - "Access to the AI app's provider settings"
+    - "A non-sensitive test prompt"
+references:
+  - title: "An Inside Look at the Relay Market Powering Token Resellers and Fraud"
+    url: "https://vectoral.com/blog/token-relay-market"
+    author: "Matt Lenhard"
+    publishedAt: "2026-06-28"
+  - title: "OpenAI Services Agreement"
+    url: "https://openai.com/policies/services-agreement/"
+    author: "OpenAI"
+  - title: "Best Practices for API Key Safety"
+    url: "https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety"
+    author: "OpenAI"
+  - title: "An Inside Look at the Relay Market Powering Token Resellers and Fraud"
+    url: "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything"
+    author: "Simon Willison"
+    publishedAt: "2026-07-26"
+draft: false
+---
+
+## TL;DR
+
+An AI deal priced far below the official rate may be routing your prompts through a relay backed by pooled or compromised accounts. Vectoral found advertised discounts as high as 97.8%. Before trusting a bargain service, check its API address, your official provider account, and recent usage.
+
+## What's New
+
+Vectoral mapped a market that sits between AI providers and people buying cheap access. Account sellers supply credentials, pools combine and rotate them, and customer-facing relays offer one familiar-looking API. The ten most-visited relays Vectoral tracked drew an estimated 3.6 million visits per month.
+
+Many of these services use open-source gateways that copy OpenAI's API format, then send each request through one of many provider keys. That software can be used legitimately. The risk comes from relays stocked with stolen, leaked, fraudulently funded, or otherwise unauthorized credentials.
+
+The reported supply methods include automated free-trial sign-ups, chargebacks, stolen or prepaid cards, and traffic taken from poorly protected support chatbots. OpenAI's business terms prohibit transferring API keys or reselling account access, and its safety guidance says a possibly exposed key should be rotated immediately.
+
+## Why It Matters
+
+A relay can look like an ordinary AI provider because the app may use the same settings and request format. The unusually low price is the warning: your prompts can travel through infrastructure you do not control, while access may depend on accounts that can be disabled or replaced without notice.
+
+You do not need to investigate the whole market. Check the app's base URL against the official provider domain, compare the provider's usage records with your activity, and use the reversible test below. If the endpoint or usage looks unfamiliar, stop sending prompts and replace the key through the official console.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["Access to your official AI provider account","Access to the AI app's provider settings","A non-sensitive test prompt"]}>
+
+1. Open your provider account directly at platform.openai.com or console.anthropic.com, then confirm that the organization, billing details, and API keys are ones you recognize.
+2. In the AI app's provider settings, check the API base URL. Official OpenAI traffic uses api.openai.com and Anthropic traffic uses api.anthropic.com. Stop before entering a key if you see an unfamiliar relay or seller domain.
+3. Open the official provider's usage page and compare recent models, timestamps, and spending with your own activity. Treat unexplained use as a possible compromise.
+4. Copy the current app settings somewhere private, remove the API key from that app only, and send the non-sensitive prompt Reply with SAFE TEST only. The request should fail without a credential; restore it only after the endpoint is trusted.
+5. If anything is suspicious, create a replacement key in the official console, update only trusted apps, revoke the old key, and recheck usage. Never send the replacement through chat, email, or a reseller form.
+
+</PracticalGuide>
