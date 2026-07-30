@@ -1,0 +1,121 @@
+{
+  "slug": "lyria-3-5-flow-music",
+  "date": "2026-07-29",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": [
+    "Lyria 3.5 reaches Flow Music — test its prompt control",
+    "Google's Lyria 3.5 makes AI songs easier to steer"
+  ],
+  "summary": "Google's Lyria 3.5 adds clearer vocals, stronger prompt following, and more control in Flow Music. A private two-song test can show whether one prompt change produces a useful difference.",
+  "tags": ["google", "lyria", "music", "how-to"],
+  "primary_source": {
+    "url": "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/",
+    "title": "We're launching Lyria 3.5 in Google Flow Music",
+    "author": "Google DeepMind",
+    "publishedAt": "2026-07-29",
+    "key_facts": [
+      "Google is rolling out its newest music-generation model, Lyria 3.5, in Google Flow Music.",
+      "Google says the model can produce richer melodies that sound more natural.",
+      "The company reports better prompt following and awareness of song structure when generating lyrics.",
+      "Google says vocals are more realistic and expressive, with clearer pronunciation.",
+      "Users can more directly control the tempo and duration of generated music."
+    ],
+    "quote_candidates": [
+      {
+        "text": "More easily control the tempo and duration of your outputs.",
+        "words": 10,
+        "exact": true,
+        "position": "What's new — Creative control"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://support.google.com/flow/answer/17083868?hl=en",
+      "title": "Get started with Google Flow Music",
+      "key_facts": [
+        "Google says Flow Music is available at no charge to users aged 18 or older in supported regions with a Google Account."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://support.google.com/flow/answer/17084348?hl=en",
+      "title": "Create and manage songs in Google Flow Music",
+      "key_facts": [
+        "Google's help page documents creating songs from prompts, playing results, and managing publication and sharing controls."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://deepmind.google/models/lyria/",
+      "title": "Lyria 3.5",
+      "key_facts": [
+        "Google says every Lyria-generated track receives an imperceptible SynthID watermark."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": [
+      "A Google Account, verified age 18+, a supported region, and credits for two generations",
+      "Headphones or speakers and a note for scoring",
+      "Original text only; no private or unlicensed inputs"
+    ],
+    "steps": [
+      {
+        "instruction": "Sign in at flowmusic.app. Stop if Google says your age or region is unsupported.",
+        "verify_url": "https://support.google.com/flow/answer/17083868?hl=en"
+      },
+      {
+        "instruction": "Select New session. Enter: Make a short, cheerful synth-pop song with original lyrics about watering a windowsill basil plant; clear vocals, a simple chorus, and no references to real artists or existing songs. Select Send, then play one result.",
+        "verify_url": "https://support.google.com/flow/answer/17084348?hl=en"
+      },
+      {
+        "instruction": "Score Song A from 1–5 for lyric clarity, vocal naturalness, and fit with cheerful synth-pop.",
+        "verify_url": "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/"
+      },
+      {
+        "instruction": "Start another New session with the same prompt, changing only synth-pop to acoustic folk. Generate, play, and score Song B with the same measures; compare the arrangements and scores.",
+        "verify_url": "https://support.google.com/flow/answer/17084348?hl=en"
+      },
+      {
+        "instruction": "Keep both songs private while testing. Before publishing or commercial use, confirm that your inputs are yours or licensed, check applicable copyright and platform rules, and disclose AI generation where appropriate.",
+        "verify_url": "https://support.google.com/flow/answer/17084348?hl=en"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "We're launching Lyria 3.5 in Google Flow Music",
+      "url": "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/",
+      "author": "Google DeepMind",
+      "publishedAt": "2026-07-29"
+    },
+    {
+      "title": "Get started with Google Flow Music",
+      "url": "https://support.google.com/flow/answer/17083868?hl=en",
+      "author": "Google"
+    },
+    {
+      "title": "Create and manage songs in Google Flow Music",
+      "url": "https://support.google.com/flow/answer/17084348?hl=en",
+      "author": "Google"
+    },
+    {
+      "title": "Lyria 3.5",
+      "url": "https://deepmind.google/models/lyria/",
+      "author": "Google DeepMind",
+      "publishedAt": "2026-07-29"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Availability depends on verified age and region.",
+    "The guide uses original text, keeps results private, and requires a rights check before publication or commercial use."
+  ],
+  "assembled_at": "2026-07-30T08:10:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

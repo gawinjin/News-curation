@@ -1,5 +1,17 @@
 # Signal Run Log
 
+## 2026-07-30
+
+Shipped:
+
+- `2026-07-29-lyria-3-5-flow-music` - Google's Lyria 3.5 adds stronger prompt following, clearer vocals, and a private two-song comparison that eligible adults can try with original text.
+
+Skipped:
+
+- GPT-5.6 efficiency and ARC-AGI settings - current source material, but Signal already covered GPT-5.6 access, model comparison, and intelligence-per-dollar framing.
+- AI worming through Word, cryptography research, agent-intrusion follow-ups, and specialist model or developer releases - important but narrower, riskier, or less directly testable for general users than today's music workflow.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS and official-source research completed successfully.
+
 ## 2026-07-27
 
 Shipped:
