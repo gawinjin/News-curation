@@ -1,5 +1,18 @@
 # Signal Run Log
 
+## 2026-07-31
+
+Shipped:
+
+- No high-signal candidates today - skipping.
+
+Skipped:
+
+- OpenAI's Europe governance update - current and source-backed, but its only concrete normal-user workflow repeats Signal's existing content-provenance guide.
+- GPT-5.6 price-performance coverage - repeats Signal's recent access, model-comparison, and intelligence-per-dollar coverage.
+- Anthropic's evaluation incidents, AI worming through Word, robotics, GPU management, and specialist developer releases - important, but duplicate, specialist, or without a distinct 5-30 minute general-user guide.
+- Social candidates - all 42 configured handles were unreachable through Nitter; the RSS snapshot completed successfully.
+
 ## 2026-07-30
 
 Shipped:
