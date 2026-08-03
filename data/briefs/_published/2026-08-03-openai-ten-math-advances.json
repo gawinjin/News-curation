@@ -1,0 +1,57 @@
+{
+  "slug": "openai-ten-math-advances",
+  "date": "2026-08-03",
+  "category": "research",
+  "audience": "general",
+  "title_candidates": ["OpenAI says Astra found ten new mathematics results"],
+  "summary": "OpenAI published ten AI-generated mathematics results with papers and Lean certificates. The useful lesson is how to separate a research claim from its supporting evidence.",
+  "tags": ["openai", "mathematics", "research", "verification"],
+  "primary_source": {
+    "url": "https://openai.com/index/ten-advances-in-mathematics/",
+    "title": "Ten advances in mathematics and theoretical computer science",
+    "author": "OpenAI",
+    "publishedAt": "2026-08-01",
+    "key_facts": [
+      "OpenAI says an internal Astra model produced ten results across mathematics and theoretical computer science.",
+      "The company says the results resolve or substantially advance long-standing problems.",
+      "Humans prepared manuscripts with the model, which also formalized the arguments in Lean.",
+      "OpenAI estimates the successful solution tokens at roughly $2,000 at GPT-5.6 Sol API rates."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://github.com/openai/ten-proofs",
+      "title": "openai/ten-proofs",
+      "key_facts": ["The repository publishes one or more Lean files for each listed result and instructions for independent proof checking."],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/",
+      "title": "Ten advances in mathematics and theoretical computer science",
+      "key_facts": ["Simon Willison noted the public proofs and walkthroughs while pointing out that the prompts and unsuccessful attempts were not disclosed."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A browser", "Any general-purpose AI assistant", "One result from OpenAI's list"],
+    "steps": [
+      {"instruction": "Choose one result from OpenAI's article and copy only its short description.", "verify_url": "https://openai.com/index/ten-advances-in-mathematics/"},
+      {"instruction": "Ask an assistant to separate prior knowledge, the new claim, significance, and uncertainty.", "verify_url": "https://openai.com/index/ten-advances-in-mathematics/"},
+      {"instruction": "Remove unsupported additions by comparing the explanation with the source.", "verify_url": "https://openai.com/index/ten-advances-in-mathematics/"},
+      {"instruction": "Find the corresponding Lean file in the public repository.", "verify_url": "https://github.com/openai/ten-proofs"},
+      {"instruction": "Record one supported fact and one question that still needs an expert.", "verify_url": "https://github.com/openai/ten-proofs"}
+    ]
+  },
+  "references": [
+    {"title": "Ten advances in mathematics and theoretical computer science", "url": "https://openai.com/index/ten-advances-in-mathematics/", "author": "OpenAI", "publishedAt": "2026-08-01"},
+    {"title": "openai/ten-proofs", "url": "https://github.com/openai/ten-proofs", "author": "OpenAI", "publishedAt": "2026-08-01"},
+    {"title": "Ten advances in mathematics and theoretical computer science", "url": "https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/", "author": "Simon Willison", "publishedAt": "2026-08-01"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["All research-result claims are attributed to OpenAI pending broader expert review.", "Astra is not publicly available and the original prompts and unsuccessful attempts were not disclosed."],
+  "assembled_at": "2026-08-03T07:55:43Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

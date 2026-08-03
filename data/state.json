@@ -253,7 +253,14 @@
     "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/",
     "https://support.google.com/flow/answer/17083868?hl=en",
     "https://support.google.com/flow/answer/17084348?hl=en",
-    "https://deepmind.google/models/lyria/"
+    "https://deepmind.google/models/lyria/",
+    "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+    "https://api-docs.deepseek.com/quick_start/pricing/",
+    "https://huggingface.co/docs/inference-providers/index",
+    "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/",
+    "https://openai.com/index/ten-advances-in-mathematics/",
+    "https://github.com/openai/ten-proofs",
+    "https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/"
   ],
-  "lastIngest": "2026-07-31T08:08:03.973Z"
+  "lastIngest": "2026-08-03T07:55:43.138Z"
 }

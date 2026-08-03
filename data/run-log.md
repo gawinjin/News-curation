@@ -1,5 +1,19 @@
 # Signal Run Log
 
+## 2026-08-03
+
+Shipped:
+
+- `2026-08-03-deepseek-v4-flash-0731` - DeepSeek finalized V4 Flash with stronger agent claims, MIT-licensed weights, and a hosted browser test that avoids a huge local download.
+- `2026-08-03-openai-ten-math-advances` - OpenAI published ten Astra-generated mathematics results with manuscripts and Lean certificates; the guide teaches readers to separate claims from evidence.
+
+Skipped:
+
+- EU AI Act content-labelling rules - important and newly applicable, but the practical reader workflow duplicates Signal's existing content-provenance guide and the July 31 editorial decision.
+- Simon Willison's condense-json, Datasette, MCP, and eval releases - current and useful for developers, but narrower than today's general-user stories.
+- Open letters, company programs, policy essays, and specialist robotics updates - current but without a distinct 5-30 minute general-user test.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS and primary-source research completed successfully.
+
 ## 2026-07-31
 
 Shipped:

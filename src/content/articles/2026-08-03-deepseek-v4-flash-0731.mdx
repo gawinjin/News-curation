@@ -1,0 +1,59 @@
+---
+title: "DeepSeek V4 Flash gets an agent-focused release"
+date: 2026-08-03
+category: model-releases
+tags: ["deepseek", "open-models", "agents", "huggingface"]
+summary: "DeepSeek finalized V4 Flash with stronger tool-use claims, a one-million-token context window, MIT-licensed weights, and hosted inference for a practical browser test."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A browser"
+    - "A Hugging Face account if the hosted provider requests one"
+    - "A non-sensitive planning task"
+references:
+  - title: "DeepSeek-V4-Flash-0731"
+    url: "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
+    author: "DeepSeek"
+    publishedAt: "2026-07-31"
+  - title: "Models and Pricing"
+    url: "https://api-docs.deepseek.com/quick_start/pricing/"
+    author: "DeepSeek"
+  - title: "Inference Providers"
+    url: "https://huggingface.co/docs/inference-providers/index"
+    author: "Hugging Face"
+  - title: "deepseek-ai/DeepSeek-V4-Flash-0731"
+    url: "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/"
+    author: "Simon Willison"
+    publishedAt: "2026-07-31"
+draft: false
+---
+
+## TL;DR
+
+DeepSeek has finalized V4 Flash, an MIT-licensed open model aimed at tool use and longer agent tasks. The weights are too large for an ordinary laptop, but Hugging Face lists hosted inference, so you can test its planning behavior in a browser without downloading the model.
+
+## What's New
+
+DeepSeek-V4-Flash-0731 replaces the earlier preview while keeping the same broad architecture. DeepSeek says post-training substantially improved agent behavior and reports stronger results across coding, tool-use, and automation benchmarks. Some comparisons include internal test sets, so treat the numbers as publisher-reported rather than independent rankings.
+
+The model page lists 304 billion parameters, a one-million-token context window through DeepSeek's API, three reasoning-effort settings, and MIT-licensed weights. DeepSeek's current API table identifies `deepseek-v4-flash` as this July 31 version and lists support for thinking mode, JSON output, tool calls, and the Responses API.
+
+Running the full weights locally requires specialist hardware. The practical route for most people is hosted inference: Hugging Face currently lists DeepInfra for text generation on the model page, while its Inference Providers service handles account access and billing across providers.
+
+## Why It Matters
+
+The release shows how open weights and hosted access can coexist. Researchers and infrastructure teams can inspect or deploy the model under an MIT license, while a curious user can try the same checkpoint without owning a server.
+
+The useful question is not whether one benchmark makes it the best model. Test whether it turns an underspecified task into a sensible plan, exposes assumptions, and accepts a correction. That behavior is closer to everyday agent work than a single score.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A browser","A Hugging Face account if the hosted provider requests one","A non-sensitive planning task"]}>
+
+1. Open the DeepSeek-V4-Flash-0731 model page on Hugging Face and confirm the model name, MIT license, and July 31 release before entering a prompt.
+2. Find the Inference Providers or Generate panel. Sign in if asked, then review the selected provider and any displayed credit or pricing notice before continuing.
+3. Use a harmless task such as: "Turn this goal into a five-step plan, list three missing assumptions, and mark the first reversible action: organize a small community workshop next month."
+4. Check whether the answer separates actions from assumptions. Correct one constraint, such as changing the audience or budget, and ask it to revise only the affected steps.
+5. Stop if the page requests payment you did not intend to make. Do not paste work files, personal records, API keys, or confidential plans into a hosted model test.
+
+</PracticalGuide>

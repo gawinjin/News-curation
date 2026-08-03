@@ -1,0 +1,57 @@
+---
+title: "OpenAI says Astra found ten new mathematics results"
+date: 2026-08-03
+category: research
+tags: ["openai", "mathematics", "research", "verification"]
+summary: "OpenAI published ten AI-generated mathematics results with papers and Lean certificates. The useful lesson is how to separate a research claim from its supporting evidence."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A browser"
+    - "Access to any general-purpose AI assistant"
+    - "One result from OpenAI's list"
+references:
+  - title: "Ten advances in mathematics and theoretical computer science"
+    url: "https://openai.com/index/ten-advances-in-mathematics/"
+    author: "OpenAI"
+    publishedAt: "2026-08-01"
+  - title: "openai/ten-proofs"
+    url: "https://github.com/openai/ten-proofs"
+    author: "OpenAI"
+    publishedAt: "2026-08-01"
+  - title: "Ten advances in mathematics and theoretical computer science"
+    url: "https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/"
+    author: "Simon Willison"
+    publishedAt: "2026-08-01"
+draft: false
+---
+
+## TL;DR
+
+OpenAI says an internal version of its unreleased Astra model produced ten new results across mathematics and theoretical computer science. The company released manuscripts, reasoning walkthroughs, and Lean certificates. That is unusually concrete evidence, but expert review is still needed before treating every claimed advance as settled.
+
+## What's New
+
+The ten results cover subjects including sphere packing, coding theory, group theory, quantum complexity, cryptography, and Ramsey numbers. OpenAI says each resolves or substantially advances a problem that had resisted progress, and estimates the successful solution tokens would cost roughly $2,000 at GPT-5.6 Sol API rates.
+
+According to OpenAI, Astra generated the mathematical arguments. Humans then prepared manuscripts with the same model, and the model formalized each argument in Lean, a system that can mechanically check whether a proof follows its encoded rules. OpenAI published those certificates in a public GitHub repository alongside the paper and model-generated reasoning walkthroughs.
+
+The release still leaves important gaps. Astra is not publicly available, and the announcement does not provide the original prompts or count unsuccessful attempts. A formal certificate helps check the encoded proof, but specialists still need to judge whether the statement, assumptions, novelty, and importance are represented correctly.
+
+## Why It Matters
+
+This is a stronger research claim than an AI solving a familiar contest problem. It also demonstrates a better publication pattern: make the theorem statements, manuscripts, formal artifacts, and limitations available so other people can inspect them.
+
+For a non-mathematician, the practical lesson is evidence hygiene. An impressive headline is the start of the review, not the end. You can ask an assistant for a plain-language explanation, then compare every part of that explanation with the publisher's result list and the public proof repository.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A browser","Access to any general-purpose AI assistant","One result from OpenAI's list"]}>
+
+1. Open OpenAI's article and choose one result by name. Copy only its short description, not the whole page.
+2. Ask your assistant: "Explain this claim for a high-school graduate. Separate prior knowledge, the new claimed result, and why it may matter. State what you cannot verify from this sentence alone."
+3. Compare the response with OpenAI's wording. Remove any details the assistant added without support, especially claims that the work is universally accepted or independently replicated.
+4. Open the `openai/ten-proofs` repository and find the matching Lean file listed in its README. Confirm that a public certificate exists; do not treat the filename alone as proof of novelty or importance.
+5. Read the linked paper or reasoning walkthrough for the same result. Write down one fact supported by the source and one question that still requires a domain expert. Keep that distinction when sharing the story.
+
+</PracticalGuide>

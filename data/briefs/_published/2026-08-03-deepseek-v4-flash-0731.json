@@ -1,0 +1,64 @@
+{
+  "slug": "deepseek-v4-flash-0731",
+  "date": "2026-08-03",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["DeepSeek V4 Flash gets an agent-focused release"],
+  "summary": "DeepSeek finalized V4 Flash with stronger tool-use claims, a one-million-token context window, MIT-licensed weights, and hosted inference for a practical browser test.",
+  "tags": ["deepseek", "open-models", "agents", "huggingface"],
+  "primary_source": {
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+    "title": "DeepSeek-V4-Flash-0731",
+    "author": "DeepSeek",
+    "publishedAt": "2026-07-31",
+    "key_facts": [
+      "The finalized release supersedes the preview and focuses on stronger agent behavior.",
+      "The model page lists 304 billion parameters and an MIT license.",
+      "DeepSeek reports stronger coding, tool-use, and automation benchmark results, including some internal test sets.",
+      "The release supports low, high, and max reasoning effort settings."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "title": "Models and Pricing",
+      "key_facts": ["The official API table maps deepseek-v4-flash to the July 31 version and lists a one-million-token context window, tool calls, JSON output, and thinking mode."],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://huggingface.co/docs/inference-providers/index",
+      "title": "Inference Providers",
+      "key_facts": ["Hugging Face provides browser and hosted-provider access, with account and billing requirements that vary by provider."],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/",
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "key_facts": ["Simon Willison highlighted the model's size and agent-focused positioning."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A browser", "A Hugging Face account if requested", "A non-sensitive planning task"],
+    "steps": [
+      {"instruction": "Confirm the model identity and license on its Hugging Face page.", "verify_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"},
+      {"instruction": "Review the hosted provider and any price notice before generating.", "verify_url": "https://huggingface.co/docs/inference-providers/index"},
+      {"instruction": "Test a harmless planning prompt that asks for assumptions and a reversible first action.", "verify_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"},
+      {"instruction": "Change one constraint and check whether only affected steps are revised.", "verify_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"},
+      {"instruction": "Stop before unintended payment and never submit private data.", "verify_url": "https://huggingface.co/docs/inference-providers/index"}
+    ]
+  },
+  "references": [
+    {"title": "DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "author": "DeepSeek", "publishedAt": "2026-07-31"},
+    {"title": "Models and Pricing", "url": "https://api-docs.deepseek.com/quick_start/pricing/", "author": "DeepSeek"},
+    {"title": "Inference Providers", "url": "https://huggingface.co/docs/inference-providers/index", "author": "Hugging Face"},
+    {"title": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/", "author": "Simon Willison", "publishedAt": "2026-07-31"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["Benchmark results are attributed to DeepSeek; some comparison sets are internal.", "Hosted inference may require an account or credits; the guide stops before unintended payment."],
+  "assembled_at": "2026-08-03T07:55:43Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
