@@ -12,7 +12,7 @@ const all = (await getCollection('articles', ({ data }) => !data.draft)).sort(
 const topArticles = all.slice(0, 3);
 const topArticleIds = new Set(topArticles.map((a) => a.id));
 const latest = all.filter((a) => !topArticleIds.has(a.id));
-const INITIAL_LATEST_VISIBLE = Math.max(0, 12 - topArticles.length);
+const INITIAL_LATEST_VISIBLE = 50;
 
 const allTags = Array.from(new Set(all.flatMap((a) => a.data.tags))).slice(0, 14);
 ---
