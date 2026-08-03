@@ -2,6 +2,10 @@
 
 ## 2026-08-03
 
+Rerun:
+
+- No additional high-signal candidates - skipping. A fresh ingest found no new general-user story after today's two publications; three-role research confirmed `condense-json` remains a developer-only library without a distinct 5-30 minute non-developer guide.
+
 Shipped:
 
 - `2026-08-03-deepseek-v4-flash-0731` - DeepSeek finalized V4 Flash with stronger agent claims, MIT-licensed weights, and a hosted browser test that avoids a huge local download.
