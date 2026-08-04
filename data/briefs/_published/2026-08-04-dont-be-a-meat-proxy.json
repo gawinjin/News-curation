@@ -1,0 +1,105 @@
+{
+  "slug": "dont-be-a-meat-proxy",
+  "date": "2026-08-04",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["Before you forward AI output, own the answer"],
+  "summary": "A useful rule for AI-assisted messages: read the draft, verify important claims, then rewrite it for the person receiving it.",
+  "tags": ["ai-literacy", "verification", "communication", "how-to"],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/",
+    "title": "Don't be a meat proxy",
+    "author": "Simon Willison",
+    "publishedAt": "2026-08-03",
+    "key_facts": [
+      "Willison highlights Niklas Gruhn's term for someone who forwards AI-generated material without checking it.",
+      "The recommended alternative is to read, understand, and verify an AI response before communicating its substance in your own words.",
+      "Rewriting the result yourself shows that you reviewed it and adds human judgment instead of merely passing along machine output."
+    ],
+    "quote_candidates": [
+      {
+        "text": "By all means, prompt AI. But don't just relay the output.",
+        "words": 11,
+        "exact": true,
+        "position": "Quoted passage from Niklas Gruhn"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://gruhn.me/blog/2026-08-03/",
+      "title": "Don't be a meat proxy",
+      "key_facts": [
+        "Gruhn argues that pasted AI output makes the recipient do extra work because they must interpret, check, and adapt a response they did not ask the model to produce.",
+        "He recommends understanding and validating the result, then writing the response in your own words."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth",
+      "title": "Does ChatGPT tell the truth?",
+      "key_facts": [
+        "OpenAI says ChatGPT can give incorrect or misleading answers confidently.",
+        "Its guidance is to treat AI output as a draft and verify important claims, quotes, data, technical details, and references against reliable sources."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "A non-sensitive AI-generated draft",
+      "The original question and intended recipient",
+      "Independent sources for any important factual claims"
+    ],
+    "steps": [
+      {
+        "instruction": "Write the recipient's actual question in one sentence, then read the entire AI draft. Mark every claim or term you cannot explain yourself; if any remain unclear, do not forward the draft.",
+        "verify_url": "https://gruhn.me/blog/2026-08-03/"
+      },
+      {
+        "instruction": "Open reliable source material and independently confirm any claim that could change the recipient's decision. Remove unsupported claims, and stop if a consequential point remains uncertain.",
+        "verify_url": "https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth"
+      },
+      {
+        "instruction": "Ask whether you could answer a follow-up about each remaining claim without reopening the AI transcript. Research or omit anything you cannot defend.",
+        "verify_url": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/"
+      },
+      {
+        "instruction": "Close the AI output and rewrite the answer for this specific person. Keep only the relevant conclusion, evidence links, and uncertainty; the message should stand alone.",
+        "verify_url": "https://gruhn.me/blog/2026-08-03/"
+      },
+      {
+        "instruction": "Before sending, confirm the message contains no private material and that you can stand behind it as your response. If either check fails, ask for clarification or send nothing.",
+        "verify_url": "https://gruhn.me/blog/2026-08-03/"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Don't be a meat proxy",
+      "url": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-08-03"
+    },
+    {
+      "title": "Don't be a meat proxy",
+      "url": "https://gruhn.me/blog/2026-08-03/",
+      "author": "Niklas Gruhn",
+      "publishedAt": "2026-08-03"
+    },
+    {
+      "title": "Does ChatGPT tell the truth?",
+      "url": "https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth",
+      "author": "OpenAI"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The term is intentionally provocative; the article should explain the behavior without labeling the reader.",
+    "The guide uses non-sensitive drafts and requires independent verification before sharing consequential claims."
+  ],
+  "assembled_at": "2026-08-04T08:10:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

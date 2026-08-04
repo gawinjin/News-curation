@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T08:07:20.712Z",
+  "generatedAt": "2026-08-04T08:04:02.590Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -45,6 +45,86 @@
     "alexalbert__"
   ],
   "items": [
+    {
+      "kind": "rss",
+      "title": "Quoting Steve Yegge",
+      "url": "https://simonwillison.net/2026/Aug/4/steve-yegge/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-04T00:42:45.000Z",
+      "summary": "<blockquote cite=\"https://yegge.ai/essays/the-shape-of-things-to-come/\"><p><a href=\"https://yegge.ai/gastown.html\">Gas Town</a> was intended to be reusable, but I only ever wound up using it to build itself. Gas Town fell apart at the seams with Opus 4.7. Up through 4.6 it was wo"
+    },
+    {
+      "kind": "rss",
+      "title": "Don't be a meat proxy",
+      "url": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-03T23:45:04.000Z",
+      "summary": "<p><strong><a href=\"https://gruhn.me/blog/2026-08-03/\">Don&#x27;t be a meat proxy</a></strong></p> Niklas Gruhn coins an excellent new term - <strong>meat proxy</strong> - for people who blindly copy and paste the output of AI systems to their peers.</p> <blockquote> <p>By all me"
+    },
+    {
+      "kind": "rss",
+      "title": "Apple is getting this wrong",
+      "url": "https://openai.com/index/apple-is-getting-this-wrong",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-08-03T22:00:00.000Z",
+      "summary": "OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened."
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting David Crawshaw's prompt",
+      "url": "https://simonwillison.net/2026/Aug/3/david-crawshaw/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-03T16:15:27.000Z",
+      "summary": "<blockquote cite=\"https://blog.exe.dev/devtools-must-be-open-source\"><p><code>Set up a nightly cron job that executes the prompt: fetch upstream changes to the <software> and rebase all local changes on top of upstream. Check that the software works as intended and replace the cu"
+    },
+    {
+      "kind": "rss",
+      "title": "Devtools must be open source (exe.dev)",
+      "url": "https://simonwillison.net/2026/Aug/3/devtools-must-be-open-source-exedev/#atom-everything",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-03T15:30:38.000Z",
+      "summary": "<p><a href=\"https://news.ycombinator.com/item?id=49156111#49156719\">My comment</a> on <a href=\"https://news.ycombinator.com/item?id=49156111\">Devtools must be open source (exe.dev)</a> &mdash; Hacker News.</p><p>One of the arguments for open source software for end-users has alwa"
+    },
+    {
+      "kind": "rss",
+      "title": "Import AI 467: Self-sustaining AI viruses; pacing AI progress; confusion about AI and creativity",
+      "url": "https://importai.substack.com/p/import-ai-467-self-sustaining-ai",
+      "source": "Import AI (Jack Clark)",
+      "sourceId": "importai",
+      "category": "insights",
+      "publishedAt": "2026-08-03T13:31:22.000Z",
+      "summary": "When do we build the moon arcology?"
+    },
+    {
+      "kind": "rss",
+      "title": "How we built a realtime system for responsive voice AI in six months",
+      "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-08-03T07:00:00.000Z",
+      "summary": "GPT-Live enables continuous voice interaction with AI, using a turnless speech model and low-latency architecture for faster, more natural conversations."
+    },
+    {
+      "kind": "rss",
+      "title": "Circles powers telco personalization with OpenAI technology",
+      "url": "https://openai.com/index/circles",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-08-03T00:00:00.000Z",
+      "summary": "Circles uses the OpenAI API and Codex to power AI-native telco experiences, increasing ARPU by 22%, reducing churn by 9%, and improving development efficiency."
+    },
     {
       "kind": "rss",
       "title": "condense-json 1.0",
@@ -437,16 +517,6 @@
     },
     {
       "kind": "rss",
-      "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
-      "url": "https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-07-28T21:28:54.000Z",
-      "summary": "<p><strong><a href=\"https://huggingface.co/blog/agent-intrusion-technical-timeline\">Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident</a></strong></p> Hugging Face just released this extremely detailed technical description of <a href=\"http"
-    },
-    {
-      "kind": "rss",
       "title": "Scientific computing in the age of agentic AI",
       "url": "https://openai.com/index/scientific-computing-agentic-ai",
       "source": "OpenAI",
@@ -483,46 +553,6 @@
       "sourceId": "deepmind",
       "category": "research",
       "publishedAt": "2026-07-28T13:21:37.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "moonshotai/Kimi-K3",
-      "url": "https://simonwillison.net/2026/Jul/27/kimi-k3/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-07-27T23:39:04.000Z",
-      "summary": "<p><strong><a href=\"https://huggingface.co/moonshotai/Kimi-K3\">moonshotai/Kimi-K3</a></strong></p> As promised <a href=\"https://simonwillison.net/2026/Jul/16/kimi-k3/\">earlier this month</a>, Moonshot have released the weights for their excellent 2.8 trillion parameter Kimi K3. T"
-    },
-    {
-      "kind": "rss",
-      "title": "An opinionated guide to which AI to use to do stuff",
-      "url": "https://simonwillison.net/2026/Jul/27/an-opinionated-guide-to-which-ai-to-use-to-do-stuff/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-07-27T21:55:53.000Z",
-      "summary": "<p><strong><a href=\"https://www.oneusefulthing.org/p/an-opinionated-guide-to-which-ai-b22\">An opinionated guide to which AI to use to do stuff</a></strong></p> It's interesting watching the evolution of Ethan Mollick's guide over time. </p> <p><a href=\"https://www.oneusefulthing."
-    },
-    {
-      "kind": "rss",
-      "title": "Import AI 466: The bitter lesson for robotics, AIs complete week-long programming tasks; and OpenAI's accidental AI hacker",
-      "url": "https://importai.substack.com/p/import-ai-466-the-bitter-lesson-for",
-      "source": "Import AI (Jack Clark)",
-      "sourceId": "importai",
-      "category": "insights",
-      "publishedAt": "2026-07-27T13:30:53.000Z",
-      "summary": "The warning shots will continue until civilization wakes up"
-    },
-    {
-      "kind": "rss",
-      "title": "NVIDIA Cosmos-H-Dreams: Bringing Real-Time Generative Simulation to Surgical Robotics",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-07-27T09:32:20.000Z",
       "summary": ""
     }
   ]

@@ -1,5 +1,17 @@
 # Signal Run Log
 
+## 2026-08-04
+
+Shipped:
+
+- `2026-08-04-dont-be-a-meat-proxy` - Simon Willison and Niklas Gruhn's warning against forwarding raw AI output becomes a ten-minute check, verify, and rewrite workflow for everyday messages.
+
+Skipped:
+
+- OpenAI's Apple lawsuit response and Circles customer story - current company news, but neither offers a distinct 5-30 minute general-user test.
+- OpenAI's GPT-Live engineering post, Steve Yegge and developer-tools commentary, and specialist AI-virus research - source-backed, but developer-focused or less directly actionable than today's editing workflow.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS and primary-source research completed successfully, with one RSS source unavailable.
+
 ## 2026-08-03
 
 Rerun:
