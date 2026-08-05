@@ -1,5 +1,17 @@
 # Signal Run Log
 
+## 2026-08-05
+
+Shipped:
+
+- `2026-08-05-openai-education-plugins` - OpenAI's three education plugins give eligible teachers, college educators, and students role-specific workflows inside institution-managed ChatGPT workspaces.
+
+Skipped:
+
+- Simon Willison's LLM 0.32 and Anthropic plugin releases, Hugging Face's local-agent model, and other developer tooling - current and source-backed, but they require specialist setup rather than a distinct general-user test.
+- OpenAI's third-party cyber evaluations, Apple lawsuit response, company appointments, and policy or enterprise items - important context, but narrower or less directly actionable than the education workflow.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable.
+
 ## 2026-08-04
 
 Shipped:

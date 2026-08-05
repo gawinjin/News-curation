@@ -1,0 +1,110 @@
+{
+  "slug": "openai-education-plugins",
+  "date": "2026-08-05",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "OpenAI's education plugins start with school-controlled access"
+  ],
+  "summary": "OpenAI added separate ChatGPT Work and Codex plugins for K-12 teachers, college educators, and students inside managed education workspaces.",
+  "tags": ["openai", "education", "plugins", "learning"],
+  "primary_source": {
+    "url": "https://openai.com/index/learn-teach-chatgpt-work-codex/",
+    "title": "New ways to learn and teach with ChatGPT Work and Codex",
+    "author": "OpenAI",
+    "publishedAt": "2026-08-04",
+    "key_facts": [
+      "OpenAI introduced three education plugins: one for K-12 teachers, one for college educators, and one for college students.",
+      "The plugins package role-specific instructions, skills, connected apps, and common workflows so users need less prompt setup.",
+      "The K-12 plugin can help create differentiated resources, interactive visuals, and standards-aligned materials while educators retain control over pedagogy, grading, and agent actions.",
+      "The college educator plugin can work with approved course materials, calendars, documents, and tools to produce syllabi, assessments, teaching sites, and LMS-ready content.",
+      "The college student plugin can turn selected course sources into guided tutoring, quizzes, flashcards, study guides, and interactive explanations.",
+      "Access is limited to ChatGPT Edu and ChatGPT for Teachers district deployments, where institutions control available tools and permissions."
+    ],
+    "quote_candidates": [
+      {
+        "text": "AI should support learning, not shortcut it, and the best learning experiences keep educators and students in control.",
+        "words": 18,
+        "exact": true,
+        "position": "Introduction"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://help.openai.com/en/articles/20001256-plugins-in-codex",
+      "title": "Plugins in ChatGPT and Codex",
+      "key_facts": [
+        "Users can inspect a plugin's included apps, connection requirements, terms, and privacy policy before connecting it.",
+        "Workspace administrators can limit plugins and their apps by role, data source, read or write actions, approval requirements, and sync boundaries.",
+        "A plugin can be invoked in ChatGPT with an at-mention or the plus menu, and in supported Codex task views through Sources and Use plugins."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/12844995-chatgpt-for-teachers",
+      "title": "ChatGPT for Teachers",
+      "key_facts": [
+        "ChatGPT for Teachers is designed for verified staff at accredited U.S. K-12 schools and districts, but the education plugins require a district deployment rather than an individual account alone."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": [
+      "Access to a managed ChatGPT Edu or ChatGPT for Teachers district workspace",
+      "The matching education plugin enabled by your workspace administrator",
+      "A fictional or public learning objective with no student records"
+    ],
+    "steps": [
+      {
+        "instruction": "Open the ChatGPT plugin directory while signed into your education workspace and search for the K-12 Educator, College Educator, or College Student plugin. Stop and ask your administrator if it is absent or disabled.",
+        "verify_url": "https://help.openai.com/en/articles/20001256-plugins-in-codex"
+      },
+      {
+        "instruction": "Open the listing and review its included apps, requested permissions, terms, and privacy policy. Connect only an institution-approved app, and keep the first test read-only and limited to non-sensitive material.",
+        "verify_url": "https://help.openai.com/en/articles/20001256-plugins-in-codex"
+      },
+      {
+        "instruction": "Invoke the plugin with an at-mention or the plus menu, then give it a fictional objective such as comparing three quarters with five eighths. Ask for three exit-ticket questions, an answer key, and the source concept behind each answer.",
+        "verify_url": "https://openai.com/index/learn-teach-chatgpt-work-codex/"
+      },
+      {
+        "instruction": "Solve every question independently and check each answer and claimed standard against the original material. Revise or discard anything unsupported.",
+        "verify_url": "https://openai.com/index/learn-teach-chatgpt-work-codex/"
+      },
+      {
+        "instruction": "Keep the result private until an educator approves it. Do not publish, grade, message students, or connect private records during this first test.",
+        "verify_url": "https://help.openai.com/en/articles/20001256-plugins-in-codex"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "New ways to learn and teach with ChatGPT Work and Codex",
+      "url": "https://openai.com/index/learn-teach-chatgpt-work-codex/",
+      "author": "OpenAI",
+      "publishedAt": "2026-08-04"
+    },
+    {
+      "title": "Plugins in ChatGPT and Codex",
+      "url": "https://help.openai.com/en/articles/20001256-plugins-in-codex",
+      "author": "OpenAI"
+    },
+    {
+      "title": "ChatGPT for Teachers",
+      "url": "https://help.openai.com/en/articles/12844995-chatgpt-for-teachers",
+      "author": "OpenAI"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The plugins are not broadly available to individual consumer accounts; the article must state that access requires a managed education deployment.",
+    "Signal already covered generic role plugins and educator training; keep this article focused on the three education-specific workflows and institution-managed controls.",
+    "The guide uses fictional material, read-only permissions, independent verification, and an explicit stop before real student use."
+  ],
+  "assembled_at": "2026-08-05T08:08:06Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
