@@ -1,0 +1,124 @@
+{
+  "slug": "claude-code-raccoon-heist",
+  "date": "2026-08-06",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": [
+    "Claude Code built a game from two pictures — then caught its own mobile bug"
+  ],
+  "summary": "Simon Willison turned two old game-concept images into a playable browser game with Claude Code, GitHub Pages, frequent previews, and automated mobile tests.",
+  "tags": ["claude", "agents", "games", "coding"],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Aug/5/raccoon-heist/",
+    "title": "One-shotting a Raccoon Heist game using Claude Fable 5",
+    "author": "Simon Willison",
+    "publishedAt": "2026-08-05",
+    "key_facts": [
+      "Simon Willison gave Claude Fable 5 two images from a 2022 game concept and asked it to turn the idea into a complete browser game.",
+      "He ran the experiment from his phone in Claude Code for web, asking for mobile support, frequent GitHub commits, a running notes file, and independent decision-making.",
+      "Willison used GitHub Pages to preview the agent's branch after each push rather than waiting until the project was finished.",
+      "Claude chose Three.js, generated textures through a separate image API, and used Playwright to inspect desktop and mobile layouts.",
+      "The testing pass found that the raccoon was invisible at mobile widths, after which Claude corrected the layout.",
+      "Claude reported seven commits and automated playthroughs across desktop, portrait-phone, and landscape-phone viewports.",
+      "Willison found the result technically impressive and mobile-friendly but too easy and repetitive to count as a good finished game.",
+      "He recommends small game projects as a fun, relatively low-risk way to learn what agents can and cannot do."
+    ],
+    "quote_candidates": [
+      {
+        "text": "It's an impressive starting point, but it's not a good game.",
+        "words": 11,
+        "exact": true,
+        "position": "Is the game any good?, opening paragraph"
+      },
+      {
+        "text": "As a finished game project, it's mediocre. As a starting point from a single prompt I think it's very impressive.",
+        "words": 20,
+        "exact": true,
+        "position": "Is the game any good?, sixth paragraph"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://code.claude.com/docs/en/claude-code-on-the-web",
+      "title": "Use Claude Code on the web",
+      "key_facts": [
+        "Anthropic documents that web sessions clone GitHub repositories, run work in isolated cloud environments, and push changes to branches for review.",
+        "The web workflow preserves the session and code changes so users can inspect what happened before merging."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://docs.github.com/en/pages/quickstart",
+      "title": "Quickstart for GitHub Pages",
+      "key_facts": [
+        "GitHub Pages can publish a static site from a selected repository branch and folder.",
+        "GitHub warns that publishing can take up to ten minutes after the Pages settings are saved."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "20 min",
+    "prerequisites": [
+      "A GitHub account",
+      "A Claude Pro, Max, Team, or eligible Enterprise account with Claude Code on the web",
+      "Permission to publish the result publicly; use only simple shapes or non-sensitive images you own"
+    ],
+    "steps": [
+      {
+        "instruction": "On GitHub, choose New repository, create a public repository named raccoon-mini, turn Add README on, and click Create repository. Stop if the idea, repository name, or any asset must remain private.",
+        "verify_url": "https://docs.github.com/en/pages/quickstart"
+      },
+      {
+        "instruction": "Open Claude Code on the web, connect GitHub if prompted, select raccoon-mini and its main branch, then choose Plan mode so Claude shows its approach before editing.",
+        "verify_url": "https://claude.ai/code"
+      },
+      {
+        "instruction": "Ask for a one-screen, mobile-friendly catching game in one index.html using only HTML, CSS, JavaScript, emoji, or CSS shapes. Require Start and Restart buttons, keyboard and touch controls, a score, a 30-second timer, and tests. Forbid packages, APIs, tracking, uploads, network requests, secrets, and private or copyrighted images. Approve only if the plan keeps those limits.",
+        "verify_url": "https://code.claude.com/docs/en/claude-code-on-the-web"
+      },
+      {
+        "instruction": "When Claude finishes, inspect Files changed before merging. Continue only if the changes are limited to the small game and documentation; stop if you see credentials, personal data, external URLs, analytics, Actions, or unfamiliar generated files.",
+        "verify_url": "https://code.claude.com/docs/en/claude-code-on-the-web"
+      },
+      {
+        "instruction": "Merge the reviewed pull request. Open Settings, then Pages; choose Deploy from a branch, select main and /(root), and save.",
+        "verify_url": "https://docs.github.com/en/pages/quickstart"
+      },
+      {
+        "instruction": "Open the Pages URL on both a phone and a desktop. Verify Start, movement, scoring, the 30-second ending, and Restart yourself. If any check fails, disable Pages or stop sharing the link until it is fixed.",
+        "verify_url": "https://docs.github.com/en/pages/quickstart"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "One-shotting a Raccoon Heist game using Claude Fable 5",
+      "url": "https://simonwillison.net/2026/Aug/5/raccoon-heist/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-08-05"
+    },
+    {
+      "title": "Use Claude Code on the web",
+      "url": "https://code.claude.com/docs/en/claude-code-on-the-web",
+      "author": "Anthropic"
+    },
+    {
+      "title": "Quickstart for GitHub Pages",
+      "url": "https://docs.github.com/en/pages/quickstart",
+      "author": "GitHub"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Signal already covered the Fable 5 release; keep this article focused on the build-preview-test workflow rather than model specifications.",
+    "The source experiment gave the agent an external image API key; Signal's guide deliberately uses simple local assets and forbids secrets, packages, and network requests.",
+    "GitHub Pages is public in this guide. Readers must stop if the idea, repository name, or assets should remain private.",
+    "The source author found the one-shot result repetitive and not good as a finished game; do not present one-shot generation as production-ready.",
+    "The 20-minute guide creates a smaller one-file game instead of attempting to reproduce the source's 3D project."
+  ],
+  "assembled_at": "2026-08-06T08:15:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

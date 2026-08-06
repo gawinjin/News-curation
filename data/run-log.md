@@ -1,5 +1,18 @@
 # Signal Run Log
 
+## 2026-08-06
+
+Shipped:
+
+- `2026-08-06-claude-code-raccoon-heist` - Simon Willison's one-shot browser game becomes a small, no-dependency agent test with plan review, public-preview boundaries, and independent phone and desktop checks.
+
+Skipped:
+
+- Meta's Muse Code and Muse Spark 1.2 release - current and substantial, but its terminal install, repository-scale tasks, and developer benchmarks do not provide a stronger non-developer workflow than today's small-game test.
+- The OpenAI, Meta, and UK cyber-evaluation incident cluster - important safety evidence, but the reader action repeats Signal's existing sandbox, permission, credential, monitoring, and stop-boundary coverage.
+- Older model, policy, enterprise, and specialist research items - duplicate, less current, or without a distinct 5-30 minute general-user test.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable.
+
 ## 2026-08-05
 
 Shipped:

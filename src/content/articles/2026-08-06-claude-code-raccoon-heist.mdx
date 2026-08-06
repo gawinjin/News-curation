@@ -1,0 +1,56 @@
+---
+title: "Claude Code built a game from two pictures — then caught its own mobile bug"
+date: 2026-08-06
+category: insights
+tags: ["claude", "agents", "games", "coding"]
+summary: "Simon Willison turned two old game-concept images into a playable browser game with Claude Code, GitHub Pages, frequent previews, and automated mobile tests."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "A GitHub account"
+    - "A Claude Pro, Max, Team, or eligible Enterprise account with Claude Code on the web"
+    - "Permission to publish the result publicly; use only simple shapes or non-sensitive images you own"
+references:
+  - title: "One-shotting a Raccoon Heist game using Claude Fable 5"
+    url: "https://simonwillison.net/2026/Aug/5/raccoon-heist/"
+    author: "Simon Willison"
+    publishedAt: "2026-08-05"
+  - title: "Use Claude Code on the web"
+    url: "https://code.claude.com/docs/en/claude-code-on-the-web"
+    author: "Anthropic"
+  - title: "Quickstart for GitHub Pages"
+    url: "https://docs.github.com/en/pages/quickstart"
+    author: "GitHub"
+draft: false
+---
+
+## TL;DR
+
+Simon Willison gave Claude Code two old game-concept images and got back a playable browser game. The useful lesson was not the one-shot result: frequent GitHub Pages previews and automated phone tests exposed an invisible character on small screens, while Willison's own playtest showed the finished game was still too easy and repetitive.
+
+## What's New
+
+Willison started the experiment from his phone in Claude Code for the web. He supplied two images from a 2022 game idea and asked Claude Fable 5 to build the complete browser game, support mobile screens, keep notes, commit often, and make routine decisions independently.
+
+Claude selected Three.js, made textures through a separate image service, and pushed seven commits. Willison used GitHub Pages to preview the branch after each push instead of waiting for a final version.
+
+Claude also used Playwright to inspect desktop, portrait-phone, and landscape-phone layouts. That testing revealed the raccoon disappeared at mobile widths, so Claude corrected the layout. The result worked well on a phone, but Willison found the game too easy and repetitive to call it finished.
+
+## Why It Matters
+
+This is a practical pattern for trying a coding agent without handing it an important project: choose a small idea, ask for visible progress, preview each version, and test the screens people will actually use. The agent can produce and check a substantial starting point while you remain responsible for reviewing the files and deciding whether the result is any good.
+
+The gap between technical success and a fun game is the important limit. Automated checks can catch a missing character or broken button; they cannot replace a person's judgment about difficulty, variety, or whether something is worth sharing.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["A GitHub account","A Claude Pro, Max, Team, or eligible Enterprise account with Claude Code on the web","Permission to publish the result publicly; use only simple shapes or non-sensitive images you own"]}>
+
+1. On GitHub, choose New repository, create a public repository named raccoon-mini, turn Add README on, and click Create repository. Stop if the idea, repository name, or any asset must remain private.
+2. Open Claude Code on the web, connect GitHub if prompted, select raccoon-mini and its main branch, then choose Plan mode so Claude shows its approach before editing.
+3. Ask for a one-screen, mobile-friendly catching game in one index.html using only HTML, CSS, JavaScript, emoji, or CSS shapes. Require Start and Restart buttons, keyboard and touch controls, a score, a 30-second timer, and tests. Forbid packages, APIs, tracking, uploads, network requests, secrets, and private or copyrighted images. Approve only if the plan keeps those limits.
+4. When Claude finishes, inspect Files changed before merging. Continue only if the changes are limited to the small game and documentation; stop if you see credentials, personal data, external URLs, analytics, Actions, or unfamiliar generated files.
+5. Merge the reviewed pull request. Open Settings, then Pages; choose Deploy from a branch, select main and /(root), and save.
+6. Open the Pages URL on both a phone and a desktop. Verify Start, movement, scoring, the 30-second ending, and Restart yourself. If any check fails, disable Pages or stop sharing the link until it is fixed.
+
+</PracticalGuide>
