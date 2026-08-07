@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T07:37:46.881Z",
+  "generatedAt": "2026-08-07T08:03:50.281Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -84,16 +84,6 @@
       "category": "model-releases",
       "publishedAt": "2026-08-06T17:00:00.000Z",
       "summary": "We’re making updates to Claude Fable 5’s biology safeguards in a way that substantially reduces fallbacks."
-    },
-    {
-      "kind": "rss",
-      "title": "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
-      "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
-      "source": "Google DeepMind",
-      "sourceId": "deepmind",
-      "category": "research",
-      "publishedAt": "2026-08-06T15:06:15.000Z",
-      "summary": ""
     },
     {
       "kind": "rss",

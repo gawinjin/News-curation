@@ -2,6 +2,11 @@
 
 ## 2026-08-07
 
+Rerun:
+
+- No additional high-signal candidates - skipping. A fresh ingest after today's three publications found only already-covered URL variants and the same developer-focused, repetitive, or non-actionable items reviewed earlier.
+- Social candidates remained unavailable: all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable.
+
 Shipped:
 
 - `2026-08-07-chatgpt-gpt-5-6-update` - OpenAI's revised GPT-5.6 ChatGPT experience adds a reasoning control for paid users and stages unlimited Luna text chats plus a Think button for Free and Go users.
