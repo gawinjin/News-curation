@@ -1,0 +1,56 @@
+---
+title: "Google opens WeatherNext after a major cyclone-forecasting advance"
+date: 2026-08-07
+category: research
+tags: ["google", "weathernext", "weather", "open-source"]
+summary: "Google DeepMind open-sourced WeatherNext code and weights after a Nature study found roughly one extra day of useful cyclone forecast lead time."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A Google account for Weather Lab"
+    - "Access to your local official weather service"
+references:
+  - title: "WeatherNext: AI model achieves breakthrough in forecasting cyclones"
+    url: "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/"
+    author: "Google DeepMind"
+    publishedAt: "2026-08-06"
+  - title: "Operational Tropical Cyclone Forecasting with AI"
+    url: "https://www.nature.com/articles/s41586-026-10953-2"
+    author: "Ferran Alet and colleagues"
+    publishedAt: "2026-08-06"
+  - title: "WeatherNext"
+    url: "https://github.com/google-deepmind/weathernext"
+    author: "Google DeepMind"
+draft: false
+---
+
+## TL;DR
+
+Google DeepMind released WeatherNext's code and model weights after a Nature study found its cyclone forecasts gained about a day of useful lead time over leading operational models. A public Weather Lab shows experimental forecasts, but Google explicitly says they do not replace alerts from official weather agencies.
+
+## What's New
+
+WeatherNext Cyclones predicts a storm's track, intensity, and wind size together. In tests covering tropical cyclones from 2023 through 2025, the research paper reports an average lead-time advantage of a day or more over leading operational models. The system can generate up to 1,000 possible scenarios extending 15 days ahead.
+
+Google has now published WeatherNext Cyclones, WeatherNext 2, and a smaller model with code and weights. The repository is public, its code and notebooks use the Apache 2.0 license, and the remaining materials use CC BY 4.0. A free Colab notebook exists for the smaller model, though running it is still a research workflow rather than a consumer weather app.
+
+Weather Lab is the approachable part for most people. It visualizes experimental cyclone tracks and global predictions for temperature, rain, wind, and other variables in one place.
+
+## Why It Matters
+
+An extra day can give professional forecasters and emergency teams more time to prepare, but this release is not a new automatic warning system. WeatherNext produces probabilities and possible paths. Human forecasters combine those signals with observations, physics-based models, and local knowledge before issuing an alert.
+
+For normal users, the useful habit is learning to read an AI forecast as one uncertain input. Look at how the paths spread, note when the forecast was produced, then make decisions from your national or local weather service. The open release also lets researchers inspect and improve the model instead of relying on a closed demonstration.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A Google account for Weather Lab","Access to your local official weather service"]}>
+
+1. Open https://deepmind.google.com/science/weatherlab/ and sign in if prompted. Treat everything there as experimental.
+2. Choose a current cyclone if one is listed. If none is active, select a global weather view and a location you know.
+3. Note the forecast issue time, the date shown, and whether the possible tracks or values stay close together or spread apart. A wider spread means more uncertainty, not a larger storm.
+4. Change one displayed variable, such as precipitation or wind speed, and write down one observation without turning it into a safety recommendation.
+5. Open your national meteorological agency or local official weather service for the same place and time. Compare its warning level and forecast with what Weather Lab shows.
+6. Base travel, evacuation, school, or safety decisions only on the official alert. If Weather Lab conflicts with it, follow the official source and check again later.
+
+</PracticalGuide>

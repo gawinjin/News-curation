@@ -1,5 +1,20 @@
 # Signal Run Log
 
+## 2026-08-07
+
+Shipped:
+
+- `2026-08-07-chatgpt-gpt-5-6-update` - OpenAI's revised GPT-5.6 ChatGPT experience adds a reasoning control for paid users and stages unlimited Luna text chats plus a Think button for Free and Go users.
+- `2026-08-07-weathernext-cyclone-forecasting` - Google DeepMind's open WeatherNext release becomes a ten-minute lesson in reading uncertainty beside an official weather forecast.
+- `2026-08-07-chatgpt-usage-signals` - OpenAI's country-level usage data becomes a small audit for turning an information request into a verifiable work product.
+
+Skipped:
+
+- Anthropic's latest Fable 5 biology-safeguard update - current and relevant, but Signal already has three Fable safeguard and user-review articles; another would repeat the same fallback and retention guidance.
+- Simon Willison's Datasette releases and technical-blogging interview - useful to developers and writers, but narrower than today's general-user releases and without a stronger distinct workflow.
+- OpenAI's youth mental-health partnership and company or policy news - important context, but not yet a concrete reader-facing capability or testable short workflow.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable.
+
 ## 2026-08-06
 
 Shipped:

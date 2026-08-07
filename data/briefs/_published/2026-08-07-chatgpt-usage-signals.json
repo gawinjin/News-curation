@@ -1,0 +1,48 @@
+{
+  "slug": "chatgpt-usage-signals",
+  "date": "2026-08-07",
+  "category": "research",
+  "audience": "general",
+  "title_candidates": ["OpenAI's new usage map shows ChatGPT shifting from answers to action"],
+  "summary": "OpenAI Signals adds country-level data showing that work chats lean toward producing outputs, while multimedia use and adoption among people over 35 are rising.",
+  "tags": ["openai", "chatgpt", "research", "workflow"],
+  "primary_source": {
+    "url": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work/",
+    "title": "From asking to doing: How the world is putting ChatGPT to work",
+    "author": "OpenAI",
+    "publishedAt": "2026-08-06",
+    "key_facts": [
+      "At work, people are more than twice as likely to use ChatGPT to produce an output or complete a task than they are outside work.",
+      "Multimedia use accounts for 7.8 percent of messages and is the fastest-growing use category.",
+      "The share of messages from people over 35 rose in nearly every measured country and is 5 percent higher than one year earlier.",
+      "The release covers individual Free, Go, Plus, and Pro accounts rather than managed organization accounts."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://openai.com/signals/data-download/", "title": "Download data and methodology", "key_facts": ["OpenAI publishes downloadable data under CC BY 4.0."], "quote_candidates": []},
+    {"url": "https://cdn.openai.com/signals/data-dictionary.pdf", "title": "OpenAI Signals data dictionary", "key_facts": ["The dataset samples 300,000 consumer messages per month, excludes enterprise and Codex messages, uses automated classifiers, and publishes differentially private aggregates."], "quote_candidates": []}
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["Five recent non-sensitive AI prompts, or five sample tasks"],
+    "steps": [
+      {"instruction": "Classify five prompts as asking for information or producing an output, then rewrite one asking prompt as a concrete, verifiable deliverable.", "verify_url": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work/"},
+      {"instruction": "Keep the pattern only if independent source checks show it saves a real step without hiding uncertainty.", "verify_url": "https://openai.com/signals/data-download/"}
+    ]
+  },
+  "references": [
+    {"title": "From asking to doing: How the world is putting ChatGPT to work", "url": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work/", "author": "OpenAI", "publishedAt": "2026-08-06"},
+    {"title": "Download data and methodology", "url": "https://openai.com/signals/data-download/", "author": "OpenAI"},
+    {"title": "OpenAI Signals data dictionary", "url": "https://cdn.openai.com/signals/data-dictionary.pdf", "author": "OpenAI"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The study is OpenAI's analysis of its own consumer product and does not represent all AI use.",
+    "The age result uses self-reported age, and the behavioral categories come from automated classifiers rather than user labels.",
+    "Enterprise conversations and Codex are excluded; the article states those limits."
+  ],
+  "assembled_at": "2026-08-07T07:50:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "weathernext-cyclone-forecasting",
+  "date": "2026-08-07",
+  "category": "research",
+  "audience": "general",
+  "title_candidates": ["Google opens WeatherNext after a major cyclone-forecasting advance"],
+  "summary": "Google DeepMind open-sourced WeatherNext code and weights after a Nature study found roughly one extra day of useful cyclone forecast lead time.",
+  "tags": ["google", "weathernext", "weather", "open-source"],
+  "primary_source": {
+    "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+    "title": "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
+    "author": "Google DeepMind",
+    "publishedAt": "2026-08-06",
+    "key_facts": [
+      "WeatherNext predicts cyclone track, intensity, and wind structure together.",
+      "The paper reports about one additional day of useful forecast lead time over leading operational models.",
+      "The system can produce up to 1,000 possible scenarios extending 15 days ahead.",
+      "Google released WeatherNext Cyclones, WeatherNext 2, a smaller model, code, and model weights.",
+      "Weather Lab provides experimental visual forecasts and does not replace official warnings."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {"url": "https://www.nature.com/articles/s41586-026-10953-2", "title": "Operational Tropical Cyclone Forecasting with AI", "key_facts": ["Nature published the paper on August 6, 2026 and reports a day or more of average lead-time advantage."], "quote_candidates": []},
+    {"url": "https://github.com/google-deepmind/weathernext", "title": "WeatherNext", "key_facts": ["The public repository includes code, pretrained model information, a Colab notebook, licensing, and experimental-use disclaimers."], "quote_candidates": []}
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A Google account for Weather Lab", "Access to your local official weather service"],
+    "steps": [
+      {"instruction": "Inspect one Weather Lab forecast, note its issue time and uncertainty spread, then compare the same place and time with an official weather service.", "verify_url": "https://deepmind.google.com/science/weatherlab/"},
+      {"instruction": "Use only the official alert for travel, evacuation, school, or safety decisions.", "verify_url": "https://github.com/google-deepmind/weathernext"}
+    ]
+  },
+  "references": [
+    {"title": "WeatherNext: AI model achieves breakthrough in forecasting cyclones", "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/", "author": "Google DeepMind", "publishedAt": "2026-08-06"},
+    {"title": "Operational Tropical Cyclone Forecasting with AI", "url": "https://www.nature.com/articles/s41586-026-10953-2", "author": "Ferran Alet and colleagues", "publishedAt": "2026-08-06"},
+    {"title": "WeatherNext", "url": "https://github.com/google-deepmind/weathernext", "author": "Google DeepMind"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "WeatherNext and Weather Lab are experimental and must not be presented as replacements for official weather warnings.",
+    "The open Colab is a research workflow; the reader guide uses Weather Lab instead of asking general users to run model code."
+  ],
+  "assembled_at": "2026-08-07T07:50:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

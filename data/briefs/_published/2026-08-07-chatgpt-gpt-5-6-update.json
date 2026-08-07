@@ -1,0 +1,44 @@
+{
+  "slug": "chatgpt-gpt-5-6-update",
+  "date": "2026-08-07",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["ChatGPT gives free users unlimited text chats and a new Think button"],
+  "summary": "OpenAI is moving free ChatGPT accounts to GPT-5.6 Luna with unlimited text chats, while paid users get a revised GPT-5.6 Sol and a reasoning slider.",
+  "tags": ["openai", "chatgpt", "gpt-5-6", "free-tier"],
+  "primary_source": {
+    "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+    "title": "Improving GPT-5.6 Sol in ChatGPT and expanding access to GPT-5.6 Luna for free users",
+    "author": "OpenAI",
+    "publishedAt": "2026-08-06",
+    "key_facts": [
+      "Plus and Pro users receive an updated GPT-5.6 Sol in ChatGPT and a slider for choosing reasoning effort.",
+      "Free and Go users are moving to GPT-5.6 Luna as the default model during the week of August 6.",
+      "OpenAI plans unlimited text chats and a Think button for Free and Go users starting the following week, subject to abuse controls.",
+      "File uploads, images, and other tools retain separate limits.",
+      "The GPT-5.6 Sol version used by Work and Codex is not changing in this update."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A ChatGPT account", "One non-sensitive planning question you can check yourself"],
+    "steps": [
+      {"instruction": "Check which model and reasoning controls are visible in a new ChatGPT conversation; staged rollout means some accounts will not have them yet.", "verify_url": "https://chatgpt.com/"},
+      {"instruction": "Compare one checkable planning prompt at normal and higher reasoning effort, then independently verify current or high-stakes facts.", "verify_url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/"}
+    ]
+  },
+  "references": [
+    {"title": "Improving GPT-5.6 Sol in ChatGPT and expanding access to GPT-5.6 Luna for free users", "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/", "author": "OpenAI", "publishedAt": "2026-08-06"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Unlimited access applies to text chats; tools retain separate limits.",
+    "Free and Go access is staged and may not yet appear on every account.",
+    "OpenAI's factual-error percentages are internal evaluations and are omitted from the article body."
+  ],
+  "assembled_at": "2026-08-07T07:50:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
