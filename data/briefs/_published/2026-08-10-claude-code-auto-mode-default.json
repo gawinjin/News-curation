@@ -1,0 +1,57 @@
+{
+  "slug": "claude-code-auto-mode-default",
+  "date": "2026-08-10",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["Claude Code auto mode becomes the default on August 14"],
+  "summary": "Claude Code will default new Pro, Max, and Team sessions to auto mode, trading repeated approval prompts for background safety checks.",
+  "tags": ["claude-code", "anthropic", "agents", "security"],
+  "primary_source": {
+    "url": "https://claude.com/blog/auto-mode-default-in-claude-code",
+    "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
+    "author": "Anthropic",
+    "publishedAt": "2026-08-07",
+    "key_facts": [
+      "New sessions on Pro, Max, and Team plans move to auto mode on August 14.",
+      "Pinned defaults remain unchanged and Enterprise or cloud-platform deployments remain opt-in initially.",
+      "A study of 1,053 paid testers found humans blocked 13.6% of dangerous prompts while auto mode blocked 89%.",
+      "The classifier reduces approval fatigue but did not block every dangerous test command."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://code.claude.com/docs/en/permission-modes",
+      "title": "Choose a permission mode",
+      "key_facts": ["The official docs explain mode selection, protected paths, background checks, and fallback to manual approval."],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://simonwillison.net/2026/Aug/8/auto-mode/",
+      "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
+      "key_facts": ["Simon Willison notes that the remaining failures still justify isolating valuable data and tools."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A Claude Pro, Max, or Team account", "A disposable or non-sensitive sample project"],
+    "steps": [
+      {"instruction": "Check the permission mode in a fresh session and use Manual or Plan for sensitive work.", "verify_url": "https://code.claude.com/docs/en/permission-modes"},
+      {"instruction": "Test auto mode only in a recoverable project with explicit network, credential, deletion, and folder boundaries.", "verify_url": "https://claude.com/blog/auto-mode-default-in-claude-code"}
+    ]
+  },
+  "references": [
+    {"title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans", "url": "https://claude.com/blog/auto-mode-default-in-claude-code", "author": "Anthropic", "publishedAt": "2026-08-07"},
+    {"title": "Choose a permission mode", "url": "https://code.claude.com/docs/en/permission-modes", "author": "Anthropic"},
+    {"title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans", "url": "https://simonwillison.net/2026/Aug/8/auto-mode/", "author": "Simon Willison", "publishedAt": "2026-08-08"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Auto mode does not guarantee safety and should not be presented as suitable for sensitive or irreversible work.",
+    "Plan availability and the August 14 default date must match Anthropic's announcement."
+  ],
+  "assembled_at": "2026-08-10T03:08:09.578Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

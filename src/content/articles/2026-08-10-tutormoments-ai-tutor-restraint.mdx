@@ -1,0 +1,56 @@
+---
+title: "AI tutors improve when you tell them not to over-help"
+date: 2026-08-10
+category: research
+tags: ["education", "tutoring", "prompting", "allen-ai"]
+summary: "Ai2's TutorMoments study finds that AI tutors often do too much of a student's thinking, while a more explicit tutoring prompt improves their restraint."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "Access to any conversational AI assistant"
+    - "One study question with a trustworthy answer source"
+references:
+  - title: "TutorMoments: Do AI tutors know when to help and when to hold back?"
+    url: "https://huggingface.co/blog/allenai/tutormoments"
+    author: "Ai2"
+    publishedAt: "2026-08-07"
+  - title: "TutorMoments preview technical report"
+    url: "https://tutormoments.allen.ai/static/paper/tutormoments-preview.pdf"
+    author: "Ai2"
+    publishedAt: "2026-08-07"
+  - title: "TutorMoments code"
+    url: "https://github.com/allenai/tutormoments"
+    author: "Ai2"
+draft: false
+---
+
+## TL;DR
+
+Ai2's TutorMoments evaluation finds that general-purpose AI assistants tend to explain too much instead of making students think. Every model in the preview improved when its prompt explicitly balanced hints with independent work. You can copy that idea into a short tutoring prompt today, while still checking the final lesson against a reliable source.
+
+## What's New
+
+TutorMoments replays decision points from real one-to-one math tutoring. Its preview dataset contains 462 de-identified transcripts involving U.S. students in grades 2 through 7, more than 1,500 teacher-marked moments, and annotations from 27 experienced teachers.
+
+At each marked moment, a model takes over for five turns with a simulated student. The evaluation checks whether the tutor offers support when needed, pushes the student to reason when ready, and avoids making the task too easy. Seven models were tested with a vague instruction to tutor well and with a second prompt that named those trade-offs.
+
+All seven scored better with the more explicit prompt. The result does not show that AI teaches children better than humans: the sessions used simulated students, measured tutor behavior rather than learning, and focused on elementary and middle-school math. It does show that a normal assistant's default helpfulness can work against learning unless the user asks it to hold back.
+
+## Why It Matters
+
+An instant worked solution can finish homework while leaving the underlying confusion untouched. A useful tutor first discovers what the learner understands, gives the smallest helpful hint, and waits for another attempt.
+
+That behavior does not require a special education product. Students, parents, and adult learners can state the tutoring contract at the start of an ordinary chat. The assistant may still make mistakes or reveal too much, so the learner should keep a textbook, teacher material, or another reliable answer source nearby.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["Access to any conversational AI assistant","One study question with a trustworthy answer source"]}>
+
+1. Choose one practice problem you can verify with a textbook, course note, or official answer key. Do not use a live graded test.
+2. Start a new chat and paste: "Tutor me without doing the work for me. Ask one diagnostic question first. Give only one hint at a time, wait for my attempt, and ask me to explain a correct answer. Do not reveal the full solution unless I request it."
+3. Share the problem and answer the assistant's first question, even if your answer is incomplete.
+4. If the assistant gives away the solution, stop it and repeat: "Return to one hint, then wait." If it offers no useful support after two attempts, ask for one more concrete hint.
+5. After solving the problem, explain your reasoning in your own words and ask the assistant to identify one weak step rather than rewrite the whole answer.
+6. Check the final reasoning against your trustworthy source. Record whether the assistant waited, adjusted its help, and left the important thinking to you.
+
+</PracticalGuide>

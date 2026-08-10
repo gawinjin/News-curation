@@ -1,5 +1,18 @@
 # Signal Run Log
 
+## 2026-08-10
+
+Shipped:
+
+- `2026-08-10-claude-code-auto-mode-default` - Anthropic's August 14 permission change becomes a bounded test of auto mode with explicit access limits and a recoverable sample project.
+- `2026-08-10-tutormoments-ai-tutor-restraint` - Ai2's TutorMoments findings become a ten-minute prompt that asks an ordinary AI tutor to question, hint, and wait instead of revealing the solution.
+
+Skipped:
+
+- OpenAI's Astra critical-cyber disclosure and the OpenClaw gym-booking report - important safety signals, but their practical response repeats Signal's existing sandbox, credential, permission, and stop-boundary guidance.
+- GitHub Models retirement, SQLite history compression, and other developer releases - current, but narrower than today's general-user workflows.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable, including Anthropic sitemap fallback.
+
 ## 2026-08-07
 
 Rerun:

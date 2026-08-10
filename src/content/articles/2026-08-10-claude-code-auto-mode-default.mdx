@@ -1,0 +1,56 @@
+---
+title: "Claude Code auto mode becomes the default on August 14"
+date: 2026-08-10
+category: guides
+tags: ["claude-code", "anthropic", "agents", "security"]
+summary: "Claude Code will default new Pro, Max, and Team sessions to auto mode, trading repeated approval prompts for background safety checks."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A Claude Pro, Max, or Team account"
+    - "A disposable or non-sensitive sample project"
+references:
+  - title: "Auto mode is now the default in Claude Code for Pro, Max, and Team plans"
+    url: "https://claude.com/blog/auto-mode-default-in-claude-code"
+    author: "Anthropic"
+    publishedAt: "2026-08-07"
+  - title: "Choose a permission mode"
+    url: "https://code.claude.com/docs/en/permission-modes"
+    author: "Anthropic"
+  - title: "Auto mode is now the default in Claude Code for Pro, Max, and Team plans"
+    url: "https://simonwillison.net/2026/Aug/8/auto-mode/"
+    author: "Simon Willison"
+    publishedAt: "2026-08-08"
+draft: false
+---
+
+## TL;DR
+
+Starting August 14, new Claude Code sessions on Pro, Max, and Team plans will use auto mode unless a user has pinned another default. Auto mode replaces most approval prompts with background checks. Anthropic's tests favor it over tired human reviewers, but it still needs a bounded project and clear access limits.
+
+## What's New
+
+Anthropic says auto mode will become the default for new Claude Code sessions on Pro, Max, and Team plans. A pinned default will stay in place. Someone who previously chose another mode without pinning it may see a one-time prompt about switching. Enterprise and cloud-platform deployments remain opt-in for now.
+
+Auto mode lets Claude edit files, run commands, and make network requests without asking each time. A separate classifier checks proposed actions and scans tool results for suspicious instructions. Claude Code returns to manual approvals when that safety layer blocks three actions in a row or twenty during one session.
+
+Anthropic compared the system with human review in a controlled study of 1,053 paid testers. People rejected 13.6% of deliberately dangerous prompts, while auto mode blocked 89% of the same commands. A separate evaluation reported no successful attacks in 720 attempts against Anthropic's latest models in auto mode. These are useful results, not a guarantee: some dangerous test commands still passed the classifier, and independent confirmation remains important.
+
+## Why It Matters
+
+Repeated approval boxes feel safe, but people quickly learn to click through them. Auto mode can reduce that fatigue and keep long tasks moving. It also concentrates trust in a safety system that cannot understand every unusual project, package, website, or instruction.
+
+The practical choice is not simply auto or manual. It is whether the agent's workspace is recoverable and whether it can reach anything valuable. A sample repository with no credentials is a reasonable place to test. A folder containing private records, production access, or payment tools deserves tighter oversight even when the classifier is active.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A Claude Pro, Max, or Team account","A disposable or non-sensitive sample project"]}>
+
+1. On or after August 14, open a fresh Claude Code session in the desktop app, VS Code, or claude.ai and check the permission-mode selector before starting work.
+2. If the project contains private files, credentials, customer data, or production access, switch to Manual or Plan mode. Do not use that project for this test.
+3. Open a disposable sample project and tell Claude: "Do not access the network, install software, read credentials, or delete files. Stop and ask before leaving this project folder."
+4. Give it one reversible task, such as renaming a heading or correcting a typo. Watch the activity summary and stop the session if an action exceeds your stated boundary.
+5. Review the changed files before accepting the result. Undo the test change so you know recovery works.
+6. Keep auto mode only for projects whose files and permissions you can afford to restore. Pin Manual or Plan as your default when the cost of a mistaken action is high.
+
+</PracticalGuide>

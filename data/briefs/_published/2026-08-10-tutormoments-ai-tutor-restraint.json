@@ -1,0 +1,57 @@
+{
+  "slug": "tutormoments-ai-tutor-restraint",
+  "date": "2026-08-10",
+  "category": "research",
+  "audience": "general",
+  "title_candidates": ["AI tutors improve when you tell them not to over-help"],
+  "summary": "Ai2's TutorMoments study finds that AI tutors often do too much of a student's thinking, while a more explicit tutoring prompt improves their restraint.",
+  "tags": ["education", "tutoring", "prompting", "allen-ai"],
+  "primary_source": {
+    "url": "https://huggingface.co/blog/allenai/tutormoments",
+    "title": "TutorMoments: Do AI tutors know when to help and when to hold back?",
+    "author": "Ai2",
+    "publishedAt": "2026-08-07",
+    "key_facts": [
+      "The preview uses 462 de-identified tutoring transcripts and more than 1,500 teacher-annotated moments.",
+      "Seven models were evaluated with a vague tutoring prompt and a prompt that explicitly balanced support and rigor.",
+      "Every tested model improved with the more explicit prompt.",
+      "The evaluation measures simulated tutor behavior, not learning outcomes with real students."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://tutormoments.allen.ai/static/paper/tutormoments-preview.pdf",
+      "title": "TutorMoments preview technical report",
+      "key_facts": ["The technical report describes the replay evaluation, annotation process, scoring limits, and preliminary findings."],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://github.com/allenai/tutormoments",
+      "title": "TutorMoments code",
+      "key_facts": ["Ai2 released the evaluation code and links to the preview dataset."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["Access to any conversational AI assistant", "One study question with a trustworthy answer source"],
+    "steps": [
+      {"instruction": "Give the assistant an explicit tutoring contract that requires one question or hint at a time and waits for the learner's attempt.", "verify_url": "https://huggingface.co/blog/allenai/tutormoments"},
+      {"instruction": "Solve one practice problem and verify the final reasoning against a trustworthy source.", "verify_url": "https://tutormoments.allen.ai/static/paper/tutormoments-preview.pdf"}
+    ]
+  },
+  "references": [
+    {"title": "TutorMoments: Do AI tutors know when to help and when to hold back?", "url": "https://huggingface.co/blog/allenai/tutormoments", "author": "Ai2", "publishedAt": "2026-08-07"},
+    {"title": "TutorMoments preview technical report", "url": "https://tutormoments.allen.ai/static/paper/tutormoments-preview.pdf", "author": "Ai2", "publishedAt": "2026-08-07"},
+    {"title": "TutorMoments code", "url": "https://github.com/allenai/tutormoments", "author": "Ai2"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The preview measures model behavior with simulated students, not real learning outcomes.",
+    "The dataset focuses on U.S. elementary and middle-school math and should not be generalized to every learner or subject."
+  ],
+  "assembled_at": "2026-08-10T03:08:09.578Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
