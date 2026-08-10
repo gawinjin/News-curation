@@ -2,6 +2,11 @@
 
 ## 2026-08-10
 
+Rerun:
+
+- No additional high-signal candidates - skipping. The refreshed inbox contained no newly surfaced URLs; the remaining current items were the same duplicate, developer-focused, repetitive, or non-actionable stories already reviewed earlier today.
+- Social candidates remained unavailable: all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable, including Anthropic sitemap fallback.
+
 Shipped:
 
 - `2026-08-10-claude-code-auto-mode-default` - Anthropic's August 14 permission change becomes a bounded test of auto mode with explicit access limits and a recoverable sample project.
