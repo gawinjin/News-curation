@@ -1,5 +1,20 @@
 # Signal Run Log
 
+## 2026-08-11
+
+No high-signal candidates today - skipping.
+
+Researched:
+
+- Meta Muse Glimmer is a current Apache 2.0 open-weight local model, but it has no hosted demo. The official path requires a roughly 17 GB model download, about 19 GB of working memory for multimodal use, and specialist local-agent setup, so it does not support a safe 5-30 minute general-user guide.
+- ChatGPT Business Premium seats add a meaningful price and usage tier, but the seats are not available to purchase yet. OpenAI currently offers only a waitlist, gives no launch date, and does not guarantee promotional credits, so readers cannot complete or verify the seat change today.
+
+Skipped:
+
+- OpenAI's AI-native finance essay, Model ML profile, and other workplace case studies - current, but they repeat Signal's existing finance, traceability, and usage-audit workflows rather than adding a distinct reader action.
+- Multilingual voice-agent deployment, knowledge distillation, frontier cyber access, infrastructure policy, and the remaining new items - developer-focused, specialist, policy-only, or otherwise missing a concrete 5-30 minute general-user test.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable, including Anthropic and Meta fallbacks.
+
 ## 2026-08-10
 
 Rerun:
