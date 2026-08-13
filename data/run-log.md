@@ -2,6 +2,11 @@
 
 ## 2026-08-13
 
+Rerun:
+
+- No additional high-signal candidates - skipping. The refreshed inbox contained the same 43 URLs already reviewed earlier today; only the ingest timestamp changed.
+- Social candidates remained unavailable: all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable, including Anthropic and Meta fallbacks.
+
 Shipped:
 
 - `2026-08-13-chatgpt-ad-controls` - ChatGPT's ad test has expanded to five more countries; the guide helps eligible adults inspect personalization, delete ad data, verify sponsored labeling, report unsafe placements, and compare an ad-free Temporary Chat.
