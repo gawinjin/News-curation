@@ -1,0 +1,52 @@
+{
+  "slug": "claude-machine-readable-marks",
+  "date": "2026-08-13",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["Claude is adding machine-readable marks to new model output"],
+  "summary": "New Claude models add hidden marks to generated text and signed provenance to supported files, but those signals do not prove authorship or accuracy.",
+  "tags": ["claude", "anthropic", "provenance", "watermarking"],
+  "primary_source": {
+    "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+    "title": "How Claude marks AI-generated content",
+    "author": "Anthropic",
+    "publishedAt": "2026-08-10",
+    "key_facts": [
+      "Claude models launched on or after August 2 support machine-readable marking from launch.",
+      "Generated text from supported models carries an embedded watermark, while supported files can carry signed C2PA metadata.",
+      "The marks apply across Claude products and supported cloud deployments worldwide.",
+      "Anthropic has not yet released public detection instructions.",
+      "A detected mark can indicate processing by Claude but does not prove original authorship, accuracy, or lack of later editing.",
+      "Heavy text editing can weaken detection, while screenshots and file conversion can strip provenance metadata."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://c2pa.org/",
+      "title": "C2PA",
+      "key_facts": ["C2PA is an open standard for recording signed information about the origin and editing history of digital content."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A document or file you created with Claude", "Access to its original chat or project notes"],
+    "steps": [
+      {"instruction": "Record how Claude assisted, preserve the original file and source notes, and add an accurate visible disclosure when authorship matters.", "verify_url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content"},
+      {"instruction": "Wait for an official Anthropic detection mechanism and treat either a positive or negative result as limited evidence.", "verify_url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content"}
+    ]
+  },
+  "references": [
+    {"title": "How Claude marks AI-generated content", "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content", "author": "Anthropic", "publishedAt": "2026-08-10"},
+    {"title": "C2PA", "url": "https://c2pa.org/", "author": "Coalition for Content Provenance and Authenticity"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Public detection instructions are not available yet, so the guide must not promise a working detector.",
+    "A mark indicates possible Claude processing and must not be presented as proof of authorship, plagiarism, or accuracy."
+  ],
+  "assembled_at": "2026-08-13T07:35:12.202Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

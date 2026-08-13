@@ -1,0 +1,51 @@
+{
+  "slug": "grok-4-6-release",
+  "date": "2026-08-13",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Grok 4.6 targets longer agent work and visual projects"],
+  "summary": "SpaceXAI released Grok 4.6 for longer multi-step work and stronger visual projects, with immediate access through Grok Build and several partners.",
+  "tags": ["grok", "spacexai", "agents", "app-building"],
+  "primary_source": {
+    "url": "https://x.ai/news/grok-4-6",
+    "title": "Introducing Grok 4.6",
+    "author": "SpaceXAI",
+    "publishedAt": "2026-08-12",
+    "key_facts": [
+      "Grok 4.6 focuses on longer agent tasks and stronger interactive or visual work.",
+      "The model received extended supplemental training and agentic training across knowledge work, coding, web development, and other domains.",
+      "It is available in Grok Build, Cursor, the API, OpenRouter, Vercel, and Cloudflare.",
+      "Grok Build and Cursor include twice the normal usage for the first week.",
+      "API pricing starts at $2 per million input tokens and $6 per million output tokens."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://docs.x.ai/developers/models",
+      "title": "Models and pricing",
+      "key_facts": ["SpaceXAI's model documentation lists currently available models and pricing."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A free Grok Build account", "A browser"],
+    "steps": [
+      {"instruction": "Use Grok 4.6 in Grok Build to create a disposable one-page checklist with explicit functional and mobile checks.", "verify_url": "https://x.ai/build"},
+      {"instruction": "Test every control manually, compare the model's self-review with your observations, and remove the disposable project.", "verify_url": "https://x.ai/news/grok-4-6"}
+    ]
+  },
+  "references": [
+    {"title": "Introducing Grok 4.6", "url": "https://x.ai/news/grok-4-6", "author": "SpaceXAI", "publishedAt": "2026-08-12"},
+    {"title": "Models and pricing", "url": "https://docs.x.ai/developers/models", "author": "SpaceXAI"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The general-user guide uses Grok Build and must not require API keys, package installation, or a private repository.",
+    "Provider benchmark claims should be identified as provider-reported and not treated as proof of quality on the reader's task."
+  ],
+  "assembled_at": "2026-08-13T07:35:12.202Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

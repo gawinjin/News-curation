@@ -1,0 +1,52 @@
+---
+title: "Grok 4.6 targets longer agent work and visual projects"
+date: 2026-08-13
+category: model-releases
+tags: ["grok", "spacexai", "agents", "app-building"]
+summary: "SpaceXAI released Grok 4.6 for longer multi-step work and stronger visual projects, with immediate access through Grok Build and several partners."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A free Grok Build account"
+    - "A browser"
+references:
+  - title: "Introducing Grok 4.6"
+    url: "https://x.ai/news/grok-4-6"
+    author: "SpaceXAI"
+    publishedAt: "2026-08-12"
+  - title: "Models and pricing"
+    url: "https://docs.x.ai/developers/models"
+    author: "SpaceXAI"
+draft: false
+---
+
+## TL;DR
+
+Grok 4.6 is a new SpaceXAI model focused on longer agent tasks and more polished interactive or visual work. It is available in Grok Build, Cursor, the API, and several partner services. The easiest useful test is a small browser project whose controls and claims you can inspect yourself.
+
+## What's New
+
+SpaceXAI says Grok 4.6 received a longer supplemental training run than Grok 4.5, followed by training across knowledge work, coding, web development, computer-aided design, and other tool-using tasks. The company highlights better persistence across many steps, stronger first drafts of visual projects, and more self-testing during longer work.
+
+The release is available in Grok Build and Cursor, as well as through the SpaceXAI API, OpenRouter, Vercel, and Cloudflare. SpaceXAI is offering twice the normal included usage in Grok Build and Cursor for the first week. API pricing starts at $2 per million input tokens and $6 per million output tokens, with a faster variant priced higher.
+
+Provider benchmarks put Grok 4.6 close to other current frontier models across coding and knowledge-work tests. Those numbers do not tell you whether it will understand your idea, produce an accessible interface, or catch its own mistakes. A small working project is a better personal test.
+
+## Why It Matters
+
+Long-running agents are useful only when they preserve requirements and verify what they build. A model can produce an impressive screen while leaving buttons broken, inventing data, or ignoring a constraint from the first prompt.
+
+Grok Build offers a browser route for testing the release without installing tools or connecting a private repository. Give it a modest project with objective checks, then use the preview like a normal visitor. The result reveals more than a benchmark score and keeps the experiment reversible.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A free Grok Build account","A browser"]}>
+
+1. Open https://x.ai/build, sign in, and confirm that Grok 4.6 appears as the active model. If it is unavailable on your account, stop rather than selecting a different model and treating the result as a 4.6 test.
+2. Ask for a one-page travel packing checklist with three fixed sections, add and delete controls, a completed-item counter, and a reset button. Tell it to use sample data only and no external services.
+3. Add four acceptance checks to the prompt: every button works, the counter stays accurate, reset restores the sample list, and the page remains usable on a phone-sized screen.
+4. Open the preview and test each control yourself. Resize the browser to a narrow width and check that labels, buttons, and list items remain readable.
+5. Ask Grok to test the same four checks and list any remaining defect without redesigning the page. Compare its report with what you observed.
+6. Delete the test project when finished. Do not connect private repositories, credentials, customer data, or paid services until the model has earned trust on disposable work.
+
+</PracticalGuide>

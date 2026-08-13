@@ -1,0 +1,52 @@
+---
+title: "Claude is adding machine-readable marks to new model output"
+date: 2026-08-13
+category: guides
+tags: ["claude", "anthropic", "provenance", "watermarking"]
+summary: "New Claude models add hidden marks to generated text and signed provenance to supported files, but those signals do not prove authorship or accuracy."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A document or file you created with Claude"
+    - "Access to its original chat or project notes"
+references:
+  - title: "How Claude marks AI-generated content"
+    url: "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content"
+    author: "Anthropic"
+    publishedAt: "2026-08-10"
+  - title: "C2PA"
+    url: "https://c2pa.org/"
+    author: "Coalition for Content Provenance and Authenticity"
+draft: false
+---
+
+## TL;DR
+
+Claude models launched on or after August 2 now place machine-readable watermarks in generated text and signed provenance metadata in supported files. Anthropic has not yet released public detection instructions. A mark can show that Claude processed something, but it cannot prove who wrote the underlying ideas, whether the content changed later, or whether it is true.
+
+## What's New
+
+Anthropic is introducing two kinds of origin signals. Text from supported models carries an embedded watermark that is designed not to change its visible meaning or readability. Supported image files, including PNG, JPG, and SVG, can carry signed C2PA metadata that records Claude's involvement and can reveal later tampering.
+
+The policy applies to models launched on or after August 2 and covers supported output across Claude, Claude Code, Cowork, Tag, the API, and cloud partners. Anthropic says it is working to add marking to older models. Some products, features, and file types may not support every kind of mark.
+
+Detection is not ready for normal users yet. Anthropic says mechanisms and technical documentation are forthcoming. Even when a detector becomes available, a positive result will mean that Claude may have processed the content, not that Claude originated every idea. Heavy editing can weaken a text signal, while conversion, re-saving, or screenshots can remove file metadata.
+
+## Why It Matters
+
+Hidden provenance can help platforms identify AI involvement without placing a visible badge in every paragraph. It is still a technical clue, not a judgment about plagiarism, truth, or effort. A human-written draft that Claude only proofread may carry a mark; an AI-written passage that was heavily rewritten may not.
+
+People sharing schoolwork, reports, marketing material, or public images should not wait for a detector to explain their process. Keep the original file and a short record of what Claude did, then use a plain-language disclosure when authorship matters. That is clearer today and remains useful if metadata disappears.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A document or file you created with Claude","Access to its original chat or project notes"]}>
+
+1. Pick one non-sensitive item that Claude helped create. Write down the model, date, and whether Claude drafted, edited, translated, summarized, or converted it.
+2. If it is an image or supported file, keep the original download. Do not use a screenshot or re-save it just to test provenance, because those actions can remove signed metadata.
+3. Add a visible note appropriate to the context, such as: "Drafted by me and edited for clarity with Claude on August 13, 2026." Describe the actual help rather than claiming the whole item is AI-generated.
+4. Keep a private copy of the relevant prompt, source list, and your final edits when school, work, or publication rules require an audit trail.
+5. Do not use an online service that claims to detect Claude's new mark unless Anthropic links to it from its official documentation. Public detection guidance is still forthcoming.
+6. When a detector becomes available, treat either result cautiously: a mark does not prove authorship or accuracy, and no mark does not prove that AI was absent.
+
+</PracticalGuide>

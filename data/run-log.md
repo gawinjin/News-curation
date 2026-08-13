@@ -5,6 +5,8 @@
 Shipped:
 
 - `2026-08-13-chatgpt-ad-controls` - ChatGPT's ad test has expanded to five more countries; the guide helps eligible adults inspect personalization, delete ad data, verify sponsored labeling, report unsafe placements, and compare an ad-free Temporary Chat.
+- `2026-08-13-claude-machine-readable-marks` - Anthropic's new text watermarks and signed file provenance become a practical disclosure and record-keeping workflow that does not overstate what a future detector can prove.
+- `2026-08-13-grok-4-6-release` - Grok 4.6's longer agent and visual-work claims become a browser-based checklist project with objective controls, mobile checks, and a reversible cleanup step.
 
 Skipped:
 
