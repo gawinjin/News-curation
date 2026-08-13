@@ -1,5 +1,17 @@
 # Signal Run Log
 
+## 2026-08-13
+
+Shipped:
+
+- `2026-08-13-chatgpt-ad-controls` - ChatGPT's ad test has expanded to five more countries; the guide helps eligible adults inspect personalization, delete ad data, verify sponsored labeling, report unsafe placements, and compare an ad-free Temporary Chat.
+
+Skipped:
+
+- Google DeepMind's Pixel 11 sign-language-to-text release - important and now in a consumer product, but official sources do not document the activation control, rollout requirements, or exact signing workflow. Publishing a guide would require invented accessibility-critical steps.
+- DeepSeek V4 Pro 0813, LFM2.5-VL, OlmoEarth embeddings, Alchemy utilities, Datasette releases, reasoning-trace research, enterprise case studies, and Daybreak cyber models - API-only, access-gated, developer-focused, specialist, repetitive, or without a stronger 5-30 minute general-user workflow.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable, including Anthropic and Meta fallbacks.
+
 ## 2026-08-11
 
 No high-signal candidates today - skipping.

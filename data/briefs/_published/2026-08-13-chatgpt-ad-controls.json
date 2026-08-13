@@ -1,0 +1,123 @@
+{
+  "slug": "chatgpt-ad-controls",
+  "date": "2026-08-13",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "ChatGPT ads arrive in five more countries — check your controls",
+    "ChatGPT's ad test expands: what users can control"
+  ],
+  "summary": "ChatGPT's ad test has expanded to five more countries. Eligible adults can inspect why an ad appeared, limit personalization, delete ad data, or use Temporary Chat.",
+  "tags": ["chatgpt", "advertising", "privacy", "settings"],
+  "primary_source": {
+    "url": "https://openai.com/index/testing-ads-in-chatgpt",
+    "title": "Testing ads in ChatGPT",
+    "author": "OpenAI",
+    "publishedAt": "2026-08-11",
+    "key_facts": [
+      "ChatGPT ads launched in the United Kingdom, Mexico, Brazil, Japan, and South Korea on August 11, following earlier pilots in the United States, Canada, Australia, and New Zealand.",
+      "The original U.S. test covered logged-in adults using the Free and Go tiers; Plus, Pro, Business, Enterprise, and Education accounts were excluded.",
+      "Free-tier users can avoid ads by accepting a lower daily message allowance, while Plus and Pro subscriptions also remain ad-free.",
+      "OpenAI says sponsored placements are labeled and visually separated from ChatGPT's answer, and advertisers cannot alter the answer.",
+      "Ad selection during the test can use the current conversation topic, previous chats, and earlier ad interactions.",
+      "Advertisers receive aggregated performance figures such as views and clicks, not users' chats, memories, histories, or personal details.",
+      "Ads are excluded for accounts belonging or predicted to belong to people under 18 and from conversations near health, mental-health, or political topics.",
+      "Users can dismiss ads, provide feedback, inspect why an ad appeared, delete advertising data, and change personalization settings."
+    ],
+    "quote_candidates": [
+      {
+        "text": "Ads do not influence the answers ChatGPT gives you.",
+        "words": 9,
+        "exact": true,
+        "position": "Answer independence section"
+      },
+      {
+        "text": "Advertisers do not have access to your chats, chat history, memories, or personal details.",
+        "words": 14,
+        "exact": true,
+        "position": "Conversation privacy section"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://help.openai.com/en/articles/20001047",
+      "title": "Ads in ChatGPT",
+      "key_facts": [
+        "OpenAI's help page documents eligibility, sponsored placement, Ad Controls, Temporary Chat behavior, ad-data deletion, and ad-free options.",
+        "Deleting advertising data does not delete chats and can take up to 30 days to complete across OpenAI's systems.",
+        "An advertiser can see a message only when the user chooses to send that message directly to the advertiser."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://openai.com/policies/ad-policies/",
+      "title": "Ad policies",
+      "key_facts": [
+        "OpenAI's ad policies restrict placements involving political persuasion, sensitive traits, misleading claims, and regulated or unsafe products and services."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "A logged-in adult ChatGPT Free or Go account",
+      "A supported country where the ad test is active",
+      "A browser or the latest ChatGPT iOS app"
+    ],
+    "steps": [
+      {
+        "instruction": "Open your ChatGPT profile menu, choose Settings, and look for Ad Controls. If it is absent after updating the app, stop: your account may not be eligible yet.",
+        "verify_url": "https://help.openai.com/en/articles/20001047"
+      },
+      {
+        "instruction": "Open Ad Controls and review Personalize ads, Past chats and memory, and History and Topics. Turn off either personalization switch you do not want used for ad relevance.",
+        "verify_url": "https://help.openai.com/en/articles/20001047"
+      },
+      {
+        "instruction": "Choose Delete ads data if you want to clear ad history and topics. Confirm the deletion, remembering that this does not delete chats and system removal can take up to 30 days.",
+        "verify_url": "https://help.openai.com/en/articles/20001047"
+      },
+      {
+        "instruction": "Start a non-sensitive comparison of two everyday products. If an ad appears, confirm that it is below the answer, visually separated, and labeled Sponsored.",
+        "verify_url": "https://openai.com/index/testing-ads-in-chatgpt"
+      },
+      {
+        "instruction": "Use the ad's three-dot menu to open About this ad. Hide an irrelevant ad or report a misleading or unsafe one, and independently check product claims before buying.",
+        "verify_url": "https://help.openai.com/en/articles/20001047"
+      },
+      {
+        "instruction": "Repeat the comparison in Temporary Chat and confirm that no ad appears. Do not send private information to an advertiser; it can see messages you deliberately send to it.",
+        "verify_url": "https://help.openai.com/en/articles/20001047"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Testing ads in ChatGPT",
+      "url": "https://openai.com/index/testing-ads-in-chatgpt",
+      "author": "OpenAI",
+      "publishedAt": "2026-08-11"
+    },
+    {
+      "title": "Ads in ChatGPT",
+      "url": "https://help.openai.com/en/articles/20001047",
+      "author": "OpenAI"
+    },
+    {
+      "title": "Ad policies",
+      "url": "https://openai.com/policies/ad-policies/",
+      "author": "OpenAI"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The ad test is limited by country, plan, age, and platform, so Ad Controls may not appear for every reader.",
+    "No ad is guaranteed to appear for a given prompt even when an account is eligible.",
+    "Treat paid placements as advertising, not as product endorsements; verify purchase claims independently."
+  ],
+  "assembled_at": "2026-08-13T05:30:00.000Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

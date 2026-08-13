@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T09:19:24.560Z",
+  "generatedAt": "2026-08-13T05:16:22.330Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,8 +47,148 @@
   "items": [
     {
       "kind": "rss",
+      "title": "DeepSeek V4 Pro 0813 (on OpenRouter)",
+      "url": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-12T23:59:23.000Z",
+      "summary": "<p><strong><a href=\"https://openrouter.ai/deepseek/deepseek-v4-pro-0813\">DeepSeek V4 Pro 0813 (on OpenRouter)</a></strong></p> The latest DeepSeek Pro model is now available, via API only. I had to link to OpenRouter because DeepSeek don't have any obvious announcement page for t"
+    },
+    {
+      "kind": "rss",
+      "title": "alchemy-utils 0.1a0",
+      "url": "https://simonwillison.net/2026/Aug/12/alchemy-utils/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-12T19:51:30.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/alchemy-utils/releases/tag/0.1a0\">alchemy-utils 0.1a0</a></p> <p>I've long pondered what a database agnostic version of my <a href=\"https://sqlite-utils.datasette.io/\">sqlite-utils</a> Python library and CLI utility "
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-08-12T16:14:36.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Florian Herrengt",
+      "url": "https://simonwillison.net/2026/Aug/12/florian-herrengt/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-12T15:08:47.000Z",
+      "summary": "<blockquote cite=\"https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html\"><p>But then users start to report a weird bug. It's the 4th time your team has been trying to fix it. I mean... asking AI to fix it. Unfortunately, it seems like not even Fable "
+    },
+    {
+      "kind": "rss",
+      "title": "Putting sign language AI into users’ hands",
+      "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "category": "research",
+      "publishedAt": "2026-08-12T14:01:59.000Z",
+      "summary": "Introducing sign-language-to-text (SL2T), our breakthrough model powering new sign language features for Deaf and hard of hearing users."
+    },
+    {
+      "kind": "rss",
+      "title": "LFM2.5-VL-3B for Better and Faster Vision Capabilities for the Edge",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-08-12T14:00:51.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "From assistance to execution: How enterprises put AI to work",
+      "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-08-12T06:00:00.000Z",
+      "summary": "OpenAI research reveals how enterprises are adopting agentic AI, using ChatGPT and Codex, and how frontier firms are pulling ahead in AI adoption."
+    },
+    {
+      "kind": "rss",
+      "title": "How RingCentral builds AI-native work from engineering to ops",
+      "url": "https://openai.com/index/ringcentral",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-08-12T00:00:00.000Z",
+      "summary": "See how RingCentral uses ChatGPT Work and Codex to accelerate AI product development and centralize operational intelligence across engineering and operations."
+    },
+    {
+      "kind": "rss",
+      "title": "There are no lossless transformations of natural-language text",
+      "url": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-11T23:48:35.000Z",
+      "summary": "<p><strong><a href=\"https://sophiebits.com/2026/06/25/there-are-no-lossless-transformations-of-natural-language-text\">There are no lossless transformations of natural-language text</a></strong></p> Sophie Alpert shares her \"internal policy on acceptable use of AI writing by engin"
+    },
+    {
+      "kind": "rss",
+      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-11T22:40:45.000Z",
+      "summary": "<p><strong><a href=\"https://stolen-thoughts.com/\">Stealing Reasoning Traces from Proprietary LLM APIs</a></strong></p> A vanity domain name (<code>stolen-thoughts.com</code>) for <a href=\"https://www.alphaxiv.org/abs/2608.09867\">a neat paper</a>:</p> <blockquote> <p>Anthropic, Op"
+    },
+    {
+      "kind": "rss",
+      "title": "datasette-upload-dbs 0.5a0",
+      "url": "https://simonwillison.net/2026/Aug/11/datasette-upload-dbs/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-11T20:35:13.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette-upload-dbs/releases/tag/0.5a0\">datasette-upload-dbs 0.5a0</a></p> <p>This plugin has been around for a while - it lets users upload a brand new SQLite database to a hosted Datasette instance, at which point"
+    },
+    {
+      "kind": "rss",
+      "title": "Thinking of ACE? We Can Do It with Fewer Tokens",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-08-11T13:37:10.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Testing ads in ChatGPT",
+      "url": "https://openai.com/index/testing-ads-in-chatgpt",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-08-11T10:00:00.000Z",
+      "summary": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control."
+    },
+    {
+      "kind": "rss",
+      "title": "Daybreak models are now available on AWS",
+      "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-08-11T10:00:00.000Z",
+      "summary": "OpenAI and AWS are making Daybreak cybersecurity capabilities available through Amazon Bedrock to support enterprise security workflows."
+    },
+    {
+      "kind": "rss",
       "title": "Introducing Muse Glimmer",
-      "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
@@ -117,16 +257,6 @@
     },
     {
       "kind": "rss",
-      "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
-      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-08-10T10:00:00.000Z",
-      "summary": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing."
-    },
-    {
-      "kind": "rss",
       "title": "Putting frontier cyber models in more trusted hands",
       "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
       "source": "OpenAI",
@@ -137,8 +267,18 @@
     },
     {
       "kind": "rss",
-      "title": "Quoting OpenClaw",
-      "url": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
+      "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
+      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-08-10T10:00:00.000Z",
+      "summary": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing."
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting OpenClaw (running Opus 4.6)",
+      "url": "https://simonwillison.net/2026/Aug/10/openclaw/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
@@ -147,13 +287,13 @@
     },
     {
       "kind": "rss",
-      "title": "Premium seats are coming to ChatGPT Business",
-      "url": "https://openai.com/index/premium-seats-chatgpt-business",
+      "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
+      "url": "https://openai.com/index/virgin-atlantic/chatgpt-work",
       "source": "OpenAI",
       "sourceId": "openai",
       "category": "model-releases",
       "publishedAt": "2026-08-10T00:00:00.000Z",
-      "summary": "Premium seats are coming to ChatGPT Business. Sign up by August 20 to get $100 in workspace credits and unlock higher usage for your team's most demanding work."
+      "summary": "Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer journey."
     },
     {
       "kind": "rss",
@@ -167,13 +307,13 @@
     },
     {
       "kind": "rss",
-      "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
-      "url": "https://openai.com/index/virgin-atlantic/chatgpt-work",
+      "title": "Premium seats are coming to ChatGPT Business",
+      "url": "https://openai.com/index/premium-seats-chatgpt-business",
       "source": "OpenAI",
       "sourceId": "openai",
       "category": "model-releases",
       "publishedAt": "2026-08-10T00:00:00.000Z",
-      "summary": "Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer journey."
+      "summary": "Premium seats are coming to ChatGPT Business. Sign up by August 20 to get $100 in workspace credits and unlock higher usage for your team's most demanding work."
     },
     {
       "kind": "rss",
@@ -188,7 +328,7 @@
     {
       "kind": "rss",
       "title": "Quoting Claude Opus 5 system prompt",
-      "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
@@ -198,7 +338,7 @@
     {
       "kind": "rss",
       "title": "GitHub Models is now retired",
-      "url": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
@@ -208,7 +348,7 @@
     {
       "kind": "rss",
       "title": "SQLite compressed text-history prototypes",
-      "url": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
@@ -217,18 +357,8 @@
     },
     {
       "kind": "rss",
-      "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
-      "url": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-08T22:36:03.000Z",
-      "summary": "<p><strong><a href=\"https://claude.com/blog/auto-mode-default-in-claude-code\">Auto mode is now the default in Claude Code for Pro, Max, and Team plans</a></strong></p> Anthropic are <em>really</em> confident in Claude Code's <a href=\"https://code.claude.com/docs/en/auto-mode-conf"
-    },
-    {
-      "kind": "rss",
       "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
-      "url": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
@@ -238,7 +368,7 @@
     {
       "kind": "rss",
       "title": "Quoting John Gruber",
-      "url": "https://simonwillison.net/2026/Aug/8/john-gruber/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/8/john-gruber/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
@@ -248,7 +378,7 @@
     {
       "kind": "rss",
       "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
-      "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
@@ -258,7 +388,7 @@
     {
       "kind": "rss",
       "title": "Moonlight & Mayhem (Raccoon Heist by Codex + GPT-5.6 Sol Ultra)",
-      "url": "https://simonwillison.net/2026/Aug/7/moonlight-mayhem/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/7/moonlight-mayhem/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
@@ -268,7 +398,7 @@
     {
       "kind": "rss",
       "title": "The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI",
-      "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
@@ -298,7 +428,7 @@
     {
       "kind": "rss",
       "title": "datasette-auth-tokens 0.4a13",
-      "url": "https://simonwillison.net/2026/Aug/6/datasette-auth-tokens/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/6/datasette-auth-tokens/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
@@ -308,7 +438,7 @@
     {
       "kind": "rss",
       "title": "datasette 1.0a38",
-      "url": "https://simonwillison.net/2026/Aug/6/datasette/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/6/datasette/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
@@ -318,7 +448,7 @@
     {
       "kind": "rss",
       "title": "datasette 0.65.3",
-      "url": "https://simonwillison.net/2026/Aug/6/datasette-2/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/6/datasette-2/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
@@ -328,7 +458,7 @@
     {
       "kind": "rss",
       "title": "Simon Willison on Technical Blogging",
-      "url": "https://simonwillison.net/2026/Aug/6/simon-willison-on-technical-blogging/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/6/simon-willison-on-technical-blogging/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
@@ -364,136 +494,6 @@
       "category": "model-releases",
       "publishedAt": "2026-08-06T06:00:00.000Z",
       "summary": "OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental health."
-    },
-    {
-      "kind": "rss",
-      "title": "An AI model from Meta also hacked another company during testing",
-      "url": "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-06T00:25:27.000Z",
-      "summary": "<p><strong><a href=\"https://www.cnn.com/2026/08/05/tech/meta-ai-hacking\">An AI model from Meta also hacked another company during testing</a></strong></p> Stop me if you've <a href=\"https://simonwillison.net/tags/accidental-cyberattacks/\">heard this one before</a>:</p> <blockquot"
-    },
-    {
-      "kind": "rss",
-      "title": "From asking to doing: How the world is putting ChatGPT to work",
-      "url": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-08-06T00:00:00.000Z",
-      "summary": "New OpenAI Signals data shows how people use ChatGPT worldwide, with country-level insights on adoption, usage trends, and evolving behavior."
-    },
-    {
-      "kind": "rss",
-      "title": "Baseten on Hugging Face Inference Providers 🔥",
-      "url": "https://huggingface.co/blog/baseten",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-08-06T00:00:00.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing Muse Code and Muse Spark 1.2",
-      "url": "https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-05T23:58:35.000Z",
-      "summary": "<p><strong><a href=\"https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2\">Introducing Muse Code and Muse Spark 1.2</a></strong></p> Yet more evidence that the most important characteristic of any model these days is long-sequence agentic tool calling. Meta shipp"
-    },
-    {
-      "kind": "rss",
-      "title": "Third-party cyber evaluations involving OpenAI models",
-      "url": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-05T23:45:32.000Z",
-      "summary": "<p><strong><a href=\"https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/\">Third-party cyber evaluations involving OpenAI models</a></strong></p> And <em>another one</em>. I had to create a <a href=\"https://simonwillison.net/tags/accidental-cyberattacks/"
-    },
-    {
-      "kind": "rss",
-      "title": "Incident Report: unsanctioned agent behaviour during cyber testing",
-      "url": "https://simonwillison.net/2026/Aug/5/incident-report/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-05T23:32:06.000Z",
-      "summary": "<p><strong><a href=\"https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing\">Incident Report: unsanctioned agent behaviour during cyber testing</a></strong></p> It happened <em>again</em>. This time it was the UK government's AI Security Ins"
-    },
-    {
-      "kind": "rss",
-      "title": "One-shotting a Raccoon Heist game using Claude Fable 5",
-      "url": "https://simonwillison.net/2026/Aug/5/raccoon-heist/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-05T19:42:38.000Z",
-      "summary": "<p>Back in 2022 <a href=\"https://twitter.com/simonw/status/1555626060384911360\">I tweeted</a> screenshots of a game concept generated by GPT-3 and some concept \"art\" created using DALL-E. Today, on the fourth anniversary of that tweet, I decided to see if Claude Fable 5 (running "
-    },
-    {
-      "kind": "rss",
-      "title": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
-      "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-04T23:58:24.000Z",
-      "summary": "<p>I released <a href=\"https://llm.datasette.io/en/stable/changelog.html#v0-32\">LLM 0.32</a> this morning, the most significant new version of LLM since the initial launch of the project. The new version includes support for visible reasoning traces, server-side provider tools, r"
-    },
-    {
-      "kind": "rss",
-      "title": "llm-anthropic 0.26",
-      "url": "https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-04T22:00:58.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-anthropic/releases/tag/0.26\">llm-anthropic 0.26</a></p> <p>Includes new features enabled by <a href=\"https://simonwillison.net/2026/Aug/4/new-release-of-llm/\">LLM 0.32</a>:</p> <blockquote> <ul> <li>New models: <"
-    },
-    {
-      "kind": "rss",
-      "title": "PipeNetwork/minimax-h3-mlx",
-      "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-04T19:10:09.000Z",
-      "summary": "<p><strong><a href=\"https://github.com/PipeNetwork/minimax-h3-mlx\">PipeNetwork/minimax-h3-mlx</a></strong></p> MiniMax released <a href=\"https://huggingface.co/MiniMaxAI/MiniMax-H3\">MiniMax-H3</a> two days ago - they describe it as a \"a general-purpose, omni-modal generative syst"
-    },
-    {
-      "kind": "rss",
-      "title": "Third-party cyber evaluations involving OpenAI models",
-      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-08-04T19:00:00.000Z",
-      "summary": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation."
-    },
-    {
-      "kind": "rss",
-      "title": "llm 0.32",
-      "url": "https://simonwillison.net/2026/Aug/4/llm/#atom-everything",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-04T17:15:33.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.32\">llm 0.32</a></p> <p>See <a href=\"https://simonwillison.net/2026/Aug/4/new-release-of-llm/\">my detailed blog post about this release</a>.</p> <p>Tags: <a href=\"https://simonwillison.net/tags/llm"
-    },
-    {
-      "kind": "rss",
-      "title": "Deploy local agents everywhere with LFM2.5-2.6B",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-08-04T13:58:29.000Z",
-      "summary": ""
     }
   ]
 }
