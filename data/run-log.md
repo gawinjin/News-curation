@@ -2,6 +2,11 @@
 
 ## 2026-08-14
 
+Rerun:
+
+- No additional high-signal candidates - skipping. The refreshed inbox introduced no new URLs after today's two publications; it only removed those newly covered items and updated the ingest timestamp.
+- Social candidates remained unavailable: all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable, including Anthropic and Meta fallbacks.
+
 Shipped:
 
 - `2026-08-14-gemini-3-7-flash` - Google's new fast work model becomes a ten-minute source-checking comparison in Google AI Studio, without API or installation steps.
