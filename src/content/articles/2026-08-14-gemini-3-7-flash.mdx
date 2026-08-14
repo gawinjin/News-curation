@@ -1,0 +1,53 @@
+---
+title: "Gemini 3.7 Flash arrives with faster, cheaper agent work"
+date: 2026-08-14
+category: model-releases
+tags: ["gemini", "google", "models", "agents"]
+summary: "Google released Gemini 3.7 Flash for stronger coding, document, and agent workflows, with immediate browser access through Google AI Studio."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A Google account"
+    - "A short, non-sensitive sample text"
+references:
+  - title: "Introducing Gemini 3.7 Flash"
+    url: "https://deepmind.google/blog/introducing-gemini-3-7-flash/"
+    author: "Google"
+    publishedAt: "2026-08-13"
+  - title: "Gemini 3.7 Flash model card"
+    url: "https://deepmind.google/models/model-cards/gemini-3-7-flash"
+    author: "Google DeepMind"
+    publishedAt: "2026-08-13"
+draft: false
+---
+
+## TL;DR
+
+Google released Gemini 3.7 Flash three weeks after 3.6 Flash, with stronger results on coding, document work, and tool-using tasks. It is available through Google AI Studio and powers Gemini Spark for eligible Pro and Ultra subscribers. A short source-checking test is more useful than taking provider benchmarks at face value.
+
+## What's New
+
+Gemini 3.7 Flash is Google's latest fast work model. The company says it follows multi-step instructions more consistently, adapts better when a task hits a problem, and produces more complete web interfaces in fewer prompts. It accepts text, images, audio, and video, with a context window of up to one million tokens.
+
+Google reports gains over 3.6 Flash across software debugging, business automation, and complex PDF analysis. These are provider-run measurements, so they show where Google focused the release rather than guaranteeing better results on every task. The model card still lists familiar limitations, including hallucinations, occasional slowness, and timeouts.
+
+Developers can use 3.7 Flash in Google AI Studio, the Gemini API, Antigravity, and Android Studio. Gemini Spark is also switching to the model for Google AI Pro and Ultra subscribers in supported countries. Introductory API pricing is $0.75 per million input tokens and $3.75 per million output tokens through December 31, before doubling in 2027.
+
+## Why It Matters
+
+Fast models increasingly handle the routine work around a larger task: reading documents, drafting updates, checking a list, and moving information between tools. Lower cost and better instruction-following can make those repeated jobs practical without using the most expensive model each time.
+
+Speed does not fix a wrong summary or a missed contradiction. Test the model on a short source whose details you already know, then check whether it separates evidence from inference. That reveals whether the update helps your work without uploading private material or relying on a leaderboard.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A Google account","A short, non-sensitive sample text"]}>
+
+1. Open https://aistudio.google.com/, sign in, and select Gemini 3.7 Flash from the model picker. If it is not listed for your account, stop rather than testing a different model under the wrong name.
+2. Paste a non-sensitive note of about 200 words that contains three facts, one deadline, and one deliberate contradiction. Keep your original beside the chat.
+3. Ask: "Summarize this in five bullets, list every date and number, identify any contradiction, and label anything you inferred rather than found in the text."
+4. Compare every bullet, date, and number with the original. Mark omissions, invented details, and whether the contradiction was correctly explained.
+5. Correct one missed detail and ask the model to revise only the affected bullet. Check whether it preserves the other verified points.
+6. Do not upload confidential documents based on this small test. Review Google AI Studio's data terms and your organization's rules before using real work material.
+
+</PracticalGuide>

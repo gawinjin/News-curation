@@ -1,5 +1,18 @@
 # Signal Run Log
 
+## 2026-08-14
+
+Shipped:
+
+- `2026-08-14-gemini-3-7-flash` - Google's new fast work model becomes a ten-minute source-checking comparison in Google AI Studio, without API or installation steps.
+- `2026-08-14-icml-agent-reproductions` - The public audit of 2,226 ICML papers becomes a practical lesson in checking claims, artifacts, independent attempts, and human review behind agent verdicts.
+
+Skipped:
+
+- OpenAI's GPT-5.6 Ultrafast preview - important performance news, but access is limited to selected API customers and the public page offers only an expansion waitlist.
+- OpenAI's GPT-5.6 builder guide, Strands and LeRobot workflow, sqlite-utils and llm-gemini releases, and other specialist updates - developer-focused or without a stronger general-user workflow.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable, including Anthropic and Meta fallbacks.
+
 ## 2026-08-13
 
 Rerun:

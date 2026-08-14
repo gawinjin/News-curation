@@ -1,0 +1,54 @@
+{
+  "slug": "gemini-3-7-flash",
+  "date": "2026-08-14",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": ["Gemini 3.7 Flash arrives with faster, cheaper agent work"],
+  "summary": "Google released Gemini 3.7 Flash for stronger coding, document, and agent workflows, with immediate browser access through Google AI Studio.",
+  "tags": ["gemini", "google", "models", "agents"],
+  "primary_source": {
+    "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+    "title": "Introducing Gemini 3.7 Flash",
+    "author": "Google",
+    "publishedAt": "2026-08-13",
+    "key_facts": [
+      "Gemini 3.7 Flash was released three weeks after Gemini 3.6 Flash.",
+      "Google reports improvements in coding, web development, document analysis, and multi-step agent workflows.",
+      "The model is available in Google AI Studio, the Gemini API, Antigravity, Android Studio, enterprise products, and Gemini Spark.",
+      "Gemini Spark uses 3.7 Flash for eligible Google AI Pro and Ultra subscribers in supported countries.",
+      "Introductory API pricing is $0.75 per million input tokens and $3.75 per million output tokens through December 31, 2026."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://deepmind.google/models/model-cards/gemini-3-7-flash",
+      "title": "Gemini 3.7 Flash model card",
+      "key_facts": [
+        "The model accepts text, images, audio, and video with up to a one-million-token input context.",
+        "The model card lists hallucinations, occasional slowness, and timeouts among known limitations."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": ["A Google account", "A short, non-sensitive sample text"],
+    "steps": [
+      {"instruction": "Select Gemini 3.7 Flash in Google AI Studio and test it on a short source with known facts and a deliberate contradiction.", "verify_url": "https://aistudio.google.com/"},
+      {"instruction": "Compare every summary claim with the source and avoid uploading confidential material until the tool's terms and organizational rules are understood.", "verify_url": "https://deepmind.google/models/model-cards/gemini-3-7-flash"}
+    ]
+  },
+  "references": [
+    {"title": "Introducing Gemini 3.7 Flash", "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/", "author": "Google", "publishedAt": "2026-08-13"},
+    {"title": "Gemini 3.7 Flash model card", "url": "https://deepmind.google/models/model-cards/gemini-3-7-flash", "author": "Google DeepMind", "publishedAt": "2026-08-13"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Provider benchmarks must be identified as provider-reported rather than independent proof.",
+    "The test uses non-sensitive text and does not assume Gemini app or Spark availability for every account or country."
+  ],
+  "assembled_at": "2026-08-14T05:43:01.939Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

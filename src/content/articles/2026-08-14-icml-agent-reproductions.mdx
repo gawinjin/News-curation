@@ -1,0 +1,55 @@
+---
+title: "AI agents tried to reproduce 2,200 ICML papers"
+date: 2026-08-14
+category: research
+tags: ["research", "reproducibility", "agents", "huggingface"]
+summary: "A public ICML project used coding agents to test claims from 2,226 papers, revealing both useful checks and serious agent-made errors."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A browser"
+    - "No research or coding account required"
+references:
+  - title: "What We Learned by Reproducing 2,200 papers from ICML"
+    url: "https://huggingface.co/blog/icml-2026-open-reproductions"
+    author: "Hugging Face"
+    publishedAt: "2026-08-13"
+  - title: "ICML 2026 Open Reproductions gallery"
+    url: "https://icml-2026-agent-repro-challenge.static.hf.space/gallery.html"
+    author: "Hugging Face"
+  - title: "Reproducing ICML 2026 challenge"
+    url: "https://huggingface.co/spaces/ICML-2026-agent-repro/challenge"
+    author: "Hugging Face"
+draft: false
+---
+
+## TL;DR
+
+More than 1,200 participants used coding agents to test claims from 2,226 ICML papers and published 6,816 public logbooks. The project verified many claims and found contested ones, but agents also produced false alarms and shallow checks. Its public records offer a practical lesson: inspect evidence and human review, not just a verified or falsified label.
+
+## What's New
+
+The ICML 2026 Open Reproductions challenge asked participants to give accepted papers and extracted claims to coding agents, run experiments, and publish the code, artifacts, and optional agent traces. In 19 days, 1,221 community members attempted 2,226 papers, about 34% of the conference, and produced 6,816 logbooks covering 35,908 claims.
+
+At least one claim was independently verified in 51% of the examined papers. Another 23% had at least one claim marked falsified or contested, while the rest produced only reduced-scale evidence or no clear result. Those percentages describe this challenge's attempts, not the reliability of all ICML research.
+
+The organizers treated the automated judge and each logbook's self-assessment as untrusted. They manually rechecked 35 claimed falsifications and found both real paper problems and errors in the reproductions, including a speed comparison built on mismatched units. The strongest results combined agents with people who questioned assumptions, redirected experiments, and inspected outputs.
+
+## Why It Matters
+
+AI can lower the cost of checking a paper, but it can also repeat a mistake thousands of times. A confident verdict may rest on a toy dataset, a short experiment, unavailable source material, or a bug in the checking code.
+
+The useful product here is the audit trail. Readers can open a logbook, see what claim was tested, inspect the code and artifacts, and compare independent attempts. That habit also applies to AI-generated reports and everyday factual claims: trace the conclusion back to evidence before repeating it.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A browser","No research or coding account required"]}>
+
+1. Open https://icml-2026-agent-repro-challenge.static.hf.space/gallery.html and choose one paper whose title you can understand. Avoid deciding from its verdict badge alone.
+2. Open one reproduction logbook and write down the exact claim tested, the reported verdict, and whether the run used the full method or a smaller toy version.
+3. Find the evidence section. Look for runnable code, charts, logs, produced files, or an agent trace. Note any missing dataset, checkpoint, or proprietary input.
+4. If the gallery lists multiple attempts for that paper, compare two. Record whether they agree and whether they used the same scale, metric, and assumptions.
+5. Look for human review, an organizer recheck, or an author response. Treat an automated verdict without those checks as a lead, not a settled conclusion.
+6. Write a two-sentence summary that separates the paper's original claim from what the reproduction actually established. Link the logbook when sharing it.
+
+</PracticalGuide>

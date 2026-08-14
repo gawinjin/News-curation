@@ -1,0 +1,59 @@
+{
+  "slug": "icml-agent-reproductions",
+  "date": "2026-08-14",
+  "category": "research",
+  "audience": "general",
+  "title_candidates": ["AI agents tried to reproduce 2,200 ICML papers"],
+  "summary": "A public ICML project used coding agents to test claims from 2,226 papers, revealing both useful checks and serious agent-made errors.",
+  "tags": ["research", "reproducibility", "agents", "huggingface"],
+  "primary_source": {
+    "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
+    "title": "What We Learned by Reproducing 2,200 papers from ICML",
+    "author": "Hugging Face",
+    "publishedAt": "2026-08-13",
+    "key_facts": [
+      "The challenge involved 1,221 community members, 6,816 public logbooks, and 2,226 attempted ICML papers.",
+      "The attempts covered 35,908 claims across about 34% of the conference.",
+      "At least one claim was independently verified in 51% of examined papers, while 23% had at least one falsified or contested claim.",
+      "Organizers treated automated verdicts and logbook self-assessments as untrusted.",
+      "Manual rechecks found both genuine paper problems and serious errors in attempted reproductions.",
+      "The strongest results combined agent execution with active human oversight."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://icml-2026-agent-repro-challenge.static.hf.space/gallery.html",
+      "title": "ICML 2026 Open Reproductions gallery",
+      "key_facts": ["The public gallery links paper-level reproduction logbooks, artifacts, and verdicts."],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://huggingface.co/spaces/ICML-2026-agent-repro/challenge",
+      "title": "Reproducing ICML 2026 challenge",
+      "key_facts": ["The public challenge Space provides access to project records and instructions."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A browser", "No research or coding account required"],
+    "steps": [
+      {"instruction": "Choose one paper in the public gallery and inspect the exact claim, evidence, scale, missing inputs, and any independent attempts.", "verify_url": "https://icml-2026-agent-repro-challenge.static.hf.space/gallery.html"},
+      {"instruction": "Separate the original claim from the reproduction's result and treat automated verdicts without human rechecking as provisional.", "verify_url": "https://huggingface.co/blog/icml-2026-open-reproductions"}
+    ]
+  },
+  "references": [
+    {"title": "What We Learned by Reproducing 2,200 papers from ICML", "url": "https://huggingface.co/blog/icml-2026-open-reproductions", "author": "Hugging Face", "publishedAt": "2026-08-13"},
+    {"title": "ICML 2026 Open Reproductions gallery", "url": "https://icml-2026-agent-repro-challenge.static.hf.space/gallery.html", "author": "Hugging Face"},
+    {"title": "Reproducing ICML 2026 challenge", "url": "https://huggingface.co/spaces/ICML-2026-agent-repro/challenge", "author": "Hugging Face"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Challenge verdict percentages describe attempted reproductions and must not be generalized to all ICML papers.",
+    "A falsified or verified badge is not conclusive without inspecting the experiment, scale, artifacts, and human recheck."
+  ],
+  "assembled_at": "2026-08-14T05:43:01.939Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

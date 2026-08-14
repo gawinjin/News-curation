@@ -290,7 +290,12 @@
     "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
     "https://c2pa.org/",
     "https://x.ai/news/grok-4-6",
-    "https://docs.x.ai/developers/models"
+    "https://docs.x.ai/developers/models",
+    "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+    "https://deepmind.google/models/model-cards/gemini-3-7-flash",
+    "https://huggingface.co/blog/icml-2026-open-reproductions",
+    "https://icml-2026-agent-repro-challenge.static.hf.space/gallery.html",
+    "https://huggingface.co/spaces/ICML-2026-agent-repro/challenge"
   ],
-  "lastIngest": "2026-08-13T08:04:22.855Z"
+  "lastIngest": "2026-08-14T05:43:01.939Z"
 }
