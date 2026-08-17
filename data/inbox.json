@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T04:20:35.254Z",
+  "generatedAt": "2026-08-17T08:03:22.881Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -45,16 +45,6 @@
     "alexalbert__"
   ],
   "items": [
-    {
-      "kind": "rss",
-      "title": "Markdown SVG upgrades",
-      "url": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-16T23:59:37.000Z",
-      "summary": "<p>I started building my <a href=\"https://tools.simonwillison.net/markdown-svg-renderer\">markdown-svg-renderer</a> tool <a href=\"https://tools.simonwillison.net/colophon#markdown-svg-renderer.html\">in May</a>, but I've since added enough features to it that it's worth talking abo"
-    },
     {
       "kind": "rss",
       "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",

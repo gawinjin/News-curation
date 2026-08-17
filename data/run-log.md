@@ -2,6 +2,11 @@
 
 ## 2026-08-17
 
+Rerun:
+
+- No additional high-signal candidates - skipping. The refreshed inbox introduced no new URLs after today's publication; it only removed that newly covered item and updated the ingest timestamp.
+- Social candidates remained unavailable: all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable, including Anthropic and Meta fallbacks.
+
 Shipped:
 
 - `2026-08-17-markdown-svg-renderer-upgrades` - Simon Willison's AI-assisted browser tool becomes a ten-minute path from AI-drafted SVG code to a checked, downloadable PNG, with optional animated MP4 export.
