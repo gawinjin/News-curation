@@ -1,0 +1,54 @@
+---
+title: "Turn AI-made SVGs into shareable images in your browser"
+date: 2026-08-17
+category: guides
+tags: ["svg", "markdown", "browser-tools", "image-export"]
+summary: "Simon Willison upgraded a free browser tool that renders Markdown with SVG graphics and exports shareable PNG, JPEG, or MP4 files."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A modern desktop browser"
+    - "Access to an AI assistant that can draft SVG code"
+references:
+  - title: "Markdown SVG upgrades"
+    url: "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/"
+    author: "Simon Willison"
+    publishedAt: "2026-08-16"
+  - title: "Markdown SVG Renderer"
+    url: "https://tools.simonwillison.net/markdown-svg-renderer"
+    author: "Simon Willison"
+  - title: "Tools colophon: markdown-svg-renderer"
+    url: "https://tools.simonwillison.net/colophon#markdown-svg-renderer.html"
+    author: "Simon Willison"
+draft: false
+---
+
+## TL;DR
+
+Paste Markdown containing an SVG into Simon Willison's free browser tool, then export the result as a PNG, JPEG, or, for animated graphics, MP4. It is useful for turning AI-generated SVG code into a shareable file, but it renders what you provide rather than generating the graphic itself.
+
+## What's New
+
+The Markdown SVG Renderer now accepts pasted Markdown, a compatible web URL, or a GitHub Gist. It shows the rendered document in a preview and can create a link that returns to content loaded from a URL.
+
+Each SVG block can be copied or downloaded as a PNG or JPEG, with the conversion handled in the browser. Animated SVGs get an MP4 option that estimates the loop length, renders the frames, and assembles the video with ffmpeg.wasm.
+
+That video path is heavier: it downloads more than 30 MB of browser code. The tool's public development log describes the project as AI-generated and documents AI-assisted work on the renderer, exports, and security fixes.
+
+## Why It Matters
+
+AI assistants can return useful SVG code for diagrams, charts, and simple illustrations, but raw code is awkward to send to someone. This tool bridges that last step: paste the Markdown and SVG, inspect the result, then save a familiar image or video file without installing a graphics app.
+
+The preview still deserves a careful check for clipped text, substituted fonts, and poor contrast. Use non-sensitive material on the third-party page, and skip MP4 export when bandwidth is limited.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A modern desktop browser","Access to an AI assistant that can draft SVG code"]}>
+
+1. Open https://tools.simonwillison.net/markdown-svg-renderer and confirm Paste is selected, with a Markdown editor on the left and Preview on the right.
+2. Ask an AI assistant: `Return only a fenced svg block for a 600x300 blue card that says TEST in white.` Paste the response into the editor and check that Preview shows the card instead of raw code.
+3. Select the PNG tab above the graphic, wait for the converted preview and file size, then choose Download PNG and open the saved image.
+4. Compare the download with the rendered SVG for clipped labels, missing fonts, or unreadable contrast; revise the SVG source and export again if needed.
+5. Use MP4 only when the SVG is animated and you are willing to download the roughly 31 MB conversion component; verify the video loop before sharing it.
+
+</PracticalGuide>

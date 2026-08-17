@@ -1,0 +1,107 @@
+{
+  "slug": "markdown-svg-renderer-upgrades",
+  "date": "2026-08-17",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "Turn AI-made SVGs into shareable images in your browser",
+    "A browser tool for sharing AI-made SVGs"
+  ],
+  "summary": "Simon Willison upgraded a free browser tool that renders Markdown with SVG graphics and exports shareable PNG, JPEG, or MP4 files.",
+  "tags": ["svg", "markdown", "browser-tools", "image-export"],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
+    "title": "Markdown SVG upgrades",
+    "author": "Simon Willison",
+    "publishedAt": "2026-08-16",
+    "key_facts": [
+      "The browser tool renders pasted Markdown that contains SVG graphics.",
+      "It can also load Markdown from a CORS-enabled URL or GitHub Gist and create a bookmarkable renderer link.",
+      "Readers can copy or download PNG and JPEG versions produced in the browser.",
+      "A new MP4 tab appears for animated SVGs and converts them in the browser using ffmpeg.wasm.",
+      "The MP4 conversion downloads more than 30 MB of browser code and estimates an animation's loop duration before rendering frames."
+    ],
+    "quote_candidates": [
+      {
+        "text": "The URL option will give you a bookmarkable page",
+        "words": 9,
+        "exact": true,
+        "position": "fourth paragraph"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://tools.simonwillison.net/markdown-svg-renderer",
+      "title": "Markdown SVG Renderer",
+      "key_facts": [
+        "The live tool provides Paste and URL inputs, a rendered preview, and export tabs for SVG blocks."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://tools.simonwillison.net/colophon#markdown-svg-renderer.html",
+      "title": "Tools colophon: markdown-svg-renderer",
+      "key_facts": [
+        "The public development log labels the tool AI generated and links the AI-assisted implementation history for its renderer, export features, and security fixes."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "A modern desktop browser",
+      "Access to an AI assistant that can draft SVG code"
+    ],
+    "steps": [
+      {
+        "instruction": "Open https://tools.simonwillison.net/markdown-svg-renderer and confirm Paste is selected, with a Markdown editor on the left and Preview on the right.",
+        "verify_url": "https://tools.simonwillison.net/markdown-svg-renderer"
+      },
+      {
+        "instruction": "Ask an AI assistant: `Return only a fenced svg block for a 600x300 blue card that says TEST in white.` Paste the response into the editor and check that Preview shows the card instead of raw code.",
+        "verify_url": "https://tools.simonwillison.net/markdown-svg-renderer"
+      },
+      {
+        "instruction": "Select the PNG tab above the graphic, wait for the converted preview and file size, then choose Download PNG and open the saved image.",
+        "verify_url": "https://tools.simonwillison.net/markdown-svg-renderer"
+      },
+      {
+        "instruction": "Compare the download with the rendered SVG for clipped labels, missing fonts, or unreadable contrast; revise the SVG source and export again if needed.",
+        "verify_url": "https://tools.simonwillison.net/markdown-svg-renderer"
+      },
+      {
+        "instruction": "Use MP4 only when the SVG is animated and you are willing to download the roughly 31 MB conversion component; verify the video loop before sharing it.",
+        "verify_url": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Markdown SVG upgrades",
+      "url": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-08-16"
+    },
+    {
+      "title": "Markdown SVG Renderer",
+      "url": "https://tools.simonwillison.net/markdown-svg-renderer",
+      "author": "Simon Willison"
+    },
+    {
+      "title": "Tools colophon: markdown-svg-renderer",
+      "url": "https://tools.simonwillison.net/colophon#markdown-svg-renderer.html",
+      "author": "Simon Willison"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The guide uses non-sensitive content on a third-party page even though rendering and export happen in the browser.",
+    "The MP4 path downloads a large WebAssembly dependency and should be skipped on limited connections.",
+    "The live output still needs visual inspection before it is shared."
+  ],
+  "assembled_at": "2026-08-17T04:22:37.244Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

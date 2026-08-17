@@ -1,5 +1,18 @@
 # Signal Run Log
 
+## 2026-08-17
+
+Shipped:
+
+- `2026-08-17-markdown-svg-renderer-upgrades` - Simon Willison's AI-assisted browser tool becomes a ten-minute path from AI-drafted SVG code to a checked, downloadable PNG, with optional animated MP4 export.
+
+Skipped:
+
+- Qwen 3.8 27B and the AI text-detector project - current and source-backed, but their large local-model or end-to-end training requirements are specialist rather than general-user workflows.
+- Claude text watermarking - important provenance news, but future-model wording and the lack of a public detector do not support a new reader test beyond Signal's existing August 13 provenance guide.
+- CORS Chat, OpenAI API tiers, database utilities, robotics, enterprise case studies, cybersecurity models, and the remaining items - developer-focused, access-gated, repetitive, or without a stronger distinct 5-30 minute guide.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable, including Anthropic and Meta fallbacks.
+
 ## 2026-08-14
 
 Rerun:

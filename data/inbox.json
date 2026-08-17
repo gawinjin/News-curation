@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T08:04:37.313Z",
+  "generatedAt": "2026-08-17T04:20:35.254Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,6 +47,86 @@
   "items": [
     {
       "kind": "rss",
+      "title": "Markdown SVG upgrades",
+      "url": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-16T23:59:37.000Z",
+      "summary": "<p>I started building my <a href=\"https://tools.simonwillison.net/markdown-svg-renderer\">markdown-svg-renderer</a> tool <a href=\"https://tools.simonwillison.net/colophon#markdown-svg-renderer.html\">in May</a>, but I've since added enough features to it that it's worth talking abo"
+    },
+    {
+      "kind": "rss",
+      "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-16T22:00:39.000Z",
+      "summary": "<p>Friday's big release was <a href=\"https://huggingface.co/Qwen/Qwen3.8-27B\">Qwen 3.8 27B</a>, an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba's Qwen research lab. I've been looking forward to this one: 27B is an excellent size for running a model on a reasona"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Dario Amodei",
+      "url": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-16T15:05:36.000Z",
+      "summary": "<blockquote cite=\"https://twitter.com/darioamodei/status/2088758819304443967\"><p>I do agree that the public has a negative view of AI (and that this is a big problem), but I don’t think it is primarily caused by me or any other AI leader warning about AI’s risks. I think it is fu"
+    },
+    {
+      "kind": "rss",
+      "title": "CORS Chat",
+      "url": "https://simonwillison.net/2026/Aug/15/cors-chat/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-15T14:49:54.000Z",
+      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/cors-chat\">CORS Chat</a></p> <p>I built this today (<a href=\"https://gist.github.com/simonw/92a1d97773744b45bf259e003013cf36\">with GPT-5.6-Sol xhigh</a>) to help test Qwen 3.8 27B running in LM Studio on both my M"
+    },
+    {
+      "kind": "rss",
+      "title": "Building an AI Text Detector From Scratch",
+      "url": "https://magazine.sebastianraschka.com/p/ai-detector-from-scratch",
+      "source": "Sebastian Raschka",
+      "sourceId": "raschka",
+      "category": "research",
+      "publishedAt": "2026-08-15T11:54:24.000Z",
+      "summary": "An End-to-End Project With Dataset Construction, Model Training, Local Deployment, and RLVR"
+    },
+    {
+      "kind": "rss",
+      "title": "Northern Gannet",
+      "url": "https://simonwillison.net/2026/Aug/15/sighting-391300422/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-15T03:22:00.000Z",
+      "summary": "<p><img src=\"https://static.inaturalist.org/photos/716984157/large.jpg\" alt=\"Northern Gannet\"></p><p>Northern Gannet, in Pillar Point Harbor, CA, US</p><p>This is Morris.</p> <p>Morris is a local celebrity: the only known Northern Gannet (<em>Morus bassanus</em>) in the entire Pa"
+    },
+    {
+      "kind": "rss",
+      "title": "Don't classify. Hallucinate!",
+      "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-14T21:54:35.000Z",
+      "summary": "<p><strong><a href=\"https://softwaredoug.com/blog/2026/08/10/hypothetical-classifications\">Don&#x27;t classify. Hallucinate!</a></strong></p> I still have quite a bit of older content on my blog that I never got round to tagging. My blog has <a href=\"https://simonwillison.net/\">1"
+    },
+    {
+      "kind": "rss",
+      "title": "State of Open Models: Summer 2026 Observations",
+      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-08-14T00:00:00.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
       "title": "sqlite-utils 4.2.1",
       "url": "https://simonwillison.net/2026/Aug/13/sqlite-utils-2/",
       "source": "Simon Willison",
@@ -84,6 +164,16 @@
       "category": "guides",
       "publishedAt": "2026-08-13T17:16:04.000Z",
       "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "How Claude&#x27;s text watermarking works",
+      "url": "https://www.anthropic.com/news/claude-text-watermark",
+      "source": "Anthropic",
+      "sourceId": "anthropic",
+      "category": "model-releases",
+      "publishedAt": "2026-08-13T17:00:00.000Z",
+      "summary": "Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act. In this art"
     },
     {
       "kind": "rss",
@@ -344,156 +434,6 @@
       "category": "model-releases",
       "publishedAt": "2026-08-10T10:00:00.000Z",
       "summary": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing."
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting OpenClaw (running Opus 4.6)",
-      "url": "https://simonwillison.net/2026/Aug/10/openclaw/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-10T02:05:16.000Z",
-      "summary": "<blockquote cite=\"https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986\"><p>The API has zero authorisations checks on cancelling other people's reservations … I tested this with the person in waitlist position #1 — and it actually went t"
-    },
-    {
-      "kind": "rss",
-      "title": "Premium seats are coming to ChatGPT Business",
-      "url": "https://openai.com/index/premium-seats-chatgpt-business",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-08-10T00:00:00.000Z",
-      "summary": "Premium seats are coming to ChatGPT Business. Sign up by August 20 to get $100 in workspace credits and unlock higher usage for your team's most demanding work."
-    },
-    {
-      "kind": "rss",
-      "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
-      "url": "https://openai.com/index/virgin-atlantic/chatgpt-work",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-08-10T00:00:00.000Z",
-      "summary": "Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer journey."
-    },
-    {
-      "kind": "rss",
-      "title": "How Zapier transformed core marketing processes with ChatGPT Work",
-      "url": "https://openai.com/index/zapier",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-08-10T00:00:00.000Z",
-      "summary": "The enterprise marketing team at Zapier uses ChatGPT Work to reduce the number of drop-offs in its lead funnel, build campaign assets, and automate reporting."
-    },
-    {
-      "kind": "rss",
-      "title": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
-      "url": "https://huggingface.co/blog/muse-glimmer",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-08-10T00:00:00.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Claude Opus 5 system prompt",
-      "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-09T23:31:39.000Z",
-      "summary": "<blockquote cite=\"https://platform.claude.com/docs/en/release-notes/system-prompts#claude-opus-5\"><p>Claude Fable 5 and Claude Mythos 5 were first released on June 9, 2026. On June 12, 2026, Anthropic suspended access to both models to comply with U.S. Department of Commerce expo"
-    },
-    {
-      "kind": "rss",
-      "title": "GitHub Models is now retired",
-      "url": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-09T22:48:05.000Z",
-      "summary": "<p><strong><a href=\"https://github.blog/changelog/2026-07-30-github-models-is-now-retired/\">GitHub Models is now retired</a></strong></p> I missed this news until today, when the GitHub Actions run for my <a href=\"https://github.com/simonw/research\">simonw/research</a> repository"
-    },
-    {
-      "kind": "rss",
-      "title": "SQLite compressed text-history prototypes",
-      "url": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-09T22:05:00.000Z",
-      "summary": "<p><strong>Research:</strong> <a href=\"https://github.com/simonw/research/tree/main/sqlite-text-history-prototype#readme\">SQLite compressed text-history prototypes</a></p> <p>I'm perennially interested in options for storing revision histories in relational databases. While out o"
-    },
-    {
-      "kind": "rss",
-      "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
-      "url": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-08T14:06:41.000Z",
-      "summary": "<p><a href=\"https://news.ycombinator.com/item?id=49220609#49221745\">My comment</a> on <a href=\"https://news.ycombinator.com/item?id=49220609\">Now we have a timeline of the OpenAI accidental attack against Hugging Face</a> &mdash; Hacker News.</p><p>I think one of the most interes"
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting John Gruber",
-      "url": "https://simonwillison.net/2026/Aug/8/john-gruber/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-08T00:10:40.000Z",
-      "summary": "<blockquote cite=\"https://daringfireball.net/linked/2026/08/07/simon-willison-on-blogging\"><p>Me, I try to get into the mindset of playing live music, not recording a studio album. Except when I’m writing a piece where I really want it to be an album. Those aren’t <em>rare</em>, "
-    },
-    {
-      "kind": "rss",
-      "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
-      "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-07T23:55:58.000Z",
-      "summary": "<p>OpenAI gave a last-minute presentation at the Black Hat security on Wednesday about \"the Hugging Face Incident\" (<a href=\"https://simonwillison.net/2026/Jul/22/openai-cyberattack/\">previously</a> on this blog). <a href=\"https://www.youtube.com/watch?v=87DyyMV0kCY\">The video</a"
-    },
-    {
-      "kind": "rss",
-      "title": "Moonlight & Mayhem (Raccoon Heist by Codex + GPT-5.6 Sol Ultra)",
-      "url": "https://simonwillison.net/2026/Aug/7/moonlight-mayhem/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-07T19:18:09.000Z",
-      "summary": "<p><strong><a href=\"https://simonw.github.io/raccoon-heist-codex/\">Moonlight &amp; Mayhem (Raccoon Heist by Codex + GPT-5.6 Sol Ultra)</a></strong></p> On Wednesday I wrote about <a href=\"https://simonwillison.net/2026/Aug/5/raccoon-heist/\">One-shotting a Raccoon Heist game using"
-    },
-    {
-      "kind": "rss",
-      "title": "The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI",
-      "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-07T16:18:51.000Z",
-      "summary": "<p><strong><a href=\"https://www.404media.co/the-tokenpocalypse-is-here-companies-are-scrambling-to-stop-spending-so-much-on-ai/\">The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI</a></strong></p> There's a fun anecdote from Accenture (apparently "
-    },
-    {
-      "kind": "rss",
-      "title": "Responding to the next frontier of critical cyber capabilities",
-      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-08-07T15:20:00.000Z",
-      "summary": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls."
-    },
-    {
-      "kind": "rss",
-      "title": "How HSP GRUPPE builds AI capabilities for tax advisory",
-      "url": "https://openai.com/index/hsp-gruppe",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-08-07T09:00:00.000Z",
-      "summary": "Discover how HSP GRUPPE uses ChatGPT Enterprise to boost productivity, improve work quality, and create more capacity for tax advisory and client service."
     }
   ]
 }

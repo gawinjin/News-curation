@@ -295,7 +295,10 @@
     "https://deepmind.google/models/model-cards/gemini-3-7-flash",
     "https://huggingface.co/blog/icml-2026-open-reproductions",
     "https://icml-2026-agent-repro-challenge.static.hf.space/gallery.html",
-    "https://huggingface.co/spaces/ICML-2026-agent-repro/challenge"
+    "https://huggingface.co/spaces/ICML-2026-agent-repro/challenge",
+    "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
+    "https://tools.simonwillison.net/markdown-svg-renderer",
+    "https://tools.simonwillison.net/colophon#markdown-svg-renderer.html"
   ],
-  "lastIngest": "2026-08-14T08:04:37.313Z"
+  "lastIngest": "2026-08-17T04:20:35.254Z"
 }
