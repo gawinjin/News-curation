@@ -2,6 +2,11 @@
 
 ## 2026-08-20
 
+Rerun:
+
+- No additional high-signal candidates - skipping. The refreshed inbox contained the same 38 normalized URLs already reviewed earlier today; only the ingest timestamp changed.
+- Social candidates remained unavailable: all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable, including Anthropic and Meta fallbacks.
+
 Shipped:
 
 - `2026-08-20-chatgpt-for-teens` - OpenAI's teen experience adds a practical family setup, learning-mode test, and clear privacy and human-support boundaries.
