@@ -1,5 +1,20 @@
 # Signal Run Log
 
+## 2026-08-20
+
+Shipped:
+
+- `2026-08-20-chatgpt-for-teens` - OpenAI's teen experience adds a practical family setup, learning-mode test, and clear privacy and human-support boundaries.
+- `2026-08-20-replit-free-mode` - Replit's GPT-5.6 Luna-powered Free Mode becomes a bounded planning and app-preview workflow that checks costs before building.
+
+Skipped:
+
+- ChatGPT Ads in Europe - important expansion, but it repeats the settings and personalization workflow covered in Signal's August 13 ad-controls article.
+- Qwen 3.8 27B - secondary reports are active, but an official matching model artifact was not confirmed, so benchmark and availability claims were not publishable.
+- OpenAI Zero Data Retention, cyber policy, government oversight, and enterprise case studies - source-backed but aimed at API or organizational buyers rather than a normal reader's 5-30 minute test.
+- smolvm, Mojo, agent-memory research, model quantization, embedding tools, and other coding items - useful specialist work without a distinct general-user workflow for this run.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable, including Anthropic and Meta fallbacks.
+
 ## 2026-08-17
 
 Rerun:

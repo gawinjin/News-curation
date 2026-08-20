@@ -1,0 +1,55 @@
+---
+title: "Replit Free Mode lets anyone shape an app before spending credits"
+date: 2026-08-20
+category: guides
+tags: ["replit", "app-building", "coding", "gpt-5-6"]
+summary: "Replit's new GPT-5.6 Luna-powered Free Mode lets people plan and refine software ideas without consuming usage before they enter a build mode."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20 min"
+  prerequisites:
+    - "A free Replit account"
+    - "A small app idea with no private data"
+references:
+  - title: "Replit expands access to software creation with GPT-5.6 Luna"
+    url: "https://openai.com/index/replit/"
+    author: "OpenAI"
+    publishedAt: "2026-08-19"
+  - title: "Replit Starter Plan"
+    url: "https://docs.replit.com/billing/plans/starter-plan"
+    author: "Replit"
+  - title: "Build with Agent"
+    url: "https://docs.replit.com/learn/build-with-agent"
+    author: "Replit"
+draft: false
+---
+
+## TL;DR
+
+Replit has introduced Free Mode, powered by OpenAI's lower-cost GPT-5.6 Luna model. It can answer questions, critique an idea, and help shape a project without consuming usage. Building still has plan and credit limits, so use the free planning stage to narrow the scope before allowing Agent to change files.
+
+## What's New
+
+Free Mode sits inside Replit's app-building workspace and keeps the context of the current project. Replit says people can use it for fast answers, suggestions, feedback, and analysis without consuming usage. When a request needs more reasoning, the service can route it to GPT-5.6 Sol and preserve the project context when returning to Free Mode.
+
+This does not make every build and deployment unlimited. Replit's Starter plan provides capped Agent access, Lite builds, and one free published app that goes offline after 30 days. Full builds, additional publishing options, and third-party connectors require paid plans or credits. Check the current mode and billing screen before approving work.
+
+The useful change is a cheaper separation between thinking and acting. A vague request often wastes time and credits because the agent has to make product decisions while editing. Free Mode gives a beginner space to settle the audience, one core task, acceptance checks, and exclusions before any code changes.
+
+## Why It Matters
+
+Browser-based app builders can turn a sentence into working software, but they also make it easy to build too much. Starting with a narrow written plan reduces unwanted databases, logins, integrations, and recurring services. It also gives a non-technical user a checklist for reviewing the result instead of accepting a polished preview on sight.
+
+Treat generated software as untrusted until you inspect and test it. Do not paste passwords, customer records, private documents, or API keys into a planning prompt. If the project later needs secrets or external accounts, learn Replit's controls and the third party's permissions before connecting them.
+
+<PracticalGuide timeToTry="20 min" prerequisites={["A free Replit account","A small app idea with no private data"]}>
+
+1. Open https://replit.com/, sign in, and create a new test project. Use a disposable idea such as a one-page reading-list tracker with three sample books and no login, database, or external service.
+2. Open Agent and look for **Free Mode** in the mode control. If it is not available to your account, stop rather than assuming another mode has the same cost.
+3. Ask Free Mode to produce a five-part plan: target user, one core task, screens, acceptance checks, and explicit exclusions. Tell it not to edit files yet.
+4. Review the plan and remove anything that adds accounts, payments, analytics, connectors, or persistent personal data. Ask for a final checklist and the smallest file set needed.
+5. Before building, open Replit's usage or billing view and confirm the active mode, remaining allowance, publishing limits, and whether the next action consumes credits. Proceed only if those limits are acceptable.
+6. Build the smallest version, then test every acceptance check in the preview. Use a checkpoint or delete the test project if the result is wrong; do not publish it with real personal information.
+
+</PracticalGuide>

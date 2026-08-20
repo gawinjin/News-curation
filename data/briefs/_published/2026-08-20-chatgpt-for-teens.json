@@ -1,0 +1,63 @@
+{
+  "slug": "chatgpt-for-teens",
+  "date": "2026-08-20",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["ChatGPT for Teens adds study hours and stronger safeguards"],
+  "summary": "ChatGPT now gives 13-to-17-year-olds a learning-focused experience with stronger defaults, Study Hours, break reminders, and family controls.",
+  "tags": ["chatgpt", "teens", "education", "safety"],
+  "primary_source": {
+    "url": "https://openai.com/index/chatgpt-for-teens/",
+    "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+    "author": "OpenAI",
+    "publishedAt": "2026-08-18",
+    "key_facts": [
+      "Users identified as 13 to 17 are placed into the teen experience.",
+      "The experience includes Study Mode, homework reminders, quizzes, visual explanations, Study Hours, and break reminders.",
+      "Teen defaults add stronger protections around several high-risk and age-inappropriate subjects.",
+      "Linked guardians can manage selected settings but cannot read conversations or live activity."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://help.openai.com/en/articles/12315553-parental-controls-on-chatgpt-faq",
+      "title": "Managing parental controls in ChatGPT",
+      "key_facts": [
+        "Either the teen or guardian can start account linking.",
+        "Study Hours changes how eligible chats begin; Quiet Hours blocks access during selected times.",
+        "Either person can unlink, and the guardian is notified when the teen unlinks."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/11780217-using-study-mode-in-chatgpt",
+      "title": "Using study mode in ChatGPT",
+      "key_facts": ["Study Mode is available across ChatGPT plans on web, iOS, and Android."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["Separate ChatGPT accounts for a teen and parent or guardian", "Access to the invitation email or phone number"],
+    "steps": [
+      {"instruction": "Link the separate teen and guardian accounts through Settings > Parental controls.", "verify_url": "https://help.openai.com/en/articles/12315553-parental-controls-on-chatgpt-faq"},
+      {"instruction": "Review safeguards, data, media, Study Mode, Study Hours, and Quiet Hours together.", "verify_url": "https://help.openai.com/en/articles/12315553-parental-controls-on-chatgpt-faq"},
+      {"instruction": "Use Study Mode on a harmless known topic and check its explanation and practice questions.", "verify_url": "https://help.openai.com/en/articles/11780217-using-study-mode-in-chatgpt"},
+      {"instruction": "Agree on school-policy, verification, privacy, and human-support boundaries.", "verify_url": "https://openai.com/index/chatgpt-for-teens/"}
+    ]
+  },
+  "references": [
+    {"title": "Introducing ChatGPT for Teens: Built for learning, backed by protections", "url": "https://openai.com/index/chatgpt-for-teens/", "author": "OpenAI", "publishedAt": "2026-08-18"},
+    {"title": "Managing parental controls in ChatGPT", "url": "https://help.openai.com/en/articles/12315553-parental-controls-on-chatgpt-faq", "author": "OpenAI", "publishedAt": "2026-08-18"},
+    {"title": "Using study mode in ChatGPT", "url": "https://help.openai.com/en/articles/11780217-using-study-mode-in-chatgpt", "author": "OpenAI", "publishedAt": "2026-08-20"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Safety controls can fail and do not replace trusted adults, professionals, or emergency services.",
+    "Parental controls do not expose teen conversations or live activity."
+  ],
+  "assembled_at": "2026-08-20T07:50:32.614Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

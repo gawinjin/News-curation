@@ -1,0 +1,64 @@
+{
+  "slug": "replit-free-mode",
+  "date": "2026-08-20",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["Replit Free Mode lets anyone shape an app before spending credits"],
+  "summary": "Replit's new GPT-5.6 Luna-powered Free Mode lets people plan and refine software ideas without consuming usage before they enter a build mode.",
+  "tags": ["replit", "app-building", "coding", "gpt-5-6"],
+  "primary_source": {
+    "url": "https://openai.com/index/replit/",
+    "title": "Replit expands access to software creation with GPT-5.6 Luna",
+    "author": "OpenAI",
+    "publishedAt": "2026-08-19",
+    "key_facts": [
+      "Replit Free Mode is powered by GPT-5.6 Luna.",
+      "It supports answers, suggestions, feedback, and analysis without consuming usage.",
+      "Replit can route harder work to GPT-5.6 Sol while preserving project context.",
+      "Free Mode is intended to help people refine an idea before entering a build mode."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://docs.replit.com/billing/plans/starter-plan",
+      "title": "Replit Starter Plan",
+      "key_facts": [
+        "The free plan has daily Agent credits and a monthly cap.",
+        "It includes Lite build and one free published app that goes offline after 30 days.",
+        "Full build and third-party connectors require a paid plan."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://docs.replit.com/learn/build-with-agent",
+      "title": "Build with Agent",
+      "key_facts": ["Replit recommends specific prompts, review and testing, and checkpoints."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "20 min",
+    "prerequisites": ["A free Replit account", "A small app idea with no private data"],
+    "steps": [
+      {"instruction": "Create a disposable project and confirm that Free Mode is available before proceeding.", "verify_url": "https://replit.com/"},
+      {"instruction": "Ask for a bounded plan and acceptance checklist without editing files.", "verify_url": "https://docs.replit.com/learn/build-with-agent"},
+      {"instruction": "Remove accounts, payments, analytics, connectors, and personal data from the test scope.", "verify_url": "https://docs.replit.com/learn/build-with-agent"},
+      {"instruction": "Confirm mode, credit, and publishing limits before approving a build.", "verify_url": "https://docs.replit.com/billing/plans/starter-plan"},
+      {"instruction": "Test the preview against the checklist and roll back or delete a failed result.", "verify_url": "https://docs.replit.com/learn/build-with-agent"}
+    ]
+  },
+  "references": [
+    {"title": "Replit expands access to software creation with GPT-5.6 Luna", "url": "https://openai.com/index/replit/", "author": "OpenAI", "publishedAt": "2026-08-19"},
+    {"title": "Replit Starter Plan", "url": "https://docs.replit.com/billing/plans/starter-plan", "author": "Replit"},
+    {"title": "Build with Agent", "url": "https://docs.replit.com/learn/build-with-agent", "author": "Replit"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Free Mode does not make every build, connector, or deployment unlimited.",
+    "The guide tells readers to confirm the current mode and allowance before a build."
+  ],
+  "assembled_at": "2026-08-20T07:50:32.614Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
