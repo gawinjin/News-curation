@@ -1,0 +1,126 @@
+{
+  "slug": "chatgpt-site-restricted-searches",
+  "date": "2026-08-21",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": [
+    "ChatGPT Search is leaning harder on site-specific lookups",
+    "A simple way to steer ChatGPT Search toward trusted sites"
+  ],
+  "summary": "New tracking suggests ChatGPT Search is using far more site-specific web queries. A ten-minute comparison shows how to request and verify a trusted source.",
+  "tags": ["chatgpt", "search", "sources", "fact-checking"],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
+    "title": "ChatGPT search now uses the site:operator at scale",
+    "author": "Simon Willison",
+    "publishedAt": "2026-08-20",
+    "key_facts": [
+      "Promptwatch monitors automated prompts across several consumer AI products, and Simon Willison says its aggregate reports can reveal otherwise hidden product changes.",
+      "Within Promptwatch's tracked ChatGPT Search sample, the share of background queries limited to a specific site rose from 0.37% on August 7 to 16.8% on August 8.",
+      "The same report says average background searches per response rose from about 1.08 to 1.83 that day, consistent with site-specific searches being added alongside broader searches.",
+      "Willison cautions that the figures cover only prompts included in Promptwatch's automated tracking, not every ChatGPT search.",
+      "Willison could not confirm the internal mechanism and suspects a domain-filter parameter may produce the observed site-restricted queries."
+    ],
+    "quote_candidates": [
+      {
+        "text": "It's important to note that these figures only reflect the prompts for which they have automated tracking enabled.",
+        "words": 18,
+        "exact": true,
+        "position": "Paragraph after the first Promptwatch excerpt"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://promptwatch.com/data/chatgpt-site-operator-fanouts",
+      "title": "ChatGPT Search Now Uses the site:operator at Scale",
+      "key_facts": [
+        "Promptwatch reports a jump from 0.37% to 16.8% in site-restricted fanout queries on August 8 within its tracked sample.",
+        "It reports average fanout queries per response rising from about 1.08 to 1.83 at the same time.",
+        "Promptwatch describes the trends as aggregated measurements from monitored AI-product interfaces."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/9237897-chatgpt-search",
+      "title": "Searching the web with ChatGPT",
+      "key_facts": [
+        "OpenAI documents how to select Search from the tools menu or slash menu.",
+        "OpenAI tells users to open citations or Sources and check that a page supports the answer.",
+        "OpenAI warns that search results and citations can be incomplete, outdated, or incorrect.",
+        "Search prompts may be rewritten into targeted queries and sent to search providers."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://support.google.com/docs/answer/9060449?co=GENIE.Platform%3DDesktop&hl=en",
+      "title": "Freeze, group, hide, or merge rows and columns",
+      "key_facts": [
+        "Google's official Sheets help page gives the expected menu path for freezing a row, making it a harmless citation-check target."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "Access to ChatGPT Search in a browser",
+      "No private, confidential, or location-sensitive information"
+    ],
+    "steps": [
+      {
+        "instruction": "Open ChatGPT, start a new conversation, choose View all tools and Search, and stop if Search is unavailable.",
+        "verify_url": "https://help.openai.com/en/articles/9237897-chatgpt-search"
+      },
+      {
+        "instruction": "Ask how to freeze the top row in Google Sheets, require web search and citations, then record which domains appear under Sources.",
+        "verify_url": "https://help.openai.com/en/articles/9237897-chatgpt-search"
+      },
+      {
+        "instruction": "Repeat in a new chat while asking ChatGPT to search only site:support.google.com, then check whether every cited result uses that domain.",
+        "verify_url": "https://help.openai.com/en/articles/9237897-chatgpt-search"
+      },
+      {
+        "instruction": "Compare the two source lists and mark the restriction unsuccessful if unrelated domains still appear.",
+        "verify_url": "https://help.openai.com/en/articles/9237897-chatgpt-search"
+      },
+      {
+        "instruction": "Open the Google citation and confirm the page itself supports the menu steps before acting; stop if it does not.",
+        "verify_url": "https://support.google.com/docs/answer/9060449?co=GENIE.Platform%3DDesktop&hl=en"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "ChatGPT search now uses the site:operator at scale",
+      "url": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-08-20"
+    },
+    {
+      "title": "ChatGPT Search Now Uses the site:operator at Scale",
+      "url": "https://promptwatch.com/data/chatgpt-site-operator-fanouts",
+      "author": "Promptwatch",
+      "publishedAt": "2026-08-10"
+    },
+    {
+      "title": "Searching the web with ChatGPT",
+      "url": "https://help.openai.com/en/articles/9237897-chatgpt-search",
+      "author": "OpenAI"
+    },
+    {
+      "title": "Freeze, group, hide, or merge rows and columns",
+      "url": "https://support.google.com/docs/answer/9060449?co=GENIE.Platform%3DDesktop&hl=en",
+      "author": "Google"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Promptwatch's tracked sample is not a measurement of every ChatGPT search.",
+    "OpenAI does not document site: as a guaranteed ChatGPT Search control; the guide treats the restriction as a test and requires users to inspect Sources.",
+    "Search prompts may be rewritten and sent to search providers, so the guide excludes sensitive information."
+  ],
+  "assembled_at": "2026-08-21T09:42:39.241Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

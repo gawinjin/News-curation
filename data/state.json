@@ -304,7 +304,11 @@
     "https://help.openai.com/en/articles/11780217-using-study-mode-in-chatgpt",
     "https://openai.com/index/replit/",
     "https://docs.replit.com/billing/plans/starter-plan",
-    "https://docs.replit.com/learn/build-with-agent"
+    "https://docs.replit.com/learn/build-with-agent",
+    "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
+    "https://promptwatch.com/data/chatgpt-site-operator-fanouts",
+    "https://help.openai.com/en/articles/9237897-chatgpt-search",
+    "https://support.google.com/docs/answer/9060449?co=GENIE.Platform%3DDesktop&hl=en"
   ],
-  "lastIngest": "2026-08-20T08:03:43.811Z"
+  "lastIngest": "2026-08-21T09:40:08.260Z"
 }

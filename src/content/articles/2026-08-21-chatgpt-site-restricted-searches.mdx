@@ -1,0 +1,58 @@
+---
+title: "ChatGPT Search is leaning harder on site-specific lookups"
+date: 2026-08-21
+category: insights
+tags: ["chatgpt", "search", "sources", "fact-checking"]
+summary: "New tracking suggests ChatGPT Search is using far more site-specific web queries. A ten-minute comparison shows how to request and verify a trusted source."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "Access to ChatGPT Search in a browser"
+    - "No private, confidential, or location-sensitive information"
+references:
+  - title: "ChatGPT search now uses the site:operator at scale"
+    url: "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/"
+    author: "Simon Willison"
+    publishedAt: "2026-08-20"
+  - title: "ChatGPT Search Now Uses the site:operator at Scale"
+    url: "https://promptwatch.com/data/chatgpt-site-operator-fanouts"
+    author: "Promptwatch"
+    publishedAt: "2026-08-10"
+  - title: "Searching the web with ChatGPT"
+    url: "https://help.openai.com/en/articles/9237897-chatgpt-search"
+    author: "OpenAI"
+  - title: "Freeze, group, hide, or merge rows and columns"
+    url: "https://support.google.com/docs/answer/9060449?co=GENIE.Platform%3DDesktop&hl=en"
+    author: "Google"
+draft: false
+---
+
+## TL;DR
+
+Within Promptwatch's tracked sample, ChatGPT Search sharply increased the use of site-restricted background queries. You can test the idea by asking ChatGPT to search a trusted domain, but treat it as a request rather than a guarantee and verify every result under Sources.
+
+## What's New
+
+Promptwatch tracks automated prompts across several consumer AI products. In its monitored ChatGPT Search sample, site-restricted background queries jumped from 0.37% on August 7 to 16.8% on August 8.
+
+Over the same period, the average number of background searches per answer rose from about 1.08 to 1.83. That pattern is consistent with ChatGPT adding narrowly targeted searches alongside broader ones.
+
+The numbers describe only the prompts Promptwatch monitors, not every ChatGPT search. Simon Willison also could not confirm how the feature works internally; a domain filter may explain the observed behavior, but that remains unconfirmed.
+
+## Why It Matters
+
+Site-restricted searching can be useful when you trust an official help center more than the wider web. Asking for one domain may steer ChatGPT toward that source, but OpenAI does not document `site:` as a guaranteed control. Always open Sources, confirm the cited domain, and check that the page actually supports the answer. Stop if anything does not match.
+
+Keep the test harmless. ChatGPT may rewrite a search prompt and send it to search providers, so never include private, confidential, or location-sensitive information. Search results and citations can also be incomplete, outdated, or wrong.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["Access to ChatGPT Search in a browser","No private, confidential, or location-sensitive information"]}>
+
+1. Open ChatGPT, start a new conversation, choose View all tools and Search, and stop if Search is unavailable.
+2. Ask how to freeze the top row in Google Sheets, require web search and citations, then record which domains appear under Sources.
+3. Repeat in a new chat while asking ChatGPT to search only `site:support.google.com`; treat this as a request, not a guaranteed restriction, and check whether every cited result uses that domain.
+4. Compare the two source lists and mark the restriction unsuccessful if unrelated domains still appear.
+5. Open the Google citation and confirm the page itself supports the menu steps before acting; stop if it does not.
+
+</PracticalGuide>

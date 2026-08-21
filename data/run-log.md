@@ -1,5 +1,17 @@
 # Signal Run Log
 
+## 2026-08-21
+
+Shipped:
+
+- `2026-08-21-chatgpt-site-restricted-searches` - Promptwatch's measured jump in site-specific ChatGPT searches becomes a ten-minute comparison of broad versus trusted-domain results, with manual citation checks and a clear stop on mismatch.
+
+Skipped:
+
+- LFM2.5-DSpark and Bun WebView - current performance and browser-automation work, but aimed at specialized hardware or developers rather than a normal reader's distinct 5-30 minute workflow.
+- OpenAI AI Futures and the Stampli case study - policy commentary and an enterprise marketing example without a concrete new reader action.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with ten sources available and one unavailable, including Anthropic and Meta fallbacks.
+
 ## 2026-08-20
 
 Rerun:
