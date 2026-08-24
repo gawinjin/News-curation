@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T09:40:08.260Z",
+  "generatedAt": "2026-08-24T07:16:29.935Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,13 +47,123 @@
   "items": [
     {
       "kind": "rss",
-      "title": "ChatGPT search now uses the site:operator at scale",
-      "url": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
+      "title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
+      "url": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
-      "publishedAt": "2026-08-20T23:57:32.000Z",
-      "summary": "<p><strong><a href=\"https://promptwatch.com/data/chatgpt-site-operator-fanouts\">ChatGPT search now uses the site:operator at scale</a></strong></p> Promptwatch is part of the emerging \"GEO\" space, for Generative Engine Optimization - the chatbot version of SEO, where companies of"
+      "publishedAt": "2026-08-23T20:24:52.000Z",
+      "summary": "<p><strong><a href=\"https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245\">Anthropic’s best AI model struggles to attract users as cheaper tools thrive</a></strong></p> A few interesting numbers in this FT story gathered from \"people with knowledge of the matter\":</p> <"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Drew Breunig",
+      "url": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-23T19:55:30.000Z",
+      "summary": "<blockquote cite=\"https://www.dbreunig.com/2026/08/23/fable-the-end-of-moore-s-law.html\"><p>Prior to Fable, it felt silly to waste <em>too</em> much time improving your coding harness or context strategies. A new model would arrive at the same price (or cheaper!) and paper over m"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Linus Torvalds",
+      "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-22T21:04:26.000Z",
+      "summary": "<blockquote cite=\"https://github.com/torvalds/linux/commit/818bebeb63dd6bf5f4e07e145f6cdbace520a34c\"><p>And this was a debug session from hell, enormously helped by an AI doing much of the grunt-work.</p> <p>I'd like to call it my tireless helper, but the AI several times stated "
+    },
+    {
+      "kind": "rss",
+      "title": "llm 0.33",
+      "url": "https://simonwillison.net/2026/Aug/22/llm/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-22T17:01:16.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.33\">llm 0.33</a></p> <p>My highlights from this release:</p> <blockquote> <ul> <li>Upgraded to the OpenAI Python library 3.x and switched the HTTP client dependency from <code>httpx</code> to <code"
+    },
+    {
+      "kind": "rss",
+      "title": "More than just code review",
+      "url": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-22T15:56:54.000Z",
+      "summary": "<p>The key skill required to make productive use of coding agents is being able to confidently instruct them on how to make changes and then confidently verify that those changes have been applied in the correct way.</p> <p>Sometimes this involves reviewing every line of code the"
+    },
+    {
+      "kind": "rss",
+      "title": "How Claude Watermarks AI-Generated Text",
+      "url": "https://magazine.sebastianraschka.com/p/claude-watermarking",
+      "source": "Sebastian Raschka",
+      "sourceId": "raschka",
+      "category": "research",
+      "publishedAt": "2026-08-22T11:11:39.000Z",
+      "summary": "A 48-minute video walkthrough of token sampling, watermark detection, and removal"
+    },
+    {
+      "kind": "rss",
+      "title": "llm 0.32.1",
+      "url": "https://simonwillison.net/2026/Aug/21/llm/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-21T17:16:13.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.32.1\">llm 0.32.1</a></p> <p>Fresh installs of LLM stopped working the other day because the OpenAI Python library dropped its usage of <code>httpx</code>, and it turned out LLM depended on that lib"
+    },
+    {
+      "kind": "rss",
+      "title": "llm-openrouter 0.7",
+      "url": "https://simonwillison.net/2026/Aug/21/llm-openrouter/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-21T16:58:19.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-openrouter/releases/tag/0.7\">llm-openrouter 0.7</a></p> <p>Now that this plugin is compatible with <a href=\"https://simonwillison.net/2026/Aug/4/new-release-of-llm/\">LLM 0.32</a> it can display the reasoning trac"
+    },
+    {
+      "kind": "rss",
+      "title": "Stop Making TUIs",
+      "url": "https://simonwillison.net/2026/Aug/21/stop-making-tuis/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-21T16:07:32.000Z",
+      "summary": "<p><strong><a href=\"https://sockpuppet.org/blog/2026/08/20/stop-making-tuis/\">Stop Making TUIs</a></strong></p> Thomas Ptacek advocates for building real native user interfaces for even the smallest of personal tools, because coding agents have reduced the cost of getting a usabl"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Matt Webb",
+      "url": "https://simonwillison.net/2026/Aug/21/matt-webb/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-08-21T15:06:26.000Z",
+      "summary": "<blockquote cite=\"https://interconnected.org/home/2026/08/21/galactic\"><p>After I released version 1.0, I figured I would have to do the rotations myself. So I sat down with ChatGPT and I didn’t get it to write the code, but I got it to educate me. With a patient, interactive tut"
+    },
+    {
+      "kind": "rss",
+      "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "category": "research",
+      "publishedAt": "2026-08-21T11:59:48.000Z",
+      "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay."
+    },
+    {
+      "kind": "rss",
+      "title": "Measuring benchmark optimization in speech recognition",
+      "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-08-21T00:00:00.000Z",
+      "summary": ""
     },
     {
       "kind": "rss",
@@ -284,96 +394,6 @@
       "category": "insights",
       "publishedAt": "2026-08-17T13:05:36.000Z",
       "summary": "The new frontier of AI is developing capable autonomous researchers"
-    },
-    {
-      "kind": "rss",
-      "title": "The Defender’s Window",
-      "url": "https://openai.com/index/the-defenders-window",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-08-17T05:30:00.000Z",
-      "summary": "AI is reshaping cybersecurity for attackers and defenders alike. Learn how OpenAI is strengthening its defenses and what security teams can do now."
-    },
-    {
-      "kind": "rss",
-      "title": "OpenAI joins PORTS-Pike project",
-      "url": "https://openai.com/index/openai-joins-ports-pike-project",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-08-17T05:00:00.000Z",
-      "summary": "OpenAI joins PORTS-Pike project, expanding community investment and supporting thousands of Southern Ohio jobs"
-    },
-    {
-      "kind": "rss",
-      "title": "New policy ideas for the Intelligence Age",
-      "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-08-17T03:15:00.000Z",
-      "summary": "OpenAI funds 14 independent projects exploring new AI policy ideas to expand economic opportunity and strengthen societal resilience in the Intelligence Age."
-    },
-    {
-      "kind": "rss",
-      "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
-      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-16T22:00:39.000Z",
-      "summary": "<p>Friday's big release was <a href=\"https://huggingface.co/Qwen/Qwen3.8-27B\">Qwen 3.8 27B</a>, an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba's Qwen research lab. I've been looking forward to this one: 27B is an excellent size for running a model on a reasona"
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Dario Amodei",
-      "url": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-16T15:05:36.000Z",
-      "summary": "<blockquote cite=\"https://twitter.com/darioamodei/status/2088758819304443967\"><p>I do agree that the public has a negative view of AI (and that this is a big problem), but I don’t think it is primarily caused by me or any other AI leader warning about AI’s risks. I think it is fu"
-    },
-    {
-      "kind": "rss",
-      "title": "CORS Chat",
-      "url": "https://simonwillison.net/2026/Aug/15/cors-chat/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-15T14:49:54.000Z",
-      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/cors-chat\">CORS Chat</a></p> <p>I built this today (<a href=\"https://gist.github.com/simonw/92a1d97773744b45bf259e003013cf36\">with GPT-5.6-Sol xhigh</a>) to help test Qwen 3.8 27B running in LM Studio on both my M"
-    },
-    {
-      "kind": "rss",
-      "title": "Building an AI Text Detector From Scratch",
-      "url": "https://magazine.sebastianraschka.com/p/ai-detector-from-scratch",
-      "source": "Sebastian Raschka",
-      "sourceId": "raschka",
-      "category": "research",
-      "publishedAt": "2026-08-15T11:54:24.000Z",
-      "summary": "An End-to-End Project With Dataset Construction, Model Training, Local Deployment, and RLVR"
-    },
-    {
-      "kind": "rss",
-      "title": "Northern Gannet",
-      "url": "https://simonwillison.net/2026/Aug/15/sighting-391300422/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-15T03:22:00.000Z",
-      "summary": "<p><img src=\"https://static.inaturalist.org/photos/716984157/large.jpg\" alt=\"Northern Gannet\"></p><p>Northern Gannet, in Pillar Point Harbor, CA, US</p><p>This is Morris.</p> <p>Morris is a local celebrity: the only known Northern Gannet (<em>Morus bassanus</em>) in the entire Pa"
-    },
-    {
-      "kind": "rss",
-      "title": "Don't classify. Hallucinate!",
-      "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-14T21:54:35.000Z",
-      "summary": "<p><strong><a href=\"https://softwaredoug.com/blog/2026/08/10/hypothetical-classifications\">Don&#x27;t classify. Hallucinate!</a></strong></p> I still have quite a bit of older content on my blog that I never got round to tagging. My blog has <a href=\"https://simonwillison.net/\">1"
     }
   ]
 }

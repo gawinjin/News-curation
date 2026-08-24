@@ -1,5 +1,17 @@
 # Signal Run Log
 
+## 2026-08-24
+
+No high-signal candidates today - skipping.
+
+Reviewed:
+
+- Matt Webb's ChatGPT tutoring example is useful, but its learn-by-questioning workflow overlaps Signal's August 10 article on keeping AI tutors from over-helping.
+- Simon Willison's coding-agent verification note repeats Signal's existing guidance to define a small change, run tests, inspect the result, and verify it independently.
+- Sebastian Raschka's Claude watermark lecture adds technical explanation, but Signal already covered the August 13 watermark announcement and the lack of a public detector leaves no new user action.
+- Google DeepMind's games retrospective describes studio research prototypes rather than a tool readers can try today; the remaining additions were paywalled adoption reporting, developer-only releases, or specialist benchmarks.
+- Social candidates were unavailable: all 42 configured handles were unreachable through Nitter; RSS completed with 11 sources available and none unavailable.
+
 ## 2026-08-21
 
 Shipped:
