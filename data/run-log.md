@@ -2,6 +2,11 @@
 
 ## 2026-08-24
 
+Rerun:
+
+- No additional high-signal candidates - skipping. The refreshed inbox contained the same 35 normalized URLs reviewed earlier today; only the ingest timestamp changed.
+- Social candidates remained unavailable: all 42 configured handles were unreachable through Nitter; RSS completed with 11 sources available and none unavailable.
+
 No high-signal candidates today - skipping.
 
 Reviewed:
