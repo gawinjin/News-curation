@@ -1,5 +1,18 @@
 # Signal Run Log
 
+## 2026-08-26
+
+Shipped:
+
+- `2026-08-26-openai-admin-plugin` - OpenAI's Admin plugin brings workspace usage, access, and supported actions into ChatGPT Work and Codex; the guide starts with a limited admin pilot and read-only checks.
+
+Skipped:
+
+- OpenAI Jalapeno and infrastructure posts, Granite 4.2, quantization research, and Papers with Code infrastructure - current and source-backed, but hardware, model internals, or specialist operations without a stronger general-user workflow.
+- Gradio Workflows, Kiro, llm-anthropic, executable SQLite, and EVE Online's Python migration - useful developer material, but outside Signal's curious general-user bar for today's smallest set.
+- OpenAI's influence-campaign report, Anthropic wellbeing grants, and Import AI 470 - important policy or research signals without a distinct hands-on 5-30 minute action for most readers.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with 11 sources available and none unavailable.
+
 ## 2026-08-24
 
 Rerun:

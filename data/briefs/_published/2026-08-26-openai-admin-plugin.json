@@ -1,0 +1,115 @@
+{
+  "slug": "openai-admin-plugin",
+  "date": "2026-08-26",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "OpenAI's Admin plugin puts workspace controls in a chat",
+    "A safer first test for OpenAI's new Admin plugin"
+  ],
+  "summary": "OpenAI's Admin plugin brings usage, access, and supported workspace actions into ChatGPT Work and Codex. Start with a read-only admin pilot.",
+  "tags": ["chatgpt", "codex", "plugins", "workspace-admin"],
+  "primary_source": {
+    "url": "https://openai.com/index/introducing-admin-plugin/",
+    "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
+    "author": "OpenAI",
+    "publishedAt": "2026-08-25",
+    "key_facts": [
+      "The Admin plugin lets workspace administrators inspect information, change supported settings, and confirm authorized actions from a conversation in ChatGPT Work or Codex.",
+      "Supported tasks include reviewing adoption and credit usage, managing members and groups, diagnosing permission problems, controlling model or feature access, and handling usage limits and spending requests.",
+      "Admins can automate recurring checks and high-volume requests, including sending pending usage requests to Slack or Microsoft Teams and granting feature access when predefined criteria are met.",
+      "The plugin preserves each administrator's existing role and permissions, maps instructions to supported read or write actions, returns structured results, and allows broader-impact changes to be reviewed before application.",
+      "For ChatGPT Work, OpenAI says administrators first enable the plugin in workspace settings and then install it from the Plugins directory in the web or desktop app."
+    ],
+    "quote_candidates": [
+      {
+        "text": "The Admin plugin works within each user's existing role and permissions; it does not grant broader access.",
+        "words": 17,
+        "exact": true,
+        "position": "Scale administration with existing controls section"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex",
+      "title": "Plugins in ChatGPT and Codex",
+      "key_facts": [
+        "Workspace admins manage plugin installation in Workspace settings under Plugins and configure underlying app access and permissions under Apps.",
+        "A plugin inherits the access, action, confirmation, and source-system permissions of any app it uses.",
+        "OpenAI recommends a limited pilot, read-only access where possible, confirmation for sensitive actions, and privacy or legal review before broader rollout.",
+        "After installation, users can invoke a plugin with an @ mention or from the More menu in ChatGPT."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/12289294",
+      "title": "Global Admin Console",
+      "key_facts": [
+        "Eligible ChatGPT Business, Enterprise, and Edu organizations can use the Global Admin Console for identity and access, analytics, billing where available, and governance.",
+        "Workspace admins and owners see only the workspaces and actions allowed by their role; selecting another resource does not add permissions.",
+        "Available analytics can include active users, messages, credit use, tokens, Codex activity, plugin calls, and skill usage.",
+        "Authorized admins can review supported administrative events in searchable audit logs."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10-15 min",
+    "prerequisites": [
+      "An eligible managed ChatGPT workspace where the Admin plugin is available",
+      "Workspace owner or administrator permissions",
+      "A non-sensitive, read-only question about your own workspace"
+    ],
+    "steps": [
+      {
+        "instruction": "Open Workspace settings > Plugins, select Admin, and review its included capabilities and required apps; stop if the plugin is absent or your role cannot approve it.",
+        "verify_url": "https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex"
+      },
+      {
+        "instruction": "Limit the first rollout to an administrator pilot role, keep app access read-only where possible, and require confirmation for write actions; pause for privacy, security, legal, or data-residency review if sensitive systems are involved.",
+        "verify_url": "https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex"
+      },
+      {
+        "instruction": "Make the plugin available to that pilot role, then open the Plugin Directory in ChatGPT Work, search for Admin, and install it; stop if the listing or Connect control is unavailable.",
+        "verify_url": "https://chatgpt.com/plugins"
+      },
+      {
+        "instruction": "Start a new ChatGPT Work conversation, invoke @Admin or choose + > More > Admin, and ask it to show aggregate ChatGPT Work and Codex activity for the last seven days without making changes.",
+        "verify_url": "https://openai.com/index/introducing-admin-plugin/"
+      },
+      {
+        "instruction": "Check that the result is limited to workspaces and data your role can already access, then review the admin audit log; do not test member, group, limit, or spending changes unless the displayed confirmation exactly matches an authorized request.",
+        "verify_url": "https://help.openai.com/en/articles/12289294"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
+      "url": "https://openai.com/index/introducing-admin-plugin/",
+      "author": "OpenAI",
+      "publishedAt": "2026-08-25"
+    },
+    {
+      "title": "Plugins in ChatGPT and Codex",
+      "url": "https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex",
+      "author": "OpenAI"
+    },
+    {
+      "title": "Global Admin Console",
+      "url": "https://help.openai.com/en/articles/12289294",
+      "author": "OpenAI"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Availability depends on the workspace plan, role, region, surface, and plugin or app settings.",
+    "The guide uses a narrow administrator pilot and read-only questions before any write action.",
+    "The Admin plugin preserves existing permissions; readers should stop if returned data or requested scope exceeds their role.",
+    "The announcement describes Slack and Microsoft Teams automations, but the guide does not ask readers to configure them because that needs broader organizational review."
+  ],
+  "assembled_at": "2026-08-26T08:47:00.000Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

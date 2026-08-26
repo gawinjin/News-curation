@@ -1,0 +1,55 @@
+---
+title: "OpenAI's Admin plugin puts workspace controls in a chat"
+date: 2026-08-26
+category: guides
+tags: ["chatgpt", "codex", "plugins", "workspace-admin"]
+summary: "OpenAI's Admin plugin brings usage, access, and supported workspace actions into ChatGPT Work and Codex. Start with a read-only admin pilot."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10-15 min"
+  prerequisites:
+    - "An eligible managed ChatGPT workspace where the Admin plugin is available"
+    - "Workspace owner or administrator permissions"
+    - "A non-sensitive, read-only question about your own workspace"
+references:
+  - title: "Introducing the Admin plugin for ChatGPT Work and Codex"
+    url: "https://openai.com/index/introducing-admin-plugin/"
+    author: "OpenAI"
+    publishedAt: "2026-08-25"
+  - title: "Plugins in ChatGPT and Codex"
+    url: "https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex"
+    author: "OpenAI"
+  - title: "Global Admin Console"
+    url: "https://help.openai.com/en/articles/12289294"
+    author: "OpenAI"
+draft: false
+---
+
+## TL;DR
+
+OpenAI's new Admin plugin lets authorized workspace administrators review usage and access information—and perform supported changes—from ChatGPT Work or Codex. Because it follows existing roles and app permissions, the safest first step is a small admin pilot using a read-only activity question.
+
+## What's New
+
+The Admin plugin brings supported workspace administration into a conversation. Administrators can review adoption and credit use, manage members and groups, troubleshoot permission issues, control access to models or features, and handle usage-limit or spending requests.
+
+It does not add authority to an administrator's account. The plugin follows that person's existing role and permissions, translates instructions into supported read or write actions, and returns structured results. Changes with wider effects can be checked before they are applied.
+
+Teams can also automate recurring checks and larger request queues. OpenAI's examples include routing pending usage requests to Slack or Microsoft Teams and granting feature access when preset criteria are satisfied.
+
+## Why It Matters
+
+For workspace administrators, routine questions about activity, access, and limits can now begin in ChatGPT Work or Codex. That can make it easier to check how a workspace is being used or diagnose why someone cannot reach a feature without first hunting through several administrative views.
+
+The permission boundary still matters. A cautious rollout starts with a limited admin group, read-only app access where possible, and confirmation for sensitive actions. That gives a team a useful test of the plugin while keeping member, spending, and access changes out of the first trial.
+
+<PracticalGuide timeToTry="10-15 min" prerequisites={["An eligible managed ChatGPT workspace where the Admin plugin is available","Workspace owner or administrator permissions","A non-sensitive, read-only question about your own workspace"]}>
+
+1. Open Workspace settings > Plugins, select Admin, and review its included capabilities and required apps; stop if the plugin is absent or your role cannot approve it.
+2. Limit the first rollout to an administrator pilot role, keep app access read-only where possible, and require confirmation for write actions; pause for privacy, security, legal, or data-residency review if sensitive systems are involved.
+3. Make the plugin available to that pilot role, then open the Plugin Directory in ChatGPT Work, search for Admin, and install it; stop if the listing or Connect control is unavailable.
+4. Start a new ChatGPT Work conversation, invoke @Admin or choose + > More > Admin, and ask it to show aggregate ChatGPT Work and Codex activity for the last seven days without making changes.
+5. Check that the result is limited to workspaces and data your role can already access, then review the admin audit log; do not test member, group, limit, or spending changes unless the displayed confirmation exactly matches an authorized request.
+
+</PracticalGuide>

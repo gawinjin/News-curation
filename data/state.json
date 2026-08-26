@@ -308,7 +308,10 @@
     "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
     "https://promptwatch.com/data/chatgpt-site-operator-fanouts",
     "https://help.openai.com/en/articles/9237897-chatgpt-search",
-    "https://support.google.com/docs/answer/9060449?co=GENIE.Platform%3DDesktop&hl=en"
+    "https://support.google.com/docs/answer/9060449?co=GENIE.Platform%3DDesktop&hl=en",
+    "https://openai.com/index/introducing-admin-plugin/",
+    "https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex",
+    "https://help.openai.com/en/articles/12289294"
   ],
-  "lastIngest": "2026-08-24T08:04:35.241Z"
+  "lastIngest": "2026-08-26T08:39:55.677Z"
 }
