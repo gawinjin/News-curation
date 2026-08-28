@@ -1,0 +1,130 @@
+{
+  "slug": "gemini-3-5-transcribe",
+  "date": "2026-08-28",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": [
+    "Gemini 3.5 Transcribe cleans up speech as you dictate",
+    "Gemini's new transcription model turns rough speech into clean text"
+  ],
+  "summary": "Google's Gemini 3.5 Transcribe cleans up speech as it becomes text, supports 85+ languages in APIs, and now powers English dictation in Gemini for macOS.",
+  "tags": ["gemini", "transcription", "voice", "accessibility"],
+  "primary_source": {
+    "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+    "title": "Intelligent transcription with Gemini 3.5 Transcribe",
+    "author": "Diego Melendo Casado and Luke Leonhard, on behalf of the Gemini Audio Team",
+    "publishedAt": "2026-08-26",
+    "key_facts": [
+      "Gemini 3.5 Transcribe turns speech into polished, formatted text while handling background noise, specialized terms, filler words, and mid-sentence corrections.",
+      "Google offers one model for bidirectional live streaming and another for recorded audio with speaker labels and word-level timestamps.",
+      "The model automatically detects more than 85 languages and can recognize supplied custom vocabulary, including specialized terms and unusual spellings.",
+      "Google reports average word error rates of 4.0% for streaming and 2.6% for non-streaming transcription, based on measurements from Artificial Analysis.",
+      "Google says the time required to finalize a transcript improved by 70% compared with Chirp 3, again citing Artificial Analysis measurements.",
+      "Consumer access includes English intelligent dictation in the Gemini app for macOS and Rambler on Android in selected countries and languages; Chrome support is planned.",
+      "The macOS experience places cleaned text at the cursor and can optionally use screen context for tasks beyond dictation.",
+      "Developer access is available through Google AI Studio and the Gemini API, while enterprise access is available through Google's enterprise agent platform."
+    ],
+    "quote_candidates": [
+      {
+        "text": "our most precise speech-to-text model yet, designed for intelligent voice interactions.",
+        "words": 11,
+        "exact": true,
+        "position": "Opening paragraph"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/speak-naturally-gemini-app-mac-os/",
+      "title": "Gemini for macOS adds new natural language capabilities",
+      "key_facts": [
+        "Long-pressing the Fn key lets a user dictate into the active Mac window, and releasing the key inserts cleaned text at the cursor.",
+        "Intelligent dictation is the default; a separate reasoning option can use screen context for editing, summarizing, or image tasks.",
+        "Google says the voice capability is rolling out globally to Gemini for macOS users in English."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://deepmind.google/models/gemini-audio/ai-transcription/",
+      "title": "Gemini Audio - AI transcription",
+      "key_facts": [
+        "The official model page lists support for pre-recorded transcription in more than 85 languages, custom vocabulary, timestamps, and speaker attribution.",
+        "Google AI Studio links directly to both the recorded-audio and live transcription interfaces."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://support.google.com/gemini/answer/13594961?hl=en",
+      "title": "Gemini Apps Privacy Hub",
+      "key_facts": [
+        "Speak to Window captures microphone audio together with the active window so Gemini can understand the request.",
+        "Google says instruction transcripts follow the user's Keep Activity setting, while the audio itself is not stored."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "An Apple silicon Mac running macOS Sequoia 15.0 or later",
+      "A Google Account and access to the Gemini app for macOS",
+      "English speech and a harmless sentence of your own to dictate"
+    ],
+    "steps": [
+      {
+        "instruction": "Open gemini.google/mac, download Gemini for macOS, move it into Applications, open it, and sign in; stop if the app is unavailable for your device, account, or region.",
+        "verify_url": "https://gemini.google/mac/"
+      },
+      {
+        "instruction": "Read the Speak to Window section of the Gemini Apps Privacy Hub: it sends microphone audio and the active window to Gemini, saves transcripts according to Keep Activity, and does not store the audio; stop if that handling is unsuitable for your test.",
+        "verify_url": "https://support.google.com/gemini/answer/13594961?hl=en"
+      },
+      {
+        "instruction": "In Gemini, open Settings > Speak to Window and leave reasoning off so this test only dictates and cleans text; then open a blank TextEdit document and close or deselect private material.",
+        "verify_url": "https://gemini.google/mac/"
+      },
+      {
+        "instruction": "Place the cursor in TextEdit, hold Fn, speak one harmless English sentence with an 'um' or a mid-sentence correction, then release Fn; verify that cleaned, formatted text appears at the cursor.",
+        "verify_url": "https://blog.google/innovation-and-ai/products/gemini-app/speak-naturally-gemini-app-mac-os/"
+      },
+      {
+        "instruction": "Compare the inserted text with what you said and correct names, numbers, or missing words before using it; press Escape to cancel and stop if Speak to Window is missing, transcription fails, or the app unexpectedly requests payment.",
+        "verify_url": "https://gemini.google/mac/"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Intelligent transcription with Gemini 3.5 Transcribe",
+      "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+      "author": "Google DeepMind",
+      "publishedAt": "2026-08-26"
+    },
+    {
+      "title": "Gemini for macOS adds new natural language capabilities",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/speak-naturally-gemini-app-mac-os/",
+      "author": "Google",
+      "publishedAt": "2026-07-29"
+    },
+    {
+      "title": "Gemini Audio - AI transcription",
+      "url": "https://deepmind.google/models/gemini-audio/ai-transcription/",
+      "author": "Google DeepMind"
+    },
+    {
+      "title": "Gemini Apps Privacy Hub",
+      "url": "https://support.google.com/gemini/answer/13594961?hl=en",
+      "author": "Google"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The general-user guide is limited to the documented macOS experience: Apple silicon, macOS 15 or later, English, and feature rollout availability.",
+    "The broader 85-language claim applies to the transcription models and APIs; the macOS Speak to Window rollout is English-only at publication time.",
+    "Speak to Window can send active-window context with microphone audio, so the guide keeps reasoning off and uses a blank non-sensitive document.",
+    "Official pages differ on preview versus general-availability wording for developer endpoints; the article avoids making an access-status claim beyond named surfaces."
+  ],
+  "assembled_at": "2026-08-28T08:07:31.879Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

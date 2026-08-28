@@ -1,5 +1,19 @@
 # Signal Run Log
 
+## 2026-08-28
+
+Shipped:
+
+- `2026-08-28-gemini-3-5-transcribe` - Google's new speech-to-text model becomes a ten-minute macOS dictation test with reasoning disabled, a blank document, privacy checks, and manual verification of names and numbers.
+
+Skipped:
+
+- Gemini Omni 1.1 Flash - a substantial video-control update, but Signal already covered Gemini Omni's consumer and AI Studio workflows in May and June.
+- OpenAI's student critical-thinking study, learning report, district expansion, and Brazil presence - source-backed education or business signals, but they overlap recent Study Mode coverage or lack a stronger distinct product workflow.
+- Claude Code Opus 5 Auto Mode, Qwen3.8-Flash-Next, multi-vector embedding training, and the loveholidays case study - developer-focused or repetitive material without a better general-user guide than today's selected item.
+- DeepMind's double-blind evaluations, Anthropic's hardware standard and scientist support, and OpenAI's Hugging Face incident report - important institutional, research, or security updates without a concrete 5-30 minute action for most readers.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with 11 sources available and none unavailable.
+
 ## 2026-08-26
 
 Shipped:

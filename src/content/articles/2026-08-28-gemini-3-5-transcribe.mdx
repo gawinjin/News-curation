@@ -1,0 +1,59 @@
+---
+title: "Gemini 3.5 Transcribe cleans up speech as you dictate"
+date: 2026-08-28
+category: model-releases
+tags: ["gemini", "transcription", "voice", "accessibility"]
+summary: "Google's Gemini 3.5 Transcribe cleans up speech as it becomes text, supports 85+ languages in APIs, and now powers English dictation in Gemini for macOS."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "An Apple silicon Mac running macOS Sequoia 15.0 or later"
+    - "A Google Account and access to the Gemini app for macOS"
+    - "English speech and a harmless sentence of your own to dictate"
+references:
+  - title: "Intelligent transcription with Gemini 3.5 Transcribe"
+    url: "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/"
+    author: "Google DeepMind"
+    publishedAt: "2026-08-26"
+  - title: "Gemini for macOS adds new natural language capabilities"
+    url: "https://blog.google/innovation-and-ai/products/gemini-app/speak-naturally-gemini-app-mac-os/"
+    author: "Google"
+    publishedAt: "2026-07-29"
+  - title: "Gemini Audio - AI transcription"
+    url: "https://deepmind.google/models/gemini-audio/ai-transcription/"
+    author: "Google DeepMind"
+  - title: "Gemini Apps Privacy Hub"
+    url: "https://support.google.com/gemini/answer/13594961?hl=en"
+    author: "Google"
+draft: false
+---
+
+## TL;DR
+
+Gemini 3.5 Transcribe turns rough speech into edited-looking text, handling background noise, filler words and mid-sentence corrections along the way. Google offers live and recorded-audio versions to developers, while English-speaking Mac users can try its intelligent dictation in Gemini for macOS.
+
+## What's New
+
+Google has released separate Gemini 3.5 Transcribe models for two-way live audio and recordings. The recorded-audio version can distinguish speakers and attach timestamps to individual words. Both are designed to produce formatted copy while coping with noise, unusual terminology and changes made as someone speaks.
+
+Across the models, automatic language detection covers more than 85 languages, and users can provide custom vocabulary for specialist terms or uncommon spellings. Google cites Artificial Analysis measurements showing average word-error rates of 4.0% for live transcription and 2.6% for recorded audio. It also says transcripts are finalized 70% faster than with Chirp 3.
+
+For consumers, the technology now powers English intelligent dictation in Gemini for macOS. Holding the Fn key while speaking and releasing it places cleaned text at the current cursor. A separate option can use the visible screen for broader editing or summarizing tasks; related Android access is limited to selected countries and languages, with Chrome support planned.
+
+## Why It Matters
+
+For a Mac user drafting an email, note or document, this can remove some of the cleanup that normally follows voice typing. The result appears where they are already writing, without a separate recording-and-copying step. Names, numbers and missing words still deserve a quick check before the text is used.
+
+The easiest consumer test is narrow for now: eligible Mac hardware, English speech and access to the Gemini app. Because Speak to Window can send microphone audio together with the active window, a blank document and the dictation-only setting make a sensible first trial before anyone considers sharing visible context.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["An Apple silicon Mac running macOS Sequoia 15.0 or later","A Google Account and access to the Gemini app for macOS","English speech and a harmless sentence of your own to dictate"]}>
+
+1. Open gemini.google/mac, download Gemini for macOS, move it into Applications, open it, and sign in; stop if the app is unavailable for your device, account, or region.
+2. Read the Speak to Window section of the Gemini Apps Privacy Hub: it sends microphone audio and the active window to Gemini, saves transcripts according to Keep Activity, and does not store the audio; stop if that handling is unsuitable for your test.
+3. In Gemini, open Settings > Speak to Window and leave reasoning off so this test only dictates and cleans text; then open a blank TextEdit document and close or deselect private material.
+4. Place the cursor in TextEdit, hold Fn, speak one harmless English sentence with an 'um' or a mid-sentence correction, then release Fn; verify that cleaned, formatted text appears at the cursor.
+5. Compare the inserted text with what you said and correct names, numbers, or missing words before using it; press Escape to cancel and stop if Speak to Window is missing, transcription fails, or the app unexpectedly requests payment.
+
+</PracticalGuide>
