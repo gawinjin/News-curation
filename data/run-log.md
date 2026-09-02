@@ -1,5 +1,19 @@
 # Signal Run Log
 
+## 2026-09-02
+
+Shipped:
+
+- `2026-09-02-ai-geojson-map-verification` - Simon Willison's AI-built browser viewer becomes a 15-20 minute workflow for turning a public boundary file into a map, checking it against an official government source, and exporting a PNG only after the outlines match.
+
+Skipped:
+
+- Google DeepMind's agentic video understanding - high-signal model work, but the feature is currently available only through API code or an enterprise platform; the consumer Gemini app rollout is still described as coming soon.
+- Claude Fable 5.1 and Simon Willison's ChatGPT Work overview - current and useful, but Signal already has substantial Fable model-testing and ChatGPT Work coverage, so another article would repeat the same reader actions.
+- OpenAI healthcare connectors, AI-native company workflows, law-firm governance, and Anthropic enterprise safeguards - source-backed organizational news without a stronger direct workflow for most readers.
+- OpenAI Astra safeguards, California youth-safety support, Anthropic alignment changes, BenchMIRT, WebGPU kernels, and the remaining additions - policy, research, security, or developer material without a distinct 5-30 minute general-user test for today's smallest set.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with 11 sources available and none unavailable.
+
 ## 2026-08-28
 
 Shipped:

@@ -1,0 +1,59 @@
+---
+title: "Turn an AI-made boundary file into a checked map"
+date: 2026-09-02
+category: guides
+tags: ["chatgpt", "maps", "geojson", "verification"]
+summary: "A new browser tool turns GeoJSON from ChatGPT Work into a styled map and PNG. The useful habit is checking every AI-made boundary against an official source."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15-20 min"
+  prerequisites:
+    - "A paid ChatGPT plan with ChatGPT Work available"
+    - "A modern desktop browser and permission to download a GeoJSON file and PNG"
+    - "Only public sample data - no private addresses, customer locations, or confidential files"
+references:
+  - title: "GeoJSON Map Viewer"
+    url: "https://simonwillison.net/2026/Sep/1/geojson/"
+    author: "Simon Willison"
+    publishedAt: "2026-09-01"
+  - title: "GeoJSON Map Viewer tool"
+    url: "https://tools.simonwillison.net/geojson"
+    author: "Simon Willison"
+    publishedAt: "2026-09-01"
+  - title: "Using cloud browser in ChatGPT"
+    url: "https://help.openai.com/en/articles/20001280-using-cloud-browser-in-chatgpt"
+    author: "OpenAI"
+  - title: "Granada Community Services District"
+    url: "https://www.smcgov.org/lafco/granada-community-services-district"
+    author: "County of San Mateo"
+draft: false
+---
+
+## TL;DR
+
+Simon Willison’s new browser viewer turns pasted GeoJSON into a styled map and downloadable PNG. It makes AI-assembled boundary files easy to inspect, but not automatically trustworthy: compare every outline with an official government map before using or sharing it.
+
+## What's New
+
+Willison wanted a quick way to display local political-boundary files and save the result as an image. After he asked GPT-5.6-Sol to suggest existing tools, it built a viewer instead; he then refined it with Claude Code for web and Fable 5.1.
+
+The finished browser tool accepts pasted GeoJSON—a common format for map shapes—or loads it from a compatible public URL. You can layer several shapes, adjust their colours, opacity, and stacking order, then export the current view as a PNG at selected dimensions and resolution.
+
+Willison also used ChatGPT Work to assemble boundary polygons from public government data using plain-language requests. Pasted GeoJSON stays in the browser, according to the viewer, while shareable page links can encode source URLs, styling, map position, and export settings.
+
+## Why It Matters
+
+This lowers the effort needed to turn a public boundary file into a map for a report, presentation, or local project. It also makes comparison easier: adding transparency and viewing the outline against familiar places can reveal obvious problems before export.
+
+But a polished map can still contain the wrong boundary. Treat an AI-made GeoJSON file as a draft, check its cited source, and compare its edges with an official government map before relying on it or passing it on.
+
+<PracticalGuide timeToTry="15-20 min" prerequisites={["A paid ChatGPT plan with ChatGPT Work available","A modern desktop browser and permission to download a GeoJSON file and PNG","Only public sample data - no private addresses, customer locations, or confidential files"]}>
+
+1. Open https://chatgpt.com/, start a new ChatGPT Work task, and ask it to create a GeoJSON FeatureCollection for the exact Granada Community Services District boundary near Half Moon Bay, using only official government sources, WGS84 longitude-latitude coordinates, source URLs, and a retrieval date; tell it not to request private address data. Download the result as granada-gcsd.geojson, and stop if Work cannot cite an official source or produce valid GeoJSON.
+2. Open the file in a text editor. Confirm it begins with a GeoJSON object such as FeatureCollection and that the coordinates are near longitude -122 and latitude 37; compare its structure with the public example at https://gist.github.com/simonw/27d243c9d1cb5d9047fff7360dd49d3c, then stop if the coordinates point elsewhere, include personal information, or cannot be traced to a source.
+3. Open https://tools.simonwillison.net/geojson, paste the file into Shape 1, choose a fill colour and about 50% opacity, and click Render map; check that a shaded coastal district appears around the communities named on the official county page.
+4. Compare the rendered coastline and district edges with the official map at https://www.smcgov.org/lafco/granada-community-services-district. Stop and do not publish or rely on the AI-made boundary if the outlines materially disagree; instead ask Work to regenerate from the cited government layer.
+5. Return to https://tools.simonwillison.net/geojson. After the boundary matches, adjust the map position, PNG size, and resolution, click Export PNG, inspect the preview for clipped edges or unreadable labels, and click Download PNG.
+
+</PracticalGuide>

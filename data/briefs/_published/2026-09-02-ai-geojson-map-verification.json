@@ -1,0 +1,135 @@
+{
+  "slug": "ai-geojson-map-verification",
+  "date": "2026-09-02",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "Turn an AI-made boundary file into a checked map",
+    "Map public boundaries with AI - then verify the outline"
+  ],
+  "summary": "A new browser tool turns GeoJSON from ChatGPT Work into a styled map and PNG. The useful habit is checking every AI-made boundary against an official source.",
+  "tags": ["chatgpt", "maps", "geojson", "verification"],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Sep/1/geojson/",
+    "title": "Tool: GeoJSON Map Viewer",
+    "author": "Simon Willison",
+    "publishedAt": "2026-09-01",
+    "key_facts": [
+      "Simon Willison needed a quick way to display local political-boundary GeoJSON files on a map and export the result as a PNG.",
+      "After he asked GPT-5.6-Sol to suggest existing tools, the model instead built a viewer that he refined with Claude Code for web and Fable 5.1.",
+      "Willison also used ChatGPT Work to assemble boundary polygons from public government data in response to plain-language requests.",
+      "The finished browser viewer accepts pasted GeoJSON or loads it from a compatible public URL.",
+      "Users can overlay multiple shapes, change each fill colour and opacity, and arrange which shape appears on top.",
+      "The viewer exports the current map view as a PNG with selectable dimensions and resolution.",
+      "The page says pasted GeoJSON stays in the browser, while shared page URLs can encode source URLs, styling, map position, and export settings.",
+      "An AI-generated boundary still needs comparison with an authoritative map or data layer before anyone relies on or shares it."
+    ],
+    "quote_candidates": [
+      {
+        "text": "I asked GPT-5.6-Sol for suggestions of tools and it proactively built one.",
+        "words": 12,
+        "exact": true,
+        "position": "First paragraph"
+      },
+      {
+        "text": "Your GeoJSON stays in this browser.",
+        "words": 6,
+        "exact": true,
+        "position": "GeoJSON Map Viewer header"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://tools.simonwillison.net/geojson",
+      "title": "GeoJSON Map Viewer",
+      "key_facts": [
+        "The live tool accepts GeoJSON Geometry, Feature, and FeatureCollection data, supports multiple styled overlays, and can export a PNG.",
+        "Its interface says pasted GeoJSON stays in the browser."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/20001280-using-cloud-browser-in-chatgpt",
+      "title": "Using cloud browser in ChatGPT",
+      "key_facts": [
+        "OpenAI says ChatGPT Work's cloud browser is available on paid ChatGPT plans in supported regions, subject to rollout and workspace permissions.",
+        "OpenAI tells users to check a completed task and its sources before relying on the result."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://www.smcgov.org/lafco/granada-community-services-district",
+      "title": "Granada Community Services District",
+      "key_facts": [
+        "San Mateo County LAFCo publishes an official district profile and map for the Granada Community Services District.",
+        "The county page identifies the communities served, giving readers concrete landmarks for an independent map check."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15-20 min",
+    "prerequisites": [
+      "A paid ChatGPT plan with ChatGPT Work available",
+      "A modern desktop browser and permission to download a GeoJSON file and PNG",
+      "Only public sample data - no private addresses, customer locations, or confidential files"
+    ],
+    "steps": [
+      {
+        "instruction": "Start a new ChatGPT Work task and ask it to create a GeoJSON FeatureCollection for the exact Granada Community Services District boundary near Half Moon Bay, using only official government sources, WGS84 longitude-latitude coordinates, source URLs, and a retrieval date; tell it not to request private address data. Download the result as granada-gcsd.geojson, and stop if Work cannot cite an official source or produce valid GeoJSON.",
+        "verify_url": "https://help.openai.com/en/articles/20001280-using-cloud-browser-in-chatgpt"
+      },
+      {
+        "instruction": "Open the file in a text editor. Confirm it begins with a GeoJSON object such as FeatureCollection and that the coordinates are near longitude -122 and latitude 37; compare its structure with Willison's public Granada example, then stop if the coordinates point elsewhere, include personal information, or cannot be traced to a source.",
+        "verify_url": "https://gist.github.com/simonw/27d243c9d1cb5d9047fff7360dd49d3c"
+      },
+      {
+        "instruction": "Open the GeoJSON Map Viewer, paste the file into Shape 1, choose a fill colour and about 50% opacity, and click Render map; check that a shaded coastal district appears around the communities named on the official county page.",
+        "verify_url": "https://tools.simonwillison.net/geojson"
+      },
+      {
+        "instruction": "Compare the rendered coastline and district edges with San Mateo County LAFCo's official Granada Community Services District map. Stop and do not publish or rely on the AI-made boundary if the outlines materially disagree; instead ask Work to regenerate from the cited government layer.",
+        "verify_url": "https://www.smcgov.org/lafco/granada-community-services-district"
+      },
+      {
+        "instruction": "After the boundary matches, adjust the map position, PNG size, and resolution, click Export PNG, inspect the preview for clipped edges or unreadable labels, and click Download PNG.",
+        "verify_url": "https://tools.simonwillison.net/geojson"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "GeoJSON Map Viewer",
+      "url": "https://simonwillison.net/2026/Sep/1/geojson/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-09-01"
+    },
+    {
+      "title": "GeoJSON Map Viewer tool",
+      "url": "https://tools.simonwillison.net/geojson",
+      "author": "Simon Willison",
+      "publishedAt": "2026-09-01"
+    },
+    {
+      "title": "Using cloud browser in ChatGPT",
+      "url": "https://help.openai.com/en/articles/20001280-using-cloud-browser-in-chatgpt",
+      "author": "OpenAI"
+    },
+    {
+      "title": "Granada Community Services District",
+      "url": "https://www.smcgov.org/lafco/granada-community-services-district",
+      "author": "County of San Mateo"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "ChatGPT Work availability depends on a paid plan, supported region, rollout, and workspace permissions.",
+    "The article treats AI-generated boundary data as a draft and requires comparison with the county's official map before use.",
+    "The guide uses a public district example and explicitly excludes private addresses, customer locations, and confidential data.",
+    "The viewer keeps pasted GeoJSON in the browser, but public source URLs and shareable page URLs can still expose information a user places in them."
+  ],
+  "assembled_at": "2026-09-02T02:00:00.000Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
