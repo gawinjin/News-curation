@@ -2,6 +2,15 @@
 
 ## 2026-09-02
 
+Rerun:
+
+- No additional high-signal candidates - skipping. The refreshed inbox added two normalized URLs and removed today's now-covered GeoJSON item.
+- Simon Willison's Rick Brewster quote is a useful warning about reviewing large AI-generated codebases, but it offers no safe, distinct 5-30 minute workflow for general readers.
+- `datasette-mcp 0.2` is a developer plugin update and overlaps Signal's existing Datasette, MCP, and agent-verification coverage.
+- Social candidates remained unavailable: all 42 configured handles were unreachable through Nitter; RSS completed with 11 sources available and none unavailable.
+
+No additional high-signal candidates today - skipping.
+
 Shipped:
 
 - `2026-09-02-ai-geojson-map-verification` - Simon Willison's AI-built browser viewer becomes a 15-20 minute workflow for turning a public boundary file into a map, checking it against an official government source, and exporting a PNG only after the outlines match.

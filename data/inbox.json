@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T03:21:45.397Z",
+  "generatedAt": "2026-09-02T08:04:06.361Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,6 +47,16 @@
   "items": [
     {
       "kind": "rss",
+      "title": "Quoting Rick Brewster",
+      "url": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-02T05:50:57.000Z",
+      "summary": "<blockquote cite=\"https://forums.paint.net/topic/134563-🍷-extremely-experimental-winelinux-support-how-to-get-started/\"><p>Direct2D has always been the biggest hurdle for Paint.NET on WINE, and it's clear that it will never be completed enough for Paint.NET's use. And I can't ju"
+    },
+    {
+      "kind": "rss",
       "title": "Claude Fable 5.1 made me a really nice animated pelican",
       "url": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/",
       "source": "Simon Willison",
@@ -77,16 +87,6 @@
     },
     {
       "kind": "rss",
-      "title": "GeoJSON Map Viewer",
-      "url": "https://simonwillison.net/2026/Sep/1/geojson/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-01T18:05:45.000Z",
-      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/geojson\">GeoJSON Map Viewer</a></p> <p>I was helping Natalie gather some maps of local political boundaries (for the <a href=\"https://granada.ca.gov\">Granada Community Services District</a> and the <a href=\"https:"
-    },
-    {
-      "kind": "rss",
       "title": "Introducing agentic video understanding with Gemini",
       "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
       "source": "Google DeepMind",
@@ -114,6 +114,16 @@
       "category": "model-releases",
       "publishedAt": "2026-09-01T17:00:00.000Z",
       "summary": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply."
+    },
+    {
+      "kind": "rss",
+      "title": "datasette-mcp 0.2",
+      "url": "https://simonwillison.net/2026/Sep/1/datasette-mcp/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-01T15:30:12.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-mcp/releases/tag/0.2\">datasette-mcp 0.2</a></p> <blockquote> <ul> <li><code>\"rows\"</code> from <code>execute_sql</code> is now an array of objects. Previously it was an array of arrays. This should help "
     },
     {
       "kind": "rss",
