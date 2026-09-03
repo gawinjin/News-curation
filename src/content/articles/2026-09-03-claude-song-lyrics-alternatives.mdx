@@ -1,0 +1,59 @@
+---
+title: "Why Claude refuses song lyrics — and what to ask instead"
+date: 2026-09-03
+category: insights
+tags: ["claude", "copyright", "music", "prompting", "how-to"]
+summary: "Claude's published consumer-app prompt now spells out strict limits on reproducing song lyrics. A better prompt can still produce a useful listening guide without copying the song."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A Claude.ai account and a web browser"
+    - "The exact song title and artist name"
+    - "Public song information only — do not paste private listening history, account details, or copyrighted lyrics"
+references:
+  - title: "Claude's new system prompt really doesn't want to reproduce song lyrics"
+    url: "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/"
+    author: "Simon Willison"
+    publishedAt: "2026-09-02"
+  - title: "System prompts"
+    url: "https://platform.claude.com/docs/en/release-notes/system-prompts/overview"
+    author: "Anthropic"
+  - title: "Claude Fable 5.1 system prompt"
+    url: "https://platform.claude.com/docs/en/release-notes/system-prompts/claude-fable-5-1"
+    author: "Anthropic"
+    publishedAt: "2026-09-01"
+  - title: "Why am I receiving an 'Output blocked by content filtering policy' error?"
+    url: "https://support.claude.com/en/articles/9205721-why-am-i-receiving-an-output-blocked-by-content-filtering-policy-error"
+    author: "Anthropic"
+draft: false
+---
+
+## TL;DR
+
+Claude's published Fable 5.1 system prompt now tells the consumer app not to reproduce song lyrics, poems, or passages — even when requested in fragments. The useful alternative is analysis: ask Claude for credits, context, broad themes, and a listening guide that describes what to notice without copying the work.
+
+## What's New
+
+Anthropic now publishes its Claude consumer-app system prompts through an index with a separate page for each model. Simon Willison notes that adding `.md` to a documentation URL returns Markdown, which makes different prompt versions easier to compare.
+
+The September 1 prompt for Claude Fable 5.1 explicitly tells the model not to reproduce lyrics, poems, or passages from books and articles. That includes requests split across multiple turns. After declining once, Claude is instructed to keep declining narrower or reworded attempts in the same conversation and offer description or analysis instead.
+
+Lyrics and poems first published before 1929 are allowed when Claude is confident about the date; it should decline when unsure. These published core-prompt changes apply to Claude.ai and Claude's iOS and Android apps, but Anthropic says they do not apply to the Claude API.
+
+## Why It Matters
+
+If Claude blocks a lyric request, asking for the same text in smaller pieces is unlikely to help. A more productive approach is to ask for public credits, release context, broad themes, musical style, or features to listen for — useful information that does not reproduce the song.
+
+That distinction also makes answers easier to check. You can ask Claude to separate factual claims from interpretation, flag uncertainty, and point you toward official artist, label, or credit sources for confirmation.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A Claude.ai account and a web browser","The exact song title and artist name","Public song information only — do not paste private listening history, account details, or copyrighted lyrics"]}>
+
+1. Open https://claude.ai, sign in, and select New chat. Use a generally available Claude model; Anthropic says its published core prompts apply to Claude.ai and its mobile apps.
+2. Replace the brackets and send: 'For [song title] by [artist], do not quote, reproduce, or closely paraphrase any lyrics. Give me the release year, credited writers, release context, broad themes, musical style, and three things to listen for. Label uncertain claims.' Check that the answer contains useful information without lyric lines.
+3. Send: 'Turn that into a spoiler-free listening guide with five questions I can consider while the song plays. Focus on instrumentation, vocal delivery, structure, mood, and cultural context; include no lyrics.' Confirm that you receive five concrete listening questions and no reproduced lyrics.
+4. Ask: 'Separate the factual claims from your interpretation, and tell me which facts I should verify using the artist, label, or official credits.' Check that Claude distinguishes facts from interpretation and flags uncertain metadata.
+5. Stop if Claude declines, warns about lyrics, or reproduces recognizable lyric lines. Do not request the song line by line, paste fragments incrementally, or reword the request to bypass a refusal; continue only with high-level description, analysis, credits, or listening questions.
+
+</PracticalGuide>

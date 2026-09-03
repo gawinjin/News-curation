@@ -1,0 +1,117 @@
+{
+  "slug": "claude-song-lyrics-alternatives",
+  "date": "2026-09-03",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": [
+    "Why Claude refuses song lyrics — and what to ask instead",
+    "Claude draws a clearer line around song lyrics"
+  ],
+  "summary": "Claude's published consumer-app prompt now spells out strict limits on reproducing song lyrics. A better prompt can still produce a useful listening guide without copying the song.",
+  "tags": ["claude", "copyright", "music", "prompting", "how-to"],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/",
+    "title": "Claude's new system prompt really doesn't want to reproduce song lyrics",
+    "author": "Simon Willison",
+    "publishedAt": "2026-09-02",
+    "key_facts": [
+      "Anthropic now publishes separate core-system-prompt pages for Claude consumer models, including dated history where available.",
+      "The September 1 Claude Fable 5.1 prompt explicitly says not to reproduce song lyrics, poems, or passages from books and articles, including fragments requested across multiple turns.",
+      "After declining a reproduction request, Claude is instructed to keep declining narrower or reworded attempts in that conversation and offer description or analysis instead.",
+      "The prompt allows lyrics and poems first published before 1929 when Claude is confident about the date, and tells it to decline when uncertain.",
+      "The published prompt applies to Claude.ai and Claude's iOS and Android apps; Anthropic says these updates do not apply to the Claude API.",
+      "Simon Willison notes that Anthropic's documentation pages can be retrieved as Markdown by adding .md to the URL, making prompt versions easier to compare.",
+      "Anthropic's help center says its filtering is intended to prevent replication of existing material and directs Claude toward new content and ideas."
+    ],
+    "quote_candidates": [
+      {
+        "text": "Claude does not reproduce song lyrics, poems, or passages from books and articles, in whole or in part",
+        "words": 18,
+        "exact": true,
+        "position": "Quoted Fable 5.1 prompt under Don't reproduce song lyrics"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts/overview",
+      "title": "System prompts",
+      "key_facts": ["Anthropic says these core prompts govern Claude.ai and Claude's iOS and Android apps, but not the Claude API."],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts/claude-fable-5-1",
+      "title": "Claude Fable 5.1 system prompt",
+      "key_facts": ["The official prompt documents the reproduction limits, persistent refusal behavior, pre-1929 exception, and description-or-analysis alternative."],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://support.claude.com/en/articles/9205721-why-am-i-receiving-an-output-blocked-by-content-filtering-policy-error",
+      "title": "Why am I receiving an 'Output blocked by content filtering policy' error?",
+      "key_facts": ["Anthropic explains that filtering aims to prevent replication of existing material and favors new content and ideas."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "A Claude.ai account and a web browser",
+      "The exact song title and artist name",
+      "Public song information only — do not paste private listening history, account details, or copyrighted lyrics"
+    ],
+    "steps": [
+      {
+        "instruction": "Open https://claude.ai, sign in, and select New chat. Use a generally available Claude model; Anthropic says its published core prompts apply to Claude.ai and its mobile apps.",
+        "verify_url": "https://platform.claude.com/docs/en/release-notes/system-prompts/overview"
+      },
+      {
+        "instruction": "Replace the brackets and send: 'For [song title] by [artist], do not quote, reproduce, or closely paraphrase any lyrics. Give me the release year, credited writers, release context, broad themes, musical style, and three things to listen for. Label uncertain claims.' Check that the answer contains useful information without lyric lines.",
+        "verify_url": "https://claude.ai/"
+      },
+      {
+        "instruction": "Send: 'Turn that into a spoiler-free listening guide with five questions I can consider while the song plays. Focus on instrumentation, vocal delivery, structure, mood, and cultural context; include no lyrics.' Confirm that you receive five concrete listening questions and no reproduced lyrics.",
+        "verify_url": "https://platform.claude.com/docs/en/release-notes/system-prompts/claude-fable-5-1"
+      },
+      {
+        "instruction": "Ask: 'Separate the factual claims from your interpretation, and tell me which facts I should verify using the artist, label, or official credits.' Check that Claude distinguishes facts from interpretation and flags uncertain metadata.",
+        "verify_url": "https://platform.claude.com/docs/en/release-notes/system-prompts/claude-fable-5-1"
+      },
+      {
+        "instruction": "Stop if Claude declines, warns about lyrics, or reproduces recognizable lyric lines. Do not request the song line by line, paste fragments incrementally, or reword the request to bypass a refusal; continue only with high-level description, analysis, credits, or listening questions.",
+        "verify_url": "https://support.claude.com/en/articles/9205721-why-am-i-receiving-an-output-blocked-by-content-filtering-policy-error"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Claude's new system prompt really doesn't want to reproduce song lyrics",
+      "url": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-09-02"
+    },
+    {
+      "title": "System prompts",
+      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts/overview",
+      "author": "Anthropic"
+    },
+    {
+      "title": "Claude Fable 5.1 system prompt",
+      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts/claude-fable-5-1",
+      "author": "Anthropic",
+      "publishedAt": "2026-09-01"
+    },
+    {
+      "title": "Why am I receiving an 'Output blocked by content filtering policy' error?",
+      "url": "https://support.claude.com/en/articles/9205721-why-am-i-receiving-an-output-blocked-by-content-filtering-policy-error",
+      "author": "Anthropic"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The published core prompt applies to Claude.ai and Claude mobile apps, not the API; it does not document every product-specific prompt layer.",
+    "Do not frame repeated or fragmented lyric requests as a workaround; the guide uses description, analysis, and public credits instead."
+  ],
+  "assembled_at": "2026-09-03T16:18:00+07:00",
+  "assembled_by": "Signal Orchestrator v1"
+}

@@ -320,7 +320,11 @@
     "https://tools.simonwillison.net/geojson",
     "https://help.openai.com/en/articles/20001280-using-cloud-browser-in-chatgpt",
     "https://www.smcgov.org/lafco/granada-community-services-district",
-    "https://gist.github.com/simonw/27d243c9d1cb5d9047fff7360dd49d3c"
+    "https://gist.github.com/simonw/27d243c9d1cb5d9047fff7360dd49d3c",
+    "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/",
+    "https://platform.claude.com/docs/en/release-notes/system-prompts/overview",
+    "https://platform.claude.com/docs/en/release-notes/system-prompts/claude-fable-5-1",
+    "https://support.claude.com/en/articles/9205721-why-am-i-receiving-an-output-blocked-by-content-filtering-policy-error"
   ],
-  "lastIngest": "2026-09-02T08:04:06.361Z"
+  "lastIngest": "2026-09-03T09:09:31.244Z"
 }

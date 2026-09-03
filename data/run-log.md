@@ -1,5 +1,18 @@
 # Signal Run Log
 
+## 2026-09-03
+
+Shipped:
+
+- `2026-09-03-claude-song-lyrics-alternatives` - Anthropic's published Fable 5.1 consumer-app prompt becomes a ten-minute way to replace blocked lyric-reproduction requests with public credits, broad themes, and a source-checkable listening guide.
+
+Skipped:
+
+- Gemini 3.8 Flash and Flash Cyber - the general model is high-signal, but the practical test repeats Signal's recent 3.6 and 3.7 Flash coverage, while the consumer app exposes only a generic Flash label and the cyber variant remains restricted to vetted defenders.
+- Hugging Face's watercolor coding-model training, `llm-gemini 0.34`, IBM/Confluent time-series work, and DeepMind's proactive cyber defense - useful specialist or organizational material without a stronger distinct 5-30 minute workflow for general readers.
+- OpenAI's ATV Big Air Tour case study - a concrete company result, but it repeats familiar marketing and site-building workflows rather than introducing a new broadly available capability.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with 11 sources available and none unavailable.
+
 ## 2026-09-02
 
 Rerun:
