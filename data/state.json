@@ -324,7 +324,11 @@
     "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/",
     "https://platform.claude.com/docs/en/release-notes/system-prompts/overview",
     "https://platform.claude.com/docs/en/release-notes/system-prompts/claude-fable-5-1",
-    "https://support.claude.com/en/articles/9205721-why-am-i-receiving-an-output-blocked-by-content-filtering-policy-error"
+    "https://support.claude.com/en/articles/9205721-why-am-i-receiving-an-output-blocked-by-content-filtering-policy-error",
+    "https://openai.com/index/gpt-6-astra/",
+    "https://help.openai.com/en/articles/20001354-gpt-56-and-gpt-6-pro-in-chatgpt",
+    "https://openai.com/index/safety-overview-gpt-6-astra/",
+    "https://simonwillison.net/2026/Sep/3/gpt6-astra/"
   ],
-  "lastIngest": "2026-09-03T09:09:31.244Z"
+  "lastIngest": "2026-09-04T08:08:59.440Z"
 }

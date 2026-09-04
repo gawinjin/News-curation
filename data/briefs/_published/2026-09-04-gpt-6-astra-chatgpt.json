@@ -1,0 +1,119 @@
+{
+  "slug": "gpt-6-astra-chatgpt",
+  "date": "2026-09-04",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": [
+    "GPT-6 Astra reaches ChatGPT with a cautious rollout"
+  ],
+  "summary": "OpenAI is rolling GPT-6 Astra into paid products as GPT-6 Pro in standard ChatGPT, pairing stronger computer use with tighter safety checks and limited access.",
+  "tags": ["openai", "gpt-6", "chatgpt", "model-comparison"],
+  "primary_source": {
+    "url": "https://openai.com/index/gpt-6-astra/",
+    "title": "GPT-6 Astra: A new generation of intelligence",
+    "author": "OpenAI",
+    "publishedAt": "2026-09-03",
+    "key_facts": [
+      "OpenAI is rolling GPT-6 Astra out first to a limited group of organizations, followed over several days by paid ChatGPT plans and its API and cloud partners.",
+      "In standard ChatGPT, the model appears as GPT-6 Pro for eligible Pro, Business, and Enterprise accounts; the current help page says it is not included with Plus in Chat.",
+      "OpenAI positions Astra for multistep computer and browser tasks, professional documents, data analysis, web work, software testing, and on-screen troubleshooting.",
+      "The company reports that Astra completed its OSWorld 2.0 setup more accurately and in less simulated time than GPT-5.6 Sol, but production ChatGPT can differ from the research environment used for evaluations.",
+      "OpenAI classifies Astra at its Critical cybersecurity threshold and says stronger monitoring may pause or stop even legitimate work for review.",
+      "OpenAI also reports a tradeoff: Astra was harder to monitor through its written reasoning than GPT-5.6 Sol during adversarial evaluations."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://help.openai.com/en/articles/20001354-gpt-56-and-gpt-6-pro-in-chatgpt",
+      "title": "GPT-5.6 and GPT-6 Pro in ChatGPT",
+      "key_facts": [
+        "OpenAI's current help page says GPT-6 Astra appears as GPT-6 Pro in standard ChatGPT for Pro, Business, and Enterprise accounts as rollout reaches them.",
+        "The help page says Plus does not include GPT-6 Pro in standard Chat, and managed-workspace availability depends on administrator settings.",
+        "GPT-6 Pro has plan-specific usage limits rather than unlimited use."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://openai.com/index/safety-overview-gpt-6-astra/",
+      "title": "Safety overview: GPT-6 Astra",
+      "key_facts": [
+        "OpenAI says Astra is its first broadly deployed model at the Critical cybersecurity threshold.",
+        "OpenAI reports better boundary-following than GPT-5.6 Sol while acknowledging weaker monitoring of written reasoning in adversarial tests."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://simonwillison.net/2026/Sep/3/gpt6-astra/",
+      "title": "GPT-6 Astra",
+      "key_facts": [
+        "Simon Willison notes that prominent benchmark results depend on harness choices and cost, and that independent comparisons do not show Astra leading every measure.",
+        "Willison had not yet tested the model when he published his launch-day note."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": [
+      "A ChatGPT Pro, Business, or Enterprise account",
+      "A browser and access to chatgpt.com"
+    ],
+    "steps": [
+      {
+        "instruction": "Sign in at chatgpt.com, open the model picker, choose Pro, and look for GPT-6 Pro, the standard-Chat label for GPT-6 Astra. If it is absent, stop: rollout is gradual, and managed-workspace users may need an administrator to enable access.",
+        "verify_url": "https://help.openai.com/en/articles/20001354-gpt-56-and-gpt-6-pro-in-chatgpt"
+      },
+      {
+        "instruction": "Use invented, non-sensitive information. If you do not want this test used to improve models, open Profile > Settings > Data Controls and turn off Improve the model for everyone before starting.",
+        "verify_url": "https://help.openai.com/en/articles/7730893-chatgpt-temporary-chat-faq"
+      },
+      {
+        "instruction": "Start a new GPT-6 Pro chat and ask: I have eggs, rice, canned beans, frozen spinach, and a $15 budget. Make a three-day dinner plan for two people, list extra groceries, show the estimated total, and clearly label assumptions. Check the model label, then score whether it followed every constraint and exposed its assumptions.",
+        "verify_url": "https://openai.com/index/gpt-6-astra/"
+      },
+      {
+        "instruction": "Open a separate chat with your usual available model, paste the identical prompt, and compare constraint-following, unsupported assumptions, clarity, and practical usefulness. Do not change the prompt between runs.",
+        "verify_url": "https://help.openai.com/en/articles/20001354-gpt-56-and-gpt-6-pro-in-chatgpt"
+      },
+      {
+        "instruction": "Treat both answers as drafts. Verify prices and any factual claim yourself before acting, then delete the test chats if you do not want to keep them. Do not use this first comparison for medical, legal, financial, or other high-stakes decisions.",
+        "verify_url": "https://help.openai.com/en/articles/7730893-chatgpt-temporary-chat-faq"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "GPT-6 Astra: A new generation of intelligence",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "author": "OpenAI",
+      "publishedAt": "2026-09-03"
+    },
+    {
+      "title": "GPT-5.6 and GPT-6 Pro in ChatGPT",
+      "url": "https://help.openai.com/en/articles/20001354-gpt-56-and-gpt-6-pro-in-chatgpt",
+      "author": "OpenAI"
+    },
+    {
+      "title": "Safety overview: GPT-6 Astra",
+      "url": "https://openai.com/index/safety-overview-gpt-6-astra/",
+      "author": "OpenAI",
+      "publishedAt": "2026-09-03"
+    },
+    {
+      "title": "GPT-6 Astra",
+      "url": "https://simonwillison.net/2026/Sep/3/gpt6-astra/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-09-03"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "OpenAI's launch page broadly mentions Plus, but its current ChatGPT help page says GPT-6 Pro is not included with Plus in standard Chat; the guide follows the product-specific help page.",
+    "Provider-reported benchmark results depend on evaluation harnesses and do not prove quality on a reader's own task.",
+    "The test uses invented data, preserves the exact same prompt across models, and requires manual verification before action."
+  ],
+  "assembled_at": "2026-09-04T08:26:35.516Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

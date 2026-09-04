@@ -1,5 +1,19 @@
 # Signal Run Log
 
+## 2026-09-04
+
+Shipped:
+
+- `2026-09-04-gpt-6-astra-chatgpt` - OpenAI's broad Astra rollout becomes a 15-minute, same-prompt comparison that checks the actual GPT-6 Pro label, keeps test data fictional, and requires manual verification before action.
+
+Skipped:
+
+- WeatherNext 3 - a meaningful model update, but Signal's August 7 WeatherNext article already teaches the same public Weather Lab comparison and official-alert stop boundary.
+- Funes, NeoMME, structured-output fine-tuning, and the remaining Hugging Face additions - developer or specialist workflows, with Funes also repeating Signal's existing coding-agent memory coverage.
+- OpenAI Daybreak and the Legora and Playco Astra case studies - source-backed cyber-access or company evidence that adds context to Astra but lacks a stronger standalone general-user workflow.
+- Simon Willison's sponsors-only newsletter notice - not a public article readers can evaluate, and its underlying topics are handled individually.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS completed with 11 sources available and none unavailable.
+
 ## 2026-09-03
 
 Shipped:

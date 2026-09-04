@@ -1,0 +1,59 @@
+---
+title: "GPT-6 Astra reaches ChatGPT with a cautious rollout"
+date: 2026-09-04
+category: model-releases
+tags: ["openai", "gpt-6", "chatgpt", "model-comparison"]
+summary: "OpenAI is rolling GPT-6 Astra into paid products as GPT-6 Pro in standard ChatGPT, pairing stronger computer use with tighter safety checks and limited access."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A ChatGPT Pro, Business, or Enterprise account"
+    - "A browser and access to chatgpt.com"
+references:
+  - title: "GPT-6 Astra: A new generation of intelligence"
+    url: "https://openai.com/index/gpt-6-astra/"
+    author: "OpenAI"
+    publishedAt: "2026-09-03"
+  - title: "GPT-5.6 and GPT-6 Pro in ChatGPT"
+    url: "https://help.openai.com/en/articles/20001354-gpt-56-and-gpt-6-pro-in-chatgpt"
+    author: "OpenAI"
+  - title: "Safety overview: GPT-6 Astra"
+    url: "https://openai.com/index/safety-overview-gpt-6-astra/"
+    author: "OpenAI"
+    publishedAt: "2026-09-03"
+  - title: "GPT-6 Astra"
+    url: "https://simonwillison.net/2026/Sep/3/gpt6-astra/"
+    author: "Simon Willison"
+    publishedAt: "2026-09-03"
+draft: false
+---
+
+## TL;DR
+
+OpenAI is gradually bringing GPT-6 Astra to ChatGPT as GPT-6 Pro for eligible Pro, Business, and Enterprise accounts. It is aimed at complex computer, browser, document, and data tasks, but access is limited, usage caps vary by plan, and new safety checks may interrupt legitimate work.
+
+## What's New
+
+OpenAI is releasing Astra first to a small set of organizations, followed over several days by paid ChatGPT plans, the API, and cloud partners. In standard ChatGPT, eligible Pro, Business, and Enterprise users will see it as GPT-6 Pro. OpenAI's current help page says Plus does not include the model in standard Chat, and workplace access may depend on an administrator.
+
+The model is designed for multistep work across computers and browsers, along with documents, data analysis, websites, software testing, and visual troubleshooting. OpenAI says Astra completed its OSWorld 2.0 setup more accurately and faster than GPT-5.6 Sol, though the company cautions that everyday ChatGPT use can differ from its research setup. Independent results also show that rankings can shift with the test method and cost.
+
+Astra is OpenAI's first broadly deployed model at its Critical cybersecurity threshold. The company reports stronger adherence to safety boundaries than GPT-5.6 Sol, but also says Astra's written reasoning was harder to monitor in adversarial tests. Added monitoring can pause or stop legitimate activity for review.
+
+## Why It Matters
+
+For readers who regularly ask ChatGPT to coordinate several steps—such as organizing a document, checking data, or working through a browser task—Astra may be more useful than a simple benchmark score suggests. The practical test is whether GPT-6 Pro follows every constraint on your own repeatable prompt, makes its assumptions visible, and produces something you can verify.
+
+The rollout also comes with clear limits. Access is gradual, use is capped by plan, and safety reviews may interrupt a harmless task. Comparing the same non-sensitive prompt with your usual model gives you a grounded way to judge the tradeoff before relying on it for real work.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A ChatGPT Pro, Business, or Enterprise account","A browser and access to chatgpt.com"]}>
+
+1. Sign in at chatgpt.com, open the model picker, choose Pro, and look for GPT-6 Pro, the standard-Chat label for GPT-6 Astra. If it is absent, stop: rollout is gradual, and managed-workspace users may need an administrator to enable access.
+2. Use invented, non-sensitive information. If you do not want this test used to improve models, open Profile > Settings > Data Controls and turn off Improve the model for everyone before starting.
+3. Start a new GPT-6 Pro chat and ask: I have eggs, rice, canned beans, frozen spinach, and a $15 budget. Make a three-day dinner plan for two people, list extra groceries, show the estimated total, and clearly label assumptions. Check the model label, then score whether it followed every constraint and exposed its assumptions.
+4. Open a separate chat with your usual available model, paste the identical prompt, and compare constraint-following, unsupported assumptions, clarity, and practical usefulness. Do not change the prompt between runs.
+5. Treat both answers as drafts. Verify prices and any factual claim yourself before acting, then delete the test chats if you do not want to keep them. Do not use this first comparison for medical, legal, financial, or other high-stakes decisions.
+
+</PracticalGuide>
