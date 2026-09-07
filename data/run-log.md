@@ -2,6 +2,12 @@
 
 ## 2026-09-07
 
+Rerun:
+
+- No additional high-signal candidates - skipping. The refreshed inbox added one normalized URL and removed four stale or now-covered items.
+- OpenAI's Ukraine journalism initiative is an executive programme limited to Ukrainian publishers: its webinar phase served 40 newsrooms and its accelerator is for 10 selected organisations, so it offers no broadly available 5-30 minute reader workflow.
+- Social candidates remained unavailable: all 42 configured handles were unreachable through Nitter; RSS completed with 11 sources available and none unavailable.
+
 Shipped:
 
 - `2026-09-07-blender-coding-agent-macos` - Simon Willison's editable Blender example becomes a 15-minute macOS test that isolates work in an empty folder, reviews the generated Python before execution, and confirms the final scene remains manually editable.
