@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T08:08:59.440Z",
+  "generatedAt": "2026-09-07T02:59:03.871Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,6 +47,106 @@
   "items": [
     {
       "kind": "rss",
+      "title": "Research acceleration: The view inside OpenAI",
+      "url": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-06T23:57:40.000Z",
+      "summary": "<p><strong><a href=\"https://openai.com/index/research-acceleration-view-inside-openai/\">Research acceleration: The view inside OpenAI</a></strong></p> Apparently today is RSI day at OpenAI, for Recursive Self-Improvement - I think it's their new AGI. Both this piece and the new e"
+    },
+    {
+      "kind": "rss",
+      "title": "The purpose of DNS is to spread scams",
+      "url": "https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-06T14:40:07.000Z",
+      "summary": "<p><strong><a href=\"https://shkspr.mobi/blog/2026/09/the-purpose-of-dns-is-to-spread-scams/\">The purpose of DNS is to spread scams</a></strong></p> Terence Eden shares some daunting statistics in support of his take that \"the Domain Name System's purpose seems to be a vector for "
+    },
+    {
+      "kind": "rss",
+      "title": "There's No Limit to How Bad Code Can Get",
+      "url": "https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-06T09:08:06.000Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/rfn2mn/there_s_no_limit_how_bad_code_can_get#c_8kdtaw\">My comment</a> on <a href=\"https://lobste.rs/s/rfn2mn/there_s_no_limit_how_bad_code_can_get\">There&#x27;s No Limit to How Bad Code Can Get</a> &mdash; Lobste.rs.</p><p><em>[In reply to a commen"
+    },
+    {
+      "kind": "rss",
+      "title": "An Alien Mind",
+      "url": "https://openai.com/index/an-alien-mind",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-06T09:00:00.000Z",
+      "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination."
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Zach Kehs",
+      "url": "https://simonwillison.net/2026/Sep/6/zach-kehs/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-06T08:42:49.000Z",
+      "summary": "<blockquote cite=\"https://zachkehs.com/blog/theres_no_limit_to_how_bad_code_can_get/#9-ref\"><p>If you continue to add floors and rooms to a building forever, it will collapse. Software faces no such constraint. The code can <em>always</em> get worse. There can <em>always</em> be "
+    },
+    {
+      "kind": "rss",
+      "title": "Research acceleration: The view inside OpenAI",
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-06T08:00:00.000Z",
+      "summary": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration."
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing GPT-6 Astra for developers",
+      "url": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-05T23:27:48.000Z",
+      "summary": "<p><strong><a href=\"https://www.youtube.com/watch?v=bOC3DisEOfg\">Introducing GPT-6 Astra for developers</a></strong></p> Blink and you'll miss it, but there's a familiar creature at <a href=\"https://www.youtube.com/watch?v=bOC3DisEOfg&amp;t=119\">1m59s</a>:</p> <blockquote> <p>Acr"
+    },
+    {
+      "kind": "rss",
+      "title": "Using Blender with coding agents on macOS",
+      "url": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-05T15:51:09.000Z",
+      "summary": "<p><strong>TIL:</strong> <a href=\"https://til.simonwillison.net/llms/blender-coding-agents-macos\">Using Blender with coding agents on macOS</a></p> <p>I've been having fun with Blender in ChatGPT Codex on my Mac recently. Getting it to work with coding agents is really easy: inst"
+    },
+    {
+      "kind": "rss",
+      "title": "The Pelican comparison grid for Astra is pretty interesting",
+      "url": "https://simonwillison.net/2026/Sep/4/astra-pelicans/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-04T23:59:05.000Z",
+      "summary": "<p>I got access to GPT-6 Astra this afternoon, so naturally I used it to generate <a href=\"https://simonwillison.net/tags/pelican-riding-a-bicycle/\">SVGs of pelicans riding bicycles</a> - at low, medium, high, xhigh and max reasoning levels (Astra doesn't support reasoning=none)."
+    },
+    {
+      "kind": "rss",
+      "title": "OpenAI's rogue agents were caught communicating via public wikis",
+      "url": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-04T17:38:48.000Z",
+      "summary": "<p>Here we go again... <a href=\"https://collusion.wiki\">Discovery of a new OpenAI agent message board</a> by Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts, and Thomas Larsen describes the <em>latest</em> <a href=\"https://simonwillison.net/tags/accidental-cyberattacks/\">acciden"
+    },
+    {
+      "kind": "rss",
       "title": "August newsletter is out",
       "url": "https://simonwillison.net/2026/Sep/4/august-newsletter/",
       "source": "Simon Willison",
@@ -54,16 +154,6 @@
       "category": "insights",
       "publishedAt": "2026-09-04T05:54:40.000Z",
       "summary": "<p>The August edition of my <a href=\"https://github.com/sponsors/simonw/\">sponsors-only monthly newsletter</a> is out. If you are a sponsor (or if you start a sponsorship now) you can <a href=\"https://github.com/simonw-private/monthly/blob/main/2026-08-august.md\">access it here</"
-    },
-    {
-      "kind": "rss",
-      "title": "GPT‑6 Astra",
-      "url": "https://simonwillison.net/2026/Sep/3/gpt6-astra/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-03T20:18:41.000Z",
-      "summary": "<p><strong><a href=\"https://openai.com/index/gpt-6-astra/\">GPT‑6 Astra</a></strong></p> GPT-6 Astra is \"rolling out today to a limited set of organizations and over the coming days will become available to all ChatGPT Plus, Pro, Business, and Enterprise users, as well as through "
     },
     {
       "kind": "rss",
@@ -114,6 +204,16 @@
       "category": "model-releases",
       "publishedAt": "2026-09-03T12:00:00.000Z",
       "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model."
+    },
+    {
+      "kind": "rss",
+      "title": "GPT-6 Astra: A new generation of intelligence",
+      "url": "https://openai.com/index/gpt-6-astra",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-03T11:00:00.000Z",
+      "summary": "Introducing GPT-6 Astra, our most intelligent and aligned model yet, with state-of-the-art capabilities across computer use, coding, cybersecurity, and science."
     },
     {
       "kind": "rss",
@@ -404,46 +504,6 @@
       "category": "model-releases",
       "publishedAt": "2026-08-31T04:00:00.000Z",
       "summary": "ChatGPT Ads reaches $1 billion in annualized revenue run rate and expands globally, supporting broader access to AI through free and affordable options."
-    },
-    {
-      "kind": "rss",
-      "title": "Understanding ChatGPT Work",
-      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-30T23:59:47.000Z",
-      "summary": "<p>OpenAI <a href=\"https://openai.com/index/chatgpt-for-your-most-ambitious-work/\">announced ChatGPT Work</a> on July 9th, and have been furiously iterating on it ever since. It is an extraordinarily confusing and very powerful product. Here's what I've figured out about it so fa"
-    },
-    {
-      "kind": "rss",
-      "title": "Improving our alignment and security practices",
-      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
-      "source": "Anthropic",
-      "sourceId": "anthropic",
-      "category": "model-releases",
-      "publishedAt": "2026-08-30T17:00:00.000Z",
-      "summary": "On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the chang"
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing Hy4 Preview",
-      "url": "https://simonwillison.net/2026/Aug/29/hy4/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-29T23:53:13.000Z",
-      "summary": "<p><strong><a href=\"https://hy.tencent.ai/research/hy4-preview\">Introducing Hy4 Preview</a></strong></p> New open weight text input (no vision) LLM from Chinese company Tencent today: 770B total parameters, 49B active parameters, 1M token context window, <a href=\"https://huggingf"
-    },
-    {
-      "kind": "rss",
-      "title": "Just a rumour of a bug is enough to find a security exploit these days",
-      "url": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-08-28T22:12:02.000Z",
-      "summary": "<p><strong><a href=\"https://anil.recoil.org/notes/rumour-is-the-exploit\">Just a rumour of a bug is enough to find a security exploit these days</a></strong></p> Anil Madhavapeddy is a professor of computer science at Cambridge and a core maintainer of the OCaml compiler. In this "
     }
   ]
 }

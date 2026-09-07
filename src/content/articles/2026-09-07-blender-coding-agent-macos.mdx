@@ -1,0 +1,59 @@
+---
+title: "Build an editable Blender scene with a coding agent"
+date: 2026-09-07
+category: guides
+tags: ["blender", "codex", "3d", "creative-tools"]
+summary: "A coding agent can script and render an editable Blender scene on a Mac. A small isolated-folder test makes the workflow visible and easier to verify."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A Mac with Blender installed in /Applications"
+    - "The latest ChatGPT desktop app with access to Codex and local folders"
+    - "A new empty folder containing no sensitive files"
+references:
+  - title: "Using Blender with coding agents on macOS"
+    url: "https://til.simonwillison.net/llms/blender-coding-agents-macos"
+    author: "Simon Willison"
+    publishedAt: "2026-09-05"
+  - title: "TIL: Using Blender with coding agents on macOS"
+    url: "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/"
+    author: "Simon Willison"
+    publishedAt: "2026-09-05"
+  - title: "ChatGPT Work and Codex"
+    url: "https://help.openai.com/en/articles/20001275"
+    author: "OpenAI"
+  - title: "Download Blender"
+    url: "https://www.blender.org/download/"
+    author: "Blender Foundation"
+draft: false
+---
+
+## TL;DR
+
+Codex can write a Blender Python script on a Mac, run Blender in the background, and leave you with both a rendered image and an editable scene. The safest first test keeps everything in a new empty folder and reviews the script before it runs.
+
+## What's New
+
+Simon Willison tested a Mac workflow that pairs the full Blender app with Codex in the ChatGPT desktop app. By giving the agent Blender's background-mode executable path and asking it to create a Python scene script, he produced a `.blend` project that could still be edited, plus rendered stills and image sequences.
+
+His first GPT-6 Astra scene completed in 2 minutes 39 seconds. Two requested refinements finished at 3 minutes 51 seconds and 5 minutes 59 seconds. Those timings describe one example, not a promise for every scene or account.
+
+Willison's example repository includes the Blender projects, the scripts that generated them, and the Codex transcript. OpenAI describes Codex as a separate desktop-app view that can use local folders and tools, though access depends on plan, rollout, and workspace permissions.
+
+## Why It Matters
+
+This approach gives a beginner more than a finished picture. You can inspect the script, open the scene in Blender, move its objects, and ask for another revision without starting over from a flat image.
+
+The same flexibility creates a clear safety boundary: the agent is writing executable Python. Keeping the trial in an empty folder, checking the script before execution, and stopping on unexpected file or network access makes the experiment easier to understand and control.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A Mac with Blender installed in /Applications","The latest ChatGPT desktop app with access to Codex and local folders","A new empty folder containing no sensitive files"]}>
+
+1. Install Blender from blender.org if needed. Create a new empty folder in Finder named blender-agent-test, open ChatGPT desktop, select Codex from the top-left menu, and open only that folder. Confirm the folder contains no files or sensitive information before continuing.
+2. Ask Codex: In this folder only, create scene.py for a small Blender scene with a floor, one cube, one sphere, a light, and a camera; save scene.blend and render.png here. Do not use the network or read any other folder. Do not run the script yet. Confirm scene.py appears and no render has started.
+3. Open scene.py and review it before execution. Continue only if it uses Blender's Python API to build the requested objects and writes scene.blend and render.png inside the test folder. Stop if it reads other files, contacts the network, launches unrelated software, or requests unexpected access.
+4. Ask Codex to run only /Applications/Blender.app/Contents/MacOS/Blender --background --python scene.py. Stop on any request for wider file or network access; otherwise wait for scene.blend and render.png to appear in the folder.
+5. Open scene.blend in Blender and confirm the floor, cube, sphere, light, and camera appear in the Outliner. Move one object with the Move tool, choose Edit > Undo, then render the image again. Keep the files only if the scene is editable and the new render matches the requested contents.
+
+</PracticalGuide>

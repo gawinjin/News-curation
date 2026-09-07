@@ -1,0 +1,121 @@
+{
+  "slug": "blender-coding-agent-macos",
+  "date": "2026-09-07",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "Build an editable Blender scene with a coding agent",
+    "A safer first Blender project with Codex"
+  ],
+  "summary": "A coding agent can script and render an editable Blender scene on a Mac. A small isolated-folder test makes the workflow visible and easier to verify.",
+  "tags": ["blender", "codex", "3d", "creative-tools"],
+  "primary_source": {
+    "url": "https://til.simonwillison.net/llms/blender-coding-agents-macos",
+    "title": "Using Blender with coding agents on macOS",
+    "author": "Simon Willison",
+    "publishedAt": "2026-09-05",
+    "key_facts": [
+      "Current coding models can create Blender project files that remain editable in the desktop app, as well as render still images and image sequences.",
+      "Willison's macOS setup used the full Blender application in the Applications folder and a coding agent in the ChatGPT desktop app's Codex mode.",
+      "Giving the agent Blender's background-mode executable path and a Python scene script can reduce setup guesswork.",
+      "Willison's first GPT-6 Astra scene completed in 2 minutes 39 seconds; two follow-up refinements finished at 3 minutes 51 seconds and 5 minutes 59 seconds.",
+      "The example repository includes editable Blender files, the Python scripts that created them, and an exported Codex transcript.",
+      "Because the agent creates and executes a Python script, readers can review that script and restrict the task to a new empty folder before allowing Blender to run it."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/",
+      "title": "TIL: Using Blender with coding agents on macOS",
+      "key_facts": [
+        "Willison's companion post confirms the basic loop: install Blender, ask Codex to create a scene, then refine the editable result with follow-up prompts.",
+        "The example was covered by Willison's existing Codex subscription, while his third-party estimate put API usage at $4.24."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/20001275",
+      "title": "ChatGPT Work and Codex",
+      "key_facts": [
+        "OpenAI documents Codex as a separate view in the desktop app that can work with local folders, terminals, and developer tools.",
+        "The help page says to update to the latest desktop app and notes that access can vary by plan, rollout stage, and workspace permissions.",
+        "OpenAI advises granting local access only to the files a task needs and says messages and task context may still be stored in the cloud."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://www.blender.org/download/",
+      "title": "Download Blender",
+      "key_facts": [
+        "Blender's official download page is the installation source used by the example workflow."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": [
+      "A Mac with Blender installed in /Applications",
+      "The latest ChatGPT desktop app with access to Codex and local folders",
+      "A new empty folder containing no sensitive files"
+    ],
+    "steps": [
+      {
+        "instruction": "Install Blender from blender.org if needed. Create a new empty folder in Finder named blender-agent-test, open ChatGPT desktop, select Codex from the top-left menu, and open only that folder. Confirm the folder contains no files or sensitive information before continuing.",
+        "verify_url": "https://help.openai.com/en/articles/20001275"
+      },
+      {
+        "instruction": "Ask Codex: In this folder only, create scene.py for a small Blender scene with a floor, one cube, one sphere, a light, and a camera; save scene.blend and render.png here. Do not use the network or read any other folder. Do not run the script yet. Confirm scene.py appears and no render has started.",
+        "verify_url": "https://til.simonwillison.net/llms/blender-coding-agents-macos"
+      },
+      {
+        "instruction": "Open scene.py and review it before execution. Continue only if it uses Blender's Python API to build the requested objects and writes scene.blend and render.png inside the test folder. Stop if it reads other files, contacts the network, launches unrelated software, or requests unexpected access.",
+        "verify_url": "https://help.openai.com/en/articles/20001275"
+      },
+      {
+        "instruction": "Ask Codex to run only /Applications/Blender.app/Contents/MacOS/Blender --background --python scene.py. Stop on any request for wider file or network access; otherwise wait for scene.blend and render.png to appear in the folder.",
+        "verify_url": "https://til.simonwillison.net/llms/blender-coding-agents-macos"
+      },
+      {
+        "instruction": "Open scene.blend in Blender and confirm the floor, cube, sphere, light, and camera appear in the Outliner. Move one object with the Move tool, choose Edit > Undo, then render the image again. Keep the files only if the scene is editable and the new render matches the requested contents.",
+        "verify_url": "https://til.simonwillison.net/llms/blender-coding-agents-macos"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Using Blender with coding agents on macOS",
+      "url": "https://til.simonwillison.net/llms/blender-coding-agents-macos",
+      "author": "Simon Willison",
+      "publishedAt": "2026-09-05"
+    },
+    {
+      "title": "TIL: Using Blender with coding agents on macOS",
+      "url": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-09-05"
+    },
+    {
+      "title": "ChatGPT Work and Codex",
+      "url": "https://help.openai.com/en/articles/20001275",
+      "author": "OpenAI"
+    },
+    {
+      "title": "Download Blender",
+      "url": "https://www.blender.org/download/",
+      "author": "Blender Foundation"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The documented path is macOS-specific and assumes Blender is installed in /Applications.",
+    "Codex access and model availability can vary by ChatGPT plan, rollout stage, and managed-workspace permissions.",
+    "The agent creates executable Python, so the guide requires an isolated folder, pre-execution script review, no-network instructions, and a stop on unexpected access.",
+    "Blender's official download page was not reachable through the research fetcher, so installation details are not paraphrased beyond the source page's direct link.",
+    "Willison's completion times and cost estimate describe one example, not a guarantee for other accounts or scenes."
+  ],
+  "assembled_at": "2026-09-07T03:01:54.651Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

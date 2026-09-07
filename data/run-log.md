@@ -1,5 +1,18 @@
 # Signal Run Log
 
+## 2026-09-07
+
+Shipped:
+
+- `2026-09-07-blender-coding-agent-macos` - Simon Willison's editable Blender example becomes a 15-minute macOS test that isolates work in an empty folder, reviews the generated Python before execution, and confirms the final scene remains manually editable.
+
+Skipped:
+
+- OpenAI's research-acceleration report and An Alien Mind - significant lab and safety context, but neither provides a distinct 5-30 minute action for a general reader.
+- GPT-6 Astra launch links, the pelican comparison, and the developer video - duplicates of Signal's September 4 Astra coverage rather than a new reader workflow.
+- Rogue-agent wikis, software-quality commentary, and the DNS scams post - useful warnings or developer discussion, but either repeat Signal's existing agent-containment guidance or fall outside today's strongest actionable AI-news set.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS still produced 46 candidates, including 11 normalized additions.
+
 ## 2026-09-04
 
 Shipped:
