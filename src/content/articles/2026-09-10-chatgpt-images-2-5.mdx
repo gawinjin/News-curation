@@ -1,0 +1,54 @@
+---
+title: "Test ChatGPT Images 2.5 with one controlled edit"
+date: 2026-09-10
+category: model-releases
+tags: ["chatgpt", "image-generation", "creative-tools", "how-to"]
+summary: "ChatGPT Images 2.5 promises faster generation and more controlled follow-up edits. A fictional poster test lets you check what changes and what stays put."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A signed-in ChatGPT account on web, iOS, or Android"
+    - "No sensitive personal photo; the test uses a fictional poster"
+references:
+  - title: "Introducing ChatGPT Images 2.5"
+    url: "https://openai.com/index/introducing-chatgpt-images-2-5/"
+    author: "OpenAI"
+    publishedAt: "2026-09-08"
+  - title: "Images in ChatGPT"
+    url: "https://help.openai.com/en/articles/11084440-images-in-chatgpt"
+    author: "OpenAI"
+  - title: "Provenance signals in OpenAI-generated content"
+    url: "https://help.openai.com/en/articles/8912793-c2pa-in-images"
+    author: "OpenAI"
+draft: false
+---
+
+## TL;DR
+
+ChatGPT Images 2.5 is rolling out with faster generation and tighter control over follow-up edits. OpenAI says it improves detail and can change requested elements while preserving the rest of an image. The 15-minute poster test below checks those claims through two targeted edits and a side-by-side comparison.
+
+## What's New
+
+OpenAI says Images 2.5 cuts image-generation latency by up to 50 percent compared with Images 2.0. The update also improves detail, lighting, texture, fidelity to reference photos, and how closely edits follow instructions.
+
+The model is designed to alter requested elements while keeping subjects, composition, and surrounding details steady. It is also meant to preserve earlier changes across successive edits without reducing image quality.
+
+ChatGPT is adding Sketch for visual guidance, templates for common formats, image comments for targeted edits, and optional prompt sharing. Images 2.5 is rolling out across all ChatGPT tiers, ChatGPT Work, and Codex on desktop, mobile, and web. Supported generated images include C2PA metadata and invisible watermarking alongside prompt and image safety checks.
+
+## Why It Matters
+
+When you are refining a poster, invitation, or social image, one small edit can sometimes disturb text, colors, or layout elsewhere. Better preservation across editing turns could reduce the need to regenerate an image or repair details that were already correct.
+
+The rollout may not have reached every account, and a selected edit can still affect areas outside the highlight. Comparing the original with each revision remains the clearest way to judge whether the new controls work for your task. Provenance signals can offer a clue about origin, but they do not establish accuracy, ownership, or whether an image was later edited.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A signed-in ChatGPT account on web, iOS, or Android","No sensitive personal photo; the test uses a fictional poster"]}>
+
+1. Open ChatGPT, choose Images from the sidebar or More menu, and submit: Create a square travel-poster illustration for the fictional Moonlight Botanical Fair, with a glass greenhouse, navy sky, warm lanterns, and the exact title MOONLIGHT BOTANICAL FAIR. Confirm a square image appears and check whether the title is readable.
+2. Open the generated image, choose Select, highlight one lantern, and request: Change only this lantern to bright turquoise; keep the title, greenhouse, layout, and every other color unchanged. Compare the result with the original and note every requested and unrequested change.
+3. Add a second edit in the same conversation: Add three small fireflies above the greenhouse and change nothing else. Confirm that three fireflies appear, then check whether the turquoise lantern, title, greenhouse, and layout survived the second turn.
+4. Select the finished image and choose Save. Confirm the file downloads and that the image remains available in ChatGPT's Images library; keep the original and final images side by side for your comparison.
+5. Upload the saved fictional poster to OpenAI Verify and inspect the result for an OpenAI provenance signal. Treat a match only as an origin clue, not proof that the picture is accurate or unedited, and remember that a missing signal does not prove human authorship.
+
+</PracticalGuide>

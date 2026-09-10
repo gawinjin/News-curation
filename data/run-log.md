@@ -1,5 +1,19 @@
 # Signal Run Log
 
+## 2026-09-10
+
+Shipped:
+
+- `2026-09-10-chatgpt-images-2-5` - OpenAI's image-model update becomes a 15-minute fictional-poster test that compares two targeted edits, checks what changed unexpectedly, saves the result, and treats provenance signals as origin clues rather than proof.
+
+Skipped:
+
+- GPT-6 Astra's workplace launch and Sebastian Raschka's model analysis - current, but Signal's September 4 Astra article already provides the core same-prompt reader test.
+- AlphaGenome Atlas, Granite time-series forecasting, Navier-Stokes research, safety-taxonomy work, and Import AI 472 - significant specialist or research material without a safer, stronger 5-30 minute general-user workflow than today's selected item.
+- The `.blend` URL viewer, video compressor, Equal Earth map converter, and `llm 0.35` - useful tools, but narrower or developer-oriented updates that do not beat the Images 2.5 workflow for today's smallest source-backed set.
+- OpenAI board, policy, grants, journalism, quantum-computing, and customer-case posts - institutional, specialist, or company news without a distinct broadly available reader action.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS still completed with 11 sources available and none unavailable, producing 42 candidates with 25 normalized additions.
+
 ## 2026-09-07
 
 Rerun:

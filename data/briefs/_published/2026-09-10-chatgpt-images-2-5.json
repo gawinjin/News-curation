@@ -1,0 +1,121 @@
+{
+  "slug": "chatgpt-images-2-5",
+  "date": "2026-09-10",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": [
+    "Test ChatGPT Images 2.5 with one controlled edit",
+    "ChatGPT Images 2.5 makes follow-up edits easier to check"
+  ],
+  "summary": "ChatGPT Images 2.5 promises faster generation and more controlled follow-up edits. A fictional poster test lets you check what changes and what stays put.",
+  "tags": ["chatgpt", "image-generation", "creative-tools", "how-to"],
+  "primary_source": {
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "title": "Introducing ChatGPT Images 2.5",
+    "author": "OpenAI",
+    "publishedAt": "2026-09-08",
+    "key_facts": [
+      "ChatGPT Images 2.5 improves detail, lighting, texture, reference-photo fidelity, and instruction-following during edits.",
+      "OpenAI says image generation latency is up to 50 percent lower than with Images 2.0.",
+      "The model is designed to change requested elements while preserving subjects, composition, and surrounding details.",
+      "Across successive edits, earlier changes are more likely to remain intact without image quality declining over time.",
+      "ChatGPT adds Sketch for drawing visual guides, templates for common formats, image comments for targeted edits, and optional prompt sharing.",
+      "Images 2.5 is rolling out across all tiers of ChatGPT, ChatGPT Work, and Codex on desktop, mobile, and web.",
+      "OpenAI says supported generated images include C2PA metadata and invisible watermarking alongside prompt and image safety checks."
+    ],
+    "quote_candidates": [
+      {
+        "text": "Sharper details, faster generation, more precise editing, and better tools for creating and sharing.",
+        "words": 14,
+        "exact": true,
+        "position": "Subtitle beneath the article title"
+      },
+      {
+        "text": "Images 2.5 is better at editing only what you’ve asked for, while keeping the rest of the details the same",
+        "words": 20,
+        "exact": true,
+        "position": "Precision editing section"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://help.openai.com/en/articles/11084440-images-in-chatgpt",
+      "title": "Images in ChatGPT",
+      "key_facts": [
+        "OpenAI's help center says ChatGPT Images is available on all tiers on web, iOS, and Android.",
+        "Users can create an image from the Images area, edit a selected region or describe a change conversationally, and save the result.",
+        "The editor's selection highlight may be imprecise, and an edit can extend beyond the selected region.",
+        "Images are automatically kept in the Images library until the associated conversation is deleted."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8912793-c2pa-in-images",
+      "title": "Provenance signals in OpenAI-generated content",
+      "key_facts": [
+        "Supported images generated with ChatGPT, Codex, and the OpenAI API include C2PA metadata and SynthID watermarks.",
+        "OpenAI Verify can check a supported file for those provenance signals.",
+        "A detected signal does not prove an image is accurate, unedited, legally owned, or shown in the correct context; a missing signal also does not prove an image was not AI-generated."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": [
+      "A signed-in ChatGPT account on web, iOS, or Android",
+      "No sensitive personal photo; the test uses a fictional poster"
+    ],
+    "steps": [
+      {
+        "instruction": "Open ChatGPT, choose Images from the sidebar or More menu, and submit: Create a square travel-poster illustration for the fictional Moonlight Botanical Fair, with a glass greenhouse, navy sky, warm lanterns, and the exact title MOONLIGHT BOTANICAL FAIR. Confirm a square image appears and check whether the title is readable.",
+        "verify_url": "https://help.openai.com/en/articles/11084440-images-in-chatgpt"
+      },
+      {
+        "instruction": "Open the generated image, choose Select, highlight one lantern, and request: Change only this lantern to bright turquoise; keep the title, greenhouse, layout, and every other color unchanged. Compare the result with the original and note every requested and unrequested change.",
+        "verify_url": "https://help.openai.com/en/articles/11084440-images-in-chatgpt"
+      },
+      {
+        "instruction": "Add a second edit in the same conversation: Add three small fireflies above the greenhouse and change nothing else. Confirm that three fireflies appear, then check whether the turquoise lantern, title, greenhouse, and layout survived the second turn.",
+        "verify_url": "https://openai.com/index/introducing-chatgpt-images-2-5/"
+      },
+      {
+        "instruction": "Select the finished image and choose Save. Confirm the file downloads and that the image remains available in ChatGPT's Images library; keep the original and final images side by side for your comparison.",
+        "verify_url": "https://help.openai.com/en/articles/11084440-images-in-chatgpt"
+      },
+      {
+        "instruction": "Upload the saved fictional poster to OpenAI Verify and inspect the result for an OpenAI provenance signal. Treat a match only as an origin clue, not proof that the picture is accurate or unedited, and remember that a missing signal does not prove human authorship.",
+        "verify_url": "https://help.openai.com/en/articles/8912793-c2pa-in-images"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Introducing ChatGPT Images 2.5",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "author": "OpenAI",
+      "publishedAt": "2026-09-08"
+    },
+    {
+      "title": "Images in ChatGPT",
+      "url": "https://help.openai.com/en/articles/11084440-images-in-chatgpt",
+      "author": "OpenAI"
+    },
+    {
+      "title": "Provenance signals in OpenAI-generated content",
+      "url": "https://help.openai.com/en/articles/8912793-c2pa-in-images",
+      "author": "OpenAI"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Images 2.5 is rolling out, so the newest controls may not appear on every account immediately.",
+    "The editor selection can be imprecise and edits can extend outside the highlighted region, so the guide requires a side-by-side check.",
+    "Provenance signals are origin clues, not proof of accuracy, ownership, editing history, or context.",
+    "Sketch is mobile-specific and templates are not available in Work mode, so the guide does not depend on either feature."
+  ],
+  "assembled_at": "2026-09-10T03:31:49.062Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
