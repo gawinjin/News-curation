@@ -1,0 +1,134 @@
+{
+  "slug": "chatgpt-data-agent",
+  "date": "2026-09-11",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "Test ChatGPT's Data agent with a read-only dashboard",
+    "ChatGPT's Data agent turns approved work data into dashboards"
+  ],
+  "summary": "ChatGPT Work's Data agent can investigate approved business data and build interactive dashboards. Start with a private, read-only sample-data check.",
+  "tags": ["chatgpt", "data-analysis", "plugins", "dashboards"],
+  "primary_source": {
+    "url": "https://openai.com/index/put-data-to-work/",
+    "title": "Now everyone can put data to work",
+    "author": "OpenAI",
+    "publishedAt": "2026-09-10",
+    "key_facts": [
+      "OpenAI introduced a Data agent for ChatGPT Work that can connect to company information, investigate changes, and turn findings into shareable interactive dashboards through conversation.",
+      "Approved sources can include Amazon Redshift, Datadog, Google BigQuery, ClickHouse, Databricks, MongoDB, Snowflake, Google Drive, and SharePoint.",
+      "The agent can use company-specific terminology, metric definitions, custom calculations, and data relationships supplied through trusted internal context.",
+      "Workspace administrators control which connections and roles are available, while queries keep the connected account's table-, row-, and column-level permissions.",
+      "People can ask follow-up questions, inspect evidence behind findings, and create dashboards that teams can edit, share, refresh, and style.",
+      "The agent can work with dashboards in Omni, Oracle BI, Power BI, Sigma, Tableau, and ThoughtSpot through plain-language instructions.",
+      "In ChatGPT Work, the agent appears as Data in the Plugins directory; after installation and any required account connection, users start by addressing @Data with a business question."
+    ],
+    "quote_candidates": [
+      {
+        "text": "Ask follow-up questions to investigate the results and review the evidence behind each finding.",
+        "words": 14,
+        "exact": true,
+        "position": "Turn questions into analysis and action section"
+      },
+      {
+        "text": "Queries enforce the connected account's existing permissions, including table, row, and column restrictions.",
+        "words": 13,
+        "exact": true,
+        "position": "Connect to the company data and context your business trusts section"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://openai.com/business/plugins/data/",
+      "title": "Data",
+      "key_facts": [
+        "OpenAI's plugin listing says Data can investigate metrics, analyze performance, design KPIs, and build dashboards or reports.",
+        "The listing provides an Add plugin control and example prompts for diagnosing a metric change, designing a KPI framework, and creating a leadership readout."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes",
+      "title": "ChatGPT Business - Release Notes",
+      "key_facts": [
+        "The September 10 release note confirms that workspace administrators manage Data's installation policy under Workspace settings > Plugins.",
+        "Members can start with @Data after it is available in their workspace, and connected-account permissions plus workspace controls continue to apply."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8437071",
+      "title": "Data analysis with ChatGPT",
+      "key_facts": [
+        "OpenAI recommends structured files with clear column names and one record per row when using ChatGPT for data analysis.",
+        "Users should review generated code, outputs, assumptions, and source-linked evidence before relying on an analysis.",
+        "Connected-source access follows the permissions of the connected account and the workspace's app controls."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15-20 min",
+    "prerequisites": [
+      "A ChatGPT Work workspace where the Data plugin is available",
+      "Workspace administrator approval and one approved data source",
+      "Read-only access to a non-sensitive sample dataset"
+    ],
+    "steps": [
+      {
+        "instruction": "Open Workspace settings > Plugins, review Data's requested sources and installation policy, and make it available only to a small pilot group; stop if your role cannot approve it or the requested access is broader than intended.",
+        "verify_url": "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes"
+      },
+      {
+        "instruction": "Open the Data plugin listing, select Add plugin or Install plugin, and confirm Data appears in the ChatGPT Work Plugins directory; stop and ask an administrator if installation is unavailable.",
+        "verify_url": "https://openai.com/business/plugins/data/"
+      },
+      {
+        "instruction": "Start a new ChatGPT Work conversation, invoke @Data, and ask: List the data sources and datasets I can access; do not change or share anything. Confirm that it names only approved sources, and stop if unexpected sensitive data appears.",
+        "verify_url": "https://openai.com/index/put-data-to-work/"
+      },
+      {
+        "instruction": "Ask @Data to use only the approved sample dataset to summarize record counts and one simple trend, showing the evidence behind each finding. Check the figures against the source data before continuing.",
+        "verify_url": "https://openai.com/index/put-data-to-work/"
+      },
+      {
+        "instruction": "Ask @Data to turn that analysis into a private interactive dashboard with one headline metric and one trend chart, without sending messages or modifying source data. Confirm the dashboard is editable and that no sharing or action occurred.",
+        "verify_url": "https://openai.com/business/plugins/data/"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Now everyone can put data to work",
+      "url": "https://openai.com/index/put-data-to-work/",
+      "author": "OpenAI",
+      "publishedAt": "2026-09-10"
+    },
+    {
+      "title": "Data",
+      "url": "https://openai.com/business/plugins/data/",
+      "author": "OpenAI"
+    },
+    {
+      "title": "ChatGPT Business - Release Notes",
+      "url": "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes",
+      "author": "OpenAI"
+    },
+    {
+      "title": "Data analysis with ChatGPT",
+      "url": "https://help.openai.com/en/articles/8437071",
+      "author": "OpenAI"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Availability depends on the workspace plan, administrator policy, connected data-source plugins, and each member's existing permissions.",
+    "The first test uses only non-sensitive sample data and read-only prompts; readers should stop if unexpected sensitive data appears.",
+    "Dashboard findings still need to be checked against source records, metric definitions, and the evidence shown by the agent.",
+    "The guide explicitly blocks sharing, messaging, and source-data changes during the pilot."
+  ],
+  "assembled_at": "2026-09-11T08:08:27.684Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

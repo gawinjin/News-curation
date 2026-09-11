@@ -1,5 +1,18 @@
 # Signal Run Log
 
+## 2026-09-11
+
+Shipped:
+
+- `2026-09-11-chatgpt-data-agent` - OpenAI's Data plugin becomes a 15-20 minute workspace pilot that checks approved access, analyzes non-sensitive sample data, verifies the evidence, and builds a private read-only dashboard.
+
+Skipped:
+
+- OpenAI's antimicrobial research case study - meaningful scientific work, but it does not offer a broadly available 5-30 minute workflow for a general reader.
+- ChatGPT for Financial Services and the expanded US-government program - current product and access news aimed at eligible organizations rather than a distinct general-user test.
+- The Agents API, GPT-Live-1 API, Datasette security patches, TryNix, Shopify's native-mobile migration, and the AUTOMATIC1111 Gradio rebuild - developer, infrastructure, or specialist workflows that do not beat today's Data agent pilot for Signal's audience.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS still completed with 11 sources available and none unavailable, producing 45 candidates with 10 normalized additions.
+
 ## 2026-09-10
 
 Shipped:

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T03:20:55.157Z",
+  "generatedAt": "2026-09-11T08:06:16.574Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,6 +47,76 @@
   "items": [
     {
       "kind": "rss",
+      "title": "Datasette 1.0a39 and 0.65.4 security releases",
+      "url": "https://simonwillison.net/2026/Sep/11/datasette-security/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-11T03:27:16.000Z",
+      "summary": "<p><strong><a href=\"https://datasette.io/blog/2026/september-security-releases/\">Datasette 1.0a39 and 0.65.4 security releases</a></strong></p> Today we're releasing two new security patch versions of Datasette: <a href=\"https://docs.datasette.io/en/latest/changelog.html#v1-0-a39"
+    },
+    {
+      "kind": "rss",
+      "title": "Any Nix package, live in your browser",
+      "url": "https://simonwillison.net/2026/Sep/10/trynix/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-10T23:44:15.000Z",
+      "summary": "<p><strong><a href=\"https://fzakaria.com/2026/09/04/any-nix-package-live-in-your-browser\">Any Nix package, live in your browser</a></strong></p> Farid Zakaria calls this his \"<em>magnum opus</em> of Nix work\", and I can see why.</p> <p><a href=\"https://trynix.dev\">trynix.dev</a> "
+    },
+    {
+      "kind": "rss",
+      "title": "Native is now the future of mobile at Shopify",
+      "url": "https://simonwillison.net/2026/Sep/10/shopify-react-native/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-10T21:11:15.000Z",
+      "summary": "<p><strong><a href=\"https://shopify.engineering/back-to-native\">Native is now the future of mobile at Shopify</a></strong></p> Shopify are moving from React Native back to separate Swift and Kotlin codebases for their native apps, for the exact reason you would expect:</p> <block"
+    },
+    {
+      "kind": "rss",
+      "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+      "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-10T16:00:00.000Z",
+      "summary": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections."
+    },
+    {
+      "kind": "rss",
+      "title": "Now everyone can put data to work",
+      "url": "https://openai.com/index/put-data-to-work",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-10T15:00:00.000Z",
+      "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language."
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing ChatGPT for Financial Services",
+      "url": "https://openai.com/index/introducing-chatgpt-financial-services",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-10T07:00:00.000Z",
+      "summary": "Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, and client-ready materials."
+    },
+    {
+      "kind": "rss",
+      "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
+      "url": "https://openai.com/index/expanding-ai-access-us-government",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-10T07:00:00.000Z",
+      "summary": "OpenAI and GSA will offer eligible federal, state, local, and tribal governments $0 license fees, 50% off usage, and expanded cyber defense support."
+    },
+    {
+      "kind": "rss",
       "title": "Quoting Calif Research",
       "url": "https://simonwillison.net/2026/Sep/10/calif-research/",
       "source": "Simon Willison",
@@ -54,6 +124,36 @@
       "category": "insights",
       "publishedAt": "2026-09-10T00:56:41.000Z",
       "summary": "<blockquote cite=\"https://calif.io/research/weworm\"><p>Today, we're releasing a demo of WeWorm, the first zero-click worm to spread through WeChat calls across iOS and Android. [...]</p> <p>The victim does not need to answer the call, or interact with their phone at all. Even if "
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing the Agents API",
+      "url": "https://openai.com/index/introducing-the-agents-api",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "summary": "Build and launch cloud agents with the Agents API, a managed service powered by the Codex harness for orchestration, long-running sessions, and tool use."
+    },
+    {
+      "kind": "rss",
+      "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
+      "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "summary": "GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support."
+    },
+    {
+      "kind": "rss",
+      "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+      "url": "https://huggingface.co/blog/gradio-workflow-1111",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "summary": ""
     },
     {
       "kind": "rss",
@@ -127,13 +227,13 @@
     },
     {
       "kind": "rss",
-      "title": "On the Navier–Stokes Millennium Prize Problem",
+      "title": "Some thoughts on the Navier–Stokes Millennium Prize Problem",
       "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
       "source": "Simon Willison",
       "sourceId": "simonwillison",
       "category": "insights",
       "publishedAt": "2026-09-08T23:55:12.000Z",
-      "summary": "<p><strong><a href=\"https://openai.com/index/navier-stokes-solution/\">On the Navier–Stokes Millennium Prize Problem</a></strong></p> Impressive result from OpenAI, who used an unreleased model to produce a resolution to <a href=\"https://en.wikipedia.org/wiki/Navier–Stokes_existen"
+      "summary": "<p><a href=\"https://openai.com/index/navier-stokes-solution/\">On the Navier–Stokes Millennium Prize Problem</a> introduces an impressive result from OpenAI, who used an unreleased model to produce a resolution to <a href=\"https://en.wikipedia.org/wiki/Navier–Stokes_existence_and_"
     },
     {
       "kind": "rss",
@@ -394,76 +494,6 @@
       "category": "insights",
       "publishedAt": "2026-09-04T17:38:48.000Z",
       "summary": "<p>Here we go again... <a href=\"https://collusion.wiki\">Discovery of a new OpenAI agent message board</a> by Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts, and Thomas Larsen describes the <em>latest</em> <a href=\"https://simonwillison.net/tags/accidental-cyberattacks/\">acciden"
-    },
-    {
-      "kind": "rss",
-      "title": "August newsletter is out",
-      "url": "https://simonwillison.net/2026/Sep/4/august-newsletter/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-04T05:54:40.000Z",
-      "summary": "<p>The August edition of my <a href=\"https://github.com/sponsors/simonw/\">sponsors-only monthly newsletter</a> is out. If you are a sponsor (or if you start a sponsorship now) you can <a href=\"https://github.com/simonw-private/monthly/blob/main/2026-08-august.md\">access it here</"
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-      "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
-      "source": "Google DeepMind",
-      "sourceId": "deepmind",
-      "category": "research",
-      "publishedAt": "2026-09-03T15:02:08.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
-      "url": "https://openai.com/index/daybreak-for-frontline-defenders",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-03T13:15:00.000Z",
-      "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services."
-    },
-    {
-      "kind": "rss",
-      "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
-      "url": "https://huggingface.co/blog/Hcompany/neomme",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-09-03T13:13:48.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
-      "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-03T12:00:00.000Z",
-      "summary": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow."
-    },
-    {
-      "kind": "rss",
-      "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
-      "url": "https://openai.com/index/playco-game-prototyping-with-astra",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-03T12:00:00.000Z",
-      "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model."
-    },
-    {
-      "kind": "rss",
-      "title": "GPT-6 Astra: A new generation of intelligence",
-      "url": "https://openai.com/index/gpt-6-astra",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-03T11:00:00.000Z",
-      "summary": "Introducing GPT-6 Astra, our most intelligent and aligned model yet, with state-of-the-art capabilities across computer use, coding, cybersecurity, and science."
     }
   ]
 }

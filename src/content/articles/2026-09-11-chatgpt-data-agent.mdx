@@ -1,0 +1,58 @@
+---
+title: "Test ChatGPT's Data agent with a read-only dashboard"
+date: 2026-09-11
+category: guides
+tags: ["chatgpt", "data-analysis", "plugins", "dashboards"]
+summary: "ChatGPT Work's Data agent can investigate approved business data and build interactive dashboards. Start with a private, read-only sample-data check."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15-20 min"
+  prerequisites:
+    - "A ChatGPT Work workspace where the Data plugin is available"
+    - "Workspace administrator approval and one approved data source"
+    - "Read-only access to a non-sensitive sample dataset"
+references:
+  - title: "Now everyone can put data to work"
+    url: "https://openai.com/index/put-data-to-work/"
+    author: "OpenAI"
+    publishedAt: "2026-09-10"
+  - title: "Data"
+    url: "https://openai.com/business/plugins/data/"
+    author: "OpenAI"
+  - title: "ChatGPT Business - Release Notes"
+    url: "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes"
+    author: "OpenAI"
+  - title: "Data analysis with ChatGPT"
+    url: "https://help.openai.com/en/articles/8437071"
+    author: "OpenAI"
+draft: false
+---
+
+## TL;DR
+
+ChatGPT Work’s Data agent can query approved company data, investigate changes, and turn findings into editable interactive dashboards. Access stays within each connected account’s existing table, row, and column permissions. Start safely with a private, read-only sample dataset and verify every result against the source records.
+
+## What's New
+
+OpenAI has added Data to the Plugins directory in ChatGPT Work. Once a workspace administrator makes it available and any required account is connected, members can address `@Data` with a business question. Approved sources can include Snowflake, Google BigQuery, Databricks, MongoDB, Amazon Redshift, Google Drive, and SharePoint.
+
+The agent can apply company-specific metric definitions, terminology, calculations, and data relationships while investigating a question. It preserves the connected account’s table-, row-, and column-level permissions, with administrators deciding which connections and roles are available.
+
+People can ask follow-up questions, examine the evidence behind a finding, and turn an analysis into a dashboard that teams can edit, share, refresh, and style. Data can also work with dashboards in tools including Power BI, Tableau, Sigma, Omni, and ThoughtSpot through plain-language instructions.
+
+## Why It Matters
+
+For a normal workday, this puts the path from question to chart in one conversation. A team member could investigate why a metric changed, check the supporting evidence, and create an editable dashboard without first translating the request into a specialist workflow.
+
+The safeguards still matter. Availability depends on workspace policy and existing account permissions, and generated findings should be checked against source records and agreed metric definitions. A small, read-only pilot with non-sensitive sample data is the sensible first test.
+
+<PracticalGuide timeToTry="15-20 min" prerequisites={["A ChatGPT Work workspace where the Data plugin is available","Workspace administrator approval and one approved data source","Read-only access to a non-sensitive sample dataset"]}>
+
+1. Open Workspace settings > Plugins, review Data's requested sources and installation policy, and make it available only to a small pilot group; stop if your role cannot approve it or the requested access is broader than intended.
+2. Open the Data plugin listing, select Add plugin or Install plugin, and confirm Data appears in the ChatGPT Work Plugins directory; stop and ask an administrator if installation is unavailable.
+3. Start a new ChatGPT Work conversation, invoke @Data, and ask: List the data sources and datasets I can access; do not change or share anything. Confirm that it names only approved sources, and stop if unexpected sensitive data appears.
+4. Ask @Data to use only the approved sample dataset to summarize record counts and one simple trend, showing the evidence behind each finding. Check the figures against the source data before continuing.
+5. Ask @Data to turn that analysis into a private interactive dashboard with one headline metric and one trend chart, without sending messages or modifying source data. Confirm the dashboard is editable and that no sharing or action occurred.
+
+</PracticalGuide>
