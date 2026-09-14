@@ -1,0 +1,115 @@
+{
+  "slug": "chatgpt-running-routes",
+  "date": "2026-09-14",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "Ask ChatGPT for a running loop - then check every turn",
+    "Turn ChatGPT's running route into a route you can trust"
+  ],
+  "summary": "ChatGPT Work can draft 5K and 10K running loops as maps and route files. Start from a public landmark, then check every segment before going outside.",
+  "tags": ["chatgpt", "running", "maps", "safety"],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+    "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+    "author": "Simon Willison",
+    "publishedAt": "2026-09-12",
+    "key_facts": [
+      "Simon Willison asked ChatGPT Work, using GPT-6 Astra at Max reasoning, to create 5K and 10K loops from his home using OpenStreetMap data.",
+      "The task ran for 27 minutes and returned an embedded route visualization plus downloadable GPX and GeoJSON files.",
+      "ChatGPT said it geocoded the address with Nominatim, downloaded nearby OpenStreetMap roads and trails through Overpass, and calculated the loops locally.",
+      "The demonstrated 5K route was 5.1 km and looped through local streets and a coastal trail.",
+      "Willison could not inspect the code or exact execution details in the ChatGPT interface and described that lack of transparency as a drawback.",
+      "When he later requested the Python code, ChatGPT could no longer provide it, apparently because the conversation had been compacted.",
+      "The embedded map was produced as HTML with route and map geometry stored in JSON and rendered with D3."
+    ],
+    "quote_candidates": [
+      {
+        "text": "I see this lack of transparency is an anti-feature.",
+        "words": 9,
+        "exact": true,
+        "position": "Transparency critique"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+      "title": "Understanding ChatGPT Work",
+      "key_facts": [
+        "ChatGPT Work can run code in a cloud environment, use a browser, and create downloadable files during longer tasks.",
+        "Those capabilities explain how the route task could gather OpenStreetMap data and return map and route-file outputs."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://www.openstreetmap.org/copyright",
+      "title": "Copyright and License",
+      "key_facts": [
+        "OpenStreetMap data requires attribution and is provided without a warranty.",
+        "A map-data source does not guarantee that a path is open, public, or safe in current real-world conditions."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "20-30 min",
+    "prerequisites": [
+      "ChatGPT Work access at chatgpt.com or in the ChatGPT desktop app",
+      "A public landmark or intersection instead of a home address",
+      "OpenStreetMap and local official road, trail, or park-closure information"
+    ],
+    "steps": [
+      {
+        "instruction": "Open chatgpt.com and start a Work task. Select GPT-6 Astra only if it appears in the model picker; stop this exact test if Work or Astra is unavailable.",
+        "verify_url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/"
+      },
+      {
+        "instruction": "Ask for separate 5 km and 10 km loops starting and ending at a public landmark, using current OpenStreetMap data. Request sidewalks or multi-use paths, no private roads or highways, named roads and crossings, uncertainty flags, maps, GPX, and GeoJSON. Do not provide your home address.",
+        "verify_url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/"
+      },
+      {
+        "instruction": "Let the task run for up to 30 minutes. Confirm the result includes two stated distances, embedded maps, and downloadable GPX or GeoJSON files; request any missing output before continuing.",
+        "verify_url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/"
+      },
+      {
+        "instruction": "Check every named road, trail, crossing, and loop connection on OpenStreetMap and your local authority's closure pages. Reject any private, closed, pedestrian-unsafe, or uncertain segment.",
+        "verify_url": "https://www.openstreetmap.org/"
+      },
+      {
+        "instruction": "Save and preview the GPX or GeoJSON in a navigation or fitness app you already trust. Obey signs and traffic controls, share your plan, and turn back if real conditions differ from the generated route.",
+        "verify_url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+      "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-09-12"
+    },
+    {
+      "title": "Understanding ChatGPT Work",
+      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-08-30"
+    },
+    {
+      "title": "Copyright and License",
+      "url": "https://www.openstreetmap.org/copyright",
+      "author": "OpenStreetMap contributors"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The guide replaces the source's home-address prompt with a public landmark to reduce location-privacy exposure.",
+    "Generated route files can contain incorrect, private, closed, or unsafe segments and must be checked against current maps, official closure information, signs, and real conditions.",
+    "ChatGPT Work and GPT-6 Astra availability may depend on plan, rollout, and the current model picker.",
+    "The source could not inspect the executed code or recover it after conversation compaction, so the article must not imply full process transparency.",
+    "This is distinct from Signal's September 2 GeoJSON article only when focused on distance, continuity, access, and physical-route safety rather than map-file basics."
+  ],
+  "assembled_at": "2026-09-14T05:35:00.000Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

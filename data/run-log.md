@@ -1,5 +1,19 @@
 # Signal Run Log
 
+## 2026-09-14
+
+Shipped:
+
+- `2026-09-14-chatgpt-running-routes` - ChatGPT Work's route-generation experiment becomes a 20-30 minute safety-first test that starts from a public landmark, checks every road and trail, and previews the route file before going outside.
+
+Skipped:
+
+- OpenAI's Perplexity and Cognition Astra customer stories - current examples of production coding and testing, but not distinct broadly available reader workflows and already downstream of Signal's Astra coverage.
+- The RubyGems agent incident - consequential, but the practical response repeats Signal's existing agent-containment guidance and a reader should not reproduce the attack.
+- `commit-rewriter`, `shot-scraper`, OpenRouter guidance, Datasette and Python utilities, and the storage-infrastructure article - developer or infrastructure material that does not beat today's consumer route-verification workflow.
+- Opinion-only quotes, non-AI sightings, and workplace commentary - insufficiently actionable for a 5-30 minute Practical Guide.
+- Social candidates - all 42 configured handles were unreachable through Nitter; RSS still completed with 11 sources available and none unavailable, producing 54 candidates with 19 normalized additions.
+
 ## 2026-09-11
 
 Shipped:

@@ -1,0 +1,56 @@
+---
+title: "Ask ChatGPT for a running loop - then check every turn"
+date: 2026-09-14
+category: guides
+tags: ["chatgpt", "running", "maps", "safety"]
+summary: "ChatGPT Work can draft 5K and 10K running loops as maps and route files. Start from a public landmark, then check every segment before going outside."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "20-30 min"
+  prerequisites:
+    - "ChatGPT Work access at chatgpt.com or in the ChatGPT desktop app"
+    - "A public landmark or intersection instead of a home address"
+    - "OpenStreetMap and local official road, trail, or park-closure information"
+references:
+  - title: "Generating running routes with GPT-6 Astra and ChatGPT Work"
+    url: "https://simonwillison.net/2026/Sep/12/astra-running-routes/"
+    author: "Simon Willison"
+    publishedAt: "2026-09-12"
+  - title: "Understanding ChatGPT Work"
+    url: "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/"
+    author: "Simon Willison"
+    publishedAt: "2026-08-30"
+  - title: "Copyright and License"
+    url: "https://www.openstreetmap.org/copyright"
+    author: "OpenStreetMap contributors"
+draft: false
+---
+
+## TL;DR
+
+ChatGPT Work can turn a requested running distance into a mapped loop and downloadable route files. Treat that output as a draft: begin at a public landmark rather than your home, then check every road, crossing, and trail against current maps and official closure information before you run it.
+
+## What's New
+
+Simon Willison asked ChatGPT Work, with GPT-6 Astra using Max reasoning, to make 5 km and 10 km loops from a chosen starting point. After 27 minutes, it returned an interactive route view along with GPX and GeoJSON files that could be downloaded.
+
+ChatGPT reported that it found the location through Nominatim, collected nearby OpenStreetMap roads and trails with Overpass, and calculated the routes in its cloud environment. The example 5 km option measured 5.1 km and combined neighborhood streets with a coastal trail.
+
+The finished map used HTML, D3, and route geometry stored as JSON. Willison could not inspect the program or its exact execution inside ChatGPT, however, and a later request for the Python code did not recover it after the conversation had apparently been compacted.
+
+## Why It Matters
+
+This is a useful starting point when you want a loop of a specific length without plotting every turn yourself. The map and standard route files make the result easier to review and move into a navigation or fitness app you already use.
+
+But a plausible line on a map is not proof that a route is open, public, continuous, or safe today. OpenStreetMap data comes without a warranty, and the generated process is not fully inspectable. Protect your location by starting from a public landmark, reject uncertain segments, and let current official information and conditions on the ground overrule the AI.
+
+<PracticalGuide timeToTry="20-30 min" prerequisites={["ChatGPT Work access at chatgpt.com or in the ChatGPT desktop app","A public landmark or intersection instead of a home address","OpenStreetMap and local official road, trail, or park-closure information"]}>
+
+1. Open chatgpt.com and start a Work task. Select GPT-6 Astra only if it appears in the model picker; stop this exact test if Work or Astra is unavailable.
+2. Ask for separate 5 km and 10 km loops starting and ending at a public landmark, using current OpenStreetMap data. Request sidewalks or multi-use paths, no private roads or highways, named roads and crossings, uncertainty flags, maps, GPX, and GeoJSON. Do not provide your home address.
+3. Let the task run for up to 30 minutes. Confirm the result includes two stated distances, embedded maps, and downloadable GPX or GeoJSON files; request any missing output before continuing.
+4. Check every named road, trail, crossing, and loop connection on OpenStreetMap and your local authority's closure pages. Reject any private, closed, pedestrian-unsafe, or uncertain segment.
+5. Save and preview the GPX or GeoJSON in a navigation or fitness app you already trust. Obey signs and traffic controls, share your plan, and turn back if real conditions differ from the generated route.
+
+</PracticalGuide>
