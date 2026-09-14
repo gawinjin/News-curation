@@ -2,6 +2,11 @@
 
 ## 2026-09-14
 
+Rerun:
+
+- No additional high-signal candidates - skipping. The refreshed inbox added zero normalized URLs and removed only the running-routes source already published earlier today.
+- Social candidates remained unavailable: all 42 configured handles were unreachable through Nitter; RSS completed with 11 sources available and none unavailable, producing 53 candidates.
+
 Shipped:
 
 - `2026-09-14-chatgpt-running-routes` - ChatGPT Work's route-generation experiment becomes a 20-30 minute safety-first test that starts from a public landmark, checks every road and trail, and previews the route file before going outside.
