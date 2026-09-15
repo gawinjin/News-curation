@@ -1,5 +1,11 @@
 # Signal Run Log
 
+## 2026-09-15
+
+- No high-signal candidates today - skipping. Ingest returned 50 items, including five new normalized URLs compared with the September 14 inbox.
+- Simon Willison's fear, influences, and product-engineering link posts offer opinions or commentary without a distinct 5-30 minute reader test. OpenAI's Fyxer piece describes an existing company's internal email-assistant design rather than a new broadly available feature; Hugging Face's Async GRPO/LoRA tutorial is specialist model-training work.
+- RSS completed with 11 sources available and none unavailable. All 42 configured social handles were unreachable through Nitter; the manual queue added no items.
+
 ## 2026-09-14
 
 Rerun:
