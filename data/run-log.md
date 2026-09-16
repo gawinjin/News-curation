@@ -1,5 +1,14 @@
 # Signal Run Log
 
+## 2026-09-16
+
+- Researched the refreshed inbox plus current Google, OpenAI and Simon Willison pages. Ingest: 42 candidates; RSS 11/11 including fallbacks; all 42 Nitter handles unavailable. No fabricated social evidence.
+- Selected Gemini 3.8 Live / Extended Thinking (September 15 announcement). Opened Google's announcement and current Android Live help; checked model destinations, gradual rollout, account requirements, interruption, End and transcript controls. Simon's September 15 tool post was discovery/context, not the guide's entry point. No API-key or third-party app requirement.
+- Article: `/articles/2026-09-16-gemini-3-8-live/`. Guide is an original ten-minute rehearsal using existing Live controls, not proof that an account has received 3.8. No signed-in microphone session was performed. No direct source quotes or benchmark claims.
+- Skipped developer infrastructure, agent-consistency research and customer stories without a distinct general-user guide; did not re-cover ChatGPT Data, Images 2.5 or Astra. The Gemini announcement's alternate feed URL and discovery post are marked covered to prevent another article about the same release; existing Android help URL was already covered.
+- Clean isolated branch `codex/update-sep16`, based on deployment head `a9628d2`; preserved the dirty main checkout. Installed existing lockfile with scripts disabled. npm reported 14 existing vulnerabilities (2 low, 4 moderate, 7 high, 1 critical); no dependency changes or audit fix attempted.
+- Validation: online `npm run verify` passed all 145 articles; unreachable historical references were skipped with notices, while the new article's two sources checked without notices. `npm run build` passed (346 pages and Pagefind index). Removed scaffold HTML comments after the initial MDX build failure. Generated article, Practical Guide, homepage inclusion and canonical first RSS item confirmed. `git diff --check` passed. Push/deploy outcome is reported in the session response.
+
 ## 2026-09-15
 
 - No high-signal candidates today - skipping. Ingest returned 50 items, including five new normalized URLs compared with the September 14 inbox.

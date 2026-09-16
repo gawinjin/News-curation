@@ -1,0 +1,87 @@
+{
+  "slug": "gemini-3-8-live",
+  "date": "2026-09-16",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": [
+    "Gemini 3.8 Live arrives: try a conversation you can interrupt"
+  ],
+  "summary": "Google's new voice models start rolling out to Gemini Live and Search Live. Try a ten-minute speaking rehearsal, without confusing a rollout announcement with access on your account.",
+  "tags": [
+    "google",
+    "gemini",
+    "voice",
+    "how-to"
+  ],
+  "primary_source": {
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+    "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+    "author": "Google",
+    "publishedAt": "2026-09-15",
+    "key_facts": [
+      "Google announced two voice models on September 15; standard Live emphasizes efficient conversation, Extended Thinking more complex tasks.",
+      "Extended Thinking rollout includes Gemini Live; standard Live includes Search Live. These are rollouts, not guaranteed universal access.",
+      "Google describes reasoning alongside speech and handling background tasks."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://support.google.com/gemini/answer/15274899?co=GENIE.Platform%3DAndroid&hl=en",
+      "title": "Talk naturally with Gemini Live",
+      "key_facts": [
+        "Android Live starts with Live button; signed-in eligible account and app required.",
+        "Users can interrupt, end and review transcript; updates arrive gradually."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "An Android phone or tablet with the Gemini app and an up-to-date Google app",
+      "An eligible signed-in Google account with Gemini Live available",
+      "Microphone access and a quiet place; use fictional details"
+    ],
+    "steps": [
+      {
+        "instruction": "Open the Gemini app on Android, tap **Live** at the bottom, and follow the microphone prompts. Check [Google's access requirements](https://support.google.com/gemini/answer/15274899?co=GENIE.Platform%3DAndroid&hl=en) if Live is missing; do not buy a subscription just to follow this test.",
+        "verify_url": "https://support.google.com/gemini/answer/15274899?co=GENIE.Platform%3DAndroid&hl=en"
+      },
+      {
+        "instruction": "Say: \"Help me rehearse a short introduction for a community event. Ask one question at a time, then give one specific improvement.\" Use an invented name and event."
+      },
+      {
+        "instruction": "Answer the first question. While Gemini replies, interrupt with: \"Make it less formal, and keep the introduction under thirty seconds.\" Check whether it follows the changed request instead of finishing the old answer."
+      },
+      {
+        "instruction": "Rehearse once more. Judge the result against three checks: it asked one question at a time, accepted your correction, and gave advice you could actually use."
+      },
+      {
+        "instruction": "Tap **End** and inspect the transcript. Note any missed words or invented details. This tests the Live experience available to you, not which model your account is running.",
+        "verify_url": "https://support.google.com/gemini/answer/15274899?co=GENIE.Platform%3DAndroid&hl=en"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "author": "Google",
+      "publishedAt": "2026-09-15"
+    },
+    {
+      "title": "Talk naturally with Gemini Live (Android)",
+      "url": "https://support.google.com/gemini/answer/15274899?co=GENIE.Platform%3DAndroid&hl=en",
+      "author": "Google"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "No signed-in microphone session performed; steps checked against current official instructions.",
+    "No benchmark, pricing, universal availability or model-selector claims. New model rollout cannot be verified per account."
+  ],
+  "assembled_at": "2026-09-16T06:07:48.977Z",
+  "assembled_by": "Signal Orchestrator v1 - sequential source and guide review"
+}

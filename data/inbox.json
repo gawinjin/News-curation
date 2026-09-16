@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T08:06:02.507Z",
+  "generatedAt": "2026-09-16T06:07:06.227Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -45,6 +45,36 @@
     "alexalbert__"
   ],
   "items": [
+    {
+      "kind": "rss",
+      "title": "Gemini Live audio",
+      "url": "https://simonwillison.net/2026/Sep/15/gemini-live/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-15T22:47:07.000Z",
+      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/gemini-live\">Gemini Live audio</a></p> <p>Google released <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/\">Gemini 3.8 Live and 3."
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "category": "research",
+      "publishedAt": "2026-09-15T17:05:57.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Your Agent Aced the Task. Will It Do It Again?",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-09-15T16:00:44.000Z",
+      "summary": ""
+    },
     {
       "kind": "rss",
       "title": "The contagion of fear",
@@ -407,16 +437,6 @@
     },
     {
       "kind": "rss",
-      "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-      "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-09-09T15:36:24.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
       "title": "The AI policy window is open. We need to act.",
       "url": "https://openai.com/index/ai-policy-window",
       "source": "OpenAI",
@@ -444,106 +464,6 @@
       "category": "model-releases",
       "publishedAt": "2026-09-09T11:00:00.000Z",
       "summary": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment."
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Terence Tao",
-      "url": "https://simonwillison.net/2026/Sep/9/terence-tao/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-09T00:20:17.000Z",
-      "summary": "<blockquote cite=\"https://mathstodon.xyz/@tao/117237320796901560\"><p>I wrote recently about how the collection of good, fruitful open problems is now being mined in a non-renewable fashion, leading to the potential scenario of these problems becoming scarce. [...]</p> <p>We have "
-    },
-    {
-      "kind": "rss",
-      "title": "Some thoughts on the Navier–Stokes Millennium Prize Problem",
-      "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-08T23:55:12.000Z",
-      "summary": "<p><a href=\"https://openai.com/index/navier-stokes-solution/\">On the Navier–Stokes Millennium Prize Problem</a> introduces an impressive result from OpenAI, who used an unreleased model to produce a resolution to <a href=\"https://en.wikipedia.org/wiki/Navier–Stokes_existence_and_"
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing ChatGPT Images 2.5",
-      "url": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-08T22:46:33.000Z",
-      "summary": "<p><strong><a href=\"https://openai.com/index/introducing-chatgpt-images-2-5/\">Introducing ChatGPT Images 2.5</a></strong></p> OpenAI's image generation models are apparently used \"more than 3 billion images across ChatGPT Images and the GPT‑Image models in the API\". This latest r"
-    },
-    {
-      "kind": "rss",
-      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
-      "url": "https://openai.com/index/codex-quantum-computing-experiments",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-08T17:00:00.000Z",
-      "summary": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits."
-    },
-    {
-      "kind": "rss",
-      "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-09-08T14:23:07.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
-      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-      "source": "Google DeepMind",
-      "sourceId": "deepmind",
-      "category": "research",
-      "publishedAt": "2026-09-08T14:00:15.000Z",
-      "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome."
-    },
-    {
-      "kind": "rss",
-      "title": "The Work Now Within Reach",
-      "url": "https://openai.com/index/the-work-now-within-reach",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-08T13:00:00.000Z",
-      "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical."
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing ChatGPT Images 2.5",
-      "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-08T11:30:00.000Z",
-      "summary": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas."
-    },
-    {
-      "kind": "rss",
-      "title": "On the Navier–Stokes Millennium Prize Problem",
-      "url": "https://openai.com/index/navier-stokes-solution",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-08T10:00:00.000Z",
-      "summary": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean."
-    },
-    {
-      "kind": "rss",
-      "title": "Funding grants for new research into AI and teen development",
-      "url": "https://openai.com/index/teen-development-research-grants",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-08T09:00:00.000Z",
-      "summary": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety."
     }
   ]
 }
