@@ -1,5 +1,13 @@
 # Signal Run Log
 
+## 2026-09-17
+
+- Shipped `2026-09-17-claude-cowork-chat-unified` — Anthropic's staged merge of Claude chat and Cowork becomes a ten-minute fictional-notes test that works in either the new unified conversation or the older Cowork mode.
+- The guide keeps permissions on Manual, connects no files or apps, checks the result against three supplied facts, and treats Claude Docs as optional because the beta and interface rollout may differ by account.
+- Official announcement and help pages confirm that the unified interface starts with Pro and Max on web, desktop, and mobile over several weeks. Accounts can still show separate Chat and Cowork options, and there is no switch to force the update.
+- Skipped Datasette security releases and developer tooling, OpenAI's model-misalignment framework and business analytics, advertising, workshop, and customer-story posts because they are specialist, institutional, or lack a stronger broadly available reader test.
+- Ingest produced 37 candidates. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+
 ## 2026-09-16
 
 - Researched the refreshed inbox plus current Google, OpenAI and Simon Willison pages. Ingest: 42 candidates; RSS 11/11 including fallbacks; all 42 Nitter handles unavailable. No fabricated social evidence.

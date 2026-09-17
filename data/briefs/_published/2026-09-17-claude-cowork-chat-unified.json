@@ -1,0 +1,81 @@
+{
+  "slug": "claude-cowork-chat-unified",
+  "date": "2026-09-17",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": ["Claude puts chat and Cowork in one conversation"],
+  "summary": "Anthropic is merging Claude chat and Cowork for Pro and Max users in stages. Try a small task with fictional notes, and check which interface your account has.",
+  "tags": ["claude", "anthropic", "cowork", "how-to"],
+  "primary_source": {
+    "url": "https://claude.com/blog/cowork-is-now-claude",
+    "title": "Claude Cowork and chat are now one Claude",
+    "author": "Anthropic",
+    "publishedAt": "2026-09-16",
+    "key_facts": [
+      "Anthropic is merging chat and Cowork into one conversation, so a user can ask a quick question or hand over a larger task without switching modes.",
+      "The new experience rolls out gradually to Pro and Max on web, desktop, and mobile; Free and Team follow later.",
+      "Claude Docs and Claude Slides are new beta features on paid plans, while Claude Design also works in conversations.",
+      "Existing tasks, projects, connectors, skills, and artifacts carry over; Claude asks before taking actions by default."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://support.claude.com/en/articles/16761823-claude-cowork-and-chat-are-one-claude",
+      "title": "Claude Cowork and chat are one Claude",
+      "key_facts": [
+        "Pro and Max accounts may still see separate Chat and Cowork options during the rollout; there is no manual switch to enable the new interface.",
+        "The new interface offers Manual permission mode by default and cloud tasks can continue when a laptop is closed, while local-file tasks require the desktop app to stay open."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork",
+      "title": "Get started with Claude Cowork",
+      "key_facts": ["Users with the older interface can still select Cowork and describe a task; progress and proposed approach are visible."],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "A Claude Pro or Max account with Cowork available; the unified interface may not have reached your account",
+      "A browser and three fictional notes; no file or app permissions are needed"
+    ],
+    "steps": [
+      {
+        "instruction": "Open [claude.ai](https://claude.ai) and sign in. If the message box still offers **Chat** and **Cowork**, select **Cowork**. If those options are gone, start a new conversation; that means the unified interface has reached your account.",
+        "verify_url": "https://support.claude.com/en/articles/16761823-claude-cowork-and-chat-are-one-claude"
+      },
+      {
+        "instruction": "Check the permission setting in the message box. Choose **Manual** (or **Ask before acting** in the older Cowork interface) so you can review any action request.",
+        "verify_url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork"
+      },
+      {
+        "instruction": "Paste these fictional notes: 'Meeting moved to Tuesday. Ada will draft an agenda. Budget is undecided.' Ask: 'Make a one-page recap with decisions, open questions, and next actions. Use only these notes.' Submit the task; do not connect a folder or app.",
+        "verify_url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork"
+      },
+      {
+        "instruction": "Inspect Claude's approach and result. Check that it leaves the budget open and assigns the agenda to Ada. If it invents a budget or owner, ask it to remove that claim and compare the revision with the notes."
+      },
+      {
+        "instruction": "If your account offers Claude Docs, open the recap there and try one direct text edit. If Docs is absent, keep the plain recap; the beta and unified interface are rolling out separately.",
+        "verify_url": "https://claude.com/blog/cowork-is-now-claude"
+      }
+    ]
+  },
+  "references": [
+    {"title": "Claude Cowork and chat are now one Claude", "url": "https://claude.com/blog/cowork-is-now-claude", "author": "Anthropic", "publishedAt": "2026-09-16"},
+    {"title": "Claude Cowork and chat are one Claude", "url": "https://support.claude.com/en/articles/16761823-claude-cowork-and-chat-are-one-claude", "author": "Anthropic"},
+    {"title": "Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork", "author": "Anthropic"},
+    {"title": "Claude Cowork and chat are now one Claude (Simon Willison)", "url": "https://simonwillison.net/2026/Sep/16/one-claude/", "author": "Simon Willison", "publishedAt": "2026-09-16"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "No signed-in Claude session performed; steps are checked against Anthropic's public help.",
+    "Do not claim every Pro or Max account already has the unified interface or Claude Docs."
+  ],
+  "assembled_at": "2026-09-17T09:25:00Z",
+  "assembled_by": "Signal Orchestrator v1 - three-role research"
+}
