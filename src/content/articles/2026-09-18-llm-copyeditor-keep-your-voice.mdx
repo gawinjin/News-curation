@@ -1,0 +1,52 @@
+---
+title: "Use an AI copyeditor without losing your voice"
+date: 2026-09-18
+category: insights
+tags: ["writing", "ai", "copyediting", "how-to"]
+summary: "Thomas and Erin Ptacek suggest drafting in your own words, then using an LLM to spot problems instead of supplying prose. Try a short, controlled editing pass."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15 min"
+  prerequisites:
+    - "A browser and access to ChatGPT"
+    - "A non-sensitive 100–150 word paragraph you wrote yourself"
+references:
+  - title: "How To Write With An LLM"
+    url: "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/"
+    author: "Thomas and Erin Ptacek"
+    publishedAt: "2026-09-17"
+  - title: "How To Write With An LLM (Simon Willison)"
+    url: "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/"
+    author: "Simon Willison"
+    publishedAt: "2026-09-17"
+  - title: "Prompts I use — Proofreader"
+    url: "https://simonwillison.net/guides/agentic-engineering-patterns/prompts/#proofreader"
+    author: "Simon Willison"
+draft: false
+---
+
+## TL;DR
+
+Write your own draft, then ask an AI chatbot to flag specific problems. In a September 17 essay, Thomas and Erin Ptacek argue that accepting a model's wording or praise can weaken a writer's voice. Their approach keeps the rewriting in your hands while using the model to spot what you missed.
+
+## What's New
+
+The Ptaceks' advice begins with a strict rule: [“You may not use a single word an LLM suggests to you.”](https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/) They recommend drafting a piece yourself before asking a model to review it, and keeping its suggested phrases out of the finished version.
+
+The model's useful job is to identify problems: repeated wording, filler, passive phrasing, or paragraphs that would read more clearly elsewhere. The authors also warn that praise can make a writer less willing to rethink a rough first draft.
+
+After revising a passage in your own words, they suggest comparing the original and revision in a fresh model conversation. That way, the model lacks the editing history that might tilt its answer toward the newer version. You still decide which feedback serves your intent.
+
+## Why It Matters
+
+If you use a chatbot while writing, this gives you a way to request a second look without handing over the final wording. Ask it to point to one problem, make your own edit, and compare the two versions. Keep the change only if it makes what you meant to say clearer.
+
+<PracticalGuide timeToTry="15 min" prerequisites={["A browser and access to ChatGPT","A non-sensitive 100–150 word paragraph you wrote yourself"]}>
+
+1. Write a 100–150 word paragraph about a familiar topic in your own words. Save the original so you can compare it after editing.
+2. Open [ChatGPT](https://chatgpt.com), paste the paragraph, and ask: 'Act as a copyeditor. Identify three specific clarity or structure problems. Point to the sentences involved. Do not praise the draft or rewrite any sentence.' Check that the reply names problems rather than supplying replacement prose.
+3. Choose one valid problem and revise the paragraph yourself in your original document. Compare it with the saved draft and discard any wording supplied by the model.
+4. Start a fresh chat. Label the original and revised paragraphs A and B without saying which came later; ask which is clearer and why. Keep or reject your revision after checking the explanation against what you meant to say.
+
+</PracticalGuide>

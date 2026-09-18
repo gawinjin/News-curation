@@ -1,0 +1,50 @@
+{
+  "slug": "llm-copyeditor-keep-your-voice",
+  "date": "2026-09-18",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": ["Use an AI copyeditor without losing your voice", "Ask AI to find flaws in your writing"],
+  "summary": "Thomas and Erin Ptacek suggest drafting in your own words, then using an LLM to spot problems instead of supplying prose. Try a short, controlled editing pass.",
+  "tags": ["writing", "ai", "copyediting", "how-to"],
+  "primary_source": {
+    "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+    "title": "How To Write With An LLM",
+    "author": "Thomas and Erin Ptacek",
+    "publishedAt": "2026-09-17",
+    "key_facts": [
+      "The authors recommend drafting your own piece before asking a model to review it.",
+      "They recommend keeping model-suggested wording out of the finished prose so the writer remains responsible for the expression.",
+      "They warn that model praise can discourage the substantial edits a first draft needs.",
+      "They use models to find specific problems, including repeated wording, filler, passive phrasing, and misplaced paragraphs.",
+      "They suggest focused editing passes and comparing the original and self-revised text in a fresh model conversation.",
+      "They advise rejecting feedback that does not serve the writer's intent."
+    ],
+    "quote_candidates": [
+      {"text": "You may not use a single word an LLM suggests to you.", "words": 12, "exact": true, "position": "Rule Number One heading"}
+    ]
+  },
+  "supporting_sources": [
+    {"url": "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/", "title": "How To Write With An LLM", "key_facts": ["Simon Willison says he uses models for proofreading, grammar, fact-checking, and occasional word lookup while keeping his blog prose his own."], "quote_candidates": []},
+    {"url": "https://simonwillison.net/guides/agentic-engineering-patterns/prompts/#proofreader", "title": "Prompts I use — Proofreader", "key_facts": ["Willison shares a first-person prompt for finding typos, repetition, factual slips, and weak arguments."], "quote_candidates": []}
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": ["A browser and access to ChatGPT", "A non-sensitive 100–150 word paragraph you wrote yourself"],
+    "steps": [
+      {"instruction": "Write a 100–150 word paragraph about a familiar topic in your own words. Save the original so you can compare it after editing.", "verify_url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/"},
+      {"instruction": "Open [ChatGPT](https://chatgpt.com), paste the paragraph, and ask: 'Act as a copyeditor. Identify three specific clarity or structure problems. Point to the sentences involved. Do not praise the draft or rewrite any sentence.' Check that the reply names problems rather than supplying replacement prose.", "verify_url": "https://chatgpt.com/"},
+      {"instruction": "Choose one valid problem and revise the paragraph yourself in your original document. Compare it with the saved draft and discard any wording supplied by the model.", "verify_url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/"},
+      {"instruction": "Start a fresh chat. Label the original and revised paragraphs A and B without saying which came later; ask which is clearer and why. Keep or reject your revision after checking the explanation against what you meant to say.", "verify_url": "https://help.openai.com/en/articles/12677804-what-is-chatgpt-faq"}
+    ]
+  },
+  "references": [
+    {"title": "How To Write With An LLM", "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/", "author": "Thomas and Erin Ptacek", "publishedAt": "2026-09-17"},
+    {"title": "How To Write With An LLM (Simon Willison)", "url": "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/", "author": "Simon Willison", "publishedAt": "2026-09-17"},
+    {"title": "Prompts I use — Proofreader", "url": "https://simonwillison.net/guides/agentic-engineering-patterns/prompts/#proofreader", "author": "Simon Willison"}
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": ["The essay is a writing approach, not a new product launch; the guide is an original exercise based on its recommendations."],
+  "assembled_at": "2026-09-18T08:12:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T09:13:45.260Z",
+  "generatedAt": "2026-09-18T08:05:55.595Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,6 +47,56 @@
   "items": [
     {
       "kind": "rss",
+      "title": "Be alert: targeted attacks on prominent Rustaceans",
+      "url": "https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-17T23:59:19.000Z",
+      "summary": "<p><strong><a href=\"https://blog.rust-lang.org/2026/09/17/targeted-attacks/\">Be alert: targeted attacks on prominent Rustaceans</a></strong></p> Important warning from Adam Harvey and the crates security team:</p> <blockquote> <p>We believe that there is an ongoing campaign targe"
+    },
+    {
+      "kind": "rss",
+      "title": "How To Write With An LLM",
+      "url": "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-17T23:37:27.000Z",
+      "summary": "<p><strong><a href=\"https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/\">How To Write With An LLM</a></strong></p> Thomas Ptacek on using LLMs as copyeditors, not as writing assistants:</p> <blockquote> <p><strong>Rule Number One: You may not use a single word an LLM"
+    },
+    {
+      "kind": "rss",
+      "title": "Self-generated prompt injections in compaction summaries",
+      "url": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-17T20:57:55.000Z",
+      "summary": "<p><strong><a href=\"https://alignment.openai.com/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries/\">Self-generated prompt injections in compaction summaries</a></strong></p> In <a href=\"https://openai.com/index/model-misalignment-reporting-framework/\""
+    },
+    {
+      "kind": "rss",
+      "title": "How Cooley is accelerating IPO work with ChatGPT",
+      "url": "https://openai.com/index/cooley-gopublic",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-17T12:00:00.000Z",
+      "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most."
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing Astra for Law",
+      "url": "https://openai.com/index/astra-for-law",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-17T00:00:00.000Z",
+      "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work."
+    },
+    {
+      "kind": "rss",
       "title": "datasette 1.0a40",
       "url": "https://simonwillison.net/2026/Sep/16/datasette/",
       "source": "Simon Willison",
@@ -67,13 +117,13 @@
     },
     {
       "kind": "rss",
-      "title": "Claude Cowork and chat are now one Claude",
-      "url": "https://simonwillison.net/2026/Sep/16/one-claude/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-16T18:09:49.000Z",
-      "summary": "<p><strong><a href=\"https://claude.com/blog/cowork-is-now-claude\">Claude Cowork and chat are now one Claude</a></strong></p> In hopefully good news for anyone who, like me, was increasingly confused at Cowork v.s. Claude v.s. Claude Code:</p> <blockquote> <p>Starting today, Claud"
+      "title": "Introducing the Life Sciences Verification Program",
+      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "source": "Anthropic",
+      "sourceId": "anthropic",
+      "category": "model-releases",
+      "publishedAt": "2026-09-16T17:00:00.000Z",
+      "summary": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems."
     },
     {
       "kind": "rss",
@@ -324,96 +374,6 @@
       "category": "model-releases",
       "publishedAt": "2026-09-11T10:00:00.000Z",
       "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second."
-    },
-    {
-      "kind": "rss",
-      "title": "Datasette 1.0a39 and 0.65.4 security releases",
-      "url": "https://simonwillison.net/2026/Sep/11/datasette-security/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-11T03:27:16.000Z",
-      "summary": "<p><strong><a href=\"https://datasette.io/blog/2026/september-security-releases/\">Datasette 1.0a39 and 0.65.4 security releases</a></strong></p> Today we're releasing two new security patch versions of Datasette: <a href=\"https://docs.datasette.io/en/latest/changelog.html#v1-0-a39"
-    },
-    {
-      "kind": "rss",
-      "title": "datasette-publish-fly 1.4",
-      "url": "https://simonwillison.net/2026/Sep/11/datasette-publish-fly/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-11T02:58:52.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette-publish-fly/releases/tag/1.4\">datasette-publish-fly 1.4</a></p> <blockquote> <ul> <li>Sets <code>force_https=true</code> in <code>fly.toml</code>. <a href=\"https://github.com/simonw/datasette-publish-fly/is"
-    },
-    {
-      "kind": "rss",
-      "title": "github-to-sqlite 2.9.1",
-      "url": "https://simonwillison.net/2026/Sep/11/github-to-sqlite/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-11T00:28:39.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/dogsheep/github-to-sqlite/releases/tag/2.9.1\">github-to-sqlite 2.9.1</a></p> <blockquote> <ul> <li>Fix for compatibility with <a href=\"https://sqlite-utils.datasette.io/en/stable/changelog.html#v4-2\">sqlite-utils 4.x</a>. <"
-    },
-    {
-      "kind": "rss",
-      "title": "datasette 0.65.4",
-      "url": "https://simonwillison.net/2026/Sep/11/datasette/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-11T00:06:55.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/0.65.4\">datasette 0.65.4</a></p> <p>See <a href=\"https://datasette.io/blog/2026/september-security-releases/\">Datasette 1.0a39 and 0.65.4 security releases</a> on the Datasette blog.</p> <p>Tag"
-    },
-    {
-      "kind": "rss",
-      "title": "datasette 1.0a39",
-      "url": "https://simonwillison.net/2026/Sep/11/datasette-2/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-11T00:05:54.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a39\">datasette 1.0a39</a></p> <p>See <a href=\"https://datasette.io/blog/2026/september-security-releases/\">Datasette 1.0a39 and 0.65.4 security releases</a> on the Datasette blog.</p> <p>Tag"
-    },
-    {
-      "kind": "rss",
-      "title": "Any Nix package, live in your browser",
-      "url": "https://simonwillison.net/2026/Sep/10/trynix/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-10T23:44:15.000Z",
-      "summary": "<p><strong><a href=\"https://fzakaria.com/2026/09/04/any-nix-package-live-in-your-browser\">Any Nix package, live in your browser</a></strong></p> Farid Zakaria calls this his \"<em>magnum opus</em> of Nix work\", and I can see why.</p> <p><a href=\"https://trynix.dev\">trynix.dev</a> "
-    },
-    {
-      "kind": "rss",
-      "title": "Native is now the future of mobile at Shopify",
-      "url": "https://simonwillison.net/2026/Sep/10/shopify-react-native/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-10T21:11:15.000Z",
-      "summary": "<p><strong><a href=\"https://shopify.engineering/back-to-native\">Native is now the future of mobile at Shopify</a></strong></p> Shopify are moving from React Native back to separate Swift and Kotlin codebases for their native apps, for the exact reason you would expect:</p> <block"
-    },
-    {
-      "kind": "rss",
-      "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
-      "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-10T16:00:00.000Z",
-      "summary": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections."
-    },
-    {
-      "kind": "rss",
-      "title": "Now everyone can put data to work",
-      "url": "https://openai.com/index/put-data-to-work",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-10T15:00:00.000Z",
-      "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language."
     }
   ]
 }

@@ -1,5 +1,13 @@
 # Signal Run Log
 
+## 2026-09-18
+
+- Shipped `2026-09-18-llm-copyeditor-keep-your-voice` — Thomas and Erin Ptacek's September 17 essay gives general readers a concrete way to use a model as a copyeditor while keeping every final word their own. Simon Willison's link post and proofreading prompt provide context.
+- The 15-minute guide starts with a non-sensitive original paragraph, asks ChatGPT to flag three specific issues without rewriting or praise, then has the reader edit and compare versions in a fresh chat. The model's verdict remains optional.
+- Skipped Simon Willison's Rustacean security alert and OpenAI's model-compaction incident as specialist or incident-focused; OpenAI's Astra for Law is limited to selected law firms; the Cooley case study and Anthropic life-sciences verification program lack a broadly available 5–30 minute reader test.
+- Ingest produced 33 candidates. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 147 articles; `npm run build` produced and Pagefind indexed 350 pages. The new article route rendered with its four-step guide, and `git diff --check` passed.
+
 ## 2026-09-17
 
 - Shipped `2026-09-17-claude-cowork-chat-unified` — Anthropic's staged merge of Claude chat and Cowork becomes a ten-minute fictional-notes test that works in either the new unified conversation or the older Cowork mode.
