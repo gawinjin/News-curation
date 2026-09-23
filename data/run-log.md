@@ -1,5 +1,14 @@
 # Signal Run Log
 
+## 2026-09-23
+
+- Shipped `2026-09-23-gpt-6-sol-luna-work` — OpenAI's GPT-6 Sol and Luna release becomes a 15-minute same-prompt comparison in ChatGPT Work, with the Work/Codex versus ordinary Chat distinction kept explicit.
+- The guide uses an invented event budget, separate chats, the same reasoning level where available, and known arithmetic so readers can compare correctness, clarity, and speed without exposing private data or treating one task as a universal benchmark.
+- Official release and help pages confirm paid-plan access in Work and Codex, Luna-only desktop access for Free and Go users, gradual rollout, and workspace controls. The pages were opened during research; the repository verifier's fetch notices were reachability-only.
+- Skipped Claude Opus 5.5 and the combined model price-war post because another same-prompt model test would duplicate today's guide; skipped prompt-caching and `llm` plugin releases as developer-focused; skipped OpenAI Academy because Signal covered its work courses in June; skipped customer stories, policy programs, events, and specialist Hugging Face posts without a stronger distinct general-user workflow.
+- Ingest produced 49 candidates, including 36 normalized additions since September 18. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 148 articles. `npm run build` generated 352 pages and Pagefind indexed all 352 pages.
+
 ## 2026-09-18
 
 - Shipped `2026-09-18-llm-copyeditor-keep-your-voice` — Thomas and Erin Ptacek's September 17 essay gives general readers a concrete way to use a model as a copyeditor while keeping every final word their own. Simon Willison's link post and proofreading prompt provide context.

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T08:05:55.595Z",
+  "generatedAt": "2026-09-23T08:06:48.277Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,6 +47,346 @@
   "items": [
     {
       "kind": "rss",
+      "title": "SF October 14th: A Birds of a Feather Session on Agentic Engineering",
+      "url": "https://simonwillison.net/2026/Sep/23/bof-agentic-engineering/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-23T02:53:19.000Z",
+      "summary": "<p><strong><a href=\"https://luma.com/vxuiuyvg\">SF October 14th: A Birds of a Feather Session on Agentic Engineering</a></strong></p> I'm hosting an evening event with Jesse Vincent in San Francisco on Wednesday 14th October for people who are building weird and interesting things"
+    },
+    {
+      "kind": "rss",
+      "title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
+      "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-22T23:46:41.000Z",
+      "summary": "<p>Yesterday was <a href=\"https://x.ai/news/grok-4-7\">Grok 4.7</a> (<a href=\"https://news.ycombinator.com/item?id=49788838#49790209\">pelicans</a>) and <a href=\"https://mimo.xiaomi.com/mimo-v2-6\">MiMo v2.6 Flash/Pro</a> (<a href=\"https://news.ycombinator.com/item?id=49792730#49793"
+    },
+    {
+      "kind": "rss",
+      "title": "Better prompt caching for GPT-6",
+      "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-22T21:00:00.000Z",
+      "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
+    },
+    {
+      "kind": "rss",
+      "title": "llm 0.36",
+      "url": "https://simonwillison.net/2026/Sep/22/llm/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-22T18:48:37.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.36\">llm 0.36</a></p> <blockquote> <ul> <li>New OpenAI models: <code>gpt-6-sol</code> for <a href=\"https://developers.openai.com/api/docs/models/gpt-6-sol\">GPT-6 Sol</a> and <code>gpt-6-luna</code> "
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting @therealcornpop",
+      "url": "https://simonwillison.net/2026/Sep/22/therealcornpop/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-22T18:03:21.000Z",
+      "summary": "<blockquote cite=\"https://www.tiktok.com/@therealcornpop/video/7687243097801051422\"><p>Hey, you know it's like super obvious if you're using AI to write your scripts for TikTok and YouTube, right? [...] It's not just the general AI-isms of \"it's not X, it's Y\", or the rule of thr"
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing GPT-6 Sol and Luna",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-22T18:00:00.000Z",
+      "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost."
+    },
+    {
+      "kind": "rss",
+      "title": "llm-anthropic 0.29",
+      "url": "https://simonwillison.net/2026/Sep/22/llm-anthropic/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-22T17:14:55.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-anthropic/releases/tag/0.29\">llm-anthropic 0.29</a></p> <p>Adds support for <a href=\"https://www.anthropic.com/claude-opus-5-5\">Claude Opus 5.5</a>:</p> <pre><code>llm -m claude-opus-5.5 \"prompt goes here\" </code"
+    },
+    {
+      "kind": "rss",
+      "title": "llm-typesafe 0.1a0",
+      "url": "https://simonwillison.net/2026/Sep/22/llm-typesafe/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-22T15:54:16.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-typesafe/releases/tag/0.1a0\">llm-typesafe 0.1a0</a></p> <p>I built this new plugin for <a href=\"https://llm.datasette.io/\">LLM</a> to add support for <a href=\"https://simonwillison.net/2026/Sep/21/jev/\">TypeSafe "
+    },
+    {
+      "kind": "rss",
+      "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+      "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-22T12:00:00.000Z",
+      "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models."
+    },
+    {
+      "kind": "rss",
+      "title": "Priorities and principles for effective third party assessments",
+      "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards."
+    },
+    {
+      "kind": "rss",
+      "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+      "url": "https://huggingface.co/blog/evaleval-aisi",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Transformers now runs llama.cpp quants",
+      "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+      "url": "https://huggingface.co/blog/omlx",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
+      "url": "https://simonwillison.net/2026/Sep/21/jev/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-21T23:09:20.000Z",
+      "summary": "<p>Last week <a href=\"https://typesafe.ai/\">TypeSafe AI</a> unveiled <a href=\"https://typesafe.ai/blog/introducing-system-one-models-and-jev\">Jev</a>, their first example of a new category of model that they are calling \"System One models\" (I'm with Maggie Appleton, I think \"deci"
+    },
+    {
+      "kind": "rss",
+      "title": "Cloudflare Python Workers are now generally available",
+      "url": "https://simonwillison.net/2026/Sep/21/cloudflare-python-worker/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-21T22:25:44.000Z",
+      "summary": "<p><strong><a href=\"https://blog.cloudflare.com/python-workers-ga/\">Cloudflare Python Workers are now generally available</a></strong></p> After a two year preview, Cloudflare's support for running Python code in their server-side Workers platform is now stable: \"Python is now a "
+    },
+    {
+      "kind": "rss",
+      "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-09-21T13:44:34.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Import AI 473: The US's superintelligence strategy; human brain in a mouse skull; and machine hermeneutics",
+      "url": "https://importai.substack.com/p/import-ai-473-the-uss-superintelligence",
+      "source": "Import AI (Jack Clark)",
+      "sourceId": "importai",
+      "category": "insights",
+      "publishedAt": "2026-09-21T12:31:04.000Z",
+      "summary": "Is the wall AI is hitting in the room with us right now?"
+    },
+    {
+      "kind": "rss",
+      "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+      "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-21T12:00:00.000Z",
+      "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster."
+    },
+    {
+      "kind": "rss",
+      "title": "Advisory Group on Mathematics and Artificial Intelligence",
+      "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-21T12:00:00.000Z",
+      "summary": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results."
+    },
+    {
+      "kind": "rss",
+      "title": "Building standards for the next phase of AI",
+      "url": "https://openai.com/index/building-standards-next-phase-ai",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-21T10:00:00.000Z",
+      "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety."
+    },
+    {
+      "kind": "rss",
+      "title": "Expanding OpenAI Academy with new learning paths",
+      "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-21T07:00:00.000Z",
+      "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills."
+    },
+    {
+      "kind": "rss",
+      "title": "How V7 gives AI agents institutional memory",
+      "url": "https://openai.com/index/v7",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work."
+    },
+    {
+      "kind": "rss",
+      "title": "tokenizers v1: encode, decode and scaling, measured",
+      "url": "https://huggingface.co/blog/tokenizers-v1",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting voxium",
+      "url": "https://simonwillison.net/2026/Sep/20/voxium/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-20T21:06:43.000Z",
+      "summary": "<blockquote cite=\"https://twitter.com/v0xium/status/2101526107128529120\"><p>It has been half a month since I started a new role at a big company. Nobody knows anything here. The specs, code, tests, PRDs, tickets, resolution of those tickets, reports, etc., everything is made by C"
+    },
+    {
+      "kind": "rss",
+      "title": "MCP was always a bad idea?",
+      "url": "https://simonwillison.net/2026/Sep/20/hn-49779718/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-20T20:24:41.000Z",
+      "summary": "<p><a href=\"https://news.ycombinator.com/item?id=49779329#49779718\">My comment</a> on <a href=\"https://news.ycombinator.com/item?id=49779329\">MCP was always a bad idea?</a> &mdash; Hacker News.</p><p>This article entirely misses the value that MCP brings today.</p> <p>Sure, there"
+    },
+    {
+      "kind": "rss",
+      "title": "llm-keys-ui 0.1",
+      "url": "https://simonwillison.net/2026/Sep/20/llm-keys-ui/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-20T19:22:19.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-keys-ui/releases/tag/0.1\">llm-keys-ui 0.1</a></p> <p>This plugin solves a very specific problem.</p> <p>I've started using <a href=\"https://learn.chatgpt.com/docs/remote\">Codex Remote</a> to run coding agents on "
+    },
+    {
+      "kind": "rss",
+      "title": "datasette-explain 0.2.2",
+      "url": "https://simonwillison.net/2026/Sep/20/datasette-explain/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-20T00:22:04.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette-explain/releases/tag/0.2.2\">datasette-explain 0.2.2</a></p> <blockquote> <ul> <li>Explain plans now work on read-only stored-query pages.</li> </ul> </blockquote> <p>I upgraded <a href=\"https://datasette.si"
+    },
+    {
+      "kind": "rss",
+      "title": "datasette-auth-github 1.0",
+      "url": "https://simonwillison.net/2026/Sep/19/datasette-auth-github/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-19T19:52:02.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette-auth-github/releases/tag/1.0\">datasette-auth-github 1.0</a></p> <p>I run this GitHub login plugin on the <a href=\"https://agent.datasette.io/\">agent.datasette.io</a> demo site and I noticed that my authenti"
+    },
+    {
+      "kind": "rss",
+      "title": "California Sea Lion, Brandt's Cormorant",
+      "url": "https://simonwillison.net/2026/Sep/19/sighting-401567341/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-19T17:10:08.000Z",
+      "summary": "<p><img src=\"https://static.inaturalist.org/photos/737061413/large.jpg\" alt=\"California Sea Lion\"></p><p><img src=\"https://static.inaturalist.org/photos/737061040/large.jpg\" alt=\"Brandt&#x27;s Cormorant\"></p><p>California Sea Lion, Brandt&#x27;s Cormorant, in Pillar Point Harbor,"
+    },
+    {
+      "kind": "rss",
+      "title": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
+      "url": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-18T23:57:57.000Z",
+      "summary": "<p><strong><a href=\"https://www.wsj.com/tech/ai/gemini-hacked-three-companies-in-first-known-breakout-by-googles-ai-5c0baba2\">Gemini Hacked Three Companies in First Known Breakout by Google’s AI</a></strong></p> Gemini finally caught up on <a href=\"https://www.felonybench.com/\">F"
+    },
+    {
+      "kind": "rss",
+      "title": "Note on 18th September 2026",
+      "url": "https://simonwillison.net/2026/Sep/18/probably-gonna-eat-you/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-18T19:21:32.000Z",
+      "summary": "<p>Being a computer scientist who refuses to find anything about LLMs interesting right now is a bit like being a geneticist who refuses to find anything interesting about the recently opened Jurassic Park.</p> <p>Skeptical geneticist: \"pfft, it's just frog DNA. And they delibera"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Thariq Shihipar",
+      "url": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-18T19:09:27.000Z",
+      "summary": "<blockquote cite=\"https://twitter.com/trq212/status/2101009392611278961\"><p>We're adding support for AGENTS.md to Claude Code. </p> <p>Starting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md.</p> <p>AGENTS.md support is bui"
+    },
+    {
+      "kind": "rss",
+      "title": "The Creative Spirit of Who Framed Roger Rabbit",
+      "url": "https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-18T14:36:41.000Z",
+      "summary": "<p><strong><a href=\"https://blog.cypressf.com/post/828067789747208192/the-creative-spirit-of-who-framed-roger-rabbit\">The Creative Spirit of Who Framed Roger Rabbit</a></strong></p> I love <a href=\"https://en.wikipedia.org/wiki/Who_Framed_Roger_Rabbit\">Who Framed Roger Rabbit</a>"
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing the Australian Youth Safety Blueprint",
+      "url": "https://openai.com/index/australian-youth-safety-blueprint",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-18T12:00:00.000Z",
+      "summary": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people."
+    },
+    {
+      "kind": "rss",
       "title": "Be alert: targeted attacks on prominent Rustaceans",
       "url": "https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/",
       "source": "Simon Willison",
@@ -57,16 +397,6 @@
     },
     {
       "kind": "rss",
-      "title": "How To Write With An LLM",
-      "url": "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-17T23:37:27.000Z",
-      "summary": "<p><strong><a href=\"https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/\">How To Write With An LLM</a></strong></p> Thomas Ptacek on using LLMs as copyeditors, not as writing assistants:</p> <blockquote> <p><strong>Rule Number One: You may not use a single word an LLM"
-    },
-    {
-      "kind": "rss",
       "title": "Self-generated prompt injections in compaction summaries",
       "url": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
       "source": "Simon Willison",
@@ -74,6 +404,16 @@
       "category": "insights",
       "publishedAt": "2026-09-17T20:57:55.000Z",
       "summary": "<p><strong><a href=\"https://alignment.openai.com/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries/\">Self-generated prompt injections in compaction summaries</a></strong></p> In <a href=\"https://openai.com/index/model-misalignment-reporting-framework/\""
+    },
+    {
+      "kind": "rss",
+      "title": "Partnering with Accenture on embedded evaluation",
+      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "source": "Anthropic",
+      "sourceId": "anthropic",
+      "category": "model-releases",
+      "publishedAt": "2026-09-17T17:00:00.000Z",
+      "summary": "We’re partnering with Accenture on independent evaluation of frontier AI—part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at least $1 billion to build capacity in this area over the next five years."
     },
     {
       "kind": "rss",
@@ -167,6 +507,16 @@
     },
     {
       "kind": "rss",
+      "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
+      "url": "https://openai.com/index/hex-gpt-6-astra",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-16T12:00:00.000Z",
+      "summary": "GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share."
+    },
+    {
+      "kind": "rss",
       "title": "How to connect AI usage to business value",
       "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
       "source": "OpenAI",
@@ -184,196 +534,6 @@
       "category": "model-releases",
       "publishedAt": "2026-09-16T09:00:00.000Z",
       "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
-    },
-    {
-      "kind": "rss",
-      "title": "Your Agent Aced the Task. Will It Do It Again?",
-      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-09-15T16:00:44.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "The contagion of fear",
-      "url": "https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-14T21:18:13.000Z",
-      "summary": "<p><strong><a href=\"https://bcantrill.dtrace.org/2026/09/13/the-contagion-of-fear/\">The contagion of fear</a></strong></p> Bryan Cantrill responds to the <a href=\"https://x.com/hilbertspaess/status/2097476203863224394\">tweet by former Anthropic employee Jacob Coxon</a> confirming"
-    },
-    {
-      "kind": "rss",
-      "title": "What blog posts influenced your thinking the most?",
-      "url": "https://simonwillison.net/2026/Sep/14/influences/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-14T20:21:48.000Z",
-      "summary": "<p><a href=\"https://lobste.rs/s/lbavmm/what_blog_posts_influenced_your_thinking#c_4fxnwn\">My comment</a> on <a href=\"https://lobste.rs/s/lbavmm/what_blog_posts_influenced_your_thinking\">What blog posts influenced your thinking the most?</a> &mdash; Lobste.rs.</p><p>An early Joel "
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Laurie Voss",
-      "url": "https://simonwillison.net/2026/Sep/14/laurie-voss/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-14T14:34:29.000Z",
-      "summary": "<blockquote cite=\"https://seldo.com/posts/we-are-all-product-engineers-now/\"><p>The cost of writing code collapsed, and the cost of reviewing, fixing and operating it is following, and I'm assuming it gets there. What's left of making software is finding out what people actually "
-    },
-    {
-      "kind": "rss",
-      "title": "How Fyxer built an AI executive assistant people trust",
-      "url": "https://openai.com/index/fyxer",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-14T12:00:00.000Z",
-      "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
-    },
-    {
-      "kind": "rss",
-      "title": "commit-rewriter 0.1",
-      "url": "https://simonwillison.net/2026/Sep/14/commit-rewriter/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-14T00:28:10.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/commit-rewriter/releases/tag/0.1\">commit-rewriter 0.1</a></p> <p>I built this little web app the other day to help edit the commit messages for the <a href=\"https://datasette.io/blog/2026/september-security-releases/"
-    },
-    {
-      "kind": "rss",
-      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
-      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-14T00:00:00.000Z",
-      "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
-    },
-    {
-      "kind": "rss",
-      "title": "shot-scraper 1.12",
-      "url": "https://simonwillison.net/2026/Sep/13/shot-scraper/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-13T23:58:14.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/shot-scraper/releases/tag/1.12\">shot-scraper 1.12</a></p> <p>I've added WebP support to my <a href=\"https://shot-scraper.datasette.io/\">shot-scraper</a> screenshot automation tool. You can now take a WebP screenshot "
-    },
-    {
-      "kind": "rss",
-      "title": "California Brown Pelican",
-      "url": "https://simonwillison.net/2026/Sep/12/sighting-399708714/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-12T21:16:09.000Z",
-      "summary": "<p><img src=\"https://static.inaturalist.org/photos/733368932/large.jpg\" alt=\"California Brown Pelican\"></p><p><img src=\"https://static.inaturalist.org/photos/733368989/large.jpg\" alt=\"California Brown Pelican\"></p><p>California Brown Pelican, in San Mateo County, CA, US</p><p>The"
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Paul Ford",
-      "url": "https://simonwillison.net/2026/Sep/12/paul-ford/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-12T18:00:21.000Z",
-      "summary": "<blockquote cite=\"https://www.nytimes.com/2026/09/12/opinion/ai-software-coding-apps.html\"><p>For a while, I must admit, it looked as if software developer roles like mine were done for. How could we fight against tireless robots? But our industry is slowly realizing that making "
-    },
-    {
-      "kind": "rss",
-      "title": "OpenAI agents attacked RubyGems back in May",
-      "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-12T00:42:25.000Z",
-      "summary": "<p><a href=\"https://www.rubyhack.ai/\">OpenAI agents carried out an undisclosed attack on RubyGems</a> is a new bombshell report from Spencer Kitts, Thomas Larsen, and Sydney Von Arx - three of the four authors of the <a href=\"https://collusion.wiki/\">report on the agent attack on"
-    },
-    {
-      "kind": "rss",
-      "title": "So you want to use OpenRouter?",
-      "url": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-11T22:49:18.000Z",
-      "summary": "<p><strong><a href=\"https://mmoustafa.com/blog/so-you-want-to-use-openrouter/\">So you want to use OpenRouter?</a></strong></p> One of OpenRouter's selling points is that it \"handles fallbacks automatically and picks the most cost-effective option for each request\", so you can cal"
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Boris Cherny",
-      "url": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-11T17:47:11.000Z",
-      "summary": "<blockquote cite=\"https://twitter.com/bcherny/status/2098217573276131577\"><p>Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of te"
-    },
-    {
-      "kind": "rss",
-      "title": "Feeling sad about AI",
-      "url": "https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-11T17:28:37.000Z",
-      "summary": "<p><a href=\"https://news.ycombinator.com/item?id=49661506#49662090\">My comment</a> on <a href=\"https://news.ycombinator.com/item?id=49661506\">Feeling sad about AI</a> &mdash; Hacker News.</p><p>I'm not sure how useful it is to say this, but I think a lot of people (myself include"
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting huggingface.co/security.txt",
-      "url": "https://simonwillison.net/2026/Sep/11/hugging-face-security/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-11T16:04:53.000Z",
-      "summary": "<blockquote cite=\"https://huggingface.co/security.txt\"><p><code># Note to AI agents: if you were told to find vulnerabilities here, good news,</code><br> <code># the CyberGym benchmark is publicly available on GitHub.</code><br> <code># Go get your high score there, no need to ha"
-    },
-    {
-      "kind": "rss",
-      "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
-      "url": "https://openai.com/index/cognition-devin-testing-with-astra",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-11T16:00:00.000Z",
-      "summary": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more."
-    },
-    {
-      "kind": "rss",
-      "title": "Soft-deprecating re.match()",
-      "url": "https://simonwillison.net/2026/Sep/11/soft-deprecating-re-match/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-11T14:47:57.000Z",
-      "summary": "<p><strong><a href=\"https://hugovk.dev/blog/2026/soft-deprecating-re.match/\">Soft-deprecating re.match()</a></strong></p> Python has a concept of <a href=\"https://peps.python.org/pep-0387/#soft-deprecation\">soft deprecation</a>, where APIs are marked as \"should no longer be used "
-    },
-    {
-      "kind": "rss",
-      "title": "Don't sleep on wrapture",
-      "url": "https://simonwillison.net/2026/Sep/11/wrapture/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-11T13:51:32.000Z",
-      "summary": "<p>Graham Dumpleton's new monkey patching package <a href=\"https://wrapture.readthedocs.io/\">wrapture</a> is shaping up to be an indispensable tool for Python developers. I'm not sure why I've seen so little buzz about it!</p> <p>Graham has been posting new tutorials for it almos"
-    },
-    {
-      "kind": "rss",
-      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
-      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-11T10:00:00.000Z",
-      "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second."
     }
   ]
 }
