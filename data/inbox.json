@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T08:06:48.277Z",
+  "generatedAt": "2026-09-24T08:06:19.823Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,6 +47,126 @@
   "items": [
     {
       "kind": "rss",
+      "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+      "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-09-23T18:41:40.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Gemini 3.8 TTS Playground",
+      "url": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-23T17:12:27.000Z",
+      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/gemini-tts-playground\">Gemini 3.8 TTS Playground</a></p> <p>Google <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/\">released two new Gemini text-to-speec"
+    },
+    {
+      "kind": "rss",
+      "title": "Shadow roots, explained with live examples",
+      "url": "https://simonwillison.net/2026/Sep/23/shadow-roots/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-09-23T16:37:18.000Z",
+      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/shadow-roots\">Shadow roots, explained with live examples</a></p> <p>Prompt to Fable 5.1 Medium:</p> <blockquote> <p><code>Build an artifact to explain shadow roots in CSS with interactive examples</code></p> </blo"
+    },
+    {
+      "kind": "rss",
+      "title": "Advancing Private AI Compute with secure, server-side memory",
+      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "category": "research",
+      "publishedAt": "2026-09-23T16:00:57.000Z",
+      "summary": "Introducing private, server-side memory to Private AI Compute for personal AI."
+    },
+    {
+      "kind": "rss",
+      "title": "Two years of OpenAI Academy",
+      "url": "https://openai.com/index/two-years-of-openai-academy",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-23T16:00:00.000Z",
+      "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
+    },
+    {
+      "kind": "rss",
+      "title": "Gemini 3.8 text-to-speech says hello",
+      "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "category": "research",
+      "publishedAt": "2026-09-23T15:25:14.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+      "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-23T13:00:00.000Z",
+      "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure."
+    },
+    {
+      "kind": "rss",
+      "title": "Sam Altman’s remarks at the United Nations Security Council",
+      "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council."
+    },
+    {
+      "kind": "rss",
+      "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+      "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy."
+    },
+    {
+      "kind": "rss",
+      "title": "How invideo improves color grading 3x with GPT‑6 Astra",
+      "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day."
+    },
+    {
+      "kind": "rss",
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "url": "https://openai.com/index/ringg",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1."
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing MentalHealthBench",
+      "url": "https://openai.com/index/introducing-mentalhealthbench",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-23T10:00:00.000Z",
+      "summary": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations."
+    },
+    {
+      "kind": "rss",
       "title": "SF October 14th: A Birds of a Feather Session on Agentic Engineering",
       "url": "https://simonwillison.net/2026/Sep/23/bof-agentic-engineering/",
       "source": "Simon Willison",
@@ -54,6 +174,36 @@
       "category": "insights",
       "publishedAt": "2026-09-23T02:53:19.000Z",
       "summary": "<p><strong><a href=\"https://luma.com/vxuiuyvg\">SF October 14th: A Birds of a Feather Session on Agentic Engineering</a></strong></p> I'm hosting an evening event with Jesse Vincent in San Francisco on Wednesday 14th October for people who are building weird and interesting things"
+    },
+    {
+      "kind": "rss",
+      "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
+      "url": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-23T02:00:00.000Z",
+      "summary": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries."
+    },
+    {
+      "kind": "rss",
+      "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+      "url": "https://openai.com/index/airbnb-gpt-6-astra",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-23T01:00:00.000Z",
+      "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster."
+    },
+    {
+      "kind": "rss",
+      "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+      "url": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia."
     },
     {
       "kind": "rss",
@@ -114,6 +264,16 @@
       "category": "insights",
       "publishedAt": "2026-09-22T17:14:55.000Z",
       "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-anthropic/releases/tag/0.29\">llm-anthropic 0.29</a></p> <p>Adds support for <a href=\"https://www.anthropic.com/claude-opus-5-5\">Claude Opus 5.5</a>:</p> <pre><code>llm -m claude-opus-5.5 \"prompt goes here\" </code"
+    },
+    {
+      "kind": "rss",
+      "title": "Claude discovers a novel enzyme system",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "source": "Anthropic",
+      "sourceId": "anthropic",
+      "category": "model-releases",
+      "publishedAt": "2026-09-22T17:00:00.000Z",
+      "summary": "In early results from our new life sciences research lab, Claude agents found an enzyme system whose function is still unknown."
     },
     {
       "kind": "rss",
@@ -424,116 +584,6 @@
       "category": "model-releases",
       "publishedAt": "2026-09-17T12:00:00.000Z",
       "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most."
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing Astra for Law",
-      "url": "https://openai.com/index/astra-for-law",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-17T00:00:00.000Z",
-      "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work."
-    },
-    {
-      "kind": "rss",
-      "title": "datasette 1.0a40",
-      "url": "https://simonwillison.net/2026/Sep/16/datasette/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-16T23:51:43.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a40\">datasette 1.0a40</a></p> <p>Same security fix as <a href=\"https://simonwillison.net/2026/Sep/16/datasette-2/\">0.65.5</a>, plus some neat new features and bug fixes:</p> <ul> <li>Plugins"
-    },
-    {
-      "kind": "rss",
-      "title": "datasette 0.65.5",
-      "url": "https://simonwillison.net/2026/Sep/16/datasette-2/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-16T23:51:08.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/0.65.5\">datasette 0.65.5</a></p> <p>Security fix for an issue where a trailing newline in a requested table name could bypass table permissions and expose private rows, reported by <a href=\"htt"
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing the Life Sciences Verification Program",
-      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
-      "source": "Anthropic",
-      "sourceId": "anthropic",
-      "category": "model-releases",
-      "publishedAt": "2026-09-16T17:00:00.000Z",
-      "summary": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems."
-    },
-    {
-      "kind": "rss",
-      "title": "Our framework for reporting model misalignment",
-      "url": "https://openai.com/index/model-misalignment-reporting-framework",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-16T17:00:00.000Z",
-      "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior."
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Mustafa Suleyman",
-      "url": "https://simonwillison.net/2026/Sep/16/mustafa-suleyman/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-16T16:00:54.000Z",
-      "summary": "<blockquote cite=\"https://mustafa-suleyman.ai/a-warning-about-model-welfare\"><p>We should not treat models as though they have feelings, preferences, rights, or any entitlement to our welfare. Consciousness is the foundation of our ethical, legal, and political systems. To invite"
-    },
-    {
-      "kind": "rss",
-      "title": "Helping older adults use AI in everyday life",
-      "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-16T16:00:00.000Z",
-      "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
-    },
-    {
-      "kind": "rss",
-      "title": "Reimagining advertising with AI",
-      "url": "https://openai.com/index/reimagining-advertising-with-ai",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-16T13:00:00.000Z",
-      "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
-    },
-    {
-      "kind": "rss",
-      "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
-      "url": "https://openai.com/index/hex-gpt-6-astra",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-16T12:00:00.000Z",
-      "summary": "GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share."
-    },
-    {
-      "kind": "rss",
-      "title": "How to connect AI usage to business value",
-      "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-16T12:00:00.000Z",
-      "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
-    },
-    {
-      "kind": "rss",
-      "title": "How workers are unlocking new ways of working",
-      "url": "https://openai.com/index/unlocking-new-ways-of-working",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-16T09:00:00.000Z",
-      "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
     }
   ]
 }

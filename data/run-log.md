@@ -1,5 +1,14 @@
 # Signal Run Log
 
+## 2026-09-24
+
+- Shipped `2026-09-24-gemini-3-8-tts-playground` — Google's Gemini 3.8 Flash TTS and Flash-Lite TTS release becomes a 15-minute built-in-voice comparison using Simon Willison's browser playground and the reader's own Gemini API key.
+- The guide uses an original, non-confidential museum announcement, checks words, pacing, and clarity, avoids voice replication, and directs readers to current quota, pricing, data-use, key-revocation, consent, and regional boundaries.
+- Three-role research and direct page checks confirmed the official release, controllable single- and multi-speaker generation, SynthID watermarking, the playground's direct-to-Google connection, and its stated in-memory key handling. No live API key or audio generation was used during editorial verification.
+- Skipped NVIDIA Warp/MjWarp and browser-shadow tutorials as specialist developer material; Private AI Compute, MentalHealthBench, cyber/policy announcements, training programmes, and customer stories lacked a stronger broadly available 5–30 minute reader workflow. ChatGPT Ads, OpenAI Academy, and model-comparison items repeated existing Signal coverage.
+- Ingest produced 54 candidates, with 16 normalized additions and 11 removals since September 23. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 149 articles. `npm run build` generated 355 pages and Pagefind indexed all 355 pages. The article route, homepage lead, RSS entry, and `git diff --check` passed inspection.
+
 ## 2026-09-23
 
 - Shipped `2026-09-23-gpt-6-sol-luna-work` — OpenAI's GPT-6 Sol and Luna release becomes a 15-minute same-prompt comparison in ChatGPT Work, with the Work/Codex versus ordinary Chat distinction kept explicit.
