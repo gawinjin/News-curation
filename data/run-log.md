@@ -1,5 +1,13 @@
 # Signal Run Log
 
+## 2026-09-25
+
+- No high-signal candidates today - skipping. The refreshed inbox added four URLs and removed six since September 24.
+- Three-role research rejected Google's Gemini 3.8 Live with Live Avatar because current access is limited to Gemini Enterprise through Google Cloud Agent Platform. The console path needs enterprise and Cloud project access, API use requires OAuth and streaming integration, and custom avatars require allowlisting, so there is no broadly available 5-30 minute normal-reader test.
+- Simon Willison's `commit-rewriter 0.2` and Datasette `1.0a41` are developer release notes; Hugging Face's LFM2.5-VL-DSpark guide is specialist model-acceleration work. None offers a stronger general-user Practical Guide.
+- Ingest produced 52 candidates. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 149 articles. `npm run build` generated 355 pages and Pagefind indexed all 355 pages; `git diff --check` passed.
+
 ## 2026-09-24
 
 - Shipped `2026-09-24-gemini-3-8-tts-playground` — Google's Gemini 3.8 Flash TTS and Flash-Lite TTS release becomes a 15-minute built-in-voice comparison using Simon Willison's browser playground and the reader's own Gemini API key.
