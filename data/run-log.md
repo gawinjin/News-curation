@@ -2,6 +2,15 @@
 
 ## 2026-09-29
 
+Manual follow-up:
+
+- Selected `/articles/2026-09-29-bluesky-reply-bot-checker/`, a distinct September 27 tool from Simon Willison that was not covered. Opened the author's announcement, hosted tool and implementation PR. Source, guide and cross-reference review performed sequentially; delegated the bounded MDX writing task.
+- Tested the hosted checker in the browser with its author's public handle, without sign-in, payment, keys or installation. Lookup completed; verified Assessment, scanned date range, Signals checked, Innocent explanations and View reply links. Guide deliberately teaches evidence inspection, not accusations or claims to detect AI authorship. No source quotations or third-party account allegations.
+- Confirmed today's Sonnet 5.5 article and recent Gemini TTS / GPT-6 Sol-Luna updates were already live. Skipped duplicating those. Safety-policy proposals, release-delay reporting and enterprise-only products did not provide a stronger current general-user test; no unreleased DevDay claims published.
+- Refreshed ingest: 45 candidates, RSS 11/11 available, 42 Nitter handles unreachable, zero manual entries. No social evidence fabricated.
+- Reused clean `codex/update-sep16` worktree, fast-forwarded from `92d38c4`, preserving dirty main checkout. No dependencies installed or changed.
+- Offline and full online `npm run verify` passed all 151 articles. Historical unreachable references generated notices; all three new article references checked without notices. `npm run build` passed, generating and indexing 359 pages. Article body, guide, references, homepage inclusion and exactly one RSS entry verified; `git diff --check` passed. Push/deployment outcome is reported in the session response.
+
 - Shipped `2026-09-29-claude-sonnet-5-5-everyday-work` - Anthropic's Sonnet 5.5 release becomes a 10-minute two-turn editing test using invented project notes, explicit fact checks, and a non-technical rewrite.
 - Three-role research confirmed the official release, Claude's model-selection controls, free-account usage limits, organization-policy caveats, and the visible notice when a narrow class of high-risk requests switches to Sonnet 5.
 - The article attributes speed, benchmark, and per-task cost claims to Anthropic rather than presenting vendor evaluations as independent guarantees. The guide avoids confidential data and tells readers to verify the active model label.

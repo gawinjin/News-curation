@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T08:04:26.708Z",
+  "generatedAt": "2026-09-29T09:48:11.420Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -117,16 +117,6 @@
     },
     {
       "kind": "rss",
-      "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
-      "url": "https://openai.com/index/basis-tax-workbook-with-astra",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use."
-    },
-    {
-      "kind": "rss",
       "title": "Are you a Codex Original?",
       "url": "https://openai.com/form/codex-originals",
       "source": "OpenAI",
@@ -134,6 +124,16 @@
       "category": "model-releases",
       "publishedAt": "2026-09-28T00:00:00.000Z",
       "summary": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below."
+    },
+    {
+      "kind": "rss",
+      "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+      "url": "https://openai.com/index/basis-tax-workbook-with-astra",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use."
     },
     {
       "kind": "rss",
@@ -327,13 +327,13 @@
     },
     {
       "kind": "rss",
-      "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
-      "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+      "title": "How invideo improves color grading 3x with GPT‑6 Astra",
+      "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
       "source": "OpenAI",
       "sourceId": "openai",
       "category": "model-releases",
       "publishedAt": "2026-09-23T12:00:00.000Z",
-      "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy."
+      "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day."
     },
     {
       "kind": "rss",
@@ -347,16 +347,6 @@
     },
     {
       "kind": "rss",
-      "title": "How invideo improves color grading 3x with GPT‑6 Astra",
-      "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-23T12:00:00.000Z",
-      "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day."
-    },
-    {
-      "kind": "rss",
       "title": "Sam Altman’s remarks at the United Nations Security Council",
       "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
       "source": "OpenAI",
@@ -364,6 +354,16 @@
       "category": "model-releases",
       "publishedAt": "2026-09-23T12:00:00.000Z",
       "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council."
+    },
+    {
+      "kind": "rss",
+      "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+      "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy."
     },
     {
       "kind": "rss",

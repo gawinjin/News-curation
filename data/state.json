@@ -360,7 +360,10 @@
     "https://www.anthropic.com/claude-sonnet-5-5",
     "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings",
     "https://support.claude.com/en/articles/17161993-why-claude-switched-models-in-your-conversation-with-sonnet-5-5",
-    "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/"
+    "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/",
+    "https://simonwillison.net/2026/Sep/27/bluesky-bot-check/",
+    "https://tools.simonwillison.net/bluesky-bot-check",
+    "https://github.com/simonw/tools/pull/348"
   ],
-  "lastIngest": "2026-09-29T08:04:26.708Z"
+  "lastIngest": "2026-09-29T09:48:11.420Z"
 }

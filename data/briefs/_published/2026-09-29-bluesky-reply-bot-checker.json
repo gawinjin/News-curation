@@ -1,0 +1,102 @@
+{
+  "slug": "bluesky-reply-bot-checker",
+  "date": "2026-09-29",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "Inspect suspicious Bluesky replies without jumping to conclusions"
+  ],
+  "summary": "Simon Willison's new browser checker exposes the patterns behind suspicious replies. Try it in ten minutes, but treat its flags as leads, not proof of AI authorship.",
+  "tags": [
+    "bluesky",
+    "simon-willison",
+    "ai-misuse",
+    "how-to"
+  ],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Sep/27/bluesky-bot-check/",
+    "title": "Tool: Bluesky reply bot checker",
+    "author": "Simon Willison",
+    "publishedAt": "2026-09-27",
+    "key_facts": [
+      "Released September 27, built with Claude Opus 5.5 according to author.",
+      "Examines timing, posting mix and reply patterns on public Bluesky profiles."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://tools.simonwillison.net/bluesky-bot-check",
+      "title": "Bluesky reply bot checker",
+      "key_facts": [
+        "Live browser test completed September 29 without sign-in, key, payment or installation using author's public handle.",
+        "Report includes Assessment, Signals checked, View reply links, measured values, rules and innocent explanations.",
+        "Patterns are not proof; normal users can trigger individual flags."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://github.com/simonw/tools/pull/348",
+      "title": "Implementation and review discussion",
+      "key_facts": [
+        "Scans up to 1000 posts; public implementation explains additive heuristics and limitations.",
+        "Automation signals do not establish AI authorship. Human behavior alone cannot produce strongest assessment."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "A browser with internet access",
+      "Your own public Bluesky handle, or the author's example handle simonwillison.net; no login required for this check"
+    ],
+    "steps": [
+      {
+        "instruction": "Open the [Bluesky reply bot checker](https://tools.simonwillison.net/bluesky-bot-check). Enter **simonwillison.net** as a practice example, or use your own public handle. Click **Check account**; do not enter a password or private messages.",
+        "verify_url": "https://tools.simonwillison.net/bluesky-bot-check"
+      },
+      {
+        "instruction": "Wait for **Assessment** to appear. Read the date range and number of scanned posts before interpreting the result: this is a sample, not the account's complete history."
+      },
+      {
+        "instruction": "Scroll to **Signals checked**. Choose one rule and read its measured value, threshold and **Innocent explanations**. Write down one reason a real person could trigger it."
+      },
+      {
+        "instruction": "Use a **View reply** link to inspect an example in context. Compare the actual exchange with the flag rather than treating a question mark or quick response as proof.",
+        "verify_url": "https://tools.simonwillison.net/bluesky-bot-check"
+      },
+      {
+        "instruction": "Finish with a narrow conclusion such as 'this rule flagged this pattern; authorship remains unknown.' Do not publish an accusation or report an account solely because of this score. If the lookup fails, retry later rather than interpreting missing data."
+      }
+    ]
+  },
+  "references": [
+    {
+      "url": "https://simonwillison.net/2026/Sep/27/bluesky-bot-check/",
+      "title": "Tool: Bluesky reply bot checker",
+      "author": "Simon Willison",
+      "publishedAt": "2026-09-27"
+    },
+    {
+      "url": "https://tools.simonwillison.net/bluesky-bot-check",
+      "title": "Bluesky reply bot checker",
+      "author": "Simon Willison"
+    },
+    {
+      "url": "https://github.com/simonw/tools/pull/348",
+      "title": "Bluesky reply bot checker: implementation and follow-up",
+      "author": "Simon Willison",
+      "publishedAt": "2026-09-27"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Author profile lookup tested live; no suspicious-account allegation published.",
+    "No precision/recall or accuracy claims. Automation is not equivalent to AI authorship.",
+    "No licensing claim or redistribution of source code."
+  ],
+  "assembled_at": "2026-09-29T09:46:53.691Z",
+  "assembled_by": "Signal Orchestrator v1 - source, cross-reference and live guide review"
+}

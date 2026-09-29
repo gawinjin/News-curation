@@ -1,0 +1,51 @@
+---
+title: "Inspect suspicious Bluesky replies without jumping to conclusions"
+date: 2026-09-29
+category: guides
+tags: ["bluesky", "simon-willison", "ai-misuse", "how-to"]
+summary: "Simon Willison's new browser checker exposes the patterns behind suspicious replies. Try it in ten minutes, but treat its flags as leads, not proof of AI authorship."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A browser with internet access"
+    - "Your own public Bluesky handle, or the author's example handle simonwillison.net; no login required for this check"
+references:
+  - title: "Tool: Bluesky reply bot checker"
+    url: "https://simonwillison.net/2026/Sep/27/bluesky-bot-check/"
+    author: "Simon Willison"
+    publishedAt: "2026-09-27"
+  - title: "Bluesky reply bot checker"
+    url: "https://tools.simonwillison.net/bluesky-bot-check"
+    author: "Simon Willison"
+  - title: "Bluesky reply bot checker: implementation and follow-up"
+    url: "https://github.com/simonw/tools/pull/348"
+    author: "Simon Willison"
+    publishedAt: "2026-09-27"
+draft: false
+---
+
+## TL;DR
+
+Simon Willison's Bluesky reply bot checker lets you inspect a public account's posting patterns in your browser. It shows the rules behind its flags and possible innocent explanations. Use it to examine context, not to decide that someone is a bot or that their replies were written by AI.
+
+## What's New
+
+Released on September 27, the checker examines posting times, the mix of posts and reply patterns across up to 1,000 posts. Its report includes measured values, the rules being applied and links to inspect individual replies.
+
+A September 29 browser test using Willison's public handle worked without signing in, paying, installing software or providing an API key. The public implementation explains how signals add together and where those rules have limits.
+
+## Why It Matters
+
+The useful part is being able to check why something was flagged. Ordinary users can trigger individual rules, so read the innocent explanations and the actual conversation before interpreting a score. Signs of automation do not establish AI authorship. Treat the report as a starting point for inspection, not grounds for an accusation.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A browser with internet access","Your own public Bluesky handle, or the author's example handle simonwillison.net; no login required for this check"]}>
+
+1. Open the [Bluesky reply bot checker](https://tools.simonwillison.net/bluesky-bot-check). Enter **simonwillison.net** as a practice example, or use your own public handle. Click **Check account**; do not enter a password or private messages.
+2. Wait for **Assessment** to appear. Read the date range and number of scanned posts before interpreting the result: this is a sample, not the account's complete history.
+3. Scroll to **Signals checked**. Choose one rule and read its measured value, threshold and **Innocent explanations**. Write down one reason a real person could trigger it.
+4. Use a **View reply** link to inspect an example in context. Compare the actual exchange with the flag rather than treating a question mark or quick response as proof.
+5. Finish with a narrow conclusion such as 'this rule flagged this pattern; authorship remains unknown.' Do not publish an accusation or report an account solely because of this score. If the lookup fails, retry later rather than interpreting missing data.
+
+</PracticalGuide>
