@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T05:39:40.886Z",
+  "generatedAt": "2026-09-29T08:04:26.708Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,16 +47,6 @@
   "items": [
     {
       "kind": "rss",
-      "title": "Claude Sonnet 5.5",
-      "url": "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-28T22:07:38.000Z",
-      "summary": "<p><strong><a href=\"https://www.anthropic.com/claude-sonnet-5-5\">Claude Sonnet 5.5</a></strong></p> New Sonnet model from Anthropic today. They say it \"runs 30%+ faster, and costs up to 30% less for most work\" - it's priced the same as Sonnet 5 but appears to beat it on every ben"
-    },
-    {
-      "kind": "rss",
       "title": "Quoting @joedaroo",
       "url": "https://simonwillison.net/2026/Sep/28/joedaroo/",
       "source": "Simon Willison",
@@ -74,6 +64,16 @@
       "category": "model-releases",
       "publishedAt": "2026-09-28T19:00:00.000Z",
       "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences."
+    },
+    {
+      "kind": "rss",
+      "title": "Towards safety cases for frontier AI training",
+      "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-28T19:00:00.000Z",
+      "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents"
     },
     {
       "kind": "rss",
@@ -117,16 +117,6 @@
     },
     {
       "kind": "rss",
-      "title": "Are you a Codex Original?",
-      "url": "https://openai.com/form/codex-originals",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "summary": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below."
-    },
-    {
-      "kind": "rss",
       "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
       "url": "https://openai.com/index/basis-tax-workbook-with-astra",
       "source": "OpenAI",
@@ -134,6 +124,16 @@
       "category": "model-releases",
       "publishedAt": "2026-09-28T00:00:00.000Z",
       "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use."
+    },
+    {
+      "kind": "rss",
+      "title": "Are you a Codex Original?",
+      "url": "https://openai.com/form/codex-originals",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "summary": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below."
     },
     {
       "kind": "rss",
@@ -327,16 +327,6 @@
     },
     {
       "kind": "rss",
-      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "url": "https://openai.com/index/ringg",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-23T12:00:00.000Z",
-      "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1."
-    },
-    {
-      "kind": "rss",
       "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
       "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
       "source": "OpenAI",
@@ -344,6 +334,16 @@
       "category": "model-releases",
       "publishedAt": "2026-09-23T12:00:00.000Z",
       "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy."
+    },
+    {
+      "kind": "rss",
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "url": "https://openai.com/index/ringg",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1."
     },
     {
       "kind": "rss",

@@ -9,6 +9,13 @@
 - Ingest produced 45 candidates, with 18 URL additions and 25 removals since September 25. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
 - `npm run verify` passed all 150 articles. `npm run build` generated 356 pages and Pagefind indexed all 356 pages; the new article route, homepage, RSS, JSON parsing, and `git diff --check` passed inspection.
 
+Rerun:
+
+- No additional high-signal candidates - skipping. The refreshed inbox added one normalized URL and removed the Sonnet 5.5 commentary source already covered earlier today.
+- Three-role research found OpenAI's frontier-training safety-case guidelines substantive but not actionable for Signal's general audience: the proposal is still being implemented and provides no public tool, template, checklist, or meaningful 5-30 minute reader workflow.
+- Ingest again produced 45 candidates. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 150 articles. `npm run build` generated 356 pages and Pagefind indexed all 356 pages; JSON parsing and `git diff --check` passed.
+
 ## 2026-09-25
 
 - No high-signal candidates today - skipping. The refreshed inbox added four URLs and removed six since September 24.
