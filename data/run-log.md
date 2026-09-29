@@ -1,5 +1,14 @@
 # Signal Run Log
 
+## 2026-09-29
+
+- Shipped `2026-09-29-claude-sonnet-5-5-everyday-work` - Anthropic's Sonnet 5.5 release becomes a 10-minute two-turn editing test using invented project notes, explicit fact checks, and a non-technical rewrite.
+- Three-role research confirmed the official release, Claude's model-selection controls, free-account usage limits, organization-policy caveats, and the visible notice when a narrow class of high-risk requests switches to Sonnet 5.
+- The article attributes speed, benchmark, and per-task cost claims to Anthropic rather than presenting vendor evaluations as independent guarantees. The guide avoids confidential data and tells readers to verify the active model label.
+- Skipped Holo4 as specialist computer-use-agent infrastructure; OpenAI policy responses, programs, forms, and customer stories lacked a distinct broad-reader workflow; Simon Willison's year-in-review and short quote posts were commentary rather than stronger hands-on candidates.
+- Ingest produced 45 candidates, with 18 URL additions and 25 removals since September 25. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 150 articles. `npm run build` generated 356 pages and Pagefind indexed all 356 pages; the new article route, homepage, RSS, JSON parsing, and `git diff --check` passed inspection.
+
 ## 2026-09-25
 
 - No high-signal candidates today - skipping. The refreshed inbox added four URLs and removed six since September 24.

@@ -1,0 +1,59 @@
+---
+title: "Claude Sonnet 5.5 speeds up everyday work"
+date: 2026-09-29
+category: model-releases
+tags: ["anthropic", "claude", "models", "productivity"]
+summary: "Claude Sonnet 5.5 is faster and more efficient than its predecessor, according to Anthropic. A 10-minute editing test shows what that means for ordinary work."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A browser or the Claude mobile app"
+    - "A free or paid Claude account"
+    - "Invented, non-sensitive sample notes"
+references:
+  - title: "Claude Sonnet 5.5"
+    url: "https://www.anthropic.com/claude-sonnet-5-5"
+    author: "Anthropic"
+    publishedAt: "2026-09-28"
+  - title: "Change the model, effort, and thinking settings"
+    url: "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings"
+    author: "Anthropic"
+  - title: "Why Claude switched models in your conversation with Sonnet 5.5"
+    url: "https://support.claude.com/en/articles/17161993-why-claude-switched-models-in-your-conversation-with-sonnet-5-5"
+    author: "Anthropic"
+  - title: "Claude Sonnet 5.5"
+    url: "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/"
+    author: "Simon Willison"
+    publishedAt: "2026-09-28"
+draft: false
+---
+
+## TL;DR
+
+Claude Sonnet 5.5 is now available for everyday tasks such as revising documents, slides, spreadsheets, designs, and code. Anthropic says it completes work more than 30% faster than Sonnet 5 while often using fewer tokens, but those speed and cost figures come from the company’s own tests.
+
+## What's New
+
+Anthropic is positioning Sonnet 5.5 as the everyday-work partner to Opus 5.5. It is available in Claude, Anthropic’s developer tools, and major cloud platforms. Standard API pricing remains $2 per million input tokens and $10 per million output tokens, with separate rates for prompt caching.
+
+The company says the model is more than 30% faster than Sonnet 5 and can reduce the cost of a typical task by as much as 30% because it generally uses fewer tokens. Anthropic also reports gains across its benchmarks, including a large improvement on a command-line task test and results close to Opus 5.5 on two knowledge-work evaluations. These are Anthropic’s evaluations, not independent guarantees.
+
+In the Claude app, users can choose an effort level. Lower settings favor faster answers and lower usage, while higher settings allow more reasoning and checking. Anthropic says an audit of about 1,850 scenarios found Sonnet 5.5 matched or improved on Sonnet 5 across most measures, while acknowledging that evaluations cannot identify every possible failure.
+
+## Why It Matters
+
+For routine work, the useful question is not whether a benchmark score rose; it is whether Claude can turn rough material into a usable draft quickly and then follow a precise revision request. The guide below tests that with invented notes, so you can judge structure, factual preservation, and tone without sharing confidential information.
+
+Effort controls also offer a practical trade-off: use a lower setting for straightforward edits, then spend more reasoning time on a difficult task. Check the model label on important work, because Anthropic says Sonnet 5.5 may switch to Sonnet 5 for a narrow group of high-risk requests and will show a notice when that happens.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A browser or the Claude mobile app","A free or paid Claude account","Invented, non-sensitive sample notes"]}>
+
+1. Open [Claude](https://claude.ai), sign in or create an account, and start a new chat. Confirm that the chat box and a model label appear beside the send button.
+2. Select the model label beside Send, choose Claude Sonnet 5.5, and open More models if needed. Confirm that the label now reads Sonnet 5.5 before sending anything.
+3. Paste this invented test: 'Turn these rough notes into a one-page project update with headings Status, Decisions, Risks, and Next actions: launch moved to Friday; homepage review Thursday; owner A checks analytics; risk: mobile images are too large.' Send it and confirm the result has all four headings and preserves every named fact.
+4. Reply: 'Revise this for a non-technical manager, keep it under 150 words, and end with one decision question.' Confirm the revision is shorter, avoids jargon, keeps the facts, and ends with a question.
+5. Check the model label on the answer. It should still say Sonnet 5.5. If Claude shows a model-switch notice, open Settings > Capabilities to review Switch models when a message is flagged; retry only with the harmless sample.
+
+</PracticalGuide>

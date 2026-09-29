@@ -1,0 +1,130 @@
+{
+  "slug": "claude-sonnet-5-5-everyday-work",
+  "date": "2026-09-29",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": [
+    "Claude Sonnet 5.5 speeds up everyday work",
+    "Try Claude Sonnet 5.5 on a real editing task"
+  ],
+  "summary": "Claude Sonnet 5.5 is faster and more efficient than its predecessor, according to Anthropic. A 10-minute editing test shows what that means for ordinary work.",
+  "tags": ["anthropic", "claude", "models", "productivity"],
+  "primary_source": {
+    "url": "https://www.anthropic.com/claude-sonnet-5-5",
+    "title": "Claude Sonnet 5.5",
+    "author": "Anthropic",
+    "publishedAt": "2026-09-28",
+    "key_facts": [
+      "Anthropic presents Sonnet 5.5 as the everyday-work counterpart to Opus 5.5, aimed at well-defined jobs such as bug fixes and producing polished documents, slides, spreadsheets, and designs.",
+      "Anthropic says Sonnet 5.5 produces results more than 30% faster than Sonnet 5 and generally uses fewer tokens for similar work, cutting per-task cost by as much as 30% in its testing.",
+      "The announcement keeps standard API prices at $2 per million input tokens and $10 per million output tokens, plus separate prompt-caching rates.",
+      "Anthropic reports broad gains over Sonnet 5 in its benchmarks, including a large Terminal-Bench 4.0 jump and near-Opus 5.5 results on two knowledge-work evaluations; these are vendor evaluations rather than independent guarantees.",
+      "Users can choose an effort level: lower settings prioritize speed and lower usage, while higher settings spend more time reasoning and checking.",
+      "Anthropic says Sonnet 5.5 matched or improved on Sonnet 5 across most measures in an approximately 1,850-scenario behavioral audit, while noting that evaluations cannot catch every failure.",
+      "Sonnet 5.5 is available in Claude and across Anthropic's developer platforms and major cloud providers."
+    ],
+    "quote_candidates": [
+      {
+        "text": "It’s a clear upgrade over Claude Sonnet 5, runs 30%+ faster, and costs up to 30% less for most work.",
+        "words": 20,
+        "exact": true,
+        "position": "Introduction, opening paragraph"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings",
+      "title": "Change the model, effort, and thinking settings",
+      "key_facts": [
+        "Users can click the model name beside the send button, choose another model, and open More models when needed.",
+        "Sonnet 5.5 supports selectable effort levels; lower settings suit routine work and conserve usage, while higher settings spend more time on difficult tasks.",
+        "Thinking cannot be switched off for Sonnet 5.5 in the Claude app."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://support.claude.com/en/articles/17161993-why-claude-switched-models-in-your-conversation-with-sonnet-5-5",
+      "title": "Why Claude switched models in your conversation with Sonnet 5.5",
+      "key_facts": [
+        "Anthropic says Sonnet 5.5 can switch to Sonnet 5 for a narrow group of high-risk requests and displays a notice when this happens.",
+        "The related account control is under Settings and Capabilities."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/",
+      "title": "Claude Sonnet 5.5",
+      "key_facts": [
+        "Simon Willison highlights Anthropic's speed and per-task cost claims while noting that the model keeps Sonnet 5's API token prices.",
+        "His release note points readers to the official Anthropic announcement and benchmark table."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "A browser or the Claude mobile app",
+      "A free or paid Claude account",
+      "Invented, non-sensitive sample notes"
+    ],
+    "steps": [
+      {
+        "instruction": "Open [Claude](https://claude.ai), sign in or create an account, and start a new chat. Confirm that the chat box and a model label appear beside the send button.",
+        "verify_url": "https://support.claude.com/en/articles/8114491-get-started-with-claude"
+      },
+      {
+        "instruction": "Select the model label beside Send, choose Claude Sonnet 5.5, and open More models if needed. Confirm that the label now reads Sonnet 5.5 before sending anything.",
+        "verify_url": "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings"
+      },
+      {
+        "instruction": "Paste this invented test: 'Turn these rough notes into a one-page project update with headings Status, Decisions, Risks, and Next actions: launch moved to Friday; homepage review Thursday; owner A checks analytics; risk: mobile images are too large.' Send it and confirm the result has all four headings and preserves every named fact.",
+        "verify_url": "https://www.anthropic.com/claude-sonnet-5-5"
+      },
+      {
+        "instruction": "Reply: 'Revise this for a non-technical manager, keep it under 150 words, and end with one decision question.' Confirm the revision is shorter, avoids jargon, keeps the facts, and ends with a question.",
+        "verify_url": "https://www.anthropic.com/claude-sonnet-5-5"
+      },
+      {
+        "instruction": "Check the model label on the answer. It should still say Sonnet 5.5. If Claude shows a model-switch notice, open Settings > Capabilities to review Switch models when a message is flagged; retry only with the harmless sample.",
+        "verify_url": "https://support.claude.com/en/articles/17161993-why-claude-switched-models-in-your-conversation-with-sonnet-5-5"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Claude Sonnet 5.5",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "author": "Anthropic",
+      "publishedAt": "2026-09-28"
+    },
+    {
+      "title": "Change the model, effort, and thinking settings",
+      "url": "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings",
+      "author": "Anthropic"
+    },
+    {
+      "title": "Why Claude switched models in your conversation with Sonnet 5.5",
+      "url": "https://support.claude.com/en/articles/17161993-why-claude-switched-models-in-your-conversation-with-sonnet-5-5",
+      "author": "Anthropic"
+    },
+    {
+      "title": "Claude Sonnet 5.5",
+      "url": "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-09-28"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Anthropic says Sonnet 5.5 is available on Claude.ai and its plan table lists Sonnet on Free, but free accounts have usage limits and paid plans provide more usage.",
+    "Enterprise administrators can hide models or set defaults, so a missing Sonnet 5.5 option may reflect organization policy rather than a failed rollout.",
+    "The guide uses invented, non-sensitive notes. Do not ask readers to upload financial records, health data, passwords, or confidential documents.",
+    "Sonnet 5.5 can switch to Sonnet 5 for a narrow set of high-risk requests and displays a notice when it does.",
+    "Performance, benchmark, and cost-per-task claims come from Anthropic's own evaluation and should be attributed as such."
+  ],
+  "assembled_at": "2026-09-29T12:42:55+07:00",
+  "assembled_by": "Signal Orchestrator v1"
+}
