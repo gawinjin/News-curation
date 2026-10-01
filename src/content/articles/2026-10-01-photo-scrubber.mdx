@@ -1,0 +1,55 @@
+---
+title: "Clean a photo before you share it"
+date: 2026-10-01
+category: guides
+tags: ["privacy", "photos", "metadata", "safety"]
+summary: "Photo Scrubber helps you review faces, cover visible identifiers, and remove embedded metadata in your browser before sharing a copy."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "5–10 min"
+  prerequisites:
+    - "A modern browser with JavaScript enabled and an internet connection"
+    - "A non-sensitive JPEG, PNG, or WebP test image no larger than 75 MB"
+references:
+  - title: "Photo Scrubber — local face blur & metadata removal"
+    url: "https://simonwillison.net/2026/Sep/29/photo-scrubber/"
+    author: "Simon Willison"
+    publishedAt: "2026-09-29"
+  - title: "Photo Scrubber — local face blur & metadata removal"
+    url: "https://tools.simonwillison.net/photo-scrubber"
+    author: "Simon Willison"
+  - title: "Add Photo Scrubber tool"
+    url: "https://github.com/simonw/tools/commit/aa733ecc3458d5703e3b40c84507ae362f5fb294"
+    author: "Simon Willison"
+    publishedAt: "2026-09-29"
+draft: false
+---
+
+## TL;DR
+
+Photo Scrubber processes a photo in your browser, lets you cover faces and other identifying details, removes embedded metadata, and exports a new file without changing the original. Automatic detection can miss people, so you still need to inspect the entire image before sharing it.
+
+## What's New
+
+Photo Scrubber is an experimental browser tool that scans an image for faces. It checks the full picture and overlapping sections, with an optional denser scan for smaller faces.
+
+You can adjust detected regions, draw boxes over anything the scan missed, and choose between blur and a solid cover. It accepts JPEG, PNG, and WebP files up to 75 MB, but not HEIC, RAW, SVG, or animated images.
+
+When you export, the tool rebuilds the image from its pixels and checks the new JPEG or PNG structure so the original metadata, comments, and thumbnails are not carried over. The hosted page reports no uploads, analytics, or persistent photo storage, though it loads pinned face-detection files from a content delivery network.
+
+## Why It Matters
+
+A photo can identify someone through both hidden metadata and visible clues such as a face, name badge, tattoo, text, or background. Photo Scrubber puts both checks into one browser workflow and creates a separate copy, so the original stays intact.
+
+It is still a review aid, not a guarantee of anonymity. Small, turned, or partly hidden faces may escape detection, and blur can leave recognizable detail. Check the whole image yourself, use solid covers for stronger removal, and choose an audited or self-hosted process for high-risk material.
+
+<PracticalGuide timeToTry="5–10 min" prerequisites={["A modern browser with JavaScript enabled and an internet connection","A non-sensitive JPEG, PNG, or WebP test image no larger than 75 MB"]}>
+
+1. Open [Photo Scrubber](https://tools.simonwillison.net/photo-scrubber), then choose, drag, or paste a non-sensitive test photo. Confirm the review screen appears; your original file remains unchanged.
+2. Turn on Show boxes and use Hold to compare while checking every face. If people are distant, run Find smaller faces and expect both extra detections and possible misses.
+3. Use Draw region to cover every missed face plus identifying text, tattoos, badges, or background details. Choose Solid cover when anonymity matters because blur can retain recognizable detail.
+4. Confirm that you reviewed the whole photo, choose the output format and dimensions, then select Prepare & verify image. Wait for Clean copy ready · metadata checked.
+5. Download the clean image and inspect it at full size before sharing. Stop if any visible clue remains; for protests, abuse reports, or other high-risk images, use an audited or self-hosted workflow instead.
+
+</PracticalGuide>

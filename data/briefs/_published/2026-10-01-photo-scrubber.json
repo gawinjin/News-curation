@@ -1,0 +1,120 @@
+{
+  "slug": "photo-scrubber",
+  "date": "2026-10-01",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "Clean a photo before you share it",
+    "Photo Scrubber checks faces and metadata locally"
+  ],
+  "summary": "Photo Scrubber helps you review faces, cover visible identifiers, and remove embedded metadata in your browser before sharing a copy.",
+  "tags": ["privacy", "photos", "metadata", "safety"],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Sep/29/photo-scrubber/",
+    "title": "Photo Scrubber — local face blur & metadata removal",
+    "author": "Simon Willison",
+    "publishedAt": "2026-09-29",
+    "key_facts": [
+      "Photo Scrubber is an experimental browser tool for obscuring faces and stripping metadata before a photo is shared.",
+      "The tool processes photos locally and exports a new file without overwriting the original.",
+      "Automatic face detection scans the full image and overlapping crops, with an optional denser pass for smaller faces.",
+      "Users can adjust detections, draw boxes over missed details, and choose blur or a solid cover.",
+      "The tool accepts JPEG, PNG, and WebP files up to 75 MB; HEIC, RAW, SVG, animated PNG, and animated WebP are unsupported.",
+      "Export rebuilds the image from pixels and checks the JPEG or PNG structure so original EXIF, XMP, IPTC, comments, and thumbnails are not retained.",
+      "Automatic detection can miss small, turned, obscured, or difficult faces, while clothing, tattoos, text, and backgrounds can still identify a person.",
+      "The page reports no analytics, uploads, or persistent photo storage, but it loads pinned detector files from a CDN; high-risk users should audit and self-host the tool instead."
+    ],
+    "quote_candidates": [
+      {
+        "text": "Local processing. A new file, not an overwrite.",
+        "words": 8,
+        "exact": true,
+        "position": "Tool page privacy summary"
+      },
+      {
+        "text": "Blur is not guaranteed anonymity; use solid cover for stronger removal inside a region.",
+        "words": 14,
+        "exact": true,
+        "position": "Tool page warning"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://tools.simonwillison.net/photo-scrubber",
+      "title": "Photo Scrubber — local face blur & metadata removal",
+      "key_facts": [
+        "The live tool presents a three-stage workflow: choose a photo, review and adjust regions, then prepare and verify a clean copy.",
+        "Its interface warns that automatic detection can miss faces and that blur does not guarantee anonymity.",
+        "The tool checks the output for a restricted JPEG or PNG structure before enabling the download."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://github.com/simonw/tools/commit/aa733ecc3458d5703e3b40c84507ae362f5fb294",
+      "title": "Add Photo Scrubber tool",
+      "key_facts": [
+        "The official source commit records the single-file implementation used for local face covering and metadata removal."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "5–10 min",
+    "prerequisites": [
+      "A modern browser with JavaScript enabled and an internet connection",
+      "A non-sensitive JPEG, PNG, or WebP test image no larger than 75 MB"
+    ],
+    "steps": [
+      {
+        "instruction": "Open [Photo Scrubber](https://tools.simonwillison.net/photo-scrubber), then choose, drag, or paste a non-sensitive test photo. Confirm the review screen appears; your original file remains unchanged.",
+        "verify_url": "https://tools.simonwillison.net/photo-scrubber"
+      },
+      {
+        "instruction": "Turn on Show boxes and use Hold to compare while checking every face. If people are distant, run Find smaller faces and expect both extra detections and possible misses.",
+        "verify_url": "https://tools.simonwillison.net/photo-scrubber"
+      },
+      {
+        "instruction": "Use Draw region to cover every missed face plus identifying text, tattoos, badges, or background details. Choose Solid cover when anonymity matters because blur can retain recognizable detail.",
+        "verify_url": "https://tools.simonwillison.net/photo-scrubber"
+      },
+      {
+        "instruction": "Confirm that you reviewed the whole photo, choose the output format and dimensions, then select Prepare & verify image. Wait for Clean copy ready · metadata checked.",
+        "verify_url": "https://tools.simonwillison.net/photo-scrubber"
+      },
+      {
+        "instruction": "Download the clean image and inspect it at full size before sharing. Stop if any visible clue remains; for protests, abuse reports, or other high-risk images, use an audited or self-hosted workflow instead.",
+        "verify_url": "https://tools.simonwillison.net/photo-scrubber"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Photo Scrubber — local face blur & metadata removal",
+      "url": "https://simonwillison.net/2026/Sep/29/photo-scrubber/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-09-29"
+    },
+    {
+      "title": "Photo Scrubber — local face blur & metadata removal",
+      "url": "https://tools.simonwillison.net/photo-scrubber",
+      "author": "Simon Willison"
+    },
+    {
+      "title": "Add Photo Scrubber tool",
+      "url": "https://github.com/simonw/tools/commit/aa733ecc3458d5703e3b40c84507ae362f5fb294",
+      "author": "Simon Willison",
+      "publishedAt": "2026-09-29"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Automatic detection can miss faces; readers must inspect the whole image manually.",
+    "Removing metadata and covering faces cannot remove visible identifiers or guarantee anonymity.",
+    "The guide uses a non-sensitive test image and directs high-risk users to an audited or self-hosted workflow.",
+    "The hosted tool loads pinned detector dependencies from a CDN even though photo processing remains local."
+  ],
+  "assembled_at": "2026-10-01T10:18:00+07:00",
+  "assembled_by": "Signal Orchestrator v1"
+}
