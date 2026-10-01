@@ -1,5 +1,14 @@
 # Signal Run Log
 
+## 2026-10-01
+
+- Shipped `2026-10-01-photo-scrubber` — Simon Willison's browser tool becomes a 5–10 minute privacy check that reviews every face and visible identifier, prefers solid covers when anonymity matters, verifies the rebuilt file, and preserves the original.
+- Shipped `2026-10-01-openai-dots-controlled-first-task` — OpenAI's gradual Dots rollout becomes a ten-minute first task with no plugins or sensitive data, an explicit approval rule, scheduled-task inspection, activity review, and a pause/resume test.
+- Three-role research confirmed Photo Scrubber's local processing, metadata removal, supported formats, missed-face limits, and hosted dependency caveat. Dots research confirmed paid-plan and market restrictions, desktop-only creation, Custom Rules, read-only proactive research, activity views, plugin-retention boundaries, and administrator controls.
+- Dropped Gemini 4 Argon because the primary announcement was unreachable. Skipped GPT-6.1 Sol as a repeat of Signal's September 23 model-comparison workflow; the remaining new items were specialist research, policy/security reports, customer programmes, or developer material without a stronger distinct general-user test.
+- Ingest produced 36 candidates, with 16 URL additions and 25 removals since September 29. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 153 articles. `npm run build` generated and Pagefind indexed 363 pages; rendered-route, homepage, RSS, JSON, and `git diff --check` checks passed.
+
 ## 2026-09-29
 
 Manual follow-up:

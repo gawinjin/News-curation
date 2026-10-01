@@ -1,0 +1,137 @@
+{
+  "slug": "openai-dots-controlled-first-task",
+  "date": "2026-10-01",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "Give OpenAI Dots a controlled first task",
+    "OpenAI Dots arrive with rules, approvals, and pause controls"
+  ],
+  "summary": "OpenAI Dots are always-on assistants for eligible paid accounts. A ten-minute first task tests scheduling, rules, activity views, and the pause control.",
+  "tags": ["openai", "agents", "productivity", "safety"],
+  "primary_source": {
+    "url": "https://openai.com/index/introducing-dots",
+    "title": "Introducing dots",
+    "author": "OpenAI",
+    "publishedAt": "2026-09-29",
+    "key_facts": [
+      "Dots are always-on agents powered by GPT-6 Astra that can pursue goals using an isolated cloud computer.",
+      "OpenAI says dots can connect to more than 4,000 apps through plugins and can work through their own browser or connected devices.",
+      "Users can talk with dots through ChatGPT on desktop, web, and mobile, as well as Slack and Teams; text messaging is planned.",
+      "Dots can manage several projects concurrently, report progress, ask questions, and carry context across supported channels.",
+      "Proactive background research is read-only: it cannot send messages, change connected-app content, or control a browser or computer.",
+      "Users choose which apps a dot can access and can write Custom Rules that allow, require approval for, or block actions; some sensitive actions remain user-only.",
+      "Rollout starts with eligible Pro and Business Premium users, while Enterprise, Edu, and Healthcare workspaces require an administrator-enabled beta.",
+      "One dot is included with Pro or Business Premium, but delegated Codex or ChatGPT Work jobs can still use those products' allowances."
+    ],
+    "quote_candidates": [
+      {
+        "text": "Certain sensitive tasks, such as changing a password, always stay with you.",
+        "words": 12,
+        "exact": true,
+        "position": "You’re always in control"
+      },
+      {
+        "text": "Dots can still make mistakes, so always review consequential work.",
+        "words": 10,
+        "exact": true,
+        "position": "Action review and approvals"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
+      "title": "Getting started with your dot",
+      "key_facts": [
+        "Dots are created from ChatGPT on a desktop browser or the desktop app; creation is not currently available on mobile.",
+        "The dot profile exposes Custom Rules plus In progress, Scheduled, and Completed activity views.",
+        "Users can pause and resume a dot from its profile menu."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs",
+      "title": "Dots privacy, security, and safety FAQs",
+      "key_facts": [
+        "Plugin permissions, Custom Rules, action approvals, and Activity View give users several layers of control, but they do not eliminate mistakes.",
+        "Disconnecting a plugin blocks future access but does not erase information the dot already retained.",
+        "Deleting the dot removes its conversations, memories, and scheduled tasks, subject to OpenAI's stated retention and legal exceptions."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://openai.com/index/how-we-build-safety-security-and-privacy-into-dots/",
+      "title": "How we build safety, security, and privacy into dots",
+      "key_facts": [
+        "OpenAI describes isolated cloud workspaces, secure sign-in, prompt-injection defenses, automatic reviews, and confirmation or takeover for consequential actions."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "Age 18 or older and Dots access on an eligible Pro, Business Premium, or administrator-enabled workspace account",
+      "ChatGPT in a desktop browser or the desktop app",
+      "Non-sensitive test information"
+    ],
+    "steps": [
+      {
+        "instruction": "Open [ChatGPT](https://chatgpt.com) on desktop, sign in, and select Create your dot. Complete onboarding and give it a name. If the option is absent, your account has not received the gradual rollout; stop and check later.",
+        "verify_url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot"
+      },
+      {
+        "instruction": "Open the dot profile, then Customize > Custom rules. Add: ‘Ask me before sending, purchasing, deleting, installing, or changing anything outside this chat.’ Choose Ask before taking action and save it.",
+        "verify_url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot"
+      },
+      {
+        "instruction": "Send: ‘Five minutes from now, remind me to review tomorrow’s top priority. Do not use connected apps or contact anyone.’ Confirm the dot says it scheduled the reminder.",
+        "verify_url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot"
+      },
+      {
+        "instruction": "Open the dot profile > Scheduled and confirm the reminder and run time. After it runs, check that the update appears in the dot conversation.",
+        "verify_url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot"
+      },
+      {
+        "instruction": "Review In progress, Scheduled, and Completed. Then open the profile menu, choose Pause, confirm the Paused label, and resume it. Before using plugins, review Data Controls; remember that disconnecting a plugin stops future access but deleting the dot is what removes its conversations, memories, and schedules.",
+        "verify_url": "https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Introducing dots",
+      "url": "https://openai.com/index/introducing-dots",
+      "author": "OpenAI",
+      "publishedAt": "2026-09-29"
+    },
+    {
+      "title": "Getting started with your dot",
+      "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
+      "author": "OpenAI"
+    },
+    {
+      "title": "Dots privacy, security, and safety FAQs",
+      "url": "https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs",
+      "author": "OpenAI"
+    },
+    {
+      "title": "How we build safety, security, and privacy into dots",
+      "url": "https://openai.com/index/how-we-build-safety-security-and-privacy-into-dots/",
+      "author": "OpenAI",
+      "publishedAt": "2026-09-29"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Dots access is a gradual rollout limited to eligible paid plans and supported markets; the article must not imply universal availability.",
+    "Enterprise, Edu, and Healthcare access requires an administrator-enabled beta.",
+    "The first task uses no plugins or sensitive information and tests the pause control before broader use.",
+    "Custom Rules and approvals reduce risk but do not guarantee correct behavior; consequential output and actions require review.",
+    "On personal plans, readers should inspect Data Controls before sharing information with a dot."
+  ],
+  "assembled_at": "2026-10-01T10:25:00+07:00",
+  "assembled_by": "Signal Orchestrator v1"
+}
