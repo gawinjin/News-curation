@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T03:08:45.188Z",
+  "generatedAt": "2026-10-02T08:49:51.075Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -45,6 +45,76 @@
     "alexalbert__"
   ],
   "items": [
+    {
+      "kind": "rss",
+      "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-10-02T04:01:31.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "The eternal complement",
+      "url": "https://openai.com/index/the-eternal-complement",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-01T17:00:00.000Z",
+      "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress."
+    },
+    {
+      "kind": "rss",
+      "title": "How Albertsons Companies is reimagining retail from the inside out",
+      "url": "https://openai.com/index/albertsons-reimagining-retail",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-01T16:00:00.000Z",
+      "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers."
+    },
+    {
+      "kind": "rss",
+      "title": "Barclays scales Claude to upgrade operations and improve client experience",
+      "url": "https://www.anthropic.com/news/barclays-scales-claude",
+      "source": "Anthropic",
+      "sourceId": "anthropic",
+      "category": "model-releases",
+      "publishedAt": "2026-10-01T15:19:00.000Z",
+      "summary": "Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations."
+    },
+    {
+      "kind": "rss",
+      "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+      "url": "https://huggingface.co/blog/allenai/olmocore3",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-10-01T15:01:43.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Matthew Green",
+      "url": "https://simonwillison.net/2026/Oct/1/matthew-green/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-01T06:29:01.000Z",
+      "summary": "<blockquote cite=\"https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/\"><p>[...] Put these pieces together and you have the two halves of a worm: a payload that hijacks the agent, and an agent that will carry the payload to the nex"
+    },
+    {
+      "kind": "rss",
+      "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+      "url": "https://openai.com/index/the-den-family-social",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days."
+    },
     {
       "kind": "rss",
       "title": "He Built This City",
@@ -127,16 +197,6 @@
     },
     {
       "kind": "rss",
-      "title": "Photo Scrubber — local face blur & metadata removal",
-      "url": "https://simonwillison.net/2026/Sep/29/photo-scrubber/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-29T16:45:27.000Z",
-      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/photo-scrubber\">Photo Scrubber — local face blur &amp; metadata removal</a></p> <p>I took a photograph of some protesters, then thought about how I don't like sharing photographs of strangers with identifiable fac"
-    },
-    {
-      "kind": "rss",
       "title": "OpenAI DevDay 2026 live blog",
       "url": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
       "source": "Simon Willison",
@@ -194,16 +254,6 @@
       "category": "model-releases",
       "publishedAt": "2026-09-29T10:00:00.000Z",
       "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders."
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing dots",
-      "url": "https://openai.com/index/introducing-dots",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-29T00:00:00.000Z",
-      "summary": "Dots by OpenAI are proactive assistants that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward."
     },
     {
       "kind": "rss",
@@ -344,66 +394,6 @@
       "category": "insights",
       "publishedAt": "2026-09-25T17:22:01.000Z",
       "summary": "<blockquote cite=\"https://daringfireball.net/linked/2026/09/25/aten-muse\"><p>Muse is getting a lot of attention — including mine — because it’s both groundbreaking technically (each user gets their own entire persistent Linux VM running in Meta’s cloud) <em>and</em> because it’s "
-    },
-    {
-      "kind": "rss",
-      "title": "Northern Gannet, Great Blue Heron, California Brown Pelican",
-      "url": "https://simonwillison.net/2026/Sep/25/sighting-403293902/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-25T02:07:04.000Z",
-      "summary": "<p><img src=\"https://static.inaturalist.org/photos/740453177/large.jpg\" alt=\"Northern Gannet\"></p><p><img src=\"https://static.inaturalist.org/photos/740453341/large.jpg\" alt=\"Great Blue Heron\"></p><p><img src=\"https://static.inaturalist.org/photos/740454506/large.jpg\" alt=\"Califo"
-    },
-    {
-      "kind": "rss",
-      "title": "Note on 24th September 2026",
-      "url": "https://simonwillison.net/2026/Sep/24/harder/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-24T23:31:08.000Z",
-      "summary": "<p>The more time I spend working with coding agents, the more convinced I am that they make software engineering even harder.</p> <p>We can do amazing things with them, but unlocking their full potential requires extraordinary discipline and knowledge.</p> <p>Tags: <a href=\"https"
-    },
-    {
-      "kind": "rss",
-      "title": "commit-rewriter 0.2",
-      "url": "https://simonwillison.net/2026/Sep/24/commit-rewriter/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-24T20:06:53.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/commit-rewriter/releases/tag/0.2\">commit-rewriter 0.2</a></p> <blockquote> <p>Support for branches other than the default branch. Use <code>uvx commit-rewriter --branch other</code> to run against another branch. <a "
-    },
-    {
-      "kind": "rss",
-      "title": "datasette 1.0a41",
-      "url": "https://simonwillison.net/2026/Sep/24/datasette/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-24T19:15:23.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a41\">datasette 1.0a41</a></p> <p>Alec Garcia added <a href=\"https://docs.datasette.io/en/latest/internals.html#internals-telemetry\">support for OpenTelemetry</a> to Datasette in this release"
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing Gemini 3.8 Live with Live Avatar",
-      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
-      "source": "Google DeepMind",
-      "sourceId": "deepmind",
-      "category": "research",
-      "publishedAt": "2026-09-24T16:20:39.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-09-24T14:08:57.000Z",
-      "summary": ""
     }
   ]
 }

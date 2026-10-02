@@ -1,5 +1,13 @@
 # Signal Run Log
 
+## 2026-10-02
+
+- No high-signal candidates today - skipping. The refreshed inbox added seven normalized URLs and removed eight since October 1.
+- Three-role research found Matthew Green's agent-containment analysis substantive, but its practical prompt-injection test repeats Signal's existing containment, untrusted-document, and long-running-agent safety guides. The article's central warning - sandboxes need authorization and communication controls outside the agent - does not create a distinct 5-30 minute general-reader workflow.
+- AutoSynthData and Olmo-core 3 are enterprise-agent data generation and model-training infrastructure. OpenAI's Albertsons and The Den posts and Anthropic's Barclays post are customer case studies; OpenAI's “The eternal complement” is an economics essay. None offers a stronger broadly available Practical Guide.
+- Ingest produced 35 candidates. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 153 articles. `npm run build` generated 363 pages and Pagefind indexed all 363 pages; JSON parsing and `git diff --check` passed.
+
 ## 2026-10-01
 
 - Shipped `2026-10-01-photo-scrubber` — Simon Willison's browser tool becomes a 5–10 minute privacy check that reviews every face and visible identifier, prefers solid covers when anonymity matters, verifies the rebuilt file, and preserves the original.
