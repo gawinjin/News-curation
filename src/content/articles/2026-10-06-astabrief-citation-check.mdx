@@ -1,0 +1,59 @@
+---
+title: "Try AstaBrief, then check its citations"
+date: 2026-10-06
+category: guides
+tags: ["research", "citations", "open-models", "privacy"]
+summary: "Ai2's Asta can turn a focused research question into a cited report in minutes, but readers should check the sources and understand the data-consent trade-off."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A modern browser with JavaScript enabled"
+    - "A focused scientific question containing no sensitive, confidential, proprietary, or unpublished information"
+    - "Acceptance of Ai2's query-data terms"
+references:
+  - title: "Open-sourcing AstaBrief, the fast report-generation model in Asta"
+    url: "https://huggingface.co/blog/allenai/astabrief"
+    author: "Kyle Wiggers, Ai2Comms"
+    publishedAt: "2026-10-02"
+  - title: "AstaBrief 8B model card"
+    url: "https://huggingface.co/allenai/AstaBrief_8B"
+    author: "Ai2"
+  - title: "Asta"
+    url: "https://asta.allen.ai/"
+    author: "Ai2"
+  - title: "Ai2 Privacy Policy"
+    url: "https://allenai.org/privacy-policy/2025-02-19"
+    author: "Ai2"
+    publishedAt: "2025-02-19"
+draft: false
+---
+
+## TL;DR
+
+Asta's Fast mode turns a focused research question into a cited report in minutes. It can speed up an initial literature scan, but its citations still need checking. Use only public, non-sensitive questions in the hosted service, because Ai2 says queries may be collected and used to improve its services and research.
+
+## What's New
+
+AstaBrief 8B takes a research question and retrieved excerpts from scientific papers, then produces a report with citations. Ai2 built it from Qwen3-8B using supervised fine-tuning followed by preference training. The model powers Fast mode in the hosted Asta interface.
+
+Ai2 has released the model weights, training data and an example workflow that turns a PDF into a report. The checkpoint uses the Apache-2.0 licence, so institutions can also run it on their own infrastructure, including behind a firewall.
+
+Ai2 reports that its complete Fast-mode pipeline averaged 51.1 seconds per report, versus 178.5 seconds for its Claude-powered Thinking mode. That is a vendor comparison, not a current independent benchmark: most training and evaluation happened in 2025, and the human comparison covered 14 questions.
+
+## Why It Matters
+
+For a student, journalist or curious reader, Asta can turn a narrow question into a useful map of papers more quickly than opening search results one by one. The citation links make its claims easier to inspect, but they do not prove the report is accurate. Open a sample of sources and check that the report has not overstated their scope or certainty.
+
+The hosted and self-run options have different trade-offs. The website is the accessible way to try Asta, but Ai2 says prompts and searches in its demonstrations may be collected. Keep confidential, proprietary, sensitive and unpublished material out of it. Running the open model locally can offer more control, but that is a separate technical setup.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A modern browser with JavaScript enabled","A focused scientific question containing no sensitive, confidential, proprietary, or unpublished information","Acceptance of Ai2's query-data terms"]}>
+
+1. Open [Asta](https://asta.allen.ai/) and leave Generate a report selected; sign-in is only needed if you want to save work.
+2. Open the mode menu, choose Fast mode, and confirm that the button now reads Fast mode.
+3. Enter a narrow public-information question with clear scope, such as asking how two named research ideas differ, then select Send.
+4. Read the first-use data-consent dialog before continuing. During our test, Accept & Use Asta stayed disabled until the public-dataset opt-in was checked; stop if that sharing is not acceptable.
+5. When the report appears, open at least two citations and confirm that each paper supports the nearby claim without expanding its sample, setting, causation, or certainty. Treat the report as a starting synthesis, not a final authority.
+
+</PracticalGuide>

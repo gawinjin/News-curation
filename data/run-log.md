@@ -1,5 +1,14 @@
 # Signal Run Log
 
+## 2026-10-06
+
+- Shipped `2026-10-06-astabrief-citation-check` — Ai2's hosted Asta workflow becomes a ten-minute public-question test that checks two cited papers and treats the generated report as a starting synthesis rather than an authority.
+- Three-role research confirmed the AstaBrief 8B open-weight release, hosted Fast mode, downloadable Apache-2.0 checkpoint, vendor-reported timing comparison, evaluation limits, and a working browser path without sign-in for the report composer.
+- The guide excludes sensitive, confidential, proprietary, personal, and unpublished material. During editorial testing, the first-use acceptance button stayed disabled until the separately described public-dataset opt-in was selected, so the article makes non-acceptance a stop condition.
+- Skipped OpenAI's new advertising-format post because Signal already has a current ad-controls and independent-claim-check guide. The EU text-provenance story overlaps existing provenance coverage; Falcon-Emirati and the remaining items were specialist, enterprise, commentary-only, or lacked a stronger broadly available 5–30 minute workflow.
+- Ingest produced 35 candidates, with 15 normalized URL additions and 15 removals since October 2. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 154 articles. `npm run build` generated 365 pages and Pagefind indexed all 365 pages; JSON parsing, the rendered article route, homepage, RSS, and `git diff --check` passed.
+
 ## 2026-10-02
 
 - No high-signal candidates today - skipping. The refreshed inbox added seven normalized URLs and removed eight since October 1.

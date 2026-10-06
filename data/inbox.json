@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T08:49:51.075Z",
+  "generatedAt": "2026-10-06T08:04:15.233Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,6 +47,136 @@
   "items": [
     {
       "kind": "rss",
+      "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
+      "url": "https://huggingface.co/blog/tiiuae/falcon-emirati",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-10-06T06:44:39.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Felix Rieseberg",
+      "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-05T23:56:47.000Z",
+      "summary": "<blockquote cite=\"https://twitter.com/felixrieseberg/status/2107206431376334975\"><p>The \"old\" version of Cowork runs model inference in the cloud, executing tool calls in an Anthropic-provided VM we shipped to your computer. We added the VM for capability, safety, and security re"
+    },
+    {
+      "kind": "rss",
+      "title": "Our approach to EU text provenance rules",
+      "url": "https://openai.com/index/eu-text-provenance",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-05T15:00:00.000Z",
+      "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers."
+    },
+    {
+      "kind": "rss",
+      "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
+      "url": "https://importai.substack.com/p/import-ai-475-swarm-scaling-google",
+      "source": "Import AI (Jack Clark)",
+      "sourceId": "importai",
+      "category": "insights",
+      "publishedAt": "2026-10-05T12:32:30.000Z",
+      "summary": "Who chooses what AI gets to do?"
+    },
+    {
+      "kind": "rss",
+      "title": "Building advertising for the way people use AI",
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-05T10:00:00.000Z",
+      "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers."
+    },
+    {
+      "kind": "rss",
+      "title": "Qwen3.8 27B addition in words",
+      "url": "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-04T23:34:00.000Z",
+      "summary": "<p><strong>Research:</strong> <a href=\"https://github.com/simonw/research/tree/main/qwen38-addition-in-words#readme\">Qwen3.8 27B addition in words</a></p> <p>Colin Frasier <a href=\"https://bsky.app/profile/colin-fraser.net/post/3mwopbyznhs2k\">posted on Bluesky</a> about an experi"
+    },
+    {
+      "kind": "rss",
+      "title": "We're going to need default hard budget caps on pretty much everything",
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-03T23:34:02.000Z",
+      "summary": "<p>Here's a product feature which the world is going to need a whole lot more of over the coming months and years: <strong>default hard budget caps</strong>. I'm talking about the feature of pay-by-usage services and APIs that lets you say \"after $X/month, cut this thing off and "
+    },
+    {
+      "kind": "rss",
+      "title": "The Agent Said It Was Done. The Database Disagreed.",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-10-03T22:56:48.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "September sponsors-only newsletter",
+      "url": "https://simonwillison.net/2026/Oct/3/newsletter/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-03T22:00:31.000Z",
+      "summary": "<p>I just sent the September edition of my <a href=\"https://github.com/sponsors/simonw/\">sponsors-only monthly newsletter</a>. If you are a sponsor (or start a sponsorship now) you can <a href=\"https://github.com/simonw-private/monthly/blob/main/2026-09-september.md\">access it he"
+    },
+    {
+      "kind": "rss",
+      "title": "Claude Frontier Academy: $100M to train 10,000 engineers",
+      "url": "https://www.anthropic.com/news/claude-frontier-academy",
+      "source": "Anthropic",
+      "sourceId": "anthropic",
+      "category": "model-releases",
+      "publishedAt": "2026-10-02T23:01:00.000Z",
+      "summary": "Claude Frontier Academy trains Frontier Deployed Engineers to the standard of Anthropic’s own — a $100 million commitment to train 10,000 by the end of 2027."
+    },
+    {
+      "kind": "rss",
+      "title": "Rex's Dino Store",
+      "url": "https://simonwillison.net/2026/Oct/2/rex-s-dino-store/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-02T22:57:38.000Z",
+      "summary": "<p><strong>Museum:</strong> <a href=\"https://www.niche-museums.com/119\">Rex&#x27;s Dino Store</a></p> <p>Located just before the turnstiles in the Grand Army Plaza subway station at the north end of Brooklyn's Prospect Park is this former newsstand which is now operated by a dino"
+    },
+    {
+      "kind": "rss",
+      "title": "A model guide for the GPT-6 family",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-02T16:15:00.000Z",
+      "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
+    },
+    {
+      "kind": "rss",
+      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+      "url": "https://huggingface.co/blog/allenai/astabrief",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-10-02T15:19:50.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
       "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
       "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
       "source": "Hugging Face",
@@ -54,6 +184,26 @@
       "category": "guides",
       "publishedAt": "2026-10-02T04:01:31.000Z",
       "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Chatham scales its capital markets expertise with OpenAI",
+      "url": "https://openai.com/index/chatham-financial",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4."
+    },
+    {
+      "kind": "rss",
+      "title": "pwasm 0.2a0",
+      "url": "https://simonwillison.net/2026/Oct/1/pwasm/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-01T17:10:31.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/pwasm/releases/tag/0.2a0\">pwasm 0.2a0</a></p> <p>pwasm is one of my folly projects - an entirely vibe-coded pure Python WebAssembly engine that I built in January during my first bout of <a href=\"https://simonwilliso"
     },
     {
       "kind": "rss",
@@ -84,16 +234,6 @@
       "category": "model-releases",
       "publishedAt": "2026-10-01T15:19:00.000Z",
       "summary": "Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations."
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-      "url": "https://huggingface.co/blog/allenai/olmocore3",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-10-01T15:01:43.000Z",
-      "summary": ""
     },
     {
       "kind": "rss",
@@ -237,16 +377,6 @@
     },
     {
       "kind": "rss",
-      "title": "Introducing GPT-6.1 Sol",
-      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-29T10:00:00.000Z",
-      "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices."
-    },
-    {
-      "kind": "rss",
       "title": "DevDay 2026 Recap",
       "url": "https://openai.com/index/devday-2026-recap",
       "source": "OpenAI",
@@ -257,143 +387,13 @@
     },
     {
       "kind": "rss",
-      "title": "Quoting @joedaroo",
-      "url": "https://simonwillison.net/2026/Sep/28/joedaroo/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-28T19:11:42.000Z",
-      "summary": "<blockquote cite=\"https://twitter.com/joedaroo/status/2104335929293127851\"><p>To say that we were surprised at the jump and suddenness of the capabilities of our models when it came to “cyber” or “swarming” or “message boards” or anything else related to the incidents is an under"
-    },
-    {
-      "kind": "rss",
-      "title": "How we will do better for Australia",
-      "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+      "title": "Introducing GPT-6.1 Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
       "source": "OpenAI",
       "sourceId": "openai",
       "category": "model-releases",
-      "publishedAt": "2026-09-28T19:00:00.000Z",
-      "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences."
-    },
-    {
-      "kind": "rss",
-      "title": "Towards safety cases for frontier AI training",
-      "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-28T19:00:00.000Z",
-      "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents"
-    },
-    {
-      "kind": "rss",
-      "title": "Import AI 474: Platonic mindspace; TPUs in space; Zhipu starts an outer RSI loop",
-      "url": "https://importai.substack.com/p/import-ai-474-platonic-mindspace",
-      "source": "Import AI (Jack Clark)",
-      "sourceId": "importai",
-      "category": "insights",
-      "publishedAt": "2026-09-28T12:32:03.000Z",
-      "summary": "Where do you exceed the capabilities of an LLM?"
-    },
-    {
-      "kind": "rss",
-      "title": "Holo4: powering generalist computer-use agents",
-      "url": "https://huggingface.co/blog/Hcompany/holo4",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-09-28T09:44:05.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-28T07:00:00.000Z",
-      "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support."
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Muse AI Agent",
-      "url": "https://simonwillison.net/2026/Sep/28/muse-ai-agent/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-28T04:01:30.000Z",
-      "summary": "<blockquote cite=\"https://www.threads.com/share/_oWfPufYJ/\"><p>Bad news on the MX Keys Mini pickup. Usman showed up at your building around 9:15 and waited, messaged a bunch of times, and nobody came down. He left angry at 9:38 and left a negative rating.</p> <p>Worse, my auto-re"
-    },
-    {
-      "kind": "rss",
-      "title": "Are you a Codex Original?",
-      "url": "https://openai.com/form/codex-originals",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "summary": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below."
-    },
-    {
-      "kind": "rss",
-      "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
-      "url": "https://openai.com/index/basis-tax-workbook-with-astra",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use."
-    },
-    {
-      "kind": "rss",
-      "title": "2026 in LLMs (so far)",
-      "url": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-27T23:54:15.000Z",
-      "summary": "<p>On Friday I gave the closing keynote at the <a href=\"https://www.wearedevelopers.com/world-congress-north-america\">WeAreDevelopers World Congress North America</a> in San Jose. I tied together the key trends from the past year into a chronological exploration of everything tha"
-    },
-    {
-      "kind": "rss",
-      "title": "S3 Is the Future, S3 Is the Past",
-      "url": "https://simonwillison.net/2026/Sep/27/hn-49871741/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-27T23:09:19.000Z",
-      "summary": "<p><a href=\"https://news.ycombinator.com/item?id=49851693#49871741\">My comment</a> on <a href=\"https://news.ycombinator.com/item?id=49851693\">S3 Is the Future, S3 Is the Past</a> &mdash; Hacker News.</p><p>One thing I find notable about S3 today is that, while it used to drop in "
-    },
-    {
-      "kind": "rss",
-      "title": "Kākāpō Party",
-      "url": "https://simonwillison.net/2026/Sep/26/kakapo-party/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-26T23:39:06.000Z",
-      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/kakapo-party\">Kākāpō Party</a></p> <p>I presented a closing keynote for the <a href=\"https://www.wearedevelopers.com/world-congress-north-america\">WeAreDevelopers World Congress North America</a> yesterday. As <a "
-    },
-    {
-      "kind": "rss",
-      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-      "url": "https://openai.com/index/proaction",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-09-25T19:00:00.000Z",
-      "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting John Gruber",
-      "url": "https://simonwillison.net/2026/Sep/25/john-gruber/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-09-25T17:22:01.000Z",
-      "summary": "<blockquote cite=\"https://daringfireball.net/linked/2026/09/25/aten-muse\"><p>Muse is getting a lot of attention — including mine — because it’s both groundbreaking technically (each user gets their own entire persistent Linux VM running in Meta’s cloud) <em>and</em> because it’s "
+      "publishedAt": "2026-09-29T10:00:00.000Z",
+      "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices."
     }
   ]
 }

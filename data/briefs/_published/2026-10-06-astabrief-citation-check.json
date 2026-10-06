@@ -1,0 +1,120 @@
+{
+  "slug": "astabrief-citation-check",
+  "date": "2026-10-06",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "Try AstaBrief, then check its citations",
+    "Asta turns a research question into a cited report"
+  ],
+  "summary": "Ai2's Asta can turn a focused research question into a cited report in minutes, but readers should check the sources and understand the data-consent trade-off.",
+  "tags": ["research", "citations", "open-models", "privacy"],
+  "primary_source": {
+    "url": "https://huggingface.co/blog/allenai/astabrief",
+    "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+    "author": "Kyle Wiggers, Ai2Comms",
+    "publishedAt": "2026-10-02",
+    "key_facts": [
+      "AstaBrief 8B converts a research question plus retrieved scientific-literature excerpts into a report with citations.",
+      "Ai2 built the model from Qwen3-8B and trained it with supervised fine-tuning and direct preference optimization.",
+      "The model powers Asta's Fast mode, while the weights, training data, and an example PDF-to-report workflow are publicly available.",
+      "Ai2 reports that its full Fast-mode pipeline averaged 51.1 seconds per report, compared with 178.5 seconds for its Claude-powered Thinking mode.",
+      "Ai2 says the strongest quality gains in its training experiments came from filtering synthetic reports with weak citation density.",
+      "Open weights let institutions run AstaBrief on their own infrastructure, including behind a firewall for sensitive or unpublished work.",
+      "Ai2 cautions that most training and evaluation occurred in 2025, its full evaluation was not rerun against current frontier models, and its human comparison covered 14 questions."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://huggingface.co/allenai/AstaBrief_8B",
+      "title": "AstaBrief 8B model card",
+      "key_facts": [
+        "The official model card describes the Apache-2.0 checkpoint, its Qwen3-8B base, cited-report purpose, downloadable weights, and limitations."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://asta.allen.ai/",
+      "title": "Asta",
+      "key_facts": [
+        "The hosted Asta interface offers Generate a report with Fast and Thinking modes; signing in is presented as a way to save work rather than a requirement to reach the composer.",
+        "During editorial testing on October 6, the first-use acceptance button stayed disabled until the separate public-dataset consent box was selected, despite that choice being described as optional."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://allenai.org/privacy-policy/2025-02-19",
+      "title": "Ai2 Privacy Policy",
+      "key_facts": [
+        "Ai2 says prompts and search queries entered in its demonstrations may be collected and used to improve services and support research or educational programs.",
+        "The hosted workflow should not be used for personal, confidential, proprietary, sensitive, or unpublished material."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "A modern browser with JavaScript enabled",
+      "A focused scientific question containing no sensitive, confidential, proprietary, or unpublished information",
+      "Acceptance of Ai2's query-data terms"
+    ],
+    "steps": [
+      {
+        "instruction": "Open [Asta](https://asta.allen.ai/) and leave Generate a report selected; sign-in is only needed if you want to save work.",
+        "verify_url": "https://asta.allen.ai/"
+      },
+      {
+        "instruction": "Open the mode menu, choose Fast mode, and confirm that the button now reads Fast mode.",
+        "verify_url": "https://asta.allen.ai/"
+      },
+      {
+        "instruction": "Enter a narrow public-information question with clear scope, such as asking how two named research ideas differ, then select Send.",
+        "verify_url": "https://asta.allen.ai/"
+      },
+      {
+        "instruction": "Read the first-use data-consent dialog before continuing. During our test, Accept & Use Asta stayed disabled until the public-dataset opt-in was checked; stop if that sharing is not acceptable.",
+        "verify_url": "https://allenai.org/privacy-policy/2025-02-19"
+      },
+      {
+        "instruction": "When the report appears, open at least two citations and confirm that each paper supports the nearby claim without expanding its sample, setting, causation, or certainty. Treat the report as a starting synthesis, not a final authority.",
+        "verify_url": "https://huggingface.co/blog/allenai/astabrief"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+      "url": "https://huggingface.co/blog/allenai/astabrief",
+      "author": "Kyle Wiggers, Ai2Comms",
+      "publishedAt": "2026-10-02"
+    },
+    {
+      "title": "AstaBrief 8B model card",
+      "url": "https://huggingface.co/allenai/AstaBrief_8B",
+      "author": "Ai2"
+    },
+    {
+      "title": "Asta",
+      "url": "https://asta.allen.ai/",
+      "author": "Ai2"
+    },
+    {
+      "title": "Ai2 Privacy Policy",
+      "url": "https://allenai.org/privacy-policy/2025-02-19",
+      "author": "Ai2",
+      "publishedAt": "2025-02-19"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The hosted first-use consent behavior was observed on 2026-10-06 and may change; readers should rely on the dialog they see.",
+    "Citations are not an accuracy guarantee; the guide requires opening and checking at least two sources.",
+    "The hosted workflow is unsuitable for sensitive or unpublished material; local deployment is a separate technical path.",
+    "Vendor timing and quality comparisons are attributed to Ai2 and are not independent current-model benchmarks."
+  ],
+  "assembled_at": "2026-10-06T15:20:00+07:00",
+  "assembled_by": "Signal Orchestrator v1"
+}
