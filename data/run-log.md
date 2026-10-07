@@ -1,5 +1,13 @@
 # Signal Run Log
 
+## 2026-10-07
+
+- No high-signal candidates today - skipping. The refreshed inbox added 17 normalized URLs and removed 10 since October 6.
+- Three-role research confirmed that Mistral Large 4 is a significant public-preview release with a no-code Studio Playground, a one-million-token context window, and open weights promised later in October. The only broadly accessible 10-15 minute exercise was another same-prompt model comparison, however, which repeats Signal's September 23 guide and the reason GPT-6.1 Sol was skipped on October 1. The article draft and brief were therefore not published.
+- Mistral's announcement and current model card disagree on the active-parameter count, so that unstable figure was not treated as settled. EmbeddingGemma 2, Decisions API and observability items are developer-focused; Anthropic's Cyber Verification Program is restricted to qualifying professionals; the remaining additions are enterprise partnerships, customer stories, commentary, or research without a distinct general-reader workflow.
+- Ingest produced 42 candidates, with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 154 articles. `npm run build` generated 365 pages and Pagefind indexed all 365 pages; JSON parsing and `git diff --check` passed.
+
 ## 2026-10-06
 
 - Shipped `2026-10-06-astabrief-citation-check` — Ai2's hosted Asta workflow becomes a ten-minute public-question test that checks two cited papers and treats the generated report as a starting synthesis rather than an authority.
