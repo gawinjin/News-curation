@@ -1,0 +1,56 @@
+---
+title: "Try GPT-6's Intelligent UI with a bill splitter"
+date: 2026-10-08
+category: model-releases
+tags: ["openai", "gpt-6", "chatgpt", "interactive-ui", "how-to"]
+summary: "GPT-6 can place controls, charts, and small tools inside ChatGPT answers. A simple bill splitter shows whether Intelligent UI has reached your account."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A ChatGPT Free, Go, Plus, Pro, Business, or Enterprise account"
+    - "Intelligent UI access on the account; rollout timing and Enterprise settings can delay availability"
+    - "Invented amounts and names, with no payment details or other sensitive information"
+references:
+  - title: "GPT-6 and Intelligent UI for everyone"
+    url: "https://openai.com/index/gpt-6-for-everyone/"
+    author: "OpenAI"
+    publishedAt: "2026-10-07"
+  - title: "GPT-6 Sol and GPT-6 Luna: October 2026 update"
+    url: "https://deploymentsafety.openai.com/gpt-6-october"
+    author: "OpenAI"
+    publishedAt: "2026-10-07"
+  - title: "Data controls in ChatGPT"
+    url: "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"
+    author: "OpenAI"
+draft: false
+---
+
+## TL;DR
+
+Ask ChatGPT to split a dinner bill and GPT-6 may return adjustable fields and buttons, not just written instructions. OpenAI is rolling this Intelligent UI feature out across free and paid Chat accounts. The 10-minute test below checks whether it has reached yours, using invented amounts and an independent arithmetic check.
+
+## What's New
+
+GPT-6 can now combine its written answer with interface elements such as charts, forms, buttons, diagrams, and small purpose-built tools. OpenAI's examples include trip maps, adjustable explanations, a savings calculator, a dinner bill splitter, and an in-chat game.
+
+These elements can start appearing while the rest of the response is still being composed. OpenAI says the model can continue reasoning and add partial updates, so a useful control or result may arrive before the full answer is complete.
+
+The rollout started October 7 for Plus, Pro, Business, and Enterprise Chat accounts, followed by Free and Go accounts on October 8. Paid Chat plans use GPT-6 Sol, while Free and Go use GPT-6 Luna. Enterprise availability can depend on administrator settings, and this update does not change the GPT-6 versions used in Work or Codex.
+
+## Why It Matters
+
+An answer with working controls can turn a one-off calculation into something you can adjust without rewriting the prompt. For everyday jobs such as splitting a bill, comparing savings options, or changing a trip plan, that makes it easier to test alternatives and see the result immediately.
+
+Availability is staged, so a plain-text answer does not necessarily mean the prompt failed. Treat generated tools as convenient drafts: use non-sensitive information, check important calculations yourself, and remember that workplace access, privacy, and retention rules may be set by an administrator.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A ChatGPT Free, Go, Plus, Pro, Business, or Enterprise account","Intelligent UI access on the account; rollout timing and Enterprise settings can delay availability","Invented amounts and names, with no payment details or other sensitive information"]}>
+
+1. Open [ChatGPT](https://chatgpt.com/), sign in, and start a new conversation in the Chat tab. If you want to opt out of model training first, open Settings > Data controls and turn off Improve the model for everyone.
+2. Paste: 'Create an interactive dinner bill splitter. Let me change the bill total, tip percentage, and number of people, then show each person's share. Use a $120 bill, 18% tip, and 4 people to start.'
+3. Confirm that the answer contains usable fields, buttons, or other tappable controls rather than only prose.
+4. Change the tip from 18% to 20%. The equal share should change from $35.40 to $36.00 per person; check the arithmetic independently before settling a real bill.
+5. If the reply is plain text, confirm that you are in Chat rather than Work or Codex and try again later. Missing controls can mean the staged rollout has not reached your account.
+
+</PracticalGuide>

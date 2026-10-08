@@ -1,0 +1,121 @@
+{
+  "slug": "gpt-6-intelligent-ui-bill-splitter",
+  "date": "2026-10-08",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": [
+    "Try GPT-6's Intelligent UI with a bill splitter",
+    "GPT-6 turns ChatGPT answers into interactive tools"
+  ],
+  "summary": "GPT-6 can place controls, charts, and small tools inside ChatGPT answers. A simple bill splitter shows whether Intelligent UI has reached your account.",
+  "tags": ["openai", "gpt-6", "chatgpt", "interactive-ui", "how-to"],
+  "primary_source": {
+    "url": "https://openai.com/index/gpt-6-for-everyone/",
+    "title": "GPT-6 and Intelligent UI for everyone",
+    "author": "OpenAI",
+    "publishedAt": "2026-10-07",
+    "key_facts": [
+      "OpenAI is expanding GPT-6 from its earlier paid release to ordinary ChatGPT accounts across free and paid plans.",
+      "Intelligent UI lets GPT-6 mix prose with native visual and interactive elements, including charts, buttons, forms, diagrams, and task-specific mini-tools.",
+      "OpenAI's examples include adjustable explanations, trip maps, a savings calculator, a dinner bill splitter, and a playable in-chat game.",
+      "The native components can stream while the model is still composing the response instead of waiting for the entire answer to finish.",
+      "OpenAI says GPT-6 can interleave continued reasoning with partial answer updates, aiming to reduce the wait before useful content appears.",
+      "The release began reaching Plus, Pro, Business, and Enterprise Chat accounts on October 7, with Free and Go rollout starting October 8; Enterprise access can depend on administrator settings.",
+      "Paid Chat tiers use GPT-6 Sol and Free or Go tiers use GPT-6 Luna for this release.",
+      "The update applies to the Chat tab; the models in Work and Codex do not change as part of this rollout."
+    ],
+    "quote_candidates": [
+      {
+        "text": "With Intelligent UI, responses can include graphics, tappable buttons, forms, charts, and interactive experiences you can use directly in your conversation.",
+        "words": 21,
+        "exact": true,
+        "position": "Introducing Intelligent UI"
+      },
+      {
+        "text": "The models powering Work and Codex are not changing as part of this release.",
+        "words": 14,
+        "exact": true,
+        "position": "Availability"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://deploymentsafety.openai.com/gpt-6-october",
+      "title": "GPT-6 Sol and GPT-6 Luna: October 2026 update",
+      "key_facts": [
+        "OpenAI's October system card distinguishes the new Chat versions of GPT-6 Sol and Luna from the September versions that remain in Work and Codex.",
+        "OpenAI reports stronger resistance to multi-turn jailbreaks and improved factuality on most of its evaluated metrics, while noting that difficult evaluation sets do not represent average production use."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt",
+      "title": "Data controls in ChatGPT",
+      "key_facts": [
+        "Signed-in users can open Settings, choose Data controls, and turn off Improve the model for everyone for future conversations.",
+        "Available controls can vary by plan and workspace, and managed organizations may apply their own access, retention, and privacy settings."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "A ChatGPT Free, Go, Plus, Pro, Business, or Enterprise account",
+      "Intelligent UI access on the account; rollout timing and Enterprise settings can delay availability",
+      "Invented amounts and names, with no payment details or other sensitive information"
+    ],
+    "steps": [
+      {
+        "instruction": "Open [ChatGPT](https://chatgpt.com/), sign in, and start a new conversation in the Chat tab. If you want to opt out of model training first, open Settings > Data controls and turn off Improve the model for everyone.",
+        "verify_url": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"
+      },
+      {
+        "instruction": "Paste: 'Create an interactive dinner bill splitter. Let me change the bill total, tip percentage, and number of people, then show each person's share. Use a $120 bill, 18% tip, and 4 people to start.'",
+        "verify_url": "https://openai.com/index/gpt-6-for-everyone/"
+      },
+      {
+        "instruction": "Confirm that the answer contains usable fields, buttons, or other tappable controls rather than only prose.",
+        "verify_url": "https://openai.com/index/gpt-6-for-everyone/"
+      },
+      {
+        "instruction": "Change the tip from 18% to 20%. The equal share should change from $35.40 to $36.00 per person; check the arithmetic independently before settling a real bill.",
+        "verify_url": "https://openai.com/index/gpt-6-for-everyone/"
+      },
+      {
+        "instruction": "If the reply is plain text, confirm that you are in Chat rather than Work or Codex and try again later. Missing controls can mean the staged rollout has not reached your account.",
+        "verify_url": "https://openai.com/index/gpt-6-for-everyone/"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "url": "https://openai.com/index/gpt-6-for-everyone/",
+      "author": "OpenAI",
+      "publishedAt": "2026-10-07"
+    },
+    {
+      "title": "GPT-6 Sol and GPT-6 Luna: October 2026 update",
+      "url": "https://deploymentsafety.openai.com/gpt-6-october",
+      "author": "OpenAI",
+      "publishedAt": "2026-10-07"
+    },
+    {
+      "title": "Data controls in ChatGPT",
+      "url": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt",
+      "author": "OpenAI"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Intelligent UI is rolling out by plan and account, so a plain-text response may reflect availability rather than a broken prompt.",
+    "The guide uses invented amounts and requires independent arithmetic before anyone uses the result to settle a real bill.",
+    "Vendor performance and safety claims remain attributed to OpenAI rather than presented as independent findings.",
+    "This release changes Chat, not the versions currently used by Work or Codex."
+  ],
+  "assembled_at": "2026-10-08T15:10:00+07:00",
+  "assembled_by": "Signal Orchestrator v1"
+}

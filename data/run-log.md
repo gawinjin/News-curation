@@ -1,5 +1,14 @@
 # Signal Run Log
 
+## 2026-10-08
+
+- Shipped `2026-10-08-gpt-6-intelligent-ui-bill-splitter` - OpenAI's Intelligent UI rollout becomes a ten-minute in-chat bill-splitter test with editable controls, known arithmetic, invented amounts, and a clear stop-and-retry-later path when the staged rollout has not reached an account.
+- Three-role research confirmed that GPT-6 can mix text with native controls, charts, diagrams, and small tools in ordinary Chat; paid Chat tiers use GPT-6 Sol, Free and Go use GPT-6 Luna, Enterprise access can depend on administrators, and this release does not change Work or Codex models.
+- The guide keeps vendor performance and safety claims attributed to OpenAI, points readers to the model-training control, avoids payment details, and requires an independent check that $120 plus 18% divided four ways is $35.40 and 20% is $36.00.
+- Skipped Claude Haiku 5.5 because its practical path would repeat recent same-prompt model comparisons. The teen-planning update overlaps Signal's current teen guide; Open d1 and Nemotron are specialist model-training releases; Radisson is a customer story; the remaining Simon Willison additions are commentary rather than stronger hands-on workflows.
+- Ingest produced 42 candidates, with eight normalized URL additions and eight removals since October 7. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 155 articles. `npm run build` generated 367 pages and Pagefind indexed all 367 pages; JSON parsing, the rendered article route, homepage, RSS, and `git diff --check` passed.
+
 ## 2026-10-07
 
 - No high-signal candidates today - skipping. The refreshed inbox added 17 normalized URLs and removed 10 since October 6.
