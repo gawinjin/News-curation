@@ -377,7 +377,10 @@
     "https://allenai.org/privacy-policy/2025-02-19",
     "https://openai.com/index/gpt-6-for-everyone/",
     "https://deploymentsafety.openai.com/gpt-6-october",
-    "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"
+    "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt",
+    "https://huggingface.co/blog/tiiuae/falcon-asr",
+    "https://huggingface.co/spaces/tiiuae/falcon-asr-demo",
+    "https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard"
   ],
-  "lastIngest": "2026-10-08T08:04:02.319Z"
+  "lastIngest": "2026-10-09T08:05:37.383Z"
 }

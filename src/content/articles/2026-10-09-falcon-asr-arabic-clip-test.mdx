@@ -1,0 +1,56 @@
+---
+title: "Try Falcon ASR on an Arabic-English voice clip"
+date: 2026-10-09
+category: model-releases
+tags: ["falcon", "speech-recognition", "arabic", "transcription", "how-to"]
+summary: "Falcon ASR focuses on Arabic and Emirati speech, supports four other languages, and has a public demo for checking a short recording yourself."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A modern browser with internet access; no Hugging Face account was required when checked"
+    - "A phone or computer voice recorder that can save an audio file"
+    - "A new harmless recording of your own voice only, no longer than 60 seconds or larger than 20 MB"
+references:
+  - title: "Introducing Falcon ASR"
+    url: "https://huggingface.co/blog/tiiuae/falcon-asr"
+    author: "Technology Innovation Institute"
+    publishedAt: "2026-10-07"
+  - title: "Falcon ASR Demo"
+    url: "https://huggingface.co/spaces/tiiuae/falcon-asr-demo"
+    author: "Technology Innovation Institute"
+    publishedAt: "2026-10-06"
+  - title: "Open Universal Arabic ASR Leaderboard"
+    url: "https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard"
+    author: "ELM Research Center"
+draft: false
+---
+
+## TL;DR
+
+You can test Falcon ASR in a browser with a short Arabic or Arabic-English voice clip. TII's 1.6-billion-parameter speech-recognition model focuses on Arabic, including Emirati speech, while also handling English, French, Spanish, and Portuguese without a language selector. Treat its transcript as a draft, not a guaranteed record.
+
+## What's New
+
+Abu Dhabi's Technology Innovation Institute has released Falcon ASR, one model trained to transcribe five languages. Its training included Modern Standard Arabic, Emirati and other Gulf speech, English, mixed-language examples, and recordings altered to reflect noise, music, echo, overlapping voices, phone audio, and different speaking speeds.
+
+TII reports a 20.92% average word error rate across six public Arabic test sets, versus 23.17% for the best result in the September 30 leaderboard snapshot. Lower is better because the measure counts transcription mistakes. TII also reports 5.74% across seven public English test sets. Its separate Emirati and Gulf figures came from private evaluation data, so they cannot be checked independently.
+
+The official Hugging Face demo was working when checked and accepted clips up to 60 seconds or 20 MB without requiring an account. It includes an Arabic-English sample. TII says an API and native apps are planned, not available now.
+
+## Why It Matters
+
+If your voice notes or interviews move between Arabic and English, a single transcription tool that does not ask you to choose a language first could remove an awkward setup step. The browser demo also makes it possible to judge the model on your own accent, dialect, microphone, and phrasing before building a workflow around it.
+
+That personal test matters more than a leaderboard average: names, numbers, dialect words, noise, and language switches can still produce errors. Use only a new, harmless recording of your own voice in the public demo, then replay the audio and check the transcript before copying or relying on it.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A modern browser with internet access; no Hugging Face account was required when checked","A phone or computer voice recorder that can save an audio file","A new harmless recording of your own voice only, no longer than 60 seconds or larger than 20 MB"]}>
+
+1. Open the Falcon ASR demo and confirm that it shows Falcon ASR plus the 60-second and 20 MB limits; stop if the public Space is unavailable or asks for access you do not want to grant.
+2. Under Upload audio, select the built-in Arabic+English example and then select Transcribe; wait for Status to read Transcription complete and confirm that the result mixes Arabic script with English words.
+3. Record a 10-15 second clip of your own voice saying one harmless sentence in Arabic or another supported language; if you can, switch once to English. Play it back and make sure every word is clear before uploading it.
+4. Select Click to Upload in the Drop Audio Here box, choose only that new recording, and select Transcribe; wait for Status to read Transcription complete and the transcript to appear.
+5. Replay the clip and compare it line by line with the displayed transcript, noting any missed names, numbers, dialect words, or mistakes at the language switch before copying or relying on the text.
+
+</PracticalGuide>

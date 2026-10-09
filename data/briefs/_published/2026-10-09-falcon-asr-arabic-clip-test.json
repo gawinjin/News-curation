@@ -1,0 +1,129 @@
+{
+  "slug": "falcon-asr-arabic-clip-test",
+  "date": "2026-10-09",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": [
+    "Try Falcon ASR on an Arabic-English voice clip",
+    "Falcon ASR puts Arabic transcription in a browser demo"
+  ],
+  "summary": "Falcon ASR focuses on Arabic and Emirati speech, supports four other languages, and has a public demo for checking a short recording yourself.",
+  "tags": ["falcon", "speech-recognition", "arabic", "transcription", "how-to"],
+  "primary_source": {
+    "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
+    "title": "Introducing Falcon ASR",
+    "author": "Abdul Muneer; Rishabh Saraf; Ramesh Gundluru; Shamsa Hamad; Ludovick Lepauloux; Hakim Hacid",
+    "publishedAt": "2026-10-07",
+    "key_facts": [
+      "Falcon-ASR is a 1.6-billion-parameter speech-recognition model from Abu Dhabi's Technology Innovation Institute, with a focus on Arabic and especially Emirati speech.",
+      "The same model transcribes Arabic, English, French, Spanish, and Portuguese without requiring the user to select a language first.",
+      "TII reports a 20.92% average word error rate across the six public Arabic test sets in the benchmark protocol it used, compared with 23.17% for the best result in the September 30 leaderboard snapshot.",
+      "TII's separate internal Emirati and Gulf evaluation produced a 22.73% word error rate and 10.19% character error rate; these are vendor-reported results from private evaluation data.",
+      "Training included Emirati, Modern Standard Arabic, other Gulf and Arabic dialects, English, and examples that switch between languages.",
+      "The training mix was adjusted to represent noise, overlapping speech, music, room echo, phone audio, and changes in speaking speed and pitch.",
+      "TII reports a 5.74% average word error rate across seven public English test sets.",
+      "A running Hugging Face demo accepts short recordings today; TII says API access and native apps are planned rather than currently available."
+    ],
+    "quote_candidates": [
+      {
+        "text": "We also support word-level timestamps for transcriptions, linking each transcribed word to its position in the audio.",
+        "words": 17,
+        "exact": true,
+        "position": "Introduction"
+      },
+      {
+        "text": "All five languages use the same weights, without requiring a language flag.",
+        "words": 12,
+        "exact": true,
+        "position": "English and other languages"
+      },
+      {
+        "text": "API access and native applications are planned.",
+        "words": 7,
+        "exact": true,
+        "position": "Try Falcon ASR"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://huggingface.co/spaces/tiiuae/falcon-asr-demo",
+      "title": "Falcon ASR Demo",
+      "key_facts": [
+        "The official TII Space was running when checked and offered a browser interface for transcribing clips up to 60 seconds and 20 MB.",
+        "The interface included an Arabic+English sample, an upload control, a Transcribe button, status text, and a transcript output area.",
+        "The demo did not require a Hugging Face account when checked."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard",
+      "title": "Open Universal Arabic ASR Leaderboard",
+      "key_facts": [
+        "The public leaderboard defines the six-test-set comparison framework that TII says it followed for the Arabic benchmark result.",
+        "Lower word error rate means fewer transcription errors, but a leaderboard average does not guarantee accuracy for a particular speaker, dialect, or recording."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "A modern browser with internet access; no Hugging Face account was required when checked",
+      "A phone or computer voice recorder that can save an audio file",
+      "A new harmless recording of your own voice only, no longer than 60 seconds or larger than 20 MB"
+    ],
+    "steps": [
+      {
+        "instruction": "Open the Falcon ASR demo and confirm that it shows Falcon ASR plus the 60-second and 20 MB limits; stop if the public Space is unavailable or asks for access you do not want to grant.",
+        "verify_url": "https://huggingface.co/spaces/tiiuae/falcon-asr-demo"
+      },
+      {
+        "instruction": "Under Upload audio, select the built-in Arabic+English example and then select Transcribe; wait for Status to read Transcription complete and confirm that the result mixes Arabic script with English words.",
+        "verify_url": "https://tiiuae-falcon-asr-demo.hf.space/?__theme=system"
+      },
+      {
+        "instruction": "Record a 10-15 second clip of your own voice saying one harmless sentence in Arabic or another supported language; if you can, switch once to English. Play it back and make sure every word is clear before uploading it.",
+        "verify_url": "https://huggingface.co/blog/tiiuae/falcon-asr"
+      },
+      {
+        "instruction": "Select Click to Upload in the Drop Audio Here box, choose only that new recording, and select Transcribe; wait for Status to read Transcription complete and the transcript to appear.",
+        "verify_url": "https://tiiuae-falcon-asr-demo.hf.space/?__theme=system"
+      },
+      {
+        "instruction": "Replay the clip and compare it line by line with the displayed transcript, noting any missed names, numbers, dialect words, or mistakes at the language switch before copying or relying on the text.",
+        "verify_url": "https://huggingface.co/blog/tiiuae/falcon-asr"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Introducing Falcon ASR",
+      "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
+      "author": "Technology Innovation Institute",
+      "publishedAt": "2026-10-07"
+    },
+    {
+      "title": "Falcon ASR Demo",
+      "url": "https://huggingface.co/spaces/tiiuae/falcon-asr-demo",
+      "author": "Technology Innovation Institute",
+      "publishedAt": "2026-10-06"
+    },
+    {
+      "title": "Open Universal Arabic ASR Leaderboard",
+      "url": "https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard",
+      "author": "ELM Research Center"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Performance figures come from TII's evaluations and are attributed to the vendor; the private Emirati and Gulf test set is not independently inspectable.",
+    "The demo is a public hosted Space with no clear promise here about retention, so the guide permits only a new harmless recording of the reader's own voice and excludes confidential or third-party audio.",
+    "The running demo, account-free access, UI labels, 60-second limit, and 20 MB limit were checked on 2026-10-09 and may change.",
+    "The built-in Arabic+English example demonstrates code-switching, while an individual's accuracy can vary by dialect, accent, noise, microphone, and phrasing.",
+    "The practical test is distinct from Signal's earlier Gemini macOS dictation guide: this one uses a public upload demo and centers Arabic and multilingual transcription rather than live text insertion into desktop apps."
+  ],
+  "assembled_at": "2026-10-09T15:18:00+07:00",
+  "assembled_by": "Signal Orchestrator v1"
+}

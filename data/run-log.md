@@ -1,5 +1,14 @@
 # Signal Run Log
 
+## 2026-10-09
+
+- Shipped `2026-10-09-falcon-asr-arabic-clip-test` - TII's public Falcon ASR demo becomes a ten-minute Arabic+English sample and self-recorded voice test, with transcript checking before the text is copied or trusted.
+- Three-role research confirmed the model's Arabic and Emirati focus, five supported languages, public browser demo, 60-second and 20 MB limits, built-in Arabic+English example, and account-free access when checked. API access and native apps remain planned rather than available.
+- The article attributes all error-rate figures to TII, identifies the private Emirati and Gulf evaluation as vendor-reported, and keeps the public demo to a new harmless recording of the reader's own voice because retention terms were not established during the test.
+- Skipped `ttok` because its command-line token-counting workflow is developer-focused. Anthropic's usage-policy, cyber, and science commitments and OpenAI's false-front report are substantive but lack a distinct 5-30 minute general-reader tool; Oracle, Pollo AI, and LegalOn are customer stories, while the remaining additions are commentary or specialist model-building material.
+- Ingest produced 48 candidates, with 12 normalized URL additions and six removals since October 8. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 156 articles. `npm run build` generated 371 pages and Pagefind indexed all 371 pages; JSON parsing, the rendered article route, homepage, RSS, and `git diff --check` passed.
+
 ## 2026-10-08
 
 - Shipped `2026-10-08-gpt-6-intelligent-ui-bill-splitter` - OpenAI's Intelligent UI rollout becomes a ten-minute in-chat bill-splitter test with editable controls, known arithmetic, invented amounts, and a clear stop-and-retry-later path when the staged rollout has not reached an account.
