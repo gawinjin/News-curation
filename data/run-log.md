@@ -1,5 +1,15 @@
 # Signal Run Log
 
+## 2026-10-14
+
+- Shipped `2026-10-14-gemini-4-argon-decision-skill` - Google's paid Gemini 4 Argon rollout becomes a 15-20 minute reusable decision pre-mortem using two fictional plans, observable output fields, and a reversible Skill.
+- Three-role research confirmed Pro and Ultra consumer access, manual model and thinking-level controls, gradual Skills availability, personal-account and Keep Activity requirements, and introductory API pricing. Google's benchmark and deployment results remain attributed vendor claims.
+- The guide is distinct from Signal's recent model comparisons and generic file summaries: readers create one saved Skill, require five scored failure modes and reversible tests, reuse the structure on a second harmless plan, and deactivate the Skill afterward. It excludes personal, confidential, legal, medical, and financial material.
+- Rejected DeepMind's on-device scam detector because the announcement offers no public app, pilot, supported-device list, or user-facing test; the existing ScamShield app is a different service. Rejected Higgsfield's over-ten-minute video claim because a meaningful 11-15 minute test has undocumented render time, plan eligibility, and variable multi-step credit cost.
+- Skipped Argon robotics, private on-device agents, source-control engineering, Python and `llm` utilities, customer stories, commentary, and research roundups because they are specialist, derivative, or lack a stronger distinct 5-30 minute general-reader workflow.
+- Ingest produced 43 candidates, with 25 normalized URL additions and 30 removals since October 9. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 157 articles. `npm run build` generated 373 pages and Pagefind indexed all 373 pages; JSON parsing, the rendered article route, homepage, RSS, and `git diff --check` passed.
+
 ## 2026-10-09
 
 - Shipped `2026-10-09-falcon-asr-arabic-clip-test` - TII's public Falcon ASR demo becomes a ten-minute Arabic+English sample and self-recorded voice test, with transcript checking before the text is copied or trusted.

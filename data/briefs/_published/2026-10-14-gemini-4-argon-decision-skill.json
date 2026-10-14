@@ -1,0 +1,110 @@
+{
+  "slug": "gemini-4-argon-decision-skill",
+  "date": "2026-10-14",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": [
+    "Gemini 4 Argon gets a reusable plan stress test",
+    "Try Gemini 4 Argon with a decision pre-mortem"
+  ],
+  "summary": "Gemini 4 Argon is reaching paid Gemini accounts. A fictional-plan exercise tests its instruction following through one reusable, reversible Skill.",
+  "tags": ["gemini", "google", "models", "skills", "decision-making"],
+  "primary_source": {
+    "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+    "title": "Gemini 4 Argon: Built to solve your hardest problems",
+    "author": "Koray Kavukcuoglu",
+    "publishedAt": "2026-10-13",
+    "key_facts": [
+      "Google began a global Gemini 4 Argon rollout on October 13, 2026.",
+      "Consumer access is limited to Google AI Pro and Ultra subscribers in the Gemini app and AI Mode in Search; the announcement does not list free-plan access.",
+      "Developers can use Argon through the paid Gemini API tier in AI Studio and Android Studio, while enterprises can use the API, Gemini for business, and Antigravity.",
+      "Google lists an introductory API price of $2 per million input tokens and $10 per million output tokens, rising after November 30, 2026.",
+      "Google presents Argon as a deep-reasoning model for complex work and reports benchmark and internal deployment gains; these are vendor claims rather than independent guarantees.",
+      "The Gemini app lets eligible users select Argon manually and choose Low, Medium, or High thinking, subject to plan and usage limits."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://support.google.com/gemini/answer/18648722?hl=en",
+      "title": "About Gemini models",
+      "key_facts": [
+        "Google's help page lists Argon for personal Google AI Pro and Ultra accounts in Chat and Task modes.",
+        "Users can select a model from the prompt box and optionally choose Low, Medium, or High thinking."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://support.google.com/gemini/answer/17094296?hl=en",
+      "title": "Create and manage skills for Gemini Apps",
+      "key_facts": [
+        "Skills save reusable instructions for Gemini chats and tasks and are gradually rolling out to personal accounts.",
+        "Creating a Skill requires age 18 or older, a personal Google Account, and Keep Activity turned on.",
+        "Skills can be invoked with a slash or at-sign shortcut and can be deactivated from Customize > Skills."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15–20 min",
+    "prerequisites": [
+      "A personal Google Account for someone age 18 or older",
+      "An active Google AI Pro or Ultra subscription",
+      "Keep Activity enabled",
+      "Gemini 4 Argon and Skills visible after rollout",
+      "Only the fictional, non-sensitive plans below"
+    ],
+    "steps": [
+      {
+        "instruction": "Open gemini.google.com, sign in, click the current model name in the prompt box, and select Gemini 4 Argon. Stop rather than substitute another model if Argon is absent.",
+        "verify_url": "https://support.google.com/gemini/answer/18648722?hl=en"
+      },
+      {
+        "instruction": "Choose Customize in the sidebar (open More first if needed), then Skills > Create > Create manually. Name it decision-premortem. Tell it to restate the goal and constraints; list exactly five failure modes; score likelihood and impact from 1–5; propose one cheap, reversible test per failure; list assumptions; finish with one stop condition; never take external actions; and ask one question if a key constraint is missing. Click Create.",
+        "verify_url": "https://support.google.com/gemini/answer/17094296?hl=en"
+      },
+      {
+        "instruction": "Start a new Argon chat, type / (or @ if shown), select decision-premortem, and submit: 'Fictional plan: I have $100 and one Saturday to run a ten-person neighborhood swap in a free community room. No participant data, payments, or bookings are involved. Stress-test this plan.' Check for five failure modes, numeric ratings, reversible tests, assumptions, and a stop condition without any external action.",
+        "verify_url": "https://support.google.com/gemini/answer/17094296?hl=en"
+      },
+      {
+        "instruction": "Invoke the Skill again with: 'Fictional plan: use three evenings and free household materials to build a tabletop marble run for a family game night.' Confirm that Argon keeps the same structure while adapting the analysis; ask it to repair any omitted field.",
+        "verify_url": "https://support.google.com/gemini/answer/17094296?hl=en"
+      },
+      {
+        "instruction": "Reverse the setup through Customize > Skills > decision-premortem > More > Deactivate.",
+        "verify_url": "https://support.google.com/gemini/answer/17094296?hl=en"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "author": "Koray Kavukcuoglu",
+      "publishedAt": "2026-10-13"
+    },
+    {
+      "title": "About Gemini models",
+      "url": "https://support.google.com/gemini/answer/18648722?hl=en",
+      "author": "Google",
+      "publishedAt": "2026-10-13"
+    },
+    {
+      "title": "Create and manage skills for Gemini Apps",
+      "url": "https://support.google.com/gemini/answer/17094296?hl=en",
+      "author": "Google"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Argon requires Google AI Pro or Ultra and may not have reached every account yet.",
+    "Skills are gradually rolling out, require a personal account and Keep Activity, and are unavailable in Temporary chat.",
+    "The guide uses fictional inputs because Keep Activity stores prompts; users should not add personal, confidential, legal, medical, or financial information.",
+    "Gemini output can be inaccurate and should not be treated as professional advice.",
+    "Google benchmark and deployment figures are vendor-reported and were not independently reproduced."
+  ],
+  "assembled_at": "2026-10-14T02:55:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

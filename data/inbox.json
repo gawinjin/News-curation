@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T08:05:37.383Z",
+  "generatedAt": "2026-10-14T02:41:11.347Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -45,6 +45,256 @@
     "alexalbert__"
   ],
   "items": [
+    {
+      "kind": "rss",
+      "title": "Google DeepMind and Singapore Government announce new AI tool to protect citizens against scams",
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "category": "research",
+      "publishedAt": "2026-10-14T02:00:14.000Z",
+      "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress."
+    },
+    {
+      "kind": "rss",
+      "title": "Redesigning source control at Anthropic",
+      "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-13T23:00:06.000Z",
+      "summary": "<p><strong><a href=\"https://www.anthropic.com/engineering/redesigning-source-control\">Redesigning source control at Anthropic</a></strong></p> Interesting piece from Anthropic describing why and how they built their own custom alternative to Git, based on the dramatic increase in"
+    },
+    {
+      "kind": "rss",
+      "title": "llm-gemini 0.35",
+      "url": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-13T22:28:54.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.35\">llm-gemini 0.35</a></p> <p>I added support to <a href=\"https://github.com/simonw/llm-gemini\">llm-gemini</a> for the <a href=\"https://blog.google/innovation-and-ai/models-and-research/gem"
+    },
+    {
+      "kind": "rss",
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "category": "research",
+      "publishedAt": "2026-10-13T19:43:07.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-10-13T17:05:48.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Gemini 4 Argon for Robotics",
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "category": "research",
+      "publishedAt": "2026-10-13T16:01:58.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "category": "research",
+      "publishedAt": "2026-10-13T16:01:52.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Geoffrey Huntley",
+      "url": "https://simonwillison.net/2026/Oct/13/geoffrey-huntley/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-13T13:32:00.000Z",
+      "summary": "<blockquote cite=\"https://ghuntley.com/agency/\"><p>If the agent isn't using my diagnostics library, I could introspect and update AGENTS.md, but there's still a delta, and it'll drift. Instead, I write a pre-commit hook that checks the git diff for direct calls to observability m"
+    },
+    {
+      "kind": "rss",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-13T12:00:00.000Z",
+      "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live."
+    },
+    {
+      "kind": "rss",
+      "title": "web-edit 0.1a1",
+      "url": "https://simonwillison.net/2026/Oct/13/web-edit/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-13T01:40:05.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/web-edit/releases/tag/0.1a1\">web-edit 0.1a1</a></p> <p>Includes <a href=\"https://github.com/simonw/web-edit/pull/1\">performance optimizations</a> written <a href=\"https://claude.ai/code/session_01LE2R4P74P9GGUbE6yQ5Y"
+    },
+    {
+      "kind": "rss",
+      "title": "llm-meta-ai 0.2",
+      "url": "https://simonwillison.net/2026/Oct/12/llm-meta-ai/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-12T23:58:46.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-meta-ai/releases/tag/0.2\">llm-meta-ai 0.2</a></p> <p>Meta AI release <a href=\"https://research.meta.ai/blog/muse-wonder\">Muse Wonder</a> (and Muse Wonder Full), their new \"most capable models\". These look like th"
+    },
+    {
+      "kind": "rss",
+      "title": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11",
+      "url": "https://simonwillison.net/2026/Oct/12/python-3-15/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-12T18:15:38.000Z",
+      "summary": "<p>Python 3.15 <a href=\"https://www.python.org/downloads/release/python-3150/\">is here</a>! Here's the essential <a href=\"https://docs.python.org/3.15/whatsnew/3.15.html\">What's new in Python 3.15</a> guide, this year curated by 3.14 and 3.15 release manager Hugo van Kemenade. As"
+    },
+    {
+      "kind": "rss",
+      "title": "Profiling web-edit with Python 3.15: flame graphs and source heatmaps",
+      "url": "https://simonwillison.net/2026/Oct/12/python-3-15-web-edit-profiling/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-12T16:58:00.000Z",
+      "summary": "<p><strong>Research:</strong> <a href=\"https://github.com/simonw/research/tree/main/python-3-15-web-edit-profiling#readme\">Profiling web-edit with Python 3.15: flame graphs and source heatmaps</a></p> <p>I put the <a href=\"https://simonwillison.net/2026/Oct/12/python-3-15/#a-samp"
+    },
+    {
+      "kind": "rss",
+      "title": "web-edit 0.1a0",
+      "url": "https://simonwillison.net/2026/Oct/12/web-edit/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-12T15:54:36.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/web-edit/releases/tag/0.1a0\">web-edit 0.1a0</a></p> <p>I was working on a project from my phone using Codex Remote when I found myself wanting to edit a credentials file without round-tripping those credentials throu"
+    },
+    {
+      "kind": "rss",
+      "title": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+      "url": "https://importai.substack.com/p/import-ai-476-creativity-and-rsi",
+      "source": "Import AI (Jack Clark)",
+      "sourceId": "importai",
+      "category": "insights",
+      "publishedAt": "2026-10-12T12:30:39.000Z",
+      "summary": "Will we give robots the moon?"
+    },
+    {
+      "kind": "rss",
+      "title": "datasette-ports 0.4",
+      "url": "https://simonwillison.net/2026/Oct/12/datasette-ports/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-12T04:57:07.000Z",
+      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-ports/releases/tag/0.4\">datasette-ports 0.4</a></p> <p>My plugin for detecting and listing all Datasette instances on the current machine now works with the latest version, and displays the detected PID "
+    },
+    {
+      "kind": "rss",
+      "title": "Dwarf Fortress uses version control now",
+      "url": "https://simonwillison.net/2026/Oct/11/dwarf-fortress/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-11T00:52:37.000Z",
+      "summary": "<p>I remember hearing a while ago that Dwarf Fortress didn't use version control. That fact has been lodged in my head, because given its inherent complexity I have trouble imagining a codebase that would benefit from version control <em>more</em>. That's art.</p> <p>I went looki"
+    },
+    {
+      "kind": "rss",
+      "title": "Python 3.15.0 added to actions/python-versions",
+      "url": "https://simonwillison.net/2026/Oct/10/python-actions/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-10T23:58:04.000Z",
+      "summary": "<p><strong><a href=\"https://github.com/actions/python-versions/commit/49858b91c92d27403416ee43117032e91d00ce24\">Python 3.15.0 added to actions/python-versions</a></strong></p> Bit of a niche link, but I've been waiting for this for a couple of days - I even <a href=\"https://chatg"
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting The New York Times",
+      "url": "https://simonwillison.net/2026/Oct/10/the-new-york-times/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-10T02:04:12.000Z",
+      "summary": "<blockquote cite=\"https://www.nytimes.com/2026/10/09/technology/anthropic-rogue-ai-agents.html\"><p>Anthropic detailed the activity of its A.I. agents in <a href=\"https://www.anthropic.com/research/investigating-unintended-model-actions\">a blog post</a> on Friday, without naming t"
+    },
+    {
+      "kind": "rss",
+      "title": "Deno is joining Cloudflare",
+      "url": "https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-09T22:48:37.000Z",
+      "summary": "<p><strong><a href=\"https://deno.com/blog/cloudflare\">Deno is joining Cloudflare</a></strong></p> The Deno team released the first version of <a href=\"https://github.com/denoland/celld\">celld</a> back in August - their open source implementation of the Durable Objects pattern fro"
+    },
+    {
+      "kind": "rss",
+      "title": "Impactful scheduling for GPU clusters",
+      "url": "https://huggingface.co/blog/allenai/impactful-scheduling",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-10-09T15:20:29.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Quoting Matthew Green",
+      "url": "https://simonwillison.net/2026/Oct/9/matthew-green/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-09T15:02:29.000Z",
+      "summary": "<blockquote cite=\"https://twitter.com/matthew_d_green/status/2108552414978564418\"><p>Everyone is very concerned about being respectable, so I’m going to be the goofball who raises worst-case possibilities. I think there is a 1% chance we live in Minicrypt, and a 15% chance we fun"
+    },
+    {
+      "kind": "rss",
+      "title": "A new feature for my blog, built using my voice",
+      "url": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-09T12:54:06.000Z",
+      "summary": "<p>I shipped a new feature for my blog today: the <a href=\"https://simonwillison.net/newsletters/\">Newsletters</a> page, which offers an index of all of the newsletters I've sent out, both my free <a href=\"https://simonw.substack.com/\">weekly Substack</a> and my <a href=\"https://"
+    },
+    {
+      "kind": "rss",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "url": "https://openai.com/index/sophos",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight."
+    },
+    {
+      "kind": "rss",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "url": "https://openai.com/index/asana-browser-agent",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models."
+    },
     {
       "kind": "rss",
       "title": "ttok 1.0",
@@ -177,16 +427,6 @@
     },
     {
       "kind": "rss",
-      "title": "Multimodal open d1 decision models for the edge",
-      "url": "https://huggingface.co/blog/LiquidAI/open-d1",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-10-07T16:54:33.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
       "title": "Anti-Patterns in Software Blogging",
       "url": "https://simonwillison.net/2026/Oct/7/anti-patterns-in-software-blogging/",
       "source": "Simon Willison",
@@ -194,16 +434,6 @@
       "category": "insights",
       "publishedAt": "2026-10-07T14:53:51.000Z",
       "summary": "<p><strong><a href=\"https://refactoringenglish.com/blog/anti-patterns-software-blogging/#summary\">Anti-Patterns in Software Blogging</a></strong></p> Some excellent writing advice from Michael Lynch. Michael warns against \"meandering intros\", misjudging your reader's existing kno"
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing Falcon ASR",
-      "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-10-07T13:21:03.000Z",
-      "summary": ""
     },
     {
       "kind": "rss",
@@ -244,286 +474,6 @@
       "category": "insights",
       "publishedAt": "2026-10-07T04:47:55.000Z",
       "summary": "<blockquote cite=\"https://news.ycombinator.com/item?id=49984923#49987367\"><p>I was a graph theory junkie long ago and even moved to Budapest for awhile to study among the greats. While I was there I started working on Barnette's Conjecture which came to occupy my thoughts over th"
-    },
-    {
-      "kind": "rss",
-      "title": "OpenAI “rogue” agent activities found on Wikimedia projects",
-      "url": "https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-07T00:16:45.000Z",
-      "summary": "<p><strong><a href=\"https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/\">OpenAI “rogue” agent activities found on Wikimedia projects</a></strong></p> Given how tempting a target wikis are for rogue agent swarms, it's not a hu"
-    },
-    {
-      "kind": "rss",
-      "title": "GPT-6 and Intelligent UI for everyone",
-      "url": "https://openai.com/index/gpt-6-for-everyone",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-10-07T00:00:00.000Z",
-      "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly."
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Victoria Kim",
-      "url": "https://simonwillison.net/2026/Oct/6/victoria-kim/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-06T23:58:56.000Z",
-      "summary": "<blockquote cite=\"https://www.nytimes.com/live/2026/10/05/world/openai-australia-hearing/94c8067e-4098-5c00-9673-c78cb58a9d8a\"><p>Since the Medicare breach, OpenAI has put in place additional monitoring to allow “immediate intervention” by staff to stop training if the company’s "
-    },
-    {
-      "kind": "rss",
-      "title": "llm-openai-decisions 0.1a0",
-      "url": "https://simonwillison.net/2026/Oct/6/llm-openai-decisions/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-06T23:04:13.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-openai-decisions/releases/tag/0.1a0\">llm-openai-decisions 0.1a0</a></p> <p>OpenAI released their new Jev-style <a href=\"https://developers.openai.com/api/docs/guides/decisions\">Decisions API</a>, as previously an"
-    },
-    {
-      "kind": "rss",
-      "title": "llm-mistral 0.16",
-      "url": "https://simonwillison.net/2026/Oct/6/llm-mistral/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-06T21:32:34.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-mistral/releases/tag/0.16\">llm-mistral 0.16</a></p> <p>Adds support for reasoning models, such as the newly released <a href=\"https://simonwillison.net/2026/Oct/6/le-chonk/\">Mistral Large 4</a>.</p> <p>Tags: <a h"
-    },
-    {
-      "kind": "rss",
-      "title": "EmbeddingGemma 2",
-      "url": "https://simonwillison.net/2026/Oct/6/hn-49983751/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-06T20:37:53.000Z",
-      "summary": "<p><a href=\"https://news.ycombinator.com/item?id=49980487#49983751\">My comment</a> on <a href=\"https://news.ycombinator.com/item?id=49980487\">EmbeddingGemma 2</a> &mdash; Hacker News.</p><p>I really appreciate that <a href=\"https://blog.google/innovation-and-ai/technology/develop"
-    },
-    {
-      "kind": "rss",
-      "title": "Introducing Mistral Large 4: Le chonk",
-      "url": "https://simonwillison.net/2026/Oct/6/le-chonk/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-06T20:18:19.000Z",
-      "summary": "<p><strong><a href=\"https://mistral.ai/news/mistral-large-4/\">Introducing Mistral Large 4: Le chonk</a></strong></p> Mistral are back in the game. Today they're releasing a preview of Mistral Large 4, a 1 trillion parameter, 49 billion active parameter model trained on their own "
-    },
-    {
-      "kind": "rss",
-      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-      "source": "Google DeepMind",
-      "sourceId": "deepmind",
-      "category": "research",
-      "publishedAt": "2026-10-06T19:57:04.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Using Parseable with Datasette for OpenTelemetry traces",
-      "url": "https://simonwillison.net/2026/Oct/6/datasette-parseable-opentelemetry/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-06T19:07:31.000Z",
-      "summary": "<p><strong>TIL:</strong> <a href=\"https://til.simonwillison.net/datasette/datasette-parseable-opentelemetry\">Using Parseable with Datasette for OpenTelemetry traces</a></p> <p>I <a href=\"https://news.ycombinator.com/item?id=49978171\">saw Parseable in a Show HN</a> today - it's a "
-    },
-    {
-      "kind": "rss",
-      "title": "Expanding the Cyber Verification Program",
-      "url": "https://www.anthropic.com/news/cyber-verification-program",
-      "source": "Anthropic",
-      "sourceId": "anthropic",
-      "category": "model-releases",
-      "publishedAt": "2026-10-06T19:00:00.000Z",
-      "summary": "We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals."
-    },
-    {
-      "kind": "rss",
-      "title": "Mistral Large 4",
-      "url": "https://simonwillison.net/2026/Oct/6/hn-49982139/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-06T18:20:58.000Z",
-      "summary": "<p><a href=\"https://news.ycombinator.com/item?id=49977979#49982139\">My comment</a> on <a href=\"https://news.ycombinator.com/item?id=49977979\">Mistral Large 4</a> &mdash; Hacker News.</p><blockquote> <p><a href=\"https://news.ycombinator.com/item?id=49977979#49979658\">wren6991</a>:"
-    },
-    {
-      "kind": "rss",
-      "title": "datasette-atom 0.11a0",
-      "url": "https://simonwillison.net/2026/Oct/6/datasette-atom/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-06T17:35:39.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette-atom/releases/tag/0.11a0\">datasette-atom 0.11a0</a></p> <p>A minor fix for compatibility with the latest Datasette alphas. This meant we could upgrade the <a href=\"https://datasette.io/\">datasette.io</a> si"
-    },
-    {
-      "kind": "rss",
-      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-      "url": "https://openai.com/index/atlassian-partnership",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-10-06T16:00:00.000Z",
-      "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work."
-    },
-    {
-      "kind": "rss",
-      "title": "Scrimshaw Jukebox",
-      "url": "https://simonwillison.net/2026/Oct/6/scrimshaw-jukebox/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-06T15:17:39.000Z",
-      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/scrimshaw-jukebox\">Scrimshaw Jukebox</a></p> <p>I wanted to see if Claude Opus 5.5 could compose music, so <a href=\"https://claude.ai/share/1f721c20-2499-4d23-b368-3ab57146d956\">I tried this</a>:</p> <blockquote> "
-    },
-    {
-      "kind": "rss",
-      "title": "How Jump Trading is scaling quant research with ChatGPT",
-      "url": "https://openai.com/index/jump-trading",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-10-06T12:00:00.000Z",
-      "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review."
-    },
-    {
-      "kind": "rss",
-      "title": "Sharing AI progress in mathematics",
-      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-10-06T12:00:00.000Z",
-      "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub."
-    },
-    {
-      "kind": "rss",
-      "title": "Advancing computer use with Ironclad",
-      "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-10-06T10:00:00.000Z",
-      "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work."
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Felix Rieseberg",
-      "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-05T23:56:47.000Z",
-      "summary": "<blockquote cite=\"https://twitter.com/felixrieseberg/status/2107206431376334975\"><p>The \"old\" version of Cowork runs model inference in the cloud, executing tool calls in an Anthropic-provided VM we shipped to your computer. We added the VM for capability, safety, and security re"
-    },
-    {
-      "kind": "rss",
-      "title": "Our approach to EU text provenance rules",
-      "url": "https://openai.com/index/eu-text-provenance",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-10-05T15:00:00.000Z",
-      "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers."
-    },
-    {
-      "kind": "rss",
-      "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
-      "url": "https://importai.substack.com/p/import-ai-475-swarm-scaling-google",
-      "source": "Import AI (Jack Clark)",
-      "sourceId": "importai",
-      "category": "insights",
-      "publishedAt": "2026-10-05T12:32:30.000Z",
-      "summary": "Who chooses what AI gets to do?"
-    },
-    {
-      "kind": "rss",
-      "title": "Building advertising for the way people use AI",
-      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-10-05T10:00:00.000Z",
-      "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers."
-    },
-    {
-      "kind": "rss",
-      "title": "Qwen3.8 27B addition in words",
-      "url": "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-04T23:34:00.000Z",
-      "summary": "<p><strong>Research:</strong> <a href=\"https://github.com/simonw/research/tree/main/qwen38-addition-in-words#readme\">Qwen3.8 27B addition in words</a></p> <p>Colin Frasier <a href=\"https://bsky.app/profile/colin-fraser.net/post/3mwopbyznhs2k\">posted on Bluesky</a> about an experi"
-    },
-    {
-      "kind": "rss",
-      "title": "We're going to need default hard budget caps on pretty much everything",
-      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-03T23:34:02.000Z",
-      "summary": "<p>Here's a product feature which the world is going to need a whole lot more of over the coming months and years: <strong>default hard budget caps</strong>. I'm talking about the feature of pay-by-usage services and APIs that lets you say \"after $X/month, cut this thing off and "
-    },
-    {
-      "kind": "rss",
-      "title": "The Agent Said It Was Done. The Database Disagreed.",
-      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-10-03T22:56:48.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "September sponsors-only newsletter",
-      "url": "https://simonwillison.net/2026/Oct/3/newsletter/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-03T22:00:31.000Z",
-      "summary": "<p>I just sent the September edition of my <a href=\"https://github.com/sponsors/simonw/\">sponsors-only monthly newsletter</a>. If you are a sponsor (or start a sponsorship now) you can <a href=\"https://github.com/simonw-private/monthly/blob/main/2026-09-september.md\">access it he"
-    },
-    {
-      "kind": "rss",
-      "title": "Claude Frontier Academy: $100M to train 10,000 engineers",
-      "url": "https://www.anthropic.com/news/claude-frontier-academy",
-      "source": "Anthropic",
-      "sourceId": "anthropic",
-      "category": "model-releases",
-      "publishedAt": "2026-10-02T23:01:00.000Z",
-      "summary": "Claude Frontier Academy trains Frontier Deployed Engineers to the standard of Anthropic’s own — a $100 million commitment to train 10,000 by the end of 2027."
-    },
-    {
-      "kind": "rss",
-      "title": "Rex's Dino Store",
-      "url": "https://simonwillison.net/2026/Oct/2/rex-s-dino-store/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-02T22:57:38.000Z",
-      "summary": "<p><strong>Museum:</strong> <a href=\"https://www.niche-museums.com/119\">Rex&#x27;s Dino Store</a></p> <p>Located just before the turnstiles in the Grand Army Plaza subway station at the north end of Brooklyn's Prospect Park is this former newsstand which is now operated by a dino"
-    },
-    {
-      "kind": "rss",
-      "title": "A model guide for the GPT-6 family",
-      "url": "https://openai.com/index/practical-guide-building-gpt-6",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-10-02T16:15:00.000Z",
-      "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
     }
   ]
 }

@@ -380,7 +380,10 @@
     "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt",
     "https://huggingface.co/blog/tiiuae/falcon-asr",
     "https://huggingface.co/spaces/tiiuae/falcon-asr-demo",
-    "https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard"
+    "https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard",
+    "https://deepmind.google/blog/introducing-gemini-4-argon/",
+    "https://support.google.com/gemini/answer/18648722?hl=en",
+    "https://support.google.com/gemini/answer/17094296?hl=en"
   ],
-  "lastIngest": "2026-10-09T08:05:37.383Z"
+  "lastIngest": "2026-10-14T02:41:11.347Z"
 }

@@ -1,0 +1,58 @@
+---
+title: "Gemini 4 Argon gets a reusable plan stress test"
+date: 2026-10-14
+category: model-releases
+tags: ["gemini", "google", "models", "skills", "decision-making"]
+summary: "Gemini 4 Argon is reaching paid Gemini accounts. A fictional-plan exercise tests its instruction following through one reusable, reversible Skill."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "15–20 min"
+  prerequisites:
+    - "A personal Google Account for someone age 18 or older"
+    - "An active Google AI Pro or Ultra subscription"
+    - "Keep Activity enabled"
+    - "Gemini 4 Argon and Skills visible after rollout"
+    - "Only the fictional, non-sensitive plans below"
+references:
+  - title: "Gemini 4 Argon: Built to solve your hardest problems"
+    url: "https://deepmind.google/blog/introducing-gemini-4-argon/"
+    author: "Koray Kavukcuoglu"
+    publishedAt: "2026-10-13"
+  - title: "About Gemini models"
+    url: "https://support.google.com/gemini/answer/18648722?hl=en"
+    author: "Google"
+    publishedAt: "2026-10-13"
+  - title: "Create and manage skills for Gemini Apps"
+    url: "https://support.google.com/gemini/answer/17094296?hl=en"
+    author: "Google"
+draft: false
+---
+
+## TL;DR
+
+Gemini 4 Argon is rolling out to paid Google AI Pro and Ultra accounts. The guide below uses a Skill—a saved set of reusable instructions—to test two fictional plans in the same format. Because Skills require Keep Activity and the rollout may not have reached you, use only non-sensitive examples and stop if either feature is missing.
+
+## What's New
+
+Google began the global Gemini 4 Argon rollout on October 13. Consumers need Google AI Pro or Ultra to use it in the Gemini app or AI Mode in Search; the announcement does not list free-plan access. Developers can use the paid API through AI Studio and Android Studio, while enterprise routes include the API, Gemini for business, and Antigravity.
+
+Google describes Argon as a deep-reasoning model for complex work and reports gains on benchmarks and in its own deployments. Those results are Google's claims, not independent guarantees. Its introductory API price is $2 per million input tokens and $10 per million output tokens, with higher pricing scheduled after November 30.
+
+Eligible Gemini app users can select Argon manually and choose Low, Medium, or High thinking, subject to plan and usage limits. Skills save a set of instructions so it can be reused in later chats or tasks. They are rolling out gradually and require an adult's personal Google Account with Keep Activity turned on.
+
+## Why It Matters
+
+A reusable Skill makes it easier to ask for the same decision-checking structure twice and see whether Argon follows it consistently. The exercise below turns that into something observable: five risks, numeric ratings, reversible tests, assumptions, and a stop condition for each fictional plan.
+
+That structure is a thinking aid, not professional advice or permission to act. Keep Activity stores prompts, so use the supplied fictional scenarios rather than personal, confidential, legal, medical, or financial details. If Argon or Skills has not reached your account, wait for the rollout instead of substituting a different setup and treating the result as comparable.
+
+<PracticalGuide timeToTry="15–20 min" prerequisites={["A personal Google Account for someone age 18 or older","An active Google AI Pro or Ultra subscription","Keep Activity enabled","Gemini 4 Argon and Skills visible after rollout","Only the fictional, non-sensitive plans below"]}>
+
+1. Open gemini.google.com, sign in, click the current model name in the prompt box, and select Gemini 4 Argon. Stop rather than substitute another model if Argon is absent.
+2. Choose Customize in the sidebar (open More first if needed), then Skills > Create > Create manually. Name it decision-premortem. Tell it to restate the goal and constraints; list exactly five failure modes; score likelihood and impact from 1–5; propose one cheap, reversible test per failure; list assumptions; finish with one stop condition; never take external actions; and ask one question if a key constraint is missing. Click Create.
+3. Start a new Argon chat, type / (or @ if shown), select decision-premortem, and submit: 'Fictional plan: I have $100 and one Saturday to run a ten-person neighborhood swap in a free community room. No participant data, payments, or bookings are involved. Stress-test this plan.' Check for five failure modes, numeric ratings, reversible tests, assumptions, and a stop condition without any external action.
+4. Invoke the Skill again with: 'Fictional plan: use three evenings and free household materials to build a tabletop marble run for a family game night.' Confirm that Argon keeps the same structure while adapting the analysis; ask it to repair any omitted field.
+5. Reverse the setup through Customize > Skills > decision-premortem > More > Deactivate.
+
+</PracticalGuide>
