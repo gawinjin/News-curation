@@ -10,6 +10,13 @@
 - Ingest produced 43 candidates, with 25 normalized URL additions and 30 removals since October 9. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
 - `npm run verify` passed all 157 articles. `npm run build` generated 373 pages and Pagefind indexed all 373 pages; JSON parsing, the rendered article route, homepage, RSS, and `git diff --check` passed.
 
+Rerun:
+
+- No additional high-signal candidates - skipping. The refreshed inbox added no URLs and removed three feed items since the earlier October 14 run; the scam-detection item kept the same URL and only changed title.
+- The morning run already reviewed the current October 13-14 items, including the on-device scam detector and Higgsfield video claim. With no new source URL, this rerun did not manufacture another article or repeat the same research.
+- Ingest produced 40 candidates. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 157 articles. `npm run build` generated 373 pages and Pagefind indexed all 373 pages; JSON parsing and `git diff --check` passed.
+
 ## 2026-10-09
 
 - Shipped `2026-10-09-falcon-asr-arabic-clip-test` - TII's public Falcon ASR demo becomes a ten-minute Arabic+English sample and self-recorded voice test, with transcript checking before the text is copied or trusted.

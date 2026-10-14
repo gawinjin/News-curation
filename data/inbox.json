@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T02:41:11.347Z",
+  "generatedAt": "2026-10-14T08:05:03.874Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,7 +47,7 @@
   "items": [
     {
       "kind": "rss",
-      "title": "Google DeepMind and Singapore Government announce new AI tool to protect citizens against scams",
+      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
       "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
       "source": "Google DeepMind",
       "sourceId": "deepmind",
@@ -103,16 +103,6 @@
       "sourceId": "deepmind",
       "category": "research",
       "publishedAt": "2026-10-13T16:01:58.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Gemini 4 Argon: Built to solve your hardest problems",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
-      "source": "Google DeepMind",
-      "sourceId": "deepmind",
-      "category": "research",
-      "publishedAt": "2026-10-13T16:01:52.000Z",
       "summary": ""
     },
     {
@@ -454,26 +444,6 @@
       "category": "model-releases",
       "publishedAt": "2026-10-07T12:00:00.000Z",
       "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council."
-    },
-    {
-      "kind": "rss",
-      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
-      "url": "https://openai.com/index/radisson",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-10-07T07:00:00.000Z",
-      "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips."
-    },
-    {
-      "kind": "rss",
-      "title": "Quoting Jake Boggan",
-      "url": "https://simonwillison.net/2026/Oct/7/jake-boggan/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-07T04:47:55.000Z",
-      "summary": "<blockquote cite=\"https://news.ycombinator.com/item?id=49984923#49987367\"><p>I was a graph theory junkie long ago and even moved to Budapest for awhile to study among the greats. While I was there I started working on Barnette's Conjecture which came to occupy my thoughts over th"
     }
   ]
 }
