@@ -1,0 +1,120 @@
+{
+  "slug": "tree-appreciator-ai-game-review",
+  "date": "2026-10-15",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": [
+    "Claude's iPhone chat built a 3D game in three hours",
+    "Tree Appreciator is a small test of AI-made interaction"
+  ],
+  "summary": "Simon Willison prompted Claude's ordinary iPhone chat to make a 3D game. A no-account playtest checks the result's controls, rewards, persistence, and accessibility.",
+  "tags": ["claude", "games", "creative-tools", "usability", "ai-evaluation"],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
+    "title": "Tree Appreciator",
+    "author": "Simon Willison",
+    "publishedAt": "2026-10-14",
+    "key_facts": [
+      "Simon Willison asked Claude Opus 5.5 Max in the standard Claude iPhone app's chat mode—not Claude Code—to make a spot-the-difference game about two generated trees.",
+      "The prompt asked for a Three.js game that was both fun and visually appealing.",
+      "Claude worked for 3 hours and 7 minutes before returning a playable browser game.",
+      "The result includes generated tree pairs, synchronized rotation and zoom, music, animation, hints, achievements, scoring, and a saved herbarium of completed pairs.",
+      "The live game requires WebGL and offers touch, mouse, and keyboard controls, but its small visual differences may be difficult for some readers to see."
+    ],
+    "quote_candidates": [
+      {
+        "text": "This one used the default Claude iPhone app (chat mode, not Claude Code mode)",
+        "words": 13,
+        "exact": true,
+        "position": "Opening paragraph"
+      },
+      {
+        "text": "In this case Claude crunched for 3 hours and 7 minutes",
+        "words": 11,
+        "exact": true,
+        "position": "Final paragraph"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://tools.simonwillison.net/tree-appreciator",
+      "title": "Tree Appreciator",
+      "key_facts": [
+        "The public game exposes the exact controls and feedback readers can test without an account.",
+        "Progress is stored in the current browser, and starting a new walk clears the herbarium and field-guide progress."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://tools.simonwillison.net/colophon#tree-appreciator-code",
+      "title": "Tree Appreciator build record",
+      "key_facts": [
+        "The public build record links the original prompt, model, generated commit, and shared Claude transcript.",
+        "The finished game can therefore be compared with the short request that started it."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "15 min",
+    "prerequisites": [
+      "A current browser with WebGL enabled",
+      "No account, Claude subscription, coding, upload, or personal information",
+      "Ability to distinguish small visual differences; keyboard controls exist, but the game may still be difficult with low vision or color-vision limitations"
+    ],
+    "steps": [
+      {
+        "instruction": "Open Tree Appreciator, confirm that two 3D trees load, read the tutorial, and select Got it. If a WebGL warning appears, try an updated supported browser; do not install an unfamiliar extension or weaken browser security.",
+        "verify_url": "https://tools.simonwillison.net/tree-appreciator"
+      },
+      {
+        "instruction": "Play the first pair without Hint: drag to rotate both trees, pinch or scroll to zoom, and select one visible difference. Confirm that the game marks it and advances the noticed counter; a miss should reduce the score slightly.",
+        "verify_url": "https://tools.simonwillison.net/tree-appreciator"
+      },
+      {
+        "instruction": "Find the remaining differences. If stuck for two minutes, select Hint once and observe how it guides you and changes the leaf rating. Finish the pair and confirm that a herbarium summary shows time and misses.",
+        "verify_url": "https://tools.simonwillison.net/tree-appreciator"
+      },
+      {
+        "instruction": "Select Next pair and complete three pairs to reach the Connoisseur's round. Answer its visual question and note whether the feedback makes the judgment understandable rather than merely surprising.",
+        "verify_url": "https://tools.simonwillison.net/tree-appreciator"
+      },
+      {
+        "instruction": "Open Field Guide, switch to Herbarium, and confirm completed pairs were saved. Reload the page and check that the entries remain. Do not select Start a new walk unless you intend to erase that progress.",
+        "verify_url": "https://tools.simonwillison.net/tree-appreciator"
+      },
+      {
+        "instruction": "Write a three-line verdict: one clear control, one moment that created attention or fun, and one friction or accessibility problem. Judge the finished interaction rather than the novelty of AI generating it.",
+        "verify_url": "https://simonwillison.net/2026/Oct/14/tree-appreciator/"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Tree Appreciator",
+      "url": "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-10-14"
+    },
+    {
+      "title": "Tree Appreciator",
+      "url": "https://tools.simonwillison.net/tree-appreciator",
+      "author": "Simon Willison"
+    },
+    {
+      "title": "Tree Appreciator build record",
+      "url": "https://tools.simonwillison.net/colophon#tree-appreciator-code",
+      "author": "Simon Willison"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The article describes one creator's experiment, not a general benchmark of Claude's reliability or game-design ability.",
+    "The game depends on WebGL and small visual differences, so not every device or reader can complete the exercise.",
+    "The guide evaluates a fixed public artifact and deliberately does not repeat Signal's August 6 browser-game creation workflow."
+  ],
+  "assembled_at": "2026-10-15T08:01:17Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

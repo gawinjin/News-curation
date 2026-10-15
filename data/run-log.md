@@ -1,5 +1,15 @@
 # Signal Run Log
 
+## 2026-10-15
+
+- Shipped `2026-10-15-tree-appreciator-ai-game-review` - Simon Willison's Claude-built Tree Appreciator becomes a 15-minute, no-account playtest of controls, feedback, hints, saved progress, and accessibility.
+- Three-role research confirmed that Willison used Claude Opus 5.5 Max in the ordinary iPhone chat rather than Claude Code, waited 3 hours and 7 minutes, and published the playable WebGL result, original prompt, build record, and shared transcript.
+- The guide is distinct from Signal's August 6 game-creation article: readers do not generate, publish, or inspect code. They test a fixed public interaction, compare its output with the request, and write an evidence-based usability verdict. The article treats one creator's experiment as an inspectable example, not a Claude reliability or game-design benchmark.
+- The game needs WebGL and relies on small visual differences, so the guide notes low-vision and color-vision limits and tells readers not to weaken browser security. Starting a new walk can erase the browser's saved herbarium progress.
+- Skipped Anthropic's US-midterms safeguards and Singapore MOU, OpenAI's EU analysis, and the game-decompilation essay because they lack a distinct public 5-30 minute tool. HiRO-ACEv2 is specialist climate-model research; Amp, SentinelOne, Third Moment Research, and Block are customer or infrastructure stories without a stronger general-reader workflow. The on-device scam detector retained yesterday's URL and still has no public user path.
+- Ingest produced 42 candidates, with 10 normalized URL additions and eight removals since the October 14 rerun. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 158 articles. `npm run build` generated 376 pages and Pagefind indexed all 376 pages; JSON parsing, the rendered article route, homepage, one RSS item, append-only state, and `git diff --check` passed.
+
 ## 2026-10-14
 
 - Shipped `2026-10-14-gemini-4-argon-decision-skill` - Google's paid Gemini 4 Argon rollout becomes a 15-20 minute reusable decision pre-mortem using two fictional plans, observable output fields, and a reversible Skill.
