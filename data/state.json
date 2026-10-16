@@ -386,7 +386,10 @@
     "https://support.google.com/gemini/answer/17094296?hl=en",
     "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
     "https://tools.simonwillison.net/tree-appreciator",
-    "https://tools.simonwillison.net/colophon#tree-appreciator-code"
+    "https://tools.simonwillison.net/colophon#tree-appreciator-code",
+    "https://huggingface.co/blog/flux-3",
+    "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+    "https://huggingface.co/spaces/black-forest-labs/flux-3-image-klein"
   ],
-  "lastIngest": "2026-10-15T07:58:36.007Z"
+  "lastIngest": "2026-10-16T07:59:16.938Z"
 }

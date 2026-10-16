@@ -1,5 +1,14 @@
 # Signal Run Log
 
+## 2026-10-16
+
+- Shipped `2026-10-16-flux-3-image-layout-test` - FLUX.3 Image Klein becomes a 10-20 minute browser test of prompt generation, reference-image editing, and visible bounding-box layout control.
+- Three-role research confirmed one model handles text-to-image and multi-reference editing, the official public Space worked without sign-in or a paid-credit prompt during the test, and its separate Bounding boxes workflow exposes examples and a Generate with boxes action.
+- The guide uses a harmless full-scene prompt, an image generated inside the demo, and the built-in Three vessels layout example. It treats boxes as approximate composition guidance, excludes private or unauthorized uploads, notes shared Zero queues and availability, and sends commercial users to the model card instead of simplifying the FLUX Kommunity License.
+- Skipped Indic pretraining and Muse Spark Open as specialist model-building releases; Granite Switch 4.1 is primarily a hosted-endpoint and adapter workflow. GPT-Rosalind is limited to eligible academic labs, while antimicrobial discovery, Anthropic evaluators, and the remaining policy, finance, legal, and customer stories lack a distinct public 5-30 minute tool. Chirp Pong repeats yesterday's fixed-browser-game review, and the Study Mode item overlaps Signal's current education guides.
+- Ingest produced 41 candidates, with 11 normalized URL additions and 12 removals since October 15. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 159 articles. `npm run build` generated 379 pages and Pagefind indexed all 379 pages; JSON parsing, append-only state, the rendered article route, homepage, one RSS item, and `git diff --check` passed.
+
 ## 2026-10-15
 
 - Shipped `2026-10-15-tree-appreciator-ai-game-review` - Simon Willison's Claude-built Tree Appreciator becomes a 15-minute, no-account playtest of controls, feedback, hints, saved progress, and accessibility.

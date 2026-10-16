@@ -1,0 +1,55 @@
+---
+title: "FLUX.3 gives image prompts a visible layout test"
+date: 2026-10-16
+category: model-releases
+tags: ["flux", "image-generation", "image-editing", "creative-tools", "how-to"]
+summary: "FLUX.3 Image Klein combines image generation, reference-based editing, and bounding-box layout control. A public browser test shows where those controls help and where they remain approximate."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10-20 min"
+  prerequisites:
+    - "A modern web browser"
+    - "No Hugging Face account or paid credits were required during the verified public run"
+    - "Optional: a non-sensitive reference image you own or have permission to use"
+references:
+  - title: "Welcome FLUX.3 Image Klein in Diffusers"
+    url: "https://huggingface.co/blog/flux-3"
+    author: "Aritra Roy Gosthipaty, Sayak Paul, and Linoy Tsaban"
+    publishedAt: "2026-10-15"
+  - title: "FLUX 3 Image Klein model card"
+    url: "https://huggingface.co/black-forest-labs/flux-3-image-klein"
+    author: "Black Forest Labs"
+  - title: "FLUX 3 Image Klein - Hugging Face Space"
+    url: "https://huggingface.co/spaces/black-forest-labs/flux-3-image-klein"
+    author: "Black Forest Labs"
+draft: false
+---
+
+## TL;DR
+
+FLUX.3 Image Klein can generate an image, edit from reference pictures, and use labeled boxes to steer a scene's layout. You can test all three workflows in a public browser demo, but the boxes offer approximate guidance rather than exact placement.
+
+## What's New
+
+Hugging Face has added FLUX.3 Image Klein to its Diffusers toolkit. The same 5.6-billion-parameter model supports text-to-image generation, editing with one reference, and compositions built from as many as 10 reference images.
+
+Its layout controls let a prompt name regions and assign each one a bounding box. Those coordinates sit on a 0–1000 grid and list the vertical position before the horizontal position. The boxes influence placement and scale, but they do not act as exact pixel masks.
+
+Black Forest Labs offers a faster distilled checkpoint that uses 16 steps by default and a base version that uses 50. Hugging Face measured a 1024 × 1024 distilled image at about two seconds on an NVIDIA H100 GPU; a shared online demo may take longer or have a queue. The public Space exposes generation, reference editing, and bounding-box workflows without a local installation.
+
+## Why It Matters
+
+Most image generators make you describe composition in words and hope the model interprets it correctly. Bounding boxes give you a visible way to ask for the main subjects in particular parts of the frame, then compare that plan with the result. That can make poster, cover, or product-scene experiments easier to judge, even when the placement misses.
+
+The browser demo also makes the model easy to test before considering a local setup. Treat it as a public third-party service: use only non-sensitive images you have permission to edit. Anyone considering commercial use, redistribution, or product integration should read the model's FLUX Kommunity License rather than assume the model files are unrestricted.
+
+<PracticalGuide timeToTry="10-20 min" prerequisites={["A modern web browser","No Hugging Face account or paid credits were required during the verified public run","Optional: a non-sensitive reference image you own or have permission to use"]}>
+
+1. Open the public FLUX 3 Image Klein Space and wait for the Generate and edit tab to appear. Shared Zero hardware may add a queue or become unavailable; do not purchase a plan just for this test.
+2. Select the Record sleeve, STILL WATER example and confirm an image preview appears with Download and Use as reference controls.
+3. Replace the Prompt text with a harmless full-scene description, keep Distilled (16 steps) and 1K selected for the quicker test, choose an Aspect ratio, and select Generate. Check whether the preview follows the subject, setting, light, and composition you described.
+4. Select Use as reference below the generated image, rewrite the Prompt to make one visible change, and select Generate. Check whether recognizable parts of the reference remain while the requested change appears. Never upload a private photo, confidential document, or image you lack permission to edit.
+5. Open the Bounding boxes tab, choose the Three vessels example, and select Generate with boxes. Compare the visible boxes with the output: treat them as composition guidance, not exact masks, and note one accurate placement and one miss or distorted detail.
+
+</PracticalGuide>

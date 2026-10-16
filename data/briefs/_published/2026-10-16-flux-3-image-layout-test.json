@@ -1,0 +1,120 @@
+{
+  "slug": "flux-3-image-layout-test",
+  "date": "2026-10-16",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": [
+    "FLUX.3 gives image prompts a visible layout test",
+    "Try FLUX.3's new image layout controls in a browser"
+  ],
+  "summary": "FLUX.3 Image Klein combines image generation, reference-based editing, and bounding-box layout control. A public browser test shows where those controls help and where they remain approximate.",
+  "tags": ["flux", "image-generation", "image-editing", "creative-tools", "how-to"],
+  "primary_source": {
+    "url": "https://huggingface.co/blog/flux-3",
+    "title": "Welcome FLUX.3 Image Klein in Diffusers",
+    "author": "Aritra Roy Gosthipaty, Sayak Paul, and Linoy Tsaban",
+    "publishedAt": "2026-10-15",
+    "key_facts": [
+      "FLUX.3 Image Klein launched in Diffusers with one model for text-to-image generation and multi-reference image editing.",
+      "Its layout-control format adds named regions and bounding boxes to a prompt so users can guide where subjects should appear or where reference-image regions should move.",
+      "The bounding-box coordinates use a normalized 0-1000 grid, with vertical coordinates listed before horizontal coordinates.",
+      "Black Forest Labs released a distilled checkpoint that defaults to 16 steps and a base checkpoint that defaults to 50 steps.",
+      "Hugging Face reports that the distilled checkpoint generated a 1024 by 1024 image in about two seconds on an NVIDIA H100 GPU; that benchmark does not predict shared-demo queue time.",
+      "The public Hugging Face Space exposes Generate and edit and Bounding boxes workflows without requiring local installation."
+    ],
+    "quote_candidates": [
+      {
+        "text": "One model for text-to-image, multi-reference image-to-image, and bounding-box layout control.",
+        "words": 9,
+        "exact": true,
+        "position": "TL;DR, first bullet"
+      },
+      {
+        "text": "The distilled checkpoint makes a 1024 × 1024 image in about 2 seconds on an H100.",
+        "words": 15,
+        "exact": true,
+        "position": "TL;DR, second bullet"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+      "title": "FLUX 3 Image Klein model card",
+      "key_facts": [
+        "The 5.6-billion-parameter open-weights model supports text-to-image generation, single-reference editing, and compositions using up to 10 reference images.",
+        "Bounding boxes guide placement and scale but are not hard pixel masks, so exact composition is not guaranteed.",
+        "The model uses the FLUX Kommunity License; readers should check its terms before commercial use, redistribution, or product integration."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://huggingface.co/spaces/black-forest-labs/flux-3-image-klein",
+      "title": "FLUX 3 Image Klein - Hugging Face Space",
+      "key_facts": [
+        "The official public Space was live during research and a complete test run worked without a Hugging Face account or paid-credit prompt.",
+        "The demo offers prompt generation, optional reference images, Distilled and Base modes, resolution and aspect controls, example prompts, and a separate Bounding boxes tab.",
+        "The Space runs on shared Zero infrastructure, so queues, availability, and free access can change."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10-20 min",
+    "prerequisites": [
+      "A modern web browser",
+      "No Hugging Face account or paid credits were required during the verified public run",
+      "Optional: a non-sensitive reference image you own or have permission to use"
+    ],
+    "steps": [
+      {
+        "instruction": "Open the public FLUX 3 Image Klein Space and wait for the Generate and edit tab to appear. Shared Zero hardware may add a queue or become unavailable; do not purchase a plan just for this test.",
+        "verify_url": "https://huggingface.co/spaces/black-forest-labs/flux-3-image-klein"
+      },
+      {
+        "instruction": "Select the Record sleeve, STILL WATER example and confirm an image preview appears with Download and Use as reference controls.",
+        "verify_url": "https://black-forest-labs-flux-3-image-klein.hf.space/"
+      },
+      {
+        "instruction": "Replace the Prompt text with a harmless full-scene description, keep Distilled (16 steps) and 1K selected for the quicker test, choose an Aspect ratio, and select Generate. Check whether the preview follows the subject, setting, light, and composition you described.",
+        "verify_url": "https://black-forest-labs-flux-3-image-klein.hf.space/"
+      },
+      {
+        "instruction": "Select Use as reference below the generated image, rewrite the Prompt to make one visible change, and select Generate. Check whether recognizable parts of the reference remain while the requested change appears. Never upload a private photo, confidential document, or image you lack permission to edit.",
+        "verify_url": "https://black-forest-labs-flux-3-image-klein.hf.space/"
+      },
+      {
+        "instruction": "Open the Bounding boxes tab, choose the Three vessels example, and select Generate with boxes. Compare the visible boxes with the output: treat them as composition guidance, not exact masks, and note one accurate placement and one miss or distorted detail.",
+        "verify_url": "https://black-forest-labs-flux-3-image-klein.hf.space/"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Welcome FLUX.3 Image Klein in Diffusers",
+      "url": "https://huggingface.co/blog/flux-3",
+      "author": "Aritra Roy Gosthipaty, Sayak Paul, and Linoy Tsaban",
+      "publishedAt": "2026-10-15"
+    },
+    {
+      "title": "FLUX 3 Image Klein model card",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+      "author": "Black Forest Labs"
+    },
+    {
+      "title": "FLUX 3 Image Klein - Hugging Face Space",
+      "url": "https://huggingface.co/spaces/black-forest-labs/flux-3-image-klein",
+      "author": "Black Forest Labs"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The official demo worked without sign-in during research, but shared Zero capacity, queues, and free access can change.",
+    "Prompts and uploads are processed by a third-party hosted Space; the guide excludes sensitive or unauthorized images.",
+    "Bounding boxes guide composition rather than guarantee exact pixel placement, and generated text or small details may be wrong.",
+    "The model and code use different licenses; the article directs commercial users to the model card instead of simplifying the terms."
+  ],
+  "assembled_at": "2026-10-16T08:03:04Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
