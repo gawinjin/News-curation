@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T02:44:19.362Z",
+  "generatedAt": "2026-10-19T07:59:03.666Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -224,16 +224,6 @@
       "category": "model-releases",
       "publishedAt": "2026-10-15T13:00:00.000Z",
       "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning."
-    },
-    {
-      "kind": "rss",
-      "title": "LaTeX renderer",
-      "url": "https://simonwillison.net/2026/Oct/15/latex/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-15T02:07:28.000Z",
-      "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/latex\">LaTeX renderer</a></p> <p>Inspired by Paul Ford and Aboard Foundary's new web app <a href=\"https://tinylittleoffice.com/\">Tiny Little Office</a>, which provides a suite of web app content editors (a Word Pr"
     },
     {
       "kind": "rss",
@@ -484,16 +474,6 @@
       "category": "insights",
       "publishedAt": "2026-10-12T12:30:39.000Z",
       "summary": "Will we give robots the moon?"
-    },
-    {
-      "kind": "rss",
-      "title": "datasette-ports 0.4",
-      "url": "https://simonwillison.net/2026/Oct/12/datasette-ports/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-12T04:57:07.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-ports/releases/tag/0.4\">datasette-ports 0.4</a></p> <p>My plugin for detecting and listing all Datasette instances on the current machine now works with the latest version, and displays the detected PID "
     }
   ]
 }

@@ -9,6 +9,13 @@
 - Ingest produced 45 candidates, with 11 normalized URL additions and seven removals since October 16. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
 - `npm run verify` passed all 160 articles. `npm run build` generated 382 pages and Pagefind indexed all 382 pages; JSON parsing, append-only state, the rendered article route, homepage, one RSS item, and `git diff --check` passed.
 
+Rerun:
+
+- No additional high-signal candidates - skipping. The refreshed inbox added zero normalized source URLs and removed the already-covered LaTeX renderer item plus an older Datasette release since the earlier October 19 run.
+- The earlier run already reviewed every current candidate, so this rerun did not repeat research or manufacture another article.
+- Ingest produced 43 candidates. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 160 articles. `npm run build` generated 382 pages and Pagefind indexed all 382 pages; JSON parsing, append-only state, and `git diff --check` passed.
+
 ## 2026-10-16
 
 - Shipped `2026-10-16-flux-3-image-layout-test` - FLUX.3 Image Klein becomes a 10-20 minute browser test of prompt generation, reference-image editing, and visible bounding-box layout control.
