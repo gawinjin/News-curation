@@ -389,7 +389,11 @@
     "https://tools.simonwillison.net/colophon#tree-appreciator-code",
     "https://huggingface.co/blog/flux-3",
     "https://huggingface.co/black-forest-labs/flux-3-image-klein",
-    "https://huggingface.co/spaces/black-forest-labs/flux-3-image-klein"
+    "https://huggingface.co/spaces/black-forest-labs/flux-3-image-klein",
+    "https://simonwillison.net/2026/Oct/15/latex/",
+    "https://tools.simonwillison.net/latex",
+    "https://tools.simonwillison.net/colophon#latex",
+    "https://github.com/simonw/tools/blob/main/latex.html"
   ],
-  "lastIngest": "2026-10-16T07:59:16.938Z"
+  "lastIngest": "2026-10-19T02:44:19.362Z"
 }

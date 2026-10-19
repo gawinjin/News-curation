@@ -1,0 +1,56 @@
+---
+title: "Turn a LaTeX equation into a shareable link in five minutes"
+date: 2026-10-19
+category: guides
+tags: ["latex", "math", "browser-tools", "claude-code", "how-to"]
+summary: "A free browser tool turns LaTeX equations and documents into live previews, shareable links, images, or PDFs. A five-minute test shows what the link contains before you send it."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "5 min"
+  prerequisites:
+    - "A modern browser with JavaScript enabled"
+    - "No account or LaTeX installation required"
+references:
+  - title: "Tool: LaTeX renderer"
+    url: "https://simonwillison.net/2026/Oct/15/latex/"
+    author: "Simon Willison"
+    publishedAt: "2026-10-15"
+  - title: "LaTeX renderer"
+    url: "https://tools.simonwillison.net/latex"
+    author: "Simon Willison"
+  - title: "Tools colophon: LaTeX renderer"
+    url: "https://tools.simonwillison.net/colophon#latex"
+    author: "Simon Willison"
+  - title: "latex.html source code"
+    url: "https://github.com/simonw/tools/blob/main/latex.html"
+    author: "Simon Willison"
+draft: false
+---
+
+## TL;DR
+
+Simon Willison's free browser tool turns LaTeX equations and documents into live previews, shareable links, images, or PDFs. It needs no account or local LaTeX setup, but each shared link contains the LaTeX itself, so keep confidential material out.
+
+## What's New
+
+The LaTeX renderer pairs a source editor with a live preview and separate Edit and Rendered views. It displays a bare formula with MathJax, handles prose or full documents with faster-latex, and offers built-in examples for getting started. You can also load source from a public URL or GitHub Gist.
+
+Copy link creates either a readable or compressed URL that reopens the same material without an account. The LaTeX travels inside the link rather than being saved as a separate document. Export options cover PNG, SVG, and the browser's print-to-PDF route.
+
+Willison reports that Claude Code with Opus 5.5 Extra built the tool inside his public tools repository. The result renders documents in an isolated, sandboxed frame and cleans the generated markup with DOMPurify, while its rendering libraries load from third-party content-delivery networks.
+
+## Why It Matters
+
+This gives students, teachers, researchers, and anyone sharing technical notes a quick path from an equation to something other people can open or paste into a document. You can adjust a formula while watching the preview, then send a link or export an image without installing a full LaTeX system.
+
+The convenience has a clear privacy boundary: the shared URL contains the original LaTeX, so it is unsuitable for confidential work. The page also fetches rendering libraries from third-party networks, which means it should not be treated as a fully offline tool.
+
+<PracticalGuide timeToTry="5 min" prerequisites={["A modern browser with JavaScript enabled","No account or LaTeX installation required"]}>
+
+1. Open the LaTeX renderer, select the Quadratic formula example, and confirm the editor fills while the preview shows a typeset equation with an Equation / MathJax label.
+2. Replace the first x in the source with y, confirm the live preview updates, then select Rendered to show the clean equation view.
+3. Select Copy link, paste the copied URL into a new browser tab, and confirm the same equation opens without an account or saved document. The link contains the LaTeX, so do not use confidential material.
+4. Select Share, download PNG or SVG, and open the downloaded file to confirm the equation exported as an image. Use Print / save PDF only if you need a document-style copy.
+
+</PracticalGuide>

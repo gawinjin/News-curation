@@ -1,0 +1,122 @@
+{
+  "slug": "latex-renderer-equation-share",
+  "date": "2026-10-19",
+  "category": "guides",
+  "audience": "general",
+  "title_candidates": [
+    "Turn a LaTeX equation into a shareable link in five minutes",
+    "Simon Willison's LaTeX renderer makes equations easy to share"
+  ],
+  "summary": "A free browser tool turns LaTeX equations and documents into live previews, shareable links, images, or PDFs. A five-minute test shows what the link contains before you send it.",
+  "tags": [
+    "latex",
+    "math",
+    "browser-tools",
+    "claude-code",
+    "how-to"
+  ],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Oct/15/latex/",
+    "title": "Tool: LaTeX renderer",
+    "author": "Simon Willison",
+    "publishedAt": "2026-10-15",
+    "key_facts": [
+      "LaTeX renderer turns a bare formula into a MathJax display equation and can also render prose fragments or full documents with faster-latex.",
+      "The browser interface pairs source editing with a live preview and lets readers switch between Edit and Rendered views.",
+      "Readers can type LaTeX, load it from a public URL or GitHub Gist, or start from built-in equation and document examples.",
+      "The tool places the LaTeX in the URL fragment, creating readable or compressed links that can reopen the same material without an account.",
+      "Willison says Claude Code using Opus 5.5 Extra built the tool in his existing public tools repository.",
+      "Willison asked for the rendered result to run in a sandboxed iframe, reusing a protection pattern from his SVG-in-Markdown tool.",
+      "The implementation uses MathJax, faster-latex, Pako, and DOMPurify in the browser."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://tools.simonwillison.net/latex",
+      "title": "LaTeX renderer",
+      "key_facts": [
+        "The live tool offers built-in examples, live editing, Edit and Rendered views, URL or GitHub Gist loading, and readable or compressed share links.",
+        "Its export controls can copy the LaTeX, copy the rendered image, download PNG or SVG, or open the browser's print-to-PDF path.",
+        "The tool states that its readable and compressed links contain the LaTeX itself."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://tools.simonwillison.net/colophon#latex",
+      "title": "Tools colophon: LaTeX renderer",
+      "key_facts": [
+        "The public development record identifies the tool as AI generated and links the single implementation commit and Claude Code transcript.",
+        "The colophon confirms MathJax for equations, faster-latex for prose and documents, and PNG, SVG, and print-to-PDF export paths.",
+        "It records the deliberate reuse of sandbox and URL-loading patterns from the older Markdown SVG tool."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://github.com/simonw/tools/blob/main/latex.html",
+      "title": "latex.html source code",
+      "key_facts": [
+        "The public source configures rendered documents in a sandboxed iframe and applies a restrictive content-security policy.",
+        "External URL loading is initiated by the reader and uses credential-free, no-referrer fetching; the page still loads its rendering libraries from third-party CDNs."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "5 min",
+    "prerequisites": [
+      "A modern browser with JavaScript enabled",
+      "No account or LaTeX installation required"
+    ],
+    "steps": [
+      {
+        "instruction": "Open the LaTeX renderer, select the Quadratic formula example, and confirm the editor fills while the preview shows a typeset equation with an Equation / MathJax label.",
+        "verify_url": "https://tools.simonwillison.net/latex"
+      },
+      {
+        "instruction": "Replace the first x in the source with y, confirm the live preview updates, then select Rendered to show the clean equation view.",
+        "verify_url": "https://tools.simonwillison.net/latex"
+      },
+      {
+        "instruction": "Select Copy link, paste the copied URL into a new browser tab, and confirm the same equation opens without an account or saved document. The link contains the LaTeX, so do not use confidential material.",
+        "verify_url": "https://tools.simonwillison.net/latex"
+      },
+      {
+        "instruction": "Select Share, download PNG or SVG, and open the downloaded file to confirm the equation exported as an image. Use Print / save PDF only if you need a document-style copy.",
+        "verify_url": "https://tools.simonwillison.net/latex"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Tool: LaTeX renderer",
+      "url": "https://simonwillison.net/2026/Oct/15/latex/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-10-15"
+    },
+    {
+      "title": "LaTeX renderer",
+      "url": "https://tools.simonwillison.net/latex",
+      "author": "Simon Willison"
+    },
+    {
+      "title": "Tools colophon: LaTeX renderer",
+      "url": "https://tools.simonwillison.net/colophon#latex",
+      "author": "Simon Willison"
+    },
+    {
+      "title": "latex.html source code",
+      "url": "https://github.com/simonw/tools/blob/main/latex.html",
+      "author": "Simon Willison"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Readable and compressed share links contain the LaTeX itself; anyone with the link can read it, so the guide excludes confidential material.",
+    "The page runs rendering in a sandboxed iframe but still loads libraries from third-party CDNs, so it is not described as fully offline.",
+    "The interaction pattern overlaps Signal's August Markdown SVG Renderer guide; this article stays narrowly focused on equations, LaTeX-specific examples, self-contained formula links, and math image export."
+  ],
+  "assembled_at": "2026-10-19T02:55:00Z",
+  "assembled_by": "Signal Orchestrator v1"
+}

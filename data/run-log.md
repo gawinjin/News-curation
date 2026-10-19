@@ -1,5 +1,14 @@
 # Signal Run Log
 
+## 2026-10-19
+
+- Shipped `2026-10-19-latex-renderer-equation-share` - Simon Willison's account-free browser tool becomes a five-minute equation-editing test with a self-contained share link and PNG or SVG export.
+- Three-role research confirmed the live editor, MathJax and faster-latex rendering paths, built-in examples, URL-fragment sharing, image and print-to-PDF exports, and the public Claude Code development record.
+- The guide keeps its scope distinct from Signal's August Markdown SVG Renderer article: readers edit a known formula, verify the typeset result, reopen the embedded LaTeX in a new tab, and export a math image. It warns that anyone with the link can read its LaTeX and that CDN dependencies mean the page is not fully offline.
+- Skipped `llm-tools-datasette`, `llm-echo`, `web-edit`, inline `document.currentScript`, the code-review quotation, and Beam as developer or model-infrastructure material. Anthropic's public-benefit fund and the Itaú, Benefit Street Partners, and Stack Overflow posts are policy or customer stories without a stronger distinct public 5-30 minute workflow.
+- Ingest produced 45 candidates, with 11 normalized URL additions and seven removals since October 16. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 160 articles. `npm run build` generated 382 pages and Pagefind indexed all 382 pages; JSON parsing, append-only state, the rendered article route, homepage, one RSS item, and `git diff --check` passed.
+
 ## 2026-10-16
 
 - Shipped `2026-10-16-flux-3-image-layout-test` - FLUX.3 Image Klein becomes a 10-20 minute browser test of prompt generation, reference-image editing, and visible bounding-box layout control.
