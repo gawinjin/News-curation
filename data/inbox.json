@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T07:59:03.666Z",
+  "generatedAt": "2026-10-20T08:05:25.762Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -45,6 +45,46 @@
     "alexalbert__"
   ],
   "items": [
+    {
+      "kind": "rss",
+      "title": "My obituary for programming",
+      "url": "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-19T23:58:25.000Z",
+      "summary": "<p><strong><a href=\"https://dumbmatter.com/2026/10/programming-obituary/\">My obituary for programming</a></strong></p> Jeremy Scheff poignantly captures the key loss caused by coding agents for career programmers who enjoyed the <em>puzzle</em> of developing code:</p> <blockquote"
+    },
+    {
+      "kind": "rss",
+      "title": "Import AI 477: In which I tell the IMF the Singularity has begun",
+      "url": "https://importai.substack.com/p/import-ai-477-in-which-i-tell-the",
+      "source": "Import AI (Jack Clark)",
+      "sourceId": "importai",
+      "category": "insights",
+      "publishedAt": "2026-10-19T12:31:37.000Z",
+      "summary": "What do you think?"
+    },
+    {
+      "kind": "rss",
+      "title": "Advancing coding in low‑resource programming languages",
+      "url": "https://openai.com/index/low-resource-programming-languages",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "summary": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration."
+    },
+    {
+      "kind": "rss",
+      "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+      "url": "https://huggingface.co/blog/hf-torchneuron",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-10-19T00:00:00.000Z",
+      "summary": ""
+    },
     {
       "kind": "rss",
       "title": "llm-tools-datasette 0.1.1",
@@ -224,6 +264,16 @@
       "category": "model-releases",
       "publishedAt": "2026-10-15T13:00:00.000Z",
       "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning."
+    },
+    {
+      "kind": "rss",
+      "title": "Apertus 1.5 Release Notes",
+      "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-10-15T09:08:45.000Z",
+      "summary": ""
     },
     {
       "kind": "rss",
@@ -414,66 +464,6 @@
       "category": "model-releases",
       "publishedAt": "2026-10-13T12:00:00.000Z",
       "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live."
-    },
-    {
-      "kind": "rss",
-      "title": "web-edit 0.1a1",
-      "url": "https://simonwillison.net/2026/Oct/13/web-edit/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-13T01:40:05.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/web-edit/releases/tag/0.1a1\">web-edit 0.1a1</a></p> <p>Includes <a href=\"https://github.com/simonw/web-edit/pull/1\">performance optimizations</a> written <a href=\"https://claude.ai/code/session_01LE2R4P74P9GGUbE6yQ5Y"
-    },
-    {
-      "kind": "rss",
-      "title": "llm-meta-ai 0.2",
-      "url": "https://simonwillison.net/2026/Oct/12/llm-meta-ai/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-12T23:58:46.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-meta-ai/releases/tag/0.2\">llm-meta-ai 0.2</a></p> <p>Meta AI release <a href=\"https://research.meta.ai/blog/muse-wonder\">Muse Wonder</a> (and Muse Wonder Full), their new \"most capable models\". These look like th"
-    },
-    {
-      "kind": "rss",
-      "title": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11",
-      "url": "https://simonwillison.net/2026/Oct/12/python-3-15/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-12T18:15:38.000Z",
-      "summary": "<p>Python 3.15 <a href=\"https://www.python.org/downloads/release/python-3150/\">is here</a>! Here's the essential <a href=\"https://docs.python.org/3.15/whatsnew/3.15.html\">What's new in Python 3.15</a> guide, this year curated by 3.14 and 3.15 release manager Hugo van Kemenade. As"
-    },
-    {
-      "kind": "rss",
-      "title": "Profiling web-edit with Python 3.15: flame graphs and source heatmaps",
-      "url": "https://simonwillison.net/2026/Oct/12/python-3-15-web-edit-profiling/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-12T16:58:00.000Z",
-      "summary": "<p><strong>Research:</strong> <a href=\"https://github.com/simonw/research/tree/main/python-3-15-web-edit-profiling#readme\">Profiling web-edit with Python 3.15: flame graphs and source heatmaps</a></p> <p>I put the <a href=\"https://simonwillison.net/2026/Oct/12/python-3-15/#a-samp"
-    },
-    {
-      "kind": "rss",
-      "title": "web-edit 0.1a0",
-      "url": "https://simonwillison.net/2026/Oct/12/web-edit/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-12T15:54:36.000Z",
-      "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/web-edit/releases/tag/0.1a0\">web-edit 0.1a0</a></p> <p>I was working on a project from my phone using Codex Remote when I found myself wanting to edit a credentials file without round-tripping those credentials throu"
-    },
-    {
-      "kind": "rss",
-      "title": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
-      "url": "https://importai.substack.com/p/import-ai-476-creativity-and-rsi",
-      "source": "Import AI (Jack Clark)",
-      "sourceId": "importai",
-      "category": "insights",
-      "publishedAt": "2026-10-12T12:30:39.000Z",
-      "summary": "Will we give robots the moon?"
     }
   ]
 }

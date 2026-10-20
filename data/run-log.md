@@ -1,5 +1,13 @@
 # Signal Run Log
 
+## 2026-10-20
+
+- No high-signal candidates today - skipping. The refreshed inbox added five normalized source URLs and removed six older feed items since the October 19 rerun.
+- Three-role research confirmed that Apertus 1.5 is a substantive Apache-2.0 open-model update with image and experimental audio input, optional thinking mode, a longer context window, and a guest-accessible text path in Proton Lumo. The only verified general-user exercise was selecting Apertus in a chat model menu and running a harmless prompt, however, which repeats Signal's recent same-prompt and model-selector guides; Lumo did not expose the release's multimodal or thinking controls in the verified path.
+- Simon Willison's programming-obituary link and Import AI's IMF essay are commentary without a distinct broadly useful 5-30 minute action. OpenAI's low-resource programming-language work and Hugging Face's TorchNeuron update are specialist engineering material rather than stronger general-reader workflows.
+- Ingest produced 42 candidates. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 160 articles. `npm run build` generated 382 pages and Pagefind indexed all 382 pages; JSON parsing, append-only state, exact-file scope, and `git diff --check` passed.
+
 ## 2026-10-19
 
 - Shipped `2026-10-19-latex-renderer-equation-share` - Simon Willison's account-free browser tool becomes a five-minute equation-editing test with a self-contained share link and PNG or SVG export.
