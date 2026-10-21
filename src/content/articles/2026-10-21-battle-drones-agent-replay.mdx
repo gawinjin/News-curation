@@ -1,0 +1,58 @@
+---
+title: "Battle Drones makes an AI battle inspectable"
+date: 2026-10-21
+category: insights
+tags: ["agents", "ai-evaluation", "games", "claude", "gpt-6"]
+summary: "Battle Drones records what two AI commanders could see, note, and order. A quiet public replay lets readers inspect one match without running models or sharing data."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10–15 min"
+  prerequisites:
+    - "A modern desktop or mobile browser with JavaScript and WebGL enabled"
+    - "Internet access to load the public replay and record viewer"
+    - "No account, install, payment, second device, microphone permission, or personal information"
+references:
+  - title: "Battle Drones—a vibe coded RTS with audio-based multiplayer"
+    url: "https://simonwillison.net/2026/Oct/20/battledrones/"
+    author: "Simon Willison"
+    publishedAt: "2026-10-20"
+  - title: "simonw/battledrones: A mobile web RTS"
+    url: "https://github.com/simonw/battledrones"
+    author: "Simon Willison"
+  - title: "Battle Drones Agent Battles"
+    url: "https://github.com/simonw/battledrones/blob/main/AGENT-BATTLES.md"
+    author: "Simon Willison"
+  - title: "Battle Drones record viewer: GPT-6 Luna vs GPT-6 Astra"
+    url: "https://simonw.github.io/battledrones/record-viewer.html?replay=battles/showcase/2026-10-11-riverlands-42-gpt-6-luna-vs-gpt-6-astra.json"
+    author: "Simon Willison"
+draft: false
+---
+
+## TL;DR
+
+Battle Drones lets you replay a match between GPT-6 Luna and GPT-6 Astra while switching between the full battlefield and each commander's limited view. The public record also shows their saved notes and orders, turning one AI-versus-AI game into an inspectable experiment, not a model ranking.
+
+## What's New
+
+Simon Willison developed the browser strategy game through 12 major versions and 321 agent-written commits by the time of his article, mainly using Claude Code. Alongside modes for human players, Battle Drones can place two language models in command of opposing armies and save the result for replay.
+
+Each commander receives only the information its side can see through the game's fog of war. Play advances in fixed rounds, with each model submitting orders and carrying compact notes into its next fresh context.
+
+The public replay can switch between the complete battlefield and either commander's restricted view. A separate record viewer lays out the saved orders, notes, radio messages, and destination markers round by round. Those markers show intended destinations, not a continuous history of every unit's position.
+
+## Why It Matters
+
+Most AI-versus-AI results reduce a contest to a winner. This one lets a reader inspect what each model was allowed to know and connect that limited view to the choices it made, without creating an account, paying for a model, or running a new match.
+
+The evidence still has clear limits. Generated notes are artifacts saved by the game, not verified private reasoning, and one victory on one map cannot rank the models. A meaningful comparison would need many matches across maps and seeds, with sides swapped and settings kept equal.
+
+<PracticalGuide timeToTry="10–15 min" prerequisites={["A modern desktop or mobile browser with JavaScript and WebGL enabled","Internet access to load the public replay and record viewer","No account, install, payment, second device, microphone permission, or personal information"]}>
+
+1. Open the recorded GPT-6 Luna versus GPT-6 Astra match. Confirm the header identifies Riverlands, seed 42, and Industry versus Industry, and find the All, Blue's eyes, Red's eyes, and Notes controls. This is a saved match, not a new model run.
+2. Play or drag the timeline to about 1:45, then pause. Select All, Blue's eyes, and Red's eyes in turn. Check that each commander's view hides different units and territory instead of giving either model the complete battlefield.
+3. Turn on Notes near that moment. Compare what each commander says it knows with the matching limited view, and write down one choice that depended on incomplete information rather than the full map.
+4. Open the same match in the record viewer and inspect rounds 22 and 23. Hover a coordinate or unit number to connect a written order to its map marker; remember that these markers are destinations, not continuously recorded unit positions.
+5. Read the result, then write one sentence that preserves its limit: Astra won this recorded map, seed, opener, side assignment, and run; ranking the models would require many side-swapped matches across maps and seeds with identical settings.
+
+</PracticalGuide>

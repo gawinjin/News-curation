@@ -1,5 +1,15 @@
 # Signal Run Log
 
+## 2026-10-21
+
+- Shipped `2026-10-21-battle-drones-agent-replay` - Simon Willison's public Battle Drones records become a 10-15 minute inspection of two AI commanders' limited views, saved notes, and orders.
+- Three-role research confirmed that Battle Drones developed through 12 major versions and 321 agent-written commits by the article date, used more than 1,000 simulated matches during one balancing pass, and exposes public agent-battle replays plus a round-by-round record viewer.
+- The guide is distinct from Signal's recent game-creation and fixed-game usability articles: readers compare the full battlefield with each commander's fog-of-war view, connect one saved note to an order, and state why one recorded result cannot rank models.
+- The exercise does not start the experimental sound-duel mode. The project's continuous high-pitched signal caused a headache and now carries a warning, so the article uses a quiet saved replay that needs no account, payment, microphone, second device, or personal information.
+- Skipped the eMudhra certificate compromise because it is urgent security news rather than AI news. Cosmos3-H-Dreams, FairStress, ALTK-Evolve, MPS, AnyLanguageModel, and TorchTPU are specialist research or developer infrastructure; the three OpenAI additions are customer or acquisition stories without a stronger public 5-30 minute workflow.
+- Ingest produced 37 candidates, with 11 normalized URL additions and 16 removals since October 20. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 161 articles. `npm run build` generated 383 pages and Pagefind indexed all 383 pages; JSON parsing, append-only state, the rendered article route, homepage, one RSS item, and `git diff --check` passed.
+
 ## 2026-10-20
 
 - No high-signal candidates today - skipping. The refreshed inbox added five normalized source URLs and removed six older feed items since the October 19 rerun.

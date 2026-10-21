@@ -1,0 +1,133 @@
+{
+  "slug": "battle-drones-agent-replay",
+  "date": "2026-10-21",
+  "category": "insights",
+  "audience": "general",
+  "title_candidates": [
+    "Battle Drones makes an AI battle inspectable",
+    "Watch two AI models play from opposite sides"
+  ],
+  "summary": "Battle Drones records what two AI commanders could see, note, and order. A quiet public replay lets readers inspect one match without running models or sharing data.",
+  "tags": ["agents", "ai-evaluation", "games", "claude", "gpt-6"],
+  "primary_source": {
+    "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+    "title": "Battle Drones—a vibe coded RTS with audio-based multiplayer",
+    "author": "Simon Willison",
+    "publishedAt": "2026-10-20",
+    "key_facts": [
+      "Simon Willison developed Battle Drones through 12 major versions and 321 agent-written commits by the time of his article, mainly using Claude Code.",
+      "The browser strategy game runs on mobile and desktop and includes skirmishes, survival play, random maps, several built-in AI styles, and recorded battles between language models.",
+      "For agent battles, each model receives only the game information available to its side through fog of war and submits orders in fixed rounds.",
+      "Public replays and a record viewer expose the saved commands, notes, radio lines, and map destinations so readers can inspect a match after it ends.",
+      "Willison says Claude ran more than 1,000 simulated matches while rebalancing one major update, but he also says he reviewed almost none of the generated code and relied heavily on playtesting.",
+      "An experimental local multiplayer mode communicates through speakers and microphones, but its high-pitched signal caused a headache; the project now warns users and offers conventional online multiplayer."
+    ],
+    "quote_candidates": [
+      {
+        "text": "This game isn't fun enough yet. Make it a LOT more fun.",
+        "words": 12,
+        "exact": true,
+        "position": "v4: the fun update"
+      },
+      {
+        "text": "Part of the reason Claude took so long was that it ran over a thousand simulated playtest sessions",
+        "words": 18,
+        "exact": true,
+        "position": "v4: the fun update"
+      }
+    ]
+  },
+  "supporting_sources": [
+    {
+      "url": "https://github.com/simonw/battledrones",
+      "title": "simonw/battledrones: A mobile web RTS",
+      "key_facts": [
+        "The Apache-2.0 repository links to the live game, public battle replays, and the separate record viewer.",
+        "The README says the game needs no account and warns that the sound-duel signal may be unpleasant; the replay exercise does not use that mode."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://github.com/simonw/battledrones/blob/main/AGENT-BATTLES.md",
+      "title": "Battle Drones Agent Battles",
+      "key_facts": [
+        "The runner gives both models the same tools, information limits, and per-round budgets while enforcing fog of war outside the model prompt.",
+        "The design calls for side-swapped games across maps and seeds when comparing models; a single recorded match is not a general ranking.",
+        "Each round starts with a fresh model context plus compact notes carried forward as the commander's memory."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://simonw.github.io/battledrones/record-viewer.html?replay=battles/showcase/2026-10-11-riverlands-42-gpt-6-luna-vs-gpt-6-astra.json",
+      "title": "Battle Drones record viewer: GPT-6 Luna vs GPT-6 Astra",
+      "key_facts": [
+        "The public viewer presents the saved match round by round with each commander's orders, notes, radio lines, and destination markers.",
+        "The viewer states that the record stores orders rather than continuous unit positions, so map markers show where units were sent."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10–15 min",
+    "prerequisites": [
+      "A modern desktop or mobile browser with JavaScript and WebGL enabled",
+      "Internet access to load the public replay and record viewer",
+      "No account, install, payment, second device, microphone permission, or personal information"
+    ],
+    "steps": [
+      {
+        "instruction": "Open the recorded GPT-6 Luna versus GPT-6 Astra match. Confirm the header identifies Riverlands, seed 42, and Industry versus Industry, and find the All, Blue's eyes, Red's eyes, and Notes controls. This is a saved match, not a new model run.",
+        "verify_url": "https://simonw.github.io/battledrones/v11/?replay=battles/showcase/2026-10-11-riverlands-42-gpt-6-luna-vs-gpt-6-astra.json"
+      },
+      {
+        "instruction": "Play or drag the timeline to about 1:45, then pause. Select All, Blue's eyes, and Red's eyes in turn. Check that each commander's view hides different units and territory instead of giving either model the complete battlefield.",
+        "verify_url": "https://simonw.github.io/battledrones/v11/?replay=battles/showcase/2026-10-11-riverlands-42-gpt-6-luna-vs-gpt-6-astra.json"
+      },
+      {
+        "instruction": "Turn on Notes near that moment. Compare what each commander says it knows with the matching limited view, and write down one choice that depended on incomplete information rather than the full map.",
+        "verify_url": "https://simonw.github.io/battledrones/v11/?replay=battles/showcase/2026-10-11-riverlands-42-gpt-6-luna-vs-gpt-6-astra.json"
+      },
+      {
+        "instruction": "Open the same match in the record viewer and inspect rounds 22 and 23. Hover a coordinate or unit number to connect a written order to its map marker; remember that these markers are destinations, not continuously recorded unit positions.",
+        "verify_url": "https://simonw.github.io/battledrones/record-viewer.html?replay=battles/showcase/2026-10-11-riverlands-42-gpt-6-luna-vs-gpt-6-astra.json"
+      },
+      {
+        "instruction": "Read the result, then write one sentence that preserves its limit: Astra won this recorded map, seed, opener, side assignment, and run; ranking the models would require many side-swapped matches across maps and seeds with identical settings.",
+        "verify_url": "https://github.com/simonw/battledrones/blob/main/AGENT-BATTLES.md"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Battle Drones—a vibe coded RTS with audio-based multiplayer",
+      "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+      "author": "Simon Willison",
+      "publishedAt": "2026-10-20"
+    },
+    {
+      "title": "simonw/battledrones: A mobile web RTS",
+      "url": "https://github.com/simonw/battledrones",
+      "author": "Simon Willison"
+    },
+    {
+      "title": "Battle Drones Agent Battles",
+      "url": "https://github.com/simonw/battledrones/blob/main/AGENT-BATTLES.md",
+      "author": "Simon Willison"
+    },
+    {
+      "title": "Battle Drones record viewer: GPT-6 Luna vs GPT-6 Astra",
+      "url": "https://simonw.github.io/battledrones/record-viewer.html?replay=battles/showcase/2026-10-11-riverlands-42-gpt-6-luna-vs-gpt-6-astra.json",
+      "author": "Simon Willison"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "The article must frame this as one inspectable experiment, not a general benchmark of model intelligence, game design, or code quality.",
+    "The public record contains generated notes, orders, and radio lines; these are match artifacts, not verified private reasoning traces.",
+    "Do not instruct readers to start the sound-duel mode because the project's high-pitched signal caused a headache and can be unpleasant.",
+    "Keep the practical exercise on replay evidence and fog-of-war decisions so it does not duplicate Signal's recent generic game playtest or game-creation guides."
+  ],
+  "assembled_at": "2026-10-21T08:04:29Z",
+  "assembled_by": "Signal Orchestrator v1"
+}
