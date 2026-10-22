@@ -1,5 +1,15 @@
 # Signal Run Log
 
+## 2026-10-22
+
+- Shipped `2026-10-22-granite-speech-local-dictation` - IBM's Granite Speech 5 update becomes a ten-minute live English dictation test that runs the model locally in a compatible desktop browser.
+- Three-role research confirmed the new 2B speech model, the updated 470-million-parameter Turbo CTC and speaker-attribution models, seven-language Turbo CTC support, Apache 2.0 licensing, and an official running WebGPU demo.
+- The guide is distinct from Signal's October 9 Falcon ASR article: readers use live dictation processed on the device instead of uploading a short Arabic-English clip to a hosted transcription service. The test checks a harmless sentence containing one name and number, then removes microphone permission.
+- The demo currently labels itself English-only, downloads roughly 209 MB, requires desktop WebGPU, and exposes neither translation nor speaker attribution. IBM's speed and accuracy figures remain vendor-reported, and readers must check names, numbers, accents, punctuation, and noisy speech before relying on a transcript.
+- Skipped ChatGPT Ads expansion because Signal already has a current ad-controls and independent-claim-check guide. Panache is mainly an aesthetic fork of yesterday's Battle Drones coverage; the remaining additions are non-AI security news, enterprise or customer announcements, policy, specialist research, or developer infrastructure without a stronger distinct public 5-30 minute workflow.
+- Ingest produced 45 candidates, with 18 normalized URL additions and 10 removals since October 21. RSS completed with 11 sources available and none unavailable; all 42 configured social handles were unreachable through Nitter, and the manual queue added no items.
+- `npm run verify` passed all 162 articles. `npm run build` generated 386 pages and Pagefind indexed all 386 pages; JSON parsing, append-only state, the rendered article route, homepage, exactly one RSS item, and `git diff --check` passed.
+
 ## 2026-10-21
 
 - Shipped `2026-10-21-battle-drones-agent-replay` - Simon Willison's public Battle Drones records become a 10-15 minute inspection of two AI commanders' limited views, saved notes, and orders.

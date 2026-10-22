@@ -1,0 +1,109 @@
+{
+  "slug": "granite-speech-local-dictation",
+  "date": "2026-10-22",
+  "category": "model-releases",
+  "audience": "general",
+  "title_candidates": [
+    "Granite Speech 5 runs live dictation in your browser",
+    "Try Granite Speech 5 without uploading your voice"
+  ],
+  "summary": "IBM's updated Granite Speech model can transcribe live English speech inside a compatible desktop browser, keeping the audio and transcript on the device.",
+  "tags": ["granite", "speech-recognition", "transcription", "privacy", "webgpu"],
+  "primary_source": {
+    "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+    "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+    "author": "IBM Granite Speech Team",
+    "publishedAt": "2026-10-21",
+    "key_facts": [
+      "IBM released Granite Speech 5.0 2B and updated its smaller Turbo CTC and speaker-attribution models, covering multilingual transcription, translation, fast edge transcription, and multi-speaker recordings.",
+      "Granite Speech 5.0 2B supports transcription in English, French, German, Spanish, Portuguese, and Japanese, along with translation between English and those languages plus English-to-Italian and English-to-Mandarin translation.",
+      "The 470-million-parameter Turbo CTC update supports English, French, German, Spanish, Portuguese, Italian, and Japanese, and produces punctuation and capitalization without a separate formatting step.",
+      "IBM reports that the updated Turbo CTC model is roughly 1.6 times faster than its August release at the same accuracy level; this is a vendor-reported benchmark, not a result from Signal's browser test.",
+      "The models are available under the Apache 2.0 license, with the larger model supported through developer frameworks including Transformers, vLLM, llama.cpp, and mlx-audio.",
+      "The official live-dictation demo uses Turbo CTC locally through WebGPU, but its current interface is English-only and does not expose the release's translation or speaker-attribution features."
+    ],
+    "quote_candidates": []
+  },
+  "supporting_sources": [
+    {
+      "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc",
+      "title": "Granite Speech 5.0 470M Turbo CTC model card",
+      "key_facts": [
+        "The official model card lists seven supported languages, a 470-million-parameter model size, Apache 2.0 licensing, and a release date of October 21, 2026.",
+        "The intended use is low-latency, high-throughput speech-to-text transcription on devices such as laptops and smartphones; the public demo is more limited than the model card."
+      ],
+      "quote_candidates": []
+    },
+    {
+      "url": "https://huggingface.co/spaces/ibm-granite/granite-speech-streaming-webgpu",
+      "title": "Granite Speech Streaming WebGPU",
+      "key_facts": [
+        "The official Space was running when checked and offered live microphone dictation or audio-file transcription in a compatible desktop browser.",
+        "Its interface says the audio and transcript stay on the device, labels the demo English-only, shows a roughly 209 MB model download, and limits recordings to two minutes.",
+        "The demo requires WebGPU on a desktop browser and names Chrome 113 or Edge 113 and later as supported examples."
+      ],
+      "quote_candidates": []
+    }
+  ],
+  "practical_guide": {
+    "timeToTry": "10 min",
+    "prerequisites": [
+      "A desktop computer with a WebGPU-capable GPU and Chrome 113+ or Edge 113+",
+      "Internet access for the page and roughly 209 MB model download",
+      "A microphone and a new harmless 10–15 second English sentence spoken only by you"
+    ],
+    "steps": [
+      {
+        "instruction": "Open the official Granite Speech Streaming WebGPU demo. Close the Info panel, wait for the model to finish loading, and confirm that the page changes from Loading model to Tap to start dictation. Stop if the browser reports that WebGPU or a suitable GPU is unavailable.",
+        "verify_url": "https://huggingface.co/spaces/ibm-granite/granite-speech-streaming-webgpu"
+      },
+      {
+        "instruction": "Leave Restore punctuation & capitalization on, select Tap to start dictation, and grant microphone access only if you are comfortable giving this site that permission.",
+        "verify_url": "https://huggingface.co/spaces/ibm-granite/granite-speech-streaming-webgpu"
+      },
+      {
+        "instruction": "Speak one harmless English sentence for 10–15 seconds, including one name and one number. Watch text appear under Transcription, then select the microphone control again to stop.",
+        "verify_url": "https://huggingface.co/spaces/ibm-granite/granite-speech-streaming-webgpu"
+      },
+      {
+        "instruction": "Compare the displayed text with what you said, paying special attention to the name, number, punctuation, and capitalization. Use Copy to clipboard or Download .txt file only after checking the result.",
+        "verify_url": "https://huggingface.co/spaces/ibm-granite/granite-speech-streaming-webgpu"
+      },
+      {
+        "instruction": "Use the browser's site-permission control to remove microphone access when finished. Treat the demo as an English transcription test only, not evidence that its translation or speaker-attribution models work for your recording.",
+        "verify_url": "https://huggingface.co/spaces/ibm-granite/granite-speech-streaming-webgpu"
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+      "author": "IBM Granite Speech Team",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "title": "Granite Speech 5.0 470M Turbo CTC model card",
+      "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc",
+      "author": "IBM Granite Speech Team",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "title": "Granite Speech Streaming WebGPU",
+      "url": "https://huggingface.co/spaces/ibm-granite/granite-speech-streaming-webgpu",
+      "author": "IBM Granite Speech Team"
+    }
+  ],
+  "social": [],
+  "tweet_is_primary": false,
+  "risk_flags": [
+    "Keep the guide distinct from Signal's Falcon ASR article: the point is local WebGPU live dictation, not another hosted upload transcription test.",
+    "The demo currently labels itself English-only even though the Turbo CTC model card lists seven languages; do not claim that the browser workflow verifies multilingual transcription.",
+    "The demo exposes transcription only, not the release's translation or speaker-attribution features.",
+    "Use only harmless speech from the reader or recordings for which everyone has consented, and remove microphone permission afterward.",
+    "The page and model files load from Hugging Face even though the interface says audio and transcripts stay on the device; do not recommend confidential recordings without a separate policy review.",
+    "Treat IBM's speed and accuracy figures as vendor-reported and require readers to check names, numbers, accents, and noisy speech before relying on a transcript."
+  ],
+  "assembled_at": "2026-10-22T08:05:17Z",
+  "assembled_by": "Signal Orchestrator v1.0"
+}

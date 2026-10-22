@@ -397,7 +397,10 @@
     "https://simonwillison.net/2026/Oct/20/battledrones/",
     "https://github.com/simonw/battledrones",
     "https://github.com/simonw/battledrones/blob/main/AGENT-BATTLES.md",
-    "https://simonw.github.io/battledrones/record-viewer.html?replay=battles/showcase/2026-10-11-riverlands-42-gpt-6-luna-vs-gpt-6-astra.json"
+    "https://simonw.github.io/battledrones/record-viewer.html?replay=battles/showcase/2026-10-11-riverlands-42-gpt-6-luna-vs-gpt-6-astra.json",
+    "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+    "https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc",
+    "https://huggingface.co/spaces/ibm-granite/granite-speech-streaming-webgpu"
   ],
-  "lastIngest": "2026-10-21T08:00:19.152Z"
+  "lastIngest": "2026-10-22T08:01:26.693Z"
 }

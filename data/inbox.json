@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T08:00:19.152Z",
+  "generatedAt": "2026-10-22T08:01:26.693Z",
   "socialUnreachable": [
     "karpathy",
     "simonw",
@@ -47,6 +47,176 @@
   "items": [
     {
       "kind": "rss",
+      "title": "Ensemble forecasting with IBM Granite time-series models",
+      "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-10-22T07:51:31.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Broad access through consistent standards",
+      "url": "https://openai.com/index/broad-access-through-consistent-standards",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-21T21:00:00.000Z",
+      "summary": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies."
+    },
+    {
+      "kind": "rss",
+      "title": "Today's PHP Security Release, and How We're Strengthening PHP Security",
+      "url": "https://simonwillison.net/2026/Oct/21/php-security-release/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-21T18:41:53.000Z",
+      "summary": "<p><strong><a href=\"https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/\">Today&#x27;s PHP Security Release, and How We&#x27;re Strengthening PHP Security</a></strong></p> If you're running anything on PHP it's vital you u"
+    },
+    {
+      "kind": "rss",
+      "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+      "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-10-21T18:26:30.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+      "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-10-21T17:35:36.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "How AT&T is rethinking in-house legal work with OpenAI",
+      "url": "https://openai.com/index/att-legal",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-21T17:00:00.000Z",
+      "summary": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment."
+    },
+    {
+      "kind": "rss",
+      "title": "Panache — RTS Belle Époque pour mobile",
+      "url": "https://simonwillison.net/2026/Oct/21/panache/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-21T16:25:16.000Z",
+      "summary": "<p><strong><a href=\"https://github.com/menufactory43/panache/\">Panache — RTS Belle Époque pour mobile</a></strong></p> Well this is delightful: I <a href=\"https://simonwillison.net/2026/Oct/20/battledrones/\">released Battle Drones</a> yesterday under an Apache 2.0 License and the"
+    },
+    {
+      "kind": "rss",
+      "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+      "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-10-21T16:04:43.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+      "source": "Hugging Face",
+      "sourceId": "huggingface",
+      "category": "guides",
+      "publishedAt": "2026-10-21T14:58:18.000Z",
+      "summary": ""
+    },
+    {
+      "kind": "rss",
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-21T13:00:00.000Z",
+      "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT."
+    },
+    {
+      "kind": "rss",
+      "title": "OpenAI models are coming to Google Cloud",
+      "url": "https://openai.com/index/openai-models-google-cloud",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-21T12:00:00.000Z",
+      "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace."
+    },
+    {
+      "kind": "rss",
+      "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-21T07:00:00.000Z",
+      "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source."
+    },
+    {
+      "kind": "rss",
+      "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+      "url": "https://openai.com/index/building-chatgpt-ad-stack",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-21T07:00:00.000Z",
+      "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale."
+    },
+    {
+      "kind": "rss",
+      "title": "Using thousands of AI agents to uncover new leads in biological data",
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-21T04:50:00.000Z",
+      "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells."
+    },
+    {
+      "kind": "rss",
+      "title": "Physicist Christopher Stubbs joins Anthropic&#x27;s Long-Term Benefit Trust",
+      "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "source": "Anthropic",
+      "sourceId": "anthropic",
+      "category": "model-releases",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "summary": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised"
+    },
+    {
+      "kind": "rss",
+      "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
+      "url": "https://openai.com/index/cloudflare-cyber",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "summary": "Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review. Its developers use Codex to build faster and improve code quality."
+    },
+    {
+      "kind": "rss",
+      "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+      "url": "https://openai.com/index/empowering-cyber-defenders",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "category": "model-releases",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "summary": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions."
+    },
+    {
+      "kind": "rss",
       "title": "eMudhra Intermediate CA Compromise",
       "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/",
       "source": "Simon Willison",
@@ -57,42 +227,12 @@
     },
     {
       "kind": "rss",
-      "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
-      "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-20T19:34:19.000Z",
-      "summary": "<p>My latest vibe coded game experiment is a Command &amp; Conquer style RTS (Real Time Strategy) game called <a href=\"https://github.com/simonw/battledrones#readme\">Battle Drones</a> (<a href=\"https://simonw.github.io/battledrones/\">play it here</a>). Unlike <a href=\"https://sim"
-    },
-    {
-      "kind": "rss",
-      "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
-      "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-10-20T18:17:47.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
       "title": "FairStress: A deeper evaluation of fairness in LLM decision-making",
       "url": "https://huggingface.co/blog/allenai/fairstress",
       "source": "Hugging Face",
       "sourceId": "huggingface",
       "category": "guides",
       "publishedAt": "2026-10-20T16:09:19.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
-      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-10-20T15:19:48.000Z",
       "summary": ""
     },
     {
@@ -257,6 +397,16 @@
     },
     {
       "kind": "rss",
+      "title": "sparqlite: SPARQL 1.1 inside SQLite, written in Rust",
+      "url": "https://simonwillison.net/2026/Oct/16/sqlite-sparql-rust/",
+      "source": "Simon Willison",
+      "sourceId": "simonwillison",
+      "category": "insights",
+      "publishedAt": "2026-10-16T01:58:00.000Z",
+      "summary": "<p><strong>Research:</strong> <a href=\"https://github.com/simonw/research/tree/main/sqlite-sparql-rust#readme\">sparqlite: SPARQL 1.1 inside SQLite, written in Rust</a></p> <p>This research task is really an experiment in running Claude Code for web in \"Ultracode\" mode, as describ"
+    },
+    {
+      "kind": "rss",
       "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
       "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
       "source": "OpenAI",
@@ -283,16 +433,6 @@
       "sourceId": "huggingface",
       "category": "guides",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-10-15T20:34:01.000Z",
       "summary": ""
     },
     {
@@ -354,66 +494,6 @@
       "category": "guides",
       "publishedAt": "2026-10-15T09:08:45.000Z",
       "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "Anthropic update on independent evaluators",
-      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-      "source": "Anthropic",
-      "sourceId": "anthropic",
-      "category": "model-releases",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "summary": "Anthropic announces updates to embedding independent evaluators"
-    },
-    {
-      "kind": "rss",
-      "title": "Sullivan & Cromwell brings legal expertise into agreement review",
-      "url": "https://openai.com/index/sullivan-cromwell",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "summary": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement."
-    },
-    {
-      "kind": "rss",
-      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
-      "url": "https://huggingface.co/blog/meta-muse-spark-open",
-      "source": "Hugging Face",
-      "sourceId": "huggingface",
-      "category": "guides",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "summary": ""
-    },
-    {
-      "kind": "rss",
-      "title": "AI is mass decompiling games. That's both awesome and scary.",
-      "url": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "category": "insights",
-      "publishedAt": "2026-10-14T16:26:53.000Z",
-      "summary": "<p><strong><a href=\"https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary/\">AI is mass decompiling games. That&#x27;s both awesome and scary.</a></strong></p> Indie game developer Popcar talks about the recent wave of AI-powered decompilation of ex"
-    },
-    {
-      "kind": "rss",
-      "title": "Amp puts AI agents to work beyond code with OpenAI models",
-      "url": "https://openai.com/index/amp-beyond-coding",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-10-14T12:00:00.000Z",
-      "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT."
-    },
-    {
-      "kind": "rss",
-      "title": "SentinelOne cuts malware analysis from weeks to hours",
-      "url": "https://openai.com/index/sentinelone",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "category": "model-releases",
-      "publishedAt": "2026-10-14T12:00:00.000Z",
-      "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats."
     }
   ]
 }

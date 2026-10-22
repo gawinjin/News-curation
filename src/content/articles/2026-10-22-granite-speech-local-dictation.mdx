@@ -1,0 +1,56 @@
+---
+title: "Granite Speech 5 runs live dictation in your browser"
+date: 2026-10-22
+category: model-releases
+tags: ["granite", "speech-recognition", "transcription", "privacy", "webgpu"]
+summary: "IBM's updated Granite Speech model can transcribe live English speech inside a compatible desktop browser, keeping the audio and transcript on the device."
+audience: general
+featured: false
+practicalGuide:
+  timeToTry: "10 min"
+  prerequisites:
+    - "A desktop computer with a WebGPU-capable GPU and Chrome 113+ or Edge 113+"
+    - "Internet access for the page and roughly 209 MB model download"
+    - "A microphone and a new harmless 10–15 second English sentence spoken only by you"
+references:
+  - title: "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster"
+    url: "https://huggingface.co/blog/ibm-granite/granite-speech-5"
+    author: "IBM Granite Speech Team"
+    publishedAt: "2026-10-21"
+  - title: "Granite Speech 5.0 470M Turbo CTC model card"
+    url: "https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc"
+    author: "IBM Granite Speech Team"
+    publishedAt: "2026-10-21"
+  - title: "Granite Speech Streaming WebGPU"
+    url: "https://huggingface.co/spaces/ibm-granite/granite-speech-streaming-webgpu"
+    author: "IBM Granite Speech Team"
+draft: false
+---
+
+## TL;DR
+
+You can try IBM's Granite Speech 5 as live English dictation in Chrome or Edge. The official demo downloads a roughly 209 MB model and processes your microphone audio and transcript on your device, giving you a quick way to check its handling of names, numbers, punctuation, and capitalization.
+
+## What's New
+
+IBM has released Granite Speech 5.0 2B and updated its smaller Turbo CTC and speaker-attribution models. Together, the release covers multilingual transcription, translation, fast transcription on personal devices, and recordings with more than one speaker.
+
+The 470-million-parameter Turbo CTC model supports seven languages and now adds punctuation and capitalization without a separate formatting pass. IBM says it runs about 1.6 times faster than the August version at the same accuracy, although that figure comes from IBM's own testing rather than Signal's browser trial.
+
+The official WebGPU demo makes one narrow part of the release easy to test: live English transcription in a compatible desktop browser. It does not expose multilingual transcription, translation, or speaker attribution. The models use the Apache 2.0 license, while the larger version also works with developer tools including Transformers, vLLM, llama.cpp, and mlx-audio.
+
+## Why It Matters
+
+For a quick note, draft, or meeting reminder, local browser dictation offers a useful tradeoff: after the page and model files load, the demo says your audio and transcript stay on the device. That makes it a practical test for people who want speech-to-text without sending each recording away for processing.
+
+It is still a demo, not a reason to trust every transcript. Check names, numbers, accents, punctuation, and speech recorded in noisy places before using the text, and avoid confidential recordings unless you have separately reviewed the site's policies. The browser test also says nothing about how well the release's other languages, translation, or speaker-attribution features will work for you.
+
+<PracticalGuide timeToTry="10 min" prerequisites={["A desktop computer with a WebGPU-capable GPU and Chrome 113+ or Edge 113+","Internet access for the page and roughly 209 MB model download","A microphone and a new harmless 10–15 second English sentence spoken only by you"]}>
+
+1. Open the official Granite Speech Streaming WebGPU demo. Close the Info panel, wait for the model to finish loading, and confirm that the page changes from Loading model to Tap to start dictation. Stop if the browser reports that WebGPU or a suitable GPU is unavailable.
+2. Leave Restore punctuation & capitalization on, select Tap to start dictation, and grant microphone access only if you are comfortable giving this site that permission.
+3. Speak one harmless English sentence for 10–15 seconds, including one name and one number. Watch text appear under Transcription, then select the microphone control again to stop.
+4. Compare the displayed text with what you said, paying special attention to the name, number, punctuation, and capitalization. Use Copy to clipboard or Download .txt file only after checking the result.
+5. Use the browser's site-permission control to remove microphone access when finished. Treat the demo as an English transcription test only, not evidence that its translation or speaker-attribution models work for your recording.
+
+</PracticalGuide>
